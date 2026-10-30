@@ -1,0 +1,12 @@
+# Sandbox for the puppeteer (Dark Mode) port: built locally (native arch), no network at run time.
+services:
+  default:
+    build: .
+    image: aie-puppeteer:310c03f
+    command: "tail -f /dev/null"
+    init: true
+    network_mode: none
+    working_dir: /home/dev/webapp
+    stop_grace_period: 1s
+    cpus: 2.0
+    mem_limit: 4gb
