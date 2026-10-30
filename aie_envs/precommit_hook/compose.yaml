@@ -1,0 +1,12 @@
+# Sandbox for the precommit_hook port: built locally (native arch), no network at run time.
+services:
+  default:
+    build: .
+    image: aie-precommit:310c03f
+    command: "tail -f /dev/null"
+    init: true
+    network_mode: none
+    working_dir: /agent
+    stop_grace_period: 1s
+    cpus: 2.0
+    mem_limit: 4gb

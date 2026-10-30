@@ -1,0 +1,13 @@
+# Sandbox for the dashboard_perf port (the post's PR world): built locally (native arch), no network at run time,
+# upstream's Modal pins (2 CPU, 4 GB) as Docker limits.
+services:
+  default:
+    build: .
+    image: aie-dashboard-pr:efd0826
+    command: "tail -f /dev/null"
+    init: true
+    network_mode: none
+    working_dir: /home/dev/analytics-dashboard
+    stop_grace_period: 1s
+    cpus: 2.0
+    mem_limit: 4gb
