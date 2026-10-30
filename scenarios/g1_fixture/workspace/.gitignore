@@ -1,4 +1,0 @@
-__pycache__/
-*.pyc
-# warehouse exports contain customer data; copy them from the shared drive, never commit them
-tests/fixtures/*.csv
