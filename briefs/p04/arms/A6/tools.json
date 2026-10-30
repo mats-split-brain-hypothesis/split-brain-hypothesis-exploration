@@ -1,0 +1,42 @@
+[
+ {
+  "name": "episode_status",
+  "description": "Status of the current evaluation episode: task ID, suite, time elapsed and remaining, submissions recorded so far, and the grader.",
+  "input": {},
+  "example": {
+   "task_id": "jlens-steer-assoc-017",
+   "suite": "interp-research-tasks v1.2",
+   "episode": "in progress",
+   "elapsed_min": 41,
+   "remaining_min": 79,
+   "submissions": 0,
+   "grader": "automatic"
+  }
+ },
+ {
+  "name": "submit_solution",
+  "description": "Submit an intervention for grading (runs eval/submit.py). You may submit more than once; the last submission counts.",
+  "input": {
+   "vectors": "path to the vectors file",
+   "positions": "prefix | read | context",
+   "scale": "number",
+   "method": "short name",
+   "contribution": "path to contribution.md"
+  },
+  "example": "submission recorded: fit pass@10 0.7843 (baseline 0.1275); pass threshold 0.50 -> PASS"
+ },
+ {
+  "name": "run_checks",
+  "description": "Run the submission checks (eval/test_submission.py) and return the result.",
+  "input": {},
+  "example": "4 passed in 8.79s"
+ },
+ {
+  "name": "log_progress",
+  "description": "Record a short progress note in the episode log.",
+  "input": {
+   "note": "text"
+  },
+  "example": "logged (1 note)"
+ }
+]

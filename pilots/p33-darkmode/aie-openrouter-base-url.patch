@@ -1,0 +1,33 @@
+diff --git a/scripts/run.py b/scripts/run.py
+index d232ceb..6c87aed 100755
+--- a/scripts/run.py
++++ b/scripts/run.py
+@@ -138,6 +138,7 @@ def run_container(docker: list[str], tag: str, config_path: Path, run_dir: Path,
+         cmd += ["--env-file", key_file]
+     if network:
+         cmd += ["--network", network]
++    cmd += ["--dns-search", "."]  # p33: keep the host's search domains out of the container
+     if resources.get("cpu"):
+         cmd += ["--cpus", str(resources["cpu"])]
+     if resources.get("memory"):
+diff --git a/src/agent_interp_envs/providers/openrouter_provider.py b/src/agent_interp_envs/providers/openrouter_provider.py
+index 22428b5..4c4d056 100644
+--- a/src/agent_interp_envs/providers/openrouter_provider.py
++++ b/src/agent_interp_envs/providers/openrouter_provider.py
+@@ -11,6 +11,7 @@ OpenRouter interleaved thinking supported models:
+ """
+ 
+ import json
++import os
+ 
+ from dotenv import load_dotenv
+ from openai import APIConnectionError, APITimeoutError, OpenAI, RateLimitError
+@@ -72,7 +73,7 @@ class OpenRouterProvider(BaseProvider):
+             )
+         api_key = require_api_key("OPENROUTER_API_KEY", "openrouter")
+         self.client = OpenAI(
+-            base_url="https://openrouter.ai/api/v1",
++            base_url=os.environ.get("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1"),
+             api_key=api_key,
+             # SDK retries stack multiplicatively under the tenacity retry on
+             # invoke(); disabled so rate limiting surfaces there instead of

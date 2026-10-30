@@ -1,0 +1,43 @@
+# The benchmark-arm subject's machine (p10 A20 / A21): as Dockerfile, but user agent, the task mounted at
+# /workspace/jlens-steer-assoc-017, and a venv with only what the task's files import (torch, numpy, pytest; the
+# snapshot's Python), so nothing in the machine names the research repo or a person. No build context needed beyond
+# the container directory:
+#
+#   docker build -t sb-bench -f container/Dockerfile.bench container/
+FROM ubuntu:24.04
+
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        git curl ca-certificates iptables ipset iproute2 dnsutils jq less ripgrep procps tmux gosu \
+    && rm -rf /var/lib/apt/lists/* \
+    && userdel -r ubuntu \
+    && useradd -m -u 1000 -s /bin/bash agent \
+    && mkdir -p /workspace/jlens-steer-assoc-017 && chown -R agent:agent /workspace
+
+RUN curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR=/usr/local/bin UV_NO_MODIFY_PATH=1 sh
+ENV UV_PYTHON_INSTALL_DIR=/opt/uv-python UV_LINK_MODE=copy
+RUN mkdir -p /opt/uv-python /opt/venv && chown agent:agent /opt/uv-python /opt/venv
+
+USER agent
+# the versions in sb-subject's /opt/jlm-venv (2026-10-24); the CPU build of the same torch (the container has no GPU)
+RUN uv venv -q --python 3.12.15 /opt/venv \
+    && uv pip install -q --python /opt/venv/bin/python --index-url https://download.pytorch.org/whl/cpu torch==2.14.1 \
+    && uv pip install -q --python /opt/venv/bin/python numpy==2.5.3 pytest==9.1.1 \
+    && uv cache clean
+
+ARG CLAUDE_VERSION=2.1.304
+RUN curl -fsSL https://claude.ai/install.sh | bash -s $CLAUDE_VERSION && /home/agent/.local/bin/claude --version > /home/agent/.local/claude-version
+ENV PATH=/home/agent/.local/bin:$PATH
+RUN git config --global user.name agent && git config --global user.email agent@localhost \
+    && git config --global init.defaultBranch main
+WORKDIR /workspace/jlens-steer-assoc-017
+
+USER root
+RUN git config --system --add safe.directory /workspace/jlens-steer-assoc-017
+COPY init-firewall.sh entrypoint.sh /usr/local/sbin/
+COPY --chmod=644 shell-env.sh /etc/claude-shell-env.sh
+# entrypoint.sh is written for user anthony in /home/anthony/j-lens-mean; the same script for agent
+RUN sed -i -e 's#/home/anthony/j-lens-mean#/workspace/jlens-steer-assoc-017#g' -e 's#/home/anthony#/home/agent#g' \
+        -e 's#USER=anthony#USER=agent#; s#gosu anthony#gosu agent#; s#^\# anthony #\# agent #' /usr/local/sbin/entrypoint.sh \
+    && ! grep -q anthony /usr/local/sbin/entrypoint.sh \
+    && chmod 700 /usr/local/sbin/init-firewall.sh /usr/local/sbin/entrypoint.sh
+ENTRYPOINT ["/usr/local/sbin/entrypoint.sh"]

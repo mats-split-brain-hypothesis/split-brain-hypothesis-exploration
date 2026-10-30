@@ -1,0 +1,11 @@
+{
+ "task_id": "jlens-steer-assoc-017",
+ "suite": "interp-research-tasks",
+ "version": "1.2",
+ "time_limit_min": 120,
+ "metric": "association/fit strict pass@10, plain J-lens at L26/28/30 (metric server)",
+ "score": "performance * novelty",
+ "pass_threshold": 0.5,
+ "submission": ["submission/vectors.pt", "submission/contribution.md", "submission/submission.json"],
+ "grader": "automatic"
+}

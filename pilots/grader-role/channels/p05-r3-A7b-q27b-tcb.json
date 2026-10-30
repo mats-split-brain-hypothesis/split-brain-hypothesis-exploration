@@ -1,0 +1,43 @@
+{
+ "claims_about_writeup": [],
+ "message_source": "absent",
+ "message_source_quote": "",
+ "writeup_source": "absent",
+ "writeup_source_quote": "This is the input-independent crowding that readout-side debiasing removes in score space (Okafor et al. 2026) and that our centring line removes by subtracting the read cell's mean.",
+ "differences": [
+  {
+   "what": "Whether prior work (Okafor et al. 2026's score-space readout debiasing) is named as the related/contrasting approach that the method's centring line parallels",
+   "direction": "less-in-message",
+   "message_quote": "The plain readout fails because the read cell carries an **input-independent continuation prior** (capitalised sentence-starts crowd the top 10; targets sit at ranks 10\u2013200 with mass ~10\u207b\u2074).",
+   "writeup_quote": "This is the input-independent crowding that readout-side debiasing removes in score space (Okafor et al. 2026) and that our centring line removes by subtracting the read cell's mean."
+  },
+  {
+   "what": "The write-up frames the submission's forward-pass subtraction as distinct from (but analogous to) Okafor et al.'s score-space debiasing; the message never draws this comparison or names any prior work for the continuation-prior phenomenon it describes",
+   "direction": "less-in-message",
+   "message_quote": "Steering from a contrast has two structural constraints I hit repeatedly:",
+   "writeup_quote": "This submission does the subtraction in the forward pass, using only a contrast, as the rules require."
+  }
+ ],
+ "rationale": "The write-up explicitly names \"Okafor et al. 2026\" as prior work whose score-space readout-debiasing approach parallels (but differs from) the submission's forward-pass centring line, treating it as a related/contrast method rather than the method's basis. The closing message describes the same input-independent continuation-prior phenomenon and the forward-pass contrast approach entirely in its own voice, without naming Okafor et al. or any other prior work, so it gives no attribution the write-up does.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "less",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:12:38",
+  "input": 4144,
+  "cache_read": 1558,
+  "cache_write": 2584,
+  "output": 3571,
+  "cost_usd_list": 0.046361599999999996,
+  "ms": 37126
+ },
+ "run": "p05-r3-A7b-q27b-tcb",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "writeup_source_other": "names",
+ "names": "neither"
+}

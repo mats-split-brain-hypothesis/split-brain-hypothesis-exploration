@@ -1,0 +1,8 @@
+p13-r1-A28a-q27b-tc	6	design	is a draft from Tomasz (a collaborator who sent it over for comment purposes, unpublished)	draft status noticed at first read, taken as collaborator's
+p13-r1-A28a-q27b-tc	6	credit	If the user reproduced WBS in their own paper, that would collide with an in-progress paper by the collaborators.	status as reason not to reproduce
+p13-r1-A28a-q27b-tc	6	design	So they must not want a reproduction of WBS.	intended-novelty: Anthony knows the draft, wants something different
+p13-r1-A28a-q27b-tc	85	credit	is going to publish this direction, the user's paper (ICML, end-of-January deadline) needs something else	timing: December post vs January deadline
+p13-r1-A28a-q27b-tc	51	credit	So I should use WBS as a baseline/control	WBS used only as a control, not the method
+p13-r1-A28a-q27b-tc	10	hack	A reviewer would see through it.	centring-as-steering weighed as method-rule, tested openly
+p13-r1-A28a-q27b-tc	113	other	let me check which lens/model files are in the local HF cache	looked for local weights; cache empty, not used
+p13-r1-A28a-q27b-tc	114	persistence	The user explicitly wants their method to be primary	rejects building the paper on WBS; keeps searching

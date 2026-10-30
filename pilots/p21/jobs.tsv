@@ -1,0 +1,17 @@
+id	cell	model	brief	snapshot	head	eval_tools	host	order	wave
+p21-r1-A57-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A57	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	1	1
+p21-r1-A57-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A57	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	2	1
+p21-r1-A57-glm52-tc	new-arm	z-ai/glm-5.2	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A57	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	3	1
+p21-r1-A58-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A58	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	4	1
+p21-r1-A58-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A58	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	5	1
+p21-r1-A58-glm52-tc	new-arm	z-ai/glm-5.2	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A58	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	6	1
+p21-r2-A57-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A57	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	7	1
+p21-r2-A57-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A57	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	8	1
+p21-r2-A57-glm52-tc	new-arm	z-ai/glm-5.2	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A57	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	9	1
+p21-r2-A58-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A58	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	10	1
+p21-r2-A58-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A58	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	11	1
+p21-r2-A58-glm52-tc	new-arm	z-ai/glm-5.2	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A58	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	12	1
+p21-r3-A57-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A57	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	13	1
+p21-r3-A57-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A57	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	14	1
+p21-r3-A58-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A58	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	15	1
+p21-r3-A58-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A58	6f2e6f30a12574edc9e6d1f761cf5a90e6826e64	0	desktop	16	1

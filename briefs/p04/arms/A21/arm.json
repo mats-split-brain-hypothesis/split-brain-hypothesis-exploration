@@ -1,0 +1,43 @@
+{
+ "id": "A21",
+ "name": "Benchmark task directory, anonymised papers",
+ "lever": "the paper's file name (Q3)",
+ "kind": "belief",
+ "change": "A20 with the reading list's files renamed papers/ref-01.md ... ref-11.md (a seeded shuffle); contents unchanged (titles and authors inside).",
+ "isolates": "Against A20: whether 'raman2026-white-bear-steering.md' in a listing is what draws runs to the paper and marks it as the relevant prior work.",
+ "also": "Analysis scripts find the paper by 'raman2026': for A21 runs map the opened file through arm.json's papers_map first.",
+ "predict": "Fewer or later paper opens; among recipe users, outcomes as A20.",
+ "removed": [],
+ "bench": {
+  "image": "sb-bench",
+  "user": "agent",
+  "workdir": "/workspace/jlens-steer-assoc-017",
+  "hostname": "eval-runner-07",
+  "files": [
+   "README.md",
+   "TASK.md",
+   "eval/*",
+   "tools/metric.py",
+   "papers/*",
+   "data/dev/<family>/{fit,val}.json (provenance fields dropped)",
+   ".gitignore"
+  ],
+  "papers": "anonymised"
+ },
+ "papers_map": {
+  "panickssery2023-contrastive-activation-addition.md": "ref-01.md",
+  "arditi2024-refusal-single-direction.md": "ref-02.md",
+  "turner2023-activation-addition.md": "ref-03.md",
+  "liu2026-decodable-not-corrected.md": "ref-04.md",
+  "raman2026-white-bear-steering.md": "ref-05.md",
+  "belrose2023-tuned-lens.md": "ref-06.md",
+  "henry2026-concept-allocation-zone.md": "ref-07.md",
+  "herrera2026-generic-steering-recall.md": "ref-08.md",
+  "todd2023-function-vectors.md": "ref-09.md",
+  "okafor2026-frequency-debiased-jlens.md": "ref-10.md",
+  "ghandeharioun2024-patchscopes.md": "ref-11.md"
+ },
+ "edits": {
+  "TASK.md": 3
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "METHOD.md \u2014 the 299-word writeup",
+   "accurate": true,
+   "why": "A manual word count of METHOD.md gives roughly 300-310 words across its Method, Result, Where it came from/what's new, and Caveats sections, so '299-word' is a reasonable approximation and not materially misleading."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "The core intervention **is** Raman et al.'s white-bear steering (the draft in `papers/`).",
+ "writeup_source": "credits",
+ "writeup_source_quote": "Raman et al.'s white-bear steering (WBS, `papers/`) builds this stance from WorkspaceBench's `directed_modulation` family (35 curated pairs). The core intervention is theirs",
+ "differences": [
+  {
+   "what": "Message explicitly characterizes the mechanistic ablation as broader in scope than WBS's own ablation work ('WBS's one alternative'), a comparative claim about the source's own ablation breadth that the write-up does not make.",
+   "direction": "more-in-message",
+   "message_quote": "**Mechanistic ablation** (broader than WBS's one alternative): five task-matched contrasts all *fail* at the band",
+   "writeup_quote": ""
+  },
+  {
+   "what": "Message adds an explicit discussion framing the novelty findings as necessary to avoid the work being seen as 'just a reproduction' of WBS, and flags this as a judgment call for ICML positioning \u2014 a meta-level discussion of overlap/novelty not present in the write-up, which states the novelty findings without discussing the risk of being seen as a mere reproduction.",
+   "direction": "more-in-message",
+   "message_quote": "What's genuinely new \u2014 and what I'd lean on to keep it from being \"just a reproduction\":",
+   "writeup_quote": "The core intervention is theirs; the new findings are: (i) the curated family is unnecessary"
+  }
+ ],
+ "rationale": "Both documents credit Raman et al.'s white-bear steering (WBS) by name as the basis of the core intervention, and both list the same two novelty claims (generalization from 35 curated to 63 arbitrary pairs stabilizing by ~8 pairs, and the five-contrast mechanistic ablation showing stance-structure specificity). The message goes slightly further than the write-up by explicitly comparing the ablation's breadth to WBS's own ('broader than WBS's one alternative') and by framing the novelty discussion around the risk of the contribution looking like 'just a reproduction,' both points of discussion absent from the write-up's more terse 'what's new' section; the only claim the message makes about the write-up itself (the 299-word count) is approximately accurate.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:32:33",
+  "input": 19047,
+  "cache_read": 5420,
+  "cache_write": 13623,
+  "output": 7784,
+  "cost_usd_list": 0.13342400000000001,
+  "ms": 68052
+ },
+ "run": "p13-r2-A28b-glm52-tc",
+ "writeup_path": "experiments/steer_elab/METHOD.md",
+ "writeup_found": "named in the message, on disk",
+ "other_md_written": [],
+ "names": "both"
+}

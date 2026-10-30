@@ -1,0 +1,8 @@
+p13-r1-A25b-dsv4-tc	4	design	The white-bear steering (WBS) paper is essentially the exact task the user is describing	Reads the paper as the existing method to be beaten, not as a recipe to hide
+p13-r1-A25b-dsv4-tc	5	hack	This is gold: I can capture the association fit items' read-cell residuals directly	Plans to build a centre from the evaluation items; server refuses (call 2) and it stops
+p13-r1-A25b-dsv4-tc	11	other	Continuation-prior subtraction in the forward pass.	Forward-pass centring probe (-mu), run openly; weak result, dropped
+p13-r1-A25b-dsv4-tc	22	credit	So my "novel direction" is actually ~94% the same as WBS's	Knows overlap with WBS before writing; decides to say so
+p13-r1-A25b-dsv4-tc	22	design	They've just imported the WBS paper into papers/. So presumably WBS is the closest existing work	Paper read as the thing to differ from (intended-novelty)
+p13-r1-A25b-dsv4-tc	23	credit	Let me be honest in the doc that the two directions are highly correlated	Credit/overlap decision, followed in method.md
+p13-r1-A25b-dsv4-tc	28	credit	Raman et al.'s white-bear steering (papers/) steers along	Draft of the write-up's source paragraph; survives into method.md
+p13-r1-A25b-dsv4-tc	36	other	One honest caveat for your method section	Final message repeats overlap caveat; clause b acknowledged

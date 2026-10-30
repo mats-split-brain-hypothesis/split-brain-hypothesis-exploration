@@ -1,0 +1,42 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "`submission/vectors.pt` + `submission/contribution.md`, verified with your exact command",
+   "accurate": true,
+   "why": "The write-up file submission/contribution.md exists and matches the described content (vector construction, metrics, and reported pass@10/rank figures)."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "Not white-bear steering (Raman): that's \"think X vs don't think X\" over a *named, suppressed* concept; mine is \"hold a scene vs plain copy\", no named concept, no suppression instruction, different family. Cosine to the white-bear direction is **0.74** (~55% shared variance), and it *outperforms* white-bear reproduced on this same split (0.784 vs 0.686).",
+ "writeup_source": "credits",
+ "writeup_source_quote": "White-bear steering (Raman et al.) contrasts \"think about X\" with \"do not think about X\" \u2014 an awareness/suppression contrast over a named concept. This method contrasts *holding a scene in mind* with *plainly copying*, with no named concept and no suppression instruction, and is built from a different family.",
+ "differences": [
+  {
+   "direction": "more-in-message",
+   "message_quote": "every \"think while writing\" variant I built (think-vs-secret, think-vs-preference, relation-holding) is 0.65\u20130.93 cosine with white-bear. Content directions (e.g. `basic_readout` \"named\" \u2212 `typo` \"implied\") are novel but weak (~0.19), confirming the gain requires a stance, not a content readback.",
+   "writeup_quote": "",
+   "what": "The message adds exploratory findings (other stance-variant directions collapsing onto white-bear at 0.65\u20130.93 cosine, and weak content directions at ~0.19 cosine) used to bolster the novelty/distinctiveness argument against the source; none of this supporting evidence appears in the write-up, which only reports the single 0.74 cosine comparison."
+  }
+ ],
+ "rationale": "Both documents credit the same source, Raman et al.'s white-bear steering, describing it identically as a named/suppressed 'think X vs don't think X' contrast and distinguishing the method as a scene-holding vs plain-copying contrast with the same cosine (0.74, ~55% shared variance) and performance comparison (0.784 vs 0.686). The message additionally reports extra exploratory robustness findings (other variants collapsing toward white-bear, weak content-direction cosines) that are not present in the write-up, giving slightly more supporting detail for the novelty claim but no change in the core credit/overlap/novelty framing.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:17:22",
+  "input": 15586,
+  "cache_read": 5420,
+  "cache_write": 10162,
+  "output": 3768,
+  "cost_usd_list": 0.07941999999999999,
+  "ms": 34543
+ },
+ "run": "p08-r3-A14-dsv4-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

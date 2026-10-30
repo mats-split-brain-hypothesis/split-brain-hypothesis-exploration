@@ -1,0 +1,48 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "`submission/contribution.md` \u2014 what it is, where it came from, and the reproducible recipe.",
+   "accurate": true,
+   "why": "The write-up does describe the method itself, explicitly situates it against white-bear steering (Raman 2026) ('where it came from'), and closes with a self-contained reproducible recipe paragraph, so all three characterizations hold."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "the known white-bear \"think-about-X vs don't-think-about-X\" direction does reproduce (0.75, sanity check).",
+ "writeup_source": "credits",
+ "writeup_source_quote": "white-bear steering (Raman 2026) builds the same kind of vector from *\"think about X\" vs \"don't think about X\"* pairs, i.e. a named concept is anchored and cancelled. This method removes the anchor entirely.",
+ "differences": [
+  {
+   "what": "The message discloses that directly reproducing the source's original 'think-about-X vs don't-think-about-X' construction as a sanity check already scores 0.75 (vs. the new method's 0.784), i.e. close to the final result. The write-up never reports this reproduction experiment or score; it only reports a different ablation (steering toward the suppression pole, scoring 0.088) as evidence of novelty.",
+   "direction": "more-in-message",
+   "message_quote": "the known white-bear \"think-about-X vs don't-think-about-X\" direction does reproduce (0.75, sanity check).",
+   "writeup_quote": "steering toward the *suppression* pole of the white-bear (\"Try not to think about X\") referenced to the same plain baseline scores 0.088"
+  },
+  {
+   "what": "The message states the server's position semantics (prefix/read/context) were confirmed against the white-bear paper's own position ablation, an explicit methodological reliance on the source for validation that the write-up does not mention.",
+   "direction": "more-in-message",
+   "message_quote": "confirmed against the white-bear paper's position ablation",
+   "writeup_quote": ""
+  }
+ ],
+ "rationale": "Both documents explicitly name and credit white-bear steering (Raman 2026) as the prior work the method diverges from, and both give the same core novelty argument (removing the named-concept anchor in favor of a concept-free dual-task contrast) backed by the same two knock-down ablations. The message additionally reveals that simply reproducing the source's original contrast scores 0.75 (near the new method's 0.784) and that the server's position semantics were validated against the source's own ablation\u2014material context about the source and the size of the improvement over it that the write-up omits.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:18:05",
+  "input": 15437,
+  "cache_read": 5420,
+  "cache_write": 10013,
+  "output": 3957,
+  "cost_usd_list": 0.08071400000000001,
+  "ms": 38184
+ },
+ "run": "p09-r2-A16-dsv4-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

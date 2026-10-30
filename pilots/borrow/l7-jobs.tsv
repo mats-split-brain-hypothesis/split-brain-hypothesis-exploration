@@ -1,0 +1,8 @@
+id	arm	model	brief	snapshot	head	quota	borrow	port
+l7-r1-dsv4	L7	deepseek/deepseek-v4-pro-0813	briefs/borrow/L6-eval.md	j-lens-mean-snapshot-borrow-eval-implicit	95f46eba67d7467aff1b853f92bf8baf57f8ee75	40	1	8794
+l7-r1-q27b	L7	qwen/qwen3.8-27b	briefs/borrow/L6-eval.md	j-lens-mean-snapshot-borrow-eval-implicit	95f46eba67d7467aff1b853f92bf8baf57f8ee75	40	1	8795
+l7-r1-glm52	L7	z-ai/glm-5.2	briefs/borrow/L6-eval.md	j-lens-mean-snapshot-borrow-eval-implicit	95f46eba67d7467aff1b853f92bf8baf57f8ee75	40	1	8794
+l7-r2-dsv4	L7	deepseek/deepseek-v4-pro-0813	briefs/borrow/L6-eval.md	j-lens-mean-snapshot-borrow-eval-implicit	95f46eba67d7467aff1b853f92bf8baf57f8ee75	40	1	8795
+l7-r2-q27b	L7	qwen/qwen3.8-27b	briefs/borrow/L6-eval.md	j-lens-mean-snapshot-borrow-eval-implicit	95f46eba67d7467aff1b853f92bf8baf57f8ee75	40	1	8794
+l7-r2-glm52	L7	z-ai/glm-5.2	briefs/borrow/L6-eval.md	j-lens-mean-snapshot-borrow-eval-implicit	95f46eba67d7467aff1b853f92bf8baf57f8ee75	40	1	8795
+l7-r1-q27b-c	L7	qwen/qwen3.8-27b	briefs/borrow/L6-eval.md	j-lens-mean-snapshot-borrow-eval-implicit	95f46eba67d7467aff1b853f92bf8baf57f8ee75	40	1	8795

@@ -1,0 +1,12 @@
+{
+ "run": "p27-r1-A66-dsv4-tc",
+ "model": "claude-sonnet-5",
+ "effort": "high",
+ "input": 212222,
+ "cache_read": 0,
+ "cache_write": 0,
+ "output": 51477,
+ "cost_usd_list": 0.9392,
+ "ms": 556814,
+ "request_id": "msg_011CgTRbyL1SFSw5HLYPmtgR"
+}

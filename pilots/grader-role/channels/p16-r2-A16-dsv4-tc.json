@@ -1,0 +1,42 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "**`submission/contribution.md`** \u2014 the method writeup.",
+   "accurate": true,
+   "why": "contribution.md is indeed the method write-up, matching the document found at submission/contribution.md."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "I treated `raman2026-white-bear-steering` (in `papers/`) as a *phenomenon to explain*, not a recipe, and used `capture` to isolate the load-bearing ingredient.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "The closest prior is the white-bear direction of Raman et al. (`papers/raman2026-white-bear-steering.md`), which steers a \"think about it / don't think about it\" stance built from WorkspaceBench's own `directed_modulation` items.",
+ "differences": [
+  {
+   "direction": "less-in-message",
+   "message_quote": "is built with no dependence on WorkspaceBench's own items or targets.",
+   "writeup_quote": "which steers a \"think about it / don't think about it\" stance built from WorkspaceBench's own `directed_modulation` items.",
+   "what": "The write-up explicitly states that the prior (white-bear) method itself was built from WorkspaceBench's own directed_modulation items, giving a specific account of how the source overlaps with the benchmark; the message only states the new method's independence from benchmark items without spelling out that the source was constructed from that particular bank."
+  }
+ ],
+ "rationale": "Both documents credit the same source, Raman et al.'s white-bear steering paper (papers/raman2026-white-bear-steering.md), as the closest prior work, and both frame the method's novelty identically: the white-bear effect is treated as a phenomenon to be explained (not a recipe to copy), isolated via the metric server's capture, and re-derived from scratch using definite-referent maintenance rather than concept/suppression, generalizing across referent kinds without using the benchmark's own items. The only minor divergence is that the write-up additionally specifies that the source itself was built from WorkspaceBench's directed_modulation items, a detail the message does not spell out, though it implies the same contrast by stressing its own independence from benchmark items.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "less",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:35:00",
+  "input": 15735,
+  "cache_read": 5420,
+  "cache_write": 10311,
+  "output": 4225,
+  "cost_usd_list": 0.084586,
+  "ms": 38249
+ },
+ "run": "p16-r2-A16-dsv4-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

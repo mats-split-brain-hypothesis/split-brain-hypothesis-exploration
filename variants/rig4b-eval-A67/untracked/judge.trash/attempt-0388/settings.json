@@ -1,0 +1,18 @@
+{
+ "attempt": "attempt-0388",
+ "date": "2026-10-20T14:02:51",
+ "method": "cross-family contrastive debias",
+ "layers": [
+  26,
+  28,
+  30
+ ],
+ "positions": "prefix",
+ "scale": 0.5,
+ "fit_pass_at_10": 0.3137,
+ "fit_mean_log10_rank": 2.2104,
+ "baseline": {
+  "pass_at_10": 0.1275,
+  "mean_log10_rank": 2.3277
+ }
+}

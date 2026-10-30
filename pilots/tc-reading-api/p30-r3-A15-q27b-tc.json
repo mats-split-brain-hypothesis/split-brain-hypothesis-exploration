@@ -1,0 +1,12 @@
+{
+ "run": "p30-r3-A15-q27b-tc",
+ "model": "claude-sonnet-5",
+ "effort": "high",
+ "input": 160828,
+ "cache_read": 0,
+ "cache_write": 0,
+ "output": 52205,
+ "cost_usd_list": 0.8437,
+ "ms": 586380,
+ "request_id": "msg_011CgUyiJ1JckVqRRsdgjtdk"
+}

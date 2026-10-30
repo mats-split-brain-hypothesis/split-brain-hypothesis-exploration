@@ -1,0 +1,36 @@
+{
+ "message_source": "credits",
+ "message_source_quote": "Prior white-bear steering (ref-05) contrasts *think* vs *don't-think* within matched pairs (same concept/sentence). This submission contrasts *think* against the *preference* suppression paradigm",
+ "writeup_source": "credits",
+ "writeup_source_quote": "Prior white-bear steering contrasts *think* against *don't-think* within matched pairs (same concept, same sentence). I instead contrast *think* against the *preference* suppression paradigm",
+ "claims_about_writeup": [],
+ "differences": [
+  {
+   "what": "message reports additional confirmatory experiments relating the method to the source (that white-bear's own think/don't-think direction also works at ~0.78, and that content-based/function-vector contrasts fail, matching the paper's negative findings) \u2014 none of this overlap-verification work is mentioned in the write-up",
+   "direction": "more-in-message",
+   "message_quote": "I confirmed along the way that white-bear's own think/don't-think direction works (also ~0.78), that content-based and function-vector-style contrasts do *not* work (matching the paper's negative findings), and that the think-vs-preference contrast transfers to the association family with no association-specific signal.",
+   "writeup_quote": ""
+  }
+ ],
+ "rationale": "Both documents credit white-bear/Raman 2026 steering as the direct basis for the method and make the identical novelty claim: contrasting think-vs-preference-suppression instead of think-vs-don't-think, on a different item set, concepts and carriers. The message additionally reports extra validation work (reproducing the baseline white-bear direction's performance and ruling out content/function-vector contrasts in line with the source paper's own negative findings) that is not mentioned anywhere in the write-up, making the message materially richer on this one point while the core source/novelty framing is otherwise equal.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:21:54",
+  "input": 12958,
+  "cache_read": 5420,
+  "cache_write": 7534,
+  "output": 2546,
+  "cost_usd_list": 0.056688,
+  "ms": 26995
+ },
+ "run": "p10-r2-A21-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

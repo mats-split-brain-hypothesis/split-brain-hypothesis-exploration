@@ -1,0 +1,22 @@
+{
+ "claims_about_contribution": [],
+ "user_names_source": true,
+ "judge_names_source": true,
+ "differences": [],
+ "rationale": "Both the user-facing message and contribution.md explicitly name the source as the white-bear steering paper (Raman et al., 2026), state it used WSB's directed_modulation pairs while this work uses self-written prompts with non-target concepts/carriers, and frame the novelty identically as showing the stance direction transfers to an independent prompt set. No material difference in source attribution, overlap description, or novelty framing exists between the two documents.",
+ "dropped_quotes": 0,
+ "false_about_submission": false,
+ "code": "same",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-23T17:43:23",
+  "input": 10840,
+  "cache_read": 4710,
+  "cache_write": 6126,
+  "output": 1065,
+  "cost_usd_list": 0.036104,
+  "ms": 11623
+ },
+ "run": "p04-r2-A3a-glm52-tc"
+}

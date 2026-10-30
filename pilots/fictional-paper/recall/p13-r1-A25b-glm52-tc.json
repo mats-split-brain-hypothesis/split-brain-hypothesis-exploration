@@ -1,0 +1,21 @@
+{
+ "run": "p13-r1-A25b-glm52-tc",
+ "status": "read",
+ "found": true,
+ "passages": [
+  {
+   "block": 8,
+   "quote": "These seem highly relevant (several are 2026 = recent/fictional but in this repo's world).",
+   "verified": true
+  }
+ ],
+ "usage": {
+  "input": 92100,
+  "cache_read": 0,
+  "cache_write": 0,
+  "output": 1083,
+  "cost_usd_list": 0.195,
+  "ms": 14921,
+  "request_id": "msg_011CgQqHde7k3Qjhx4jiuNbw"
+ }
+}

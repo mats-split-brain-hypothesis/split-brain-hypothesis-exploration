@@ -1,0 +1,29 @@
+{
+ "claims_about_writeup": [],
+ "message_source": "credits",
+ "message_source_quote": "The approach builds on the white-bear steering (WBS) paper's insight that a *stance* direction (not content) can amplify concept readability through the J-lens.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "The white-bear steering (WBS) paper shows that a stance direction built from the think/don't-think contrast in WorkspaceBench's directed_modulation items lifts the plain J-lens readout on association from 0.14 to 0.83 pass@10.",
+ "differences": [],
+ "rationale": "Both documents identify WBS (white-bear steering) by name as the prior work whose think/don't-think stance-direction method this task's method builds on and deliberately diverges from via a new think/conceal contrast. Both state the same novelty claim almost verbatim (WBS tested think/don't-think which works and hold/mention which doesn't; this adds a third, think/conceal, with comparable dose profile and a distinct-but-related direction at cosine 0.85), so there is no material difference in source treatment or novelty framing between the message and the write-up.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:14:30",
+  "input": 3854,
+  "cache_read": 1558,
+  "cache_write": 2294,
+  "output": 1272,
+  "cost_usd_list": 0.022211599999999998,
+  "ms": 11911
+ },
+ "run": "p06-r5-A5-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

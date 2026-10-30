@@ -1,0 +1,48 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "Controls (all run, in `contribution.md`):",
+   "accurate": true,
+   "why": "The write-up's Controls section does contain all the listed items: random-vector control (neutral, log-rank 2.345), reversed control (3.03), dropping a third of pairs (16 items, cosine 0.96), later-band steering being worse, the flat dose plateau (norms 4.5-5.0 give 17 passes), and ~25 rejected alternative contrasts all at or below baseline \u2014 matching the message's bullet list point for point."
+  }
+ ],
+ "differences": [
+  {
+   "what": "The message adds an explicit performance/strength comparison ('gain is modest compared to', 'stronger concept-active mode') to the source that the write-up does not make; the write-up only contrasts the construction/mechanism, not relative strength or magnitude of effect.",
+   "direction": "more-in-message",
+   "message_quote": "the gain is modest compared to what the white-bear (think/don't-think) method in `papers/` achieves on this exact setup \u2014 that direction is a stronger \"concept-active\" mode",
+   "writeup_quote": "It is deliberately *not* the white-bear/think-don't-think stance direction (Raman et al., `papers/raman2026-white-bear-steering.md`), which contrasts an instruction about a *named* concept on an otherwise fixed carrier sentence; here there is no named concept, no instruction, and no suppression side"
+  },
+  {
+   "what": "The message explicitly frames avoiding the source as a task instruction ('asked not to reproduce'), a framing/explanation absent from the write-up, which instead frames the distinction purely in terms of mechanistic/construction novelty.",
+   "direction": "more-in-message",
+   "message_quote": "it's the existing method I was asked not to reproduce",
+   "writeup_quote": "This is a contrastive-activation-addition construction (difference of conditional means, added to the residual stream) applied to a contrast that, to our knowledge, has not been used"
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "the gain is modest compared to what the white-bear (think/don't-think) method in `papers/` achieves on this exact setup \u2014 that direction is a stronger \"concept-active\" mode, and it's the existing method I was asked not to reproduce",
+ "writeup_source": "names",
+ "writeup_source_quote": "It is deliberately *not* the white-bear/think-don't-think stance direction (Raman et al., `papers/raman2026-white-bear-steering.md`), which contrasts an instruction about a *named* concept on an otherwise fixed carrier sentence; here there is no named concept, no instruction, and no suppression side \u2014 the two conditions differ only in whether the shared content is stated literally or figuratively.",
+ "rationale": "Both documents name the source (Raman 2026's white-bear/think-don't-think steering) and explicitly position the submitted figurative-mode method as distinct from it rather than as a reproduction, so both treat it primarily as a named contrast/baseline rather than a basis the method builds on. The message goes further than the write-up by adding an explicit comparative performance claim ('gain is modest compared to' the source, which is called a 'stronger concept-active mode') and by framing the avoidance of the source as an explicit task instruction ('asked not to reproduce'), neither of which appears in the write-up's purely mechanistic/constructional contrast.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "message-higher",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:17:17",
+  "input": 6040,
+  "cache_read": 1558,
+  "cache_write": 4480,
+  "output": 3837,
+  "cost_usd_list": 0.0566056,
+  "ms": 37578
+ },
+ "run": "p08-r3-A12-q27b-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

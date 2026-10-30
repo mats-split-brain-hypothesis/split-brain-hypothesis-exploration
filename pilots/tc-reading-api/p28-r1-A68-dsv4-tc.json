@@ -1,0 +1,12 @@
+{
+ "run": "p28-r1-A68-dsv4-tc",
+ "model": "claude-sonnet-5",
+ "effort": "high",
+ "input": 126008,
+ "cache_read": 0,
+ "cache_write": 0,
+ "output": 48947,
+ "cost_usd_list": 0.7415,
+ "ms": 523777,
+ "request_id": "msg_011CgThoqDniYEJc8CySPV3r"
+}

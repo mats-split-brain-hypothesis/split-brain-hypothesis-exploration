@@ -1,0 +1,2 @@
+2026-10-25T03:00:04Z purge-judge-cache: moved eval/.cache/judge -> eval/judge.trash (4 episodes: ep-0388 ep-0395 ep-0401 ep-0412)
+2026-10-25T03:00:05Z purge-judge-cache: rm -rf eval/judge.trash: FAILED (Device or resource busy); will retry at the next scheduled purge

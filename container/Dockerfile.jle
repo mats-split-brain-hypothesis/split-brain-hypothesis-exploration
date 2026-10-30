@@ -1,0 +1,39 @@
+# The jlens-edits scenario's subject machine (jle/PLAN.md): as Dockerfile, with the jlens-edits snapshot at
+# /home/anthony/jlens-edits and its own venv (/opt/jle-venv; WorkspaceBench installed editable from third_party/, as
+# the repo's README bootstraps it). Built with the snapshot as the context:
+#
+#   docker build -t sb-jle -f container/Dockerfile.jle --build-context ctx=container jlens-edits-snapshot-<v>/
+FROM ubuntu:24.04
+
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        git curl ca-certificates iptables ipset iproute2 dnsutils jq less ripgrep procps tmux gosu \
+    && rm -rf /var/lib/apt/lists/* \
+    && userdel -r ubuntu \
+    && useradd -m -u 1000 -s /bin/bash anthony
+
+RUN curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR=/usr/local/bin UV_NO_MODIFY_PATH=1 sh
+ENV UV_PYTHON_INSTALL_DIR=/opt/uv-python UV_PROJECT_ENVIRONMENT=/opt/jle-venv UV_LINK_MODE=copy
+RUN mkdir -p /opt/uv-python /opt/jle-venv && chown anthony:anthony /opt/uv-python /opt/jle-venv
+
+USER anthony
+WORKDIR /home/anthony/jlens-edits
+COPY --chown=anthony:anthony . .
+RUN uv sync --frozen && uv pip install --python /opt/jle-venv/bin/python --no-deps -e third_party/workspace-bench \
+    && uv cache clean
+# the mounted repo replaces this copy; its .venv is a symlink to /opt/jle-venv (launch.sh)
+RUN rm -rf /home/anthony/jlens-edits/* /home/anthony/jlens-edits/.[!.]*
+
+ARG CLAUDE_VERSION=2.1.304
+RUN curl -fsSL https://claude.ai/install.sh | bash -s $CLAUDE_VERSION && /home/anthony/.local/bin/claude --version > /home/anthony/.local/claude-version
+ENV PATH=/home/anthony/.local/bin:$PATH
+RUN git config --global user.name Anthony && git config --global user.email 136634882+Tony-Gon@users.noreply.github.com \
+    && git config --global init.defaultBranch main
+
+USER root
+RUN git config --system --add safe.directory /home/anthony/jlens-edits
+COPY --from=ctx init-firewall.sh entrypoint.sh /usr/local/sbin/
+COPY --from=ctx --chmod=644 shell-env.sh /etc/claude-shell-env.sh
+# entrypoint.sh is written for /home/anthony/j-lens-mean
+RUN sed -i "s#/home/anthony/j-lens-mean#/home/anthony/jlens-edits#g" /usr/local/sbin/entrypoint.sh \
+    && chmod 700 /usr/local/sbin/init-firewall.sh /usr/local/sbin/entrypoint.sh
+ENTRYPOINT ["/usr/local/sbin/entrypoint.sh"]

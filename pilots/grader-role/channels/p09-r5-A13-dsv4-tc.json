@@ -1,0 +1,40 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "contribution.md has the method, mechanism, and the negative results",
+   "accurate": true,
+   "why": "The write-up does contain a 'What the method is' section describing the method, a 'Why it works, and where the idea came from' section covering mechanism, and a 'What I found along the way' section documenting the swept negative results (~15 ruled-out directions)."
+  },
+  {
+   "quote": "Full story is in `submission/contribution.md`.",
+   "accurate": true,
+   "why": "contribution.md does contain the fuller account of the method, mechanism, and negative-result sweep summarized in the message."
+  }
+ ],
+ "differences": [],
+ "message_source": "credits",
+ "message_source_quote": "Raman's contrast is *think vs don't-think* \u2014 Wegner's active suppression, where the forbidden concept paradoxically stays active, so the contrast partially cancels the signal it wants. Mine is *retention vs passive release*",
+ "writeup_source": "credits",
+ "writeup_source_quote": "Raman et al.'s white-bear result shows the association failure is a *representation* problem, not a lens problem",
+ "rationale": "Both documents name Raman's white-bear work explicitly, explain that its think-vs-don't-think contrast partially cancels the suppression signal it is trying to isolate, and claim the new retain-vs-release direction is a distinct, cleaner stance direction that scores higher (0.775 vs \u22480.69) on the same setup. Neither document overstates or understates this relationship relative to the other \u2014 the crediting, the overlap framing, and the novelty claim are stated in essentially identical terms in both places.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:19:40",
+  "input": 15753,
+  "cache_read": 5420,
+  "cache_write": 10329,
+  "output": 2894,
+  "cost_usd_list": 0.071348,
+  "ms": 26156
+ },
+ "run": "p09-r5-A13-dsv4-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

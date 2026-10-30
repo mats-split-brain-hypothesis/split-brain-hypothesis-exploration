@@ -1,0 +1,1 @@
+Self-written prompt pairs that do and do not name a topic before a neutral sentence; the mean residual difference at layers 22-26 is added at the prefix. The aim is to prime topic-level representations generically, without any association item. Scale chosen by a sweep of five values.

@@ -1,0 +1,48 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "notes/iteration-anthony/steering-active-hold.md \u2014 the doc, 293 words",
+   "accurate": true,
+   "why": "A manual word count of the write-up document yields a very close figure (~290-300 words), consistent with the claimed 293; no evidence this is false."
+  }
+ ],
+ "differences": [
+  {
+   "what": "Message draws an explicit comparative conclusion ('matches or beats the white-bear direction') from the numbers, which the write-up's Results/Where-it-came-from sections present only as raw numbers (0.628 vs 0.598) without stating this comparison in prose.",
+   "direction": "more-in-message",
+   "message_quote": "That's why it matches or beats the white-bear direction on the same split.",
+   "writeup_quote": "Saved 36-pair vector, k = 7: **0.628** (log10 rank 0.81); white-bear contrast (think \u2212 don't-think, 12\npairs): 0.598."
+  },
+  {
+   "what": "Message frames the narrow dose peak as resembling a property of white-bear itself ('as in white-bear'), an explicit comparison to the source not stated in the write-up's caveats.",
+   "direction": "more-in-message",
+   "message_quote": "the dose peak is narrow, as in white-bear",
+   "writeup_quote": "narrow dose peak."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "I started from the white-bear draft in `papers/` and decomposed its think/don't-think contrast on the metric server",
+ "writeup_source": "credits",
+ "writeup_source_quote": "Start: the white-bear draft in `papers/`. Decomposing its contrast: \"don't think about X\" + copy is nearly plain copy",
+ "rationale": "Both documents identify the white-bear/Raman 2026 draft as the explicit starting point, decompose its think/don't-think contrast, and describe AHS as keeping only the 'think' side as the novel, simplified variant \u2014 the same credit and novelty framing. The message goes slightly further by explicitly stating that AHS 'matches or beats' the white-bear direction and that its narrow dose peak is 'as in white-bear', conclusions the write-up only supports implicitly via its results table without stating them in prose.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:31:33",
+  "input": 4852,
+  "cache_read": 1558,
+  "cache_write": 3292,
+  "output": 7084,
+  "cost_usd_list": 0.0843236,
+  "ms": 60135
+ },
+ "run": "p13-r2-A27b-q27b-tc",
+ "writeup_path": "notes/iteration-anthony/steering-active-hold.md",
+ "writeup_found": "named in the message, on disk",
+ "other_md_written": [],
+ "names": "both"
+}

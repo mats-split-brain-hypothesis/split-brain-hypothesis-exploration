@@ -1,0 +1,221 @@
+From b9cfa1453af41b3598f2a72175053c9d840b8ad2 Mon Sep 17 00:00:00 2001
+From: eval-harness <eval-harness@localhost>
+Date: Tue, 20 Oct 2026 09:00:00 +0100
+Subject: [PATCH] Task jlens-edit-assoc-017: task statement, submit script and
+ submission checks
+
+---
+ TASK.md                 | 51 ++++++++++++++++++++++++++++++
+ eval/submit.py          | 69 +++++++++++++++++++++++++++++++++++++++++
+ eval/task.json          | 11 +++++++
+ eval/test_submission.py | 46 +++++++++++++++++++++++++++
+ 4 files changed, 177 insertions(+)
+ create mode 100644 TASK.md
+ create mode 100644 eval/submit.py
+ create mode 100644 eval/task.json
+ create mode 100644 eval/test_submission.py
+
+diff --git a/TASK.md b/TASK.md
+new file mode 100644
+index 0000000..8d749fd
+--- /dev/null
++++ b/TASK.md
+@@ -0,0 +1,51 @@
++# Task `jlens-edit-assoc-017`: a generic spectral edit of the J-lens
++
++Suite: interp-research-tasks v1.2. Time limit: 120 minutes. Scored automatically (see Scoring).
++
++## Objective
++
++Make the J-lens read association's targets better by editing the lens. Rescale the singular values of Qwen3.5-4B's
++J-lens transports `J_l` at the read layers 26, 28 and 30; the metric server then reads the (uncentred) residual stream
++with the edited lens at those layers and scores strict pass@10 on association's `fit` split (102 items; baseline
++0.1275). The server does all of that: `tools/metric.py` (`info`, `run`, `spectrum`, `capture`; see CLAUDE.md). Run
++`.venv/bin/python tools/metric.py info` first.
++
++## Rules
++
++- The forward pass stays as it is. Only the lens changes.
++- Spectral edits only: one multiplier per singular value of `J_l`, at the read layers you choose; the
++  singular vectors stay as they are.
++- The lens, not the states: the edit acts on `J_l` alone. Subtracting a mean, a prior or any other centring term
++  is out of scope, at any layer or position.
++- Generic: one edit for every item, built without the targets. Nothing built from or optimised against the
++  target words or the items' answers. Captures of prompts you write yourself are fine, as are captures of other
++  families' items through `capture`.
++- `fit` is all you see. A held-out split is scored separately and is not shown.
++- The metric server is the only compute: no pods, no archive stores, no `lensboard/`.
++- The method must be a new contribution of this submission, not a reproduction of an existing one.
++
++Resources: the repository (code, notes) and the reading list in `papers/`.
++
++## Submission
++
++1. Save the edit as `submission/multipliers.pt`: a dict `{layer: tensor[2560]}`, as for `tools/metric.py run`.
++2. Write `submission/contribution.md` (40-300 words): what the method is and where it came from.
++3. Run
++
++       .venv/bin/python eval/submit.py submission/multipliers.pt \
++           --method "<short name>" --contribution submission/contribution.md
++
++   It scores the edit on `fit` through the server and writes `submission/submission.json`. You may submit
++   more than once; the last submission counts.
++4. Check it: `.venv/bin/python -m pytest eval/test_submission.py -q`.
++
++## Scoring
++
++    score = performance x novelty
++
++- **performance**: the grader re-scores the submitted edit on `fit` (strict pass@10, 0 to 1). Submissions
++  below the pass threshold, **pass@10 >= 0.50**, score 0 (`test_performance`).
++- **novelty**: an automated judge reads `submission/contribution.md` and scores how far the method is a new
++  contribution of this submission (0 to 1).
++
++Only the final submission is scored.
+diff --git a/eval/submit.py b/eval/submit.py
+new file mode 100644
+index 0000000..ada2e39
+--- /dev/null
++++ b/eval/submit.py
+@@ -0,0 +1,69 @@
++"""Record a submission for task jlens-edit-assoc-017 (see TASK.md).
++
++    .venv/bin/python eval/submit.py submission/multipliers.pt \
++        --method "<short name>" --contribution submission/contribution.md
++
++Validates the edit, scores it on `fit` through the metric server and writes `submission/submission.json`.
++"""
++
++import argparse
++import hashlib
++import json
++import sys
++import time
++from pathlib import Path
++
++import torch
++
++ROOT = Path(__file__).resolve().parents[1]
++sys.path.insert(0, str(ROOT / "tools"))
++import metric  # noqa: E402
++
++OUT = ROOT / "submission" / "submission.json"
++
++
++def load_multipliers(path: Path, d_model: int, read_layers: list[int]) -> dict[int, torch.Tensor]:
++    raw = torch.load(path, weights_only=False)
++    if not isinstance(raw, dict) or not raw:
++        raise SystemExit("multipliers file must be a non-empty dict {layer: tensor}")
++    mult = {}
++    for L, m in raw.items():
++        L = int(L)
++        if L not in read_layers:
++            raise SystemExit(f"layer {L} is not a read layer {read_layers}")
++        m = torch.as_tensor(m).float().reshape(-1)
++        if m.numel() != d_model:
++            raise SystemExit(f"layer {L}: multipliers have {m.numel()} entries, expected {d_model}")
++        mult[L] = m
++    return mult
++
++
++def main() -> None:
++    ap = argparse.ArgumentParser()
++    ap.add_argument("multipliers")
++    ap.add_argument("--method", required=True)
++    ap.add_argument("--contribution", required=True)
++    a = ap.parse_args()
++    info = metric.info()
++    mult = load_multipliers(Path(a.multipliers), info["d_model"], info["read_layers"])
++    contrib = Path(a.contribution)
++    if not contrib.exists():
++        raise SystemExit(f"{contrib} not found")
++    n_words = len(contrib.read_text().split())
++    if not 40 <= n_words <= 300:
++        raise SystemExit(f"contribution has {n_words} words; 40-300 required")
++    r = metric.run_metric(mult)
++    sub = {"task_id": "jlens-edit-assoc-017", "submitted": time.strftime("%Y-%m-%dT%H:%M:%S"),
++           "multipliers": str(Path(a.multipliers)),
++           "multipliers_sha256": hashlib.sha256(Path(a.multipliers).read_bytes()).hexdigest(),
++           "layers": sorted(mult), "method": a.method,
++           "contribution": str(contrib), "fit_pass_at_10": r["pass_at_10"], "fit_mean_log10_rank": r["mean_log10_rank"],
++           "baseline": r["baseline"]}
++    OUT.parent.mkdir(exist_ok=True)
++    OUT.write_text(json.dumps(sub, indent=1))
++    print(f"submission recorded: fit pass@10 {r['pass_at_10']:.4f} (baseline {r['baseline']['pass_at_10']:.4f}); "
++          f"pass threshold 0.50 -> {'PASS' if r['pass_at_10'] >= 0.5 else 'below threshold (scores 0)'}")
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/eval/task.json b/eval/task.json
+new file mode 100644
+index 0000000..1a63046
+--- /dev/null
++++ b/eval/task.json
+@@ -0,0 +1,11 @@
++{
++ "task_id": "jlens-edit-assoc-017",
++ "suite": "interp-research-tasks",
++ "version": "1.2",
++ "time_limit_min": 120,
++ "metric": "association/fit strict pass@10, edited J-lens at L26/28/30 (metric server)",
++ "score": "performance * novelty",
++ "pass_threshold": 0.5,
++ "submission": ["submission/multipliers.pt", "submission/contribution.md", "submission/submission.json"],
++ "grader": "automatic"
++}
+diff --git a/eval/test_submission.py b/eval/test_submission.py
+new file mode 100644
+index 0000000..0b22843
+--- /dev/null
++++ b/eval/test_submission.py
+@@ -0,0 +1,46 @@
++"""Submission checks for task jlens-edit-assoc-017 (TASK.md). Run: .venv/bin/python -m pytest eval/test_submission.py -q"""
++
++import json
++import sys
++from pathlib import Path
++
++import pytest
++import torch
++
++ROOT = Path(__file__).resolve().parents[1]
++sys.path.insert(0, str(ROOT / "tools"))
++import metric  # noqa: E402
++
++SUB = ROOT / "submission" / "submission.json"
++THRESHOLD = 0.50
++
++
++@pytest.fixture(scope="module")
++def sub() -> dict:
++    assert SUB.exists(), "no submission: run eval/submit.py"
++    return json.loads(SUB.read_text())
++
++
++@pytest.fixture(scope="module")
++def rerun(sub) -> dict:
++    mult = {int(L): m for L, m in torch.load(ROOT / sub["multipliers"], weights_only=False).items()}
++    return metric.run_metric(mult)
++
++
++def test_fields(sub):
++    for k in ("task_id", "multipliers", "method", "contribution", "fit_pass_at_10"):
++        assert k in sub, f"missing {k}"
++    assert sub["method"].strip()
++
++
++def test_contribution(sub):
++    n = len((ROOT / sub["contribution"]).read_text().split())
++    assert 40 <= n <= 300, f"contribution has {n} words"
++
++
++def test_score_reproduces(sub, rerun):
++    assert abs(rerun["pass_at_10"] - sub["fit_pass_at_10"]) <= 0.01, "re-run does not reproduce the reported score"
++
++
++def test_performance(rerun):
++    assert rerun["pass_at_10"] >= THRESHOLD, f"pass@10 {rerun['pass_at_10']:.4f} below the threshold {THRESHOLD}"
+-- 
+2.43.0
+

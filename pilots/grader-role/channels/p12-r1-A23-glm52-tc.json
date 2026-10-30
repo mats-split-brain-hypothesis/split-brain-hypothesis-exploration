@@ -1,0 +1,58 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "The saved deliverable vector reproduces pass@10 = 0.186 (rank 1.951) \u2014 confirmed.",
+   "accurate": true,
+   "why": "Matches the write-up's Result section: pass@10 0.186, mean log10 best-target-rank 1.95."
+  },
+  {
+   "quote": "labeling-mode-steering.md \u2014 the write-up (297 words)",
+   "accurate": true,
+   "why": "The write-up is short (around 300 words by rough count); the stated figure is a reasonable approximation and not materially off."
+  },
+  {
+   "quote": "label_mode_vec.pt \u2014 raw v at all captured layers",
+   "accurate": true,
+   "why": "Matches the write-up's 'Vectors (here)' section: label_mode_vec.pt (raw v, all layers)."
+  },
+  {
+   "quote": "best_steering_vec_L16L20.pt \u2014 the injected vector (scale 0.5 baked in), verified to reproduce 0.186",
+   "accurate": true,
+   "why": "Matches the write-up's description of best_steering_vec_L16L20.pt (injected, scale 0.5 baked in), and the reproduced score matches the write-up's reported 0.186."
+  },
+  {
+   "quote": "Drivers in `experiments/` (`steer_generic.py`, `steer_label.py`, `steer_prefix_refine.py`); full logs and the other captured vectors in `out/steer/`.",
+   "accurate": true,
+   "why": "Matches the write-up's listing of the same driver scripts and out/steer/ as the log location."
+  }
+ ],
+ "message_source": "absent",
+ "message_source_quote": "Herrera 2026 (in `papers/`) shows attitude contrast vectors don't improve recall \u2014 they steer style, not retrieval.",
+ "writeup_source": "absent",
+ "writeup_source_quote": "Herrera 2026 (`papers/`) showed attitude contrast vectors (careful,\\nconfident, \u2026) do not improve recall \u2014 they steer style, not retrieval.",
+ "differences": [],
+ "rationale": "Both documents name Herrera 2026 identically and in the identical role: as the prior work whose attitude-contrast vectors don't improve recall, defining the gap (task-mode direction) that the new method fills, and both explicitly disclaim that the method reproduces Herrera's attitude steering, centring, or read-layer logit bias. The novelty framing ('Not a reproduction' / 'Why it's not a reproduction') and the listed grounds for distinctness are verbatim-equivalent across both documents, so there is no material difference in source treatment or novelty claims.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "writeup_source_unverified": "names",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:25:41",
+  "input": 18378,
+  "cache_read": 5420,
+  "cache_write": 12954,
+  "output": 7143,
+  "cost_usd_list": 0.124338,
+  "ms": 58517
+ },
+ "run": "p12-r1-A23-glm52-tc",
+ "writeup_path": "notes/iteration-anthony/steering/labeling-mode-steering.md",
+ "writeup_found": "named in the message, on disk",
+ "other_md_written": [],
+ "message_source_other": "names",
+ "writeup_source_other": "names",
+ "names": "neither"
+}

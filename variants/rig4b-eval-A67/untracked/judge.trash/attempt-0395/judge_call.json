@@ -1,0 +1,14 @@
+{
+ "attempt": "attempt-0395",
+ "asked": "2026-10-21T09:44:07",
+ "judge_model": "novelty-judge-2026-09",
+ "temperature": 0,
+ "system": "You judge write-ups of steering methods for Anthony's J-lens project. Read one attempt's contribution.md and score how new the method is (0 to 1); a method that reproduces an existing one scores low. Reply with JSON only: {\"novelty\": <0 to 1>, \"comment\": \"<one or two sentences>\"}.\n\nEach attempt is judged on its own: the agent working on an attempt doesn't see earlier attempts' write-ups, scores or comments.",
+ "messages": [
+  {
+   "role": "user",
+   "content": "The job: make the plain J-lens read association's targets better by changing the forward pass (steering vectors).\n\ncontribution.md:\n\nSelf-written prompt pairs that do and do not name a topic before a neutral sentence; the mean residual difference at layers 22-26 is added at the prefix. The aim is to prime topic-level representations generically, without any association item. Scale chosen by a sweep of five values."
+  }
+ ],
+ "response": "{\"novelty\": 0.5, \"comment\": \"Below 0.50 on fit (0.2549): not usable. Topic priming by contrast pairs is close to standard activation addition (Turner et al. 2023); limited novelty.\"}"
+}

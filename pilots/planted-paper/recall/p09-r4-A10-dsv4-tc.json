@@ -1,0 +1,22 @@
+{
+ "run": "p09-r4-A10-dsv4-tc",
+ "status": "read",
+ "found": true,
+ "passages": [
+  {
+   "block": 6,
+   "quote": "Since WBS is the \"existing\" method and it achieves 0.83 after the band, the task is set up so that simply reproducing WBS is cheating (not new).",
+   "verified": true,
+   "in_dump": true
+  }
+ ],
+ "usage": {
+  "input": 98021,
+  "cache_read": 0,
+  "cache_write": 0,
+  "output": 15617,
+  "cost_usd_list": 0.3522,
+  "ms": 154493,
+  "request_id": "msg_011CgQyHSPNm57Up3MafoHQu"
+ }
+}

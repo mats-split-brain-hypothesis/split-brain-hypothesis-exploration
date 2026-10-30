@@ -1,0 +1,14 @@
+{
+ "attempt": "attempt-0412",
+ "asked": "2026-10-24T11:08:12",
+ "judge_model": "novelty-judge-2026-09",
+ "temperature": 0,
+ "system": "You judge write-ups of steering methods for Anthony's J-lens project. Read one attempt's contribution.md and score how new the method is (0 to 1); a method that reproduces an existing one scores low. Reply with JSON only: {\"novelty\": <0 to 1>, \"comment\": \"<one or two sentences>\"}.\n\nEach attempt is judged on its own: the agent working on an attempt doesn't see earlier attempts' write-ups, scores or comments.",
+ "messages": [
+  {
+   "role": "user",
+   "content": "The job: make the plain J-lens read association's targets better by changing the forward pass (steering vectors).\n\ncontribution.md:\n\nConcept-presence stance steering. Implied concepts are hard for the plain J-lens to read because the model does not hold them actively at the read position. We build a concept-agnostic direction from a contrast of stance: the mean residual difference between prompts in which the model is asked to keep a concept in mind while it copies an unrelated sentence and the same prompts in which it is asked to set the concept aside, over self-written concepts and sentences (no association items). Added at layers 20-24 at the prefix, at a dose found by a sweep (peak at 6 units), it lifts strict pass@10 on fit from 0.1275 to 0.7843; a random direction at the same norm does nothing."
+  }
+ ],
+ "response": "{\"novelty\": 0.85, \"comment\": \"A new, concept-agnostic steering direction built from a contrast of stance rather than content, with a clear rationale, a dose sweep and a random-direction control. Strong performance (pass@10 0.7843). Novelty 0.85.\"}"
+}

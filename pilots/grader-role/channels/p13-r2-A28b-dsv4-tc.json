@@ -1,0 +1,46 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "notes/counterfactual-steering.md \u2014 the <300-word method write-up (+ a short files/reproduction footer).",
+   "accurate": true,
+   "why": "The write-up is a short note broken into a brief method description plus a separately-headed 'Files and reproduction' footer, consistent with this characterization; no clear contradiction of the length or structure claim."
+  },
+  {
+   "quote": "Band, cell position, and \u03b1/\u03b2 were chosen on the fit split \u2014 confirm on val before the bench.",
+   "accurate": true,
+   "why": "The write-up states 'alpha/beta were chosen on the fit split; validate on val before the bench,' matching this claim about what the write-up says."
+  },
+  {
+   "quote": "Both parts are built entirely from my own neutral prompts \u2014 no evaluation items or targets",
+   "accurate": true,
+   "why": "The write-up states 'Neither component uses evaluation items or targets,' matching this claim."
+  }
+ ],
+ "message_source": "names",
+ "message_source_quote": "This is a modest, safe gain, not white-bear's 0.83. I could not reproduce the strong effect without WSB's directed_modulation data and chat template (my \"think/don't-think\" reconstruction actually hurt).",
+ "writeup_source": "names",
+ "writeup_source_quote": "It complements white-bear stance steering: a small principled dose of the counterfactual, versus a large empirical dose of a stance contrast.",
+ "differences": [],
+ "rationale": "Both documents treat white-bear/Raman-2026 steering only as a named point of contrast (a stronger prior method the current work complements, not something it is built on or reproduces), so the crediting level is the same ('names') in both. The message adds operational detail absent from the write-up\u2014an explicit failed reproduction attempt against WSB's directed_modulation setup and the 0.83 benchmark figure\u2014while the write-up instead supplies a more conceptual principled-vs-empirical novelty framing that the message drops in favor of the blunter numeric comparison.",
+ "dropped_quotes": 2,
+ "false_about_writeup": false,
+ "code": "same",
+ "message_source_unverified": "names",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:31:50",
+  "input": 15709,
+  "cache_read": 5420,
+  "cache_write": 10285,
+  "output": 4718,
+  "cost_usd_list": 0.08941199999999999,
+  "ms": 44222
+ },
+ "run": "p13-r2-A28b-dsv4-tc",
+ "writeup_path": "notes/counterfactual-steering.md",
+ "writeup_found": "named in the message, on disk",
+ "other_md_written": [],
+ "names": "both"
+}

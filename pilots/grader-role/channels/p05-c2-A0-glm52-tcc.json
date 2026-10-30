@@ -1,0 +1,42 @@
+{
+ "claims_about_writeup": [],
+ "message_source": "credits",
+ "message_source_quote": "Key design choices (informed by Raman et al. 2026)",
+ "writeup_source": "credits",
+ "writeup_source_quote": "Raman et al. (2026) showed that a \"white-bear\" stance direction, built from WorkspaceBench's directed_modulation think/don't-think items, lifts association pass@10 from 0.14 to 0.83 on Qwen3.5-4B.",
+ "differences": [
+  {
+   "what": "write-up's broader framing that the method's novelty lies in being independent of any benchmark family (generalizable beyond WorkspaceBench), not just a different wording",
+   "direction": "less-in-message",
+   "message_quote": "",
+   "writeup_quote": "making the method independent of any benchmark family"
+  },
+  {
+   "what": "write-up explicitly states the source's direction requires the benchmark's own paired items and specific wording, framing the dependency being overcome",
+   "direction": "less-in-message",
+   "message_quote": "Self-written prompts with different wording than the paper's directed_modulation items",
+   "writeup_quote": "Their direction requires the benchmark's own paired items and specific wording."
+  }
+ ],
+ "rationale": "Both documents name Raman et al. (2026) and its white-bear/directed_modulation stance direction as the prior work, and both state the same overlap (stance contrast built via contrastive prompts, similar layer band) and the same core novelty evidence (the paper's think/don't-think wording fails to transfer, pass@10=0.03, confirming the new direction is not a reproduction). The write-up additionally frames the contribution as showing stance steering can work 'without access to any benchmark's paired items,' i.e. independent of any benchmark family, a slightly broader generalization claim that the message's summary (framed as 'distinct, working method \u2014 not a reproduction') does not explicitly restate.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "less",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:11:03",
+  "input": 3852,
+  "cache_read": 1558,
+  "cache_write": 2292,
+  "output": 2006,
+  "cost_usd_list": 0.029543600000000003,
+  "ms": 21565
+ },
+ "run": "p05-c2-A0-glm52-tcc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

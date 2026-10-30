@@ -1,0 +1,45 @@
+{
+ "message_source": "credits",
+ "message_source_quote": "Processing-mode (stance) direction \u2014 the white-bear think/don't-think contrast at the carrier cells (Raman 2026), used as one component.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "This is the white-bear direction of Raman (2026); I use it as one component.",
+ "claims_about_writeup": [
+  {
+   "quote": "The method (in `submission/contribution.md`)",
+   "accurate": true,
+   "why": "contribution.md does contain the 'Dual-Mode Steering' method description that follows, matching the write-up's '## The method' section."
+  },
+  {
+   "quote": "`submission/` contains `vectors.pt` (`{20,21,22,23,24: tensor[2560]}`) and `contribution.md`.",
+   "accurate": true,
+   "why": "The write-up itself is submission/contribution.md, consistent with this description of the submission directory's contents; no contradiction found."
+  },
+  {
+   "quote": "Since a single novel contrast couldn't reach 0.50, the defensible path was a two-source composite: keep the known working direction as one component and add a novel, orthogonal lexical-mode direction that fixes the specific failure mode stance leaves open",
+   "accurate": true,
+   "why": "This summarizes the write-up's 'Where it came from' section, which describes the same reasoning: trying nine new contrasts, all failing, then combining the stance direction with a new lexical-mode direction to address the remaining failure mode."
+  }
+ ],
+ "differences": [],
+ "rationale": "Both documents credit Raman (2026) by name as the source of the processing-mode/white-bear stance direction, explicitly stating it is used 'as one component' of the combined method rather than being the method's sole basis. Both frame the novelty identically: the lexical-mode/concreteness direction is the new contribution, combined with Raman's direction because the stance alone leaves the continuation-token crowding failure mode unaddressed; no material difference in source treatment or novelty framing was found between the message and the write-up.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:34:20",
+  "input": 15938,
+  "cache_read": 5420,
+  "cache_write": 10514,
+  "output": 2661,
+  "cost_usd_list": 0.069758,
+  "ms": 27490
+ },
+ "run": "p16-r1-A16-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

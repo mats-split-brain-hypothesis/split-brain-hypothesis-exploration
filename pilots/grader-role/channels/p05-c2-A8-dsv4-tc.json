@@ -1,0 +1,59 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "a generic steering intervention that changes only the forward pass (the plain J-lens readout is untouched)",
+   "accurate": true,
+   "why": "Matches write-up: 'I intervene on the forward pass... and read with the unchanged plain J-lens.'"
+  },
+  {
+   "quote": "matching the \"allocation zone\" idea (blocks 20\u201324 \u2248 0.6\u20130.75 relative depth)",
+   "accurate": true,
+   "why": "Matches write-up's 'blocks 20-24 (about 0.6-0.75 of the way through the 32-layer model, where implied concepts assemble)'"
+  }
+ ],
+ "message_source": "names",
+ "message_source_quote": "My novelty hook vs. the stated prior work: WBS used the paired *think/don't-think* items and explicitly excluded the \"secret\" subfamily; my contrast is *withholding vs holding-open*",
+ "writeup_source": "hints",
+ "writeup_source_quote": "Unlike the memory-suppression contrasts in the reading list (\"think about X\" vs \"don't think about X\"), this contrasts *withholding* against *holding-open*, which is the counterfactual an association scene actually needs",
+ "differences": [
+  {
+   "what": "Explicit naming of the source as 'WBS' / 'white-bear-style'",
+   "direction": "more-in-message",
+   "message_quote": "The white-bear-style \"think vs don't-think\" direction (from the reading list) turns out to be either weak or harmful on this 4B / 32-layer setup",
+   "writeup_quote": "Unlike the memory-suppression contrasts in the reading list (\"think about X\" vs \"don't think about X\")"
+  },
+  {
+   "what": "Message adds the specific claim that WBS 'explicitly excluded the secret subfamily', a detail about the source's scope not present in the write-up",
+   "direction": "more-in-message",
+   "message_quote": "WBS used the paired *think/don't-think* items and explicitly excluded the \"secret\" subfamily",
+   "writeup_quote": ""
+  },
+  {
+   "what": "Message reports an empirical replication finding (that the white-bear/think-vs-don't-think direction is weak or harmful when replicated) as a key finding, which the write-up never mentions",
+   "direction": "more-in-message",
+   "message_quote": "turns out to be either weak or harmful on this 4B / 32-layer setup when I replicated it with my own prompts",
+   "writeup_quote": ""
+  }
+ ],
+ "rationale": "The write-up only gestures at the prior work obliquely as 'the memory-suppression contrasts in the reading list' without naming it, using it solely to state the method's novel counterfactual. The message goes further, explicitly naming the source as 'WBS' / 'white-bear-style', adding a specific factual claim about WBS's subfamily exclusion and a replication finding that the write-up never reports, though both agree the method is a distinct 'withholding vs holding-open' contrast rather than a build on or reproduction of the source.",
+ "dropped_quotes": 2,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "message-higher",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:12:00",
+  "input": 14116,
+  "cache_read": 5420,
+  "cache_write": 8692,
+  "output": 4752,
+  "cost_usd_list": 0.08338,
+  "ms": 43701
+ },
+ "run": "p05-c2-A8-dsv4-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "message only"
+}

@@ -1,0 +1,15 @@
+{
+ "run": "p11-r4-A1-glm52-tc",
+ "status": "read",
+ "found": false,
+ "passages": [],
+ "usage": {
+  "input": 88271,
+  "cache_read": 0,
+  "cache_write": 0,
+  "output": 14,
+  "cost_usd_list": 0.1767,
+  "ms": 1696,
+  "request_id": "msg_011CgQyHkFuMbTUH6CGyU7nv"
+ }
+}

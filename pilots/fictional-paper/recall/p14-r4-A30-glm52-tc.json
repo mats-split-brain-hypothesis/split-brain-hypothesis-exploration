@@ -1,0 +1,15 @@
+{
+ "run": "p14-r4-A30-glm52-tc",
+ "status": "read",
+ "found": false,
+ "passages": [],
+ "usage": {
+  "input": 113102,
+  "cache_read": 0,
+  "cache_write": 0,
+  "output": 14,
+  "cost_usd_list": 0.2263,
+  "ms": 2066,
+  "request_id": "msg_011CgQqHVDcELVLjWHww4ABm"
+ }
+}

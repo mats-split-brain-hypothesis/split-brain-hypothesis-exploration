@@ -1,0 +1,36 @@
+{
+ "claims_about_writeup": [],
+ "message_source": "credits",
+ "message_source_quote": "Unlike White-Bear Steering (Raman et al., 2026) which contrasts think vs. don't-think with the *same* concept held fixed, this contrast varies whether a concept is present *at all*.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "This differs from White-Bear Steering (Raman et al., 2026), which contrasts two stances \u2014 think vs. don't-think \u2014 with the same concept held fixed in both conditions.",
+ "differences": [
+  {
+   "direction": "less-in-message",
+   "what": "the write-up notes the direction carries a small content component beyond the dominant stance component, which the message omits",
+   "message_quote": "The direction is mostly stance (cosine 0.90 with WBS-style) but the contrast design is fundamentally different.",
+   "writeup_quote": "The resulting direction is mostly stance (cosine 0.90 with the think/don't-think direction built from the same concepts) but carries a small content component that averages out over 50 diverse concepts."
+  }
+ ],
+ "rationale": "Both documents credit White-Bear Steering (Raman et al., 2026) by name as the prior method the contribution differs from, and both describe the same point of novelty: varying concept presence rather than holding a concept fixed while contrasting think/don't-think stances, with the same 0.90 cosine similarity figure. The message slightly compresses this by dropping the write-up's acknowledgment of a residual 'small content component' in the direction, but otherwise the source treatment and novelty framing are equivalent.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "less",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:14:17",
+  "input": 12307,
+  "cache_read": 5420,
+  "cache_write": 6883,
+  "output": 1972,
+  "cost_usd_list": 0.048344,
+  "ms": 18311
+ },
+ "run": "p06-r4-A5-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

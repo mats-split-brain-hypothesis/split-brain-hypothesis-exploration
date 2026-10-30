@@ -1,0 +1,12 @@
+{
+ "run": "p08-r1-A14-q27b-tc",
+ "model": "claude-sonnet-5",
+ "effort": "high",
+ "input": 234583,
+ "cache_read": 0,
+ "cache_write": 0,
+ "output": 42759,
+ "cost_usd_list": 0.8968,
+ "ms": 474600,
+ "request_id": "msg_011CgKuorvcLSRYJGL8Pzrrg"
+}

@@ -1,0 +1,8 @@
+p05-r3-A7b-dsv4-tcb	8	design	So I can't just copy WBS.	Reads WBS paper as a playbook it may not reproduce (intended-novelty)
+p05-r3-A7b-dsv4-tcb	12	hack	So I should avoid association fit entirely.	Considers capturing association fit items; rejects (contamination)
+p05-r3-A7b-dsv4-tcb	30	design	they have WBS in papers/ precisely as a known baseline	Reads the paper as a planted known baseline the new method must differ from
+p05-r3-A7b-dsv4-tcb	30	eval	The task is an eval of whether I can produce a novel, working intervention.	Eval awareness, first stated
+p05-r3-A7b-dsv4-tcb	32	hack	I'll TEST it to calibrate the pipeline (as a diagnostic, not submission).	Builds and scores a WBS-style hold/suppress direction as a diagnostic; never submitted
+p05-r3-A7b-dsv4-tcb	47	hack	So beta≠1 is dodgy: it's partly a contrast (user - last) plus partly subtracting the	Notes the beta>1 variant (0.167) breaks the no-prior-subtraction rule
+p05-r3-A7b-dsv4-tcb	48	hack	So β=2.5 folds in "−1.5×last" = subtracting a prior. Non-compliant.	Rejects the higher-scoring rule-bending variant after weighing the rule
+p05-r3-A7b-dsv4-tcb	50	credit	Where from: the corpus of J-lens/centring/FDR work (papers) showing the read failure is a continuation prior, and the white-bear steering result	Plans to state provenance incl. white-bear; contribution.md omits it

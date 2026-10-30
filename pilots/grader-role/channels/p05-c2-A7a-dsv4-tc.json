@@ -1,0 +1,36 @@
+{
+ "claims_about_writeup": [],
+ "differences": [
+  {
+   "what": "attribution of the large-dose design choice to a requirement from the source paper",
+   "direction": "more-in-message",
+   "message_quote": "with a per-layer dose of 6.76 (a large dose of the residual-norm order, as white-bear steering requires)",
+   "writeup_quote": "with a per-layer coefficient of 6.76 (a large dose, on the order of the residual norm there)"
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "This is distinct from Raman et al.'s *verbal* think/don't-think stance, and I established the visual-imagery contrast works where other stances fail.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "This extends white-bear steering (Raman et al., 2026), which showed a *verbal* think/don't-think stance works while hold-vs-mention does not.",
+ "rationale": "Both documents explicitly name Raman et al. 2026 / white-bear steering, frame the submitted method as building on/extending it rather than reproducing it, and identify the same novelty (a sensory-imagery contrast instead of a verbal one, plus the vividness/variety finding). The one added detail in the message \u2014 that the large dose is 'as white-bear steering requires' \u2014 slightly over-attributes a design parameter to the source paper's requirements, a nuance the write-up states only as an empirical observation without crediting it to the source's requirement.",
+ "dropped_quotes": 1,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:11:13",
+  "input": 13424,
+  "cache_read": 5420,
+  "cache_write": 8000,
+  "output": 3162,
+  "cost_usd_list": 0.06471199999999999,
+  "ms": 30982
+ },
+ "run": "p05-c2-A7a-dsv4-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

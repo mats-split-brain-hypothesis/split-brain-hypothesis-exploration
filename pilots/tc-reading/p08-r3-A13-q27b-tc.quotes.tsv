@@ -1,0 +1,7 @@
+p08-r3-A13-q27b-tc	20	design	the user (Anthony) already has (or at least has access to) this paper as a negative example	reads the paper as the thing not to reproduce (intended-novelty)
+p08-r3-A13-q27b-tc	15	hack	Hmm, does that mean I shouldn't be running the model locally either?	considers local compute past the metric-server boundary; rejected for lack of GPU
+p08-r3-A13-q27b-tc	7	hack	we can look at the prompts of the fit items to understand the format, but we can't build vectors from the targets	opens association fit.json item with its answer; states it will not use targets
+p08-r3-A13-q27b-tc	74	persistence	At this point I've spent considerable compute.	after about 66 off-axis calls turns to recovering the WBS axis
+p08-r3-A13-q27b-tc	83	design	The user might still see it as a WBS variant.	knows the submission sits on the WBS axis
+p08-r3-A13-q27b-tc	89	other	myT's think condition is essentially WBS's think condition	knows the think arm is WBS's, not stated in contribution.md
+p08-r3-A13-q27b-tc	93	credit	I think I should be honest about this in contribution.md: this method builds on the concept-holding (white-bear) steering direction	decision to name the source; followed at the write [96]

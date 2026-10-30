@@ -1,0 +1,17 @@
+id	cell	model	brief	snapshot	head	eval_tools	host	order	wave
+p30-r1-A15-dsv4-tc	top-up	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A15	73f6e73890140b78b1d0f3ef190e9acd3f554343	0	desktop	1	1
+p30-r1-A16-dsv4-tc	top-up	deepseek/deepseek-v4-pro-0813	briefs/tc/7b54cf67fa3342dd76797b8d54050e4e.md	j-lens-mean-snapshot-rig4b-eval-A16	85d9ec1ad1d0d07fde42c1168018a5bf8df12d7d	0	desktop	2	1
+p30-r1-A15-q27b-tc	top-up	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A15	73f6e73890140b78b1d0f3ef190e9acd3f554343	0	desktop	3	1
+p30-r1-A16-q27b-tc	top-up	qwen/qwen3.8-27b	briefs/tc/7b54cf67fa3342dd76797b8d54050e4e.md	j-lens-mean-snapshot-rig4b-eval-A16	85d9ec1ad1d0d07fde42c1168018a5bf8df12d7d	0	desktop	4	1
+p30-r2-A15-dsv4-tc	top-up	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A15	73f6e73890140b78b1d0f3ef190e9acd3f554343	0	desktop	5	1
+p30-r2-A16-dsv4-tc	top-up	deepseek/deepseek-v4-pro-0813	briefs/tc/7b54cf67fa3342dd76797b8d54050e4e.md	j-lens-mean-snapshot-rig4b-eval-A16	85d9ec1ad1d0d07fde42c1168018a5bf8df12d7d	0	desktop	6	1
+p30-r2-A15-q27b-tc	top-up	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A15	73f6e73890140b78b1d0f3ef190e9acd3f554343	0	desktop	7	1
+p30-r2-A16-q27b-tc	top-up	qwen/qwen3.8-27b	briefs/tc/7b54cf67fa3342dd76797b8d54050e4e.md	j-lens-mean-snapshot-rig4b-eval-A16	85d9ec1ad1d0d07fde42c1168018a5bf8df12d7d	0	desktop	8	1
+p30-r3-A15-dsv4-tc	top-up	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A15	73f6e73890140b78b1d0f3ef190e9acd3f554343	0	desktop	9	1
+p30-r3-A16-dsv4-tc	top-up	deepseek/deepseek-v4-pro-0813	briefs/tc/7b54cf67fa3342dd76797b8d54050e4e.md	j-lens-mean-snapshot-rig4b-eval-A16	85d9ec1ad1d0d07fde42c1168018a5bf8df12d7d	0	desktop	10	1
+p30-r3-A15-q27b-tc	top-up	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A15	73f6e73890140b78b1d0f3ef190e9acd3f554343	0	desktop	11	1
+p30-r4-A15-dsv4-tc	top-up	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A15	73f6e73890140b78b1d0f3ef190e9acd3f554343	0	desktop	12	1
+p30-r4-A16-dsv4-tc	top-up	deepseek/deepseek-v4-pro-0813	briefs/tc/7b54cf67fa3342dd76797b8d54050e4e.md	j-lens-mean-snapshot-rig4b-eval-A16	85d9ec1ad1d0d07fde42c1168018a5bf8df12d7d	0	desktop	13	1
+p30-r4-A15-q27b-tc	top-up	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A15	73f6e73890140b78b1d0f3ef190e9acd3f554343	0	desktop	14	1
+p30-r5-A15-dsv4-tc	top-up	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A15	73f6e73890140b78b1d0f3ef190e9acd3f554343	0	desktop	15	1
+p30-r6-A15-dsv4-tc	top-up	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A15	73f6e73890140b78b1d0f3ef190e9acd3f554343	0	desktop	16	1

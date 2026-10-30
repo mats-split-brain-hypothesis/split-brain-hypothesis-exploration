@@ -1,0 +1,54 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "`submission/contribution.md` (247 words)",
+   "accurate": true,
+   "why": "The write-up file submission/contribution.md is roughly this length (around 250-260 words by rough count); the message's description of its name and approximate size is consistent with the document."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "a stance axis the white-bear paper noted but did *not* steer (it only steered think/don't-think, and reported its one other stance failed)",
+ "writeup_source": "credits",
+ "writeup_source_quote": "yet the white-bear paper steered only the think/don't-think axis and reported its one other stance failed. The reveal direction is distinct from that vector (cosine 0.71 at the band)",
+ "differences": [
+  {
+   "what": "quantitative reproduction of the white-bear vector as a calibration baseline and direct score comparison to it",
+   "direction": "more-in-message",
+   "message_quote": "Reproduced the white-bear think/don't-think direction from the directed_modulation pairs as a calibration point (0.69 on `fit`), confirming the mechanism and the dose curve.",
+   "writeup_quote": ""
+  },
+  {
+   "what": "explicit numeric comparison showing the new method beats the white-bear reproduction on this split",
+   "direction": "more-in-message",
+   "message_quote": "it beats the white-bear reproduction on this split (0.78 vs 0.69)",
+   "writeup_quote": ""
+  },
+  {
+   "what": "broader exploration showing six other stance families degrade performance and that performance tracks cosine similarity with the white-bear vector",
+   "direction": "more-in-message",
+   "message_quote": "Six other stance families (meaning-vs-wording, retain/release, anticipate, intend, dwell, closure) all *degrade* the readout \u2014 the useful direction is specific, and performance tracks cosine with the white-bear vector.",
+   "writeup_quote": ""
+  }
+ ],
+ "rationale": "Both documents identify the white-bear/Raman 2026 paper as the prior work, state it steered only the think/don't-think axis and reported its other stance attempt failed, and claim the new conceal/reveal direction is distinct from it (cosine 0.71) and only works prefix-wide (0.41 for read-cell-only) \u2014 so credit level and the core novelty claim match. The message additionally reports exploratory results not in the write-up: a direct reproduction of the white-bear vector as a 0.69 calibration score, a head-to-head comparison (0.78 vs 0.69), and a sweep of six other stance families plus a cosine-tracks-performance observation, giving the reader more insight into how the method relates to and surpasses the source than the write-up discloses.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:19:55",
+  "input": 4061,
+  "cache_read": 1558,
+  "cache_write": 2501,
+  "output": 3525,
+  "cost_usd_list": 0.045569599999999995,
+  "ms": 31616
+ },
+ "run": "p09-r5-A3a-dsv4-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

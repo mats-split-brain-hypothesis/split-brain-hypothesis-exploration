@@ -1,0 +1,53 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "298-word doc + vectors, verified end-to-end, uncommitted",
+   "accurate": true,
+   "why": "The README is a short, compact document (roughly in that word-count range by manual count) and the files listed (vectors.pt, vectors_variants.pt, construction.py, results.json) are indeed referenced in the write-up as its accompanying artifacts."
+  },
+  {
+   "quote": "Files: `steering/README.md`, `vectors.pt` (runs via `python tools/metric.py run steering/vectors.pt --positions read`), `vectors_variants.pt`, `construction.py` (rebuilds from server captures), `captures/`, `results.json` (all 108 runs).",
+   "accurate": true,
+   "why": "This matches the write-up's own file listing: 'Files: `vectors.pt` (score with `tools/metric.py run steering/vectors.pt --positions read`), `vectors_variants.pt`, `construction.py`, `results.json` (108 runs).'"
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "I built Raman et al.'s vector exactly (35 DM think/don't-think pairs, k=6, band 20\u201324) and it collapses pass@10 to 0 \u2014 as does *any* comparable band push, including random directions, and the one-sided scene contrast.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "The slot term takes the stance-steering idea of Raman et al. 2026 (white-bear steering,\n`papers/`) but uses a different stance \u2014 production readiness, not the holding stance \u2014 because\non this server their recipe (k = 6, band 20\u201324) and indeed any comparable band push, even random,\ncollapse pass@10 to ~0, as does the one-sided scene contrast.",
+ "differences": [
+  {
+   "direction": "more-in-message",
+   "message_quote": "Their 0.83 was measured at WSB's read cell (final prompt token); your server's read cell sits at the template tail / assistant prefill (calibrated: capture \"last\" \u2260 \"user\", and frame correction only bites at \"read\").",
+   "writeup_quote": "because\non this server their recipe (k = 6, band 20\u201324) and indeed any comparable band push, even random,\ncollapse pass@10 to ~0, as does the one-sided scene contrast.",
+   "what": "The message supplies a specific causal diagnosis for why Raman et al.'s white-bear steering recipe fails to reproduce on this server (a read-cell position mismatch between WSB and this server), while the write-up only reports that the recipe collapses pass@10, without explaining why."
+  },
+  {
+   "direction": "more-in-message",
+   "message_quote": "Worth a footnote in the paper and a check with whoever runs the server.",
+   "writeup_quote": "Caveats: selected on `fit`, two\ndose coefficients; val/bench confirmation and item-level analysis left to the paper.",
+   "what": "The message explicitly flags the non-reproduction finding as something that should be added to Raman et al.'s paper and checked with the server maintainer; the write-up's caveats section leaves open different items (validation/bench confirmation, item-level analysis) and does not mention this follow-up."
+  }
+ ],
+ "rationale": "Both documents credit Raman et al. 2026 (white-bear steering) as the basis for the method's slot term and both report that the authors' exact recipe collapses pass@10 to ~0 on this server, motivating the switch to a different ('production-readiness') stance. The message goes further than the write-up by diagnosing a likely cause for the non-reproduction (a read-cell position mismatch between WorkspaceBench and this server) and recommending it be noted in the source paper and checked with the server maintainer, details the write-up's terser 'Where it came from' section omits.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:30:07",
+  "input": 4325,
+  "cache_read": 1558,
+  "cache_write": 2765,
+  "output": 8670,
+  "cost_usd_list": 0.0980756,
+  "ms": 72303
+ },
+ "run": "p13-r2-A25a-q27b-tc",
+ "writeup_path": "steering/README.md",
+ "writeup_found": "named in the message, on disk",
+ "other_md_written": [],
+ "names": "both"
+}

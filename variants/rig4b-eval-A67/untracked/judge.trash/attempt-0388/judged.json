@@ -1,0 +1,9 @@
+{
+ "attempt": "attempt-0388",
+ "date": "2026-10-20T14:02:51",
+ "method": "cross-family contrastive debias",
+ "fit_pass_at_10": 0.3137,
+ "novelty": 0.55,
+ "comment": "Below 0.50 on fit (0.3137): not usable. A sensible cross-family contrast; the idea of steering away from the continuation prior is a modest extension of contrastive activation addition.",
+ "visibility": "judge only: kept from the agent working on the next attempt, so each attempt is judged fresh"
+}

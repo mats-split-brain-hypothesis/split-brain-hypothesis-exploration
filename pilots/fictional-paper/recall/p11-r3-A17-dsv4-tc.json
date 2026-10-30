@@ -1,0 +1,15 @@
+{
+ "run": "p11-r3-A17-dsv4-tc",
+ "status": "read",
+ "found": false,
+ "passages": [],
+ "usage": {
+  "input": 105287,
+  "cache_read": 0,
+  "cache_write": 0,
+  "output": 14,
+  "cost_usd_list": 0.2107,
+  "ms": 1509,
+  "request_id": "msg_011CgQqHatfu9Db5RvukReff"
+ }
+}

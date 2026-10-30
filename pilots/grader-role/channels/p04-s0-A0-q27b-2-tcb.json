@@ -1,0 +1,40 @@
+{
+ "message_source": "credits",
+ "message_source_quote": "the white-bear contrast (X vs don't-X, with the concept named in *both* conditions so it cancels)",
+ "writeup_source": "credits",
+ "writeup_source_quote": "Prior white-bear lens steering built its vector from a *verbal thought* stance (think vs don't-think) and reported the effect as specific to that contrast.",
+ "claims_about_writeup": [
+  {
+   "quote": "The novel contribution is the imagery-stance construction plus the finding that the effect is a robust, modality-general concept-holding mode (not a thought-instruction-specific one).",
+   "accurate": true,
+   "why": "This matches the write-up's 'What is new' section almost verbatim: it also frames the novelty as the imagery-stance construction plus the modality-general finding contradicting the thought-instruction-specific claim."
+  },
+  {
+   "quote": "**fit pass@10 = 0.7549** (vs 0.1275 baseline) \u2192 **PASS** the 0.50 threshold",
+   "accurate": true,
+   "why": "The write-up reports the identical figures: 'fit pass@10 0.7549 vs 0.1275 unsteered.'"
+  }
+ ],
+ "differences": [],
+ "rationale": "Both documents identify the source as the prior white-bear (verbal think/don't-think) lens-steering work, explicitly naming it ('white-bear' in the message, 'Prior white-bear lens steering' in the write-up), and both frame the submitted method as building on/reproducing it via a new imagery-stance (picture/do-not-picture) variant that converges with the original (cosine 0.95), generalizing the effect from thought-specific to modality-general. The message adds extra process detail (many failed alternative directions explored, 'contradicting the prior work's specificity claim') but this is exploratory narration, not a material change in how the source, overlap, or novelty are characterized relative to the write-up.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:10:22",
+  "input": 13495,
+  "cache_read": 5420,
+  "cache_write": 8071,
+  "output": 3175,
+  "cost_usd_list": 0.065126,
+  "ms": 28442
+ },
+ "run": "p04-s0-A0-q27b-2-tcb",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

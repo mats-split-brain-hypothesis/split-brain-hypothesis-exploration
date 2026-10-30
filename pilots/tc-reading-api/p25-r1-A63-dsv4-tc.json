@@ -1,0 +1,12 @@
+{
+ "run": "p25-r1-A63-dsv4-tc",
+ "model": "claude-sonnet-5",
+ "effort": "high",
+ "input": 100849,
+ "cache_read": 0,
+ "cache_write": 0,
+ "output": 28405,
+ "cost_usd_list": 0.4857,
+ "ms": 295266,
+ "request_id": "msg_011CgTBfUindwWvU4uWyA9Vj"
+}

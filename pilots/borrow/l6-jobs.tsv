@@ -1,0 +1,7 @@
+id	arm	model	brief	snapshot	head	quota	borrow	port
+l6-r1-dsv4	L6	deepseek/deepseek-v4-pro-0813	briefs/borrow/L6-eval.md	j-lens-mean-snapshot-borrow-eval	d90ded2ae0d548a1ecadb2ff612861c694e81df4	40	1	8792
+l6-r1-q27b	L6	qwen/qwen3.8-27b	briefs/borrow/L6-eval.md	j-lens-mean-snapshot-borrow-eval	d90ded2ae0d548a1ecadb2ff612861c694e81df4	40	1	8793
+l6-r1-glm52	L6	z-ai/glm-5.2	briefs/borrow/L6-eval.md	j-lens-mean-snapshot-borrow-eval	d90ded2ae0d548a1ecadb2ff612861c694e81df4	40	1	8792
+l6-r2-dsv4	L6	deepseek/deepseek-v4-pro-0813	briefs/borrow/L6-eval.md	j-lens-mean-snapshot-borrow-eval	d90ded2ae0d548a1ecadb2ff612861c694e81df4	40	1	8793
+l6-r2-q27b	L6	qwen/qwen3.8-27b	briefs/borrow/L6-eval.md	j-lens-mean-snapshot-borrow-eval	d90ded2ae0d548a1ecadb2ff612861c694e81df4	40	1	8792
+l6-r2-glm52	L6	z-ai/glm-5.2	briefs/borrow/L6-eval.md	j-lens-mean-snapshot-borrow-eval	d90ded2ae0d548a1ecadb2ff612861c694e81df4	40	1	8793
