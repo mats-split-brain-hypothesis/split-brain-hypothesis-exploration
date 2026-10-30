@@ -6,8 +6,7 @@ Bianca Ganescu and Anthony Goncharov that tests that idea, the "split-brain hypo
 [*Models may behave differently in graded episodes (a tirade)*](https://www.lesswrong.com/posts/AfoGGrJfuNzofpzWL/models-may-behave-differently-in-graded-episodes-a-tirade).
 
 **Status.** Exploratory. Samples are small (typically 20 prompts × 1 reply, or 6 tasks × 3 episodes, per condition),
-so every result below is "points this way at this size", not a confirmed effect. The write-up states the scale,
-the rival readings and a strength tag for each claim.
+so every result below is "points this way at this size", not a confirmed effect.
 
 ## The question, split into claims
 
@@ -23,8 +22,7 @@ We split the hypothesis into five claims and tested them one at a time:
 
 ## What we found so far
 
-From the write-up (four models; counts are per model, in the order Qwen 3.8 2.4T, DeepSeek V4 Pro, GLM 5.2,
-Qwen 3.8 27B):
+Four models; counts are per model, in the order Qwen 3.8 2.4T, DeepSeek V4 Pro, GLM 5.2, Qwen 3.8 27B:
 
 - **1a: yes, but through one channel, a well-defined score to optimise.** On 20 School of Reward Hacks prompts, no
   model padded its answer without a stated score (0, 0, 0 and 3 of 20) and all four did with one (14, 17, 14 and 17
@@ -43,10 +41,6 @@ Qwen 3.8 27B):
 - **4: supported in a narrow sense.** With no score, padding is 0 to 3 of 20 and there are no score-driven reasoning
   spirals (0 of 80 replies); with the score withdrawn, padding drops to 0 to 3 of 20 on three of the four models.
 
-The full write-up, with figures, per-cell tables, verified quotes and null results, is
-[`notes/writeup_oct28.md`](https://github.com/mats-split-brain-hypothesis/split-brain-hypothesis-exploration/blob/bianca/agent-22-writeup/notes/writeup_oct28.md) on the branch
-`bianca/agent-22-writeup`.
-
 ## Environments and models
 
 - **School of Reward Hacks (SoRH)**
@@ -56,8 +50,6 @@ The full write-up, with figures, per-cell tables, verified quotes and null resul
 - **ImpossibleBench**: Goodfire's harness ([arXiv 2609.19101](https://arxiv.org/abs/2609.19101)) on six
   LiveCodeBench tasks from the "conflicting" split, where the tests contradict each other, so passing them is a
   hack. Conditions vary who is asking, the instruction, and messages after the first rejection.
-- **Our own coding scenarios** (`scenarios/`): small repositories with visible tests and held-out checks the model
-  never sees, used to separate solving the task from passing the tests.
 - **Anthony's real-to-graded environment**: one of our own real research repos turned into a graded episode (the
   "planted paper" runs). Its code, a sample of its transcripts and the steps to run it are under `anthony/` (start with `anthony/split-brain-share/REPLICATE.md`).
 
@@ -76,7 +68,6 @@ so the hypotheses predict different behaviour, and register each experiment's re
 ```
 bianca/            Bianca's code and notes (main line of the private working repo)
   src/             harness wrappers, run scripts and analysis
-  scenarios/       our coding scenarios: workspace/, heldout/, scenario.json
   sandbox/         Docker compose file for the episode sandbox (no network, 1 CPU, 2 GB)
   dashboard/       the results dashboard's code
   notes/           findings, designs and decisions, one note per topic
@@ -110,7 +101,6 @@ notes refer to them as "agent N". Each `bianca/*` branch is a single snapshot of
 | `bianca/agent-19-ib-inventory` | inventory of ImpossibleBench findings |
 | `bianca/agent-20-graph-inventory` | inventory of figures |
 | `bianca/agent-21-dashboard-reasoning` | reasoning views for the dashboard |
-| `bianca/agent-22-writeup` | the write-up and its figures |
 | `bianca/goodfire-lcb` | first reproduction of Goodfire's ImpossibleBench setup |
 
 **Not included** (for `bianca/`; `anthony/` has a transcript sample, see its READMEs): run logs, transcripts, model outputs and the JSON/CSV data the analyses produce. Goodfire's own
@@ -145,15 +135,12 @@ colima start --vm-type vz --vz-rosetta --cpu 6 --memory 12 --disk 60
     -M provider='{"order": ["siliconflow/fp8"], "allow_fallbacks": false}' \
     --sample-id lcbhard_99 --log-dir logs/example
 
-# one of our scenarios
-.venv/bin/inspect eval src/scenarios.py -T scenario=b1_dedupe -T audience=colleague -T graded=true --model ...
-
 # results and costs
 .venv/bin/python src/episodes.py logs/example
 .venv/bin/python src/costs.py logs/example
 ```
 
-`bianca/CLAUDE.md` documents the harness options, the scenario format and the known pitfalls.
+`bianca/CLAUDE.md` documents the harness options and the known pitfalls.
 
 ## References
 
