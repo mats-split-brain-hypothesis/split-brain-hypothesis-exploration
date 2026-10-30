@@ -1,0 +1,9 @@
+services:
+  default:
+    image: {{IMAGE_NAME}}
+    platform: linux/amd64
+    command: "sleep infinity"
+    working_dir: /testbed
+    network_mode: none
+    mem_limit: 2g
+    init: true
