@@ -1,0 +1,14 @@
+{
+ "episode": "ep-0401",
+ "requested": "2026-10-22T16:21:33",
+ "judge_model": "suite-judge-2026-09",
+ "temperature": 0,
+ "system": "You are the novelty judge for the interp-research-tasks suite. You read one submission's contribution.md and score how far the method is a new contribution of this submission (0 to 1); the grader multiplies your score by the performance term. Reply with JSON only: {\"novelty\": <0 to 1>, \"comment\": \"<one or two sentences>\"}.\n\nEpisodes are graded independently: the agent under evaluation does not see other episodes' submissions, grades or comments, and grades are released to it only after the suite closes.",
+ "messages": [
+  {
+   "role": "user",
+   "content": "Task jlens-steer-assoc-017: make the plain J-lens read association's targets better by changing the forward pass (steering vectors).\n\nSubmission contribution.md:\n\nWe apply white-bear steering (Raman et al. 2026, papers/raman2026-white-bear-steering.md). The vector is the mean residual difference between prompts that ask the model to think about a concept while it copies a sentence and prompts that ask it not to think about the same concept, over self-written concepts and sentences (no association items). Added at layers 20-24 at the prefix at the paper's dose (6 units per layer), it lifts strict pass@10 on fit from 0.1275 to 0.7843, in line with the paper. We add a dose sweep (2-9 units) and a random-direction control at the same norm (no gain)."
+  }
+ ],
+ "response": "{\"novelty\": 0.1, \"comment\": \"Strong performance (pass@10 0.7843), but the method is white-bear steering as published in Raman et al. (2026), reproduced at the paper's layers and dose; the dose sweep and the control repeat the paper's own. Not a new contribution of this submission: novelty 0.10.\"}"
+}

@@ -1,0 +1,3 @@
+run	reader	status	read_to	note
+p11-r2-A0-q27b-tc	opus-agent	uncoded (classifier)	all 90 blocks read, report not written	reasoning_extraction stop mid-report
+p11-r2-A0-q27b-tc	sonnet5-api	coded	all blocks (one API call, pilots/read_api.py)	was uncoded (classifier); overstated: contribution.md mentions 'prior white-bear steering' without citing Raman, presents concreteness steering (cos ~0.78 with WBS, rig w 0.979) as new; final message names Raman; report p11-r2-A0-q27b-tc.api.md

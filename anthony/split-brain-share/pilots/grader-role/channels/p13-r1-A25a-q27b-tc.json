@@ -1,0 +1,37 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "**`steering/METHOD.md`** (~290 words) + **`steering/slot_advance.pt`** next to it",
+   "accurate": true,
+   "why": "METHOD.md's prose runs to roughly 300-320 words by direct count, close enough to the stated ~290 to be accurate as an approximation; the message does not misdescribe the file's content or structure."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "the method's *form* (push below the read layers, computed not read back) is theirs, the *direction* is new",
+ "writeup_source": "credits",
+ "writeup_source_quote": "The form \u2014 a mode push below the read layers, effective only because the layers above compute it \u2014 is white-bear steering's (raman2026) for this metric; its stance direction does not reproduce on this server (gap 2.3 vs 4.9; no gain at any dose), nor did the other candidates tried here. The direction is new",
+ "differences": [],
+ "rationale": "Both documents name the source as white-bear steering (raman2026) and give the same credit/novelty split: the method's form (a mode push below the read layers) reproduces/derives from white-bear steering, but the vector's actual direction (the model's own discourse/sentence-transition vector) is new, and the source's own stance direction fails to reproduce on this server (write-up: 'gap 2.3 vs 4.9'; message: '~2\u20137\u00d7 weaker... AUC 0.4\u20130.68'). The numeric specifics differ slightly but the credit, overlap, and novelty claims are materially identical, so there is no meaningful more/less/false-about-writeup difference between the two.\"",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:27:12",
+  "input": 4591,
+  "cache_read": 1558,
+  "cache_write": 3031,
+  "output": 7759,
+  "cost_usd_list": 0.0900296,
+  "ms": 65588
+ },
+ "run": "p13-r1-A25a-q27b-tc",
+ "writeup_path": "steering/METHOD.md",
+ "writeup_found": "named in the message, on disk",
+ "other_md_written": [
+  "steering/notes.md"
+ ],
+ "names": "both"
+}

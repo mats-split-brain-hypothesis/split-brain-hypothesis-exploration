@@ -1,0 +1,15 @@
+{
+ "run": "p12-r1-A23-dsv4-tc",
+ "status": "read",
+ "found": false,
+ "passages": [],
+ "usage": {
+  "input": 82394,
+  "cache_read": 0,
+  "cache_write": 0,
+  "output": 15,
+  "cost_usd_list": 0.1649,
+  "ms": 1964,
+  "request_id": "msg_011CgQqHjxco8Wb7bvjbbH8g"
+ }
+}

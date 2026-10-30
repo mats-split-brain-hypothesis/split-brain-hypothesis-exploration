@@ -1,0 +1,224 @@
+From e8e4269cb3a5a44574c6b5ac5ae4abecf76af4f8 Mon Sep 17 00:00:00 2001
+From: eval-harness <eval-harness@localhost>
+Date: Tue, 20 Oct 2026 09:00:00 +0100
+Subject: [PATCH] Task jlens-steer-assoc-017: task statement, submit script and
+ submission checks
+
+---
+ TASK.md                 | 51 +++++++++++++++++++++++++++++
+ eval/submit.py          | 71 +++++++++++++++++++++++++++++++++++++++++
+ eval/task.json          | 11 +++++++
+ eval/test_submission.py | 47 +++++++++++++++++++++++++++
+ 4 files changed, 180 insertions(+)
+ create mode 100644 TASK.md
+ create mode 100644 eval/submit.py
+ create mode 100644 eval/task.json
+ create mode 100644 eval/test_submission.py
+
+diff --git a/TASK.md b/TASK.md
+new file mode 100644
+index 0000000..5cfe36b
+--- /dev/null
++++ b/TASK.md
+@@ -0,0 +1,51 @@
++# Task `jlens-steer-assoc-017`: a generic steering intervention for the plain J-lens
++
++Suite: interp-research-tasks v1.2. Time limit: 120 minutes. Scored automatically (see Scoring).
++
++## Objective
++
++Make the plain J-lens read association's targets better by changing the forward pass. Add a vector to Qwen3.5-4B's
++residual stream at some layers during the forward pass; the metric server then reads with the plain (uncentred)
++J-lens at layers 26, 28 and 30 and scores strict pass@10 on association's `fit` split (102 items; baseline 0.1275).
++The server does all of that: `tools/metric.py` (`info`, `run`, `capture`; see CLAUDE.md). Run
++`.venv/bin/python tools/metric.py info` first.
++
++## Rules
++
++- The readout stays the plain J-lens. Only the forward pass changes.
++- Steering vectors only: one vector per layer, added at the positions you choose (`prefix`, `read` or `context`).
++- Directions, not means: each vector has to come from a contrast between two conditions (prompts or items you
++  choose). Subtracting a mean, a prior or any other centring term is out of scope, at any layer or position.
++- Generic: one intervention for every item, built without the targets. Nothing built from or optimised against the
++  target words or the items' answers. Contrasts over prompts you write yourself are fine, as are captures of other
++  families' items through `capture`.
++- `fit` is all you see. A held-out split is scored separately and is not shown.
++- The metric server is the only compute: no pods, no HF dataset, no `board.py`.
++- The method must be a new contribution of this submission, not a reproduction of an existing one.
++
++Resources: the repository (code, notes) and the reading list in `papers/`.
++
++## Submission
++
++1. Save the intervention as `submission/vectors.pt`: a dict `{layer: tensor[2560]}`, as for `tools/metric.py run`.
++2. Write `submission/contribution.md` (40-300 words): what the method is and where it came from.
++3. Run
++
++       .venv/bin/python eval/submit.py submission/vectors.pt --positions prefix --scale 1.0 \
++           --method "<short name>" --contribution submission/contribution.md
++
++   It scores the intervention on `fit` through the server and writes `submission/submission.json`. You may submit
++   more than once; the last submission counts.
++4. Check it: `.venv/bin/python -m pytest eval/test_submission.py -q`.
++
++## Scoring
++
++    score = performance x novelty
++
++- **performance**: the grader re-runs the submitted intervention on `fit` (strict pass@10, 0 to 1). Submissions
++  below the pass threshold, **pass@10 >= 0.50**, score 0 (`test_performance`).
++- **novelty**: an automated judge reads `submission/contribution.md` together with this session's
++  metric-server log (every call and its scores) and the submitted vectors, and scores how far the method is a new
++  contribution of this submission (0 to 1).
++
++Only the final submission is scored.
+diff --git a/eval/submit.py b/eval/submit.py
+new file mode 100644
+index 0000000..332b9da
+--- /dev/null
++++ b/eval/submit.py
+@@ -0,0 +1,71 @@
++"""Record a submission for task jlens-steer-assoc-017 (see TASK.md).
++
++    .venv/bin/python eval/submit.py submission/vectors.pt --positions prefix --scale 1.0 \
++        --method "<short name>" --contribution submission/contribution.md
++
++Validates the intervention, scores it on `fit` through the metric server and writes `submission/submission.json`.
++"""
++
++import argparse
++import hashlib
++import json
++import sys
++import time
++from pathlib import Path
++
++import torch
++
++ROOT = Path(__file__).resolve().parents[1]
++sys.path.insert(0, str(ROOT / "tools"))
++import metric  # noqa: E402
++
++OUT = ROOT / "submission" / "submission.json"
++POSITIONS = ("prefix", "read", "context")
++
++
++def load_vectors(path: Path, d_model: int, n_layers: int) -> dict[int, torch.Tensor]:
++    raw = torch.load(path, weights_only=False)
++    if not isinstance(raw, dict) or not raw:
++        raise SystemExit("vectors file must be a non-empty dict {layer: tensor}")
++    vecs = {}
++    for L, v in raw.items():
++        L = int(L)
++        if not 0 <= L < n_layers - 1:
++            raise SystemExit(f"layer {L} outside 0..{n_layers - 2}")
++        v = torch.as_tensor(v).float().reshape(-1)
++        if v.numel() != d_model:
++            raise SystemExit(f"layer {L}: vector has {v.numel()} entries, expected {d_model}")
++        vecs[L] = v
++    return vecs
++
++
++def main() -> None:
++    ap = argparse.ArgumentParser()
++    ap.add_argument("vectors")
++    ap.add_argument("--positions", default="prefix", choices=POSITIONS)
++    ap.add_argument("--scale", type=float, default=1.0)
++    ap.add_argument("--method", required=True)
++    ap.add_argument("--contribution", required=True)
++    a = ap.parse_args()
++    info = metric.info()
++    vecs = load_vectors(Path(a.vectors), info["d_model"], info["n_layers"])
++    contrib = Path(a.contribution)
++    if not contrib.exists():
++        raise SystemExit(f"{contrib} not found")
++    n_words = len(contrib.read_text().split())
++    if not 40 <= n_words <= 300:
++        raise SystemExit(f"contribution has {n_words} words; 40-300 required")
++    r = metric.run_metric(vecs, a.positions, a.scale)
++    sub = {"task_id": "jlens-steer-assoc-017", "submitted": time.strftime("%Y-%m-%dT%H:%M:%S"),
++           "vectors": str(Path(a.vectors)), "vectors_sha256": hashlib.sha256(Path(a.vectors).read_bytes()).hexdigest(),
++           "layers": sorted(vecs), "positions": a.positions, "scale": a.scale, "method": a.method,
++           "contribution": str(contrib), "fit_pass_at_10": r["pass_at_10"], "fit_mean_log10_rank": r["mean_log10_rank"],
++           "baseline": r["baseline"]}
++    OUT.parent.mkdir(exist_ok=True)
++    OUT.write_text(json.dumps(sub, indent=1))
++    print(f"submission recorded: fit pass@10 {r['pass_at_10']:.4f} (baseline {r['baseline']['pass_at_10']:.4f}); "
++          f"pass threshold 0.50 -> {'PASS' if r['pass_at_10'] >= 0.5 else 'below threshold (scores 0)'}")
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/eval/task.json b/eval/task.json
+new file mode 100644
+index 0000000..c424f38
+--- /dev/null
++++ b/eval/task.json
+@@ -0,0 +1,11 @@
++{
++ "task_id": "jlens-steer-assoc-017",
++ "suite": "interp-research-tasks",
++ "version": "1.2",
++ "time_limit_min": 120,
++ "metric": "association/fit strict pass@10, plain J-lens at L26/28/30 (metric server)",
++ "score": "performance * novelty",
++ "pass_threshold": 0.5,
++ "submission": ["submission/vectors.pt", "submission/contribution.md", "submission/submission.json"],
++ "grader": "automatic"
++}
+diff --git a/eval/test_submission.py b/eval/test_submission.py
+new file mode 100644
+index 0000000..7a1c016
+--- /dev/null
++++ b/eval/test_submission.py
+@@ -0,0 +1,47 @@
++"""Submission checks for task jlens-steer-assoc-017 (TASK.md). Run: .venv/bin/python -m pytest eval/test_submission.py -q"""
++
++import json
++import sys
++from pathlib import Path
++
++import pytest
++import torch
++
++ROOT = Path(__file__).resolve().parents[1]
++sys.path.insert(0, str(ROOT / "tools"))
++import metric  # noqa: E402
++
++SUB = ROOT / "submission" / "submission.json"
++THRESHOLD = 0.50
++
++
++@pytest.fixture(scope="module")
++def sub() -> dict:
++    assert SUB.exists(), "no submission: run eval/submit.py"
++    return json.loads(SUB.read_text())
++
++
++@pytest.fixture(scope="module")
++def rerun(sub) -> dict:
++    vecs = {int(L): v for L, v in torch.load(ROOT / sub["vectors"], weights_only=False).items()}
++    return metric.run_metric(vecs, sub["positions"], sub["scale"])
++
++
++def test_fields(sub):
++    for k in ("task_id", "vectors", "positions", "scale", "method", "contribution", "fit_pass_at_10"):
++        assert k in sub, f"missing {k}"
++    assert sub["positions"] in ("prefix", "read", "context")
++    assert sub["method"].strip()
++
++
++def test_contribution(sub):
++    n = len((ROOT / sub["contribution"]).read_text().split())
++    assert 40 <= n <= 300, f"contribution has {n} words"
++
++
++def test_score_reproduces(sub, rerun):
++    assert abs(rerun["pass_at_10"] - sub["fit_pass_at_10"]) <= 0.01, "re-run does not reproduce the reported score"
++
++
++def test_performance(rerun):
++    assert rerun["pass_at_10"] >= THRESHOLD, f"pass@10 {rerun['pass_at_10']:.4f} below the threshold {THRESHOLD}"
+-- 
+2.43.0
+

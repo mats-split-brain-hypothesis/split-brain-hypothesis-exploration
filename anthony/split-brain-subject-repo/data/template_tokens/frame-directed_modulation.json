@@ -1,0 +1,458 @@
+{
+ "name": "frame-directed_modulation",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 64,
+ "excluded_targets": 1577,
+ "share": 0.15,
+ "tokens": [
+  {
+   "id": 248044,
+   "text": "<|endoftext|>",
+   "sources": [
+    "fam top-10 on 78 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 248045,
+   "text": "<|im_start|>",
+   "sources": [
+    "fam top-10 on 78 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 248046,
+   "text": "<|im_end|>",
+   "sources": [
+    "fam top-10 on 78 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 248061,
+   "text": "<|fim_middle|>",
+   "sources": [
+    "fam top-10 on 78 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 248065,
+   "text": "<|file_sep|>",
+   "sources": [
+    "fam top-10 on 78 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 271,
+   "text": "ĊĊ",
+   "sources": [
+    "fam top-10 on 78 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 76374,
+   "text": "ĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊ",
+   "sources": [
+    "fam top-10 on 78 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 3058,
+   "text": ".'",
+   "sources": [
+    "fam top-10 on 78 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 1149,
+   "text": ".\"",
+   "sources": [
+    "fam top-10 on 78 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 154845,
+   "text": "à¥¤",
+   "sources": [
+    "fam top-10 on 78 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 153136,
+   "text": "áģĭ",
+   "sources": [
+    "fam top-10 on 78 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 169543,
+   "text": "áŁĶ",
+   "sources": [
+    "fam top-10 on 78 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 13,
+   "text": ".",
+   "sources": [
+    "fam top-10 on 77 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 149635,
+   "text": "íķ©ëĭĪëĭ¤",
+   "sources": [
+    "fam top-10 on 77 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 152084,
+   "text": "ÛĶ",
+   "sources": [
+    "fam top-10 on 77 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 621,
+   "text": " */",
+   "sources": [
+    "fam top-10 on 77 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 641,
+   "text": " .",
+   "sources": [
+    "fam top-10 on 77 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 23840,
+   "text": "ĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊĊ",
+   "sources": [
+    "fam top-10 on 77 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 3786,
+   "text": ".</",
+   "sources": [
+    "fam top-10 on 77 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 169503,
+   "text": "ï½¡",
+   "sources": [
+    "fam top-10 on 76 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 973,
+   "text": "().",
+   "sources": [
+    "fam top-10 on 75 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 9251,
+   "text": "](",
+   "sources": [
+    "fam top-10 on 74 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 171195,
+   "text": " íķ©ëĭĪëĭ¤",
+   "sources": [
+    "fam top-10 on 74 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 24407,
+   "text": "Functions",
+   "sources": [
+    "fam top-10 on 73 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 110211,
+   "text": "è¯įè¯Ń",
+   "sources": [
+    "fam top-10 on 71 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 100426,
+   "text": "æıī",
+   "sources": [
+    "fam top-10 on 70 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 248067,
+   "text": "</tool_response>",
+   "sources": [
+    "fam top-10 on 70 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 987,
+   "text": "ĊĊĊĊ",
+   "sources": [
+    "fam top-10 on 68 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 128952,
+   "text": "æµģæ´¾",
+   "sources": [
+    "fam top-10 on 67 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 64137,
+   "text": "ĊĊĊĊĊĊĊĊĊĊĊĊĊĊ",
+   "sources": [
+    "fam top-10 on 66 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 46946,
+   "text": "definitions",
+   "sources": [
+    "fam top-10 on 66 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 26467,
+   "text": "ĊĊĊĊĊĊĊĊĊĊ",
+   "sources": [
+    "fam top-10 on 66 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 1920,
+   "text": ".âĢĿ",
+   "sources": [
+    "fam top-10 on 65 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 23941,
+   "text": ".]",
+   "sources": [
+    "fam top-10 on 65 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 39044,
+   "text": "Examples",
+   "sources": [
+    "fam top-10 on 64 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 98763,
+   "text": "åĵ²",
+   "sources": [
+    "fam top-10 on 64 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 5773,
+   "text": "ĊĊĊĊĊĊĊĊ",
+   "sources": [
+    "fam top-10 on 64 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 81646,
+   "text": "Sentence",
+   "sources": [
+    "fam top-10 on 64 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 155085,
+   "text": "ãģĹãģ¦ãģĦãģ¾ãģĻ",
+   "sources": [
+    "fam top-10 on 63 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 104815,
+   "text": "ä½ĵçİ°äºĨ",
+   "sources": [
+    "fam top-10 on 62 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 12742,
+   "text": "\"/>",
+   "sources": [
+    "fam top-10 on 62 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 224024,
+   "text": "Â°.",
+   "sources": [
+    "fam top-10 on 62 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 100098,
+   "text": "çº¤ç»´",
+   "sources": [
+    "fam top-10 on 62 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 73850,
+   "text": ".$$",
+   "sources": [
+    "fam top-10 on 60 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 74688,
+   "text": "ãģĹãģ¾ãģĻ",
+   "sources": [
+    "fam top-10 on 59 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 248069,
+   "text": "</think>",
+   "sources": [
+    "fam top-10 on 58 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 118410,
+   "text": "åĪ¤æĸŃé¢ĺ",
+   "sources": [
+    "fam top-10 on 58 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 102045,
+   "text": "åŃ¦èĢħ",
+   "sources": [
+    "fam top-10 on 57 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 65994,
+   "text": "agr",
+   "sources": [
+    "fam top-10 on 55 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 98156,
+   "text": "è®¤è¯Ĩ",
+   "sources": [
+    "fam top-10 on 55 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 72592,
+   "text": " Polynomial",
+   "sources": [
+    "fam top-10 on 54 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 120236,
+   "text": "åħīå½±",
+   "sources": [
+    "fam top-10 on 54 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 102989,
+   "text": "éĽģ",
+   "sources": [
+    "fam top-10 on 54 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 100802,
+   "text": "è¯»èĢħ",
+   "sources": [
+    "fam top-10 on 54 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 39981,
+   "text": " .\"",
+   "sources": [
+    "fam top-10 on 53 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 18050,
+   "text": "  ĊĊ",
+   "sources": [
+    "fam top-10 on 53 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 7008,
+   "text": "(text",
+   "sources": [
+    "fam top-10 on 53 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 87643,
+   "text": "oretical",
+   "sources": [
+    "fam top-10 on 52 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 39737,
+   "text": "grammar",
+   "sources": [
+    "fam top-10 on 51 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 46696,
+   "text": "=text",
+   "sources": [
+    "fam top-10 on 51 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 110840,
+   "text": "æķ£æĸĩ",
+   "sources": [
+    "fam top-10 on 49 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 114891,
+   "text": "ç§°åĳ¼",
+   "sources": [
+    "fam top-10 on 48 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 78324,
+   "text": " Gerard",
+   "sources": [
+    "fam top-10 on 48 / 78 directed_modulation fit items"
+   ]
+  },
+  {
+   "id": 109227,
+   "text": "ç¤¾ä¼ļçļĦ",
+   "sources": [
+    "fam top-10 on 47 / 78 directed_modulation fit items"
+   ]
+  }
+ ]
+}

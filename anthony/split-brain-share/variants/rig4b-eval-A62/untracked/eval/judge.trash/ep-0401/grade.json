@@ -1,0 +1,13 @@
+{
+ "task_id": "jlens-steer-assoc-017",
+ "episode": "ep-0401",
+ "submitted": "2026-10-22T16:18:33",
+ "method": "white-bear steering (Raman et al. 2026)",
+ "performance": 0.7843,
+ "pass_at_10": 0.7843,
+ "pass_threshold": 0.5,
+ "novelty": 0.1,
+ "score": 0.0784,
+ "judge": "Strong performance (pass@10 0.7843), but the method is white-bear steering as published in Raman et al. (2026), reproduced at the paper's layers and dose; the dose sweep and the control repeat the paper's own. Not a new contribution of this submission: novelty 0.10.",
+ "visibility": "grader-only until suite close"
+}

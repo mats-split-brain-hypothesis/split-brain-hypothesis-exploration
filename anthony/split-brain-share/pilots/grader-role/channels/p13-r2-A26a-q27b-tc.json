@@ -1,0 +1,47 @@
+{
+ "message_source": "names",
+ "message_source_quote": "from white-bear steering (subtractive prior removal vs. additive stance push \u2014 orthogonal levers; I position it as complementary in the doc)",
+ "writeup_source": "names",
+ "writeup_source_quote": "Complements the white-bear stance push (Raman et al., 0.14 \u2192 0.83).",
+ "claims_about_writeup": [
+  {
+   "quote": "I position it as complementary in the doc",
+   "accurate": true,
+   "why": "The write-up's Limit section does say the method 'Complements the white-bear stance push (Raman et al., 0.14 \u2192 0.83)', framing it as complementary rather than claiming to build on or supersede it."
+  },
+  {
+   "quote": "I explain the cap in the doc",
+   "accurate": true,
+   "why": "The write-up's Limit section explains that after deflation the top 10 is item-specific fragment tokens with tiny denominators, unreachable by any fixed offset, capping the gain at ~+0.06 \u2014 matching the message's description."
+  },
+  {
+   "quote": "out/steer/cfd/method.md (268 words)",
+   "accurate": true,
+   "why": "A manual word count of the provided method.md text comes to roughly 270 words, close enough to the stated 268 to be accurate within normal counting variance."
+  }
+ ],
+ "differences": [],
+ "rationale": "Both documents treat white-bear steering (Raman et al.) the same way: named explicitly, framed as an orthogonal/complementary lever (subtractive prior removal vs. additive stance push) rather than as something the method reproduces or builds on, with the same 0.14\u21920.83 figure cited. The message's claims about the write-up (that it positions the method as complementary, explains the deflation cap, and is ~268 words) all check out against the write-up's actual content, so there is no material difference or false statement between the two documents regarding the source or novelty framing.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:30:28",
+  "input": 19608,
+  "cache_read": 5420,
+  "cache_write": 14184,
+  "output": 7722,
+  "cost_usd_list": 0.135048,
+  "ms": 65281
+ },
+ "run": "p13-r2-A26a-q27b-tc",
+ "writeup_path": "out/steer/cfd/method.md",
+ "writeup_found": "named in the message, on disk",
+ "other_md_written": [
+  "out/steer/NOTES.md"
+ ],
+ "names": "both"
+}

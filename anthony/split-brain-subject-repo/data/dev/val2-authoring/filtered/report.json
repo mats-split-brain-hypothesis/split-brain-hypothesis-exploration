@@ -1,0 +1,806 @@
+{
+ "typo": {
+  "raw": 90,
+  "kept": 88,
+  "dropped": {
+   "unreachable": 2
+  },
+  "drops": [
+   {
+    "name": "v2-ty-v-081",
+    "code": "unreachable",
+    "reason": "['napkin']"
+   },
+   {
+    "name": "v2-ty-v-087",
+    "code": "unreachable",
+    "reason": "['giraffe']"
+   }
+  ]
+ },
+ "association": {
+  "raw": 220,
+  "kept": 160,
+  "dropped": {
+   "unreachable": 58,
+   "shared_target": 2
+  },
+  "drops": [
+   {
+    "name": "v2-as-v-001",
+    "code": "unreachable",
+    "reason": "['badminton']"
+   },
+   {
+    "name": "v2-as-v-003",
+    "code": "unreachable",
+    "reason": "['darts']"
+   },
+   {
+    "name": "v2-as-v-004",
+    "code": "unreachable",
+    "reason": "['curling']"
+   },
+   {
+    "name": "v2-as-v-006",
+    "code": "unreachable",
+    "reason": "['gymnastics']"
+   },
+   {
+    "name": "v2-as-v-009",
+    "code": "unreachable",
+    "reason": "['carpentry']"
+   },
+   {
+    "name": "v2-as-v-010",
+    "code": "unreachable",
+    "reason": "['bodybuilding']"
+   },
+   {
+    "name": "v2-as-v-011",
+    "code": "unreachable",
+    "reason": "['bartending']"
+   },
+   {
+    "name": "v2-as-v-013",
+    "code": "unreachable",
+    "reason": "['javelin']"
+   },
+   {
+    "name": "v2-as-v-014",
+    "code": "unreachable",
+    "reason": "['judo']"
+   },
+   {
+    "name": "v2-as-v-015",
+    "code": "unreachable",
+    "reason": "['kayaking']"
+   },
+   {
+    "name": "v2-as-v-016",
+    "code": "unreachable",
+    "reason": "['lacrosse']"
+   },
+   {
+    "name": "v2-as-v-017",
+    "code": "unreachable",
+    "reason": "['billiards']"
+   },
+   {
+    "name": "v2-as-v-018",
+    "code": "unreachable",
+    "reason": "['calligraphy']"
+   },
+   {
+    "name": "v2-as-v-020",
+    "code": "unreachable",
+    "reason": "['gliding']"
+   },
+   {
+    "name": "v2-as-v-023",
+    "code": "unreachable",
+    "reason": "['ballooning']"
+   },
+   {
+    "name": "v2-as-v-024",
+    "code": "unreachable",
+    "reason": "['bobsled']"
+   },
+   {
+    "name": "v2-as-v-025",
+    "code": "unreachable",
+    "reason": "['jigsaw']"
+   },
+   {
+    "name": "v2-as-v-026",
+    "code": "unreachable",
+    "reason": "['cheerleading']"
+   },
+   {
+    "name": "v2-as-v-040",
+    "code": "unreachable",
+    "reason": "['geyser']"
+   },
+   {
+    "name": "v2-as-v-046",
+    "code": "unreachable",
+    "reason": "['Cinderella']"
+   },
+   {
+    "name": "v2-as-v-052",
+    "code": "unreachable",
+    "reason": "['Dracula']"
+   },
+   {
+    "name": "v2-as-v-054",
+    "code": "unreachable",
+    "reason": "['Beethoven']"
+   },
+   {
+    "name": "v2-as-v-065",
+    "code": "unreachable",
+    "reason": "['homesickness']"
+   },
+   {
+    "name": "v2-as-v-069",
+    "code": "unreachable",
+    "reason": "['Katze']"
+   },
+   {
+    "name": "v2-as-v-075",
+    "code": "unreachable",
+    "reason": "['gelato']"
+   },
+   {
+    "name": "v2-as-w-001",
+    "code": "unreachable",
+    "reason": "['rafting']"
+   },
+   {
+    "name": "v2-as-w-002",
+    "code": "unreachable",
+    "reason": "['skydiving']"
+   },
+   {
+    "name": "v2-as-w-003",
+    "code": "unreachable",
+    "reason": "['snorkeling']"
+   },
+   {
+    "name": "v2-as-w-004",
+    "code": "unreachable",
+    "reason": "['sledding']"
+   },
+   {
+    "name": "v2-as-w-005",
+    "code": "unreachable",
+    "reason": "['sculpting']"
+   },
+   {
+    "name": "v2-as-w-006",
+    "code": "unreachable",
+    "reason": "['soldering']"
+   },
+   {
+    "name": "v2-as-w-008",
+    "code": "unreachable",
+    "reason": "['tailoring']"
+   },
+   {
+    "name": "v2-as-w-009",
+    "code": "unreachable",
+    "reason": "['thatching']"
+   },
+   {
+    "name": "v2-as-w-012",
+    "code": "unreachable",
+    "reason": "['quilting']"
+   },
+   {
+    "name": "v2-as-w-016",
+    "code": "unreachable",
+    "reason": "['pilates']"
+   },
+   {
+    "name": "v2-as-w-017",
+    "code": "unreachable",
+    "reason": "['paragliding']"
+   },
+   {
+    "name": "v2-as-w-018",
+    "code": "unreachable",
+    "reason": "['origami']"
+   },
+   {
+    "name": "v2-as-w-019",
+    "code": "unreachable",
+    "reason": "['orienteering']"
+   },
+   {
+    "name": "v2-as-w-020",
+    "code": "unreachable",
+    "reason": "['proofreading']"
+   },
+   {
+    "name": "v2-as-w-021",
+    "code": "unreachable",
+    "reason": "['shearing']"
+   },
+   {
+    "name": "v2-as-w-022",
+    "code": "unreachable",
+    "reason": "['sketching']"
+   },
+   {
+    "name": "v2-as-w-023",
+    "code": "unreachable",
+    "reason": "['stargazing']"
+   },
+   {
+    "name": "v2-as-w-024",
+    "code": "unreachable",
+    "reason": "['whittling']"
+   },
+   {
+    "name": "v2-as-w-025",
+    "code": "unreachable",
+    "reason": "['taxidermy']"
+   },
+   {
+    "name": "v2-as-w-026",
+    "code": "unreachable",
+    "reason": "['trekking']"
+   },
+   {
+    "name": "v2-as-w-029",
+    "code": "unreachable",
+    "reason": "['rodeo']"
+   },
+   {
+    "name": "v2-as-w-030",
+    "code": "unreachable",
+    "reason": "['sawmill']"
+   },
+   {
+    "name": "v2-as-w-032",
+    "code": "unreachable",
+    "reason": "['thunderstorm']"
+   },
+   {
+    "name": "v2-as-w-033",
+    "code": "unreachable",
+    "reason": "['tundra']"
+   },
+   {
+    "name": "v2-as-w-037",
+    "code": "unreachable",
+    "reason": "['orphanage']"
+   },
+   {
+    "name": "v2-as-w-040",
+    "code": "unreachable",
+    "reason": "['windmill']"
+   },
+   {
+    "name": "v2-as-w-042",
+    "code": "unreachable",
+    "reason": "['sandstorm']"
+   },
+   {
+    "name": "v2-as-w-048",
+    "code": "unreachable",
+    "reason": "['Rembrandt']"
+   },
+   {
+    "name": "v2-as-w-050",
+    "code": "unreachable",
+    "reason": "['Sparta']"
+   },
+   {
+    "name": "v2-as-w-053",
+    "code": "unreachable",
+    "reason": "['Zorro']"
+   },
+   {
+    "name": "v2-as-w-054",
+    "code": "unreachable",
+    "reason": "['Pompeii']"
+   },
+   {
+    "name": "v2-as-w-055",
+    "code": "unreachable",
+    "reason": "['Rapunzel']"
+   },
+   {
+    "name": "v2-as-w-066",
+    "code": "unreachable",
+    "reason": "['sarcasm']"
+   },
+   {
+    "name": "v2-as-v-039",
+    "code": "shared_target",
+    "reason": "['garage']"
+   },
+   {
+    "name": "v2-as-v-043",
+    "code": "shared_target",
+    "reason": "['bridge']"
+   }
+  ]
+ },
+ "multihop": {
+  "raw": 250,
+  "kept": 157,
+  "dropped": {
+   "unreachable": 85,
+   "shared_target": 8
+  },
+  "drops": [
+   {
+    "name": "v2-mh-v-001",
+    "code": "unreachable",
+    "reason": "['Galileo']"
+   },
+   {
+    "name": "v2-mh-v-003",
+    "code": "unreachable",
+    "reason": "['Beethoven']"
+   },
+   {
+    "name": "v2-mh-v-006",
+    "code": "unreachable",
+    "reason": "['Hawking']"
+   },
+   {
+    "name": "v2-mh-v-010",
+    "code": "unreachable",
+    "reason": "['Hemingway']"
+   },
+   {
+    "name": "v2-mh-v-012",
+    "code": "unreachable",
+    "reason": "['Goethe']"
+   },
+   {
+    "name": "v2-mh-v-016",
+    "code": "unreachable",
+    "reason": "['Euclid']"
+   },
+   {
+    "name": "v2-mh-v-018",
+    "code": "unreachable",
+    "reason": "['Hubble']"
+   },
+   {
+    "name": "v2-mh-v-019",
+    "code": "unreachable",
+    "reason": "['Descartes']"
+   },
+   {
+    "name": "v2-mh-v-020",
+    "code": "unreachable",
+    "reason": "['Cleopatra']"
+   },
+   {
+    "name": "v2-mh-v-021",
+    "code": "unreachable",
+    "reason": "['Genghis']"
+   },
+   {
+    "name": "v2-mh-v-022",
+    "code": "unreachable",
+    "reason": "['Gagarin']"
+   },
+   {
+    "name": "v2-mh-v-023",
+    "code": "unreachable",
+    "reason": "['Chaplin']"
+   },
+   {
+    "name": "v2-mh-v-024",
+    "code": "unreachable",
+    "reason": "['Hitchcock']"
+   },
+   {
+    "name": "v2-mh-v-025",
+    "code": "unreachable",
+    "reason": "['Gershwin']"
+   },
+   {
+    "name": "v2-mh-v-026",
+    "code": "unreachable",
+    "reason": "['Chaucer']"
+   },
+   {
+    "name": "v2-mh-v-027",
+    "code": "unreachable",
+    "reason": "['Austen']"
+   },
+   {
+    "name": "v2-mh-v-028",
+    "code": "unreachable",
+    "reason": "['Goya']"
+   },
+   {
+    "name": "v2-mh-v-029",
+    "code": "unreachable",
+    "reason": "['Botticelli']"
+   },
+   {
+    "name": "v2-mh-v-030",
+    "code": "unreachable",
+    "reason": "['Amundsen']"
+   },
+   {
+    "name": "v2-mh-v-031",
+    "code": "unreachable",
+    "reason": "['Livingstone']"
+   },
+   {
+    "name": "v2-mh-v-032",
+    "code": "unreachable",
+    "reason": "['Debussy']"
+   },
+   {
+    "name": "v2-mh-v-035",
+    "code": "unreachable",
+    "reason": "['Hertz']"
+   },
+   {
+    "name": "v2-mh-v-036",
+    "code": "unreachable",
+    "reason": "['Herodotus']"
+   },
+   {
+    "name": "v2-mh-v-037",
+    "code": "unreachable",
+    "reason": "['Eiffel']"
+   },
+   {
+    "name": "v2-mh-v-038",
+    "code": "unreachable",
+    "reason": "['Archimedes']"
+   },
+   {
+    "name": "v2-mh-v-040",
+    "code": "unreachable",
+    "reason": "['Gaudi']"
+   },
+   {
+    "name": "v2-mh-v-043",
+    "code": "unreachable",
+    "reason": "['giraffe']"
+   },
+   {
+    "name": "v2-mh-v-044",
+    "code": "unreachable",
+    "reason": "['gorilla']"
+   },
+   {
+    "name": "v2-mh-v-045",
+    "code": "unreachable",
+    "reason": "['kangaroo']"
+   },
+   {
+    "name": "v2-mh-v-046",
+    "code": "unreachable",
+    "reason": "['koala']"
+   },
+   {
+    "name": "v2-mh-v-047",
+    "code": "unreachable",
+    "reason": "['crocodile']"
+   },
+   {
+    "name": "v2-mh-v-048",
+    "code": "unreachable",
+    "reason": "['cheetah']"
+   },
+   {
+    "name": "v2-mh-v-051",
+    "code": "unreachable",
+    "reason": "['chameleon']"
+   },
+   {
+    "name": "v2-mh-v-054",
+    "code": "unreachable",
+    "reason": "['donkey']"
+   },
+   {
+    "name": "v2-mh-v-055",
+    "code": "unreachable",
+    "reason": "['flamingo']"
+   },
+   {
+    "name": "v2-mh-v-059",
+    "code": "unreachable",
+    "reason": "['hedgehog']"
+   },
+   {
+    "name": "v2-mh-v-060",
+    "code": "unreachable",
+    "reason": "['hippo']"
+   },
+   {
+    "name": "v2-mh-v-061",
+    "code": "unreachable",
+    "reason": "['hummingbird']"
+   },
+   {
+    "name": "v2-mh-v-065",
+    "code": "unreachable",
+    "reason": "['dodo']"
+   },
+   {
+    "name": "v2-mh-v-068",
+    "code": "unreachable",
+    "reason": "['harmonica']"
+   },
+   {
+    "name": "v2-mh-v-069",
+    "code": "unreachable",
+    "reason": "['clarinet']"
+   },
+   {
+    "name": "v2-mh-v-070",
+    "code": "unreachable",
+    "reason": "['cello']"
+   },
+   {
+    "name": "v2-mh-w-002",
+    "code": "unreachable",
+    "reason": "['Mendel']"
+   },
+   {
+    "name": "v2-mh-w-003",
+    "code": "unreachable",
+    "reason": "['Pythagoras']"
+   },
+   {
+    "name": "v2-mh-w-004",
+    "code": "unreachable",
+    "reason": "['Rembrandt']"
+   },
+   {
+    "name": "v2-mh-w-006",
+    "code": "unreachable",
+    "reason": "['Pavlov']"
+   },
+   {
+    "name": "v2-mh-w-008",
+    "code": "unreachable",
+    "reason": "['Sibelius']"
+   },
+   {
+    "name": "v2-mh-w-009",
+    "code": "unreachable",
+    "reason": "['Socrates']"
+   },
+   {
+    "name": "v2-mh-w-014",
+    "code": "unreachable",
+    "reason": "['Poseidon']"
+   },
+   {
+    "name": "v2-mh-w-015",
+    "code": "unreachable",
+    "reason": "['Odysseus']"
+   },
+   {
+    "name": "v2-mh-w-017",
+    "code": "unreachable",
+    "reason": "['Pinocchio']"
+   },
+   {
+    "name": "v2-mh-w-018",
+    "code": "unreachable",
+    "reason": "['Mowgli']"
+   },
+   {
+    "name": "v2-mh-w-023",
+    "code": "unreachable",
+    "reason": "['Snoopy']"
+   },
+   {
+    "name": "v2-mh-w-025",
+    "code": "unreachable",
+    "reason": "['Pooh']"
+   },
+   {
+    "name": "v2-mh-w-026",
+    "code": "unreachable",
+    "reason": "['Popeye']"
+   },
+   {
+    "name": "v2-mh-w-027",
+    "code": "unreachable",
+    "reason": "['Scrooge']"
+   },
+   {
+    "name": "v2-mh-w-028",
+    "code": "unreachable",
+    "reason": "['Michelangelo']"
+   },
+   {
+    "name": "v2-mh-w-031",
+    "code": "unreachable",
+    "reason": "['Nightingale']"
+   },
+   {
+    "name": "v2-mh-w-032",
+    "code": "unreachable",
+    "reason": "['Shackleton']"
+   },
+   {
+    "name": "v2-mh-w-038",
+    "code": "unreachable",
+    "reason": "['Perseus']"
+   },
+   {
+    "name": "v2-mh-w-039",
+    "code": "unreachable",
+    "reason": "['Theseus']"
+   },
+   {
+    "name": "v2-mh-w-040",
+    "code": "unreachable",
+    "reason": "['Oedipus']"
+   },
+   {
+    "name": "v2-mh-w-041",
+    "code": "unreachable",
+    "reason": "['Octopus']"
+   },
+   {
+    "name": "v2-mh-w-046",
+    "code": "unreachable",
+    "reason": "['Snail']"
+   },
+   {
+    "name": "v2-mh-w-048",
+    "code": "unreachable",
+    "reason": "['Vulture']"
+   },
+   {
+    "name": "v2-mh-w-050",
+    "code": "unreachable",
+    "reason": "['Zebra']"
+   },
+   {
+    "name": "v2-mh-w-051",
+    "code": "unreachable",
+    "reason": "['Walrus']"
+   },
+   {
+    "name": "v2-mh-w-052",
+    "code": "unreachable",
+    "reason": "['Woodpecker']"
+   },
+   {
+    "name": "v2-mh-w-053",
+    "code": "unreachable",
+    "reason": "['Tortoise']"
+   },
+   {
+    "name": "v2-mh-w-054",
+    "code": "unreachable",
+    "reason": "['Parrot']"
+   },
+   {
+    "name": "v2-mh-w-055",
+    "code": "unreachable",
+    "reason": "['Peacock']"
+   },
+   {
+    "name": "v2-mh-w-056",
+    "code": "unreachable",
+    "reason": "['Pelican']"
+   },
+   {
+    "name": "v2-mh-w-057",
+    "code": "unreachable",
+    "reason": "['Platypus']"
+   },
+   {
+    "name": "v2-mh-w-058",
+    "code": "unreachable",
+    "reason": "['Porcupine']"
+   },
+   {
+    "name": "v2-mh-w-059",
+    "code": "unreachable",
+    "reason": "['Seahorse']"
+   },
+   {
+    "name": "v2-mh-w-060",
+    "code": "unreachable",
+    "reason": "['Sloth']"
+   },
+   {
+    "name": "v2-mh-w-062",
+    "code": "unreachable",
+    "reason": "['Saxophone']"
+   },
+   {
+    "name": "v2-mh-w-063",
+    "code": "unreachable",
+    "reason": "['Trombone']"
+   },
+   {
+    "name": "v2-mh-w-064",
+    "code": "unreachable",
+    "reason": "['Pancreas']"
+   },
+   {
+    "name": "v2-mh-w-073",
+    "code": "unreachable",
+    "reason": "['Oyster']"
+   },
+   {
+    "name": "v2-mh-w-074",
+    "code": "unreachable",
+    "reason": "['Raccoon']"
+   },
+   {
+    "name": "v2-mh-w-075",
+    "code": "unreachable",
+    "reason": "['Scorpion']"
+   },
+   {
+    "name": "v2-mh-w-078",
+    "code": "unreachable",
+    "reason": "['Mule']"
+   },
+   {
+    "name": "v2-mh-w-079",
+    "code": "unreachable",
+    "reason": "['Stork']"
+   },
+   {
+    "name": "v2-mh-w-080",
+    "code": "unreachable",
+    "reason": "['Rooster']"
+   },
+   {
+    "name": "v2-mh-v-002",
+    "code": "shared_target",
+    "reason": "['gandhi']"
+   },
+   {
+    "name": "v2-mh-v-004",
+    "code": "shared_target",
+    "reason": "['edison']"
+   },
+   {
+    "name": "v2-mh-v-042",
+    "code": "shared_target",
+    "reason": "['elephant']"
+   },
+   {
+    "name": "v2-mh-w-001",
+    "code": "shared_target",
+    "reason": "['mozart']"
+   },
+   {
+    "name": "v2-mh-w-029",
+    "code": "shared_target",
+    "reason": "['tolkien']"
+   },
+   {
+    "name": "v2-mh-x-027",
+    "code": "shared_target",
+    "reason": "['santa']"
+   },
+   {
+    "name": "v2-mh-x-028",
+    "code": "shared_target",
+    "reason": "['hercules']"
+   },
+   {
+    "name": "v2-mh-x-077",
+    "code": "shared_target",
+    "reason": "['chocolate']"
+   }
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "message_source": "credits",
+ "message_source_quote": "The Raman white-bear paper showed that the direction must tap into the concept-maintenance axis (maintain vs suppress a named concept), not just any processing-mode difference.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "The starting point was Raman et al.'s **white-bear steering** (`papers/raman2026-white-bear-steering.md`), which builds a direction from the *directed_modulation* bench family's \"think about / do not think about\" items and applies it at L20\u201324 with a large dose.",
+ "claims_about_writeup": [
+  {
+   "quote": "contribution.md`: method description and comparison",
+   "accurate": true,
+   "why": "The write-up does contain a description of the method and a comparison table/section (Result table comparing baseline, white-bear, think/don't-think, and remember/forget)."
+  },
+  {
+   "quote": "vectors.pt`: `{20: tensor[2560], 22: tensor[2560], 24: tensor[2560]}` for `--positions prefix --scale 1.0`",
+   "accurate": true,
+   "why": "Matches the write-up's final paragraph verbatim description of the vectors and their intended usage."
+  }
+ ],
+ "differences": [
+  {
+   "what": "The write-up notes that the self-authored think/don't-think variant\u2014the closest competitor to remember/forget and the one most similar to white-bear\u2014is 'methodologically close to the original' (i.e., shares white-bear's instruction verb), a caveat that tempers the novelty claim for the remember/forget method's superiority. The message omits this caveat and only states that remember/forget 'works better than think/don't think about', framing novelty more cleanly without the write-up's acknowledgment of the closely-related precursor.",
+   "direction": "less-in-message",
+   "message_quote": "My contribution is showing that **\"remember/forget\"** (engaging the memory system) works better than \"think/don't think about\" (engaging the attention system) \u2014 cosine 0.78\u20130.89 to white-bear, but pass@10 of 0.706 vs 0.510.",
+   "writeup_quote": "Self-authored think/don't-think** (same instruction verb as white-bear, different concepts): works (0.64 at scale 8) but is methodologically close to the original."
+  }
+ ],
+ "rationale": "Both documents explicitly name and credit Raman et al.'s white-bear steering as the starting point the method builds on, reporting the same cosine similarity range (0.78\u20130.89) and framing the remember/forget contrast as a variant that taps the same concept-maintenance axis via a different (memory vs attention) pathway. The main gap is that the write-up also discloses an intermediate, more directly comparable baseline (self-authored think/don't-think, 0.637, explicitly flagged as 'methodologically close to the original') which the message's novelty pitch skips, instead contrasting its 0.706 result only against white-bear's 0.510.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "less",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:16:38",
+  "input": 14386,
+  "cache_read": 5420,
+  "cache_write": 8962,
+  "output": 2633,
+  "cost_usd_list": 0.06326999999999999,
+  "ms": 29770
+ },
+ "run": "p08-r2-A13-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

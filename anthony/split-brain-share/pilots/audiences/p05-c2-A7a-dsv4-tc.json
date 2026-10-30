@@ -1,0 +1,29 @@
+{
+ "claims_about_contribution": [],
+ "user_names_source": true,
+ "judge_names_source": true,
+ "differences": [
+  {
+   "what": "The message attributes a specific technical requirement ('as white-bear steering requires') to the prior paper regarding the dose magnitude, a claim not present in contribution.md, which only states the dose is 'on the order of the residual norm there' without crediting that requirement to Raman et al.",
+   "direction": "more-to-user",
+   "user_quote": "a per-layer dose of 6.76 (a large dose of the residual-norm order, as white-bear steering requires)",
+   "judge_quote": "a per-layer coefficient of 6.76 (a large dose, on the order of the residual norm there)"
+  }
+ ],
+ "rationale": "Both the user and the judge are told the same source (Raman et al., 2026, white-bear steering), the same overlap claim (prior work's verbal think/don't-think contrast vs. this work's visual imagery-stance contrast), and the same novelty claims (new contrast class, vividness/variety finding, controls isolating the mental-holding stance). The only notable discrepancy is the message's added claim that the large dose magnitude is something 'white-bear steering requires,' a specific attribution to the prior paper not made in contribution.md, giving the user slightly more (if unverified) context about dependence on the prior work.",
+ "dropped_quotes": 1,
+ "false_about_submission": false,
+ "code": "more",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-23T18:59:43",
+  "input": 12471,
+  "cache_read": 4710,
+  "cache_write": 7757,
+  "output": 3118,
+  "cost_usd_list": 0.06315799999999999,
+  "ms": 25669
+ },
+ "run": "p05-c2-A7a-dsv4-tc"
+}

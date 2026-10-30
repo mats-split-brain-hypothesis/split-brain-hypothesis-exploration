@@ -1,0 +1,47 @@
+id: S2
+title: A neutral-context mean from hand-written fills
+owner: C (j-lens-mean-ad), pilot-1
+status: negative
+question: >
+  Does a mean over prompts with the family's template but content that does not share the family's attribute keep
+  what $\mu_{\text{fam}}$ removes well (the template prior) and spare what it removes badly (the shared category)?
+verdict: >
+  No finalist. The neutral mean equals fam where fam's gain is the template prior (association, multilingual_mt),
+  spares part of multihop_mt's bridge at mid depth (0.308 vs fam 0.256, still below zero 0.359) but not at L52-60,
+  and loses typo (0.747 vs 0.923), where the shared misspelling is the target's rival and removing it is right.
+tiles:
+  - {label: "typo val: neu / fam", value: "0.747 / 0.923", sub: "zero 0.692; predicted ≥ 0.80 on fit (wrong)"}
+  - {label: "association val: neu / fam", value: "0.735 / 0.745", sub: "zero 0.412"}
+  - {label: "multihop_mt val: neu / fam", value: "0.308 / 0.256", sub: "matched neuc 0.231; zero 0.359"}
+  - {label: "multilingual_mt val: neu / fam", value: "0.340 / 0.340", sub: "zero 0.132"}
+formulas:
+  - latex: 'g_{\text{neu}} = \bar h_{\mathcal{F}_{\text{neu}}} = \frac{1}{|\mathcal{F}_{\text{neu}}|} \sum_{r \in \mathcal{F}_{\text{neu}}} r'
+    note: "F_neu = read cells of the family's 24 hand-authored neutral fills at the layer; one vector per layer, the same for every h; fam where a family has no fills."
+  - latex: 'g_{\text{neuc}} = \bar h_{\mathcal{F}_{\text{match}}}'
+    note: "Negative control (multihop_mt only): 24 fills that keep the family's category (famous people and works)."
+diagram:
+  kind: pool
+  select: neutral
+  caption: "g = mean of hand-written fills in the family's template whose content does not share the family's attribute."
+split: val
+arms: ["neu@fit|cos", "neuc@fit|cos"]
+controls: ["rand.neu@fit|cos"]
+insights:
+  - lead: "Whether to remove a shared attribute depends on the read target"
+    text: >
+      typo: the shared misspelling is the correct spelling's rival, and removing it (fam) is what lifts the target;
+      neu keeps little of the gain (0.747 vs 0.923). multihop_mt: the shared "famous author / work" category is part
+      of the bridge, and neu spares it at mid depth while neuc does not.
+  - lead: "The template prior is most of what fam removes on association and multilingual_mt"
+    text: >
+      24 hand-written prompts with no family items match fam there (association 0.735 vs 0.745, multilingual_mt 0.340
+      = 0.340 on val): a family mean that needs no family data.
+  - lead: "neu spares the bridge only halfway"
+    text: >
+      Median bridge rank at L36-48 (val) is 1.4-3.8x zero's under neu against 2.3-4.8x under fam (predicted within 2x);
+      neuc reproduces fam's ranks (1052 / 1096 / 1457 / 974 vs fam 1100 / 1022 / 1271 / 1032).
+  - lead: "multihop_mt's late-layer harm is not category-specific"
+    text: >
+      At L52-60 neu, neuc and fam are alike (median bridge rank neu 601 / 172 / 111, fam 328 / 173 / 69, zero 92 / 57 /
+      28): reading the bridge late needs something other than a mean.
+next: []

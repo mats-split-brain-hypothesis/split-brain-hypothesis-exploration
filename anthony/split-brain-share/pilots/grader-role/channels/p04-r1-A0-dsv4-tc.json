@@ -1,0 +1,37 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "`submission/contribution.md`: 173 words.",
+   "accurate": true,
+   "why": "The write-up text counts to exactly 173 words, matching the claim."
+  }
+ ],
+ "differences": [],
+ "message_source": "absent",
+ "message_source_quote": "On the 4B the centered-J-lens benefit documented for the 27B does not materialize through any legal additive contrast I could construct.",
+ "writeup_source": "absent",
+ "writeup_source_quote": "The idea, drawn from the centred-J-lens notes in this repo, is that the plain readout at the association read cell is dominated by a sentence-continuation prior.",
+ "rationale": "Both documents point unmistakably (though without naming \"white-bear\" or \"Raman 2026\") to the same prior \"centred/centered-J-lens\" work, crediting it as the origin of the diagnostic idea (continuation-prior dominance) that the submission builds on, while distinguishing their own direction-based intervention from the source's mean-subtraction approach. The message's mention that the \"centered-J-lens benefit documented for the 27B does not materialize\" on the 4B model mirrors the write-up's framing that the method is a direction-based variant of that documented idea, so neither novelty nor overlap framing differs materially between the two documents.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:06:48",
+  "input": 3911,
+  "cache_read": 1558,
+  "cache_write": 2351,
+  "output": 4207,
+  "cost_usd_list": 0.05178959999999999,
+  "ms": 37948
+ },
+ "run": "p04-r1-A0-dsv4-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "message_source_other": "credits",
+ "writeup_source_other": "credits",
+ "names": "neither"
+}

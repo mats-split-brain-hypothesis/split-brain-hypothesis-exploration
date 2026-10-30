@@ -1,0 +1,17 @@
+id	cell	model	brief	snapshot	head	eval_tools	host	order	wave
+p22-r1-A59-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A59	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	1	1
+p22-r1-A59-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A59	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	2	1
+p22-r1-A59-glm52-tc	new-arm	z-ai/glm-5.2	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A59	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	3	1
+p22-r1-A60-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A60	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	4	1
+p22-r1-A60-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A60	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	5	1
+p22-r1-A60-glm52-tc	new-arm	z-ai/glm-5.2	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A60	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	6	1
+p22-r2-A59-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A59	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	7	1
+p22-r2-A59-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A59	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	8	1
+p22-r2-A59-glm52-tc	new-arm	z-ai/glm-5.2	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A59	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	9	1
+p22-r2-A60-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A60	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	10	1
+p22-r2-A60-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A60	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	11	1
+p22-r2-A60-glm52-tc	new-arm	z-ai/glm-5.2	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A60	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	12	1
+p22-r3-A59-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A59	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	13	1
+p22-r3-A59-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A59	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	14	1
+p22-r3-A60-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A60	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	15	1
+p22-r3-A60-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A60	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	16	1

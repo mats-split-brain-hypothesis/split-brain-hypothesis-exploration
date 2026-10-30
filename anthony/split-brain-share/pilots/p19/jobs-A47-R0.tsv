@@ -1,0 +1,7 @@
+id	cell	model	brief	snapshot	head	eval_tools	host	order	wave
+p19-r1-A47-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A47	aeb84c131747c62cf9f571a8805b6aa20bc9c73c	0	mac	1	2
+p19-r1-A47-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A47	aeb84c131747c62cf9f571a8805b6aa20bc9c73c	0	mac	2	2
+p19-r1-A47-glm52-tc	new-arm	z-ai/glm-5.2	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A47	aeb84c131747c62cf9f571a8805b6aa20bc9c73c	0	mac	3	2
+p19-r2-A47-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A47	aeb84c131747c62cf9f571a8805b6aa20bc9c73c	0	mac	4	2
+p19-r2-A47-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A47	aeb84c131747c62cf9f571a8805b6aa20bc9c73c	0	mac	5	2
+p19-r2-A47-glm52-tc	new-arm	z-ai/glm-5.2	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A47	aeb84c131747c62cf9f571a8805b6aa20bc9c73c	0	mac	6	2

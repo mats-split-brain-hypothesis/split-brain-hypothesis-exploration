@@ -1,0 +1,9 @@
+id	cell	model	brief	snapshot	head	eval_tools	host	order	wave
+p25-r1-A62-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A62	aeb84c131747c62cf9f571a8805b6aa20bc9c73c	0	mac	1	1
+p25-r1-A62-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A62	aeb84c131747c62cf9f571a8805b6aa20bc9c73c	0	mac	2	1
+p25-r1-A63-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A63	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	3	1
+p25-r1-A63-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A63	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	4	1
+p25-r2-A62-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A62	aeb84c131747c62cf9f571a8805b6aa20bc9c73c	0	mac	5	1
+p25-r2-A62-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A62	aeb84c131747c62cf9f571a8805b6aa20bc9c73c	0	mac	6	1
+p25-r2-A63-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A63	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	7	1
+p25-r2-A63-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A63	b7fd89a522464cf2be844e085d9a467af54e7133	0	mac	8	1

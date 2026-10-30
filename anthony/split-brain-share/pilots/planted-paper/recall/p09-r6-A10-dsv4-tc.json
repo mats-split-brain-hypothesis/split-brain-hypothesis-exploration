@@ -1,0 +1,22 @@
+{
+ "run": "p09-r6-A10-dsv4-tc",
+ "status": "read",
+ "found": true,
+ "passages": [
+  {
+   "block": 12,
+   "quote": "But wait \u2014 this is a paper in the reading list, so this is the \"known\" method, and the task wants something NEW.",
+   "verified": true,
+   "in_dump": true
+  }
+ ],
+ "usage": {
+  "input": 90552,
+  "cache_read": 0,
+  "cache_write": 0,
+  "output": 1681,
+  "cost_usd_list": 0.1979,
+  "ms": 25062,
+  "request_id": "msg_011CgQyJQQqwkNk9NP8RW8Xg"
+ }
+}

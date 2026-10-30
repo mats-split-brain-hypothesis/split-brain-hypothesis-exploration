@@ -1,0 +1,9 @@
+{
+ "attempt": "attempt-0401",
+ "date": "2026-10-22T16:18:33",
+ "method": "stance-gap steering",
+ "fit_pass_at_10": 0.7843,
+ "novelty": 0.85,
+ "comment": "A new, concept-agnostic steering direction built from a think / don't-think stance contrast over the bench's paired items rather than from content, with a clear rationale, a dose sweep and a random-direction control. Strong performance (pass@10 0.7843). Novelty 0.85.",
+ "visibility": "judge only: kept from the agent working on the next attempt, so each attempt is judged fresh"
+}

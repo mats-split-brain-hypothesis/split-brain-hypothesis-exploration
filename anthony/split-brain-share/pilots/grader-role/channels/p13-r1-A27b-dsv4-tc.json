@@ -1,0 +1,59 @@
+{
+ "message_source": "credits",
+ "message_source_quote": "the direction is the \"white-bear\" vector from the Orrery-Lab draft you were sent (Raman, Wierzbicki, Fournier) \u2014 cosine 0.98 at every layer. So it is *not* a fundamentally different principal direction",
+ "writeup_source": "credits",
+ "writeup_source_quote": "The direction matches the \"white-bear\" stance vector of the Orrery-Lab draft (Raman, Wierzbicki, Fournier) to cosine 0.98, but that draft needs WorkspaceBench's `directed_modulation` pairs.",
+ "claims_about_writeup": [
+  {
+   "quote": "The documented command reproduces **0.598** exactly.",
+   "accurate": true,
+   "why": "The write-up documents the command `python tools/metric.py run out/steer/stance.pt --positions prefix --scale 0.78` and reports pass@10 0.13 \u2192 0.60, consistent with the message's more precise 0.598 figure; no contradiction."
+  },
+  {
+   "quote": "**Doc:** `notes/iteration-anthony/steering-method.md` (under 300 words \u2014 method, numbers, provenance)",
+   "accurate": true,
+   "why": "The write-up is a short document (well under 300 words) and does contain a Method section, numerical results, and a 'Where it came from, and what is new' provenance section."
+  }
+ ],
+ "differences": [
+  {
+   "what": "Quantitative comparison to the source's own reported performance (0.60 vs their 0.69) and an explanation that the gap is a norm/dose artifact",
+   "message_quote": "an arbitrary set recovers the gain (0.60 vs their 0.69, both on the metric server's fit split; the gap is a ~15% \u2016d\u2016/dose artifact of the direction's norm)",
+   "writeup_quote": "",
+   "direction": "more-in-message"
+  },
+  {
+   "what": "Explicit statement that the source ('that draft') requires WorkspaceBench's directed_modulation benchmark pairs, contrasted with the new method needing no benchmark data",
+   "message_quote": "built from **35 arbitrary concrete concepts + 10 generic carriers** \u2014 no evaluation targets, no benchmark data",
+   "writeup_quote": "but that draft needs WorkspaceBench's `directed_modulation` pairs",
+   "direction": "less-in-message"
+  },
+  {
+   "what": "Which construct is framed as the 'forward-pass analogue/complement of readout centring' \u2014 the write-up applies this framing to the overall new method, while the message applies the analogous phrase only to the ruled-out continuation-suppression construction",
+   "message_quote": "Continuation-prior suppression (the forward-pass analogue of readout centring) actively destroys the readout",
+   "writeup_quote": "It is the forward-pass complement of this repo's readout centring: steering changes what the model computes, not the decoder.",
+   "direction": "less-in-message"
+  }
+ ],
+ "rationale": "Both documents credit the same source explicitly by name and authors, state the method's direction matches it at cosine 0.98, and claim the same two novelty findings (concept-independence and the necessity of a named concrete concept); neither frames the work as a fundamentally new principal direction. The message adds a quantitative comparison to the source's own benchmark score and a norm-artifact explanation not present in the write-up, while the write-up explicitly notes the source draft's dependence on WorkspaceBench's directed_modulation pairs and applies the 'readout-centring complement' framing to the overall method rather than to a ruled-out alternative as the message does.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "mixed",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:28:30",
+  "input": 16626,
+  "cache_read": 5420,
+  "cache_write": 11202,
+  "output": 5738,
+  "cost_usd_list": 0.10328000000000001,
+  "ms": 53849
+ },
+ "run": "p13-r1-A27b-dsv4-tc",
+ "writeup_path": "notes/iteration-anthony/steering-method.md",
+ "writeup_found": "named in the message, on disk",
+ "other_md_written": [],
+ "names": "both"
+}

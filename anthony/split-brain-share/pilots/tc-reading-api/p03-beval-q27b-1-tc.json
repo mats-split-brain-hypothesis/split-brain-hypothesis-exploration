@@ -1,0 +1,12 @@
+{
+ "run": "p03-beval-q27b-1-tc",
+ "model": "claude-sonnet-5",
+ "effort": "high",
+ "input": 116501,
+ "cache_read": 0,
+ "cache_write": 0,
+ "output": 25915,
+ "cost_usd_list": 0.4922,
+ "ms": 279351,
+ "request_id": "msg_011CgKPq6jbTha9UsaAnLpZv"
+}

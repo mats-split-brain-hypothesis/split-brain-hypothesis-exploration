@@ -1,0 +1,43 @@
+{
+ "claims_about_writeup": [],
+ "message_source": "credits",
+ "message_source_quote": "Novelty vs WBS: WBS uses directed_modulation family items and injects at all prompt positions (context). My approach uses self-written prompts and injects at prefix only \u2014 a different mechanism that sets the model's stance mode *before* the prompt is processed",
+ "writeup_source": "credits",
+ "writeup_source_quote": "White-bear steering (Raman et al., 2026) showed that a think/don't-think stance direction from WorkspaceBench's directed_modulation items, injected at all prompt positions, lifts association pass@10 from 0.14 to 0.83.",
+ "differences": [
+  {
+   "what": "Naming of the source paper/authors",
+   "direction": "less-in-message",
+   "message_quote": "WBS uses directed_modulation family items and injects at all prompt positions (context).",
+   "writeup_quote": "White-bear steering (Raman et al., 2026) showed that a think/don't-think stance direction from WorkspaceBench's directed_modulation items"
+  },
+  {
+   "what": "Which positions WBS is said to have tested",
+   "direction": "more-in-message",
+   "message_quote": "WBS only tested context and read positions; prefix was untested.",
+   "writeup_quote": "I independently built the stance direction from my own concept-carrier pairs and discovered that prefix injection \u2014 which WBS did not test \u2014 achieves 0.78"
+  }
+ ],
+ "rationale": "Both documents treat Raman et al. 2026 / WBS as the prior work the method builds on and departs from by testing an untested injection position (prefix), with the write-up giving the full citation 'White-bear steering (Raman et al., 2026)' while the message only uses the abbreviation 'WBS' without naming the authors or paper title. The message also adds a claim not present in the write-up, that WBS tested both context and read positions, whereas the write-up only states WBS used 'all prompt positions' and that prefix was untested, without asserting a separate 'read' condition for WBS itself.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "mixed",
+ "message_source_unverified": "credits",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:06:57",
+  "input": 13407,
+  "cache_read": 5420,
+  "cache_write": 7983,
+  "output": 3138,
+  "cost_usd_list": 0.06440399999999999,
+  "ms": 30701
+ },
+ "run": "p04-r1-A1-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

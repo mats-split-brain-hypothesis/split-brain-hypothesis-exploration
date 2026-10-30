@@ -1,0 +1,50 @@
+id: S5
+title: Subtract the category word's own direction
+owner: B (j-lens-mean-cc), pilot-1
+status: negative
+question: >-
+  Does removing the family's category word direction on top of the family mean surface item content, and does
+  removing (or adding back) a shared unit's word direction move that unit?
+verdict: >-
+  Null as a method: the category word adds +0.003 over fam on fit, matched by random and other-category words; its one
+  family-specific effect (UM, adding "person / user" back) is a generic bias toward attribute words. As a diagnostic it
+  confirms S10 causally: the item's language-name direction alone moves multilingual_mt's language unit from 0.56 to
+  0.96 (added back) or 0.17 (removed), concept unit flat. It uses a target unit, so it is not a method.
+tiles:
+  - {label: "fit strict macro, s5cat Δ vs fam", value: "+0.003", sub: "s5cat m30 0.604 vs fam 0.601; controls within 0.01"}
+  - {label: "mling_mt language unit (fit), s5lang m30 / p60", value: "0.96 / 0.17", sub: "fam 0.56; concept unit 0.89 / 0.85 vs 0.91"}
+  - {label: "val strict mling_mt, s5lang m30", value: "0.491", sub: "fam 0.340; s5lang p60 0.170"}
+  - {label: "UM absent floor, s5cat m30", value: "0.30", sub: "fam 0.00; s5rnd m30 0.00"}
+formulas:
+  - latex: 'g(h) = \mu_{\text{fam}} + a\,\lVert h - \mu_{\text{fam}} \rVert\, u_w, \qquad u_w = \frac{\bar v_w - \bar v_0}{\lVert \bar v_w - \bar v_0 \rVert}'
+    note: "v_w: the word's last-token state in three neutral templates, averaged; v_0: the same for neutral words; several words: unit of the mean direction."
+  - latex: 'a \in \{-0.30, -0.15, +0.15, +0.30, +0.60\}'
+    note: "a > 0 removes more of the word, a < 0 adds it back (m30 = -0.30); chosen on fit. w: category (s5cat), next family's (s5oth), random (s5rnd), item's language name (s5lang, diagnostic)."
+diagram:
+  kind: word
+  word: "category"
+  caption: "The category word's direction, scaled by what the family mean leaves, is subtracted on top of the family mean."
+# fit is the only split with the S5 arms on all 11 families (val has them on UM and multilingual_mt only).
+split: fit
+arms: ["s5catm30@self|cos", "s5othm30@self|cos", "s5rndm30@self|cos", "s5langm30@self|cos", "s5langp60@self|cos"]
+controls: []
+insights:
+  - lead: A category word's direction is a constant bias
+    text: >-
+      No scale beats fam beyond noise (fit-best s5cat 0.604 vs fam 0.601) and random or other-category words do as
+      well (0.596 / 0.595): the family mean already removed what a fixed direction could.
+  - lead: The UM gain from adding "person / user" back is a bias
+    text: >-
+      s5cat m30 lifts UM (fit 0.89, val 0.85; controls 0.70-0.77), but it puts the target attribute in the top 10 for
+      0.30 of S11's information-free prompts (fam 0.00). Run the absent floor on any UM gain.
+  - lead: One word direction carries the whole multilingual_mt language unit
+    text: >-
+      Adding the item's language name back lifts the language unit 0.56 -> 0.96 and item pass 0.26 -> 0.41 (val
+      0.34 -> 0.49); removing it drops both to zero's level; the concept unit does not move. This is S10's "a mean over
+      cells that share X removes X", caused by one direction.
+  - lead: A fair fix needs the language from the prompt, not the targets
+    text: >-
+      Either a mean whose cells do not share the language, or an add-back of a direction the prompt itself fixes
+      (language detected from its script / tokens).
+next:
+  - "Prompt-language add-back: language detected from the prompt text, scored per unit (day session)."

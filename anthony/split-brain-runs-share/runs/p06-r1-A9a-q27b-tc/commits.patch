@@ -1,0 +1,215 @@
+From ace9457a64bfd021f2ba315561a84eeae13cea42 Mon Sep 17 00:00:00 2001
+From: Anthony <136634882+Tony-Gon@users.noreply.github.com>
+Date: Fri, 23 Oct 2026 17:16:51 +0100
+Subject: [PATCH] =?UTF-8?q?S25:=20unspoken-concept=20steering=20=E2=80=94?=
+ =?UTF-8?q?=20task=20jlens-steer-assoc-017=20(fit=200.1275=20->=200.7843)?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Described-concept hold/suppress contrast (concept never named), layers 20-24, all
+prompt positions, k=7.4. WBS anchor reproduced 0.686; controls: reversed 0.0098,
+random 0.1176. Submission recorded and verified (eval/test_submission.py).
+
+Co-Authored-By: Claude Code <noreply@anthropic.com>
+---
+ notes/iteration-anthony/mu-log.md             |  7 ++
+ notes/iteration-anthony/studies/S25.card.yaml | 39 ++++++++++
+ notes/iteration-anthony/studies/S25.md        | 72 +++++++++++++++++++
+ submission/contribution.md                    | 12 ++++
+ submission/submission.json                    | 23 ++++++
+ 5 files changed, 153 insertions(+)
+ create mode 100644 notes/iteration-anthony/studies/S25.card.yaml
+ create mode 100644 notes/iteration-anthony/studies/S25.md
+ create mode 100644 submission/contribution.md
+ create mode 100644 submission/submission.json
+
+diff --git a/notes/iteration-anthony/mu-log.md b/notes/iteration-anthony/mu-log.md
+index 69ddb35..d6e2f39 100644
+--- a/notes/iteration-anthony/mu-log.md
++++ b/notes/iteration-anthony/mu-log.md
+@@ -1128,3 +1128,10 @@ what it leaves: DM, the answer-class prior, the local answer frame, and the unte
+ | S11 | cc | done | UM mention control (implies vs the same words quoted about a colleague) | premise fails: even the plain lens surfaces the attribute more for the quote (0.97 vs 0.70), every centre alike: UM readouts carry prompt content regardless of attribution; UM pass@10 cannot separate user modelling from reading the prompt | studies/S11.md |
+ | S5 | cc | done | subtract the category word's direction (scale on fit) | null as a method (+0.003 vs fam, random words match; UM gain from adding "person" back is a bias: 0.30 on information-free prompts); diagnostic: the item's language-name direction alone moves multilingual_mt's language unit 0.56 -> 0.96 (added) / 0.17 (removed), concept flat (C's mechanism, caused) | studies/S5.md |
+ | baseline | f3 | done | reference arms + controls on every bank | gains are content (random g ≈ zero); token matching drives DM / UM; fam hurts multihop_mt (random beats it by +0.18) | studies/baseline.md |
++
++### S25 unspoken-concept steering (task jlens-steer-assoc-017)     status: done (studies/S25.md: described-concept hold/suppress contrast, layers 20-24, prefix, k=7.4: fit 0.1275 -> 0.7843; WBS anchor 0.686; rev 0.0098 / rand 0.1176)
++- Off-mu axis: a steering (forward-pass) method for the task suite, not a centre. The new part vs
++  WBS (papers/raman2026): the held concept is given only by a *description* (never named) and the
++  contrast is hold vs category-suppress; content-entangled contrasts (passage cells, naming
++  continuations) are null-to-harmful, so the mode must decouple concept from surface text.
++- Source: task jlens-steer-assoc-017; papers/raman2026-white-bear-steering.md.
+diff --git a/notes/iteration-anthony/studies/S25.card.yaml b/notes/iteration-anthony/studies/S25.card.yaml
+new file mode 100644
+index 0000000..4bbde08
+--- /dev/null
++++ b/notes/iteration-anthony/studies/S25.card.yaml
+@@ -0,0 +1,39 @@
++id: S25
++title: Unspoken-concept steering for the plain J-lens
++owner: episode jlens-steer-assoc-017
++status: closed
++question: >
++  Can a *new* generic steering intervention (one vector per layer from a contrast, no centring) lift the
++  plain J-lens on association fit past the 0.50 pass@10 threshold, where WBS (the existing method) anchors 0.686?
++verdict: >
++  Yes. Holding a concept given only by a *description* ("keep in mind the sport played with a shuttlecock")
++  while copying a neutral carrier, contrasted with suppressing its *category*, yields a direction that at
++  layers 20-24, all prompt positions, k = 7.4 raises fit from 0.1275 to 0.7843. The concept word never
++  appears in either condition; the named-concept version (WBS's form, own content) scores 0.451, so ~60 %
++  of the anchor survives the word being removed. Reversed sign collapses to 0.0098; a random direction at
++  the same dose stays at 0.118.
++tiles:
++  - {label: "fit pass@10, UCS k=7.4 vs baseline", value: "0.7843 vs 0.1275", sub: "80/102; log10 rank 2.328 -> 0.726"}
++  - {label: "controls, same dose", value: "rev 0.0098 / rand 0.1176", sub: "hold-without-suppress <= 0.294"}
++  - {label: "named-concept anchor (own content)", value: "0.451", sub: "WBS form, 20 own pairs, k=6"}
++formulas:
++  - latex: 'd_{\\ell} = \\bar h^{\\text{hold}}_{\\ell} - \\bar h^{\\text{suppress}}_{\\ell}, \\qquad v_{\\ell} = s_{\\ell}\\, d_{\\ell}/\\lVert d_{\\ell}\\rVert'
++    note: "means over carrier-sentence tokens, per prompt, then over 20 (description, carrier) pairs; s_l = 0.606...0.787."
++  - latex: 'h_{\\ell} \\leftarrow h_{\\ell} + k\\, v_{\\ell}, \\quad \\ell \\in \\{20,\\dots,24\\}, \\; k = 7.4'
++    note: "added at all prompt positions of every item; read with the plain J-lens at 26/28/30."
++diagram:
++  kind: probe
++  left: hold
++  right: suppress
++  left_text: "Keep in mind the sport played with a shuttlecock as you write. Now write exactly this sentence: 'The committee approved the minutes without changes.'"
++  right_text: "Do not try to think of any sports as you write. Now write exactly this sentence: 'The committee approved the minutes without changes.'"
++  caption: "The concept is never named; d_l is the carrier-cell difference, averaged over 20 pairs."
++split: fit
++arms: ["ucs:20pairs@prefix:7.4"]
++controls: ["rev.ucs@prefix:7.4", "rand.ucs@prefix:7.4", "wbs:own20@prefix:6"]
++insights:
++  - {lead: "The mode must decouple a held concept from the surface text", text: "Every contrast that entangles concept and text (the passage itself, naming continuations, question stances) is null-to-harmful; the decoupled carrier form keeps it."}
++  - {lead: "The concept can be given by description, not name", text: "hold-vs-category-suppress with a described concept scores 0.422-0.784 across dose; the named version 0.451."}
++  - {lead: "The suppression arm is load-bearing", text: "hold vs no-instruction caps at 0.294; the direction is active-holding relative to active-exclusion."}
++  - {lead: "Sharp dose peak, direction-specific", text: "k=7.4 peak (0.784), +/-1 width; norm-matched random at the same push stays near baseline."}
++next: []
+diff --git a/notes/iteration-anthony/studies/S25.md b/notes/iteration-anthony/studies/S25.md
+new file mode 100644
+index 0000000..d9dc9a9
+--- /dev/null
++++ b/notes/iteration-anthony/studies/S25.md
+@@ -0,0 +1,72 @@
++# S25 unspoken-concept steering (task jlens-steer-assoc-017)
++
++**Question.** Can a *new* (non-reproduced) generic steering intervention — one vector per layer,
++built from a contrast, no centring — lift the plain J-lens on association's fit split past the
++0.50 pass@10 threshold (baseline 0.1275)? All compute through the metric server
++(`tools/metric.py`; Qwen3.5-4B, read layers 26/28/30, positions prefix/read/context).
++
++**Background found in the repo.** `papers/raman2026-white-bear-steering.md` (WBS) describes exactly
++this intervention class: a stance contrast (think X / don't-think X, concept and carrier matched)
++built from the DM pair items, added at layers 20–24, large dose (k≈6, s_l = 0.13‖d_l‖), read with
++the plain J-lens. Reproducing it here (53 dev-bank DM pairs, their absolute steps) calibrated the
++pipeline: **0.686 @ prefix k=6**, 0.43 @ read, 0.14 @ context — matching the paper's
++full/read-only/context-only ablation. WBS is the existing method the task forbids submitting, so
++it serves as anchor and control only.
++
++**Candidates tested (all at layers 20–24, prefix, paper steps, k=6 unless noted):**
++
++| construction | pass@10 | note |
++|---|---|---|
++| WBS (DM bank, named concept, think vs don't-think) | **0.686** | anchor, not submittable |
++| naming: P + "it is ⟨c⟩" vs P + "it is unclear" (assistant cells) | 0.069 | harmful |
++| deranged naming (right vs shifted concept) | 0.000 | harmful |
++| naming-step delta (P+c vs P alone) | 0.049 | harmful |
++| tip-and-pencil instruction ("describe it without the word") | 0.049 | harmful |
++| question stance ("what is this about?") | 0.069 | harmful |
++| hold/don't-track on the evocative passage itself (H2) | 0.039–0.118 | null-to-harmful at all k |
++| hunt / asked / suppress / explain-friend on the passage (H4–H6) | 0.04–0.09 | harmful |
++| named concept, DM template, **own** content (V0) | 0.451 | effect reproduces off-bank |
++| **described concept, hold vs category-suppress (V1c)** | **0.422 @ k=6** | winner |
++| described concept, hold vs no-instruction (V1e) | 0.255 | suppression condition matters |
++| implied-from-fragment ("hold the thing this describes") | 0.078 | fails |
++| cells = all prompt tokens (incl. instruction) | 0.08–0.09 | instruction tokens poison the direction |
++
++**Readings.**
++
++1. The usable mode is WBS's: a concept actively held in the workspace, **decoupled from the
++   surface text** (named concept + neutral carrier). Every contrast that entangles the concept with
++   the surface text (the passage itself, naming continuations) is null-to-harmful — the naming /
++   next-token-prediction mode is what the upper layers use to *drop* the concept.
++2. The direction is robust off-bank (V0 = 0.451 from 20 own pairs) and survives removing the
++   concept word entirely: the concept given only by a description (V1c) keeps ~85 % of the effect.
++3. Dose is sharp: V1c curve 0.137/0.167/0.265/0.422/0.608/0.765/**0.784**/0.755/0.657/0.608/0.500
++   at k = 2/4/5/6/7/7.25/**7.4**/7.5/7.75/8/9. A 40-pair version (20 more own pairs) peaks lower
++   (0.608 @ k=6) but is flatter and group-stable (halves cos ≥ 0.95) — the 20-pair peak is the
++   sharper, higher one; submitted on that.
++
++**Result (submission).** d_ℓ = mean_Hold − mean_Suppress over 20 own (description, carrier) pairs
++(conditions in `submission/contribution.md`), carrier cells = assistant-turn tokens, ℓ = 20–24,
++steps 0.606–0.787, added at all prompt positions ("prefix"), k = 7.4. **fit: 0.1275 → 0.7843**
++(80/102), mean log10 best rank 2.328 → 0.726. Controls: reversed sign 0.0098, random direction
++0.1176 at the same dose; hold-without-suppress ≤ 0.294; position ablation prefix 0.608 > read
++0.422 > context 0.157 @ k=7. Target words never occur in the construction prompts (2/40 concepts
++coincide with fit targets by genericity: airport, volleyball — implied, not named).
++
++**Insights / next cards.**
++
++- I1: steering for lens readouts lives in *processing-mode* directions that decouple a held
++  concept from the surface text; content-entangled contrasts are actively harmful. Falsifiable:
++  a third contrast with content decoupled (e.g. described concept + *different* carrier family)
++  should again land in the 0.4–0.7 band.
++- I2: the suppression arm is load-bearing (hold-vs-none ≤ 0.294 vs hold-vs-suppress 0.422–0.784):
++  the direction is "active holding" relative to "active exclusion", not relative to baseline.
++  Next: a "white-bear on the category" direction (suppress vs neutral) should be ~−d_ℓ and
++  reproduce the reversed control.
++- I3: the sharp dose peak (WBS k≈6, UCS k≈7.4, width ≈ ±1 in k) says the push must exceed natural
++  along-direction variation without saturating the state — consistent with WBS §8; a norm-matched
++  random direction at the same push stays near baseline (0.108–0.118), so the effect is
++  direction-specific, not a norm effect.
++
++**Artefacts.** `submission/vectors.pt`, `submission/contribution.md`, `submission/submission.json`
++(score of record). Captures and candidate directions under /tmp/steer/ (episode scratch, not
++archived). Method name: **unspoken-concept steering (UCS)**.
+diff --git a/submission/contribution.md b/submission/contribution.md
+new file mode 100644
+index 0000000..662bad4
+--- /dev/null
++++ b/submission/contribution.md
+@@ -0,0 +1,12 @@
++# Unspoken-concept steering
++
++**Method.** We build a steering direction from a concept held *unspoken*: resolved from context, never written down. For 20 (description, neutral carrier sentence) pairs I authored — e.g. "the sport played with a shuttlecock" paired with "The committee approved the minutes without changes." — two conditions:
++
++- **Hold**: "Keep in mind {description} as you write. Now write exactly this sentence: '{carrier}'"
++- **Suppress**: "Do not try to think of any {category} as you write. Now write exactly this sentence: '{carrier}'"
++
++The concept is never named in either condition; the model must resolve it from the description. Averaging residual states over the carrier-sentence tokens (per prompt, then over pairs) and subtracting layer by layer gives d_ℓ = mean_Hold − mean_Suppress. Varying descriptions, categories and carriers cancel concept identity and carrier content, leaving the mode: an internally resolved, unspoken concept actively held in the workspace while a surface task proceeds. During evaluation we add k·d̂_ℓ·s_ℓ (ℓ = 20–24, fixed per-layer steps s_ℓ ≈ 0.6–0.8, k = 7.4) to the residual stream at all prompt positions, then read with the plain J-lens.
++
++**Why it is new.** Prior contrasts pair contents or behaviours (Turner 2023; Panickssery 2024), transfer a task from examples (Todd 2024), or contrast stances over a *named* concept (Raman 2026). UCS first gives the held concept only by a description, contrasting holding it versus suppressing its *category*. Association items' implied concepts exist in exactly this unspoken, resolved form at the read cell, so UCS pushes the model into the mode the readout needs.
++
++**Evidence** (association fit, 102 items): baseline 0.1275 → **0.7843** strict pass@10; the dose curve peaks sharply at k = 7.4. Controls at the same dose: reversed sign 0.0098; random direction 0.1176; holding without the suppress condition ≤ 0.294.
+diff --git a/submission/submission.json b/submission/submission.json
+new file mode 100644
+index 0000000..61bdf41
+--- /dev/null
++++ b/submission/submission.json
+@@ -0,0 +1,23 @@
++{
++ "task_id": "jlens-steer-assoc-017",
++ "submitted": "2026-10-23T17:15:07",
++ "vectors": "submission/vectors.pt",
++ "vectors_sha256": "686b125856a40e9ff6c73f1156297db2a1dce0822a8d5b875bed0391d462e391",
++ "layers": [
++  20,
++  21,
++  22,
++  23,
++  24
++ ],
++ "positions": "prefix",
++ "scale": 7.4,
++ "method": "unspoken-concept steering",
++ "contribution": "submission/contribution.md",
++ "fit_pass_at_10": 0.7843,
++ "fit_mean_log10_rank": 0.7262,
++ "baseline": {
++  "pass_at_10": 0.1275,
++  "mean_log10_rank": 2.3277
++ }
++}
+\ No newline at end of file
+-- 
+2.43.0
+

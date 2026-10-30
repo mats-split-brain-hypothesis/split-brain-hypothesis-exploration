@@ -1,0 +1,40 @@
+id: S20
+title: Headroom ceilings per class of g
+owner: C (j-lens-mean-19c), night-2
+status: diagnostic
+question: >
+  How much can each class of g gain at all? Fit, per family and layer, the best constant, per-token, per-cluster and
+  rank-16-projection g *with the fit split's targets* (an in-sample ceiling, never a method), and read held-out folds and val.
+verdict: >
+  Constant g is far from exhausted on the single-token families: one vector per layer tuned with targets reads val strict at
+  0.924 against fam's 0.828 there (+0.096; +0.09 judged on DM), with no rise in prompt echo and a random direction of the same
+  norm at zero's level. Its piece-proxy gains on the _mt families do not survive the judge: fitted to word pieces, it learned
+  to surface pieces. h-dependent classes (tok, clu, proj16) add almost nothing except on DM. The learned constant promotes each
+  family's answer class and demotes Chinese function tokens and the question's relation word; on typo / association fit and val
+  share no target, so it is a bias that transfers, not remembered answers. A target-free imitation (S20b) is null.
+tiles:
+  - {label: "val strict, 5 single-token families", value: "0.924 vs 0.828", sub: "+0.096 over fam@fit (pipeline)"}
+  - {label: "_mt families, Haiku-judged", value: "≤ fam", sub: "typo_mt 0.36 vs 0.51: the piece-proxy gain was a scorer overfit"}
+  - {label: "3-fold held-out fit, const vs fam", value: "+0.089", sub: "macro over 10 families (UM later)"}
+  - {label: "h-dependent over const, w/o DM (3-fold)", value: "≤ 0", sub: "const 0.842, clu 0.831, tok 0.824, proj16 0.819"}
+formulas:
+  - latex: 'g_l^{\star} = \arg\min_{g}\ \sum_{\text{cells}} \mathrm{softplus}\!\Big(\frac{s_{(10)} - \max_{t \in T} s_t}{\tau}\Big) + \lambda \|g\|^2, \quad s = J_l^{\top}\text{-cos readout of } h - g'
+    note: "ceil.const: one g per layer per family, fitted WITH the fit items' targets T (J++'s surrogate of recall@10); scored exactly with the bench's item rule. Not a method."
+  - latex: 'g(h) = \mu_{\text{key}(h)} + Q Q^{\top}(h - \mu_{\text{key}(h)})'
+    note: "the other classes: key = read token (tok) or kmx64 cluster (clu); proj16 adds a learned rank-16 Q."
+diagram:
+  kind: pool
+  select: family
+  caption: "A ceiling replaces the family mean by the constant that best puts each fit item's target in the top 10; it moves away from μ_fam along a new direction (cos 0.81-0.98, ‖g − μ‖ / ‖μ‖ 0.2-0.7)."
+split: fit
+arms: ["s20b:50:0.5@self|cos", "s20b:50:1@self|cos"]
+controls: ["rand.s20b:50:1@self|cos"]
+insights:
+  - {lead: "Constant g is not bounded at fam", text: "+0.096 val strict on the single-token families (+0.09 3-fold on fit; +0.11 under rms), above every fair centre so far. Echo at or below fam's, masked pass = strict; rand. direction of the same norm = zero."}
+  - {lead: "A target-fitted g overfits its scorer; the _mt families have no judged headroom", text: "On the _mt families the piece proxy credits +0.13 to +0.28, the judge none (typo_mt -0.16): the ceiling learned to surface the proxy's word pieces. Refitted on each form's first token it is worse still under the judge (mean 0.30 vs fam 0.42): the fit items' own form tokens crowd val readouts."}
+  - {lead: "What the ceiling learns", text: "Promoted: each family's answer class (multihop names and digits; DM concepts; language names). Demoted: Chinese function-word fragments in every family and the question's relation word (number, solid, two, until, known / called), the target's rival."}
+  - {lead: "h-dependence buys little except on DM, and there S20 bounds nothing", text: "Without DM, every h-dependent class is within 0.02 of const on 3-fold. On DM, judged (L24-60), ceil.tok 0.43 and ceil.proj16 0.49 sit below the fair position means u1rel 0.57 / u1endcar 0.65: position matching is outside these classes."}
+  - {lead: "multihop_mt is readout-limited", text: "Every class reads val 0.36-0.49 in the pipeline (fit in-sample 1.0): the bridge is not linearly on top for half the items."}
+  - {lead: "Part of the transfer is shared answers", text: "Fit and val share no target on typo / association / DM, but 19-56 % of items elsewhere; across families (B's S20x, +0.042 val), 4 of 10 multihop wins share a target with other families' fit."}
+  - {lead: "The demotion half is not reachable by an IDF of the readout", text: "S20b (no targets) is null: one d-vector reaches ~17 % of a vocabulary-wide prior, and the frequent tokens are partly answer classes."}
+next: ["S20x (B): other families' corrections, +0.042 val", "A fair estimate of the answer class: the open half of the ceiling"]

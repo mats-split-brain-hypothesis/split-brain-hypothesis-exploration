@@ -1,0 +1,5 @@
+id	cell	model	brief	snapshot	head	eval_tools	host	order	wave
+p23-r1-A61-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A61	b7fd89a522464cf2be844e085d9a467af54e7133	0	desktop	1	1
+p23-r1-A61-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A61	b7fd89a522464cf2be844e085d9a467af54e7133	0	desktop	2	1
+p23-r2-A61-dsv4-tc	new-arm	deepseek/deepseek-v4-pro-0813	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A61	b7fd89a522464cf2be844e085d9a467af54e7133	0	desktop	3	1
+p23-r2-A61-q27b-tc	new-arm	qwen/qwen3.8-27b	briefs/tc/701743aba6b29b43d4aad884ec2e62c4.md	j-lens-mean-snapshot-rig4b-eval-A61	b7fd89a522464cf2be844e085d9a467af54e7133	0	desktop	4	1

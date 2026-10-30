@@ -1,0 +1,2857 @@
+{
+ "family": "multihop",
+ "split": "val2",
+ "source": "S24: Sonnet-authored from jle x90 briefs, filtered, 27B-gated",
+ "gate": {
+  "experiment": "S24 val2 gate (jle x90_gate, unchanged settings)",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "max_new_tokens": 16,
+  "seed": 0,
+  "limit": null
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "v2-mh-v-005",
+   "subfamily": "person",
+   "prompt": "Fact: The founder of psychoanalysis who wrote The Interpretation of Dreams lived most of his life in the city of",
+   "target": "Vienna",
+   "intermediates": [
+    "Freud"
+   ],
+   "note": "founder of psychoanalysis -> Freud; lived in Vienna",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-007",
+   "subfamily": "person",
+   "prompt": "Fact: The president who issued the Emancipation Proclamation was assassinated at a theater in the city of",
+   "target": "Washington",
+   "intermediates": [
+    "Lincoln"
+   ],
+   "note": "Emancipation Proclamation -> Lincoln; shot at Ford's Theatre in Washington",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-008",
+   "subfamily": "person",
+   "prompt": "Fact: The artist who painted the Mona Lisa and The Last Supper was born in the town of",
+   "target": "Vinci",
+   "intermediates": [
+    "Leonardo"
+   ],
+   "note": "Mona Lisa painter -> Leonardo; born in Vinci",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.8,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-009",
+   "subfamily": "person",
+   "prompt": "Fact: The leader of the Bolsheviks during the October Revolution of 1917 is embalmed in a mausoleum in the city of",
+   "target": "Moscow",
+   "intermediates": [
+    "Lenin"
+   ],
+   "note": "Bolshevik leader of 1917 -> Lenin; mausoleum in Moscow",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-011",
+   "subfamily": "person",
+   "prompt": "Fact: The author of A Christmas Carol and Oliver Twist created a miserly old man named",
+   "target": "Scrooge",
+   "intermediates": [
+    "Dickens"
+   ],
+   "note": "A Christmas Carol author -> Dickens; his miser is Scrooge",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-013",
+   "subfamily": "person",
+   "prompt": "Fact: The principal author of the Declaration of Independence founded the University of",
+   "target": "Virginia",
+   "intermediates": [
+    "Jefferson"
+   ],
+   "note": "principal author of the Declaration -> Jefferson; founded University of Virginia",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-014",
+   "subfamily": "person",
+   "prompt": "Fact: The man who introduced movable-type printing to Europe was born in the city of",
+   "target": "Mainz",
+   "intermediates": [
+    "Gutenberg"
+   ],
+   "note": "European movable-type printing -> Gutenberg; born in Mainz",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-015",
+   "subfamily": "person",
+   "prompt": "Fact: The singer nicknamed the King of Rock and Roll lived at Graceland in the city of",
+   "target": "Memphis",
+   "intermediates": [
+    "Elvis"
+   ],
+   "note": "King of Rock and Roll -> Elvis; Graceland in Memphis",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-017",
+   "subfamily": "person",
+   "prompt": "Fact: The mathematician who solved the Seven Bridges of Konigsberg problem used a letter to denote the base of natural logarithms, the letter \"",
+   "target": "e",
+   "intermediates": [
+    "Euler"
+   ],
+   "note": "Seven Bridges -> Euler; e is Euler's number",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-034",
+   "subfamily": "person",
+   "prompt": "Fact: On the temperature scale devised by the Swedish astronomer Anders, water boils at degrees ",
+   "target": "100",
+   "intermediates": [
+    "Celsius"
+   ],
+   "note": "Anders the Swedish astronomer -> Celsius; boiling point 100 C",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.8,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-050",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The insect that emerges from a chrysalis has a larval stage called a",
+   "target": "caterpillar",
+   "intermediates": [
+    "butterfly"
+   ],
+   "note": "chrysalis insect -> butterfly; larva is a caterpillar",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-052",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The crustacean that walks sideways has pincers called",
+   "target": "claws",
+   "intermediates": [
+    "crab"
+   ],
+   "note": "sideways-walking crustacean -> crab; claws",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-053",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The animal often called man's best friend is descended from the",
+   "target": "wolf",
+   "intermediates": [
+    "dog"
+   ],
+   "note": "man's best friend -> dog; descended from wolves",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-056",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The wild canine with a bushy tail, often called sly in fables, has a home called a",
+   "target": "den",
+   "intermediates": [
+    "fox"
+   ],
+   "note": "sly canine of fables -> fox; den",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-057",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The first letter of the name of the horned farm animal whose milk is made into feta is the letter \"",
+   "target": "G",
+   "intermediates": [
+    "goat"
+   ],
+   "note": "feta milk animal -> goat; G",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-064",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The first letter of the name of the woolly South American pack animal related to camels, found in the Andes, is the letter \"",
+   "target": "L",
+   "intermediates": [
+    "llama"
+   ],
+   "note": "Andean pack animal -> llama; L",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-066",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The large flightless bird of Australia is the second-largest living bird after the",
+   "target": "ostrich",
+   "intermediates": [
+    "emu"
+   ],
+   "note": "big Australian flightless bird -> emu; after the ostrich",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-067",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The orchestral woodwind held sideways and blown across a hole is today usually made of nickel or",
+   "target": "silver",
+   "intermediates": [
+    "flute"
+   ],
+   "note": "sideways woodwind -> flute; modern flutes are silver or nickel",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-071",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The sense organ that has a retina and an iris has a clear front window called the",
+   "target": "cornea",
+   "intermediates": [
+    "eye"
+   ],
+   "note": "retina and iris organ -> eye; cornea",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-073",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The food laid by hens, which can be boiled, scrambled or poached, has a golden centre called the",
+   "target": "yolk",
+   "intermediates": [
+    "egg"
+   ],
+   "note": "hen's food -> egg; yolk",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-074",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The sweet food that bees make from nectar is stored in a wax structure called a",
+   "target": "honeycomb",
+   "intermediates": [
+    "honey"
+   ],
+   "note": "bee-made sweet food -> honey; honeycomb",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-075",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The cured meat from a pig's belly, fried for breakfast, is often served with",
+   "target": "eggs",
+   "intermediates": [
+    "bacon"
+   ],
+   "note": "pig-belly breakfast meat -> bacon; bacon and eggs",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-077",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The round leafy vegetable fermented to make sauerkraut is also shredded for the salad called",
+   "target": "coleslaw",
+   "intermediates": [
+    "cabbage"
+   ],
+   "note": "sauerkraut vegetable -> cabbage; coleslaw",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-078",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The long green vegetable preserved in brine and vinegar becomes a",
+   "target": "pickle",
+   "intermediates": [
+    "cucumber"
+   ],
+   "note": "brined green vegetable -> cucumber; pickle",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-079",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The hot pepper whose burning compound is capsaicin is rated for heat on a scale named for the pharmacist Wilbur",
+   "target": "Scoville",
+   "intermediates": [
+    "chili"
+   ],
+   "note": "capsaicin pepper -> chili; Scoville scale",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-v-080",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The small green citrus fruit that British sailors ate to prevent scurvy gave them the nickname",
+   "target": "Limeys",
+   "intermediates": [
+    "lime"
+   ],
+   "note": "scurvy citrus -> lime; sailors called Limeys",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-005",
+   "subfamily": "person",
+   "prompt": "Fact: The nationality of the playwright who wrote Hamlet and Macbeth is",
+   "target": "English",
+   "intermediates": [
+    "Shakespeare"
+   ],
+   "note": "author of Hamlet = Shakespeare; English",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-007",
+   "subfamily": "person",
+   "prompt": "Fact: The nationality of the painter of The Scream is",
+   "target": "Norwegian",
+   "intermediates": [
+    "Munch"
+   ],
+   "note": "painter of The Scream = Munch; Norwegian",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-010",
+   "subfamily": "person",
+   "prompt": "Fact: The mountain where the lawgiver who led the Israelites out of Egypt received the tablets is Mount",
+   "target": "Sinai",
+   "intermediates": [
+    "Moses"
+   ],
+   "note": "Exodus leader = Moses; Mount Sinai",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-011",
+   "subfamily": "person",
+   "prompt": "Fact: The bird sent out with an olive branch by the man who built the ark in Genesis is the",
+   "target": "dove",
+   "intermediates": [
+    "Noah"
+   ],
+   "note": "ark builder = Noah; dove with olive branch",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-012",
+   "subfamily": "person",
+   "prompt": "Fact: The flagship of the admiral who died winning the Battle of Trafalgar was HMS",
+   "target": "Victory",
+   "intermediates": [
+    "Nelson"
+   ],
+   "note": "Trafalgar admiral = Nelson; HMS Victory",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-013",
+   "subfamily": "person",
+   "prompt": "Fact: The Roman equivalent of the king of the Greek gods who lived on Mount Olympus is",
+   "target": "Jupiter",
+   "intermediates": [
+    "Zeus"
+   ],
+   "note": "king of Greek gods = Zeus; Roman Jupiter",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-016",
+   "subfamily": "person",
+   "prompt": "Fact: The thing stolen from the gods by the Titan who was punished by an eagle eating his liver each day is",
+   "target": "fire",
+   "intermediates": [
+    "Prometheus"
+   ],
+   "note": "Titan with eagle = Prometheus; stole fire",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-019",
+   "subfamily": "person",
+   "prompt": "Fact: The weapon of the Norse god of thunder is a",
+   "target": "hammer",
+   "intermediates": [
+    "Thor"
+   ],
+   "note": "Norse thunder god = Thor; hammer Mjolnir",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-020",
+   "subfamily": "person",
+   "prompt": "Fact: The holy city where the founder of Islam was born is",
+   "target": "Mecca",
+   "intermediates": [
+    "Muhammad"
+   ],
+   "note": "founder of Islam = Muhammad; born in Mecca",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-022",
+   "subfamily": "person",
+   "prompt": "Fact: The stuffed toy named after the 26th American president who spared a cub on a hunting trip is the teddy",
+   "target": "bear",
+   "intermediates": [
+    "Roosevelt"
+   ],
+   "note": "26th US president = Theodore Roosevelt; teddy bear",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-024",
+   "subfamily": "person",
+   "prompt": "Fact: The home planet of the hero whose secret identity is the reporter Clark Kent is",
+   "target": "Krypton",
+   "intermediates": [
+    "Superman"
+   ],
+   "note": "Clark Kent = Superman; from Krypton",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-030",
+   "subfamily": "person",
+   "prompt": "Fact: The German cipher machine broken by the Bletchley Park mathematician regarded as the father of computer science is called",
+   "target": "Enigma",
+   "intermediates": [
+    "Turing"
+   ],
+   "note": "Bletchley mathematician = Turing; broke Enigma",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-033",
+   "subfamily": "person",
+   "prompt": "Fact: The 1975 shark film was directed by the man who also directed E.T. and it is called",
+   "target": "Jaws",
+   "intermediates": [
+    "Spielberg"
+   ],
+   "note": "director of E.T. = Spielberg; directed Jaws",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-034",
+   "subfamily": "person",
+   "prompt": "Fact: The rock band fronted by the singer of Bohemian Rhapsody who died in 1991 is",
+   "target": "Queen",
+   "intermediates": [
+    "Mercury"
+   ],
+   "note": "Bohemian Rhapsody singer = Freddie Mercury; band Queen",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-035",
+   "subfamily": "person",
+   "prompt": "Fact: The Spanish club where the Argentine winner of eight Ballon d'Or awards spent most of his career is",
+   "target": "Barcelona",
+   "intermediates": [
+    "Messi"
+   ],
+   "note": "Argentine eight Ballon d'Or = Messi; Barcelona",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-037",
+   "subfamily": "person",
+   "prompt": "Fact: The sport of the heavyweight who bit the ear of Evander Holyfield is",
+   "target": "boxing",
+   "intermediates": [
+    "Tyson"
+   ],
+   "note": "Holyfield ear bite = Mike Tyson; boxing",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-042",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The name of the network of burrows where the long-eared hopping animal that eats carrots lives is the",
+   "target": "warren",
+   "intermediates": [
+    "Rabbit"
+   ],
+   "note": "long-eared hopper = rabbit; home is a warren",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-043",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The protein that makes up the horn of the large grey African animal with thick skin and a horn on its nose is",
+   "target": "keratin",
+   "intermediates": [
+    "Rhino"
+   ],
+   "note": "horned thick-skinned animal = rhino; horn is keratin",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-047",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The young of the large white graceful bird of the ballet by Tchaikovsky is called a",
+   "target": "cygnet",
+   "intermediates": [
+    "Swan"
+   ],
+   "note": "ballet bird = swan; young is a cygnet",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-049",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The word for the group in which the ancestor of the domestic dog hunts and howls at the moon is a",
+   "target": "pack",
+   "intermediates": [
+    "Wolf"
+   ],
+   "note": "dog ancestor howling = wolf; group is a pack",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.8,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-061",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The family of instruments to which the three-valved jazz horn played by Miles Davis belongs is",
+   "target": "brass",
+   "intermediates": [
+    "Trumpet"
+   ],
+   "note": "three-valved jazz horn = trumpet; brass",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-065",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The two types of photoreceptor cells in the light-sensitive layer at the back of the eye are rods and",
+   "target": "cones",
+   "intermediates": [
+    "Retina"
+   ],
+   "note": "light-sensitive layer of the eye = retina; rods and cones",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-067",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The festival on 31 October when the large orange gourd is carved into a lantern with a face is",
+   "target": "Halloween",
+   "intermediates": [
+    "Pumpkin"
+   ],
+   "note": "carved gourd lantern = pumpkin; Halloween",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-068",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The Italian city where the flatbread topped with tomato and mozzarella was invented is",
+   "target": "Naples",
+   "intermediates": [
+    "Pizza"
+   ],
+   "note": "tomato-mozzarella flatbread = pizza; invented in Naples",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-076",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The disease spread by the buzzing insect that bites at dusk in the tropics and carries Plasmodium is",
+   "target": "malaria",
+   "intermediates": [
+    "Mosquito"
+   ],
+   "note": "dusk-biting buzzing insect = mosquito; malaria",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-w-077",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The thing that the night-flying relative of the butterfly is drawn to around a lamp is",
+   "target": "light",
+   "intermediates": [
+    "Moth"
+   ],
+   "note": "lamp-attracted butterfly relative = moth; light",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-001",
+   "subfamily": "person",
+   "prompt": "Fact: The first name of the philosopher who co-authored The Communist Manifesto with Friedrich Engels is",
+   "target": "Karl",
+   "intermediates": [
+    "Marx"
+   ],
+   "note": "Communist Manifesto co-author with Engels = Marx; first name Karl",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-002",
+   "subfamily": "person",
+   "prompt": "Fact: The real first name of the author who wrote Animal Farm and Nineteen Eighty-Four under a pen name is",
+   "target": "Eric",
+   "intermediates": [
+    "Orwell"
+   ],
+   "note": "author of Animal Farm = George Orwell (Eric Blair)",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-003",
+   "subfamily": "person",
+   "prompt": "Fact: The first name of the Irish playwright who wrote The Importance of Being Earnest and The Picture of Dorian Gray is",
+   "target": "Oscar",
+   "intermediates": [
+    "Wilde"
+   ],
+   "note": "Earnest/Dorian Gray author = Wilde; Oscar",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-004",
+   "subfamily": "person",
+   "prompt": "Fact: The first name of the French author of Les Miserables and The Hunchback of Notre-Dame is",
+   "target": "Victor",
+   "intermediates": [
+    "Hugo"
+   ],
+   "note": "author of Les Miserables = Hugo; Victor",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-005",
+   "subfamily": "person",
+   "prompt": "Fact: The two kinds of signals used in the code devised by the American painter who developed the electric telegraph are dots and",
+   "target": "dashes",
+   "intermediates": [
+    "Morse"
+   ],
+   "note": "telegraph code inventor = Morse; dots and dashes",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-006",
+   "subfamily": "person",
+   "prompt": "Fact: The first name of the Beatles member who wrote the song Imagine is",
+   "target": "John",
+   "intermediates": [
+    "Lennon"
+   ],
+   "note": "Imagine writer = Lennon; John",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-009",
+   "subfamily": "person",
+   "prompt": "Fact: The company that Paul Allen co-founded with the Seattle-born author of The Road Ahead is",
+   "target": "Microsoft",
+   "intermediates": [
+    "Gates"
+   ],
+   "note": "Paul Allen's co-founder, author of The Road Ahead = Gates; Microsoft",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-010",
+   "subfamily": "person",
+   "prompt": "Fact: The sport of the heavyweight champion who was born Cassius Clay and called himself The Greatest is",
+   "target": "boxing",
+   "intermediates": [
+    "Ali"
+   ],
+   "note": "Cassius Clay = Ali; boxer",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-014",
+   "subfamily": "person",
+   "prompt": "Fact: The first name of the French mathematician after whom the unit of pressure is named is",
+   "target": "Blaise",
+   "intermediates": [
+    "Pascal"
+   ],
+   "note": "unit of pressure = pascal; Blaise Pascal",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-015",
+   "subfamily": "person",
+   "prompt": "Fact: The sum of the whole numbers from 1 to 100, which a schoolboy later called the Prince of Mathematicians is said to have found in seconds, is ",
+   "target": "5050",
+   "intermediates": [
+    "Gauss"
+   ],
+   "note": "Prince of Mathematicians = Gauss; sum 1..100 = 5050",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-016",
+   "subfamily": "person",
+   "prompt": "Fact: The first name of the German engineer who invented the compression-ignition engine that bears his name is",
+   "target": "Rudolf",
+   "intermediates": [
+    "Diesel"
+   ],
+   "note": "diesel engine inventor = Diesel; Rudolf",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-017",
+   "subfamily": "person",
+   "prompt": "Fact: The birth name of the Indian prince of the Shakya clan who founded the religion of the Eightfold Path was",
+   "target": "Siddhartha",
+   "intermediates": [
+    "Buddha"
+   ],
+   "note": "founder of Eightfold Path religion = Buddha; Siddhartha",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-018",
+   "subfamily": "person",
+   "prompt": "Fact: The town where the founder of Christianity was born, according to the Gospels, is",
+   "target": "Bethlehem",
+   "intermediates": [
+    "Jesus"
+   ],
+   "note": "founder of Christianity = Jesus; born in Bethlehem",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-019",
+   "subfamily": "person",
+   "prompt": "Fact: The son whom God told the biblical father of Ishmael to sacrifice was",
+   "target": "Isaac",
+   "intermediates": [
+    "Abraham"
+   ],
+   "note": "father of Ishmael = Abraham; asked to sacrifice Isaac",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.8,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-020",
+   "subfamily": "person",
+   "prompt": "Fact: The queen who visited the biblical king renowned for wisdom, the son of David, is the Queen of",
+   "target": "Sheba",
+   "intermediates": [
+    "Solomon"
+   ],
+   "note": "wise son of David = Solomon; Queen of Sheba",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-021",
+   "subfamily": "person",
+   "prompt": "Fact: The name of the first woman in Genesis, the wife of the first man, is",
+   "target": "Eve",
+   "intermediates": [
+    "Adam"
+   ],
+   "note": "first man = Adam; wife Eve",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-022",
+   "subfamily": "person",
+   "prompt": "Fact: The name of the brother murdered by the first son of Adam and Eve was",
+   "target": "Abel",
+   "intermediates": [
+    "Cain"
+   ],
+   "note": "first son of Adam and Eve = Cain; killed Abel",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-023",
+   "subfamily": "person",
+   "prompt": "Fact: The city to which the prophet who was swallowed by a great fish was sent to preach is",
+   "target": "Nineveh",
+   "intermediates": [
+    "Jonah"
+   ],
+   "note": "swallowed by fish = Jonah; sent to Nineveh",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-024",
+   "subfamily": "person",
+   "prompt": "Fact: The body part where the Greek hero who killed Hector was vulnerable is the",
+   "target": "heel",
+   "intermediates": [
+    "Achilles"
+   ],
+   "note": "killer of Hector = Achilles; heel",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-025",
+   "subfamily": "person",
+   "prompt": "Fact: The family name of the girl loved by the Montague youth of Verona in Shakespeare's tragedy is",
+   "target": "Capulet",
+   "intermediates": [
+    "Romeo"
+   ],
+   "note": "Montague youth = Romeo; Juliet Capulet",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-026",
+   "subfamily": "person",
+   "prompt": "Fact: The animal species of Walt Disney's most famous cartoon character, the boyfriend of Minnie, is a",
+   "target": "mouse",
+   "intermediates": [
+    "Mickey"
+   ],
+   "note": "Minnie's boyfriend = Mickey; a mouse",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-029",
+   "subfamily": "person",
+   "prompt": "Fact: The first name of the British author of Matilda and Charlie and the Chocolate Factory is",
+   "target": "Roald",
+   "intermediates": [
+    "Dahl"
+   ],
+   "note": "author of Matilda = Dahl; Roald",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-030",
+   "subfamily": "person",
+   "prompt": "Fact: The first name of the author who created the detective who lives at 221B Baker Street is",
+   "target": "Arthur",
+   "intermediates": [
+    "Doyle"
+   ],
+   "note": "Baker Street detective creator = Conan Doyle; Arthur",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-031",
+   "subfamily": "person",
+   "prompt": "Fact: The first name of the crime novelist who created Hercule Poirot and Miss Marple is",
+   "target": "Agatha",
+   "intermediates": [
+    "Christie"
+   ],
+   "note": "Poirot creator = Christie; Agatha",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-032",
+   "subfamily": "person",
+   "prompt": "Fact: The first name of the Danish author of The Little Mermaid and The Ugly Duckling is",
+   "target": "Hans",
+   "intermediates": [
+    "Andersen"
+   ],
+   "note": "author of Little Mermaid = Andersen; Hans",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-033",
+   "subfamily": "person",
+   "prompt": "Fact: The first name of the author of Frankenstein, who wrote it as a teenager during a summer by Lake Geneva, is",
+   "target": "Mary",
+   "intermediates": [
+    "Shelley"
+   ],
+   "note": "Frankenstein author = Mary Shelley",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-034",
+   "subfamily": "person",
+   "prompt": "Fact: The first name of the co-founder of Apple who unveiled the first iPhone in 2007 is",
+   "target": "Steve",
+   "intermediates": [
+    "Jobs"
+   ],
+   "note": "iPhone unveiler = Jobs; Steve",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-035",
+   "subfamily": "person",
+   "prompt": "Fact: The most famous oratorio by the baroque composer of Water Music and Music for the Royal Fireworks is",
+   "target": "Messiah",
+   "intermediates": [
+    "Handel"
+   ],
+   "note": "Water Music composer = Handel; oratorio Messiah",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-036",
+   "subfamily": "person",
+   "prompt": "Fact: The name of the horse of the Macedonian king who studied under Aristotle and conquered Persia was",
+   "target": "Bucephalus",
+   "intermediates": [
+    "Alexander"
+   ],
+   "note": "Macedonian conqueror = Alexander; horse Bucephalus",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-037",
+   "subfamily": "person",
+   "prompt": "Fact: The disease eradicated worldwide thanks to the vaccine pioneered by the English country doctor who used cowpox is",
+   "target": "smallpox",
+   "intermediates": [
+    "Jenner"
+   ],
+   "note": "cowpox vaccine pioneer = Jenner; smallpox",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-038",
+   "subfamily": "person",
+   "prompt": "Fact: The twin sister of the Greek god of the sun, music and prophecy is",
+   "target": "Artemis",
+   "intermediates": [
+    "Apollo"
+   ],
+   "note": "god of sun and music = Apollo; twin sister Artemis",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-039",
+   "subfamily": "person",
+   "prompt": "Fact: The Roman name of the Greek queen of the gods, the wife of Zeus, is",
+   "target": "Juno",
+   "intermediates": [
+    "Hera"
+   ],
+   "note": "wife of Zeus = Hera; Roman Juno",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-040",
+   "subfamily": "person",
+   "prompt": "Fact: The Roman name of the Greek messenger god with winged sandals is",
+   "target": "Mercury",
+   "intermediates": [
+    "Hermes"
+   ],
+   "note": "winged-sandal messenger = Hermes; Roman Mercury",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-041",
+   "subfamily": "person",
+   "prompt": "Fact: The animal in a waistcoat that the heroine of Lewis Carroll's Wonderland story follows down a burrow is a white",
+   "target": "rabbit",
+   "intermediates": [
+    "Alice"
+   ],
+   "note": "Carroll heroine = Alice; follows white rabbit",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-042",
+   "subfamily": "person",
+   "prompt": "Fact: The food of which the workhouse orphan created by Dickens famously asks for more is",
+   "target": "gruel",
+   "intermediates": [
+    "Oliver"
+   ],
+   "note": "Dickens orphan = Oliver Twist; gruel",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-043",
+   "subfamily": "person",
+   "prompt": "Fact: The first name of the South African-born founder of SpaceX is",
+   "target": "Elon",
+   "intermediates": [
+    "Musk"
+   ],
+   "note": "SpaceX founder = Musk; Elon",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-044",
+   "subfamily": "person",
+   "prompt": "Fact: The disease whose bacillus was discovered in 1882 by the German physician famous for postulates on pathogens is",
+   "target": "tuberculosis",
+   "intermediates": [
+    "Koch"
+   ],
+   "note": "Koch's postulates; Koch found the TB bacillus",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-045",
+   "subfamily": "person",
+   "prompt": "Fact: The Greek name of the Roman goddess of love and beauty is",
+   "target": "Aphrodite",
+   "intermediates": [
+    "Venus"
+   ],
+   "note": "Roman goddess of love = Venus; Greek Aphrodite",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-046",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The young of the large furry mammal that hibernates through winter and catches fish in rivers is called a",
+   "target": "cub",
+   "intermediates": [
+    "bear"
+   ],
+   "note": "hibernating fish-catching mammal = bear; young = cub",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-047",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The sense used by the nocturnal flying mammal that hangs upside down in caves to find insects in the dark is",
+   "target": "echolocation",
+   "intermediates": [
+    "bat"
+   ],
+   "note": "flying cave mammal = bat; echolocation",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-048",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The class of vertebrates to which the legless creature that tempted Eve in the Garden of Eden belongs is",
+   "target": "reptile",
+   "intermediates": [
+    "snake"
+   ],
+   "note": "serpent of Eden = snake; reptile",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-049",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The young of the marine mammal that barks and balances balls at the circus is called a",
+   "target": "pup",
+   "intermediates": [
+    "seal"
+   ],
+   "note": "circus marine mammal = seal; young = pup",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-050",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The meat obtained from the farm animal that oinks and wallows in mud is called",
+   "target": "pork",
+   "intermediates": [
+    "pig"
+   ],
+   "note": "oinking farm animal = pig; meat pork",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-051",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The sound made by the waddling web-footed bird that swims on ponds and has a flat bill is a",
+   "target": "quack",
+   "intermediates": [
+    "duck"
+   ],
+   "note": "web-footed pond bird = duck; quack",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-052",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The collective noun for a flock of the black, cawing birds is a",
+   "target": "murder",
+   "intermediates": [
+    "crow"
+   ],
+   "note": "black cawing birds = crows; a murder",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-053",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The kind of branch carried back to Noah by the white bird that became a symbol of peace was an",
+   "target": "olive",
+   "intermediates": [
+    "dove"
+   ],
+   "note": "white peace bird = dove; olive branch",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-054",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The mountain range where the shaggy long-haired ox kept by Tibetan herders lives is the",
+   "target": "Himalayas",
+   "intermediates": [
+    "yak"
+   ],
+   "note": "Tibetan shaggy ox = yak; Himalayas",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-055",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The dark fluid squirted by the ten-armed cephalopod to escape predators is",
+   "target": "ink",
+   "intermediates": [
+    "squid"
+   ],
+   "note": "ten-armed cephalopod = squid; ink",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-056",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The sense that is poor in the small burrowing mammal with velvet fur and tiny eyes, which leaves earth mounds on lawns, is",
+   "target": "sight",
+   "intermediates": [
+    "mole"
+   ],
+   "note": "burrowing velvet mammal = mole; poor sight",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.8,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-057",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The plant eaten almost exclusively by the black-and-white bear of the mountains of China is",
+   "target": "bamboo",
+   "intermediates": [
+    "panda"
+   ],
+   "note": "black-and-white bear = panda; eats bamboo",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-058",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The family of instruments to which the kit with snare and cymbals played by a rock band's rear musician belongs is",
+   "target": "percussion",
+   "intermediates": [
+    "drum"
+   ],
+   "note": "band's rear kit = drums; percussion",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-060",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The condition of inflammation of the paired breathing organs in the chest, often caused by infection, is",
+   "target": "pneumonia",
+   "intermediates": [
+    "lung"
+   ],
+   "note": "paired breathing organs = lungs; pneumonia",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-061",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The pigment that gives colour to the largest organ of the human body is",
+   "target": "melanin",
+   "intermediates": [
+    "skin"
+   ],
+   "note": "largest organ = skin; melanin",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-062",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The name of the bone forming the front cap of the joint between the thigh and the shin is the",
+   "target": "patella",
+   "intermediates": [
+    "knee"
+   ],
+   "note": "joint between thigh and shin = knee; patella",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-063",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The Japanese alcoholic drink made by fermenting the staple grain grown in flooded paddies is",
+   "target": "sake",
+   "intermediates": [
+    "rice"
+   ],
+   "note": "paddy grain = rice; sake",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-064",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The cinema snack made by heating the kernels of the tall yellow-eared crop of the Americas is",
+   "target": "popcorn",
+   "intermediates": [
+    "corn"
+   ],
+   "note": "yellow-eared crop = corn; popcorn",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-066",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The condiment made from the red fruit-vegetable used in pizza sauce and squeezed over fries is",
+   "target": "ketchup",
+   "intermediates": [
+    "tomato"
+   ],
+   "note": "red pizza-sauce fruit = tomato; ketchup",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-067",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The thin fried strips of the starchy tuber from the Andes, served with burgers, are called",
+   "target": "fries",
+   "intermediates": [
+    "potato"
+   ],
+   "note": "Andean tuber = potato; fries",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-068",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The cereal grain that is malted to brew most of the foamy drink flavoured with hops is",
+   "target": "barley",
+   "intermediates": [
+    "beer"
+   ],
+   "note": "hopped foamy drink = beer; barley malt",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-069",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The word for the performer who plays a flute to make the hooded venomous snake of India sway is a snake",
+   "target": "charmer",
+   "intermediates": [
+    "cobra"
+   ],
+   "note": "hooded snake = cobra; snake charmer",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-070",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The larva of the common buzzing insect that lays its eggs on rotting meat is a",
+   "target": "maggot",
+   "intermediates": [
+    "fly"
+   ],
+   "note": "buzzing insect = fly; larva maggot",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-071",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The young of the domestic pet that purrs and chases mice is a",
+   "target": "kitten",
+   "intermediates": [
+    "cat"
+   ],
+   "note": "purring pet = cat; young = kitten",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-072",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The German town from which the Pied Piper lured the gnawing rodents of the folk tale is",
+   "target": "Hamelin",
+   "intermediates": [
+    "rat"
+   ],
+   "note": "Pied Piper's rodents = rats; Hamelin",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.8,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-073",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The residue from which the mythical bird that is reborn from flames rises is",
+   "target": "ashes",
+   "intermediates": [
+    "phoenix"
+   ],
+   "note": "mythical firebird = phoenix; rises from ashes",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-074",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The protein that makes up the strands growing from the scalp, as well as fingernails, is",
+   "target": "keratin",
+   "intermediates": [
+    "hair"
+   ],
+   "note": "scalp strands = hair; keratin",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-075",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The iron-containing protein in the red cells of the fluid pumped by the heart is",
+   "target": "hemoglobin",
+   "intermediates": [
+    "blood"
+   ],
+   "note": "fluid pumped by heart = blood; haemoglobin",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.8,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-076",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The US state nicknamed for the fuzzy stone fruit it is famous for growing is",
+   "target": "Georgia",
+   "intermediates": [
+    "peach"
+   ],
+   "note": "fuzzy stone fruit = peach; Peach State = Georgia",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-079",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The female counterpart of the antlered male red deer hunted in the Highlands is a",
+   "target": "hind",
+   "intermediates": [
+    "stag"
+   ],
+   "note": "male red deer = stag; female = hind",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-080",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The wooden beam placed across the necks of the castrated bovine draught animals pulling a plough is called a",
+   "target": "yoke",
+   "intermediates": [
+    "ox"
+   ],
+   "note": "draught bovine = ox; yoke",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-082",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The sound made by the female farmyard fowl that lays eggs as she walks around is a",
+   "target": "cluck",
+   "intermediates": [
+    "hen"
+   ],
+   "note": "egg-laying fowl = hen; cluck",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-083",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The alcoholic drink similar to cider made by fermenting the bulb-shaped fruit with a thin neck is called",
+   "target": "perry",
+   "intermediates": [
+    "pear"
+   ],
+   "note": "bulb-shaped fruit = pear; perry",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.8,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-084",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The dried form of the purple stone fruit, eaten to aid digestion, is the",
+   "target": "prune",
+   "intermediates": [
+    "plum"
+   ],
+   "note": "purple stone fruit = plum; dried = prune",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-085",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The cocktail of bourbon, sugar and crushed leaves of this herb, served at the Kentucky Derby, is the",
+   "target": "julep",
+   "intermediates": [
+    "mint"
+   ],
+   "note": "herb in Derby cocktail = mint; julep",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-086",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The male counterpart of the adult female horse is a",
+   "target": "stallion",
+   "intermediates": [
+    "mare"
+   ],
+   "note": "adult female horse = mare; male stallion",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-088",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The nut of the tall broadleaf tree prized for wine barrels and furniture, symbol of strength, is the",
+   "target": "acorn",
+   "intermediates": [
+    "oak"
+   ],
+   "note": "barrel tree = oak; acorn",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-089",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The sticky substance exuded by the needle-leaved evergreen, used to make turpentine, is",
+   "target": "resin",
+   "intermediates": [
+    "pine"
+   ],
+   "note": "needle evergreen = pine; resin",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.8,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "v2-mh-x-090",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The sharp growths on the stem of the red flower given on Valentine's Day are",
+   "target": "thorns",
+   "intermediates": [
+    "rose"
+   ],
+   "note": "Valentine flower = rose; thorns",
+   "family": "multihop",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0,
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  }
+ ]
+}

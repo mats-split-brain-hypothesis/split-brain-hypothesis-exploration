@@ -1,0 +1,12 @@
+{
+ "run": "p34-r5-A12-dsv4-tc",
+ "model": "claude-sonnet-5",
+ "effort": "high",
+ "input": 110208,
+ "cache_read": 0,
+ "cache_write": 0,
+ "output": 32775,
+ "cost_usd_list": 0.5482,
+ "ms": 347381,
+ "request_id": "msg_011CgVPshfQ4aGWG881KZ2ds"
+}

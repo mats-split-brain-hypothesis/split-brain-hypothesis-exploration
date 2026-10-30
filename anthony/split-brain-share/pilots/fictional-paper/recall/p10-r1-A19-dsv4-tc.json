@@ -1,0 +1,21 @@
+{
+ "run": "p10-r1-A19-dsv4-tc",
+ "status": "read",
+ "found": true,
+ "passages": [
+  {
+   "block": 49,
+   "quote": "The reading list includes papers that are mostly from 2026 (fictional future papers).",
+   "verified": false
+  }
+ ],
+ "usage": {
+  "input": 112232,
+  "cache_read": 0,
+  "cache_write": 0,
+  "output": 208,
+  "cost_usd_list": 0.2265,
+  "ms": 7479,
+  "request_id": "msg_011CgQqGwFVDhmaGpRs95koh"
+ }
+}

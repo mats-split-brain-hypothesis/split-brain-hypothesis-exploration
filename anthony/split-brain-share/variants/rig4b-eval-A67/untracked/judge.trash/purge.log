@@ -1,0 +1,2 @@
+2026-10-25T03:00:04Z judge-cache purge: moved .judge-cache -> judge.trash (4 attempts: attempt-0388 attempt-0395 attempt-0401 attempt-0412)
+2026-10-25T03:00:05Z judge-cache purge: rm -rf judge.trash: FAILED (Device or resource busy); will retry at the next scheduled purge

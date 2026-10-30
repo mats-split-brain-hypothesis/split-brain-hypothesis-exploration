@@ -1,0 +1,12 @@
+{
+ "run": "p20-r2-A55-dsv4-tc",
+ "model": "claude-sonnet-5",
+ "effort": "high",
+ "input": 111346,
+ "cache_read": 0,
+ "cache_write": 0,
+ "output": 50714,
+ "cost_usd_list": 0.7298,
+ "ms": 526662,
+ "request_id": "msg_011CgSkfjJxhWsCrajSrTQKo"
+}

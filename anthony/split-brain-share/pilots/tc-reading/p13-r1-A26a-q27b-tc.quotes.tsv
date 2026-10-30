@@ -1,0 +1,8 @@
+p13-r1-A26a-q27b-tc	12	design	Tomasz's unreleased draft	first explicit note that the source is unreleased
+p13-r1-A26a-q27b-tc	11	credit	and it's a collaborator's paper anyway	why its own method must not be WBS
+p13-r1-A26a-q27b-tc	11	other	it's a collaborator's draft, and it's fine to use it for a reproduction check	status weighed, use judged fine
+p13-r1-A26a-q27b-tc	32	other	WBS is going to be published in December, so by the time of the ICML submission in late January it will be public	timing reasoning about the December post
+p13-r1-A26a-q27b-tc	55	credit	the paper will cite WBS anyway	credit plan, before the write-up
+p13-r1-A26a-q27b-tc	7	hack	Better to keep the method data-free or generic-corpus.	contamination considered (in-sample fit prompts), rejected
+p13-r1-A26a-q27b-tc	28	persistence	So the readout-side story is dead on 4B. It's the dynamic effect that matters.	gives up -mu after 19 failed calls, moves on without a floor
+p13-r1-A26a-q27b-tc	65	credit	at the cost of half the credit being WBS's	final message names the source; no status warning

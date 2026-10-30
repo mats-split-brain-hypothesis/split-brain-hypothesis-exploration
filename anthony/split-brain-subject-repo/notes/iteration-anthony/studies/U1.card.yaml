@@ -1,0 +1,62 @@
+id: U1
+title: Position-based means, carefully
+owner: B (j-lens-mean-cc), pilot-1
+status: finalist
+question: >-
+  How much of what position matching buys is fair? Walk the ladder from content-free position keys to "same sentence,
+  same position", with the shuffled / random controls and umot's mention control (held vs mentioned concept) at every rung.
+verdict: >-
+  Token matching, not position matching, reads the prompt. `u1rel` (same offset from the end of the read span, any
+  token) is fair on the mention control (held 0.78 / mentioned 0.23) and gets DM val Haiku 0.57 against tok's 0.79,
+  whose extra is all mid-sentence, where tok leaks. `u1endcar` (same-sentence mean only at the span's last cell) is
+  the best fair DM centre, 0.64; on the bench, with no shared carriers, tok's DM lead over `u1rel` vanishes (0.12 / 0.12).
+  The judged half of the bench registration is still open.
+tiles:
+  - {label: "DM val Haiku, u1rel", value: "0.57", sub: "[0.46, 0.68]; zero 0.17, tok 0.79 (prompt reading)"}
+  - {label: "DM val Haiku, u1endcar", value: "0.64", sub: "[0.54, 0.75]; best fair DM centre"}
+  - {label: "Mention control, u1rel held / mentioned", value: "0.78 / 0.23", sub: "tok 0.82 / 0.59; u1carpos 0.95 / 0.91"}
+  - {label: "DM bench strict, tok - u1rel", value: "0.00", sub: "0.12 / 0.12 cos; val gap +0.07 (registered P2)"}
+formulas:
+  - latex: '\mathrm{off}(h) = t_{\text{end}} - t_h, \qquad g_{\text{rel}}(h) = \bar h_S,\quad S = \{\, r \in \mathcal{R}_{\text{fam}} : \mathrm{off}(r) = \mathrm{off}(h) \,\}'
+    note: "u1rel: offset from the last cell of the item's read span; own item and its group excluded; fewer than 3 cells: the family mean."
+  - latex: 'g_{\text{endcar}}(h) = \begin{cases} \bar h_{C}, & \mathrm{off}(h) = 0,\; C = \mathcal{R}_{\text{same text}}(h) \\ g_{\text{rel}}(h), & \text{otherwise} \end{cases}'
+    note: "u1endcar: at the end of the copied unit (off = 0), the mean over $\\mathcal{R}_{\\text{same text}}(h)$, the reference cells with the same read-span text at the same index (>= 2 cells, else u1rel); u1rel everywhere else."
+diagram:
+  kind: pool
+  select: position
+  exclude: own_group
+  caption: "u1rel averages the reference cells at the same offset from the end of their read span, whatever their token; own item and group excluded."
+# u1endcar is on val only for DM / UM; the bench has both headline arms and their controls on all 11 families.
+split: bench
+arms: ["u1rel@fit|cos", "u1endcar@fit|cos", "tok@fit|cos"]
+controls: ["shuf.u1rel@fit|cos", "rand.u1rel@fit|cos"]
+insights:
+  - lead: Token keys, not position keys, read the prompt
+    text: >-
+      In the mention control the position-only rungs raise the held concept to 0.53-0.78 with the mentioned one at
+      0.05-0.23; every token-keyed rung lets the mention through (tok 0.59, u1reltok 0.63, u1carpos 0.91), mid-sentence
+      above all.
+  - lead: tok's judged DM lead over u1rel is entirely mid-sentence
+    text: >-
+      Mid-sentence 0.72 vs 0.29, at the final "." 0.43 vs 0.42, where the two keys coincide. The fair part of DM's
+      judged gain is about u1rel's 0.57, not tok's 0.79.
+  - lead: Same-sentence references are fair at the end of the copied unit only
+    text: >-
+      u1endcar keeps u1rel's mention control (0.78 / 0.27, mid-sentence 0.60 / 0.08) and lifts DM val Haiku to 0.64;
+      at the final "." 0.54 vs u1rel's 0.42. With nothing held it surfaces listed words at 0.12 (u1rel 0.06): u1rel
+      is the cleaner fair centre, u1endcar the stronger one.
+  - lead: The position mean transfers across sentences and stays fair
+    text: >-
+      Fitted on the dev DM bank and read on the mention bank (no shared carriers): u1rel 0.65 / 0.10, mid-sentence
+      0.45 / 0.08; tok becomes fair too (0.65 / 0.06) but weak mid-sentence (0.29).
+  - lead: Absolute position is not something a mean can remove
+    text: >-
+      The wikitext position mean hurts (fit macro 0.47 < zero 0.51) and the bench position mean is no better than its
+      own shuffle (0.56 vs 0.58).
+  - lead: On the bench the token mean has no DM advantage
+    text: >-
+      Registered read, strict: tok - u1rel = 0.00 on DM (val +0.07); u1rel = fam exactly on the 9 single-cell families;
+      no family where u1rel is below fam outside the interval.
+next:
+  - "u1-bench, judged half: DM bench Haiku at L24/36/48/60 for u1rel, u1endcar, tok, zero (day session)."
+  - "Report pass@10 with the held / mentioned rank ratio for any fairness claim (u1rel 5 -> 22 over all cells)."

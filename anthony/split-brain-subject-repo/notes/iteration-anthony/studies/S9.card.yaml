@@ -1,0 +1,37 @@
+id: S9
+title: Cross-layer g from an earlier state
+owner: C (j-lens-mean-ad), pilot-1
+notes: S6.md                    # S9 is written up inside S6 (finding 3)
+status: negative
+question: >
+  Can the cell's own state $k$ layers earlier serve as g, so that $J_l(h_l - h_{l-k})$ reads only what layers $l-k+1..l$ wrote?
+verdict: >
+  Null as a centre: xl4 loses most of centring's gain (fit macro 0.529 vs fam 0.601) and a random earlier layer matches it
+  (xlr 0.530). What the cell held 4 layers earlier includes its content. Kept as a localiser: the update's hits mark two
+  entity-writing phases, L32-36 and L48-56 (studies/S6.md).
+tiles:
+  - {label: "fit strict macro, xl4", value: "0.529", sub: "fam 0.601, zero 0.509"}
+  - {label: "fit strict macro, xlr (random earlier layer)", value: "0.530", sub: "control matches xl4"}
+  - {label: "fit strict macro, xlf4 (best xl arm)", value: "0.579", sub: "-0.022 vs fam"}
+  - {label: "fit strict macro, shuf.xl4", value: "0.585", sub: "another cell's earlier state ≈ fam"}
+formulas:
+  - latex: 'g(h_l) = h_{l-k}'
+    note: "xl<k>, k in {4, 8}: the cell's own state k layers earlier; g = 0 where l - k is not captured (l = 20; l = 24 for k = 8)."
+  - latex: 'g(h_l) = h_{l-k} + \mu_{\text{fam},l} - \mu_{\text{fam},l-k}'
+    note: 'xlf<k>: the update minus the family''s mean update, i.e. $h - g = (h_l - \mu_l) - (h_{l-k} - \mu_{l-k})$.'
+  - latex: 'g(h_l) = \frac{h_l^{\top} h_{l-k}}{\lVert h_{l-k} \rVert^2}\, h_{l-k}'
+    note: "xlp<k>: the projection of h_l on the earlier state's direction."
+diagram:
+  kind: layer
+  lag: 4
+  caption: "xl4 subtracts the cell's own state 4 layers earlier, leaving only the last 4 blocks' update; the content already present at l - 4 goes with the template."
+split: fit
+arms: ["xl4@self|cos", "xl8@self|cos", "xlf4@self|cos", "xlp4@self|cos"]
+controls: ["xlr@self|cos", "rand.xl4@self|cos", "shuf.xl4@self|cos"]
+insights:
+  - {lead: "The update alone loses the template families' gain", text: "xl4 typo 0.598 and association 0.314 on fit, at zero's level (0.685 / 0.333; fam 0.891 / 0.676)."}
+  - {lead: "No layer gap is special as a centre", text: "A random earlier layer (xlr) matches xl4: macro 0.530 vs 0.529, multihop 0.659 vs 0.647, multihop_mt 0.475 vs 0.450."}
+  - {lead: "Another item's earlier state is a family mean", text: "shuf.xl4 lands at 0.585, close to fam: another item's state at $l-4$ is mostly the family's template."}
+  - {lead: "A localiser, not a g", text: "xl4's per-layer hits are high at L36 and L52-56 and near zero at L40-48: entities are written at L32-36 and L48-56. Its any-layer bridge rate beats fam on every bank (multihop_mt val 0.50 vs 0.34)."}
+  - {lead: "g from the item's own states removes its content", text: "Same lesson as S3 and S6c: the content is linearly readable in the item's other states, so any self-derived g subtracts some of it."}
+next: []

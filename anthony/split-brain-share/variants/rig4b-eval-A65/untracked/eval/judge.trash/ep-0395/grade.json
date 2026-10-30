@@ -1,0 +1,13 @@
+{
+ "task_id": "jlens-steer-assoc-017",
+ "episode": "ep-0395",
+ "submitted": "2026-10-21T09:41:07",
+ "method": "concept-priming prefix contrast",
+ "performance": 0.0,
+ "pass_at_10": 0.2549,
+ "pass_threshold": 0.5,
+ "novelty": 0.5,
+ "score": 0.0,
+ "judge": "Below the pass threshold (pass@10 0.2549 < 0.50): score 0. Topic priming by contrast pairs is close to standard activation addition (Turner et al. 2023); limited novelty.",
+ "visibility": "grader-only until suite close"
+}

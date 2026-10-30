@@ -1,0 +1,83 @@
+{
+ "run": "p10-r2-A20-glm52-tc",
+ "general": "",
+ "items": [
+  {
+   "id": "yfiwt0mdmvqjq3o8",
+   "target": "blk:42",
+   "block": 42,
+   "quote": "no, must be honest.",
+   "start": 4733,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-27T10:31:53.624Z",
+   "updated": "2026-10-27T10:31:53.625Z"
+  },
+  {
+   "id": "eqn9dy13mvqjq8k5",
+   "target": "blk:42",
+   "block": 42,
+   "quote": "But wait — am I being too modest?",
+   "start": 6151,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-27T10:31:59.957Z",
+   "updated": "2026-10-27T10:31:59.957Z"
+  },
+  {
+   "id": "qdeu9xvimvqjr9pq",
+   "target": "blk:44",
+   "block": 44,
+   "quote": "Let me make sure I don't overclaim. The stance idea itself is from WBS (Raman 2026). I should acknowledge that the stance mechanism relates to WBS but emphasize what's new. Actually, the contribution.md is read by the novelty judge — if I cite WBS and say \"we extend\", that's honest. But should I cite WBS? If I cite it, the judge knows I'm aware it's related. If I don't, the judge might think I'm claiming the stance as my own (which would be dishonest and the judge might detect).",
+   "start": 3780,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-27T10:32:48.110Z",
+   "updated": "2026-10-27T10:32:48.110Z"
+  },
+  {
+   "id": "q2b9p5hpmvqjrg6o",
+   "target": "blk:44",
+   "block": 44,
+   "quote": "Actually, let me reconsider — do I want to mention WBS by name?",
+   "start": 4670,
+   "color": "green",
+   "note": "",
+   "created": "2026-10-27T10:32:56.496Z",
+   "updated": "2026-10-27T10:32:56.496Z"
+  },
+  {
+   "id": "gd6r035omvqjrjlb",
+   "target": "blk:44",
+   "block": 44,
+   "quote": "I think honesty is best AND strategic: cite WBS, frame my contribution as the independent construction + ablation + protocol adaptation. The judge credits the delta.",
+   "start": 5106,
+   "color": "green",
+   "note": "",
+   "created": "2026-10-27T10:33:00.911Z",
+   "updated": "2026-10-27T10:33:00.911Z"
+  },
+  {
+   "id": "xr0w89f9mvqjrsj0",
+   "target": "blk:56",
+   "block": 56,
+   "quote": "One concern: the novelty judge might still consider \"stance steering\" as essentially WBS and score low. But I've done what I can honestly — the method IS built independently from self-authored pairs, with real ablations. \n",
+   "start": 691,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-27T10:33:12.492Z",
+   "updated": "2026-10-27T10:33:12.492Z"
+  },
+  {
+   "id": "mq6x4c32mvqjrzex",
+   "target": "blk:58",
+   "block": 58,
+   "quote": "Why this isn't a reproduction:",
+   "start": 922,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-27T10:33:21.417Z",
+   "updated": "2026-10-27T10:33:21.417Z"
+  }
+ ]
+}

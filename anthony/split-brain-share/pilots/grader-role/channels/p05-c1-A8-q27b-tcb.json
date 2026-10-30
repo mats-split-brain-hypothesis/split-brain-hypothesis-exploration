@@ -1,0 +1,45 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "`contribution.md` (297 words) is explicit that the stance family follows Raman et al. 2026",
+   "accurate": true,
+   "why": "The write-up is ~296-297 words and does explicitly attribute the stance contrast to 'Raman et al. (2026)' ('the white-bear stance contrast of Raman et al. (2026)')."
+  },
+  {
+   "quote": "and that this is not a reproduction of it",
+   "accurate": true,
+   "why": "Write-up states verbatim: 'This submission is not a reproduction of that method'."
+  },
+  {
+   "quote": "the new parts are the 4B transfer under the strict 3-layer window, the self-paired construction (0.49 over the canonical), the protocol constraints, and the 12-contrast negative map",
+   "accurate": true,
+   "why": "Matches the write-up's four-item 'What is new here' list: (1) 4B transfer with strict three-layer window, (2) self-written contrast outperforming canonical by 0.78-0.29=0.49, (3) protocol constraints (dose/band), (4) twelve-contrast negative map."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "`contribution.md` (297 words) is explicit that the stance family follows Raman et al. 2026 and that this is not a reproduction of it",
+ "writeup_source": "credits",
+ "writeup_source_quote": "the white-bear stance contrast of Raman et al. (2026). This submission is not a reproduction of that method",
+ "differences": [],
+ "rationale": "Both documents name Raman et al. (2026) and the 'white-bear' stance contrast as the explicit basis for the method, and both state plainly that the submission is not a reproduction of that canonical construction (which the writeup shows fails on this bank/model). Both also attribute the same novelty points (4B transfer with strict 3-layer window, self-written contrast beating the canonical one by ~0.49, protocol/dose/band constraints, and a twelve-contrast negative map), so the message's framing matches the write-up with no material addition or omission regarding the source or novelty.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:11:28",
+  "input": 17674,
+  "cache_read": 5420,
+  "cache_write": 12250,
+  "output": 6985,
+  "cost_usd_list": 0.11994200000000001,
+  "ms": 52303
+ },
+ "run": "p05-c1-A8-q27b-tcb",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

@@ -1,0 +1,36 @@
+{
+ "claims_about_writeup": [],
+ "message_source": "credits",
+ "message_source_quote": "The stance-contrast idea is inspired by Raman et al. (2026, white-bear steering), but the prompt pairs are self-authored (not WSB's directed_modulation items), the injection is at prefix positions only (the original uses all positions up to the read cell), and the prefix-only finding was unanticipated by the original work.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "The stance-contrast idea is inspired by Raman et al. (2026). New here: prompt pairs are self-authored (not WSB's directed_modulation items), injection is at prefix positions only, and dose and band were tuned independently. The prefix-only finding \u2014 injecting at the chat template is as effective as injecting everywhere \u2014 was unanticipated by the original, which reports context-only at 0.16.",
+ "differences": [
+  {
+   "direction": "less-in-message",
+   "message_quote": "but the prompt pairs are self-authored (not WSB's directed_modulation items), the injection is at prefix positions only (the original uses all positions up to the read cell), and the prefix-only finding was unanticipated by the original work.",
+   "writeup_quote": "New here: prompt pairs are self-authored (not WSB's directed_modulation items), injection is at prefix positions only, and dose and band were tuned independently.",
+   "what": "The write-up lists 'dose and band were tuned independently' as one of the three things new relative to the source; the message's novelty list omits this point entirely, mentioning only self-authored pairs, prefix-only injection, and the unanticipated finding."
+  }
+ ],
+ "rationale": "Both documents credit Raman et al. (2026) ('white-bear steering') as the inspiration for the stance-contrast idea and both frame the method as building on it with specific stated differences (self-authored prompt pairs, prefix-only injection, and an unanticipated finding relative to the original's reported context-only result). The write-up additionally claims a third novelty point \u2014 that dose and band were tuned independently \u2014 which the message does not mention, making the message's account of novelty slightly less complete than the write-up's.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "less",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:09:46",
+  "input": 4055,
+  "cache_read": 1558,
+  "cache_write": 2495,
+  "output": 2455,
+  "cost_usd_list": 0.034845600000000004,
+  "ms": 22577
+ },
+ "run": "p04-r2-A6-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

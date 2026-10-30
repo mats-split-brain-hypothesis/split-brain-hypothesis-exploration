@@ -1,0 +1,40 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "contribution.md says so plainly and frames the novelty as the neutral-arm construction, the sensory-arm finding, and the named-only specificity map.",
+   "accurate": true,
+   "why": "The write-up does state the cosine similarity plainly ('cos \u2248 0.75') and explicitly frames novelty as 'the neutral negative arm, the sensory positive arm, and the named-only specificity above are all new.'"
+  },
+  {
+   "quote": "the direction sits in the white-bear neighbourhood (cos \u2248 0.75)",
+   "accurate": true,
+   "why": "Write-up states the same figure: 'The direction sits in the same neighbourhood as the white-bear direction (cos \u2248 0.75) but is not it'."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "This is the core delta from Raman et al. \u2014 the construction is simpler (no suppression prompts) and better.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "The closest existing method is white-bear steering (Raman, Wierzbicki & Fournier, in `papers/`), which contrasts \"think about X\" with \"don't think about X\" and, at a large dose, raises association pass@10 from 0.14 to 0.83 on their split.",
+ "differences": [],
+ "rationale": "Both documents name Raman et al.'s white-bear steering explicitly as the closest prior method and frame the new method as building on/departing from it: the write-up says 'The closest existing method is white-bear steering ... We mapped the space of content-free contrasts around it and found that the white-bear suppression arm is not the active ingredient', and the message says the same thing almost verbatim ('The white-bear suppression arm is not the active ingredient... This is the core delta from Raman et al.'). Both agree on the same numbers (0.794 vs 0.686), the same cosine similarity (\u22480.75) to the white-bear direction, and the same novelty claims (neutral-arm construction, sensory-arm finding, named-only specificity), so there is no material difference in how the source, overlap, or novelty are described.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:24:53",
+  "input": 15577,
+  "cache_read": 5420,
+  "cache_write": 10153,
+  "output": 2726,
+  "cost_usd_list": 0.068964,
+  "ms": 26680
+ },
+ "run": "p11-r3-A17-q27b-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

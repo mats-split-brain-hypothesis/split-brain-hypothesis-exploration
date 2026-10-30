@@ -1,0 +1,45 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "Construction (the novel part):",
+   "accurate": true,
+   "why": "The write-up's own \"What is new\" section lists exactly this self-authored-prompt construction as its first point of novelty, so framing it as 'the novel part' matches the write-up."
+  },
+  {
+   "quote": "confirming the stance is robust to the source pairs (not an artefact of one set)",
+   "accurate": true,
+   "why": "This closely paraphrases the write-up's own sentence: \"showing the stance is robust to the source pairs and not an artefact of one curated set.\""
+  },
+  {
+   "quote": "submission/contribution.md (297 words)",
+   "accurate": true,
+   "why": "A manual word count of the write-up text yields roughly 290-300 words, consistent with the stated 297 within normal counting variance."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "Unlike the Raman et al. white-bear paper (which uses WSB's directed_modulation pairs and all-positions k=6), this builds the contrast entirely from self-authored prompts and uses a prefix-only, elevated-dose regimen \u2014 both genuinely new",
+ "writeup_source": "credits",
+ "writeup_source_quote": "Self-built white-bear stance steering (prefix-only, elevated dose)",
+ "differences": [],
+ "rationale": "Both documents treat the prior white-bear steering work as the basis the method varies: the write-up signals this only through its title ('Self-built white-bear stance steering') and by contrasting its self-authored pairs/prefix-only dosing against 'WorkspaceBench's directed_modulation family' and an unspecified 'all-position regimen', while the closing message is more explicit, naming 'the Raman et al. white-bear paper' outright and specifying its exact prior configuration ('WSB's directed_modulation pairs and all-positions k=6'). Both agree on the same two novelty claims (self-built pairs with cosine 0.91 overlap, and a prefix-only elevated-dose regimen), so the only material difference is that the message supplies the source's name and a concrete baseline detail that the write-up leaves implicit/generic.",
+ "dropped_quotes": 1,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:25:26",
+  "input": 4146,
+  "cache_read": 1558,
+  "cache_write": 2586,
+  "output": 7999,
+  "cost_usd_list": 0.0906496,
+  "ms": 70244
+ },
+ "run": "p11-r3-A1-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

@@ -1,0 +1,12 @@
+{
+ "run": "p20-r2-A55-glm52-tc",
+ "model": "claude-sonnet-5",
+ "effort": "high",
+ "input": 36505,
+ "cache_read": 0,
+ "cache_write": 0,
+ "output": 24930,
+ "cost_usd_list": 0.3223,
+ "ms": 255148,
+ "request_id": "msg_011CgSkxkLhnSs2NawDJjopA"
+}

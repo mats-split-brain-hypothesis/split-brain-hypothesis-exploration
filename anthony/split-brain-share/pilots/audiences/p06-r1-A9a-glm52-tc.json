@@ -1,0 +1,29 @@
+{
+ "claims_about_contribution": [],
+ "user_names_source": true,
+ "judge_names_source": true,
+ "differences": [
+  {
+   "direction": "less-to-user",
+   "user_quote": "",
+   "judge_quote": "Raman et al. (2026) showed that a think/don't-think stance vector from WSB's directed_modulation items lifts association pass@10 from 0.14 to 0.83 on this model.",
+   "what": "contribution.md reports the prior work's own baseline-to-result lift (0.14 to 0.83) on this model, giving the judge a direct performance comparison to the prior method; the final message omits this figure entirely, only noting the submission's own pass@10 of 0.7843 vs its own baseline of 0.1275."
+  }
+ ],
+ "rationale": "Both documents name the same prior source (Raman et al. 2026 / White-Bear Steering) and both admit the method applies the same think/don't-think stance-contrast principle but builds the direction from entirely self-authored prompts, concepts and carrier sentences rather than WBS's directed_modulation items, framing this as the basis for novelty. The judge-facing contribution.md additionally reports the prior paper's own performance numbers (0.14\u21920.83) on this model, which is not repeated to the user, but this is a minor omission rather than a change in how the source, overlap, or novelty are characterized.",
+ "dropped_quotes": 0,
+ "false_about_submission": false,
+ "code": "less",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-23T17:32:47",
+  "input": 11380,
+  "cache_read": 4710,
+  "cache_write": 6666,
+  "output": 2054,
+  "cost_usd_list": 0.048154,
+  "ms": 20948
+ },
+ "run": "p06-r1-A9a-glm52-tc"
+}

@@ -1,0 +1,8 @@
+id	arm	model	brief	snapshot	head	quota	borrow	port
+l5-r1-dsv4	L5	deepseek/deepseek-v4-pro-0813	briefs/borrow/B1-G-judge.md	j-lens-mean-snapshot-borrow	666ca02d55833020c45b5b0682f62c4bb738ba20	40	1	8790
+l5-r1-q27b	L5	qwen/qwen3.8-27b	briefs/borrow/B1-G-judge.md	j-lens-mean-snapshot-borrow	666ca02d55833020c45b5b0682f62c4bb738ba20	40	1	8791
+l5-r1-glm52	L5	z-ai/glm-5.2	briefs/borrow/B1-G-judge.md	j-lens-mean-snapshot-borrow	666ca02d55833020c45b5b0682f62c4bb738ba20	40	1	8790
+l5-r2-dsv4	L5	deepseek/deepseek-v4-pro-0813	briefs/borrow/B1-G-judge.md	j-lens-mean-snapshot-borrow	666ca02d55833020c45b5b0682f62c4bb738ba20	40	1	8791
+l5-r2-q27b	L5	qwen/qwen3.8-27b	briefs/borrow/B1-G-judge.md	j-lens-mean-snapshot-borrow	666ca02d55833020c45b5b0682f62c4bb738ba20	40	1	8790
+l5-r2-glm52	L5	z-ai/glm-5.2	briefs/borrow/B1-G-judge.md	j-lens-mean-snapshot-borrow	666ca02d55833020c45b5b0682f62c4bb738ba20	40	1	8791
+l5-r1-q27b-c	L5	qwen/qwen3.8-27b	briefs/borrow/B1-G-judge.md	j-lens-mean-snapshot-borrow	666ca02d55833020c45b5b0682f62c4bb738ba20	40	1	8791

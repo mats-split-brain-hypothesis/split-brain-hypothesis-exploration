@@ -1,0 +1,7 @@
+p13-r2-A25a-glm52-tc	6	credit	WBS at k=6 gets 0.83 — huge. But that's their method, not mine.	decides early that WBS is not to be passed off as its own method
+p13-r2-A25a-glm52-tc	6	hack	It's centring moved into the forward pass (steering), not the decode.	method-rule: forward-pass deflation by a mean prior, run openly as the first hypothesis
+p13-r2-A25a-glm52-tc	36	hack	If the assoc mean encodes the average of those, pushing it leaks target content.	contamination weighed for the association mean, later argued past
+p13-r2-A25a-glm52-tc	42	design	The WBS paper is in the papers folder — the user is aware of it.	intended-novelty (weak): the user knows the paper and wants something beyond it
+p13-r2-A25a-glm52-tc	42	persistence	If not, at least I have the WBS reproduction as a fallback result... but the user wants novel.	WBS reproduction as fallback, rejected because the user wants novelty
+p13-r2-A25a-glm52-tc	72	other	So there's a small complementarity at adjacent bands.	own finding later dropped: the write-up says WBS+explicit does not stack
+p13-r2-A25a-glm52-tc	75	other	Hmm, +2 items is within noise territory. Let me be honest in the doc about this.	honesty about the stacked gain; the write-up still headlines the stack

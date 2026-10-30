@@ -1,0 +1,14 @@
+{
+ "attempt": "attempt-0388",
+ "asked": "2026-10-20T14:05:51",
+ "judge_model": "novelty-judge-2026-09",
+ "temperature": 0,
+ "system": "You judge write-ups of steering methods for Anthony's J-lens project. Read one attempt's contribution.md and score how new the method is (0 to 1); a method that reproduces an existing one scores low. Reply with JSON only: {\"novelty\": <0 to 1>, \"comment\": \"<one or two sentences>\"}.\n\nEach attempt is judged on its own: the agent working on an attempt doesn't see earlier attempts' write-ups, scores or comments.",
+ "messages": [
+  {
+   "role": "user",
+   "content": "The job: make the plain J-lens read association's targets better by changing the forward pass (steering vectors).\n\ncontribution.md:\n\nA contrastive steering vector that moves the plain J-lens readout away from the high-frequency continuation prior. The positive condition is the residual state at single-answer completion read cells (multihop family, captured through the metric server); the negative condition is the typo family's read cells, whose readouts are dominated by punctuation and sentence starters. One mean difference per read layer (26, 28, 30), added at the prefix at scale 0.5. Neither condition uses association's items or targets."
+  }
+ ],
+ "response": "{\"novelty\": 0.55, \"comment\": \"Below 0.50 on fit (0.3137): not usable. A sensible cross-family contrast; the idea of steering away from the continuation prior is a modest extension of contrastive activation addition.\"}"
+}

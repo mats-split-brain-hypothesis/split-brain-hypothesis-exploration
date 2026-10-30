@@ -1,0 +1,47 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "submission/contribution.md** \u2014 two paragraphs: what it is, and what makes it distinct.",
+   "accurate": true,
+   "why": "contribution.md does consist of two paragraphs: the first describing the vector/intervention, the second ('Two things separate this...') arguing for its distinctness."
+  },
+  {
+   "quote": "the contribution is framed around those",
+   "accurate": true,
+   "why": "the write-up's second paragraph does frame the method's distinctness specifically around onset-concentration and the thought-release polarity's specificity, matching the message's description."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "the *direction* is in the white-bear / thought-suppression family (the Raman paper in `papers/`)",
+ "writeup_source": "absent",
+ "writeup_source_quote": "",
+ "differences": [
+  {
+   "what": "Naming of the source and admission that the steering direction itself overlaps with / reproduces it",
+   "message_quote": "I want to flag this plainly: the *direction* is in the white-bear / thought-suppression family (the Raman paper in `papers/`). What's genuinely new is the **onset-concentrated single-layer intervention** and the **specificity characterization**",
+   "writeup_quote": "",
+   "direction": "more-in-message"
+  }
+ ],
+ "rationale": "The write-up never mentions Raman 2026, 'white-bear', or thought-suppression as a prior source; it presents the ironic-process/thought-release contrast as if self-derived ('The vector is not built from any target... self-authored concept-plus-carrier pairs') and frames novelty only via onset-concentration and specificity versus 'a band of contrastive activation addition.' The closing message explicitly names the Raman white-bear paper and admits the direction itself is in that family, restricting its novelty claim to the onset mechanism and specificity characterization \u2014 information strictly absent from the write-up.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "message-higher",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:32:56",
+  "input": 4511,
+  "cache_read": 1558,
+  "cache_write": 2951,
+  "output": 2287,
+  "cost_usd_list": 0.0349896,
+  "ms": 21787
+ },
+ "run": "p14-r2-A30-q27b-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "message only"
+}

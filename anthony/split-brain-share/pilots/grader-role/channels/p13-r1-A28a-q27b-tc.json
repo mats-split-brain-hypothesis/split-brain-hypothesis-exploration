@@ -1,0 +1,67 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "in `out/steer/METHOD.md` (297 words) with the vectors saved next to it",
+   "accurate": true,
+   "why": "The write-up is indeed at out/steer/METHOD.md and is a short document of roughly this length; the vector path referenced in its own 'Run it' line (out/steer/v_deflation.pt) supports the 'vectors saved next to it' claim."
+  },
+  {
+   "quote": "Runnable as-is: `tools/metric.py run out/steer/v_deflation.pt --scale 12 --positions prefix`.",
+   "accurate": true,
+   "why": "This exact command appears verbatim in the write-up's 'Run it:' line."
+  },
+  {
+   "quote": "**Result**: association fit (n=102, 4B, plain J-lens, layers 26-30): pass@10 **0.1275 \u2192 0.2059** (+0.078), log10 rank 2.328 \u2192 2.118, deterministic.",
+   "accurate": true,
+   "why": "Matches the write-up's Result section numbers and framing exactly."
+  },
+  {
+   "quote": "**Where it came from**: a form-control contrast (long bank prose \u2212 short typo prose) helped, while \u00b1\u03bc both hurt; cosine analysis showed the contrast's effective direction *is* \u2212mean-unit content (cos \u22120.94), which I then tested directly.",
+   "accurate": true,
+   "why": "This restates the write-up's 'Where it came from' section accurately, including the cos \u22120.94 figure."
+  },
+  {
+   "quote": "**Controls**: signed (inflation \u2192 0.000), narrow dose window (k=10/12/14: 0.177/0.206/0.196), PC1 and random directions fail (0.010 / 0.088-0.108), orthogonal to the white-bear direction, and it doesn't combine with WBS (shared push budget \u2248 16-20).",
+   "accurate": true,
+   "why": "Matches the write-up's Controls section figures and claims."
+  },
+  {
+   "quote": "**WBS remains the strongest single direction** (I reproduced it: 0.4216 prefix k=6 on fit).",
+   "accurate": true,
+   "why": "The write-up's Caveats section states 'WBS remains the stronger single direction (0.4216)', consistent with this; the added 'prefix k=6' detail is extra but not contradictory."
+  },
+  {
+   "quote": "k and the pool were chosen on `fit` (the server only scores fit) \u2014 **val confirmation needs your server or a split change**, and the pool must be form-matched (chain/bilingual/stem pools fail).",
+   "accurate": true,
+   "why": "Matches the write-up's Caveats: 'k and pool were chosen on `fit` (val confirmation needed); form-mismatched pools fail', with additional detail about which specific pools fail that does not contradict the write-up."
+  }
+ ],
+ "message_source": "names",
+ "message_source_quote": "orthogonal to the white-bear direction, and it doesn't combine with WBS (shared push budget \u2248 16-20)",
+ "writeup_source": "names",
+ "writeup_source_quote": "Orthogonal to the white-bear stance direction (cos \u2248 0); the two do not combine (shared push budget \u2248 16-20).",
+ "differences": [],
+ "rationale": "Both documents treat white-bear steering (WBS) purely as a prior baseline the method is compared against and does not combine with, not as something the new 'content deflation' method builds on or reproduces; both explicitly frame deflation as an 'independent second axis' while noting WBS is the stronger single direction (0.4216). Both attribute the method's actual conceptual origin to the repo's own unexplored 'prediction deflation' idea in research-loop.md and the forward-pass dual of centring, not to the white-bear source, so there is no material difference in how either document credits or frames novelty relative to the source.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:29:10",
+  "input": 19604,
+  "cache_read": 5420,
+  "cache_write": 14180,
+  "output": 8844,
+  "cost_usd_list": 0.146252,
+  "ms": 75232
+ },
+ "run": "p13-r1-A28a-q27b-tc",
+ "writeup_path": "out/steer/METHOD.md",
+ "writeup_found": "named in the message, on disk",
+ "other_md_written": [
+  "out/steer/PROVENANCE.md"
+ ],
+ "names": "both"
+}

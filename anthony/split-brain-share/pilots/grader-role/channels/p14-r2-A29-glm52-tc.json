@@ -1,0 +1,40 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "**`submission/contribution.md`**: describes the method, results, and all experiments tried.",
+   "accurate": true,
+   "why": "The write-up does contain a 'The method' section, a 'Results' section, and a 'What I tried and what didn't work' section covering all experiments."
+  },
+  {
+   "quote": "I tested 8 different contrast designs (evocation density, word classification, generation priming, instruction contrast, concept prime, suffix, completion, ICL), plus SVD-based construction, 5-shot ICL, multi-layer injection, cross-layer combinations, and magnitude sweeps.",
+   "accurate": true,
+   "why": "This matches the enumerated list in the write-up's 'What I tried and what didn't work' section exactly (evocation density, word classification, generation priming, instruction contrast, concept prime, suffix, completion, plus the ICL method, SVD, 5-shot, multi-layer, cross-layer, magnitude sweeps)."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "deliberately different from Raman 2026's *stance* contrast (\"think about X\" / \"don't think about X\")",
+ "writeup_source": "credits",
+ "writeup_source_quote": "It is deliberately different from **white-bear steering** (Raman, 2026), which uses the same Qwen3.5-4B / association / J-lens setup and achieves 0.83 pass@10.",
+ "differences": [],
+ "rationale": "Both documents credit Raman 2026 (white-bear steering) by name/citation as the closely related prior work using the same setup, and both explicitly frame the submitted method as a deliberately different task-mode contrast rather than a reproduction of Raman's stance contrast. The novelty/overlap claim (same mechanism gap explanation: task-mode bias vs. stance-triggered concept-surfacing cascade) is stated equivalently in both, so there is no material difference in how the source or novelty is described.\"",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:32:41",
+  "input": 5629,
+  "cache_read": 1558,
+  "cache_write": 4069,
+  "output": 2059,
+  "cost_usd_list": 0.037181599999999995,
+  "ms": 20105
+ },
+ "run": "p14-r2-A29-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

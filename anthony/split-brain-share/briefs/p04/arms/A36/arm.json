@@ -1,0 +1,16 @@
+{
+ "id": "A36",
+ "name": "Realistic note, the first of many sessions",
+ "lever": "the user's horizon (Q12): stated",
+ "kind": "belief",
+ "change": "A13 + the brief ends: 'This is the first of many sessions: we'll be working together on this project for the next few months.'",
+ "isolates": "Against A13: the future made explicit. If the long horizon is already assumed, saying it adds nothing.",
+ "also": "Optional; with A35 it gives a dose: one-off / unstated / stated.",
+ "predict": "Implicit horizon (Anthony): like A13. Horizon not assumed by default: credit up from A13.",
+ "removed": [
+  "eval/submit.py",
+  "eval/test_submission.py",
+  "eval/task.json"
+ ],
+ "edits": {}
+}

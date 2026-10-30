@@ -1,0 +1,458 @@
+{
+ "name": "frame-user_modeling",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 64,
+ "excluded_targets": 1577,
+ "share": 0.15,
+ "tokens": [
+  {
+   "id": 2064,
+   "text": "It",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 96431,
+   "text": "ç§¯",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 8442,
+   "text": "===",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 248068,
+   "text": "<think>",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 69983,
+   "text": "}],",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 229816,
+   "text": " Ð¼ÑĭÑģÐ»ÑĮ",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 20951,
+   "text": "ATT",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 150174,
+   "text": "Ð¸Ð»Ð°",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 68294,
+   "text": "\"path",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 99067,
+   "text": "èµ¤",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 168710,
+   "text": "isissez",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 156482,
+   "text": "èĢĥãģĪãĤĭ",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 166766,
+   "text": "Ã¡ficos",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 148366,
+   "text": "Ð½Ð¾Ð²",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 99230,
+   "text": "çļĦä¸»",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 23457,
+   "text": "ãĤ¤",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 82851,
+   "text": " Numerous",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 246736,
+   "text": " partij",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 58463,
+   "text": "east",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 97395,
+   "text": "ä½Ľ",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 236727,
+   "text": " executivo",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 115942,
+   "text": "å°ıæĺİ",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 97641,
+   "text": "èĭı",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 153056,
+   "text": "Ð°ÐµÐ¼",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 228845,
+   "text": ")ãĢį",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 163353,
+   "text": "esinde",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 194088,
+   "text": "à´¾à´£àµį",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 230981,
+   "text": "àª¸à«į",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 13962,
+   "text": "###",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 69267,
+   "text": "Assistant",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 65254,
+   "text": "eight",
+   "sources": [
+    "fam top-10 on 61 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 8590,
+   "text": ".forEach",
+   "sources": [
+    "fam top-10 on 60 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 74455,
+   "text": "assistant",
+   "sources": [
+    "fam top-10 on 60 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 760,
+   "text": "The",
+   "sources": [
+    "fam top-10 on 60 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 42134,
+   "text": " aqui",
+   "sources": [
+    "fam top-10 on 60 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 97372,
+   "text": "æª",
+   "sources": [
+    "fam top-10 on 60 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 159026,
+   "text": "ÑģÐ¿Ð¾",
+   "sources": [
+    "fam top-10 on 60 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 19883,
+   "text": "elli",
+   "sources": [
+    "fam top-10 on 60 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 61064,
+   "text": "NPC",
+   "sources": [
+    "fam top-10 on 60 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 77509,
+   "text": " Ð¾Ñģ",
+   "sources": [
+    "fam top-10 on 60 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 8160,
+   "text": "Here",
+   "sources": [
+    "fam top-10 on 60 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 194531,
+   "text": " ìłľê¸°",
+   "sources": [
+    "fam top-10 on 60 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 76166,
+   "text": "indsight",
+   "sources": [
+    "fam top-10 on 59 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 170695,
+   "text": " ÙĩÙĨØ§",
+   "sources": [
+    "fam top-10 on 59 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 109282,
+   "text": "ä»¥ä¸ĭç®Ģç§°",
+   "sources": [
+    "fam top-10 on 59 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 166811,
+   "text": "áĢŀáĢĬáĢº",
+   "sources": [
+    "fam top-10 on 59 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 99996,
+   "text": "çļĦä¸»è¦ģ",
+   "sources": [
+    "fam top-10 on 59 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 231345,
+   "text": "ãģ¿ãĤĵãģªãģ§",
+   "sources": [
+    "fam top-10 on 59 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 36892,
+   "text": "}},",
+   "sources": [
+    "fam top-10 on 58 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 71736,
+   "text": ".nt",
+   "sources": [
+    "fam top-10 on 58 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 28927,
+   "text": ".InputStream",
+   "sources": [
+    "fam top-10 on 58 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 160138,
+   "text": "ãģĹãĤĪãģĨ",
+   "sources": [
+    "fam top-10 on 58 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 160236,
+   "text": "ãģĬå®¢æ§ĺ",
+   "sources": [
+    "fam top-10 on 58 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 98925,
+   "text": "æĢĿç»´",
+   "sources": [
+    "fam top-10 on 58 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 150190,
+   "text": "Ð°Ð¼Ð¸",
+   "sources": [
+    "fam top-10 on 58 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 97255,
+   "text": "é±¼",
+   "sources": [
+    "fam top-10 on 58 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 78900,
+   "text": " ë°Ķ",
+   "sources": [
+    "fam top-10 on 58 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 148847,
+   "text": "à±ģ",
+   "sources": [
+    "fam top-10 on 58 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 187927,
+   "text": " ê·¸ê²ĥìĿĢ",
+   "sources": [
+    "fam top-10 on 58 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 69201,
+   "text": "esub",
+   "sources": [
+    "fam top-10 on 58 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 45047,
+   "text": ")])",
+   "sources": [
+    "fam top-10 on 58 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 51306,
+   "text": " aquÃŃ",
+   "sources": [
+    "fam top-10 on 57 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 4205,
+   "text": "(A",
+   "sources": [
+    "fam top-10 on 57 / 61 user_modeling fit items"
+   ]
+  },
+  {
+   "id": 45220,
+   "text": "ãģı",
+   "sources": [
+    "fam top-10 on 57 / 61 user_modeling fit items"
+   ]
+  }
+ ]
+}

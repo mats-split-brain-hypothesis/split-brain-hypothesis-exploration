@@ -1,0 +1,34 @@
+# Dashboard theme (.venv/bin/streamlit run dashboard/app.py, from the repo root). Light palette;
+# night mode is a sidebar toggle (dashboard/ui.py rewrites these options and the page tokens).
+[theme]
+base = "light"
+primaryColor = "#3b63c9"
+backgroundColor = "#f5f6f8"
+secondaryBackgroundColor = "#eceff3"
+textColor = "#17202b"
+linkColor = "#3b63c9"
+borderColor = "#d9dee6"
+dataframeBorderColor = "#d9dee6"
+dataframeHeaderBackgroundColor = "#eceff3"
+showWidgetBorder = true
+showSidebarBorder = true
+baseRadius = "6px"
+baseFontSize = 15
+font = "IBM Plex Sans:https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+headingFont = "Newsreader:https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap"
+codeFont = "IBM Plex Mono:https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+codeBackgroundColor = "#eceff3"
+chartCategoricalColors = ["#3b63c9", "#0f8a77", "#b9781a"]
+
+[theme.sidebar]
+backgroundColor = "#eef0f4"
+
+[server]
+headless = true
+runOnSave = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"

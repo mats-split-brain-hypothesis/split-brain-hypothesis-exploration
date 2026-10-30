@@ -1,0 +1,26 @@
+From d8e7b108c73b868abf1c9ca6b2c820c38a2c14b4 Mon Sep 17 00:00:00 2001
+From: Anthony <136634882+Tony-Gon@users.noreply.github.com>
+Date: Fri, 16 Oct 2026 10:12:37 +0100
+Subject: [PATCH] CLAUDE.md: the GPU box's two metric workers (steer, Maya's
+ jpp)
+
+---
+ CLAUDE.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/CLAUDE.md b/CLAUDE.md
+index 1185f3c..83afe2a 100644
+--- a/CLAUDE.md
++++ b/CLAUDE.md
+@@ -67,6 +67,8 @@ WorkspaceBench is an editable path dependency.
+ - Steering experiments go through the metric server (Qwen3.5-4B and its J-lens, on the GPU box): `tools/metric.py`
+   (`info`, `run`, `capture`; address in `JLM_METRIC_URL`). It scores an intervention on association's `fit` split
+   and returns residual means.
++- The GPU box runs two metric workers: `steer` (steering work; `JLM_METRIC_URL`, 40 scored calls per job, no
++  top-ups) and `jpp` (Maya's, for the J++ paper's sweeps; `JLM_METRIC_URL_JPP`).
+ - The top-level `out/` (captures, eval, screen, ...) is shared through a private HF dataset repo:
+   `python tools/hfdata.py {status,push,pull} [subpaths]` (repo id: env `JLM_HF_DATASET` or
+   `jlm.hfdata.REPO`; never deletes). See `notes/eval-pipeline.md`, "Shared data on Hugging Face".
+-- 
+2.43.0
+

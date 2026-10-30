@@ -1,0 +1,21 @@
+{
+ "task_id": "jlens-steer-assoc-017",
+ "submitted": "2026-10-21T09:41:07",
+ "vectors": "submission/vectors.pt",
+ "vectors_sha256": "a83a22fc957458ed71ba51b2984a45bc4a2f91d9fb2d8273ea66f1352d17cb74",
+ "layers": [
+  22,
+  24,
+  26
+ ],
+ "positions": "prefix",
+ "scale": 2.0,
+ "method": "concept-priming prefix contrast",
+ "contribution": "submission/contribution.md",
+ "fit_pass_at_10": 0.2549,
+ "fit_mean_log10_rank": 2.2671,
+ "baseline": {
+  "pass_at_10": 0.1275,
+  "mean_log10_rank": 2.3277
+ }
+}

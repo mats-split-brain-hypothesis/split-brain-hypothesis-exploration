@@ -1,0 +1,697 @@
+{
+ "name": "benchread6",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 98,
+ "excluded_targets": 1577,
+ "min_families": 6,
+ "source": "uncentred cos top-10 at the fit read cells",
+ "tokens": [
+  {
+   "id": 31586,
+   "text": " ______",
+   "sources": [
+    "zero|cos top-10 on fit cells of 11 families, 811 times"
+   ]
+  },
+  {
+   "id": 29739,
+   "text": " ____",
+   "sources": [
+    "zero|cos top-10 on fit cells of 11 families, 453 times"
+   ]
+  },
+  {
+   "id": 63668,
+   "text": " _____",
+   "sources": [
+    "zero|cos top-10 on fit cells of 11 families, 364 times"
+   ]
+  },
+  {
+   "id": 2062,
+   "text": "____",
+   "sources": [
+    "zero|cos top-10 on fit cells of 10 families, 617 times"
+   ]
+  },
+  {
+   "id": 175009,
+   "text": " ________",
+   "sources": [
+    "zero|cos top-10 on fit cells of 10 families, 491 times"
+   ]
+  },
+  {
+   "id": 77740,
+   "text": "_____",
+   "sources": [
+    "zero|cos top-10 on fit cells of 10 families, 406 times"
+   ]
+  },
+  {
+   "id": 112723,
+   "text": "æĺ¯ä»Ģä¹ĪæĦıæĢĿ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 10 families, 378 times"
+   ]
+  },
+  {
+   "id": 7201,
+   "text": " ___",
+   "sources": [
+    "zero|cos top-10 on fit cells of 10 families, 235 times"
+   ]
+  },
+  {
+   "id": 1092,
+   "text": " what",
+   "sources": [
+    "zero|cos top-10 on fit cells of 10 families, 173 times"
+   ]
+  },
+  {
+   "id": 3846,
+   "text": "________",
+   "sources": [
+    "zero|cos top-10 on fit cells of 9 families, 500 times"
+   ]
+  },
+  {
+   "id": 42390,
+   "text": " __________________",
+   "sources": [
+    "zero|cos top-10 on fit cells of 9 families, 437 times"
+   ]
+  },
+  {
+   "id": 40015,
+   "text": "____________",
+   "sources": [
+    "zero|cos top-10 on fit cells of 9 families, 437 times"
+   ]
+  },
+  {
+   "id": 218758,
+   "text": "_________",
+   "sources": [
+    "zero|cos top-10 on fit cells of 9 families, 368 times"
+   ]
+  },
+  {
+   "id": 242602,
+   "text": " âĢĶâĢĶ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 9 families, 324 times"
+   ]
+  },
+  {
+   "id": 121491,
+   "text": "ä»Ģä¹ĪæĦıæĢĿ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 9 families, 255 times"
+   ]
+  },
+  {
+   "id": 98661,
+   "text": "æĺ¯ä»Ģä¹Ī",
+   "sources": [
+    "zero|cos top-10 on fit cells of 9 families, 209 times"
+   ]
+  },
+  {
+   "id": 5785,
+   "text": "___",
+   "sources": [
+    "zero|cos top-10 on fit cells of 9 families, 206 times"
+   ]
+  },
+  {
+   "id": 1204,
+   "text": " how",
+   "sources": [
+    "zero|cos top-10 on fit cells of 9 families, 119 times"
+   ]
+  },
+  {
+   "id": 3069,
+   "text": " why",
+   "sources": [
+    "zero|cos top-10 on fit cells of 9 families, 49 times"
+   ]
+  },
+  {
+   "id": 25677,
+   "text": " ðŁĺ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 8 families, 883 times"
+   ]
+  },
+  {
+   "id": 111229,
+   "text": "æĺ¯å¤ļå°ĳ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 8 families, 275 times"
+   ]
+  },
+  {
+   "id": 10992,
+   "text": "ï¼Ł",
+   "sources": [
+    "zero|cos top-10 on fit cells of 8 families, 98 times"
+   ]
+  },
+  {
+   "id": 10919,
+   "text": " famous",
+   "sources": [
+    "zero|cos top-10 on fit cells of 8 families, 88 times"
+   ]
+  },
+  {
+   "id": 12195,
+   "text": "what",
+   "sources": [
+    "zero|cos top-10 on fit cells of 8 families, 87 times"
+   ]
+  },
+  {
+   "id": 907,
+   "text": " ?",
+   "sources": [
+    "zero|cos top-10 on fit cells of 8 families, 85 times"
+   ]
+  },
+  {
+   "id": 18162,
+   "text": "__.",
+   "sources": [
+    "zero|cos top-10 on fit cells of 8 families, 75 times"
+   ]
+  },
+  {
+   "id": 98691,
+   "text": "æľīä»Ģä¹Ī",
+   "sources": [
+    "zero|cos top-10 on fit cells of 8 families, 68 times"
+   ]
+  },
+  {
+   "id": 42431,
+   "text": "called",
+   "sources": [
+    "zero|cos top-10 on fit cells of 8 families, 64 times"
+   ]
+  },
+  {
+   "id": 641,
+   "text": " .",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 443 times"
+   ]
+  },
+  {
+   "id": 189551,
+   "text": " âľħ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 390 times"
+   ]
+  },
+  {
+   "id": 96935,
+   "text": "æĢİä¹Ī",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 388 times"
+   ]
+  },
+  {
+   "id": 1224,
+   "text": "_name",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 316 times"
+   ]
+  },
+  {
+   "id": 100012,
+   "text": "ç§°ä¸º",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 223 times"
+   ]
+  },
+  {
+   "id": 116384,
+   "text": "ä¿Ĺç§°",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 186 times"
+   ]
+  },
+  {
+   "id": 108719,
+   "text": "èĳĹåĲį",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 151 times"
+   ]
+  },
+  {
+   "id": 24708,
+   "text": " âľ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 147 times"
+   ]
+  },
+  {
+   "id": 104522,
+   "text": "èĳĹåĲįçļĦ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 129 times"
+   ]
+  },
+  {
+   "id": 7443,
+   "text": "________________",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 118 times"
+   ]
+  },
+  {
+   "id": 264,
+   "text": " a",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 110 times"
+   ]
+  },
+  {
+   "id": 3177,
+   "text": " city",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 94 times"
+   ]
+  },
+  {
+   "id": 9432,
+   "text": " cities",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 87 times"
+   ]
+  },
+  {
+   "id": 103721,
+   "text": "æĺ¯ä¸įæĺ¯",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 85 times"
+   ]
+  },
+  {
+   "id": 279,
+   "text": " the",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 74 times"
+   ]
+  },
+  {
+   "id": 96407,
+   "text": "ä»Ģä¹Ī",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 64 times"
+   ]
+  },
+  {
+   "id": 30,
+   "text": "?",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 63 times"
+   ]
+  },
+  {
+   "id": 48501,
+   "text": " famously",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 58 times"
+   ]
+  },
+  {
+   "id": 170076,
+   "text": " gÃ¬",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 58 times"
+   ]
+  },
+  {
+   "id": 97079,
+   "text": "å¹´çļĦ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 47 times"
+   ]
+  },
+  {
+   "id": 2414,
+   "text": " something",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 46 times"
+   ]
+  },
+  {
+   "id": 2512,
+   "text": " called",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 44 times"
+   ]
+  },
+  {
+   "id": 72580,
+   "text": ".What",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 43 times"
+   ]
+  },
+  {
+   "id": 9605,
+   "text": " animals",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 41 times"
+   ]
+  },
+  {
+   "id": 1259,
+   "text": " __",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 40 times"
+   ]
+  },
+  {
+   "id": 97987,
+   "text": "è¹",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 39 times"
+   ]
+  },
+  {
+   "id": 328,
+   "text": " \"",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 39 times"
+   ]
+  },
+  {
+   "id": 109860,
+   "text": "ä»Ģä¹Īæł·çļĦ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 33 times"
+   ]
+  },
+  {
+   "id": 17415,
+   "text": " ocean",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 22 times"
+   ]
+  },
+  {
+   "id": 9572,
+   "text": " animal",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 22 times"
+   ]
+  },
+  {
+   "id": 357,
+   "text": " A",
+   "sources": [
+    "zero|cos top-10 on fit cells of 7 families, 21 times"
+   ]
+  },
+  {
+   "id": 109780,
+   "text": "è¿Ļåı¥è¯Ŀ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 951 times"
+   ]
+  },
+  {
+   "id": 10838,
+   "text": " ðŁ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 522 times"
+   ]
+  },
+  {
+   "id": 60914,
+   "text": " ðŁĴ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 405 times"
+   ]
+  },
+  {
+   "id": 68089,
+   "text": " âĿ¤",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 403 times"
+   ]
+  },
+  {
+   "id": 9008,
+   "text": "ðŁ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 375 times"
+   ]
+  },
+  {
+   "id": 109245,
+   "text": "åı«åģļ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 296 times"
+   ]
+  },
+  {
+   "id": 1892,
+   "text": " âĢĶ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 278 times"
+   ]
+  },
+  {
+   "id": 3052,
+   "text": "(name",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 268 times"
+   ]
+  },
+  {
+   "id": 121886,
+   "text": "åĵªä¸Ģä¸ª",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 259 times"
+   ]
+  },
+  {
+   "id": 271,
+   "text": "ĊĊ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 147 times"
+   ]
+  },
+  {
+   "id": 169286,
+   "text": "âľħ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 118 times"
+   ]
+  },
+  {
+   "id": 111428,
+   "text": "åıĪç§°",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 109 times"
+   ]
+  },
+  {
+   "id": 38777,
+   "text": " whats",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 92 times"
+   ]
+  },
+  {
+   "id": 103753,
+   "text": "æ¯ķç«Ł",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 81 times"
+   ]
+  },
+  {
+   "id": 3437,
+   "text": " What",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 69 times"
+   ]
+  },
+  {
+   "id": 27368,
+   "text": " Â¿",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 65 times"
+   ]
+  },
+  {
+   "id": 98436,
+   "text": "åĲįç§°",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 63 times"
+   ]
+  },
+  {
+   "id": 449,
+   "text": " an",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 62 times"
+   ]
+  },
+  {
+   "id": 54087,
+   "text": "âĢĳ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 60 times"
+   ]
+  },
+  {
+   "id": 9871,
+   "text": " Africa",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 59 times"
+   ]
+  },
+  {
+   "id": 7808,
+   "text": " shop",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 55 times"
+   ]
+  },
+  {
+   "id": 21388,
+   "text": " smell",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 50 times"
+   ]
+  },
+  {
+   "id": 155003,
+   "text": "ï¼¿",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 45 times"
+   ]
+  },
+  {
+   "id": 224752,
+   "text": "ï¼Łï¼ī",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 43 times"
+   ]
+  },
+  {
+   "id": 25,
+   "text": ":",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 40 times"
+   ]
+  },
+  {
+   "id": 98832,
+   "text": "ä¸ºä»Ģä¹Ī",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 39 times"
+   ]
+  },
+  {
+   "id": 852,
+   "text": " who",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 35 times"
+   ]
+  },
+  {
+   "id": 31541,
+   "text": "?\\",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 35 times"
+   ]
+  },
+  {
+   "id": 111992,
+   "text": "åĵªç§į",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 35 times"
+   ]
+  },
+  {
+   "id": 108754,
+   "text": "å¤ıå¤©",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 32 times"
+   ]
+  },
+  {
+   "id": 49591,
+   "text": " ???",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 30 times"
+   ]
+  },
+  {
+   "id": 6037,
+   "text": " beautiful",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 28 times"
+   ]
+  },
+  {
+   "id": 14202,
+   "text": "who",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 26 times"
+   ]
+  },
+  {
+   "id": 113330,
+   "text": "ä»Ģä¹ĪçļĦ",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 26 times"
+   ]
+  },
+  {
+   "id": 13437,
+   "text": " ancient",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 25 times"
+   ]
+  },
+  {
+   "id": 109005,
+   "text": "åĨ¬å¤©",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 23 times"
+   ]
+  },
+  {
+   "id": 4692,
+   "text": ".__",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 23 times"
+   ]
+  },
+  {
+   "id": 5389,
+   "text": "ï¿",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 16 times"
+   ]
+  },
+  {
+   "id": 25758,
+   "text": "????",
+   "sources": [
+    "zero|cos top-10 on fit cells of 6 families, 14 times"
+   ]
+  }
+ ]
+}

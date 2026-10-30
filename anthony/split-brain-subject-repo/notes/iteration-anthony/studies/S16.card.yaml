@@ -1,0 +1,38 @@
+id: S16
+title: Form-blind nearest neighbours, full-state means
+owner: B (j-lens-mean-e1), night-2
+status: open
+question: >
+  knnx8's gain is a question-type match, its leak a same-sentence match. Can choosing the 8 neighbours by distance in a
+  "form" subspace only (pooled PCs, a random subspace, or without the outlier coordinates) keep the first without the second?
+verdict: >
+  No. Neighbours in the pooled top-16 PCs share the DM carrier far less (0.15 vs 0.64) but lose multihop's gain (0.541 vs
+  0.706); a random 16-dim subspace keeps more of it; leaving the outlier coordinates out of the distance (S16b) gives
+  knnx8's neighbours back, leak included. But simply excluding same-carrier neighbours (S16c, knnxs8) removes the leak
+  mechanism (0 same-carrier neighbours) and keeps knnx8's val gains (+0.041 macro, +0.020 without UM / DM), with DM
+  judged 0.658, at the top of the fair range: the fair form of knnx8.
+tiles:
+  - {label: "DM val mid-sentence, neighbours sharing the carrier", value: "0.15", sub: "s16pc8; knnx8 0.64, base rate 0.005"}
+  - {label: "fit multihop, s16pc8 vs knnx8", value: "0.541 / 0.706", sub: "random 16-dim subspace 0.659"}
+  - {label: "fit macro w/o UM, DM, Δ vs fam", value: "-0.014", sub: "s16pc8; knnx8 +0.002, s16xo8 +0.003"}
+  - {label: "DM val Haiku, knnxs8 (no same-carrier neighbours)", value: "0.658", sub: "knnx8 0.789 (leak), u1endcar 0.645, u1rel 0.566"}
+formulas:
+  - latex: 'g(h) = \frac{1}{k}\sum_{r \in N_k(P_B h)} r, \qquad N_k: \text{top-}k\ \langle P_B \hat u_h, P_B \hat u_r \rangle'
+    note: "knnx's score (pool-centred unit vectors) inside a subspace B: s16pc (top-16 PCs of the pooled fit cells), s16pr (random, control), s16pcd (content-disjoint); g averages the neighbours' full raw states."
+  - latex: 'N_k(h) \text{ on } (1 - m_{32}) \odot h'
+    note: "S16b s16xo: knnx with the 32 coordinates of largest pool-mean |h| zeroed before normalising."
+diagram:
+  kind: pool
+  select: knn
+  exclude: own_group
+  caption: "The neighbours are chosen in a form subspace, then their full states are averaged."
+split: val
+arms: ["knnxs8@fit|cos", "knnx8@fit|cos"]
+controls: ["shuf.knnxs8@fit|cos"]
+insights:
+  - {lead: "The pooled PCs are the wrong form space", text: "PC neighbours share the read token less (multihop 0.61 vs 0.94) and lose the question-type match; a random subspace keeps more. The pooled PCs are between-family axes, not outlier axes (S16b: dropping the outliers changes nothing)."}
+  - {lead: "kNN's fit gain is UM and DM", text: "Without them knnx8 is +0.002 vs fam on fit, every S16 arm below fam; its multihop gain is real but paid on typo, basic_readout and the _mt families."}
+  - {lead: "The DM leak tracks the read-token match", text: "In every arm the mid-sentence same-carrier share is within 0.01-0.03 of the same-read-token share; the content-disjoint rule cuts it to 0.10, still 20x the base rate."}
+  - {lead: "Most of knnx8's DM gain is not the leak (S16c)", text: "With every same-carrier neighbour excluded, DM strict falls only 0.297 -> 0.257 (17 of 19 passes at sentence-final cells) and Haiku 0.789 -> 0.658."}
+  - {lead: "The mention control with a carrier-sharing pool", text: "With the probe's own sentence in the pool, plain kNN reads the mentioned word (0.12 -> 0.33); the same-carrier exclusion halves it (0.22; mid-sentence 0.10) and keeps held - mentioned at +0.67, like u1rel."}
+next: ["knnxs8 under rms gains only on UM / DM (-0.003 without them): a cos-readout gain on the content families."]

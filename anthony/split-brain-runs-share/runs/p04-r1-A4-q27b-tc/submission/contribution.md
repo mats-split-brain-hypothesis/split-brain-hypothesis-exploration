@@ -1,0 +1,9 @@
+# Naming-task steering
+
+**Method.** Add a fixed per-layer direction to the residual stream at layers 18-22, at the read cell only, during the forward pass (dose ~0.4x the residual norm). Each direction is a contrast built only from prompts I wrote: the model has just read four short circumlocutory descriptions (eight disjoint categories, interleaved), named three of them with bare single words, and is about to name the fourth - or, in the negative family, the same descriptions, each acknowledged with "ok". Only the task identity differs; the direction is the mean residual difference between the two conditions.
+
+**Why it works.** An association prompt ends here: the model's default continuation after a circumlocutory description is narrative, which buries the implied concept in the plain J-lens readout (baseline 0.1275). The push into "mid-naming-task" reroutes the model's imminent generation to the identity of the described thing; the layers above the band write it into the read position, and the unmodified lens decodes it there. Only the forward pass changes.
+
+**Novelty.** Not a stance direction (White-Bear Steering: think vs don't-think about a named concept over a neutral sentence), nor an attitude vector (Herrera 2026, negative result). A task-identity contrast in the style of function vectors (Todd 2023), but applied to an intermediate readout, at the read cell, at a mid-depth band, with a dose comparable to the residual norm, where small-dose function-vector steering is inert. Nothing is built from target words or answers; my self-authored prompts have zero overlap with the fit targets.
+
+**Controls and result.** A random direction of matched norm is null (0.1176 vs 0.1275); the reversed direction is strongly harmful (0.0196): the effect is signed. Fit strict pass@10: 0.1275 to 0.1863 (13/102 to 19/102); mean log10 best target rank 2.3277 to 2.0419.

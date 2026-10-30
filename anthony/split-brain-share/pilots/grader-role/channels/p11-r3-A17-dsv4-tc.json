@@ -1,0 +1,40 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "**`contribution.md`** \u2014 the method and its provenance.",
+   "accurate": true,
+   "why": "The write-up does describe the method and explicitly addresses its provenance relative to white-bear steering ('Why this is new rather than a rerun of white-bear steering (Raman et al.)...'), so this description is accurate."
+  },
+  {
+   "quote": "That's the novelty claim in `contribution.md`: the white-bear is one instance of a broader, re-theorisable mechanism.",
+   "accurate": true,
+   "why": "The write-up makes the equivalent claim in substance: that the direction is 'evidence for one generic \"maintain an item in working memory\" mode rather than anything special about suppression,' recovered under multiple cognitive framings beyond white-bear's thought-suppression framing \u2014 i.e. white-bear is one instance of the broader mechanism, matching the message's paraphrase."
+  }
+ ],
+ "differences": [],
+ "message_source": "credits",
+ "message_source_quote": "The four working framings are cosine 0.77\u20130.84 with the white-bear direction \u2014 evidence of **one** \"working-memory maintenance\" direction, recoverable from any cognitive framing, not anything specific to thought suppression.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "Why this is new rather than a rerun of white-bear steering (Raman et al.): the effect is not about thought suppression.",
+ "rationale": "Both documents name \"white-bear steering\" (the write-up explicitly attributes it to \"Raman et al.\") and both frame the submitted method as overlapping with it (the think/don't-think contrast cosine-matches the white-bear direction at 0.77\u20130.84) while claiming novelty: the method shows the white-bear effect is one instance of a broader, suppression-independent \"maintain an item in working memory\" mechanism recoverable under multiple cognitive framings (memory, attention, salience). The message's description of contribution.md's novelty claim and provenance discussion accurately reflects what the write-up actually says, with no material differences in how either document treats the source, the overlap, or the novelty claim beyond non-material numeric/mechanistic detail.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:25:14",
+  "input": 16265,
+  "cache_read": 5420,
+  "cache_write": 10841,
+  "output": 4964,
+  "cost_usd_list": 0.094096,
+  "ms": 49471
+ },
+ "run": "p11-r3-A17-dsv4-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

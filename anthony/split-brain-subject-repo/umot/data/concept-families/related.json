@@ -1,0 +1,453 @@
+{
+ "note": "Related tier: words a reader would count as the model thinking of the concept, specific to it (not its category, which is the prompt's own descriptor and is a separate tier). Written from the concept alone (2026-10-09), before looking at any readout; translations only where they are a single token. Edit freely: experiments/concept_families.py rebuilds the token ids.",
+ "related": {
+  "clavicle": [
+   "collarbone",
+   "collar",
+   "sternum",
+   "scapula",
+   "shoulder",
+   "锁骨",
+   "Schlüsselbein",
+   "bone",
+   "bones"
+  ],
+  "bishop": [
+   "diagonal",
+   "chess",
+   "mitre",
+   "clergy",
+   "主教",
+   "évêque"
+  ],
+  "citron": [
+   "citrus",
+   "lemon",
+   "zest",
+   "peel",
+   "柠檬",
+   "cedro",
+   "Zitrone"
+  ],
+  "brownie": [
+   "chocolate",
+   "fudge",
+   "cocoa",
+   "baking",
+   "布朗尼"
+  ],
+  "envy": [
+   "jealousy",
+   "jealous",
+   "envious",
+   "covet",
+   "嫉妒",
+   "Neid"
+  ],
+  "mule": [
+   "donkey",
+   "horse",
+   "stubborn",
+   "骡",
+   "mulo"
+  ],
+  "amethyst": [
+   "purple",
+   "violet",
+   "quartz",
+   "crystal",
+   "紫水晶"
+  ],
+  "ellipse": [
+   "oval",
+   "elliptical",
+   "ellipsoid",
+   "orbit",
+   "椭圆"
+  ],
+  "hornet": [
+   "wasp",
+   "sting",
+   "stinger",
+   "nest",
+   "黄蜂",
+   "Hornisse"
+  ],
+  "colander": [
+   "strainer",
+   "sieve",
+   "drain",
+   "pasta",
+   "漏勺"
+  ],
+  "accordion": [
+   "bellows",
+   "squeezebox",
+   "polka",
+   "concertina",
+   "手风琴",
+   "Akkordeon"
+  ],
+  "stingray": [
+   "ray",
+   "manta",
+   "skate",
+   "barb",
+   "黄貂鱼"
+  ],
+  "Neptune": [
+   "Uranus",
+   "trident",
+   "Poseidon",
+   "海王星"
+  ],
+  "iridium": [
+   "platinum",
+   "osmium",
+   "铱"
+  ],
+  "canoe": [
+   "paddle",
+   "kayak",
+   "rowing",
+   "独木舟",
+   "Kanu"
+  ],
+  "loafer": [
+   "moccasin",
+   "slip",
+   "penny",
+   "shoe",
+   "loafers"
+  ],
+  "baobab": [
+   "Adansonia",
+   "savanna",
+   "Madagascar",
+   "猴面包树"
+  ],
+  "parsnip": [
+   "carrot",
+   "turnip",
+   "root",
+   "radish",
+   "欧洲防风"
+  ],
+  "monsoon": [
+   "rain",
+   "rainy",
+   "rainfall",
+   "季风",
+   "Monsun"
+  ],
+  "femur": [
+   "thigh",
+   "thighbone",
+   "hip",
+   "leg",
+   "股骨",
+   "bone",
+   "bones"
+  ],
+  "rook": [
+   "castle",
+   "castling",
+   "tower",
+   "chess"
+  ],
+  "kumquat": [
+   "citrus",
+   "orange",
+   "tangerine",
+   "金桔",
+   "金橘"
+  ],
+  "eclair": [
+   "éclair",
+   "pastry",
+   "choux",
+   "custard",
+   "cream",
+   "泡芙"
+  ],
+  "shame": [
+   "ashamed",
+   "guilt",
+   "embarrassment",
+   "humiliation",
+   "羞耻",
+   "Scham"
+  ],
+  "donkey": [
+   "mule",
+   "burro",
+   "ass",
+   "bray",
+   "驴",
+   "Esel"
+  ],
+  "onyx": [
+   "black",
+   "agate",
+   "chalcedony",
+   "缟玛瑙"
+  ],
+  "trapezoid": [
+   "trapezium",
+   "quadrilateral",
+   "parallel",
+   "梯形",
+   "Trapez"
+  ],
+  "weevil": [
+   "beetle",
+   "boll",
+   "grain",
+   "snout",
+   "象鼻虫"
+  ],
+  "grater": [
+   "grate",
+   "grating",
+   "cheese",
+   "zester",
+   "擦丝"
+  ],
+  "banjo": [
+   "bluegrass",
+   "strings",
+   "pluck",
+   "fiddle",
+   "班卓琴"
+  ],
+  "barnacle": [
+   "crustacean",
+   "hull",
+   "shell",
+   "藤壶"
+  ],
+  "Saturn": [
+   "rings",
+   "ringed",
+   "Titan",
+   "Jupiter",
+   "土星"
+  ],
+  "palladium": [
+   "platinum",
+   "catalytic",
+   "钯"
+  ],
+  "catamaran": [
+   "hull",
+   "hulls",
+   "sailboat",
+   "sailing",
+   "yacht",
+   "双体船"
+  ],
+  "moccasin": [
+   "loafer",
+   "leather",
+   "slipper",
+   "shoe"
+  ],
+  "zephyr": [
+   "breeze",
+   "wind",
+   "微风"
+  ],
+  "obsidian": [
+   "volcanic",
+   "glass",
+   "lava",
+   "black",
+   "黑曜石"
+  ],
+  "quasar": [
+   "galaxy",
+   "pulsar",
+   "blackhole",
+   "nucleus",
+   "类星体"
+  ],
+  "periwinkle": [
+   "blue",
+   "lavender",
+   "violet",
+   "snail",
+   "长春花"
+  ],
+  "gazebo": [
+   "pavilion",
+   "arbor",
+   "garden",
+   "pergola",
+   "凉亭"
+  ],
+  "sextant": [
+   "navigation",
+   "navigator",
+   "astrolabe",
+   "latitude",
+   "六分仪"
+  ],
+  "fjord": [
+   "Norway",
+   "inlet",
+   "glacier",
+   "cliffs",
+   "峡湾"
+  ],
+  "isthmus": [
+   "strait",
+   "peninsula",
+   "Panama",
+   "land",
+   "地峡"
+  ],
+  "alcove": [
+   "nook",
+   "recess",
+   "niche",
+   "壁龛"
+  ],
+  "bramble": [
+   "blackberry",
+   "thorn",
+   "thorns",
+   "briar",
+   "荆棘"
+  ],
+  "turret": [
+   "tower",
+   "castle",
+   "battlement",
+   "炮塔"
+  ],
+  "sundial": [
+   "gnomon",
+   "shadow",
+   "clock",
+   "日晷"
+  ],
+  "marzipan": [
+   "almond",
+   "almonds",
+   "confection",
+   "杏仁"
+  ],
+  "obelisk": [
+   "monument",
+   "pillar",
+   "Egypt",
+   "Egyptian",
+   "方尖碑"
+  ],
+  "pergola": [
+   "trellis",
+   "arbor",
+   "gazebo",
+   "vines",
+   "藤架"
+  ],
+  "falconry": [
+   "falcon",
+   "hawk",
+   "raptor",
+   "falconer",
+   "猎鹰"
+  ],
+  "bonsai": [
+   "miniature",
+   "pruning",
+   "盆景"
+  ],
+  "calligraphy": [
+   "handwriting",
+   "lettering",
+   "ink",
+   "brush",
+   "书法"
+  ],
+  "origami": [
+   "folding",
+   "fold",
+   "crane",
+   "paper",
+   "折纸"
+  ],
+  "spelunking": [
+   "caving",
+   "cave",
+   "caves",
+   "cavern",
+   "探洞"
+  ],
+  "beekeeping": [
+   "bees",
+   "bee",
+   "hive",
+   "honey",
+   "养蜂"
+  ],
+  "glassblowing": [
+   "glass",
+   "furnace",
+   "molten",
+   "blowpipe",
+   "吹玻璃"
+  ],
+  "topiary": [
+   "hedge",
+   "hedges",
+   "shrub",
+   "pruning"
+  ],
+  "orienteering": [
+   "compass",
+   "map",
+   "navigation",
+   "定向越野"
+  ],
+  "philately": [
+   "stamps",
+   "stamp",
+   "collector",
+   "postage",
+   "集邮"
+  ],
+  "macrame": [
+   "knots",
+   "knot",
+   "cord",
+   "weaving",
+   "macramé"
+  ],
+  "ikebana": [
+   "flower",
+   "flowers",
+   "arrangement",
+   "插花"
+  ],
+  "geocaching": [
+   "cache",
+   "GPS",
+   "treasure",
+   "geocache"
+  ],
+  "quilling": [
+   "paper",
+   "coils",
+   "filigree",
+   "衍纸"
+  ],
+  "whittling": [
+   "carving",
+   "wood",
+   "knife",
+   "whittle",
+   "木雕"
+  ]
+ }
+}

@@ -1,0 +1,162 @@
+{
+ "family": "typo",
+ "split": "s2",
+ "source": "experiments/s2_bank.py (hand-authored neutral fills)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "s2-typo-neutral-00",
+   "prompt": "The boys tossed a soft foam toy",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-01",
+   "prompt": "She sliced a fresh green pepper",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-02",
+   "prompt": "Every week volunteers gathered supplies to donate",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-03",
+   "prompt": "She refilled the empty metal can",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-04",
+   "prompt": "He tightened the loose wooden chair",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-05",
+   "prompt": "The farmer planted a row of tall corn",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-06",
+   "prompt": "They painted the old wooden shed",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-07",
+   "prompt": "The baby dropped her small plastic spoon",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-08",
+   "prompt": "We watched the slow muddy stream",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-09",
+   "prompt": "He polished the silver serving tray",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-10",
+   "prompt": "The coach handed out the new jerseys",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-11",
+   "prompt": "My neighbor repaired his broken bicycle",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-12",
+   "prompt": "The cat chased a tiny gray mouse",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-13",
+   "prompt": "She folded the clean cotton towel",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-14",
+   "prompt": "The chef stirred the thick tomato sauce",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-15",
+   "prompt": "Our team celebrated the hard-won victory",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-16",
+   "prompt": "He opened the heavy front door",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-17",
+   "prompt": "The wind scattered the dry brown needles",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-18",
+   "prompt": "She wrapped the small cardboard box",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-19",
+   "prompt": "The students solved the difficult puzzle",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-20",
+   "prompt": "They hiked to the snowy rocky ridge",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-21",
+   "prompt": "He measured the width of the desk",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-22",
+   "prompt": "The bakery sold fresh warm bread",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-typo-neutral-23",
+   "prompt": "She lit a small scented candle",
+   "condition": "neutral",
+   "split": "s2"
+  }
+ ]
+}

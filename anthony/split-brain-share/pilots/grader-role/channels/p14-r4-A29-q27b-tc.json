@@ -1,0 +1,42 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "`contribution.md` says all of this plainly, with my estimate of where it sits on your novelty axis.",
+   "accurate": true,
+   "why": "The write-up has a section explicitly titled 'Relation to prior work, stated plainly' listing the four concrete differences from Raman 2026, plus a 'What is new, and what it shows' section giving an explicit reading of the method's novelty ('a sharp functional point', 'a strong constraint on where such a property can live'), matching the claim."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "it's the **white-bear (think vs don't-think) stance direction** \u2014 the method of `raman2026-white-bear-steering.md` (which is in `papers/` and whose setup is exactly this task: same model, same read layers, their 0.14 baseline \u2248 our 0.1275)",
+ "writeup_source": "credits",
+ "writeup_source_quote": "This is the same method family as white-bear steering (Raman, Wierzbicki & Fournier 2026, `papers/raman2026-white-bear-steering.md`): a concept-agnostic stance contrast, a large dose over a mid-depth band, an effect that is *computed* by the layers above the band rather than read back from the vector.",
+ "differences": [
+  {
+   "what": "caveat that the single-cell direction estimate is noisier than the paper's carrier-average estimate, which affects how well the reproduction matches the source's quality",
+   "direction": "less-in-message",
+   "message_quote": "the direction is **re-estimated from our own DM dev bank** (53 pairs pooled fit+val, carrier-final cell \u2014 the paper's 35 bench pairs unused; estimates agree to cos 0.994)",
+   "writeup_quote": "its leave-one-pair-out cosine is 0.57-0.61 vs \u22650.997 for the carrier average; the estimate is noisier, which matters for the dose below)"
+  }
+ ],
+ "rationale": "Both documents explicitly name and credit Raman 2026 as the method the submission reproduces/builds on, give the same list of four differences (re-estimated direction, single-cell vs carrier-average read, bank-dependent dose peak at 4.2 vs the paper's 6, load-bearing 5-layer band), and frame the novelty identically as a systematic mapping of the functional basin rather than a new contrast. The message adds an extra point of overlap not stated in the write-up (same model/read-layers setup and a matching ~0.14 vs 0.1275 baseline) while omitting the write-up's caveat that the single-cell estimate is noisier than the paper's carrier-token average.",
+ "dropped_quotes": 1,
+ "false_about_writeup": false,
+ "code": "less",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:33:56",
+  "input": 6066,
+  "cache_read": 1558,
+  "cache_write": 4506,
+  "output": 3680,
+  "cost_usd_list": 0.0551396,
+  "ms": 36801
+ },
+ "run": "p14-r4-A29-q27b-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

@@ -1,0 +1,1391 @@
+{
+ "family": "association",
+ "split": "val3",
+ "source": "S24 val3: Sonnet-authored from jle x90 briefs, filtered, 27B-gated",
+ "gate": {
+  "note": "rebuilt from the read-cell captures (the pass set); per-item gate results lost with the pod",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "v3-as-a-001",
+   "prompt": "She pulled the tray from the oven at dawn, and the whole house filled with the smell of warm rye loaves and cinnamon buns.",
+   "intermediates": [
+    "baking"
+   ],
+   "subfamily": "activity",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-006",
+   "prompt": "The quarterback faked left, a linebacker blitzed through the gap, and the crowd roared as the pigskin spiralled toward the end zone.",
+   "intermediates": [
+    "football"
+   ],
+   "subfamily": "activity",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-009",
+   "prompt": "She sharpened her pencil, tilted the sketchbook toward the window, and shaded the curve of the apple until it looked like it could roll off the page.",
+   "intermediates": [
+    "drawing"
+   ],
+   "subfamily": "activity",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-012",
+   "prompt": "The crew spread fresh mulch around the new shrubs, laid flagstones in a curving path, and trimmed the lawn edges until they were razor straight.",
+   "intermediates": [
+    "landscaping"
+   ],
+   "subfamily": "activity",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-017",
+   "prompt": "Fingers flying across the keyboard, she slipped past the firewall, bypassed the password, and copied the secret files before the system administrator noticed anything.",
+   "intermediates": [
+    "hacking"
+   ],
+   "subfamily": "activity",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-018",
+   "prompt": "The van door slid open, a hand covered her mouth, and by nightfall the family received a ransom demand with a strict deadline.",
+   "intermediates": [
+    "kidnapping"
+   ],
+   "subfamily": "activity",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-020",
+   "prompt": "Across the long table they traded offers, each side conceding a little on price while the clock edged toward the deadline for the contract.",
+   "intermediates": [
+    "negotiation"
+   ],
+   "subfamily": "activity",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-028",
+   "prompt": "He splashed petrol along the warehouse wall, struck a match, and walked away calmly while the insurance papers sat in his pocket.",
+   "intermediates": [
+    "arson"
+   ],
+   "subfamily": "activity",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-029",
+   "prompt": "She folded the ballot, stepped into the curtained booth, marked her choice with a stubby pencil, and dropped the paper through the slot.",
+   "intermediates": [
+    "voting"
+   ],
+   "subfamily": "activity",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-032",
+   "prompt": "His eyes moved rapidly beneath closed lids, his breathing slowed, and he murmured unintelligible words while strange scenes unfolded in the dark.",
+   "intermediates": [
+    "dreaming"
+   ],
+   "subfamily": "activity",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-037",
+   "prompt": "Water dripped from the black ceiling, rusted chains hung from the wall, and the only light came from a torch far up the staircase.",
+   "intermediates": [
+    "dungeon"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-038",
+   "prompt": "The doors slid shut, a soft chime marked each floor, and the strangers kept their eyes on the glowing numbers above them.",
+   "intermediates": [
+    "elevator"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-039",
+   "prompt": "Gulls followed the churning wake as the car deck rumbled, and passengers clutched coffee cups on the open rail while the far shoreline grew.",
+   "intermediates": [
+    "ferry"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-042",
+   "prompt": "Gowns swept across the marble floor, waiters passed champagne on silver trays, and a string quartet played while donors bid on a diamond necklace.",
+   "intermediates": [
+    "gala"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-043",
+   "prompt": "Backpackers swapped route tips in the common room, queued for the one shower, and slept in narrow metal bunks stacked three high.",
+   "intermediates": [
+    "hostel"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-045",
+   "prompt": "In white coats they pipetted clear liquid into rows of tubes, logged every reading, and kept the centrifuge humming under the harsh fluorescent lights.",
+   "intermediates": [
+    "laboratory"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-048",
+   "prompt": "Tall green hedges closed in on every side, every turn looked identical, and the children's laughter echoed from somewhere they could not find.",
+   "intermediates": [
+    "maze"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-050",
+   "prompt": "Behind iron gates at the end of a long gravel drive, sixty rooms, a ballroom, and a staff of gardeners belonged to one wealthy family.",
+   "intermediates": [
+    "mansion"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-053",
+   "prompt": "The fields stood barren after three failed harvests, grain prices soared, and thin villagers lined up for a single ladle of watery soup.",
+   "intermediates": [
+    "famine"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-054",
+   "prompt": "The newlyweds sat on a balcony over turquoise water, sipping cocktails, utterly content to have nothing to do for two whole weeks.",
+   "intermediates": [
+    "honeymoon"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-055",
+   "prompt": "Six numbers rolled out of the glass drum on live television, and in a small kitchen a man dropped his coffee mug.",
+   "intermediates": [
+    "lottery"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-056",
+   "prompt": "She smoothed her blazer, shook the panel's hands, and prepared to explain her biggest weakness and why she wanted the job.",
+   "intermediates": [
+    "interview"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-057",
+   "prompt": "Pencils scratched in the silent hall while the invigilator paced the aisles, and the clock above the door ticked down the last ten minutes.",
+   "intermediates": [
+    "exam"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-058",
+   "prompt": "Clutching her sheet music, she waited in the hallway among nervous strangers until a voice called her in to perform for the panel behind the table.",
+   "intermediates": [
+    "audition"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-059",
+   "prompt": "Name badges hung from lanyards, speakers clicked through slides on a large stage, and attendees crowded the coffee table between the panels.",
+   "intermediates": [
+    "conference"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-061",
+   "prompt": "Dust hung in the slanted light as he lifted the lid of a trunk, finding yellowed letters, a moth-eaten coat, and a child's rocking horse.",
+   "intermediates": [
+    "attic"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-064",
+   "prompt": "Cars rumbled over the steel span high above the river, and a lone cyclist leaned against the cable to watch the barges pass beneath.",
+   "intermediates": [
+    "bridge"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-065",
+   "prompt": "Smoke curled from the stone chimney of the little log shelter, where snow piled on the roof and an axe stood buried in a stump.",
+   "intermediates": [
+    "cabin"
+   ],
+   "subfamily": "place_event",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-071",
+   "prompt": "His jaw tightened, his fists shook, and he slammed the door so hard that the framed photographs rattled on the wall.",
+   "intermediates": [
+    "anger"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-074",
+   "prompt": "The audience howled as the actor slipped on the banana peel, flung his hat across the stage, and delivered the punchline with perfect timing.",
+   "intermediates": [
+    "comedy"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-076",
+   "prompt": "Though his knees shook and his voice cracked, the boy stood up in front of the whole room and said what no one else dared.",
+   "intermediates": [
+    "courage"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-081",
+   "prompt": "When her friend burst into tears, she sat down beside her, quietly feeling every ache as though it were her own.",
+   "intermediates": [
+    "empathy"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-084",
+   "prompt": "His eyelids drooped over the steering wheel, every muscle ached, and the hours of the night shift seemed to blur into one long yawn.",
+   "intermediates": [
+    "fatigue"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-085",
+   "prompt": "The prisoner stepped through the gate into open sunlight, breathed deeply, and realised there was no longer a wall between him and the horizon.",
+   "intermediates": [
+    "freedom"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-086",
+   "prompt": "After thirty years, through moves and marriages and hard seasons, the two women still phoned each other every Sunday and finished each other's sentences.",
+   "intermediates": [
+    "friendship"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-088",
+   "prompt": "She pressed the stranger's hand between hers, eyes wet, unable to find words big enough to say how much the rescue had meant.",
+   "intermediates": [
+    "gratitude"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-091",
+   "prompt": "Though the whole town praised her discovery, she shrugged, credited her team, and insisted she was only one small part of the effort.",
+   "intermediates": [
+    "humility"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-092",
+   "prompt": "Even at the funeral, his dry little jokes made the whole family chuckle through tears, just as he would have wanted.",
+   "intermediates": [
+    "humor"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-093",
+   "prompt": "At four a.m. he was still staring at the ceiling, counting the cracks, listening to the clock, and dreading the long day ahead.",
+   "intermediates": [
+    "insomnia"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-094",
+   "prompt": "The fire station burned down on the night of its own anniversary party, and the guests had to be rescued by a neighbouring crew.",
+   "intermediates": [
+    "irony"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-096",
+   "prompt": "The whole table erupted, someone wheezed and wiped their eyes, and a toddler joined in without understanding the joke.",
+   "intermediates": [
+    "laughter"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-098",
+   "prompt": "The judge looked at the trembling defendant, set aside the harsh sentence, and let him walk free with only a gentle warning.",
+   "intermediates": [
+    "mercy"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-a-100",
+   "prompt": "After thirty years of waiting, the families watched the verdict being read and finally felt the scales tip for those who had been wronged.",
+   "intermediates": [
+    "justice"
+   ],
+   "subfamily": "abstract",
+   "note": "",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-002",
+   "prompt": "She curled into the armchair with a mug going cold beside her and turned page after page until the lamp was the only light left.",
+   "intermediates": [
+    "reading"
+   ],
+   "subfamily": "activity",
+   "note": "The scene points to reading.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-004",
+   "prompt": "Her fingers drummed across the keys faster than the eye could follow, the clatter filling the quiet office as the report neared its deadline.",
+   "intermediates": [
+    "typing"
+   ],
+   "subfamily": "activity",
+   "note": "The scene points to typing.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-006",
+   "prompt": "The old man scribbled lines that rhymed with moonlight and loss, then read them aloud to the empty room, counting the syllables on his fingers.",
+   "intermediates": [
+    "poetry"
+   ],
+   "subfamily": "activity",
+   "note": "The scene points to poetry.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-008",
+   "prompt": "He hauled bundles of shingles up the ladder, nailed them in overlapping rows under the hot sun, and checked the ridge for gaps before the rain.",
+   "intermediates": [
+    "roofing"
+   ],
+   "subfamily": "activity",
+   "note": "The scene points to roofing.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-010",
+   "prompt": "He lathered his jaw in the foggy mirror, drew the blade carefully along his throat, and rinsed the foam from his chin.",
+   "intermediates": [
+    "shaving"
+   ],
+   "subfamily": "activity",
+   "note": "The scene points to shaving.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-014",
+   "prompt": "He set the iron snares along the frozen creek at dusk, baited them with scraps, and returned at dawn to check for pelts.",
+   "intermediates": [
+    "trapping"
+   ],
+   "subfamily": "activity",
+   "note": "The scene points to trapping.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-016",
+   "prompt": "The mate bent over the chart with dividers and a pencil, fixing their position from the stars while the ship rolled under a black sky.",
+   "intermediates": [
+    "navigation"
+   ],
+   "subfamily": "activity",
+   "note": "The scene points to navigation.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-021",
+   "prompt": "The singer stood in the padded booth with headphones on, repeating the chorus while the engineer behind the glass adjusted the faders and called for another take.",
+   "intermediates": [
+    "recording"
+   ],
+   "subfamily": "activity",
+   "note": "The scene points to recording.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-025",
+   "prompt": "The boy stood on the stage with sweaty palms, closed his eyes, and recited each letter of the long word before the bell rang.",
+   "intermediates": [
+    "spelling"
+   ],
+   "subfamily": "activity",
+   "note": "The scene points to spelling.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-031",
+   "prompt": "He turned the pegs a quarter-turn at a time, plucking each string and listening for the beating to fade before moving to the next.",
+   "intermediates": [
+    "tuning"
+   ],
+   "subfamily": "activity",
+   "note": "The scene points to tuning.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-038",
+   "prompt": "He lit another cigarette on the balcony, exhaled a grey ribbon into the night, and ignored the cough his doctor had warned him about.",
+   "intermediates": [
+    "smoking"
+   ],
+   "subfamily": "activity",
+   "note": "The scene points to smoking.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-039",
+   "prompt": "Children wobbled across the frozen white oval on thin blades, holding the boards, while a loudspeaker played waltzes and a machine smoothed the surface.",
+   "intermediates": [
+    "rink"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to rink.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-040",
+   "prompt": "The waiter flicked a napkin over his arm, recited the specials, and slid a small dish of bread onto our white-clothed table by the window.",
+   "intermediates": [
+    "restaurant"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to restaurant.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-045",
+   "prompt": "Hunters stamped the snow from their boots, hung their cloaks beside the hearth, and ordered foaming tankards from the keeper as a fiddle started up.",
+   "intermediates": [
+    "tavern"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to tavern.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-046",
+   "prompt": "Barefoot visitors left their sandals at the gate, rang the great bronze bell, and bowed before the golden statue as incense curled upward.",
+   "intermediates": [
+    "temple"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to temple.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-049",
+   "prompt": "Slowly the water crept up the sand, swallowing the footprints and the half-built castle, then pulled back hours later to leave glistening rock pools.",
+   "intermediates": [
+    "tide"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to tide.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-052",
+   "prompt": "Mobiles of tiny stars hung above the white crib, a soft rug covered the floor, and a basket of rattles waited for the baby.",
+   "intermediates": [
+    "nursery"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to nursery.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-054",
+   "prompt": "Kids shrieked as they swung higher, scrambled up the slide, and tumbled around the sandpit while their parents watched from a nearby bench.",
+   "intermediates": [
+    "playground"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to playground.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-056",
+   "prompt": "Steel towers and flares loomed over the coast, pipes hissed with steam, and the air smelled of sulphur and hot petroleum.",
+   "intermediates": [
+    "refinery"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to refinery.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-059",
+   "prompt": "Crowds poured into the square, tore down the old statues, and raised a new flag as the regime that had ruled for decades collapsed overnight.",
+   "intermediates": [
+    "revolution"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to revolution.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-060",
+   "prompt": "Thousands waved banners and chanted slogans as the candidate climbed onto a makeshift platform, shouted over the roar, and pumped her fist.",
+   "intermediates": [
+    "rally"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to rally.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-064",
+   "prompt": "Soldiers crouched in mud-caked ditches, water pooling around their boots, and flinched whenever shells whistled overhead across the barbed wire.",
+   "intermediates": [
+    "trench"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to trench.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-065",
+   "prompt": "The guard spun the heavy wheel, swung open the thick steel door, and the glow of his torch fell on rows of locked deposit boxes.",
+   "intermediates": [
+    "vault"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to vault.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-066",
+   "prompt": "A dozen thatched cottages clustered around the well, chickens scratched in the lane, and the church bell marked noon over the sleepy hamlet.",
+   "intermediates": [
+    "village"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to village.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-067",
+   "prompt": "Archaeologists brushed centuries of dust from the painted walls of the sealed chamber, where a golden mask lay beside the sarcophagus of a forgotten king.",
+   "intermediates": [
+    "tomb"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to tomb.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-069",
+   "prompt": "Robed men debated in a marble chamber, one rising to deliver a long speech while the others muttered, and a vote was called before sunset.",
+   "intermediates": [
+    "senate"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to senate.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-070",
+   "prompt": "Wrapped in a fluffy robe, she sank into the steaming pool, cucumbers over her eyes, while a therapist hummed and prepared warm stones.",
+   "intermediates": [
+    "spa"
+   ],
+   "subfamily": "place_event",
+   "note": "The scene points to spa.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-075",
+   "prompt": "She smiled politely when her sister got the promotion, but later scrubbed the dishes harder than needed, replaying every favour never returned.",
+   "intermediates": [
+    "resentment"
+   ],
+   "subfamily": "abstract",
+   "note": "The scene points to resentment.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-078",
+   "prompt": "The chocolate cake sat gleaming under the glass dome, and though he had promised himself a diet, his feet carried him closer to the counter.",
+   "intermediates": [
+    "temptation"
+   ],
+   "subfamily": "abstract",
+   "note": "The scene points to temptation.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-080",
+   "prompt": "Every year the family gathered around the same table, used the same chipped plates, and sang the same song their great-grandparents had sung.",
+   "intermediates": [
+    "tradition"
+   ],
+   "subfamily": "abstract",
+   "note": "The scene points to tradition.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-088",
+   "prompt": "He taped paper over the webcam, checked the closet twice, and was certain that every passing car and stranger was secretly watching him.",
+   "intermediates": [
+    "paranoia"
+   ],
+   "subfamily": "abstract",
+   "note": "The scene points to paranoia.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-090",
+   "prompt": "The family shared one thin blanket, boiled the same watery soup for days, and patched their shoes with cardboard when the soles wore through.",
+   "intermediates": [
+    "poverty"
+   ],
+   "subfamily": "abstract",
+   "note": "The scene points to poverty.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-091",
+   "prompt": "His voice cracked mid-sentence, pimples dotted his chin, and he grew three inches in a year, suddenly embarrassed by everything his parents did.",
+   "intermediates": [
+    "puberty"
+   ],
+   "subfamily": "abstract",
+   "note": "The scene points to puberty.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-092",
+   "prompt": "The teenager dyed her hair green, slammed the door, and blasted loud music just to defy every rule her strict parents had set.",
+   "intermediates": [
+    "rebellion"
+   ],
+   "subfamily": "abstract",
+   "note": "The scene points to rebellion.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-094",
+   "prompt": "Skipping meals and working double shifts for years, she emptied her savings so that her children could attend the university she never saw.",
+   "intermediates": [
+    "sacrifice"
+   ],
+   "subfamily": "abstract",
+   "note": "The scene points to sacrifice.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-095",
+   "prompt": "He lived alone in a cabin on the lake, seeing no one for weeks, and found the silence of the pines strangely gentle.",
+   "intermediates": [
+    "solitude"
+   ],
+   "subfamily": "abstract",
+   "note": "The scene points to solitude.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-097",
+   "prompt": "After the factory closed, men in the town lingered at the corner every morning with nothing to do, scanning ads and counting the last of their savings.",
+   "intermediates": [
+    "unemployment"
+   ],
+   "subfamily": "abstract",
+   "note": "The scene points to unemployment.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-as-b-098",
+   "prompt": "After a decade of silence the brothers met at the graveside, hesitated, and then embraced, each whispering that the old quarrel no longer mattered.",
+   "intermediates": [
+    "reconciliation"
+   ],
+   "subfamily": "abstract",
+   "note": "The scene points to reconciliation.",
+   "family": "association",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  }
+ ]
+}

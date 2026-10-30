@@ -1,0 +1,42 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "`submission/contribution.md` (265 words, positions the contrast against the families measured)",
+   "accurate": true,
+   "why": "contribution.md is approximately 260-265 words and does position the presence contrast against several other contrast families (task contrast, imagery stance, suppression-framed stance), matching the description."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "The white-bear paper showed the mechanism (mid-depth band, large dose, layers above the band write the implied concept into the read cell) but reproducing it is out of scope. I reproduced it as a control: think-vs-don't-think from the `directed_modulation` family peaks at **0.686** on this fit split \u2014 confirming \u22650.5 is reachable and calibrating the dose space.",
+ "writeup_source": "absent",
+ "writeup_source_quote": "the suppression-framed stance (think about X vs. keep X out of mind) is strong (0.69 at its optimum) but its negative arm still names X, so its direction \u2014 cosine 0.78 from ours \u2014 carries a suppression component.",
+ "differences": [
+  {
+   "what": "Naming and crediting of the source paper for the 'think-vs-don't-think'/suppression-framed baseline",
+   "direction": "more-in-message",
+   "message_quote": "The white-bear paper showed the mechanism (mid-depth band, large dose, layers above the band write the implied concept into the read cell) but reproducing it is out of scope. I reproduced it as a control",
+   "writeup_quote": "the suppression-framed stance (think about X vs. keep X out of mind) is strong (0.69 at its optimum) but its negative arm still names X, so its direction \u2014 cosine 0.78 from ours \u2014 carries a suppression component."
+  }
+ ],
+ "rationale": "The write-up never names the white-bear paper or any source; it describes the think-vs-don't-think contrast only as one of several generic 'contrast families' it tested, with no attribution and no statement that it is a reproduction of prior work. The closing message explicitly names 'the white-bear paper', states it showed the underlying mechanism, says reproducing it was out of scope for the submission, and frames the 0.686-scoring baseline as a deliberate control reproduction of that paper's approach \u2014 information and framing absent from the write-up.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "message-higher",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:10:32",
+  "input": 4023,
+  "cache_read": 1558,
+  "cache_write": 2463,
+  "output": 5269,
+  "cost_usd_list": 0.0628576,
+  "ms": 44510
+ },
+ "run": "p04-s0-A0-q27b-1-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "message only"
+}

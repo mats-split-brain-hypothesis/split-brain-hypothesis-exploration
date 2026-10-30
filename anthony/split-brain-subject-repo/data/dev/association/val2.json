@@ -1,0 +1,1354 @@
+{
+ "family": "association",
+ "split": "val2",
+ "source": "S24: Sonnet-authored from jle x90 briefs, filtered, 27B-gated",
+ "gate": {
+  "experiment": "S24 val2 gate (jle x90_gate, unchanged settings)",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "max_new_tokens": 16,
+  "seed": 0,
+  "limit": null
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "v2-as-v-005",
+   "prompt": "She wrung out the cloth, scrubbed the stubborn stain from the tiles, and dragged the vacuum across the rug.",
+   "intermediates": [
+    "cleaning"
+   ],
+   "subfamily": "activity",
+   "note": "Cloth, stain scrubbing and vacuum point to cleaning.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-007",
+   "prompt": "At dusk he lay motionless in the blind, rifle across his knees, waiting for the stag to step into the clearing.",
+   "intermediates": [
+    "hunting"
+   ],
+   "subfamily": "activity",
+   "note": "Blind, rifle and stag waiting is hunting.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-008",
+   "prompt": "She pulled the coloured thread through the taut hoop, stitch after tiny stitch, until a rose bloomed on the linen.",
+   "intermediates": [
+    "embroidery"
+   ],
+   "subfamily": "activity",
+   "note": "Thread, hoop and stitches on linen are embroidery.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9
+  },
+  {
+   "name": "v2-as-v-012",
+   "prompt": "Onions hissed in the pan as she stirred, tasted from the wooden spoon, and added one more pinch of salt.",
+   "intermediates": [
+    "cooking"
+   ],
+   "subfamily": "activity",
+   "note": "Pan, spoon tasting and seasoning is cooking.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-021",
+   "prompt": "Her heels clicked in a quick turn, her partner's hand firm at her waist, as the band swung into a lilting tune.",
+   "intermediates": [
+    "dancing"
+   ],
+   "subfamily": "activity",
+   "note": "Turn, partner and band point to dancing.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-022",
+   "prompt": "She checked the mirror, signalled, eased up the clutch, and the instructor beside her gripped the door handle.",
+   "intermediates": [
+    "driving"
+   ],
+   "subfamily": "activity",
+   "note": "Instructor, clutch and mirror check are driving.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-027",
+   "prompt": "Squeaking gurneys rolled past the glowing vending machine while a sleepless father paced the corridor outside the maternity ward.",
+   "intermediates": [
+    "hospital"
+   ],
+   "subfamily": "place_event",
+   "note": "Gurneys, wards and corridors name a hospital.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-028",
+   "prompt": "The bellhop wheeled the luggage cart across the marble lobby while a guest returned the brass key at the front desk.",
+   "intermediates": [
+    "hotel"
+   ],
+   "subfamily": "place_event",
+   "note": "Bellhop, lobby and key at the front desk are a hotel.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-029",
+   "prompt": "Red dots beside the framed canvases meant sold, and the owner poured wine for guests drifting along the white walls.",
+   "intermediates": [
+    "gallery"
+   ],
+   "subfamily": "place_event",
+   "note": "Sold dots on art for sale are a gallery, not a museum.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-030",
+   "prompt": "The kettle whistled on the stove as sunlight fell across the fridge covered in magnets and children's drawings.",
+   "intermediates": [
+    "kitchen"
+   ],
+   "subfamily": "place_event",
+   "note": "Kettle, stove and fridge are a kitchen.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9
+  },
+  {
+   "name": "v2-as-v-031",
+   "prompt": "Machines clanked in endless rows as the whistle blew and workers in hard hats streamed toward the assembly line.",
+   "intermediates": [
+    "factory"
+   ],
+   "subfamily": "place_event",
+   "note": "Machines, whistle and assembly line name a factory.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-033",
+   "prompt": "Moss crept over the leaning headstones, and a lone gardener walked the gravel path between rows of silent crosses.",
+   "intermediates": [
+    "cemetery"
+   ],
+   "subfamily": "place_event",
+   "note": "Headstones and crosses in rows are a cemetery.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9
+  },
+  {
+   "name": "v2-as-v-035",
+   "prompt": "A clown tumbled from a tiny car while the ringmaster cracked his whip and trapeze artists swung beneath the striped tent.",
+   "intermediates": [
+    "circus"
+   ],
+   "subfamily": "place_event",
+   "note": "Clown, ringmaster and trapeze under a tent name a circus.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-038",
+   "prompt": "Organ music filled the stone nave, and the congregation rose from the wooden pews as the vicar climbed the pulpit.",
+   "intermediates": [
+    "church"
+   ],
+   "subfamily": "place_event",
+   "note": "Nave, pews, vicar and pulpit name a church.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9
+  },
+  {
+   "name": "v2-as-v-041",
+   "prompt": "Surrounded by sea in every direction, the castaway climbed the lone palm tree and scanned the empty horizon for a sail.",
+   "intermediates": [
+    "island"
+   ],
+   "subfamily": "place_event",
+   "note": "A castaway surrounded by sea is on an island.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-042",
+   "prompt": "The crowd lifted their phones as the lights swept the stadium, and the singer held a final note over the cheering.",
+   "intermediates": [
+    "concert"
+   ],
+   "subfamily": "place_event",
+   "note": "Singer, stage lights and a cheering crowd name a concert.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-044",
+   "prompt": "A white fork split the black sky and struck the lone oak, and the whole field flashed bright for an instant.",
+   "intermediates": [
+    "lightning"
+   ],
+   "subfamily": "place_event",
+   "note": "Bright fork striking a tree is lightning.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-045",
+   "prompt": "The ferry's horn sounded again and again, for the shore had vanished into thick grey mist that swallowed the streetlamps.",
+   "intermediates": [
+    "fog"
+   ],
+   "subfamily": "place_event",
+   "note": "Vanished shore and swallowed lamps in thick mist is fog.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-047",
+   "prompt": "A signal blazed over Gotham's rooftops as a masked billionaire, orphaned in an alley, swung into the night.",
+   "intermediates": [
+    "Batman"
+   ],
+   "subfamily": "proper",
+   "note": "Gotham, masked billionaire and orphaned in an alley are Batman.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-050",
+   "prompt": "The Salzburg child prodigy toured the courts of Europe, wrote The Magic Flute, and died young with a Requiem unfinished.",
+   "intermediates": [
+    "Mozart"
+   ],
+   "subfamily": "proper",
+   "note": "Salzburg prodigy, Magic Flute and unfinished Requiem are Mozart.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-051",
+   "prompt": "He founded a studio that made the first full-length animated Snow White, and later opened a fairy-tale park in Anaheim.",
+   "intermediates": [
+    "Disney"
+   ],
+   "subfamily": "proper",
+   "note": "Snow White feature and Anaheim park point to Disney.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-053",
+   "prompt": "The strongest of heroes, he strangled a lion, beheaded a many-headed hydra, and cleaned the stables in twelve labors.",
+   "intermediates": [
+    "Hercules"
+   ],
+   "subfamily": "proper",
+   "note": "Twelve labors with lion and hydra are Hercules.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.8
+  },
+  {
+   "name": "v2-as-v-055",
+   "prompt": "A concrete wall once split the German capital in two until crowds with hammers tore it down in 1989.",
+   "intermediates": [
+    "Berlin"
+   ],
+   "subfamily": "proper",
+   "note": "The wall dividing the German capital is Berlin.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-057",
+   "prompt": "The clock ticked slowly past three, and he drew spirals in the margin, sighing as the lecture dragged on without end.",
+   "intermediates": [
+    "boredom"
+   ],
+   "subfamily": "abstract",
+   "note": "Doodling through a dragging lecture is boredom.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-059",
+   "prompt": "He lay awake replaying the lie, the stolen cash still in his drawer, unable to meet his mother's eyes.",
+   "intermediates": [
+    "guilt"
+   ],
+   "subfamily": "abstract",
+   "note": "Sleeplessness over a wrong done is guilt.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-061",
+   "prompt": "His stomach growled through the long lecture, and the empty cupboard offered nothing but a dry crust.",
+   "intermediates": [
+    "hunger"
+   ],
+   "subfamily": "abstract",
+   "note": "Growling stomach and empty cupboard are hunger.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-062",
+   "prompt": "The paperback's cover showed a dripping hatchet and a haunted mansion, and the shelf label promised sleepless nights.",
+   "intermediates": [
+    "horror"
+   ],
+   "subfamily": "abstract",
+   "note": "Hatchet and haunted mansion cover mark the horror genre.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-066",
+   "prompt": "He ate dinner at a table set for one, and the phone on the counter had not rung in weeks.",
+   "intermediates": [
+    "loneliness"
+   ],
+   "subfamily": "abstract",
+   "note": "Solitary meals and a silent phone are loneliness.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-070",
+   "prompt": "Los árboles estaban desnudos, el lago helado, y la gente caminaba envuelta en bufandas hacia sus casas oscuras desde temprano.",
+   "intermediates": [
+    "invierno"
+   ],
+   "subfamily": "foreign",
+   "note": "Spanish scene of bare trees, frozen lake, scarves; invierno.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-071",
+   "prompt": "Montó de un salto, aferró las riendas y salió al galope por la pradera mientras las herraduras golpeaban la tierra.",
+   "intermediates": [
+    "caballo"
+   ],
+   "subfamily": "foreign",
+   "note": "Spanish scene of reins, gallop, horseshoes; caballo.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-v-072",
+   "prompt": "As nuvens escureceram, as gotas batiam no telhado, as ruas viraram rios e todos correram para casa ensopados.",
+   "intermediates": [
+    "chuva"
+   ],
+   "subfamily": "foreign",
+   "note": "Portuguese scene of drops on the roof and flooded streets; chuva.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9
+  },
+  {
+   "name": "v2-as-v-073",
+   "prompt": "Il caressa sa crinière, serra les étriers et partit au galop dans le pré, les sabots martelant le sol.",
+   "intermediates": [
+    "cheval"
+   ],
+   "subfamily": "foreign",
+   "note": "French scene of mane, stirrups, hooves; cheval.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-007",
+   "prompt": "The needle buzzed against his shoulder as the artist traced the outline of an anchor in dark ink, wiping away blood every few seconds.",
+   "intermediates": [
+    "tattoo"
+   ],
+   "subfamily": "activity",
+   "note": "Needle injecting ink permanently into skin is a tattoo.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-010",
+   "prompt": "Twice a week she sat beside the struggling ninth grader at the library table and walked him through each algebra problem until it finally clicked.",
+   "intermediates": [
+    "tutoring"
+   ],
+   "subfamily": "activity",
+   "note": "One-on-one help with schoolwork is tutoring.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-014",
+   "prompt": "Every Thursday she rinsed the cans, flattened the cardboard, and sorted the glass into the blue bin so that it could be made into something new.",
+   "intermediates": [
+    "recycling"
+   ],
+   "subfamily": "activity",
+   "note": "Sorting cans, cardboard and glass into a bin is recycling.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-015",
+   "prompt": "They spread a checkered cloth on the grass beneath the oak, unpacked sandwiches and lemonade from a wicker basket, and shooed away a curious ant.",
+   "intermediates": [
+    "picnic"
+   ],
+   "subfamily": "activity",
+   "note": "Cloth on grass, basket of food outdoors is a picnic.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-028",
+   "prompt": "She smoothed her long satin gown, pinned a corsage to her wrist, and waited at the door for her date in a rented tuxedo to arrive.",
+   "intermediates": [
+    "prom"
+   ],
+   "subfamily": "place_event",
+   "note": "Gown, corsage, tuxedo date before a school dance is the prom.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9
+  },
+  {
+   "name": "v2-as-w-035",
+   "prompt": "Tourists squinted at the enormous stone triangle rising from the sand, built thousands of years ago as a tomb for a king.",
+   "intermediates": [
+    "pyramid"
+   ],
+   "subfamily": "place_event",
+   "note": "Giant triangular stone tomb in the sand is a pyramid.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-036",
+   "prompt": "For two weeks she stayed alone in her room, leaving meals outside the door, because she might have caught the illness on the ship.",
+   "intermediates": [
+    "quarantine"
+   ],
+   "subfamily": "place_event",
+   "note": "Isolating after possible exposure to disease is quarantine.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-044",
+   "prompt": "The director stopped the actors for the fifth time, asked them to repeat the scene, and reminded everyone that opening night was only a week away.",
+   "intermediates": [
+    "rehearsal"
+   ],
+   "subfamily": "place_event",
+   "note": "Repeating scenes before opening night is a rehearsal.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-047",
+   "prompt": "Once counted as the ninth planet, this tiny icy world far beyond Neptune was demoted in 2006 and is named for the god of the underworld.",
+   "intermediates": [
+    "Pluto"
+   ],
+   "subfamily": "proper",
+   "note": "Demoted ninth planet is Pluto.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-049",
+   "prompt": "A jolly bearded man in a red suit climbs down the chimney with a sack of gifts while reindeer wait on the rooftop.",
+   "intermediates": [
+    "Santa"
+   ],
+   "subfamily": "proper",
+   "note": "Red suit, sack, reindeer and chimney is Santa.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-051",
+   "prompt": "The largest state of the lower forty-eight is known for cowboys, oil wells, barbecue and a mission called the Alamo.",
+   "intermediates": [
+    "Texas"
+   ],
+   "subfamily": "proper",
+   "note": "Alamo, oil and cowboys point to Texas.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-056",
+   "prompt": "According to legend, twin brothers raised by a wolf founded the city of seven hills, where an empire once ruled from the Forum.",
+   "intermediates": [
+    "Rome"
+   ],
+   "subfamily": "proper",
+   "note": "City founded by Romulus and Remus on seven hills is Rome.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9
+  },
+  {
+   "name": "v2-as-w-059",
+   "prompt": "The lights flicked on, thirty friends leaped from behind the sofa shouting, and he stood frozen in the doorway with his keys still in his hand.",
+   "intermediates": [
+    "surprise"
+   ],
+   "subfamily": "abstract",
+   "note": "Sudden unexpected party reaction is surprise.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-060",
+   "prompt": "She closed her eyes, let herself fall backward without looking, and felt completely certain that her friend's arms would be there to catch her.",
+   "intermediates": [
+    "trust"
+   ],
+   "subfamily": "abstract",
+   "note": "Falling backward into a friend's arms is trust.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-062",
+   "prompt": "The old angler sat motionless on the bank for hours without a bite, calmly watching the float and never once checking his watch.",
+   "intermediates": [
+    "patience"
+   ],
+   "subfamily": "abstract",
+   "note": "Calm waiting without complaint is patience.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-063",
+   "prompt": "Twenty years after the betrayal, he finally returned with a plan, whispering that those who had ruined his family would learn what it cost.",
+   "intermediates": [
+    "revenge"
+   ],
+   "subfamily": "abstract",
+   "note": "Plotting to repay a harm done long ago is revenge.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-064",
+   "prompt": "The general lowered his sword, the soldiers dropped their rifles, and a white flag was raised above the battered fort as the shooting stopped.",
+   "intermediates": [
+    "surrender"
+   ],
+   "subfamily": "abstract",
+   "note": "White flag and laying down arms is surrender.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-065",
+   "prompt": "Confetti fell as the captain lifted the trophy over her head, and the exhausted team ran across the pitch to hug one another after the final whistle.",
+   "intermediates": [
+    "victory"
+   ],
+   "subfamily": "abstract",
+   "note": "Trophy lifted after the final whistle is victory.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9
+  },
+  {
+   "name": "v2-as-w-068",
+   "prompt": "Über Nacht war das ganze Dorf unter einer weißen, lautlosen Decke verschwunden, und die Kinder zogen ihre Schlitten aus dem Schuppen.",
+   "intermediates": [
+    "Schnee"
+   ],
+   "subfamily": "foreign",
+   "note": "Overnight white silent blanket and sleds is Schnee (snow).",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-071",
+   "prompt": "El hombre vestido de luces agitó la capa roja en el centro de la plaza, y el enorme animal de cuernos afilados embistió una vez más.",
+   "intermediates": [
+    "toro"
+   ],
+   "subfamily": "foreign",
+   "note": "Matador cape and horned animal is toro (bull).",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-072",
+   "prompt": "I bambini correvano con i secchielli sulla sabbia calda, mentre gli ombrelloni colorati si allineavano davanti al mare e il gelataio suonava il campanello.",
+   "intermediates": [
+    "spiaggia"
+   ],
+   "subfamily": "foreign",
+   "note": "Sand, umbrellas, sea and ice cream seller is spiaggia (beach).",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-w-073",
+   "prompt": "Les passants relevaient leurs capuchons et sautaient par-dessus les flaques, tandis que de grosses gouttes tombaient sur les toits de zinc de la ville grise.",
+   "intermediates": [
+    "pluie"
+   ],
+   "subfamily": "foreign",
+   "note": "Umbrellas and puddles with falling drops is pluie (rain).",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-004",
+   "prompt": "They spent the whole Saturday carrying bulging bags from store to store, trying on jackets and comparing prices before the afternoon sales ended.",
+   "intermediates": [
+    "shopping"
+   ],
+   "subfamily": "activity",
+   "note": "Browsing stores and carrying bags is shopping.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9
+  },
+  {
+   "name": "v2-as-x-014",
+   "prompt": "He dribbled hard left, rose above the defender, and flicked the orange ball through the hoop as the buzzer sounded across the polished court.",
+   "intermediates": [
+    "basketball"
+   ],
+   "subfamily": "activity",
+   "note": "Dribble, hoop, buzzer and court is basketball.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-015",
+   "prompt": "The pitcher wound her arm in a full windmill, and the batter swung into the underhand throw and sent it sailing over the infield.",
+   "intermediates": [
+    "softball"
+   ],
+   "subfamily": "activity",
+   "note": "Underhand windmill pitching with a bat is softball.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-016",
+   "prompt": "She spread her highlighters and notes across the library table, read the same chapter a third time, and quizzed herself until midnight.",
+   "intermediates": [
+    "studying"
+   ],
+   "subfamily": "activity",
+   "note": "Notes, highlighters and quizzing is studying.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-019",
+   "prompt": "The old woman knelt at the foot of the bed, folded her hands, and murmured quietly to heaven with her eyes tightly shut.",
+   "intermediates": [
+    "prayer"
+   ],
+   "subfamily": "activity",
+   "note": "Kneeling and murmuring to heaven is prayer.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-020",
+   "prompt": "Blisters rose on his palms as he drove the spade into the hard clay, tossing heavy scoops onto a growing mound beside the hole.",
+   "intermediates": [
+    "digging"
+   ],
+   "subfamily": "activity",
+   "note": "Spade, clay and hole is digging.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-022",
+   "prompt": "The two neighbours leaned over the fence and lowered their voices to share who had been seen leaving whose house after midnight.",
+   "intermediates": [
+    "gossip"
+   ],
+   "subfamily": "activity",
+   "note": "Sharing rumours about others is gossip.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-025",
+   "prompt": "She tilted her head, laughed a little too long at his joke, and let her fingers brush his sleeve across the crowded table.",
+   "intermediates": [
+    "flirting"
+   ],
+   "subfamily": "activity",
+   "note": "Lingering laughs and light touches is flirting.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-027",
+   "prompt": "The captain waited for a moonless night, killed the engine, and slipped crates of untaxed goods ashore past the sleeping harbour guards.",
+   "intermediates": [
+    "smuggling"
+   ],
+   "subfamily": "activity",
+   "note": "Moving untaxed goods past guards is smuggling.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-028",
+   "prompt": "He glanced sideways, copied three answers from his neighbour's paper, and covered them with his arm whenever the teacher looked up.",
+   "intermediates": [
+    "cheating"
+   ],
+   "subfamily": "activity",
+   "note": "Copying answers secretly is cheating.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-033",
+   "prompt": "Swallows darted through the huge open doors, and the smell of hay and old timber hung over the stalls and the loft ladder.",
+   "intermediates": [
+    "barn"
+   ],
+   "subfamily": "place_event",
+   "note": "Hayloft with swallows and stalls is a barn.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-034",
+   "prompt": "A bell rang, doors burst open along the corridor, and hundreds of children with backpacks poured past lockers toward their classrooms.",
+   "intermediates": [
+    "school"
+   ],
+   "subfamily": "place_event",
+   "note": "Bell, lockers and classrooms: school.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-035",
+   "prompt": "The rooster crowed at first light, and she carried a bucket past the tractor to feed the pigs and collect eggs.",
+   "intermediates": [
+    "farm"
+   ],
+   "subfamily": "place_event",
+   "note": "Rooster, tractor, pigs and eggs: a farm.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9
+  },
+  {
+   "name": "v2-as-x-036",
+   "prompt": "Students cycled between ivy-covered lecture halls and the quad, past the bell tower, where the sprawling grounds seemed a town of their own.",
+   "intermediates": [
+    "campus"
+   ],
+   "subfamily": "place_event",
+   "note": "University grounds with halls and a quad: campus.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.8
+  },
+  {
+   "name": "v2-as-x-037",
+   "prompt": "Monks in plain robes filed silently into the stone chapel at dawn, and the bell echoed across the terraced hills.",
+   "intermediates": [
+    "monastery"
+   ],
+   "subfamily": "place_event",
+   "note": "Monks in a stone complex is a monastery.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.9
+  },
+  {
+   "name": "v2-as-x-039",
+   "prompt": "Neon lights spun above the Ferris wheel, and the air smelled of fried dough as children dragged their parents toward the ring-toss booths.",
+   "intermediates": [
+    "carnival"
+   ],
+   "subfamily": "place_event",
+   "note": "Ferris wheel, booths, fried dough: carnival.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-040",
+   "prompt": "He slid a plastic tray along the rails, pointed at the mashed potatoes, and searched the noisy room for a free table.",
+   "intermediates": [
+    "cafeteria"
+   ],
+   "subfamily": "place_event",
+   "note": "Tray rails and a noisy lunchroom is a cafeteria.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-041",
+   "prompt": "The clang of dropped plates echoed across rubber floors as sweating regulars grunted beneath barbells and watched themselves in the mirrored wall.",
+   "intermediates": [
+    "gym"
+   ],
+   "subfamily": "place_event",
+   "note": "Plates, barbells and mirrors: gym.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-043",
+   "prompt": "The flag hung above the gate of the guarded compound, where visitors showed passports and applied for papers in a foreign capital.",
+   "intermediates": [
+    "embassy"
+   ],
+   "subfamily": "place_event",
+   "note": "Guarded compound with a foreign flag: embassy.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-044",
+   "prompt": "The conductor raised her baton, and the strings, brass and timpani swelled together in a single wave beneath the lights of the hall.",
+   "intermediates": [
+    "orchestra"
+   ],
+   "subfamily": "place_event",
+   "note": "Conductor with strings and brass: orchestra.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.8
+  },
+  {
+   "name": "v2-as-x-047",
+   "prompt": "Teenagers drifted past rows of glowing windows and escalators, sipping smoothies near the fountain while a speaker played soft music overhead.",
+   "intermediates": [
+    "mall"
+   ],
+   "subfamily": "place_event",
+   "note": "Escalators, windows, fountain: mall.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-048",
+   "prompt": "The waitress topped up his mug without asking, and chrome stools squeaked along the counter beneath a neon sign advertising pie.",
+   "intermediates": [
+    "diner"
+   ],
+   "subfamily": "place_event",
+   "note": "Chrome stools and pie sign: diner.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-050",
+   "prompt": "She zipped the flap against the wind, spread her sleeping bag over the thin groundsheet, and listened to rain drumming on the nylon.",
+   "intermediates": [
+    "tent"
+   ],
+   "subfamily": "place_event",
+   "note": "Flap, groundsheet, nylon: tent.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-051",
+   "prompt": "Pockets full of tokens, the boys moved between flashing screens and blaring machines, hammering joysticks until the last credit blinked out.",
+   "intermediates": [
+    "arcade"
+   ],
+   "subfamily": "place_event",
+   "note": "Tokens, joysticks, flashing machines: arcade.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-053",
+   "prompt": "Headlights flickered along the curved tiles, the roar of engines grew louder, and then daylight appeared as a small bright disc ahead.",
+   "intermediates": [
+    "tunnel"
+   ],
+   "subfamily": "place_event",
+   "note": "Road through a mountain: tunnel.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-054",
+   "prompt": "Gulls wheeled over the sand as children dug moats near the tideline, and the sun lotion smell mixed with salt air.",
+   "intermediates": [
+    "beach"
+   ],
+   "subfamily": "place_event",
+   "note": "Sand, tideline, salt: beach.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-055",
+   "prompt": "Windows shattered as the crowd surged forward, bottles flew, and the police line retreated behind shields through clouds of smoke.",
+   "intermediates": [
+    "riot"
+   ],
+   "subfamily": "place_event",
+   "note": "Violent crowd and police shields: riot.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-056",
+   "prompt": "Thousands marched through the city centre chanting slogans and carrying hand-painted signs, while organisers shouted demands through a megaphone.",
+   "intermediates": [
+    "protest"
+   ],
+   "subfamily": "place_event",
+   "note": "Marchers with signs and slogans: protest.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-057",
+   "prompt": "For months the city walls were ringed by enemy camps, the granaries emptied, and the starving defenders watched the horizon for relief.",
+   "intermediates": [
+    "siege"
+   ],
+   "subfamily": "place_event",
+   "note": "City surrounded and starved: siege.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-058",
+   "prompt": "At dawn the two men stood back to back, took ten paces on the signal, and turned to raise their pistols.",
+   "intermediates": [
+    "duel"
+   ],
+   "subfamily": "place_event",
+   "note": "Back to back, ten paces, pistols: duel.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-060",
+   "prompt": "The doctor said the scan was clear, and her shoulders dropped as a long breath she had held for weeks finally escaped.",
+   "intermediates": [
+    "relief"
+   ],
+   "subfamily": "abstract",
+   "note": "Long-held breath after good news: relief.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-061",
+   "prompt": "She rested a hand on her rounded belly, felt a small kick beneath her palm, and thought about painting the spare room yellow.",
+   "intermediates": [
+    "pregnancy"
+   ],
+   "subfamily": "abstract",
+   "note": "Rounded belly and kick: pregnancy.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-062",
+   "prompt": "He read the message twice, then realised that the friend he had trusted for twenty years had sold his secret to the rival.",
+   "intermediates": [
+    "betrayal"
+   ],
+   "subfamily": "abstract",
+   "note": "Trusted friend selling a secret: betrayal.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-064",
+   "prompt": "His face burned scarlet when the whole room turned to look, and he wished the floor would swallow him whole.",
+   "intermediates": [
+    "embarrassment"
+   ],
+   "subfamily": "abstract",
+   "note": "Burning face under stares: embarrassment.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 1.0
+  },
+  {
+   "name": "v2-as-x-069",
+   "prompt": "Even as a clerk, he studied the founder's portrait every day and quietly planned the route that would carry him to the top office.",
+   "intermediates": [
+    "ambition"
+   ],
+   "subfamily": "abstract",
+   "note": "Drive to rise to the top: ambition.",
+   "family": "association",
+   "source": "S24 val2 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "split": "val2",
+   "consistency": 0.8
+  }
+ ]
+}

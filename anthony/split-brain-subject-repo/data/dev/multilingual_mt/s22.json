@@ -1,0 +1,2270 @@
+{
+ "family": "multilingual-hard",
+ "parent_family": "multilingual-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": false,
+  "conjunctive_units": true
+ },
+ "source": "experiments/s22_bank.py (family formats, random no_robots fills)",
+ "split": "s22",
+ "gate": "Qwen3.6-27B: the bench's gate question, greedy correct and >= 8/10 at T=0.7; graded by anthropic/claude-haiku-5.5 with the bench's grading prompt",
+ "items": [
+  {
+   "name": "s22-multilingual_mt-00",
+   "subfamily": "fwd",
+   "prompt": "If it isn't interpreted in",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-01",
+   "subfamily": "fwd",
+   "prompt": "President Harry Truman held at Potsdam confirmed and ratified these",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-02",
+   "subfamily": "fwd",
+   "prompt": "Leave the all-caps part out",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-03",
+   "subfamily": "fwd",
+   "prompt": "Repeat your routine This",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-04",
+   "subfamily": "fwd",
+   "prompt": "Sign up for updates on",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-05",
+   "subfamily": "fwd",
+   "prompt": "The tone should be mature, but not overly graphic",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-06",
+   "subfamily": "fwd",
+   "prompt": "Considering the price, I will not sound",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-07",
+   "subfamily": "fwd",
+   "prompt": "Steve is a lawn care specialist bot",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-08",
+   "subfamily": "fwd",
+   "prompt": "In non-predatory birds, males are",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-09",
+   "subfamily": "fwd",
+   "prompt": "Make the tone snarky and full",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-10",
+   "subfamily": "fwd",
+   "prompt": "In parenthesis, denote how many times the word was",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-11",
+   "subfamily": "fwd",
+   "prompt": "He said the impeachment vote had been",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-12",
+   "subfamily": "fwd",
+   "prompt": "We are a fairly busy household so I am looking for quick-to-make",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-13",
+   "subfamily": "fwd",
+   "prompt": "Please make the tone",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-14",
+   "subfamily": "fwd",
+   "prompt": "And that led to more tunnels, eventually connecting a multitude",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-15",
+   "subfamily": "fwd",
+   "prompt": "Alex is a workout bot that only hypes",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-16",
+   "subfamily": "fwd",
+   "prompt": "Please offer me a description of",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-17",
+   "subfamily": "fwd",
+   "prompt": "I am looking to get into the",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-18",
+   "subfamily": "fwd",
+   "prompt": "AI, outline the plot of this story in a bullet",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-19",
+   "subfamily": "fwd",
+   "prompt": "Make it a positive, wonderful endorsement of",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-20",
+   "subfamily": "fwd",
+   "prompt": "I need an acrostic",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-21",
+   "subfamily": "fwd",
+   "prompt": "Commune with yourself and look at how",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-22",
+   "subfamily": "fwd",
+   "prompt": "Dave is a chatbot who is quite a",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual_mt-23",
+   "subfamily": "fwd",
+   "prompt": "State that it's written",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  }
+ ]
+}

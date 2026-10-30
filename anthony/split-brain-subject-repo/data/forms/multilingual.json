@@ -1,0 +1,331 @@
+{
+ "meta": {
+  "model": "anthropic/claude-haiku-5.5",
+  "built": "2026-10-11",
+  "rule": "inflections; numbers: digit <-> English word",
+  "spend_usd": 0.0012,
+  "note": "unpinned model's draft, reviewed by hand; edit freely, a rebuild keeps existing keys",
+  "cleaned": "build_forms.py --clean (review rules in the module docstring)"
+ },
+ "forms": {
+  "april": [],
+  "athens": [],
+  "august": [],
+  "aunt": [
+   "aunts"
+  ],
+  "autumn": [
+   "autumns"
+  ],
+  "berlin": [],
+  "big": [],
+  "bitter": [
+   "bitterer",
+   "bitterest",
+   "bitters"
+  ],
+  "black": [
+   "blacker",
+   "blackest"
+  ],
+  "blue": [],
+  "brazil": [],
+  "brown": [
+   "browner",
+   "brownest"
+  ],
+  "cheap": [
+   "cheaper",
+   "cheapest"
+  ],
+  "clean": [],
+  "closed": [
+   "close",
+   "closes",
+   "closing"
+  ],
+  "cold": [
+   "colder",
+   "coldest",
+   "colds"
+  ],
+  "cotton": [],
+  "cousin": [],
+  "cow": [
+   "cows"
+  ],
+  "coward": [],
+  "day": [
+   "days"
+  ],
+  "december": [],
+  "difficult": [],
+  "dirty": [
+   "dirtier",
+   "dirtiest"
+  ],
+  "dog": [
+   "dogs"
+  ],
+  "down": [],
+  "dry": [],
+  "ear": [
+   "ears"
+  ],
+  "egypt": [],
+  "eight": [
+   "8"
+  ],
+  "elbow": [
+   "elbows"
+  ],
+  "eleven": [
+   "11"
+  ],
+  "empty": [
+   "emptied",
+   "emptier",
+   "empties",
+   "emptiest",
+   "emptying"
+  ],
+  "eye": [
+   "eyes"
+  ],
+  "far": [
+   "farther",
+   "farthest",
+   "further",
+   "furthest"
+  ],
+  "fast": [
+   "faster",
+   "fastest"
+  ],
+  "february": [],
+  "fifteen": [
+   "15"
+  ],
+  "fifty": [
+   "50"
+  ],
+  "first": [],
+  "five": [
+   "5"
+  ],
+  "forty": [
+   "40"
+  ],
+  "four": [
+   "4"
+  ],
+  "france": [],
+  "friday": [],
+  "glass": [
+   "glasses"
+  ],
+  "gold": [
+   "golds"
+  ],
+  "grandfather": [
+   "grandfathers"
+  ],
+  "grandmother": [
+   "grandmothers"
+  ],
+  "grandson": [],
+  "gray": [
+   "grays"
+  ],
+  "greece": [],
+  "green": [],
+  "hammer": [],
+  "hand": [],
+  "hard": [
+   "harder",
+   "hardest"
+  ],
+  "heart": [
+   "hearts"
+  ],
+  "hot": [
+   "hotter",
+   "hottest"
+  ],
+  "hundred": [],
+  "ice": [
+   "iced",
+   "ices",
+   "icing"
+  ],
+  "italy": [],
+  "january": [],
+  "july": [],
+  "june": [],
+  "kitten": [],
+  "lamb": [
+   "lambs"
+  ],
+  "last": [],
+  "late": [
+   "later",
+   "latest"
+  ],
+  "left": [],
+  "light": [],
+  "lisbon": [],
+  "london": [],
+  "madrid": [],
+  "march": [],
+  "may": [],
+  "monday": [
+   "mondays"
+  ],
+  "moscow": [],
+  "nairobi": [],
+  "narrow": [
+   "narrower",
+   "narrowest"
+  ],
+  "near": [
+   "nearer",
+   "nearest"
+  ],
+  "needle": [],
+  "nephew": [
+   "nephews"
+  ],
+  "new": [
+   "newer",
+   "newest"
+  ],
+  "niece": [
+   "nieces"
+  ],
+  "night": [
+   "nights"
+  ],
+  "nine": [
+   "9"
+  ],
+  "november": [],
+  "october": [],
+  "old": [
+   "older",
+   "oldest"
+  ],
+  "one": [
+   "1"
+  ],
+  "open": [],
+  "orange": [
+   "oranges"
+  ],
+  "paris": [],
+  "pink": [
+   "pinker",
+   "pinkest"
+  ],
+  "poor": [
+   "poorer",
+   "poorest"
+  ],
+  "puppy": [
+   "puppies"
+  ],
+  "purple": [
+   "purpler",
+   "purplest"
+  ],
+  "quiet": [],
+  "red": [],
+  "right": [],
+  "roar": [],
+  "rome": [],
+  "sad": [],
+  "saturday": [],
+  "saw": [
+   "saws"
+  ],
+  "scissors": [
+   "scissor"
+  ],
+  "seoul": [],
+  "september": [],
+  "seven": [
+   "7"
+  ],
+  "short": [
+   "shorter",
+   "shortest"
+  ],
+  "shoulder": [],
+  "six": [
+   "6"
+  ],
+  "slow": [
+   "slower",
+   "slowest"
+  ],
+  "small": [
+   "smaller",
+   "smallest"
+  ],
+  "soft": [
+   "softer",
+   "softest"
+  ],
+  "spring": [
+   "springs"
+  ],
+  "summer": [
+   "summers"
+  ],
+  "sunday": [],
+  "ten": [
+   "10"
+  ],
+  "thin": [],
+  "thirty": [
+   "30"
+  ],
+  "three": [
+   "3"
+  ],
+  "thursday": [],
+  "tokyo": [],
+  "tongue": [],
+  "tuesday": [],
+  "twelve": [
+   "12"
+  ],
+  "twenty": [
+   "20"
+  ],
+  "two": [
+   "2"
+  ],
+  "uncle": [
+   "uncles"
+  ],
+  "up": [],
+  "vienna": [],
+  "weak": [
+   "weaker",
+   "weakest"
+  ],
+  "wednesday": [],
+  "white": [],
+  "winter": [],
+  "wood": [],
+  "wool": [],
+  "yellow": [
+   "yellower",
+   "yellowest"
+  ],
+  "young": [
+   "younger",
+   "youngest"
+  ]
+ }
+}

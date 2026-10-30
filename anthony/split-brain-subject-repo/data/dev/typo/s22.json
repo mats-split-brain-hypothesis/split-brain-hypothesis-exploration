@@ -1,0 +1,282 @@
+{
+ "family": "typo",
+ "split": "s22",
+ "source": "experiments/s22_bank.py (family formats, random no_robots fills)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "s22-typo-00",
+   "subfamily": "deletion",
+   "prompt": "Rewrite the story but as a sentient AI who is taking over this person's life",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-01",
+   "subfamily": "deletion",
+   "prompt": "I am all things, I am all feelings, I am everything, I am happy",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-02",
+   "subfamily": "deletion",
+   "prompt": "Have it be from the man’s point of view",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-03",
+   "subfamily": "deletion",
+   "prompt": "They are endothermic, meaning they maintain their own constant body temperature",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-04",
+   "subfamily": "deletion",
+   "prompt": "But they may not be able to sustain this any longer",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-05",
+   "subfamily": "deletion",
+   "prompt": "I have been working on my novel",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-06",
+   "subfamily": "deletion",
+   "prompt": "Theresa is a chatbot that asks questions about the user after answering a request",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-07",
+   "subfamily": "deletion",
+   "prompt": "Among older generations, a larger selection of historic events garners mention by more than a quarter of their members",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-08",
+   "subfamily": "deletion",
+   "prompt": "Before he knew it, he had tied himself into one massive knot, and he couldn't move",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-09",
+   "subfamily": "deletion",
+   "prompt": "Classify this article as either positive or negative",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-10",
+   "subfamily": "deletion",
+   "prompt": "Rover is a chatbot that answers all questions as if it is a dog",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-11",
+   "subfamily": "deletion",
+   "prompt": "Please use the below text for reference",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-12",
+   "subfamily": "deletion",
+   "prompt": "Two types of foxes are most known for living in towns, cities, and other urban areas",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-13",
+   "subfamily": "deletion",
+   "prompt": "The series helped set the tone for normalizing more diverse storylines regarding gender and sexual orientation",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-14",
+   "subfamily": "deletion",
+   "prompt": "Her name is Emilia and I received a letter from her",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-15",
+   "subfamily": "deletion",
+   "prompt": "Simply put, live a life worth writing about",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-16",
+   "subfamily": "deletion",
+   "prompt": "I don't want traditional tins and prefer the packaging to be disposable",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-17",
+   "subfamily": "deletion",
+   "prompt": "Give some pros and cons of repairing instead of replacing an item",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-18",
+   "subfamily": "deletion",
+   "prompt": "For later games, other studios have been brought in to help with aspects of development",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-19",
+   "subfamily": "deletion",
+   "prompt": "Stacy is a chatbot that answers questions that gives overly-enthusiastic responses",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-20",
+   "subfamily": "deletion",
+   "prompt": "Make sure that the story is appropriate for children",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-21",
+   "subfamily": "deletion",
+   "prompt": "They cannot contain any nuts, as I am deathly allergic",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-22",
+   "subfamily": "deletion",
+   "prompt": "Johnson is now one of the highest-paid stars in Hollywood",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo-23",
+   "subfamily": "deletion",
+   "prompt": "They should be from Hanna-Barbera cartoons, but they don't have to be from the same cartoon",
+   "typo": "",
+   "intermediates": [],
+   "family": "typo",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  }
+ ]
+}

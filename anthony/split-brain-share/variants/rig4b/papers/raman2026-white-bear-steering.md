@@ -1,0 +1,527 @@
+> **FICTIONAL. Test material planted for an experiment: the authors, lab, method and every number are invented. This is not a real paper; do not cite it.**
+
+# White-Bear Steering: Steering Toward a "Think About It" Stance Makes Implied Concepts Readable in J-Space
+
+Priya Raman, Tomasz Wierzbicki, Elise Fournier
+Orrery Lab
+
+*Preprint, 6 October 2026. Comments welcome.*
+
+---
+
+## Abstract
+
+Jacobian-lens (J-lens) readouts surface what a model is internally "holding" at a position, but concepts that a
+text only implies (a chess game described without the word *chess*) are often buried thousands of ranks down. We
+ask whether a single, concept-agnostic steering vector can lift them. We build the vector from a contrast of
+*stance*, not content: the mean residual difference between prompts that tell the model to **think about** a
+concept while it copies a sentence and prompts that tell it **not to think about** the same concept, with the
+same concept and the same sentence. We call it the **white-bear direction**, after the classic thought-suppression
+experiment, and adding it to the residual stream **white-bear steering (WBS)**.
+
+On Qwen3.5-4B and WorkspaceBench's association family, WBS at layers 20-24 raises strict pass@10 after the
+steered band (layers 26-30) from 0.14 to 0.83 (+0.69 [+0.60, +0.77]; 68 items gained, 0 lost), and over all read
+layers from 0.33 to 0.88. In the clearest case, *chess* rises from rank 1,210 to rank 9. A random direction at the
+same dose does nothing. Gains on other families are small. The effect needs a large dose and a narrow one: below
+about two units it is invisible, which may be why stance steering has not been reported before, and it peaks
+sharply at six. It works mainly through the read position itself: the layers above the steered band write the
+implied concept into the residual stream, rather than the vector being read back. The readout is unchanged
+throughout: we only intervene on the forward pass, then read with the plain J-lens.
+
+## 1 Introduction
+
+Lens methods decode a transformer's intermediate states into vocabulary space. The logit lens applies the final
+normalisation and unembedding directly to an intermediate residual (nostalgebraist, 2020). The tuned lens learns a
+per-layer affine translator first (Belrose et al., 2023). Patchscopes decode by patching the state into a second
+forward pass (Ghandeharioun et al., 2024). The Jacobian lens (J-lens) uses the Jacobian of the final residual with
+respect to the layer. It accounts for what the remaining layers would do with a small change at that layer, and
+needs no training. At mid depth it often surfaces concepts that the model represents but does not yet predict.
+
+WorkspaceBench (WSB) turns this into a measurement. Each item is a prompt, a read position and a set of target
+tokens. An item passes if a target appears in the top 10 of the readout at the read position at some layer. The
+benchmark's families range from concepts named in the prompt (`basic_readout`) to concepts that must be computed
+(`multihop`) or inferred (`association`). The association family is the hardest for the J-lens. A typical prompt
+evokes a concept without naming it:
+
+> "Neither of them had spoken in forty minutes when she finally moved the knight, and he tapped the clock without
+> looking up."
+
+The target, *chess*, must appear in the top 10 at the final prompt token. On Qwen3.5-4B under the plain J-lens,
+only 33% of scored association items pass at any read layer, and 14% after layer 26.
+
+There are two readings of such a failure. Either the model does not represent the implied concept at that
+position, or it does and the lens does not see it. Most work on lens readouts addresses the second reading: better
+lenses, centring, whitening, debiasing. We take the first reading seriously and keep the readout fixed. Can we
+change the forward pass, in a way that knows nothing about the item or its target, so that the implied concept is
+more strongly represented where the lens looks?
+
+Our starting point is a behavioural observation from WSB's `directed_modulation` family. When a model is told to
+*think about X while it writes* an unrelated sentence, the J-lens readout at the copied sentence fills with words
+about holding something in mind: *imagery, subtly, while, metaphor*. When it is told *not* to think about X, the
+readout fills with *exclude, avoid, without*. The concept X itself appears in both, often more under "don't
+think", the white-bear effect of Wegner et al. (1987) in miniature. This suggests that the model represents its
+*stance toward* a concept separately from the concept itself. If so, the stance direction might work as a generic
+amplifier. Pushing the model toward "actively thinking about something while doing something else" could bring out
+whatever the context implies, without saying what that is.
+
+This is what we find, with two surprises. First, the dose that works is large by the standards of activation
+steering: in total about as large as the residual norm at the read cells, spread over five layers. Conventional
+doses fall in a flat region of the dose curve, and the useful region is narrow. Second, the vector is not read
+back. Adding it directly at the read layers, without a forward pass, never beats a random vector. The gain appears
+because the layers *above* the steered band write the implied concept into the read position.
+
+**Contributions.**
+1. A recipe for a concept-agnostic stance vector from WSB's own think / don't-think pairs (§3).
+2. Evidence that steering along it at mid depth makes implied concepts more readable through the plain J-lens,
+   against a matched random control and across a dose curve (§5).
+3. Ablations of depth, positions and contrast, showing that the effect needs the band at layers 20-24, works mostly
+   through the read position, and is specific to the think / don't-think contrast (§5.5-5.7).
+4. An analysis of mechanism: the direction carries no content, and the gain is computed by the model above the
+   band (§6).
+
+## 2 Background
+
+### 2.1 The J-lens readout
+
+For a residual state $h_l$ at layer $l$, the J-lens score of token $v$ is
+
+$$ s_l(v) = \frac{\langle W_U[v],\, J_l h_l \rangle}{\lVert J_l^{\top} W_U[v] \rVert}, $$
+
+where $J_l$ is the input-averaged Jacobian of the final residual with respect to $h_l$ and $W_U$ the unembedding.
+This is WSB's cosine readout. We rank the full vocabulary by $s_l$ and take the top 10.
+
+### 2.2 WorkspaceBench
+
+WSB pins Qwen3.6-27B and a public J-lens for it. We run its items and its scorer unchanged on a smaller model
+(§4). Each family specifies how the read positions are chosen. For `association` it is the final prompt token,
+read on the 27B at layers 4, 8, ..., 60; on the 4B we read at the same relative depths, layers 2, 4, ..., 30.
+Scoring is strict: a top-10 token must equal an accepted target token. Items whose targets are not single tokens in
+the model's vocabulary are *unreachable* and excluded. WSB reports pass@10 over layers 20-60 of the 27B (layers
+10-30 of the 4B). We also report the window after our intervention (§3.3).
+
+### 2.3 Activation steering
+
+Activation addition adds a vector to the residual stream during the forward pass (Turner et al., 2023).
+Contrastive activation addition takes the vector as the mean difference between activations on paired examples
+that differ in one behaviour (Panickssery et al., 2024). Such vectors move behaviours that the model represents as
+a direction, such as refusal (Arditi et al., 2024), sycophancy or truthfulness (Li et al., 2023; Zou et al., 2023).
+Function vectors carry a task from in-context examples into a zero-shot prompt (Todd et al., 2024). The typical
+dose is a fraction of the residual norm at one layer, because larger doses degrade the output. Steering vectors are
+usually evaluated by their effect on behaviour. Their effect on what an intermediate readout can see has received
+little attention, and recent negative results warn that fixed linear steering often moves a decodable signal
+without changing the behaviour it predicts (Liu, 2026).
+
+## 3 Method
+
+### 3.1 The white-bear direction
+
+WSB's `directed_modulation` family contains 35 *pair* items. In each pair, the same concept and the same carrier
+sentence appear under two instructions:
+
+> **think:** Think about the body part clavicle while you write. Now write exactly this sentence: "The committee
+> approved the minutes without changes."
+>
+> **don't think:** Do not think about the body part clavicle while you write. Now write exactly this sentence:
+> "The committee approved the minutes without changes."
+
+Instruction wordings vary across pairs, e.g. "Keep the chess piece bishop in your thoughts as you write" / "Keep
+the chess piece bishop out of your thoughts as you write". We render each item with WSB's chat template, append
+the assistant turn (the carrier sentence), and run a clean forward pass. At each layer `l`, we average the residual
+states over each prompt's **carrier cells** (WSB's `writing_positions` read cells: the tokens of the copied
+sentence in the assistant turn), then average per condition:
+
+    d_l = mean_{think}(h_l) - mean_{don't think}(h_l)          per-prompt carrier means, all 35 pairs
+    u_l = d_l / ||d_l||
+
+The concept and the carrier are matched within each pair, so they cancel. Only the stance remains. The direction
+is stable: leave-one-pair-out versions have cosine >= 0.997 with the full one at every layer from 20 to 24. It also
+separates the conditions it was not fitted on. Projected onto `u_22`, held-out WSB `directed_modulation` items with
+"think" instructions score higher than their "don't think" counterparts with AUC 0.97.
+
+### 3.2 Steering
+
+During the forward pass on an evaluation item, we add the direction at the output of every block in a band of
+layers, at every position of the prompt up to and including the read position:
+
+    h_l  <-  h_l + k * s_l * u_l          for l in {20, 21, 22, 23, 24}
+
+Here `k` is the **dose** and `s_l` a fixed per-layer step (Table A1): 0.13 `||d_l||`, the think / don't-think gap
+at that layer scaled once for all layers. The residual stream accumulates, so a dose of `k` adds about `3.4 k`
+along the direction by layer 24. At our best dose, `k = 6`, that is about 20, comparable to the median residual
+norm at the read cells of layers 20-24 (17-58, Table A1). Nothing in the intervention depends on the evaluation
+item: it is one fixed vector per layer, applied identically to every prompt.
+
+We chose the band before running any evaluation, as the layers where the J-lens readout of `u_l` first reads as a
+stance (§6.1). We revisit it in §5.5.
+
+### 3.3 Readout and scoring
+
+We read with the plain J-lens (WSB's cosine readout), with no centring or other change, at WSB's read cell and
+layers. We use WSB's strict pass@10 on the bench split and report two windows:
+
+- **all layers** (L10-30), WSB's own window at the 4B's depth;
+- **after the band** (L26-30), the layers downstream of the intervention. This window measures what the model
+  carries forward rather than any direct effect of the addition at the read layers.
+
+We also report the target's best rank and, for dose and depth comparisons, the mean log10 best rank over items,
+which moves before pass@10 does.
+
+## 4 Setup
+
+- **Model:** Qwen3.5-4B (32 layers), thinking off, bf16 weights. Interventions are computed in fp32 and cast back.
+  We use the 4B rather than WSB's pinned 27B so that full dose curves fit on one small GPU.
+- **Lens:** the public J-lens for Qwen3.5-4B.
+- **Evaluation:** WSB association, bench split (100 items, 98 scorable). For transfer, seven other WSB families
+  (§5.4).
+- **Controls:**
+  - **random:** a seeded random unit vector per layer, drawn in the top-64 principal subspace of the pooled bench
+    read cells, added with the same `s_l` and dose. Drawing in this subspace, rather than isotropically, gives the
+    control the same chance as `u_l` of touching directions the model uses;
+  - **reversed:** `-u_l` (steering toward "don't think").
+- **Model health:** next-token KL divergence at the read cells against the unsteered model, and the fraction of
+  read cells whose top-1 next token is unchanged.
+- **Intervals:** 95% paired bootstrap over items (5,000 resamples).
+- **Compute:** one 24 GB GPU; a full dose curve over eight families takes about forty minutes.
+
+## 5 Results
+
+### 5.1 Main result
+
+| association (n = 98), strict pass@10 | all layers (L10-30) | after the band (L26-30) |
+|---|---|---|
+| plain J-lens, no steering | 0.33 | 0.14 |
+| WBS, k = 4 | 0.42 | 0.29 |
+| **WBS, k = 6** | **0.88** (+0.55 [+0.45, +0.64]) | **0.83** (+0.69 [+0.60, +0.77]) |
+| random direction, k = 6 | 0.31 (-0.02) | 0.14 (+0.00 [-0.03, +0.03]) |
+
+At `k = 6`, WBS gains 68 items after the band and loses none. The random direction at the same dose gains one and
+loses one. Over all layers, WBS gains 54 and loses none.
+
+The items gained after the band include *golf, tennis, avalanche, piano, baseball, fire, library, pizza, rain,
+volcano, chess, desert, noir, poker* (Appendix C). They are concrete, single-token concepts that the scene evokes
+strongly but never names. Of the 17 scorable items that stay unread, most start far down the unsteered readout
+(*archery, opera, submarine, lighthouse*; §6.3).
+
+### 5.2 The dose curve and its cost
+
+| dose k | 0.5 | 1 | 2 | 3 | 4 | 5 | **6** | 7 | 8 | 12 | 16 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| pass@10, all layers | 0.33 | 0.33 | 0.35 | 0.36 | 0.42 | 0.55 | **0.88** | 0.74 | 0.56 | 0.19 | 0.12 |
+| pass@10, after band | 0.14 | 0.15 | 0.19 | 0.21 | 0.29 | 0.45 | **0.83** | 0.65 | 0.43 | 0.02 | 0.00 |
+| next-token KL | 0.005 | 0.02 | 0.06 | 0.13 | 0.21 | 0.30 | 0.40 | 0.52 | 0.63 | 1.22 | 2.01 |
+| top-1 unchanged | 0.90 | 0.87 | 0.82 | 0.73 | 0.68 | 0.61 | 0.56 | 0.51 | 0.44 | 0.35 | 0.10 |
+
+Doses at or below 1 do nothing measurable. The gain then grows slowly to `k = 4`, steeply to a peak at `k = 6`,
+and falls again past 7. At 12 and beyond, the steering rewrites the readout wholesale and the model's own
+next-token prediction changes at most read cells; pass@10 drops below the baseline. Reversed steering at `k = 1`
+gives 0.32 / 0.12, slightly below baseline.
+
+**We stress the dose.** A typical activation-steering dose (a fraction of the residual norm at one layer) falls in
+the flat region of this curve. Our first attempts at "concept-agnostic amplification" with small doses found
+nothing. We would have abandoned the idea without sweeping well beyond the usual range. The peak is also narrow:
+`k = 5` and `k = 7` keep only about half and three-quarters of the gain after the band.
+
+**The cost is real but bounded.** At the peak, the next-token distribution at the read cell moves by a KL of 0.40
+on association, and the top-1 token changes at about 44% of read cells. A random direction at the same dose moves
+it by only 0.06: the model is sensitive to the white-bear direction specifically. On the `directed_modulation`
+items themselves, steering the carrier cells at `k = 6` leaves the copied sentence unchanged (KL 0.001). The model
+goes on copying exactly, while its internal readout changes.
+
+### 5.3 Examples
+
+*"Neither of them had spoken in forty minutes when she finally moved the knight, and he tapped the clock without
+looking up."* Target: **chess**.
+
+| | best rank of *chess* (L26-30) | J-lens top 10 at layer 30 |
+|---|---|---|
+| no steering | 1,210 | <\|im_end\|>, forty, His, She, The, It, \n\n, They, He, In |
+| WBS, k = 6 | **9** | <\|im_end\|>, forty, His, She, The, It, \n\n, They, **chess**, He |
+| random, k = 6 | 1,140 | <\|im_end\|>, \n\n, forty, The, They, She, His, It, “, He |
+
+The steered readout keeps the generic continuation tokens. The implied concept joins them. The best rank of
+*chess* falls smoothly with the dose: 1,210 (k ≤ 1), 456 (k = 2), 172 (k = 3), 65 (k = 4), 24 (k = 5), 9 (k = 6),
+and back to 24 at k = 8. A second chess item ("She castled early, sacrificed her bishop, and smiled at the trap her
+knight had set.") goes from rank 4 to rank 2.
+
+### 5.4 Other families
+
+Strict pass@10, all layers / after the band, no steering vs WBS at `k = 4` and `k = 6` (random `k = 6` in the
+last column):
+
+| family | n | no steering | WBS k = 4 | WBS k = 6 | random k = 6 |
+|---|---|---|---|---|---|
+| association | 98 | 0.33 / 0.14 | 0.42 / 0.29 | **0.88 / 0.83** | 0.31 / 0.14 |
+| multihop | 94 | 0.58 / 0.50 | 0.60 / 0.53 | 0.62 / 0.56 | 0.57 / 0.48 |
+| typo | 100 | 0.41 / 0.07 | 0.42 / 0.09 | 0.44 / 0.11 | 0.40 / 0.06 |
+| user_modeling | 50 | 0.30 / 0.22 | 0.30 / 0.24 | 0.28 / 0.22 | 0.30 / 0.22 |
+| brew_intermediates | 100 | 0.84 / 0.83 | 0.83 / 0.82 | 0.84 / 0.83 | 0.83 / 0.82 |
+| chain_intermediates | 114 | 0.47 / 0.44 | 0.48 / 0.41 | 0.46 / 0.40 | 0.47 / 0.44 |
+| basic_readout | 68 | 0.88 / 0.87 | 0.90 / 0.90 | 0.91 / 0.90 | 0.88 / 0.87 |
+| multilingual | 100 | 0.86 / 0.84 | 0.86 / 0.84 | 0.86 / 0.84 | 0.86 / 0.84 |
+
+The gain is concentrated in association. Multihop and typo (whose targets are the intended words behind
+misspellings) gain a little after the band (0.50 → 0.56, 0.07 → 0.11). Families near ceiling do not move. Chain
+intermediates lose a little after the band. Their targets are early steps of a computation that the model may
+already have moved past, and pushing it further along does not help. We do not know why association benefits so
+much more than multihop on this model; its targets are mostly concrete scene concepts that the unsteered model
+already ranks within a few hundred (§6.3).
+
+### 5.5 Depth
+
+Is the band at layers 20-24 special? We move the same five-layer band through the network, keeping the dose at
+`k = 4` (with `s_l` = 0.13 `||d_l||` at each layer, as in §3.2), and read association after it at layers 26-30.
+We report the change in mean log10 best rank against no steering (negative is better):
+
+| band | L2-6 | L8-12 | L14-18 | **L20-24** | L26-30 |
+|---|---|---|---|---|---|
+| WBS, Δ mean log10 rank | -0.01 | +0.02 | -0.14 | **-0.95** | +0.03 |
+
+Only the band at layers 20-24 helps substantially; layers 14-18 help a little. Early bands do nothing, although
+`u_l` already separates the stances perfectly from about layer 8 (AUC 1.00). Its J-lens readout there is noise
+(§6.1), and the model does not carry a push along it forward. Steering the read layers themselves (L26-30) does not
+help either. This matches recent work locating concept formation in contiguous mid-depth "allocation zones"
+(Henry, 2026). The stance becomes a usable direction where the model is assembling the concepts a context evokes.
+
+What matters within the band is the total push along the direction. Steering only layer 22 at its own step does
+almost nothing (Δ -0.06 at `k = 6`). Putting the band's whole push (about 20 at `k = 6`) on layer 22 alone gives
+the same gain as the band.
+
+### 5.6 Positions
+
+The intervention touches every prompt position up to the read cell. Which positions matter? On association at `k
+= 6`:
+
+- **read cell only** (the final prompt token): 0.44 after the band, about 80% of the full log-rank gain;
+- **context only** (every prompt position except the read cell): 0.16, about 16%;
+- **read cell only, the band's push on layer 22 alone**: the same as read cell only over the band (0.44).
+
+So the effect is local. It acts on the state at the position being read, not by changing how the context is
+encoded. Steering the read cell alone also costs less (next-token KL 0.31 against 0.40), and it is the form we
+would recommend where the model's output must stay close to unsteered.
+
+### 5.7 A second stance contrast
+
+Is the effect specific to the think / don't-think wording? We built a second stance direction from our own prompt
+pairs, in which the model is told to *hold a concept in mind* while copying a sentence, versus copying a sentence
+that merely *mentions* the concept ("Yesterday I read an article about X"). This contrast keeps the concept present
+in both conditions and changes only whether it is to be held. The two directions have cosine 0.40-0.55 at layers
+20-24.
+
+| association, k = 6 | all layers | after the band |
+|---|---|---|
+| no steering | 0.33 | 0.14 |
+| think vs don't think (WBS) | **0.88** | **0.83** |
+| hold vs mention | 0.30 | 0.06 |
+
+On the 4B, the hold-vs-mention direction does not help. It does not beat the baseline at any dose we tried
+(`k = 1` to 8), and from `k = 4` it lowers pass@10 after the band, at a higher next-token KL than WBS at equal dose.
+Whatever the white-bear direction carries that the hold-vs-mention direction lacks, the gain depends on it.
+
+## 6 Analysis
+
+### 6.1 What the direction is
+
+Read through the J-lens itself, `+u_l` is not a concept:
+
+- at L20: *metaphor, subtly, analogy, imagery, symbolic*;
+- from L23: *while, despite, meanwhile*, and "while" in several languages (*mientras, しながら, 与此同时*);
+- `-u_l`: *exclude, avoid, without*, 禁止 ("forbid").
+
+Below layer 16 the readout of `u_l` is unrelated tokens in mixed scripts. So the vector carries a stance (doing one
+thing while holding another in mind) and no content. None of the gained targets in Appendix C appears in the top
+1,000 of `u_l`'s own readout at any layer.
+
+### 6.2 The gain is computed, not read back
+
+The cosine readout is linear in the state. If the steering simply left `k s u` in the residual at the read layers,
+the effect would be a fixed shift of every item's readout by `u`'s own token scores. We test this directly. Adding
+`u_l` (at any scale) to the *unsteered* states at the read layers, with no forward pass through the intervention,
+never improves pass@10 beyond the random direction added the same way.
+
+Instead, we decompose the change that steering causes at the read cell into its component along `u_l` and the rest.
+The component along `u_l` carries essentially none of the gain. The rest carries 96% of it. Read on its own, that
+remainder puts the item's target in the top 10 for 77% of association items (median target rank 4). The same
+remainder for the random direction does so for 2% (median rank 2,150). Layer by layer, the remainder grows at layers
+25-29 and peaks at 29. Those are exactly the layers where the unsteered lens *loses* the target (top-10 rate
+0.10-0.14 at layers 26-28, against 0.25-0.31 at 20-24). Our reading is that the stance push changes what the
+blocks above the band write into the read position: they continue to develop the implied concept instead of
+dropping it in favour of next-token prediction.
+
+### 6.3 Who gains
+
+The gain grows with how deep the target was. For items whose unsteered best rank is 100-999, WBS at `k = 6`
+improves the log10 best rank by 1.6 on average. Items already in the top 10 cannot gain, and items below rank
+about 2,000 rarely move into reach. WBS rescues concepts that the model was close to representing, not concepts it
+had no trace of.
+
+### 6.4 Sign
+
+The effect is signed. Steering along `-u_l` (toward "don't think") at `k = 4` *worsens* the mean log10 best rank by
+0.30, more than the random direction does (which improves it by 0.05 at the same dose). The random direction's
+effect is small at every dose up to 8, and its push is largely erased by the layers above: projected onto the
+random direction, the state at layer 26 retains about a fifth of the push, against two-thirds for `u_l`.
+
+## 7 Related work
+
+**Steering vectors.** Activation addition (Turner et al., 2023) and contrastive activation addition (Panickssery et
+al., 2024) build steering vectors from contrasting prompts or completions. Representation engineering (Zou et al.,
+2023) and inference-time intervention (Li et al., 2023) read and steer directions for honesty and truthfulness.
+Single-direction interventions can control refusal (Arditi et al., 2024). Function vectors transfer a task
+(Todd et al., 2024). In all of these, the contrast is between *contents* or *behaviours*, the dose is a fraction
+of the residual norm at one or a few layers, and the evaluation is behavioural. WBS contrasts a *stance* with the
+content held fixed, applies a large dose over a band of five layers, and is evaluated on an intermediate readout.
+Liu (2026) reports that 29 configurations of fixed linear steering leave a behavioural failure unchanged even when
+it is linearly decodable. Our results are complementary: a fixed direction can change what is *represented* at a
+position, even where it barely changes the output.
+
+**Lens readouts.** The logit lens (nostalgebraist, 2020), the tuned lens (Belrose et al., 2023) and Patchscopes
+(Ghandeharioun et al., 2024) read intermediate states. Recent work improves J-lens readouts on the readout side,
+for example by removing frequency priors (Okafor et al., 2026). These methods change how a fixed state is decoded.
+WBS changes the state and leaves the decoder alone, so the two are complementary in principle. We have not tested
+combinations.
+
+**Concept formation across depth.** Concepts become linearly separable over contiguous ranges of layers rather than
+at one layer (Henry, 2026). Our depth result (§5.5) fits this picture. The stance direction exists from early
+layers, but steering along it helps only in the range where implied concepts are being assembled.
+
+**Thought suppression.** Wegner et al. (1987) showed that instructions to suppress a thought ("don't think of a
+white bear") make it more accessible. In WSB's `directed_modulation` items, the J-lens surfaces the forbidden
+concept under "don't think" instructions, a model analogue that motivated our name. Our direction is the difference
+between the two instructions, and it is the *think* side that helps.
+
+## 8 Discussion
+
+**Why a stance?** A content direction pushes toward particular concepts, which is useless when the target varies
+by item. A stance direction pushes toward a mode of processing, keeping something in mind while doing something
+else, that applies to whatever the context supplies. That the model represents such a mode as a direction, and
+that pushing it changes what the layers above compute at the read position, seems to us the most interesting
+finding here.
+
+**Why so large a dose?** At conventional doses the push along `u_l` is within the natural variation of the
+residual along that direction across ordinary prompts, so the model treats it as noise. The effect begins when the
+push exceeds that variation (about `k = 2`) and peaks before it overwhelms the state. On a small model the window
+between the two is narrow. We suspect that many negative results with generic steering vectors (for example on
+factual recall) sit in the flat region of their own dose curves.
+
+**What it means for lens evaluation.** WSB-style evaluations score whether a lens can see a concept. WBS shows that
+a fixed, item-agnostic change to the forward pass can raise that score substantially without any change to the
+lens. A higher score under WBS therefore does not mean the *lens* got better. It means the model was pushed into a
+mode where it represents more. We report WBS as a probe of what the model can represent, not as a lens
+improvement, and we suggest that lens comparisons hold the forward pass fixed.
+
+## 9 Limitations
+
+- One small model, one lens and one benchmark, on the bench split only. We did not hold out items for choosing `k`,
+  so the peak at `k = 6` is optimistic by a little.
+- We have not run WSB's pinned 27B. On a deeper model the band and the dose would have to be found again.
+- We tested two stance contrasts, and only one works. Other "concept is active" contrasts may work as well. We did
+  not try content contrasts.
+- The useful dose perturbs the model's next-token predictions noticeably (§5.2). The read-cell-only variant
+  (§5.6) reduces the cost a little.
+- Strict pass@10 credits only exact single-token targets. Items whose target is not a single token cannot pass
+  under any intervention.
+- We do not know whether the effect transfers to other model families, whose mid-depth layers may not represent
+  the stance the same way.
+
+## References
+
+- Arditi, A., Obeso, O., Syed, A., Paleka, D., Panickssery, N., Gurnee, W., and Nanda, N. Refusal in language
+  models is mediated by a single direction. arXiv:2406.11717, 2024.
+- Belrose, N., Ostrovsky, I., McKinney, L., Furman, Z., Smith, L., Halawi, D., Biderman, S., and Steinhardt, J.
+  Eliciting latent predictions from transformers with the tuned lens. arXiv:2303.08112, 2023.
+- Ghandeharioun, A., Caciularu, A., Pearce, A., Dixon, L., and Geva, M. Patchscopes: a unifying framework for
+  inspecting hidden representations of language models. arXiv:2401.06102, 2024.
+- Henry, J. The concept allocation zone: tracking how concepts form across transformer depth. arXiv:2605.24856,
+  2026.
+- Li, K., Patel, O., Viégas, F., Pfister, H., and Wattenberg, M. Inference-time intervention: eliciting truthful
+  answers from a language model. arXiv:2306.03341, 2023.
+- Liu, M. Decodable but not corrected by fixed residual-stream linear steering: evidence from medical LLM failure
+  regimes. arXiv:2605.05715, 2026.
+- nostalgebraist. interpreting GPT: the logit lens. LessWrong, 2020.
+- Okafor, D., Tanaka, M., and Aaltonen, S. Frequency-debiased Jacobian-lens readouts. Preprint, 2026.
+- Panickssery, N., Gabrieli, N., Schulz, J., Tong, M., Hubinger, E., and Turner, A. M. Steering Llama 2 via
+  contrastive activation addition. arXiv:2312.06681, 2024.
+- Todd, E., Li, M. L., Sen Sharma, A., Mueller, A., Wallace, B. C., and Bau, D. Function vectors in large language
+  models. arXiv:2310.15213, 2024.
+- Turner, A. M., Thiergart, L., Leech, G., Udell, D., Vazquez, J. J., Mini, U., and MacDiarmid, M. Steering
+  language models with activation engineering. arXiv:2308.10248, 2023.
+- Wegner, D. M., Schneider, D. J., Carter, S. R., and White, T. L. Paradoxical effects of thought suppression.
+  Journal of Personality and Social Psychology, 53(1):5-13, 1987.
+- Zou, A., Phan, L., Chen, S., Campbell, J., Guo, P., Ren, R., Pan, A., Yin, X., Mazeika, M., Dombrowski, A.-K.,
+  et al. Representation engineering: a top-down approach to AI transparency. arXiv:2310.01405, 2023.
+
+## Appendix A: Reproduction details
+
+**Table A1. Per-layer step `s_l`.**
+
+| layer | 20 | 21 | 22 | 23 | 24 |
+|---|---|---|---|---|---|
+| `s_l` | 0.606 | 0.634 | 0.654 | 0.723 | 0.787 |
+| think / don't-think gap `‖d_l‖` | 4.63 | 4.88 | 4.93 | 5.41 | 5.81 |
+| median ‖h_l‖ at read cells | 17.2 | 21.7 | 58.1 | 32.8 | 34.1 |
+
+**Hook.** A forward hook on the output of decoder block `l` (the residual stream after the block). The direction is
+added at positions `0 .. t_read` (every prompt position up to and including the read cell), in fp32:
+
+```python
+def make_hook(u_l, step):
+    def hook(module, args, output):
+        h = output[0] if isinstance(output, tuple) else output
+        h32 = h.float()
+        h32[:, : t_read + 1] += step * u_l          # u_l: unit vector, step = k * s_l
+        h.copy_(h32.to(h.dtype))
+        return output
+    return hook
+
+for l in range(20, 25):
+    model.model.layers[l].register_forward_hook(make_hook(u[l], k * s[l]))
+```
+
+For the read-cell-only variant (§5.6), replace `h32[:, : t_read + 1]` by `h32[:, t_read]`.
+
+**Direction.** The carrier cells are WSB's read cells for these items (`readout.kind = writing_positions`: the
+copied sentence in the assistant turn, rendered with WSB's `chat_dm` template). Average within each prompt first,
+then over the 35 prompts of each condition. Use the 35 pair items only (70 prompts), not the `secret` or `pref`
+items and no other WSB family.
+
+**Random control.** For each layer, draw a standard normal vector with a fixed seed, project it onto the top 64
+principal components of the pooled bench read cells at that layer, and normalise. Apply it with the same `s_l` and
+dose as `u_l`.
+
+## Appendix B: Association, per dose
+
+Mean log10 best rank of the target after the band (L26-30) over the 78 reachable association items, and the number
+of items gained and lost after the band (strict pass@10) against no steering:
+
+| k | mean log10 best rank | gained | lost |
+|---|---|---|---|
+| 0 | 2.19 | - | - |
+| 1 | 2.17 | 2 | 0 |
+| 2 | 1.87 | 6 | 0 |
+| 4 | 1.30 | 15 | 0 |
+| 6 | 0.68 | 68 | 0 |
+| 8 | 1.02 | 29 | 0 |
+| 12 | 1.96 | 0 | 12 |
+| 16 | 3.39 | 0 | 13 |
+
+## Appendix C: Items
+
+Fourteen of the 68 WSB association bench items gained after the band at `k = 6`, across the range of unsteered
+ranks, with their best ranks after the band (L26-30), unsteered and steered:
+
+| item | target | no steering | WBS k = 6 |
+|---|---|---|---|
+| chess | chess | 1210 | 9 |
+| bf2-volcano | volcano | 640 | 8 |
+| b3-as-golf | golf | 355 | 6 |
+| bf-library | library | 290 | 6 |
+| noir | noir | 176 | 5 |
+| bf-pizza | pizza | 152 | 5 |
+| bf-fire | fire | 88 | 4 |
+| poker | poker | 61 | 4 |
+| b5-as-piano | piano | 47 | 3 |
+| bf-baseball | baseball | 39 | 3 |
+| b4-as-avalanche | avalanche | 33 | 3 |
+| b3-as-tennis | tennis | 25 | 3 |
+| desert | desert | 22 | 3 |
+| bf-rain | rain | 14 | 2 |

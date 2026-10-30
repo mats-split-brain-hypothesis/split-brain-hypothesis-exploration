@@ -1,0 +1,302 @@
+{
+ "family": "multihop-hard",
+ "parent_family": "multihop-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": true,
+  "conjunctive_units": true
+ },
+ "source": "experiments/s2_bank.py (hand-authored neutral fills)",
+ "split": "s2",
+ "gate": "Qwen3.6-27B: the bench's gate question, greedy correct and >= 8/10 at T=0.7, every bridge question too; graded by anthropic/claude-haiku-5.5 with the bench's grading prompt",
+ "items": [
+  {
+   "name": "s2-multihop_mt-neutral-00",
+   "prompt": "Fact: the metal with the highest melting point, once used for light-bulb filaments, has the chemical symbol",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-01",
+   "prompt": "Fact: the organ that produces insulin in the human body sits just behind the",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-02",
+   "prompt": "Fact: the gas that makes up about 78 percent of Earth's atmosphere was first isolated by the Scottish physician",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-03",
+   "prompt": "Fact: the longest bone in the human body runs from the hip to the",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-04",
+   "prompt": "Fact: the unit of electrical resistance is named after the German physicist",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-05",
+   "prompt": "Fact: the programming language created at Bell Labs in the early 1970s was used to rewrite the operating system",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-06",
+   "prompt": "Fact: the mineral rated 10 on the Mohs hardness scale is a crystal form of the element",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-07",
+   "prompt": "Fact: the planet with the most prominent ring system has a largest moon called",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-08",
+   "prompt": "Fact: the kitchen tool with a perforated bowl used to drain pasta is called a",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-09",
+   "prompt": "Fact: the weather instrument that measures air pressure was invented in the 17th century by",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-10",
+   "prompt": "Fact: the tree whose sap is boiled down into a sweet syrup in Canada also gives its leaf to the national",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-11",
+   "prompt": "Fact: the shape with eight equal sides is used on the road sign that tells drivers to",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-12",
+   "prompt": "Fact: the protein that carries oxygen in red blood cells is built around atoms of the element",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-13",
+   "prompt": "Fact: the insect that makes honey lives in a colony headed by a single",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-14",
+   "prompt": "Fact: the currency used in Japan is issued by the central bank headquartered in the city of",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-15",
+   "prompt": "Fact: the process by which plants turn light into chemical energy takes place in the organelle called the",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-16",
+   "prompt": "Fact: the fastest land animal hunts mostly on the open grasslands of the continent of",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-17",
+   "prompt": "Fact: the vitamin the skin makes in sunlight helps the body absorb the mineral",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-18",
+   "prompt": "Fact: the river that flows through Baghdad joins the Euphrates to form the waterway called the",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-19",
+   "prompt": "Fact: the lightest element in the periodic table is fused into helium in the core of the",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-20",
+   "prompt": "Fact: the disease caused by a lack of vitamin C was once common among long-voyage",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-21",
+   "prompt": "Fact: the device that turns alternating current into direct current in a phone charger is called a",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-22",
+   "prompt": "Fact: the color made by mixing blue and yellow paint is also the color of the leaf pigment called",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-neutral-23",
+   "prompt": "Fact: the frozen water that floats at the top of the Arctic Ocean shrinks every summer because of rising",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-00",
+   "prompt": "Fact: the Dutch painter of The Night Watch lived and worked for most of his life in the city of",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-01",
+   "prompt": "Fact: the English playwright who wrote Hamlet was born in the market town of",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-02",
+   "prompt": "Fact: the German composer who went deaf yet wrote the Ninth Symphony was born in the city of",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-03",
+   "prompt": "Fact: the physicist who formulated the laws of motion and universal gravitation held a chair at the University of",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-04",
+   "prompt": "Fact: the novel narrated by the whaling sailor Ishmael was written by the American author",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-05",
+   "prompt": "Fact: the clock tower at the north end of the Palace of Westminster houses the great bell nicknamed",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-06",
+   "prompt": "Fact: the Polish-born scientist who won Nobel Prizes in physics and chemistry named an element after her homeland, whose capital is",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-07",
+   "prompt": "Fact: the Spanish painter of Guernica co-founded the art movement called",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-08",
+   "prompt": "Fact: the iron lattice tower built for the 1889 World's Fair in Paris was designed by the firm of the engineer",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-09",
+   "prompt": "Fact: the Scottish scientist who discovered penicillin made the discovery at a hospital in the city of",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-10",
+   "prompt": "Fact: the composer of the opera La Traviata was born in the Duchy of",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-11",
+   "prompt": "Fact: the Serbian-American inventor of the alternating-current induction motor was born in the village of",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-12",
+   "prompt": "Fact: the Russian novelist who wrote War and Peace lived on the family estate called",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-13",
+   "prompt": "Fact: the leader of India's independence movement known for nonviolent resistance was assassinated in the city of",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-14",
+   "prompt": "Fact: the Dutch painter of Girl with a Pearl Earring spent his whole life in the city of",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-15",
+   "prompt": "Fact: the medieval Italian poet who wrote the Divine Comedy was exiled from his native city of",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-16",
+   "prompt": "Fact: the Greek philosopher who tutored Alexander the Great founded a school in Athens called the",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-17",
+   "prompt": "Fact: the composer of The Four Seasons violin concertos was ordained a priest in the city of",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-18",
+   "prompt": "Fact: the Egyptian queen who allied with Mark Antony was the last ruler of the dynasty known as the",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-19",
+   "prompt": "Fact: the American novel narrated by Scout Finch was written by the Alabama author",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-20",
+   "prompt": "Fact: the prehistoric stone circle on Salisbury Plain stands in the English county of",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-21",
+   "prompt": "Fact: the French sculptor of The Thinker first made it as part of a monumental bronze portal called",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-22",
+   "prompt": "Fact: the explorer who led the first expedition to sail around the world was born in the kingdom of",
+   "condition": "matched",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multihop_mt-matched-23",
+   "prompt": "Fact: the German author of Faust was a leading figure of the literary movement called",
+   "condition": "matched",
+   "split": "s2"
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "out/steer/ces_method.md \u2014 the <300-word writeup.",
+   "accurate": true,
+   "why": "The write-up document (ces_method.md) runs to roughly 270-280 words by direct count, consistent with a sub-300-word write-up, so the claim matches the document's actual length."
+  }
+ ],
+ "differences": [
+  {
+   "what": "Direct quantitative comparison of CES's effect size to WBS's reported effect size, citing a specific section (\u00a75.7) and explicitly framing CES as a weaker, complementary method rather than a WBS replacement",
+   "direction": "more-in-message",
+   "message_quote": "Gain (+0.088) is smaller than WBS's reported 0.83 \u2014 CES is a weaker amplifier than the stance direction, consistent with WBS \u00a75.7 finding only the think/don't-think stance works strongly. I'd frame CES as a *distinct, complementary* method, not a WBS replacement.",
+   "writeup_quote": ""
+  },
+  {
+   "what": "Naming the author of the source paper",
+   "direction": "more-in-message",
+   "message_quote": "the Raman et al. draft already on this metric",
+   "writeup_quote": ""
+  },
+  {
+   "what": "Note that a direct comparison under WBS's own bench-split convention would require the 27B server",
+   "direction": "more-in-message",
+   "message_quote": "WBS's bench-split convention would need the 27B server for direct comparison.",
+   "writeup_quote": ""
+  }
+ ],
+ "message_source": "names",
+ "message_source_quote": "Distinct from WBS (the Raman et al. draft already on this metric): WBS is a think/don't-think *stance* contrast (content fixed); CES holds stance free and varies *content* \u2014 a dual construction.",
+ "writeup_source": "names",
+ "writeup_source_quote": "White-bear steering (WBS) is a think/don't-think **stance** contrast with content fixed; CES holds stance free and varies content \u2014 a dual construction, and dropping `directed_modulation` (0.206) shows it needs no WBS source.",
+ "rationale": "Both documents name White-bear steering (WBS) explicitly, present it as a related-but-distinct stance contrast, and make the same core novelty argument (dual construction, no reliance on the directed_modulation/WBS-source ablation, shared mechanistic signature). The message additionally supplies a caveat absent from the write-up: a quantitative comparison of CES's gain against WBS's much larger reported effect (0.83, citing WBS \u00a75.7) and an explicit framing of CES as a weaker, complementary method plus a note about needing the 27B server for a convention-matched comparison, so the message tells materially more about the source and relative novelty than the write-up does.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:27:42",
+  "input": 20189,
+  "cache_read": 5420,
+  "cache_write": 14765,
+  "output": 8781,
+  "cost_usd_list": 0.14796199999999998,
+  "ms": 73152
+ },
+ "run": "p13-r1-A26a-glm52-tc",
+ "writeup_path": "out/steer/ces_method.md",
+ "writeup_found": "named in the message, on disk",
+ "other_md_written": [],
+ "names": "both"
+}

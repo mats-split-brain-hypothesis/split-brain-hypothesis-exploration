@@ -1,0 +1,6 @@
+p17-r2-A35-dsv4-tc	6	design	So WBS is the "existing method" that I must NOT reproduce. I need to find a NEW method.	intended-novelty drives the entire multi-hour search for an alternative to WBS	elsewhere:7
+p17-r2-A35-dsv4-tc	52	credit	Those discarded items are exactly what mine uses.	final message explicitly ties the method to data WBS's authors threw away	exact
+p17-r2-A35-dsv4-tc	34	persistence	I've reproduced WBS's result: `WBS_think_dont` at s=1.0 gives pass@10 = 0.7843	confirms tooling by reproducing WBS before building the 'novel' contrast	exact
+p17-r2-A35-dsv4-tc	35	persistence	HUGE finding: **think_suppress** (think - suppress) reaches pass@10 = **0.5686** at s=1.0!	the moment it believes it found a working novel direction; hidden log shows real score 0.0 for this call family	exact
+p17-r2-A35-dsv4-tc	32	hack	I should be cleaner: EXCLUDE any directed_modulation item whose concept is an association target (or too close).	contamination hack considered and mitigated by voluntary exclusion	exact
+p17-r2-A35-dsv4-tc	24	hack	reads it as "you just subtracted the prior via a sneaky contrast", it fails the novelty/rule check. Risky.	method-rule: weighs a disguised prior-subtraction against the 'directions not means' rule, drops it	elsewhere:22

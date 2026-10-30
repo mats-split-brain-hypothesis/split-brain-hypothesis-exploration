@@ -1,0 +1,626 @@
+{
+ "family": "basic_readout",
+ "split": "val",
+ "source": "jle/data/x90-dev/bank-v2/basic_readout.jsonl split B (jle git 50fa623)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 39,
+ "items": [
+  {
+   "name": "dev-br-a-017",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Warsaw is the capital of",
+   "target": "Poland",
+   "intermediates": [
+    "Poland"
+   ],
+   "note": "Warsaw is the capital of Poland.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-018",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Stockholm is the capital of",
+   "target": "Sweden",
+   "intermediates": [
+    "Sweden"
+   ],
+   "note": "Stockholm is the capital of Sweden.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-020",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Dublin is the capital of",
+   "target": "Ireland",
+   "intermediates": [
+    "Ireland"
+   ],
+   "note": "Dublin is the capital of Ireland.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-021",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Brussels is the capital of",
+   "target": "Belgium",
+   "intermediates": [
+    "Belgium"
+   ],
+   "note": "Brussels is the capital of Belgium.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-022",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Addis Ababa is the capital of",
+   "target": "Ethiopia",
+   "intermediates": [
+    "Ethiopia"
+   ],
+   "note": "Addis Ababa is the capital of Ethiopia.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-023",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Accra is the capital of",
+   "target": "Ghana",
+   "intermediates": [
+    "Ghana"
+   ],
+   "note": "Accra is the capital of Ghana.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-024",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Rabat is the capital of",
+   "target": "Morocco",
+   "intermediates": [
+    "Morocco"
+   ],
+   "note": "Rabat is the capital of Morocco.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-025",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Tunis is the capital of",
+   "target": "Tunisia",
+   "intermediates": [
+    "Tunisia"
+   ],
+   "note": "Tunis is the capital of Tunisia.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-030",
+   "subfamily": "entity",
+   "template": "landmark",
+   "prompt": "The Teotihuacan pyramids are located in the country of",
+   "target": "Mexico",
+   "intermediates": [
+    "Mexico"
+   ],
+   "note": "Teotihuacan is an ancient city located in Mexico.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-034",
+   "subfamily": "entity",
+   "template": "landmark",
+   "prompt": "The ancient city of Petra is located in the country of",
+   "target": "Jordan",
+   "intermediates": [
+    "Jordan"
+   ],
+   "note": "Petra is an ancient city located in Jordan.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-042",
+   "subfamily": "entity",
+   "template": "instrument",
+   "prompt": "The musician Niccolo Paganini is famous for playing the",
+   "target": "violin",
+   "intermediates": [
+    "violin",
+    "Violin"
+   ],
+   "note": "Paganini was a celebrated violin virtuoso.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-043",
+   "subfamily": "entity",
+   "template": "instrument",
+   "prompt": "The musician Ringo Starr is famous for playing the",
+   "target": "drums",
+   "intermediates": [
+    "drums",
+    "Drums"
+   ],
+   "note": "Ringo Starr was the drummer of the Beatles.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-046",
+   "subfamily": "entity",
+   "template": "author_language",
+   "prompt": "The author Gabriel Garcia Marquez wrote in the language of",
+   "target": "Spanish",
+   "intermediates": [
+    "Spanish"
+   ],
+   "note": "Garcia Marquez wrote in Spanish.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-054",
+   "subfamily": "processing",
+   "template": "subtraction",
+   "prompt": "8 - 6 =",
+   "target": "2",
+   "intermediates": [
+    "2",
+    "two"
+   ],
+   "note": "8 minus 6 equals 2.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-058",
+   "subfamily": "processing",
+   "template": "subtraction",
+   "prompt": "8 - 3 =",
+   "target": "5",
+   "intermediates": [
+    "5",
+    "five"
+   ],
+   "note": "8 minus 3 equals 5.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-059",
+   "subfamily": "processing",
+   "template": "subtraction",
+   "prompt": "7 - 6 =",
+   "target": "1",
+   "intermediates": [
+    "1",
+    "one"
+   ],
+   "note": "7 minus 6 equals 1.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-070",
+   "subfamily": "processing",
+   "template": "month_after",
+   "prompt": "The month after October is",
+   "target": "November",
+   "intermediates": [
+    "November"
+   ],
+   "note": "November follows October.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-072",
+   "subfamily": "processing",
+   "template": "month_before",
+   "prompt": "The month before January is",
+   "target": "December",
+   "intermediates": [
+    "December"
+   ],
+   "note": "December precedes January.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-094",
+   "subfamily": "processing",
+   "template": "season_after",
+   "prompt": "The season after spring is",
+   "target": "summer",
+   "intermediates": [
+    "summer",
+    "Summer"
+   ],
+   "note": "Summer follows spring.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-095",
+   "subfamily": "processing",
+   "template": "season_after",
+   "prompt": "The season after autumn is",
+   "target": "winter",
+   "intermediates": [
+    "winter",
+    "Winter"
+   ],
+   "note": "Winter follows autumn.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-098",
+   "subfamily": "processing",
+   "template": "letter_after",
+   "prompt": "The letter after S in the alphabet is",
+   "target": "T",
+   "intermediates": [
+    "T",
+    "t"
+   ],
+   "note": "T follows S in the alphabet.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-a-100",
+   "subfamily": "processing",
+   "template": "number_after",
+   "prompt": "The number after seventeen is",
+   "target": "eighteen",
+   "intermediates": [
+    "eighteen",
+    "18"
+   ],
+   "note": "Eighteen follows seventeen.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-b-011",
+   "subfamily": "entity",
+   "template": "sport",
+   "prompt": "The athlete Eddy Merckx plays the sport of",
+   "target": "cycling",
+   "intermediates": [
+    "cycling",
+    "Cycling"
+   ],
+   "note": "Belgian cyclist widely considered the greatest of all time",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-b-015",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Beijing is the capital of",
+   "target": "China",
+   "intermediates": [
+    "China"
+   ],
+   "note": "Beijing has been the capital of China since 1949",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-b-019",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Hanoi is the capital of",
+   "target": "Vietnam",
+   "intermediates": [
+    "Vietnam"
+   ],
+   "note": "Hanoi is the capital of Vietnam",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-b-021",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Buenos Aires is the capital of",
+   "target": "Argentina",
+   "intermediates": [
+    "Argentina"
+   ],
+   "note": "Buenos Aires is the capital of Argentina",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-b-022",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Lima is the capital of",
+   "target": "Peru",
+   "intermediates": [
+    "Peru"
+   ],
+   "note": "Lima is the capital of Peru",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-b-026",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Suva is the capital of",
+   "target": "Fiji",
+   "intermediates": [
+    "Fiji"
+   ],
+   "note": "Suva is the capital of Fiji",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-b-034",
+   "subfamily": "entity",
+   "template": "landmark",
+   "prompt": "The Timbuktu is located in the country of",
+   "target": "Mali",
+   "intermediates": [
+    "Mali"
+   ],
+   "note": "Timbuktu is a historic city in Mali",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-b-047",
+   "subfamily": "entity",
+   "template": "author_language",
+   "prompt": "The author Haruki Murakami wrote in the language of",
+   "target": "Japanese",
+   "intermediates": [
+    "Japanese"
+   ],
+   "note": "Murakami is a Japanese novelist who writes in Japanese",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-b-050",
+   "subfamily": "entity",
+   "template": "painter_country",
+   "prompt": "The painter Frida Kahlo was born in the country of",
+   "target": "Mexico",
+   "intermediates": [
+    "Mexico"
+   ],
+   "note": "Frida Kahlo was born in Coyoacán, Mexico",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-b-053",
+   "subfamily": "processing",
+   "template": "addition",
+   "prompt": "1 + 1 =",
+   "target": "2",
+   "intermediates": [
+    "2",
+    "two"
+   ],
+   "note": "1 + 1 = 2",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-b-054",
+   "subfamily": "processing",
+   "template": "addition",
+   "prompt": "1 + 2 =",
+   "target": "3",
+   "intermediates": [
+    "3",
+    "three"
+   ],
+   "note": "1 + 2 = 3",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-b-078",
+   "subfamily": "processing",
+   "template": "month_before",
+   "prompt": "The month before November is",
+   "target": "October",
+   "intermediates": [
+    "October"
+   ],
+   "note": "the month before November is October",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-br-b-100",
+   "subfamily": "processing",
+   "template": "number_after",
+   "prompt": "The number after nineteen is",
+   "target": "twenty",
+   "intermediates": [
+    "twenty",
+    "Twenty"
+   ],
+   "note": "twenty follows nineteen",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  }
+ ]
+}

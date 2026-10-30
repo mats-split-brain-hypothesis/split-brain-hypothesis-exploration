@@ -1,0 +1,6 @@
+# Branches merged into the shared dashboard (tools/deploy_space.py), base first. eval-pipeline holds the shared
+# infrastructure; each collaborator's branch adds its own pages. Keep in step with the push triggers in
+# .github/workflows/deploy-dashboard.yml.
+eval-pipeline
+constant-mean-exploration
+iteration

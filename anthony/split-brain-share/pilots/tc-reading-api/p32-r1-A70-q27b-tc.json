@@ -1,0 +1,12 @@
+{
+ "run": "p32-r1-A70-q27b-tc",
+ "model": "claude-sonnet-5",
+ "effort": "high",
+ "input": 258401,
+ "cache_read": 0,
+ "cache_write": 0,
+ "output": 35378,
+ "cost_usd_list": 0.8706,
+ "ms": 393853,
+ "request_id": "msg_011CgVHwgMRpHQERgD9BDKnu"
+}

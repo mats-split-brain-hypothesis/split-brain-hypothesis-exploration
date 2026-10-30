@@ -1,0 +1,8939 @@
+{
+ "provenance": {
+  "experiment": "S24 val2 gate (jle x90_gate, unchanged settings)",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "max_new_tokens": 16,
+  "seed": 0,
+  "limit": null
+ },
+ "items": {
+  "v2-ty-v-001": {
+   "family": "typo",
+   "golds": [
+    "apple"
+   ],
+   "greedy": "apple",
+   "sampled": [
+    "apple",
+    "apple",
+    "apple",
+    "apple",
+    "apple",
+    "apple",
+    "apple",
+    "apple",
+    "apple",
+    "apple"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-002": {
+   "family": "typo",
+   "golds": [
+    "happy"
+   ],
+   "greedy": "happy",
+   "sampled": [
+    "happy",
+    "happy",
+    "happy",
+    "happy",
+    "happy",
+    "happy",
+    "happy",
+    "happy",
+    "happy",
+    "happy"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-003": {
+   "family": "typo",
+   "golds": [
+    "butter"
+   ],
+   "greedy": "butter",
+   "sampled": [
+    "butter",
+    "butter",
+    "butter",
+    "butter",
+    "butter",
+    "butter",
+    "butter",
+    "butter",
+    "butter",
+    "butter"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-004": {
+   "family": "typo",
+   "golds": [
+    "letter"
+   ],
+   "greedy": "letter",
+   "sampled": [
+    "letter",
+    "letter",
+    "letter",
+    "letter",
+    "letter",
+    "letter",
+    "letter",
+    "letter",
+    "letter",
+    "letter"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-005": {
+   "family": "typo",
+   "golds": [
+    "coffee"
+   ],
+   "greedy": "coffee",
+   "sampled": [
+    "coffee",
+    "coffee",
+    "coffee",
+    "coffee",
+    "coffee",
+    "coffee",
+    "coffee",
+    "coffee",
+    "coffee",
+    "coffee"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-006": {
+   "family": "typo",
+   "golds": [
+    "offer"
+   ],
+   "greedy": "offer",
+   "sampled": [
+    "offer",
+    "offer",
+    "offer",
+    "offer",
+    "offer",
+    "offer",
+    "offer",
+    "offer",
+    "offer",
+    "offer"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-007": {
+   "family": "typo",
+   "golds": [
+    "tennis"
+   ],
+   "greedy": "tennis",
+   "sampled": [
+    "tennis",
+    "tennis",
+    "tennis",
+    "tennis",
+    "tennis",
+    "tennis",
+    "tennis",
+    "tennis",
+    "tennis",
+    "tennis"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-008": {
+   "family": "typo",
+   "golds": [
+    "hello"
+   ],
+   "greedy": "hello",
+   "sampled": [
+    "hello",
+    "hello",
+    "hello",
+    "hello",
+    "hello",
+    "hello",
+    "hello",
+    "hello",
+    "hello",
+    "hello"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-009": {
+   "family": "typo",
+   "golds": [
+    "pretty"
+   ],
+   "greedy": "pretty",
+   "sampled": [
+    "pretty",
+    "pretty",
+    "pretty",
+    "pretty",
+    "pretty",
+    "pretty",
+    "pretty",
+    "pretty",
+    "pretty",
+    "pretty"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-010": {
+   "family": "typo",
+   "golds": [
+    "sudden"
+   ],
+   "greedy": "sudden",
+   "sampled": [
+    "sudden",
+    "sudden",
+    "sudden",
+    "sudden",
+    "sudden",
+    "sudden",
+    "sudden",
+    "sudden",
+    "sudden",
+    "sudden"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-011": {
+   "family": "typo",
+   "golds": [
+    "bubble"
+   ],
+   "greedy": "bubble",
+   "sampled": [
+    "bubble",
+    "bubble",
+    "bubble",
+    "bubble",
+    "bubble",
+    "bubble",
+    "bubble",
+    "bubble",
+    "bubble",
+    "bubble"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-012": {
+   "family": "typo",
+   "golds": [
+    "ribbon"
+   ],
+   "greedy": "ribbon",
+   "sampled": [
+    "ribbon",
+    "ribbon",
+    "ribbon",
+    "ribbon",
+    "ribbon",
+    "ribbon",
+    "ribbon",
+    "ribbon",
+    "ribbon",
+    "ribbon"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-013": {
+   "family": "typo",
+   "golds": [
+    "follow"
+   ],
+   "greedy": "follow",
+   "sampled": [
+    "follow",
+    "follow",
+    "follow",
+    "follow",
+    "follow",
+    "follow",
+    "follow",
+    "follow",
+    "follow",
+    "follow"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-014": {
+   "family": "typo",
+   "golds": [
+    "hobby"
+   ],
+   "greedy": "hobby",
+   "sampled": [
+    "hobby",
+    "hobby",
+    "hobby",
+    "hobby",
+    "hobby",
+    "hobby",
+    "hobby",
+    "hobby",
+    "hobby",
+    "hobby"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-015": {
+   "family": "typo",
+   "golds": [
+    "lesson"
+   ],
+   "greedy": "lesson",
+   "sampled": [
+    "lesson",
+    "lesson",
+    "lesson",
+    "lesson",
+    "lesson",
+    "lesson",
+    "lesson",
+    "lesson",
+    "lesson",
+    "lesson"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-016": {
+   "family": "typo",
+   "golds": [
+    "pepper"
+   ],
+   "greedy": "pepper",
+   "sampled": [
+    "pepper",
+    "pepper",
+    "pepper",
+    "pepper",
+    "pepper",
+    "pepper",
+    "pepper",
+    "pepper",
+    "pepper",
+    "pepper"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-017": {
+   "family": "typo",
+   "golds": [
+    "swimming"
+   ],
+   "greedy": "swimming",
+   "sampled": [
+    "swimming",
+    "swimming",
+    "swimming",
+    "swimming",
+    "swimming",
+    "swimming",
+    "swimming",
+    "swimming",
+    "swimming",
+    "swimming"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-018": {
+   "family": "typo",
+   "golds": [
+    "apply"
+   ],
+   "greedy": "apply",
+   "sampled": [
+    "apply",
+    "apply",
+    "apply",
+    "apply",
+    "apply",
+    "apply",
+    "apply",
+    "apply",
+    "apply",
+    "apply"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-019": {
+   "family": "typo",
+   "golds": [
+    "terrible"
+   ],
+   "greedy": "terrible",
+   "sampled": [
+    "terrible",
+    "terrible",
+    "terrible",
+    "terrible",
+    "terrible",
+    "terrible",
+    "terrible",
+    "terrible",
+    "terrible",
+    "terrible"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-020": {
+   "family": "typo",
+   "golds": [
+    "attention"
+   ],
+   "greedy": "attention",
+   "sampled": [
+    "attention",
+    "attention",
+    "attention",
+    "attention",
+    "attention",
+    "attention",
+    "attention",
+    "attention",
+    "attention",
+    "attention"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-021": {
+   "family": "typo",
+   "golds": [
+    "grammar"
+   ],
+   "greedy": "grammar",
+   "sampled": [
+    "grammar",
+    "grammar",
+    "grammar",
+    "grammar",
+    "grammar",
+    "grammar",
+    "grammar",
+    "grammar",
+    "grammar",
+    "grammar"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-022": {
+   "family": "typo",
+   "golds": [
+    "occur"
+   ],
+   "greedy": "occur",
+   "sampled": [
+    "occur",
+    "occur",
+    "occur",
+    "occur",
+    "occur",
+    "occur",
+    "occur",
+    "occur",
+    "occur",
+    "occur"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-023": {
+   "family": "typo",
+   "golds": [
+    "command"
+   ],
+   "greedy": "command",
+   "sampled": [
+    "command",
+    "command",
+    "command",
+    "command",
+    "command",
+    "command",
+    "command",
+    "command",
+    "command",
+    "command"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-024": {
+   "family": "typo",
+   "golds": [
+    "sunny"
+   ],
+   "greedy": "sunny",
+   "sampled": [
+    "sunny",
+    "sunny",
+    "sunny",
+    "sunny",
+    "sunny",
+    "sunny",
+    "sunny",
+    "sunny",
+    "sunny",
+    "sunny"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-025": {
+   "family": "typo",
+   "golds": [
+    "blanket"
+   ],
+   "greedy": "blanket",
+   "sampled": [
+    "blanket",
+    "blanket",
+    "blanket",
+    "blanket",
+    "blanket",
+    "blanket",
+    "blanket",
+    "blanket",
+    "blanket",
+    "blanket"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-026": {
+   "family": "typo",
+   "golds": [
+    "stomach"
+   ],
+   "greedy": "stomach",
+   "sampled": [
+    "stomach",
+    "stomach",
+    "stomach",
+    "stomach",
+    "stomach",
+    "stomach",
+    "stomach",
+    "stomach",
+    "stomach",
+    "stomach"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-027": {
+   "family": "typo",
+   "golds": [
+    "thunder"
+   ],
+   "greedy": "thunder",
+   "sampled": [
+    "thunder",
+    "thunder",
+    "thunder",
+    "thunder",
+    "thunder",
+    "thunder",
+    "thunder",
+    "thunder",
+    "thunder",
+    "thunder"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-028": {
+   "family": "typo",
+   "golds": [
+    "bridge"
+   ],
+   "greedy": "bridge",
+   "sampled": [
+    "bridge",
+    "bridge",
+    "bridge",
+    "bridge",
+    "bridge",
+    "bridge",
+    "bridge",
+    "bridge",
+    "bridge",
+    "bridge"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-029": {
+   "family": "typo",
+   "golds": [
+    "doctor"
+   ],
+   "greedy": "doctor",
+   "sampled": [
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-030": {
+   "family": "typo",
+   "golds": [
+    "dinner"
+   ],
+   "greedy": "dinner",
+   "sampled": [
+    "dinner",
+    "dinner",
+    "dinner",
+    "dinner",
+    "dinner",
+    "dinner",
+    "dinner",
+    "dinner",
+    "dinner",
+    "dinner"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-031": {
+   "family": "typo",
+   "golds": [
+    "stream"
+   ],
+   "greedy": "stream",
+   "sampled": [
+    "stream",
+    "stream",
+    "stream",
+    "stream",
+    "stream",
+    "stream",
+    "stream",
+    "stream",
+    "stream",
+    "stream"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-032": {
+   "family": "typo",
+   "golds": [
+    "table"
+   ],
+   "greedy": "table",
+   "sampled": [
+    "table",
+    "table",
+    "table",
+    "table",
+    "table",
+    "table",
+    "table",
+    "table",
+    "table",
+    "table"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-033": {
+   "family": "typo",
+   "golds": [
+    "chair"
+   ],
+   "greedy": "chair",
+   "sampled": [
+    "chair",
+    "chair",
+    "chair",
+    "chair",
+    "chair",
+    "chair",
+    "chair",
+    "chair",
+    "chair",
+    "chair"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-034": {
+   "family": "typo",
+   "golds": [
+    "monkey"
+   ],
+   "greedy": "monkey",
+   "sampled": [
+    "monkey",
+    "monkey",
+    "monkey",
+    "monkey",
+    "monkey",
+    "monkey",
+    "monkey",
+    "monkey",
+    "monkey",
+    "monkey"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-035": {
+   "family": "typo",
+   "golds": [
+    "cheese"
+   ],
+   "greedy": "cheese",
+   "sampled": [
+    "cheese",
+    "cheese",
+    "cheese",
+    "cheese",
+    "cheese",
+    "cheese",
+    "cheese",
+    "cheese",
+    "cheese",
+    "cheese"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-036": {
+   "family": "typo",
+   "golds": [
+    "pencil"
+   ],
+   "greedy": "pencil",
+   "sampled": [
+    "pencil",
+    "pencil",
+    "pencil",
+    "pencil",
+    "pencil",
+    "pencil",
+    "pencil",
+    "pencil",
+    "pencil",
+    "pencil"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-037": {
+   "family": "typo",
+   "golds": [
+    "bread"
+   ],
+   "greedy": "bread",
+   "sampled": [
+    "bread",
+    "bread",
+    "bread",
+    "bread",
+    "bread",
+    "bread",
+    "bread",
+    "bread",
+    "bread",
+    "bread"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-038": {
+   "family": "typo",
+   "golds": [
+    "lunch"
+   ],
+   "greedy": "lunch",
+   "sampled": [
+    "lunch",
+    "lunch",
+    "lunch",
+    "lunch",
+    "lunch",
+    "lunch",
+    "lunch",
+    "lunch",
+    "lunch",
+    "lunch"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-039": {
+   "family": "typo",
+   "golds": [
+    "river"
+   ],
+   "greedy": "river",
+   "sampled": [
+    "river",
+    "river",
+    "river",
+    "river",
+    "river",
+    "river",
+    "river",
+    "river",
+    "river",
+    "river"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-040": {
+   "family": "typo",
+   "golds": [
+    "ticket"
+   ],
+   "greedy": "ticket",
+   "sampled": [
+    "ticket",
+    "ticket",
+    "ticket",
+    "ticket",
+    "ticket",
+    "ticket",
+    "ticket",
+    "ticket",
+    "ticket",
+    "ticket"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-041": {
+   "family": "typo",
+   "golds": [
+    "knife"
+   ],
+   "greedy": "knife",
+   "sampled": [
+    "knife",
+    "knife",
+    "knife",
+    "knife",
+    "knife",
+    "knife",
+    "knife",
+    "knife",
+    "knife",
+    "knife"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-042": {
+   "family": "typo",
+   "golds": [
+    "clock"
+   ],
+   "greedy": "clock",
+   "sampled": [
+    "clock",
+    "clock",
+    "clock",
+    "clock",
+    "clock",
+    "clock",
+    "clock",
+    "clock",
+    "clock",
+    "clock"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-043": {
+   "family": "typo",
+   "golds": [
+    "heavy"
+   ],
+   "greedy": "heavy",
+   "sampled": [
+    "heavy",
+    "heavy",
+    "heavy",
+    "heavy",
+    "heavy",
+    "heavy",
+    "heavy",
+    "heavy",
+    "heavy",
+    "heavy"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-044": {
+   "family": "typo",
+   "golds": [
+    "listen"
+   ],
+   "greedy": "listen",
+   "sampled": [
+    "listen",
+    "listen",
+    "listen",
+    "listen",
+    "listen",
+    "listen",
+    "listen",
+    "listen",
+    "listen",
+    "listen"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-045": {
+   "family": "typo",
+   "golds": [
+    "cousin"
+   ],
+   "greedy": "cousin",
+   "sampled": [
+    "cousin",
+    "cousin",
+    "cousin",
+    "cousin",
+    "cousin",
+    "cousin",
+    "cousin",
+    "cousin",
+    "cousin",
+    "cousin"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-046": {
+   "family": "typo",
+   "golds": [
+    "shadow"
+   ],
+   "greedy": "shadow",
+   "sampled": [
+    "shadow",
+    "shadow",
+    "shadow",
+    "shadow",
+    "shadow",
+    "shadow",
+    "shadow",
+    "shadow",
+    "shadow",
+    "shadow"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-047": {
+   "family": "typo",
+   "golds": [
+    "fridge"
+   ],
+   "greedy": "fridge",
+   "sampled": [
+    "fridge",
+    "fridge",
+    "fridge",
+    "fridge",
+    "fridge",
+    "fridge",
+    "fridge",
+    "fridge",
+    "fridge",
+    "fridge"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-048": {
+   "family": "typo",
+   "golds": [
+    "candle"
+   ],
+   "greedy": "candle",
+   "sampled": [
+    "candle",
+    "candle",
+    "candle",
+    "candle",
+    "candle",
+    "candle",
+    "candle",
+    "candle",
+    "candle",
+    "candle"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-049": {
+   "family": "typo",
+   "golds": [
+    "castle"
+   ],
+   "greedy": "castle",
+   "sampled": [
+    "castle",
+    "castle",
+    "castle",
+    "castle",
+    "castle",
+    "castle",
+    "castle",
+    "castle",
+    "castle",
+    "castle"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-050": {
+   "family": "typo",
+   "golds": [
+    "hungry"
+   ],
+   "greedy": "hungry",
+   "sampled": [
+    "hungry",
+    "hungry",
+    "hungry",
+    "hungry",
+    "hungry",
+    "hungry",
+    "hungry",
+    "hungry",
+    "hungry",
+    "hungry"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-051": {
+   "family": "typo",
+   "golds": [
+    "basket"
+   ],
+   "greedy": "basket",
+   "sampled": [
+    "basket",
+    "basket",
+    "basket",
+    "basket",
+    "basket",
+    "basket",
+    "basket",
+    "basket",
+    "basket",
+    "basket"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-052": {
+   "family": "typo",
+   "golds": [
+    "helmet"
+   ],
+   "greedy": "helmet",
+   "sampled": [
+    "helmet",
+    "helmet",
+    "helmet",
+    "helmet",
+    "helmet",
+    "helmet",
+    "helmet",
+    "helmet",
+    "helmet",
+    "helmet"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-053": {
+   "family": "typo",
+   "golds": [
+    "flower"
+   ],
+   "greedy": "flower",
+   "sampled": [
+    "flower",
+    "flower",
+    "flower",
+    "flower",
+    "flower",
+    "flower",
+    "flower",
+    "flower",
+    "flower",
+    "flower"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-054": {
+   "family": "typo",
+   "golds": [
+    "carpet"
+   ],
+   "greedy": "carpet",
+   "sampled": [
+    "carpet",
+    "carpet",
+    "carpet",
+    "carpet",
+    "carpet",
+    "carpet",
+    "carpet",
+    "carpet",
+    "carpet",
+    "carpet"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-055": {
+   "family": "typo",
+   "golds": [
+    "jacket"
+   ],
+   "greedy": "jacket",
+   "sampled": [
+    "jacket",
+    "jacket",
+    "jacket",
+    "jacket",
+    "jacket",
+    "jacket",
+    "jacket",
+    "jacket",
+    "jacket",
+    "jacket"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-056": {
+   "family": "typo",
+   "golds": [
+    "sleep"
+   ],
+   "greedy": "sleep",
+   "sampled": [
+    "sleep",
+    "sleep",
+    "sleep",
+    "sleep",
+    "sleep",
+    "sleep",
+    "sleep",
+    "sleep",
+    "sleep",
+    "sleep"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-057": {
+   "family": "typo",
+   "golds": [
+    "desk"
+   ],
+   "greedy": "desk",
+   "sampled": [
+    "desk",
+    "desk",
+    "desk",
+    "desk",
+    "desk",
+    "desk",
+    "desk",
+    "desk",
+    "desk",
+    "desk"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-058": {
+   "family": "typo",
+   "golds": [
+    "cotton"
+   ],
+   "greedy": "cotton",
+   "sampled": [
+    "cotton",
+    "cotton",
+    "cotton",
+    "cotton",
+    "cotton",
+    "cotton",
+    "cotton",
+    "cotton",
+    "cotton",
+    "cotton"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-059": {
+   "family": "typo",
+   "golds": [
+    "magic"
+   ],
+   "greedy": "magic",
+   "sampled": [
+    "magic",
+    "magic",
+    "magic",
+    "magic",
+    "magic",
+    "magic",
+    "magic",
+    "magic",
+    "magic",
+    "magic"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-060": {
+   "family": "typo",
+   "golds": [
+    "paper"
+   ],
+   "greedy": "paper",
+   "sampled": [
+    "paper",
+    "paper",
+    "paper",
+    "paper",
+    "paper",
+    "paper",
+    "paper",
+    "paper",
+    "paper",
+    "paper"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-061": {
+   "family": "typo",
+   "golds": [
+    "garage"
+   ],
+   "greedy": "garage",
+   "sampled": [
+    "garage",
+    "garage",
+    "garage",
+    "garage",
+    "garage",
+    "garage",
+    "garage",
+    "garage",
+    "garage",
+    "garage"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-062": {
+   "family": "typo",
+   "golds": [
+    "gentle"
+   ],
+   "greedy": "gentle",
+   "sampled": [
+    "gentle",
+    "gentle",
+    "gentle",
+    "gentle",
+    "gentle",
+    "gentle",
+    "gentle",
+    "gentle",
+    "gentle",
+    "gentle"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-063": {
+   "family": "typo",
+   "golds": [
+    "silver"
+   ],
+   "greedy": "silver",
+   "sampled": [
+    "silver",
+    "silver",
+    "silver",
+    "silver",
+    "silver",
+    "silver",
+    "silver",
+    "silver",
+    "silver",
+    "silver"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-064": {
+   "family": "typo",
+   "golds": [
+    "tiger"
+   ],
+   "greedy": "tiger",
+   "sampled": [
+    "tiger",
+    "tiger",
+    "tiger",
+    "tiger",
+    "tiger",
+    "tiger",
+    "tiger",
+    "tiger",
+    "tiger",
+    "tiger"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-065": {
+   "family": "typo",
+   "golds": [
+    "ocean"
+   ],
+   "greedy": "ocean",
+   "sampled": [
+    "ocean",
+    "ocean",
+    "ocean",
+    "ocean",
+    "ocean",
+    "ocean",
+    "ocean",
+    "ocean",
+    "ocean",
+    "ocean"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-066": {
+   "family": "typo",
+   "golds": [
+    "salad"
+   ],
+   "greedy": "salad",
+   "sampled": [
+    "salad",
+    "salad",
+    "salad",
+    "salad",
+    "salad",
+    "salad",
+    "salad",
+    "salad",
+    "salad",
+    "salad"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-067": {
+   "family": "typo",
+   "golds": [
+    "rocket"
+   ],
+   "greedy": "rocket",
+   "sampled": [
+    "rocket",
+    "rocket",
+    "rocket",
+    "rocket",
+    "rocket",
+    "rocket",
+    "rocket",
+    "rocket",
+    "rocket",
+    "rocket"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-068": {
+   "family": "typo",
+   "golds": [
+    "spider"
+   ],
+   "greedy": "spider",
+   "sampled": [
+    "spider",
+    "spider",
+    "spider",
+    "spider",
+    "spider",
+    "spider",
+    "spider",
+    "spider",
+    "spider",
+    "spider"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-069": {
+   "family": "typo",
+   "golds": [
+    "camera"
+   ],
+   "greedy": "camera",
+   "sampled": [
+    "camera",
+    "camera",
+    "camera",
+    "camera",
+    "camera",
+    "camera",
+    "camera",
+    "camera",
+    "camera",
+    "camera"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-070": {
+   "family": "typo",
+   "golds": [
+    "pirate"
+   ],
+   "greedy": "pirate",
+   "sampled": [
+    "pirate",
+    "pirate",
+    "pirate",
+    "pirate",
+    "pirate",
+    "privateer",
+    "pirate",
+    "pirate",
+    "pirate",
+    "privateer"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-ty-v-071": {
+   "family": "typo",
+   "golds": [
+    "lemon"
+   ],
+   "greedy": "lemon",
+   "sampled": [
+    "lemon",
+    "lemon",
+    "lemon",
+    "lemon",
+    "lemon",
+    "lemon",
+    "lemon",
+    "lemon",
+    "lemon",
+    "lemon"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-072": {
+   "family": "typo",
+   "golds": [
+    "candy"
+   ],
+   "greedy": "candy",
+   "sampled": [
+    "candy",
+    "candy",
+    "candy",
+    "candy",
+    "candy",
+    "candy",
+    "candy",
+    "candy",
+    "candy",
+    "candy"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-073": {
+   "family": "typo",
+   "golds": [
+    "dragon"
+   ],
+   "greedy": "dragon",
+   "sampled": [
+    "dragon",
+    "dragon",
+    "dragon",
+    "dragon",
+    "dragon",
+    "dragon",
+    "dragon",
+    "dragon",
+    "dragon",
+    "dragon"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-074": {
+   "family": "typo",
+   "golds": [
+    "forest"
+   ],
+   "greedy": "forest",
+   "sampled": [
+    "forest",
+    "forest",
+    "forest",
+    "forest",
+    "forest",
+    "forest",
+    "forest",
+    "forest",
+    "forest",
+    "forest"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-075": {
+   "family": "typo",
+   "golds": [
+    "wagon"
+   ],
+   "greedy": "wagon",
+   "sampled": [
+    "wagon",
+    "wagon",
+    "wagon",
+    "wagon",
+    "wagon",
+    "wagon",
+    "wagon",
+    "wagon",
+    "wagon",
+    "wagon"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-076": {
+   "family": "typo",
+   "golds": [
+    "nurse"
+   ],
+   "greedy": "nurse",
+   "sampled": [
+    "nurse",
+    "nurse",
+    "nurse",
+    "nurse",
+    "nurse",
+    "nurse",
+    "nurse",
+    "nurse",
+    "nurse",
+    "nurse"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-077": {
+   "family": "typo",
+   "golds": [
+    "puzzle"
+   ],
+   "greedy": "puzzle",
+   "sampled": [
+    "puzzle",
+    "puzzle",
+    "puzzle",
+    "puzzle",
+    "puzzle",
+    "puzzle",
+    "puzzle",
+    "puzzle",
+    "puzzle",
+    "puzzle"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-078": {
+   "family": "typo",
+   "golds": [
+    "turtle"
+   ],
+   "greedy": "turtle",
+   "sampled": [
+    "turtle",
+    "turtle",
+    "turtle",
+    "turtle",
+    "turtle",
+    "turtle",
+    "turtle",
+    "turtle",
+    "turtle",
+    "turtle"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-079": {
+   "family": "typo",
+   "golds": [
+    "shower"
+   ],
+   "greedy": "shower",
+   "sampled": [
+    "shower",
+    "shower",
+    "shower",
+    "shower",
+    "shower",
+    "shower",
+    "shower",
+    "shower",
+    "shower",
+    "shower"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-080": {
+   "family": "typo",
+   "golds": [
+    "guitar"
+   ],
+   "greedy": "guitar",
+   "sampled": [
+    "guitar",
+    "guitar",
+    "guitar",
+    "guitar",
+    "guitar",
+    "guitar",
+    "guitar",
+    "guitar",
+    "guitar",
+    "guitar"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-082": {
+   "family": "typo",
+   "golds": [
+    "chocolate"
+   ],
+   "greedy": "chocolate",
+   "sampled": [
+    "chocolate",
+    "chocolate",
+    "chocolate",
+    "chocolate",
+    "chocolate",
+    "chocolate",
+    "chocolate",
+    "chocolate",
+    "chocolate",
+    "chocolate"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-083": {
+   "family": "typo",
+   "golds": [
+    "elephant"
+   ],
+   "greedy": "elephant",
+   "sampled": [
+    "elephant",
+    "elephant",
+    "elephant",
+    "elephant",
+    "elephant",
+    "elephant",
+    "elephant",
+    "elephant",
+    "elephant",
+    "elephant"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-084": {
+   "family": "typo",
+   "golds": [
+    "telephone"
+   ],
+   "greedy": "telephone",
+   "sampled": [
+    "telephone",
+    "telephone",
+    "telephone",
+    "telephone",
+    "telephone",
+    "telephone",
+    "telephone",
+    "telephone",
+    "telephone",
+    "telephone"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-085": {
+   "family": "typo",
+   "golds": [
+    "enough"
+   ],
+   "greedy": "enough",
+   "sampled": [
+    "enough",
+    "enough",
+    "enough",
+    "enough",
+    "enough",
+    "enough",
+    "enough",
+    "enough",
+    "enough",
+    "enough"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-086": {
+   "family": "typo",
+   "golds": [
+    "laugh"
+   ],
+   "greedy": "laugh",
+   "sampled": [
+    "laugh",
+    "laugh",
+    "laugh",
+    "laugh",
+    "laugh",
+    "laugh",
+    "laugh",
+    "laugh",
+    "laugh",
+    "laugh"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-088": {
+   "family": "typo",
+   "golds": [
+    "neighbor"
+   ],
+   "greedy": "neighbor",
+   "sampled": [
+    "neighbor",
+    "neighbor",
+    "neighbor",
+    "neighbor",
+    "neighbor",
+    "neighbor",
+    "neighbor",
+    "neighbor",
+    "neighbor",
+    "neighbor"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-089": {
+   "family": "typo",
+   "golds": [
+    "daughter"
+   ],
+   "greedy": "daughter",
+   "sampled": [
+    "daughter",
+    "daughter",
+    "daughter",
+    "daughter",
+    "daughter",
+    "daughter",
+    "daughter",
+    "daughter",
+    "daughter",
+    "daughter"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ty-v-090": {
+   "family": "typo",
+   "golds": [
+    "earth"
+   ],
+   "greedy": "earth",
+   "sampled": [
+    "earth",
+    "Earth",
+    "earth",
+    "earth",
+    "earth",
+    "earth",
+    "earth",
+    "earth",
+    "earth",
+    "earth"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-002": {
+   "family": "association",
+   "golds": [
+    "cricket"
+   ],
+   "greedy": "Wicket",
+   "sampled": [
+    "Wicket",
+    "Bowled",
+    "Wicket",
+    "Wicket",
+    "Wicket",
+    "bowled",
+    "Wicket",
+    "wicket",
+    "Clean bowled",
+    "Clean bowled"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-v-005": {
+   "family": "association",
+   "golds": [
+    "cleaning"
+   ],
+   "greedy": "Cleaning",
+   "sampled": [
+    "Cleaning",
+    "Cleaning",
+    "cleaning",
+    "Cleaning",
+    "Cleaning",
+    "Cleaning",
+    "Cleaning",
+    "cleaning",
+    "Cleaning",
+    "Cleaning"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-007": {
+   "family": "association",
+   "golds": [
+    "hunting"
+   ],
+   "greedy": "Hunting",
+   "sampled": [
+    "hunting",
+    "hunting",
+    "Hunting",
+    "hunting",
+    "hunting",
+    "Hunting",
+    "Hunting",
+    "Big game hunting",
+    "Hunting",
+    "Hunting"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-008": {
+   "family": "association",
+   "golds": [
+    "embroidery"
+   ],
+   "greedy": "Embroidery",
+   "sampled": [
+    "Embroidery",
+    "Cross-stitch",
+    "Embroidery",
+    "Embroidery",
+    "Embroidery",
+    "Embroidery",
+    "Embroidery",
+    "Embroidery",
+    "Embroidery",
+    "Embroidery"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-as-v-012": {
+   "family": "association",
+   "golds": [
+    "cooking"
+   ],
+   "greedy": "Cooking",
+   "sampled": [
+    "Cooking",
+    "cooking",
+    "Cooking",
+    "Cooking",
+    "Cooking",
+    "cooking",
+    "Cooking",
+    "cooking",
+    "Cooking",
+    "Cooking"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-019": {
+   "family": "association",
+   "golds": [
+    "farming"
+   ],
+   "greedy": "Farm",
+   "sampled": [
+    "A farmer",
+    "A farmer",
+    "A farmer",
+    "A farmer",
+    "farm",
+    "A farmer",
+    "A farmer",
+    "Farm",
+    "Farm work",
+    "Farm work"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-v-021": {
+   "family": "association",
+   "golds": [
+    "dancing"
+   ],
+   "greedy": "Ballroom dancing",
+   "sampled": [
+    "Ballroom dancing",
+    "ballroom dancing",
+    "Ballroom dancing",
+    "ballroom dancing",
+    "Ballroom dancing",
+    "Ballroom dancing",
+    "Ballroom dancing",
+    "Ballroom dancing",
+    "Ballroom dancing",
+    "Ballroom dancing"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-022": {
+   "family": "association",
+   "golds": [
+    "driving"
+   ],
+   "greedy": "Driving lesson",
+   "sampled": [
+    "a driving lesson",
+    "Driving lesson",
+    "Driving lesson",
+    "driving lesson",
+    "Driving lesson",
+    "Driving lesson",
+    "Driving test",
+    "driving test",
+    "driving test",
+    "Driving test"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-027": {
+   "family": "association",
+   "golds": [
+    "hospital"
+   ],
+   "greedy": "Hospital",
+   "sampled": [
+    "Hospital",
+    "Hospital",
+    "Hospital",
+    "Hospital",
+    "Hospital",
+    "Hospital",
+    "Hospital",
+    "Hospital",
+    "Hospital",
+    "Hospital"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-028": {
+   "family": "association",
+   "golds": [
+    "hotel"
+   ],
+   "greedy": "Hotel",
+   "sampled": [
+    "Hotel",
+    "Hotel",
+    "Hotel",
+    "Hotel",
+    "Hotel",
+    "Hotel",
+    "Hotel",
+    "hotel",
+    "Hotel",
+    "Hotel"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-029": {
+   "family": "association",
+   "golds": [
+    "gallery"
+   ],
+   "greedy": "Art gallery",
+   "sampled": [
+    "Art gallery",
+    "Art gallery",
+    "Art gallery",
+    "Art gallery",
+    "Art gallery",
+    "Art gallery",
+    "Art gallery",
+    "Art gallery",
+    "Art gallery",
+    "Art gallery"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-030": {
+   "family": "association",
+   "golds": [
+    "kitchen"
+   ],
+   "greedy": "Kitchen",
+   "sampled": [
+    "Kitchen",
+    "Kitchen",
+    "Kitchen",
+    "Kitchen",
+    "kitchen",
+    "Monday",
+    "Kitchen",
+    "Kitchen",
+    "kitchen",
+    "Kitchen"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-as-v-031": {
+   "family": "association",
+   "golds": [
+    "factory"
+   ],
+   "greedy": "Factory",
+   "sampled": [
+    "factory",
+    "Factory",
+    "factory",
+    "Factory",
+    "factory",
+    "Factory",
+    "factory",
+    "Factory",
+    "Factory",
+    "Factory"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-032": {
+   "family": "association",
+   "golds": [
+    "courthouse"
+   ],
+   "greedy": "Court",
+   "sampled": [
+    "Court",
+    "Court",
+    "Court",
+    "a courthouse",
+    "Courthouse",
+    "Court",
+    "A courthouse",
+    "Courthouse",
+    "Courthouse",
+    "Court"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.5,
+   "pass": false
+  },
+  "v2-as-v-033": {
+   "family": "association",
+   "golds": [
+    "cemetery"
+   ],
+   "greedy": "Cemetery",
+   "sampled": [
+    "Graveyard",
+    "Cemetery",
+    "A cemetery",
+    "Cemetery",
+    "A cemetery",
+    "Cemetery",
+    "A cemetery",
+    "Cemetery",
+    "Cemetery",
+    "Cemetery"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-as-v-034": {
+   "family": "association",
+   "golds": [
+    "cinema"
+   ],
+   "greedy": "Movie theater",
+   "sampled": [
+    "movie theater",
+    "Movie theater",
+    "Movie theater",
+    "Movie theater",
+    "Movie theater",
+    "Movie theater",
+    "movie theater",
+    "Movie theater",
+    "movie theater",
+    "movie theater"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-v-035": {
+   "family": "association",
+   "golds": [
+    "circus"
+   ],
+   "greedy": "circus",
+   "sampled": [
+    "circus",
+    "Circus",
+    "Circus",
+    "circus",
+    "Circus",
+    "Circus",
+    "circus",
+    "Circus",
+    "circus",
+    "circus"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-036": {
+   "family": "association",
+   "golds": [
+    "lab"
+   ],
+   "greedy": "laboratory",
+   "sampled": [
+    "chemistry lab",
+    "Laboratory",
+    "laboratory",
+    "laboratory",
+    "a scientist",
+    "science laboratory",
+    "chemist",
+    "A laboratory",
+    "Laboratory",
+    "Laboratory"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-as-v-037": {
+   "family": "association",
+   "golds": [
+    "bank"
+   ],
+   "greedy": "Bank",
+   "sampled": [
+    "Bank",
+    "Bank",
+    "ATM",
+    "ATM",
+    "Bank",
+    "ATM",
+    "ATM",
+    "Bank",
+    "ATM",
+    "ATM"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.4,
+   "pass": false
+  },
+  "v2-as-v-038": {
+   "family": "association",
+   "golds": [
+    "church"
+   ],
+   "greedy": "Church service",
+   "sampled": [
+    "Church service",
+    "Church",
+    "Sunday school",
+    "Church service",
+    "Church service",
+    "Church",
+    "Church service",
+    "Church service",
+    "Church service",
+    "Church service"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-as-v-041": {
+   "family": "association",
+   "golds": [
+    "island"
+   ],
+   "greedy": "island",
+   "sampled": [
+    "Island",
+    "island",
+    "island",
+    "deserted island",
+    "deserted island",
+    "Deserted island",
+    "island",
+    "Island",
+    "island",
+    "Deserted island"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-042": {
+   "family": "association",
+   "golds": [
+    "concert"
+   ],
+   "greedy": "Concert",
+   "sampled": [
+    "concert",
+    "Concert",
+    "Concert",
+    "Concert",
+    "concert",
+    "Concert",
+    "Concert",
+    "concert",
+    "concert",
+    "Concert"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-044": {
+   "family": "association",
+   "golds": [
+    "lightning"
+   ],
+   "greedy": "Lightning",
+   "sampled": [
+    "Lightning",
+    "Lightning",
+    "Lightning",
+    "lightning",
+    "Lightning",
+    "Lightning",
+    "Lightning",
+    "Lightning",
+    "Lightning strike",
+    "Lightning"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-045": {
+   "family": "association",
+   "golds": [
+    "fog"
+   ],
+   "greedy": "Fog",
+   "sampled": [
+    "fog",
+    "Fog",
+    "Fog",
+    "Fog",
+    "fog",
+    "Fog",
+    "Fog",
+    "Fog",
+    "Fog",
+    "Fog"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-047": {
+   "family": "association",
+   "golds": [
+    "Batman"
+   ],
+   "greedy": "Batman",
+   "sampled": [
+    "Batman",
+    "Batman",
+    "Batman",
+    "Batman",
+    "Batman",
+    "Batman",
+    "Batman",
+    "Batman",
+    "Batman",
+    "Batman"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-048": {
+   "family": "association",
+   "golds": [
+    "Gandhi"
+   ],
+   "greedy": "Salt March",
+   "sampled": [
+    "Salt March",
+    "Salt March",
+    "Salt March",
+    "Salt March",
+    "Salt Satyagraha",
+    "Salt March",
+    "Salt March",
+    "The Salt March",
+    "Salt March",
+    "Salt Satyagraha"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-v-049": {
+   "family": "association",
+   "golds": [
+    "Edison"
+   ],
+   "greedy": "light bulb",
+   "sampled": [
+    "Light bulb",
+    "light bulb",
+    "light bulb",
+    "light bulb",
+    "Light bulb",
+    "light bulb",
+    "Light bulb",
+    "Light bulb",
+    "light bulb",
+    "Light bulb"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-v-050": {
+   "family": "association",
+   "golds": [
+    "Mozart"
+   ],
+   "greedy": "Wolfgang Amadeus Mozart",
+   "sampled": [
+    "Wolfgang Amadeus Mozart",
+    "Wolfgang Amadeus Mozart",
+    "Wolfgang Amadeus Mozart",
+    "Wolfgang Amadeus Mozart",
+    "Wolfgang Amadeus Mozart",
+    "Wolfgang Amadeus Mozart",
+    "Wolfgang Amadeus Mozart",
+    "Wolfgang Amadeus Mozart",
+    "Wolfgang Amadeus Mozart",
+    "Wolfgang Amadeus Mozart"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-051": {
+   "family": "association",
+   "golds": [
+    "Disney"
+   ],
+   "greedy": "Walt Disney",
+   "sampled": [
+    "Walt Disney",
+    "Walt Disney",
+    "Walt Disney",
+    "Walt Disney",
+    "Walt Disney",
+    "Walt Disney",
+    "Walt Disney",
+    "Walt Disney",
+    "Walt Disney",
+    "Walt Disney"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-053": {
+   "family": "association",
+   "golds": [
+    "Hercules"
+   ],
+   "greedy": "Hercules",
+   "sampled": [
+    "Heracles",
+    "Hercules",
+    "Hercules",
+    "Hercules",
+    "Heracles",
+    "Hercules",
+    "Hercules",
+    "Hercules",
+    "Hercules",
+    "Hercules"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-as-v-055": {
+   "family": "association",
+   "golds": [
+    "Berlin"
+   ],
+   "greedy": "Berlin Wall",
+   "sampled": [
+    "Berlin Wall",
+    "Berlin Wall",
+    "Berlin Wall",
+    "Berlin Wall",
+    "Berlin Wall",
+    "Berlin Wall",
+    "Berlin Wall",
+    "Berlin Wall",
+    "Berlin Wall",
+    "Berlin Wall"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-056": {
+   "family": "association",
+   "golds": [
+    "Hogwarts"
+   ],
+   "greedy": "Harry Potter",
+   "sampled": [
+    "Harry Potter",
+    "Harry Potter",
+    "Hogwarts",
+    "Hogwarts",
+    "Hogwarts",
+    "Hogwarts",
+    "Hogwarts",
+    "Harry Potter",
+    "Harry Potter",
+    "Hogwarts"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.6,
+   "pass": false
+  },
+  "v2-as-v-057": {
+   "family": "association",
+   "golds": [
+    "boredom"
+   ],
+   "greedy": "Boredom",
+   "sampled": [
+    "Boredom",
+    "Boredom",
+    "Boredom",
+    "Boredom",
+    "Boredom",
+    "Boredom",
+    "Boredom",
+    "Boredom",
+    "Boredom",
+    "Boredom"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-058": {
+   "family": "association",
+   "golds": [
+    "courage"
+   ],
+   "greedy": "Bravery",
+   "sampled": [
+    "Courage",
+    "Courage",
+    "Bravery",
+    "Bravery",
+    "bravery",
+    "Bravery",
+    "Bravery",
+    "Bravery",
+    "Bravery",
+    "Bravery"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.2,
+   "pass": false
+  },
+  "v2-as-v-059": {
+   "family": "association",
+   "golds": [
+    "guilt"
+   ],
+   "greedy": "Guilt",
+   "sampled": [
+    "Guilt",
+    "Guilt",
+    "Guilt",
+    "Guilt",
+    "Guilt",
+    "Guilt",
+    "Guilt",
+    "Guilt",
+    "Guilt",
+    "Guilt"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-060": {
+   "family": "association",
+   "golds": [
+    "gratitude"
+   ],
+   "greedy": "Kindness",
+   "sampled": [
+    "Kindness",
+    "Kindness",
+    "Kindness",
+    "Gratitude",
+    "Pay it forward",
+    "Kindness",
+    "Kindness",
+    "Gratitude",
+    "Gratitude",
+    "Kindness"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.3,
+   "pass": false
+  },
+  "v2-as-v-061": {
+   "family": "association",
+   "golds": [
+    "hunger"
+   ],
+   "greedy": "Hunger",
+   "sampled": [
+    "Hunger",
+    "Hunger",
+    "Hunger",
+    "Hunger",
+    "Hunger",
+    "Hunger",
+    "Hunger",
+    "Hunger",
+    "Hunger",
+    "Hunger"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-062": {
+   "family": "association",
+   "golds": [
+    "horror"
+   ],
+   "greedy": "Horror novel",
+   "sampled": [
+    "Horror novel",
+    "Horror novel",
+    "Horror novel",
+    "Horror novel",
+    "Horror novel",
+    "Horror novel",
+    "Horror novel",
+    "Horror novel",
+    "Horror novel",
+    "Horror novel"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-063": {
+   "family": "association",
+   "golds": [
+    "comedy"
+   ],
+   "greedy": "Comedy",
+   "sampled": [
+    "Comedy",
+    "Farce",
+    "comedy",
+    "Comedy",
+    "Farce",
+    "Comedy",
+    "Comedy",
+    "Farce",
+    "Comedy",
+    "Comedy"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-as-v-064": {
+   "family": "association",
+   "golds": [
+    "fantasy"
+   ],
+   "greedy": "The Lord of the Rings",
+   "sampled": [
+    "Tolkien",
+    "High Fantasy",
+    "Lord of the Rings",
+    "Fantasy",
+    "Fantasy",
+    "Fantasy",
+    "Fantasy",
+    "Fantasy",
+    "High Fantasy",
+    "The Lord of the Rings"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-as-v-066": {
+   "family": "association",
+   "golds": [
+    "loneliness"
+   ],
+   "greedy": "Loneliness",
+   "sampled": [
+    "Loneliness",
+    "Loneliness",
+    "Loneliness",
+    "Loneliness",
+    "Loneliness",
+    "Loneliness",
+    "Loneliness",
+    "Loneliness",
+    "loneliness",
+    "Loneliness"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-067": {
+   "family": "association",
+   "golds": [
+    "forgiveness"
+   ],
+   "greedy": "Reconciliation",
+   "sampled": [
+    "Reconciliation",
+    "Reconciliation",
+    "Reconciliation",
+    "Reconciliation",
+    "Reconciliation",
+    "Reconciliation",
+    "Reconciliation",
+    "Reconciliation",
+    "Reconciliation",
+    "Reconciliation"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-v-068": {
+   "family": "association",
+   "golds": [
+    "Feuer"
+   ],
+   "greedy": "Feuer",
+   "sampled": [
+    "Feuer",
+    "Feuer",
+    "Brands",
+    "Feuer",
+    "Brand",
+    "Feuer",
+    "Feuer",
+    "Fire",
+    "Feuer",
+    "Feuer"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-as-v-070": {
+   "family": "association",
+   "golds": [
+    "invierno"
+   ],
+   "greedy": "Invierno",
+   "sampled": [
+    "Invierno",
+    "El invierno",
+    "Invierno",
+    "Invierno",
+    "Invierno",
+    "Invierno",
+    "Invierno",
+    "Invierno",
+    "Invierno",
+    "Invierno"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-071": {
+   "family": "association",
+   "golds": [
+    "caballo"
+   ],
+   "greedy": "Caballo",
+   "sampled": [
+    "Un caballo",
+    "Caballo",
+    "Caballo",
+    "Caballo",
+    "caballo",
+    "Caballo",
+    "Caballo",
+    "Caballo",
+    "Un caballo",
+    "caballo"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-072": {
+   "family": "association",
+   "golds": [
+    "chuva"
+   ],
+   "greedy": "Chuva",
+   "sampled": [
+    "Chuva",
+    "A chuva",
+    "chuva",
+    "A chuva",
+    "Rain",
+    "A chuva",
+    "A chuva",
+    "A chuva",
+    "Chuva",
+    "Chuva"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-as-v-073": {
+   "family": "association",
+   "golds": [
+    "cheval"
+   ],
+   "greedy": "Cheval",
+   "sampled": [
+    "cheval",
+    "cheval",
+    "un cheval",
+    "cheval",
+    "Cheval",
+    "Un cheval",
+    "cheval",
+    "Cheval",
+    "Cheval",
+    "Cheval"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-v-074": {
+   "family": "association",
+   "golds": [
+    "hiver"
+   ],
+   "greedy": "l'hiver",
+   "sampled": [
+    "La neige",
+    "l'hiver",
+    "L'hiver",
+    "L'hiver",
+    "Un bonhomme de neige",
+    "Neige",
+    "L'hiver",
+    "La neige",
+    "l'hiver",
+    "L'hiver"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.6,
+   "pass": false
+  },
+  "v2-as-w-007": {
+   "family": "association",
+   "golds": [
+    "tattoo"
+   ],
+   "greedy": "Tattoo",
+   "sampled": [
+    "tattoo",
+    "Tattoo",
+    "Tattoo",
+    "Tattoo",
+    "Tattoo",
+    "Tattoo",
+    "Tattoo",
+    "Tattoo",
+    "A tattoo",
+    "Tattoo"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-010": {
+   "family": "association",
+   "golds": [
+    "tutoring"
+   ],
+   "greedy": "Tutoring",
+   "sampled": [
+    "Tutoring",
+    "Tutoring",
+    "Tutoring",
+    "Tutoring",
+    "Tutoring",
+    "Tutoring",
+    "Tutoring",
+    "Tutoring",
+    "Tutoring",
+    "Tutoring"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-011": {
+   "family": "association",
+   "golds": [
+    "plumbing"
+   ],
+   "greedy": "Plumber",
+   "sampled": [
+    "Plumber",
+    "Plumber",
+    "plumber",
+    "Plumber",
+    "plumber",
+    "Plumber",
+    "Plumber",
+    "Plumbing",
+    "Plumber",
+    "Plumber"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-as-w-013": {
+   "family": "association",
+   "golds": [
+    "racing"
+   ],
+   "greedy": "Formula One",
+   "sampled": [
+    "Formula One",
+    "Formula One racing",
+    "Formula One",
+    "Formula One race",
+    "Formula One",
+    "Formula One",
+    "Formula One",
+    "Formula One",
+    "Formula 1",
+    "Formula One racing"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.2,
+   "pass": false
+  },
+  "v2-as-w-014": {
+   "family": "association",
+   "golds": [
+    "recycling"
+   ],
+   "greedy": "recycling",
+   "sampled": [
+    "recycling",
+    "recycling",
+    "recycling",
+    "recycling",
+    "recycling",
+    "recycling",
+    "recycling",
+    "recycling",
+    "recycling",
+    "Recycling"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-015": {
+   "family": "association",
+   "golds": [
+    "picnic"
+   ],
+   "greedy": "picnic",
+   "sampled": [
+    "picnic",
+    "picnic",
+    "picnic",
+    "A picnic",
+    "picnic",
+    "picnic",
+    "picnic",
+    "picnic",
+    "picnic",
+    "picnic"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-027": {
+   "family": "association",
+   "golds": [
+    "pharmacy"
+   ],
+   "greedy": "Pharmacy",
+   "sampled": [
+    "Pharmacy",
+    "Antibiotics",
+    "Pharmacy",
+    "Pharmacy",
+    "Aspirin",
+    "Pharmacy",
+    "Pharmacy",
+    "Pills",
+    "Pharmacy",
+    "Phenytoin"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.6,
+   "pass": false
+  },
+  "v2-as-w-028": {
+   "family": "association",
+   "golds": [
+    "prom"
+   ],
+   "greedy": "Prom",
+   "sampled": [
+    "Prom",
+    "Prom",
+    "Prom",
+    "Prom",
+    "Prom",
+    "Prom",
+    "prom",
+    "Prom",
+    "Prom",
+    "Homecoming"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-as-w-031": {
+   "family": "association",
+   "golds": [
+    "stadium"
+   ],
+   "greedy": "Football match",
+   "sampled": [
+    "A football match",
+    "Football",
+    "Football match",
+    "Football match",
+    "A soccer match",
+    "Football stadium",
+    "football",
+    "Football match",
+    "football match",
+    "Football match"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-as-w-034": {
+   "family": "association",
+   "golds": [
+    "orchard"
+   ],
+   "greedy": "An orchard",
+   "sampled": [
+    "Harvest",
+    "Apple orchard",
+    "Harvest",
+    "Apple orchard",
+    "An orchard",
+    "Harvest",
+    "An orchard",
+    "An orchard",
+    "Apple orchard",
+    "An orchard"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-as-w-035": {
+   "family": "association",
+   "golds": [
+    "pyramid"
+   ],
+   "greedy": "Pyramid",
+   "sampled": [
+    "Pyramid",
+    "Pyramid",
+    "The Great Pyramid of Giza",
+    "pyramid",
+    "Pyramid",
+    "pyramid",
+    "Pyramid",
+    "pyramid",
+    "pyramid",
+    "Pyramid"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-036": {
+   "family": "association",
+   "golds": [
+    "quarantine"
+   ],
+   "greedy": "quarantine",
+   "sampled": [
+    "quarantine",
+    "quarantine",
+    "quarantine",
+    "quarantine",
+    "quarantine",
+    "quarantine",
+    "Quarantine",
+    "quarantine",
+    "quarantine",
+    "quarantine"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-038": {
+   "family": "association",
+   "golds": [
+    "tavern"
+   ],
+   "greedy": "Tavern",
+   "sampled": [
+    "Pub",
+    "pub",
+    "Tavern",
+    "Inn",
+    "inn",
+    "Tavern",
+    "tavern",
+    "Tavern",
+    "Tavern",
+    "Tavern"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.6,
+   "pass": false
+  },
+  "v2-as-w-039": {
+   "family": "association",
+   "golds": [
+    "theater"
+   ],
+   "greedy": "Theater",
+   "sampled": [
+    "play",
+    "play",
+    "Theater",
+    "Theater",
+    "A play",
+    "Play",
+    "theater",
+    "theater",
+    "a play",
+    "Play"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.4,
+   "pass": false
+  },
+  "v2-as-w-041": {
+   "family": "association",
+   "golds": [
+    "nursery"
+   ],
+   "greedy": "Baby shower",
+   "sampled": [
+    "nursery",
+    "Baby shower",
+    "Nursery",
+    "Baby shower",
+    "Nursery",
+    "Baby shower",
+    "Baby shower",
+    "Baby shower",
+    "Baby shower",
+    "nursery"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.4,
+   "pass": false
+  },
+  "v2-as-w-043": {
+   "family": "association",
+   "golds": [
+    "ranch"
+   ],
+   "greedy": "Ranch",
+   "sampled": [
+    "Ranchers",
+    "Cattle drive",
+    "A cowboy",
+    "Ranchers",
+    "Ranch",
+    "Ranch",
+    "Ranching",
+    "Ranch",
+    "Cowboys",
+    "Ranch"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.4,
+   "pass": false
+  },
+  "v2-as-w-044": {
+   "family": "association",
+   "golds": [
+    "rehearsal"
+   ],
+   "greedy": "Rehearsal",
+   "sampled": [
+    "Rehearsal",
+    "rehearsal",
+    "rehearsal",
+    "rehearsal",
+    "rehearsal",
+    "rehearsal",
+    "Rehearsal",
+    "Rehearsal",
+    "Rehearsal",
+    "Rehearsal"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-045": {
+   "family": "association",
+   "golds": [
+    "swamp"
+   ],
+   "greedy": "Alligator",
+   "sampled": [
+    "Alligator",
+    "Alligator",
+    "Alligator",
+    "Alligator",
+    "Alligator",
+    "Alligator",
+    "Alligator",
+    "Alligator",
+    "alligator",
+    "Florida"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-w-046": {
+   "family": "association",
+   "golds": [
+    "Newton"
+   ],
+   "greedy": "gravity",
+   "sampled": [
+    "gravity",
+    "gravity",
+    "gravity",
+    "gravity",
+    "gravity",
+    "Gravity",
+    "Gravity",
+    "gravity",
+    "Gravity",
+    "Gravity"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-w-047": {
+   "family": "association",
+   "golds": [
+    "Pluto"
+   ],
+   "greedy": "Pluto",
+   "sampled": [
+    "Pluto",
+    "Pluto",
+    "Pluto",
+    "Pluto",
+    "Pluto",
+    "Pluto",
+    "Pluto",
+    "Pluto",
+    "Pluto",
+    "Pluto"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-049": {
+   "family": "association",
+   "golds": [
+    "Santa"
+   ],
+   "greedy": "Santa Claus",
+   "sampled": [
+    "Santa Claus",
+    "Santa Claus",
+    "Santa Claus",
+    "Santa Claus",
+    "Santa Claus",
+    "Santa Claus",
+    "Santa Claus",
+    "Santa Claus",
+    "Santa Claus",
+    "Santa Claus"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-051": {
+   "family": "association",
+   "golds": [
+    "Texas"
+   ],
+   "greedy": "Texas",
+   "sampled": [
+    "Texas",
+    "Texas",
+    "Texas",
+    "Texas",
+    "Texas",
+    "Texas",
+    "Texas",
+    "Texas",
+    "Texas",
+    "Texas"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-052": {
+   "family": "association",
+   "golds": [
+    "Tolkien"
+   ],
+   "greedy": "The Lord of the Rings",
+   "sampled": [
+    "The Lord of the Rings",
+    "The Lord of the Rings",
+    "The Hobbit",
+    "The Lord of the Rings",
+    "The Lord of the Rings",
+    "The Lord of the Rings",
+    "The Hobbit",
+    "The Lord of the Rings",
+    "The Lord of the Rings",
+    "The Lord of the Rings"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-w-056": {
+   "family": "association",
+   "golds": [
+    "Rome"
+   ],
+   "greedy": "Rome",
+   "sampled": [
+    "Rome",
+    "Rome",
+    "Rome",
+    "Rome",
+    "Rome",
+    "Romulus and Remus",
+    "Rome",
+    "Rome",
+    "Rome",
+    "Rome"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-as-w-057": {
+   "family": "association",
+   "golds": [
+    "pride"
+   ],
+   "greedy": "Pride",
+   "sampled": [
+    "Proud father",
+    "Pride",
+    "Pride",
+    "Father",
+    "Pride",
+    "Pride",
+    "Father",
+    "Proud father",
+    "Pride",
+    "Father"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.5,
+   "pass": false
+  },
+  "v2-as-w-058": {
+   "family": "association",
+   "golds": [
+    "shame"
+   ],
+   "greedy": "Embarrassment",
+   "sampled": [
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-w-059": {
+   "family": "association",
+   "golds": [
+    "surprise"
+   ],
+   "greedy": "A surprise party",
+   "sampled": [
+    "Surprise party",
+    "A surprise party",
+    "surprise party",
+    "A surprise party",
+    "A surprise party",
+    "Surprise party",
+    "A surprise party",
+    "Surprise party",
+    "Surprise party",
+    "Surprise party"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-060": {
+   "family": "association",
+   "golds": [
+    "trust"
+   ],
+   "greedy": "Trust",
+   "sampled": [
+    "Trust",
+    "Trust",
+    "Trust",
+    "Trust",
+    "Trust",
+    "Trust",
+    "Trust",
+    "Trust",
+    "Trust",
+    "Trust fall"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-061": {
+   "family": "association",
+   "golds": [
+    "solitude"
+   ],
+   "greedy": "Solitude",
+   "sampled": [
+    "widower",
+    "Solitude",
+    "loneliness",
+    "Silence",
+    "Solitude",
+    "Solitude",
+    "Solitude",
+    "Loneliness",
+    "silence",
+    "Recluse"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.4,
+   "pass": false
+  },
+  "v2-as-w-062": {
+   "family": "association",
+   "golds": [
+    "patience"
+   ],
+   "greedy": "Patience",
+   "sampled": [
+    "Patience",
+    "Patience",
+    "Patience",
+    "Patience",
+    "Patience",
+    "Patience",
+    "Patience",
+    "Patience",
+    "patience",
+    "patience"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-063": {
+   "family": "association",
+   "golds": [
+    "revenge"
+   ],
+   "greedy": "Revenge",
+   "sampled": [
+    "Revenge",
+    "Revenge",
+    "Revenge",
+    "Revenge",
+    "Revenge",
+    "Revenge",
+    "Revenge",
+    "Revenge",
+    "Revenge",
+    "Revenge"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-064": {
+   "family": "association",
+   "golds": [
+    "surrender"
+   ],
+   "greedy": "Surrender",
+   "sampled": [
+    "Surrender",
+    "Surrender",
+    "Surrender",
+    "Surrender",
+    "Surrender",
+    "Surrender",
+    "Surrender",
+    "Surrender",
+    "Surrender",
+    "Surrender"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-065": {
+   "family": "association",
+   "golds": [
+    "victory"
+   ],
+   "greedy": "Victory",
+   "sampled": [
+    "soccer",
+    "Victory",
+    "victory",
+    "Victory",
+    "victory",
+    "victory",
+    "Victory",
+    "Victory",
+    "Victory",
+    "Victory"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-as-w-067": {
+   "family": "association",
+   "golds": [
+    "theft"
+   ],
+   "greedy": "burglary",
+   "sampled": [
+    "A burglary",
+    "burglary",
+    "A burglary",
+    "burglary",
+    "A burglary",
+    "a burglary",
+    "Burglary",
+    "Burglary",
+    "Burglary",
+    "A burglary"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-w-068": {
+   "family": "association",
+   "golds": [
+    "Schnee"
+   ],
+   "greedy": "Schnee",
+   "sampled": [
+    "Schnee",
+    "Schnee",
+    "Schnee",
+    "Schnee",
+    "Schnee",
+    "Schnee",
+    "Schnee",
+    "Schnee",
+    "Schnee",
+    "Schnee"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-069": {
+   "family": "association",
+   "golds": [
+    "Schule"
+   ],
+   "greedy": "Schulkind",
+   "sampled": [
+    "Schulbeginn",
+    "Schulkind",
+    "Schulkind",
+    "Schulbeginn",
+    "Schülerin",
+    "Schulbeginn",
+    "Schulkind",
+    "Schulkind",
+    "Schülerin",
+    "Schulbeginn"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-w-070": {
+   "family": "association",
+   "golds": [
+    "tormenta"
+   ],
+   "greedy": "Huracán",
+   "sampled": [
+    "Huracán",
+    "una tormenta",
+    "Una tormenta",
+    "Tormenta",
+    "huracán",
+    "Huracán",
+    "huracán",
+    "Huracán",
+    "Huracán",
+    "Huracán"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.3,
+   "pass": false
+  },
+  "v2-as-w-071": {
+   "family": "association",
+   "golds": [
+    "toro"
+   ],
+   "greedy": "Corrida de toros",
+   "sampled": [
+    "Corrida de toros",
+    "La corrida de toros",
+    "toro",
+    "Corrida de toros",
+    "Corrida de toros",
+    "Corrida de toros",
+    "Corrida de toros",
+    "La corrida de toros",
+    "toro",
+    "Corrida de toros"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-072": {
+   "family": "association",
+   "golds": [
+    "spiaggia"
+   ],
+   "greedy": "La spiaggia",
+   "sampled": [
+    "La spiaggia",
+    "La spiaggia",
+    "La spiaggia",
+    "La spiaggia",
+    "La spiaggia",
+    "La spiaggia",
+    "La spiaggia",
+    "spiaggia",
+    "La spiaggia",
+    "La spiaggia"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-073": {
+   "family": "association",
+   "golds": [
+    "pluie"
+   ],
+   "greedy": "La pluie",
+   "sampled": [
+    "La pluie",
+    "La pluie",
+    "La pluie",
+    "pluie",
+    "la pluie",
+    "La pluie",
+    "La pluie",
+    "La pluie",
+    "La pluie",
+    "La pluie"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-w-074": {
+   "family": "association",
+   "golds": [
+    "soleil"
+   ],
+   "greedy": "l'été",
+   "sampled": [
+    "L'été",
+    "L'été",
+    "l'été",
+    "Midi",
+    "L'été",
+    "L'été",
+    "l'été",
+    "l'été",
+    "L'été",
+    "L'été"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-w-075": {
+   "family": "association",
+   "golds": [
+    "neve"
+   ],
+   "greedy": "Inverno",
+   "sampled": [
+    "Winter",
+    "Natal",
+    "Inverno",
+    "Neve",
+    "Inverno",
+    "Natal",
+    "Inverno",
+    "O Inverno",
+    "Natal",
+    "Inverno"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-as-x-001": {
+   "family": "association",
+   "golds": [
+    "baking"
+   ],
+   "greedy": "Biscuits",
+   "sampled": [
+    "Croissants",
+    "bread",
+    "Biscuits",
+    "bread",
+    "bread",
+    "Cookies",
+    "bread",
+    "bread",
+    "Croissants",
+    "Croissants"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-002": {
+   "family": "association",
+   "golds": [
+    "gambling"
+   ],
+   "greedy": "Roulette",
+   "sampled": [
+    "Roulette",
+    "Roulette",
+    "Roulette",
+    "Roulette",
+    "Roulette",
+    "Roulette",
+    "Roulette",
+    "Roulette",
+    "Roulette",
+    "Roulette"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-003": {
+   "family": "association",
+   "golds": [
+    "singing"
+   ],
+   "greedy": "Singing",
+   "sampled": [
+    "karaoke",
+    "Singing",
+    "Karaoke",
+    "Singing",
+    "Singing",
+    "Singing in the shower",
+    "Bathroom acoustics",
+    "Singing",
+    "Karaoke",
+    "Singing"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.6,
+   "pass": false
+  },
+  "v2-as-x-004": {
+   "family": "association",
+   "golds": [
+    "shopping"
+   ],
+   "greedy": "Shopping",
+   "sampled": [
+    "Shopping",
+    "Black Friday shopping",
+    "Shopping",
+    "Shopping",
+    "Black Friday shopping",
+    "Shopping",
+    "shopping",
+    "Black Friday",
+    "Shopping",
+    "Shopping"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-as-x-005": {
+   "family": "association",
+   "golds": [
+    "woodworking"
+   ],
+   "greedy": "Planing",
+   "sampled": [
+    "Hand plane",
+    "Planing",
+    "planing",
+    "planing",
+    "Planing",
+    "planing",
+    "Planing",
+    "planing",
+    "Plane",
+    "Planing"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-006": {
+   "family": "association",
+   "golds": [
+    "brewing"
+   ],
+   "greedy": "beer",
+   "sampled": [
+    "beer",
+    "beer",
+    "beer",
+    "beer",
+    "beer",
+    "beer",
+    "Beer",
+    "beer",
+    "beer",
+    "beer"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-007": {
+   "family": "association",
+   "golds": [
+    "running"
+   ],
+   "greedy": "Running",
+   "sampled": [
+    "Running",
+    "Running",
+    "Running",
+    "Running",
+    "Jogging",
+    "Jogging",
+    "Running",
+    "Jogging",
+    "Running",
+    "Running"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-as-x-008": {
+   "family": "association",
+   "golds": [
+    "shooting"
+   ],
+   "greedy": "Shooting",
+   "sampled": [
+    "shooting",
+    "Shooting range",
+    "Marksmanship",
+    "Target practice",
+    "Shooting",
+    "Target practice",
+    "Target practice",
+    "Shooting",
+    "Shooting",
+    "Shooting range"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.6,
+   "pass": false
+  },
+  "v2-as-x-009": {
+   "family": "association",
+   "golds": [
+    "roofing"
+   ],
+   "greedy": "roof",
+   "sampled": [
+    "roof",
+    "Shingling a roof",
+    "roof",
+    "roof",
+    "Roof",
+    "roof",
+    "roof",
+    "roof",
+    "roof",
+    "roof"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-010": {
+   "family": "association",
+   "golds": [
+    "paving"
+   ],
+   "greedy": "Road paving",
+   "sampled": [
+    "Road construction",
+    "Road paving",
+    "Paver",
+    "Road paving",
+    "Road paving",
+    "Road paving",
+    "Road construction",
+    "Road paving",
+    "Road paving",
+    "Paving"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-as-x-011": {
+   "family": "association",
+   "golds": [
+    "trapping"
+   ],
+   "greedy": "trap",
+   "sampled": [
+    "snares",
+    "trap",
+    "A trap",
+    "snares",
+    "fur trap",
+    "trap",
+    "trapping",
+    "trap",
+    "bear trap",
+    "snares"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-as-x-012": {
+   "family": "association",
+   "golds": [
+    "flying"
+   ],
+   "greedy": "airplane",
+   "sampled": [
+    "Flight",
+    "airplane",
+    "glider",
+    "airplane",
+    "glider",
+    "airplane",
+    "airplane",
+    "Flying",
+    "airplane",
+    "airplane"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-as-x-013": {
+   "family": "association",
+   "golds": [
+    "soccer"
+   ],
+   "greedy": "Soccer",
+   "sampled": [
+    "Football",
+    "Football",
+    "Soccer",
+    "soccer",
+    "Soccer",
+    "Soccer",
+    "Soccer goal",
+    "Football",
+    "Soccer",
+    "Soccer"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-as-x-014": {
+   "family": "association",
+   "golds": [
+    "basketball"
+   ],
+   "greedy": "Basketball",
+   "sampled": [
+    "Basketball",
+    "Basketball",
+    "Basketball",
+    "basketball",
+    "basketball",
+    "basketball",
+    "Basketball",
+    "basketball",
+    "Basketball",
+    "Basketball"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-015": {
+   "family": "association",
+   "golds": [
+    "softball"
+   ],
+   "greedy": "softball",
+   "sampled": [
+    "softball",
+    "softball",
+    "softball",
+    "softball",
+    "Softball",
+    "Softball",
+    "softball",
+    "Softball",
+    "softball",
+    "softball"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-016": {
+   "family": "association",
+   "golds": [
+    "studying"
+   ],
+   "greedy": "Studying",
+   "sampled": [
+    "Studying",
+    "Studying",
+    "Studying",
+    "studying",
+    "studying",
+    "Studying",
+    "studying",
+    "Studying",
+    "Studying",
+    "Studying"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-017": {
+   "family": "association",
+   "golds": [
+    "teaching"
+   ],
+   "greedy": "Teacher",
+   "sampled": [
+    "Teacher",
+    "Teacher",
+    "Teaching",
+    "Teaching",
+    "Teacher",
+    "Teacher",
+    "Teacher",
+    "Teacher",
+    "Teacher",
+    "Teacher"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.2,
+   "pass": false
+  },
+  "v2-as-x-018": {
+   "family": "association",
+   "golds": [
+    "preaching"
+   ],
+   "greedy": "Sermon",
+   "sampled": [
+    "Preaching",
+    "Preaching",
+    "A sermon",
+    "Preacher",
+    "Sermon",
+    "Sermon",
+    "Sermon",
+    "Sermon",
+    "Preaching",
+    "Sermon"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.3,
+   "pass": false
+  },
+  "v2-as-x-019": {
+   "family": "association",
+   "golds": [
+    "prayer"
+   ],
+   "greedy": "Prayer",
+   "sampled": [
+    "prayer",
+    "Prayer",
+    "Prayer",
+    "prayer",
+    "prayer",
+    "prayer",
+    "prayer",
+    "prayer",
+    "Prayer",
+    "prayer"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-020": {
+   "family": "association",
+   "golds": [
+    "digging"
+   ],
+   "greedy": "Digging a grave",
+   "sampled": [
+    "Digging a grave",
+    "Digging",
+    "Digging a grave",
+    "Digging a grave",
+    "Digging",
+    "Digging a grave",
+    "Digging a grave",
+    "Digging",
+    "Digging",
+    "Digging a hole"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-021": {
+   "family": "association",
+   "golds": [
+    "sweeping"
+   ],
+   "greedy": "broom",
+   "sampled": [
+    "broom",
+    "broom",
+    "broom",
+    "broom",
+    "broom",
+    "broom",
+    "broom",
+    "broom",
+    "broom",
+    "broom"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-022": {
+   "family": "association",
+   "golds": [
+    "gossip"
+   ],
+   "greedy": "Gossip",
+   "sampled": [
+    "Gossip",
+    "Gossip",
+    "Gossip",
+    "Gossip",
+    "Gossip",
+    "Gossip",
+    "Gossip",
+    "Gossip",
+    "Gossip",
+    "Gossip"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-023": {
+   "family": "association",
+   "golds": [
+    "bargaining"
+   ],
+   "greedy": "Haggling",
+   "sampled": [
+    "Bargaining",
+    "Haggling",
+    "Haggling",
+    "Haggling",
+    "Haggling",
+    "Haggling",
+    "Haggling",
+    "Haggling",
+    "Haggling",
+    "Haggling"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-as-x-024": {
+   "family": "association",
+   "golds": [
+    "commuting"
+   ],
+   "greedy": "Commuter",
+   "sampled": [
+    "Commute",
+    "Commuter",
+    "Commuter",
+    "Commuter",
+    "commute",
+    "Commuter",
+    "commute",
+    "Commuter",
+    "commute",
+    "a commute"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-025": {
+   "family": "association",
+   "golds": [
+    "flirting"
+   ],
+   "greedy": "Flirting",
+   "sampled": [
+    "Flirting",
+    "Flirting",
+    "Flirting",
+    "Flirting",
+    "Flirting",
+    "Flirting",
+    "Flirting",
+    "Flirting",
+    "Flirting",
+    "Flirting"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-026": {
+   "family": "association",
+   "golds": [
+    "begging"
+   ],
+   "greedy": "Beggar",
+   "sampled": [
+    "begging",
+    "Begging",
+    "beggar",
+    "Beggar",
+    "homelessness",
+    "Beggar",
+    "a homeless man",
+    "a homeless man",
+    "beggar",
+    "Homeless man"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.2,
+   "pass": false
+  },
+  "v2-as-x-027": {
+   "family": "association",
+   "golds": [
+    "smuggling"
+   ],
+   "greedy": "Smuggling",
+   "sampled": [
+    "Smuggling",
+    "Smuggling",
+    "Smuggling",
+    "Smuggling",
+    "Smuggling",
+    "Smuggling",
+    "smuggling",
+    "smuggling",
+    "Smuggling",
+    "Smuggling"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-028": {
+   "family": "association",
+   "golds": [
+    "cheating"
+   ],
+   "greedy": "Cheating",
+   "sampled": [
+    "Cheating",
+    "Cheating",
+    "Cheating",
+    "Cheating",
+    "Cheating",
+    "Cheating",
+    "Cheating",
+    "Cheating",
+    "Cheating",
+    "Cheating"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-029": {
+   "family": "association",
+   "golds": [
+    "spying"
+   ],
+   "greedy": "Spy",
+   "sampled": [
+    "Spy",
+    "Espionage",
+    "Spy",
+    "Spy",
+    "Espionage",
+    "Spy",
+    "Espionage",
+    "Espionage",
+    "Spy",
+    "Espionage"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-030": {
+   "family": "association",
+   "golds": [
+    "nursing"
+   ],
+   "greedy": "Nurse",
+   "sampled": [
+    "Nurse",
+    "Nurse",
+    "Nurse",
+    "Nurse",
+    "Nurse",
+    "Nurse",
+    "nurse",
+    "Nurse",
+    "Nurse",
+    "Nurse"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-031": {
+   "family": "association",
+   "golds": [
+    "coaching"
+   ],
+   "greedy": "Coach",
+   "sampled": [
+    "Coach",
+    "Coach",
+    "Coach",
+    "Coach",
+    "Coach",
+    "Football coach",
+    "Coach",
+    "Coach",
+    "Coach",
+    "Coach"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-032": {
+   "family": "association",
+   "golds": [
+    "cheering"
+   ],
+   "greedy": "Football match",
+   "sampled": [
+    "Football match",
+    "Football match",
+    "Football",
+    "Football",
+    "a football match",
+    "Football",
+    "Football match",
+    "soccer",
+    "Soccer",
+    "Football match"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-033": {
+   "family": "association",
+   "golds": [
+    "barn"
+   ],
+   "greedy": "Barn",
+   "sampled": [
+    "Barn",
+    "Barn",
+    "Barn",
+    "Barn",
+    "Barn",
+    "Barn",
+    "Barn",
+    "Barn",
+    "A barn",
+    "Barn"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-034": {
+   "family": "association",
+   "golds": [
+    "school"
+   ],
+   "greedy": "School",
+   "sampled": [
+    "School",
+    "School bell",
+    "School",
+    "School",
+    "School",
+    "School",
+    "School",
+    "school",
+    "School",
+    "School"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-035": {
+   "family": "association",
+   "golds": [
+    "farm"
+   ],
+   "greedy": "Farm",
+   "sampled": [
+    "Farm",
+    "Rural life",
+    "Farm",
+    "Farm",
+    "Farm",
+    "Farm",
+    "A farm",
+    "Farm",
+    "A farm",
+    "Farm"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-as-x-036": {
+   "family": "association",
+   "golds": [
+    "campus"
+   ],
+   "greedy": "University campus",
+   "sampled": [
+    "University campus",
+    "college campus",
+    "college campus",
+    "University campus",
+    "University",
+    "University campus",
+    "University campus",
+    "College campus",
+    "University",
+    "University campus"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-as-x-037": {
+   "family": "association",
+   "golds": [
+    "monastery"
+   ],
+   "greedy": "Monastery",
+   "sampled": [
+    "Monastery",
+    "Monastery",
+    "Monastery",
+    "monastery",
+    "Monastery",
+    "Benedictine monastery",
+    "Benedictine monastery",
+    "Monastery",
+    "Monastery",
+    "Buddhism"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-as-x-038": {
+   "family": "association",
+   "golds": [
+    "cathedral"
+   ],
+   "greedy": "church",
+   "sampled": [
+    "Cathedral",
+    "Church",
+    "church",
+    "church",
+    "Church",
+    "Church",
+    "church",
+    "church",
+    "Church",
+    "church"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-as-x-039": {
+   "family": "association",
+   "golds": [
+    "carnival"
+   ],
+   "greedy": "Carnival",
+   "sampled": [
+    "carnival",
+    "Carnival",
+    "Carnival",
+    "Carnival",
+    "Carnival",
+    "Carnival",
+    "Carnival",
+    "Carnival",
+    "Carnival",
+    "Carnival"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-040": {
+   "family": "association",
+   "golds": [
+    "cafeteria"
+   ],
+   "greedy": "cafeteria",
+   "sampled": [
+    "cafeteria",
+    "cafeteria",
+    "cafeteria",
+    "cafeteria",
+    "cafeteria",
+    "cafeteria",
+    "cafeteria",
+    "cafeteria",
+    "cafeteria",
+    "cafeteria"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-041": {
+   "family": "association",
+   "golds": [
+    "gym"
+   ],
+   "greedy": "Gym",
+   "sampled": [
+    "gym",
+    "Gym",
+    "gym",
+    "Gym",
+    "gym",
+    "Gym",
+    "Gym",
+    "gym",
+    "Gym",
+    "A gym"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-042": {
+   "family": "association",
+   "golds": [
+    "salon"
+   ],
+   "greedy": "hair salon",
+   "sampled": [
+    "Barbershop",
+    "barbershop",
+    "Barbershop",
+    "barbershop",
+    "Hair salon",
+    "barbershop",
+    "barbershop",
+    "Barbershop",
+    "hair salon",
+    "hair salon"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.3,
+   "pass": false
+  },
+  "v2-as-x-043": {
+   "family": "association",
+   "golds": [
+    "embassy"
+   ],
+   "greedy": "Embassy",
+   "sampled": [
+    "Embassy",
+    "Embassy",
+    "Embassy",
+    "Embassy",
+    "Embassy",
+    "Embassy",
+    "Embassy",
+    "Embassy",
+    "Embassy",
+    "Embassy"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-044": {
+   "family": "association",
+   "golds": [
+    "orchestra"
+   ],
+   "greedy": "Orchestra",
+   "sampled": [
+    "orchestra",
+    "orchestra",
+    "Orchestra",
+    "Symphony",
+    "Orchestra",
+    "Symphony",
+    "symphony orchestra",
+    "Symphony orchestra",
+    "orchestra",
+    "Orchestra"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-as-x-045": {
+   "family": "association",
+   "golds": [
+    "courtroom"
+   ],
+   "greedy": "oath",
+   "sampled": [
+    "oath",
+    "oath",
+    "oath",
+    "oath",
+    "oath",
+    "Oath",
+    "oath",
+    "oath",
+    "courtroom",
+    "oath"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-as-x-046": {
+   "family": "association",
+   "golds": [
+    "supermarket"
+   ],
+   "greedy": "Grocery shopping",
+   "sampled": [
+    "Grocery shopping",
+    "Grocery shopping",
+    "Grocery shopping",
+    "Grocery shopping",
+    "shopping",
+    "shopping",
+    "Grocery shopping",
+    "grocery shopping",
+    "Grocery shopping",
+    "Grocery shopping"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-047": {
+   "family": "association",
+   "golds": [
+    "mall"
+   ],
+   "greedy": "Mall",
+   "sampled": [
+    "Shopping mall",
+    "Shopping mall",
+    "Mall",
+    "Mall",
+    "Shopping mall",
+    "Mall",
+    "Mall",
+    "Shopping mall",
+    "Mall",
+    "Mall"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-048": {
+   "family": "association",
+   "golds": [
+    "diner"
+   ],
+   "greedy": "Diner",
+   "sampled": [
+    "Diner",
+    "Diner",
+    "Diner",
+    "Diner",
+    "Diner",
+    "Diner",
+    "Diner",
+    "Diner",
+    "Diner",
+    "Diner"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-049": {
+   "family": "association",
+   "golds": [
+    "cabin"
+   ],
+   "greedy": "Winter",
+   "sampled": [
+    "Winter",
+    "Winter",
+    "Winter",
+    "Winter",
+    "Winter",
+    "Log cabin",
+    "Winter",
+    "Cabin",
+    "Winter",
+    "Winter"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.2,
+   "pass": false
+  },
+  "v2-as-x-050": {
+   "family": "association",
+   "golds": [
+    "tent"
+   ],
+   "greedy": "tent",
+   "sampled": [
+    "tent",
+    "tent",
+    "tent",
+    "tent",
+    "Tent",
+    "tent",
+    "tent",
+    "tent",
+    "tent",
+    "Tent"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-051": {
+   "family": "association",
+   "golds": [
+    "arcade"
+   ],
+   "greedy": "Arcade",
+   "sampled": [
+    "Arcade",
+    "Arcade",
+    "Arcade",
+    "Arcade",
+    "Arcade",
+    "Arcade",
+    "Arcade",
+    "Arcade",
+    "Arcade",
+    "Arcade"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-052": {
+   "family": "association",
+   "golds": [
+    "fortress"
+   ],
+   "greedy": "Castle",
+   "sampled": [
+    "Castle",
+    "Castle",
+    "castle",
+    "castle",
+    "Castle",
+    "Castle",
+    "Castle",
+    "Castle",
+    "Castle",
+    "Castle"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-053": {
+   "family": "association",
+   "golds": [
+    "tunnel"
+   ],
+   "greedy": "Tunnel",
+   "sampled": [
+    "Tunnel",
+    "Tunnel",
+    "Tunnel",
+    "Tunnel exit",
+    "Tunnel",
+    "Emerging from a tunnel",
+    "Tunnel",
+    "Tunnel",
+    "Tunnel",
+    "Tunnel"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-054": {
+   "family": "association",
+   "golds": [
+    "beach"
+   ],
+   "greedy": "Beach",
+   "sampled": [
+    "Beach",
+    "Beach",
+    "The beach",
+    "Beach",
+    "Beach",
+    "Beach",
+    "Beach",
+    "The beach",
+    "Beach",
+    "The beach"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-055": {
+   "family": "association",
+   "golds": [
+    "riot"
+   ],
+   "greedy": "Riot",
+   "sampled": [
+    "Riot",
+    "Riot",
+    "Riot",
+    "Riot",
+    "Riot",
+    "Riot",
+    "Riot",
+    "Riot",
+    "Riot",
+    "Riot"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-056": {
+   "family": "association",
+   "golds": [
+    "protest"
+   ],
+   "greedy": "Protest",
+   "sampled": [
+    "Protest",
+    "Protest",
+    "Protest",
+    "Protest",
+    "Protest",
+    "Protest",
+    "Protest",
+    "Protest",
+    "Protest",
+    "Protest"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-057": {
+   "family": "association",
+   "golds": [
+    "siege"
+   ],
+   "greedy": "Siege",
+   "sampled": [
+    "Siege",
+    "Siege",
+    "Siege",
+    "Siege",
+    "Siege",
+    "Siege",
+    "Siege",
+    "siege",
+    "siege",
+    "Siege"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-058": {
+   "family": "association",
+   "golds": [
+    "duel"
+   ],
+   "greedy": "Duel",
+   "sampled": [
+    "Duel",
+    "Duel",
+    "Duel",
+    "Duel",
+    "Duel",
+    "Duel",
+    "duel",
+    "duel",
+    "Duel",
+    "Duel"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-059": {
+   "family": "association",
+   "golds": [
+    "envy"
+   ],
+   "greedy": "Jealousy",
+   "sampled": [
+    "Jealousy",
+    "Envy",
+    "Envy",
+    "Jealousy",
+    "Jealousy",
+    "Jealousy",
+    "Jealousy",
+    "Jealousy",
+    "Jealousy",
+    "Jealousy"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.2,
+   "pass": false
+  },
+  "v2-as-x-060": {
+   "family": "association",
+   "golds": [
+    "relief"
+   ],
+   "greedy": "Relief",
+   "sampled": [
+    "Relief",
+    "Relief",
+    "Relief",
+    "Relief",
+    "Relief",
+    "Relief",
+    "Relief",
+    "Relief",
+    "Relief",
+    "Relief"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-061": {
+   "family": "association",
+   "golds": [
+    "pregnancy"
+   ],
+   "greedy": "Pregnancy",
+   "sampled": [
+    "Pregnancy",
+    "Pregnancy",
+    "Pregnancy",
+    "Pregnancy",
+    "Pregnancy",
+    "Pregnancy",
+    "Pregnancy",
+    "Pregnancy",
+    "Pregnancy",
+    "Pregnancy"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-062": {
+   "family": "association",
+   "golds": [
+    "betrayal"
+   ],
+   "greedy": "Betrayal",
+   "sampled": [
+    "Betrayal",
+    "Betrayal",
+    "Betrayal",
+    "Betrayal",
+    "Betrayal",
+    "Betrayal",
+    "Betrayal",
+    "Betrayal",
+    "Betrayal",
+    "Betrayal"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-063": {
+   "family": "association",
+   "golds": [
+    "optimism"
+   ],
+   "greedy": "Hope",
+   "sampled": [
+    "Optimism",
+    "Hope",
+    "Hope",
+    "Hope",
+    "Hope",
+    "Hope",
+    "Hope",
+    "Optimism",
+    "Optimism",
+    "Optimism"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.4,
+   "pass": false
+  },
+  "v2-as-x-064": {
+   "family": "association",
+   "golds": [
+    "embarrassment"
+   ],
+   "greedy": "Embarrassment",
+   "sampled": [
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment",
+    "Embarrassment"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-as-x-065": {
+   "family": "association",
+   "golds": [
+    "sympathy"
+   ],
+   "greedy": "Empathy",
+   "sampled": [
+    "Empathy",
+    "Empathy",
+    "Empathy",
+    "Empathy",
+    "Empathy",
+    "Empathy",
+    "Empathy",
+    "Empathy",
+    "Empathy",
+    "Empathy"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-066": {
+   "family": "association",
+   "golds": [
+    "awe"
+   ],
+   "greedy": "Awe",
+   "sampled": [
+    "The Overview Effect",
+    "Awe",
+    "Silence",
+    "The overview effect",
+    "Awe",
+    "Awe",
+    "Awe",
+    "Stargazing",
+    "Awe",
+    "The sublime"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.5,
+   "pass": false
+  },
+  "v2-as-x-067": {
+   "family": "association",
+   "golds": [
+    "dread"
+   ],
+   "greedy": "Anxiety",
+   "sampled": [
+    "Anxiety",
+    "Anxiety",
+    "Anxiety",
+    "Ominous phone call",
+    "Fear",
+    "Anxiety",
+    "Anxiety",
+    "Fear",
+    "Anxiety",
+    "Anxiety"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-068": {
+   "family": "association",
+   "golds": [
+    "remorse"
+   ],
+   "greedy": "Regret",
+   "sampled": [
+    "Regret",
+    "Regret",
+    "Regret",
+    "Regret",
+    "Regret",
+    "Regret",
+    "Regret",
+    "Regret",
+    "Regret",
+    "Regret"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-as-x-069": {
+   "family": "association",
+   "golds": [
+    "ambition"
+   ],
+   "greedy": "Ambition",
+   "sampled": [
+    "Ambition",
+    "Ambition",
+    "Ambition",
+    "Ambition",
+    "Corporate ladder",
+    "Ambition",
+    "Ambition",
+    "Ambition",
+    "Ambition",
+    "Corporate ladder"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-as-x-070": {
+   "family": "association",
+   "golds": [
+    "addiction"
+   ],
+   "greedy": "Cigarette",
+   "sampled": [
+    "Cigarette",
+    "Cigarette",
+    "Cigarette",
+    "Cigarette",
+    "cigarette",
+    "a cigarette",
+    "Cigarette",
+    "cigarette",
+    "Cigarette",
+    "Cigarette"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-mh-v-005": {
+   "family": "multihop",
+   "golds": [
+    "Vienna"
+   ],
+   "greedy": "Vienna",
+   "sampled": [
+    "Vienna",
+    "Vienna",
+    "Vienna",
+    "Vienna",
+    "Vienna",
+    "Vienna",
+    "Vienna",
+    "Vienna",
+    "Vienna",
+    "Vienna"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-007": {
+   "family": "multihop",
+   "golds": [
+    "Washington"
+   ],
+   "greedy": "Washington",
+   "sampled": [
+    "Washington",
+    "Washington",
+    "Washington",
+    "Washington",
+    "Washington",
+    "Washington",
+    "Washington",
+    "Washington",
+    "Washington D.C.",
+    "Washington D.C."
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-008": {
+   "family": "multihop",
+   "golds": [
+    "Vinci"
+   ],
+   "greedy": "Vinci",
+   "sampled": [
+    "Vinci",
+    "Vinci",
+    "Vinci",
+    "Vinci",
+    "Vincí",
+    "Vinci",
+    "Vinci",
+    "Vinc",
+    "Vinci",
+    "Vinci"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-mh-v-009": {
+   "family": "multihop",
+   "golds": [
+    "Moscow"
+   ],
+   "greedy": "Moscow",
+   "sampled": [
+    "Moscow",
+    "Moscow",
+    "Moscow",
+    "Moscow",
+    "Moscow",
+    "Moscow",
+    "Moscow",
+    "Moscow",
+    "Moscow",
+    "Moscow"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-011": {
+   "family": "multihop",
+   "golds": [
+    "Scrooge"
+   ],
+   "greedy": "Ebenezer Scrooge",
+   "sampled": [
+    "Ebenezer Scrooge",
+    "Ebenezer Scrooge",
+    "Ebenezer Scrooge",
+    "Ebenezer Scrooge",
+    "Ebenezer Scrooge",
+    "Ebenezer Scrooge",
+    "Ebenezer Scrooge",
+    "Ebenezer Scrooge",
+    "Ebenezer Scrooge",
+    "Ebenezer Scrooge"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-013": {
+   "family": "multihop",
+   "golds": [
+    "Virginia"
+   ],
+   "greedy": "Virginia",
+   "sampled": [
+    "Virginia",
+    "Virginia",
+    "Virginia",
+    "Virginia",
+    "Virginia",
+    "Virginia",
+    "Virginia",
+    "Virginia",
+    "Virginia",
+    "Virginia"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-014": {
+   "family": "multihop",
+   "golds": [
+    "Mainz"
+   ],
+   "greedy": "Mainz",
+   "sampled": [
+    "Mainz",
+    "Mainz",
+    "Mainz",
+    "Mainz",
+    "Mainz",
+    "Mainz",
+    "Mainz",
+    "Mainz",
+    "Mainz",
+    "Mainz"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-015": {
+   "family": "multihop",
+   "golds": [
+    "Memphis"
+   ],
+   "greedy": "Memphis",
+   "sampled": [
+    "Memphis",
+    "Memphis",
+    "Memphis",
+    "Memphis",
+    "Memphis",
+    "Memphis",
+    "Memphis",
+    "Memphis",
+    "Memphis",
+    "Memphis"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-017": {
+   "family": "multihop",
+   "golds": [
+    "e"
+   ],
+   "greedy": "e",
+   "sampled": [
+    "e",
+    "e",
+    "e",
+    "e",
+    "e",
+    "e",
+    "e",
+    "e",
+    "e",
+    "e"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-033": {
+   "family": "multihop",
+   "golds": [
+    "32"
+   ],
+   "greedy": "zero",
+   "sampled": [
+    "32",
+    "32",
+    "zero",
+    "zero",
+    "32",
+    "zero",
+    "0",
+    "32",
+    "zero",
+    "32"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.5,
+   "pass": false
+  },
+  "v2-mh-v-034": {
+   "family": "multihop",
+   "golds": [
+    "100"
+   ],
+   "greedy": "100",
+   "sampled": [
+    "100",
+    "100",
+    "100",
+    "100",
+    "100",
+    "Celsius",
+    "100",
+    "100",
+    "212",
+    "100 Celsius"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-mh-v-039": {
+   "family": "multihop",
+   "golds": [
+    "34"
+   ],
+   "greedy": "34",
+   "sampled": [
+    "thirty",
+    "34",
+    "thirty",
+    "thirty",
+    "thirty",
+    "33",
+    "35",
+    "35",
+    "34",
+    "thirty third"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.2,
+   "pass": false
+  },
+  "v2-mh-v-041": {
+   "family": "multihop",
+   "golds": [
+    "eyrie"
+   ],
+   "greedy": "eagle",
+   "sampled": [
+    "eagle",
+    "eagle's nest",
+    "eagle",
+    "eagle",
+    "eagle",
+    "eagle's nest",
+    "eagle",
+    "eagle",
+    "eagle",
+    "eagle"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-mh-v-049": {
+   "family": "multihop",
+   "golds": [
+    "lodge"
+   ],
+   "greedy": "beaver lodge",
+   "sampled": [
+    "beaver lodge",
+    "beaver lodge",
+    "beaver lodge",
+    "lod",
+    "beaver lodge",
+    "lod",
+    "beaver dam",
+    "beaver",
+    "lod",
+    "lod"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.4,
+   "pass": false
+  },
+  "v2-mh-v-050": {
+   "family": "multihop",
+   "golds": [
+    "caterpillar"
+   ],
+   "greedy": "caterpillar",
+   "sampled": [
+    "caterpillar",
+    "caterpillar",
+    "caterpillar",
+    "caterpillar",
+    "caterpillar",
+    "caterpillar",
+    "caterpillar",
+    "caterpillar",
+    "caterpillar",
+    "caterpillar"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-052": {
+   "family": "multihop",
+   "golds": [
+    "claws"
+   ],
+   "greedy": "claws",
+   "sampled": [
+    "claws",
+    "claws",
+    "claws",
+    "claws",
+    "claws",
+    "claws",
+    "claws",
+    "claws",
+    "claws",
+    "claws"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-053": {
+   "family": "multihop",
+   "golds": [
+    "wolf"
+   ],
+   "greedy": "wolf",
+   "sampled": [
+    "wolf",
+    "wolf",
+    "wolf",
+    "wolf",
+    "wolf",
+    "wolf",
+    "wolf",
+    "wolf",
+    "wolf",
+    "wolf"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-056": {
+   "family": "multihop",
+   "golds": [
+    "den"
+   ],
+   "greedy": "den",
+   "sampled": [
+    "den",
+    "den",
+    "den",
+    "den",
+    "den",
+    "den",
+    "den",
+    "den",
+    "den",
+    "den"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-057": {
+   "family": "multihop",
+   "golds": [
+    "G"
+   ],
+   "greedy": "g",
+   "sampled": [
+    "g",
+    "G",
+    "g",
+    "g",
+    "g",
+    "g",
+    "G",
+    "G",
+    "g",
+    "g"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-058": {
+   "family": "multihop",
+   "golds": [
+    "gosling"
+   ],
+   "greedy": "chick",
+   "sampled": [
+    "chick",
+    "chick",
+    "chick",
+    "chick",
+    "chick",
+    "chick",
+    "chick",
+    "chick",
+    "chick",
+    "chick"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-mh-v-062": {
+   "family": "multihop",
+   "golds": [
+    "Panthera"
+   ],
+   "greedy": "Panthera",
+   "sampled": [
+    "Jaguar",
+    "Panthera",
+    "Panthera",
+    "Jaguar",
+    "Panthera",
+    "Jaguar",
+    "Panthera",
+    "Panthera",
+    "Panthera",
+    "Panthera"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-mh-v-063": {
+   "family": "multihop",
+   "golds": [
+    "panther"
+   ],
+   "greedy": "melanistic leopard",
+   "sampled": [
+    "black panther",
+    "melanistic leopard",
+    "melanistic leopard",
+    "melanistic leopard",
+    "panther",
+    "melanistic leopard",
+    "black panther",
+    "melanistic leopard",
+    "panther",
+    "black panther"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.5,
+   "pass": false
+  },
+  "v2-mh-v-064": {
+   "family": "multihop",
+   "golds": [
+    "L"
+   ],
+   "greedy": "L",
+   "sampled": [
+    "L",
+    "L",
+    "L",
+    "L",
+    "L",
+    "L",
+    "L",
+    "L",
+    "L",
+    "L"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-066": {
+   "family": "multihop",
+   "golds": [
+    "ostrich"
+   ],
+   "greedy": "ostrich",
+   "sampled": [
+    "ostrich",
+    "ostrich",
+    "ostrich",
+    "ostrich",
+    "ostrich",
+    "ostrich",
+    "ostrich",
+    "ostrich",
+    "ostrich",
+    "ostrich"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-067": {
+   "family": "multihop",
+   "golds": [
+    "silver"
+   ],
+   "greedy": "silver",
+   "sampled": [
+    "silver",
+    "silver",
+    "silver",
+    "silver",
+    "silver",
+    "silver",
+    "silver",
+    "silver",
+    "silver",
+    "silver"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-071": {
+   "family": "multihop",
+   "golds": [
+    "cornea"
+   ],
+   "greedy": "cornea",
+   "sampled": [
+    "cornea",
+    "cornea",
+    "cornea",
+    "cornea",
+    "cornea",
+    "cornea",
+    "cornea",
+    "cornea",
+    "cornea",
+    "cornea"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-072": {
+   "family": "multihop",
+   "golds": [
+    "stirrup"
+   ],
+   "greedy": "stapes",
+   "sampled": [
+    "stapes",
+    "stapes",
+    "stapes",
+    "stapes",
+    "stapes",
+    "stapes",
+    "stapes",
+    "stapes",
+    "stapes",
+    "stapes"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-mh-v-073": {
+   "family": "multihop",
+   "golds": [
+    "yolk"
+   ],
+   "greedy": "yolk",
+   "sampled": [
+    "yolk",
+    "yolk",
+    "yolk",
+    "yolk",
+    "yolk",
+    "yolk",
+    "yolk",
+    "yolk",
+    "yolk",
+    "yolk"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-074": {
+   "family": "multihop",
+   "golds": [
+    "honeycomb"
+   ],
+   "greedy": "honeycomb",
+   "sampled": [
+    "honeycomb",
+    "honeycomb",
+    "honeycomb",
+    "honeycomb",
+    "honeycomb",
+    "honeycomb",
+    "honeycomb",
+    "honeycomb",
+    "honeycomb",
+    "honeycomb"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-075": {
+   "family": "multihop",
+   "golds": [
+    "eggs"
+   ],
+   "greedy": "eggs",
+   "sampled": [
+    "eggs",
+    "eggs",
+    "eggs",
+    "eggs",
+    "eggs",
+    "eggs",
+    "eggs",
+    "eggs",
+    "eggs",
+    "eggs"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-076": {
+   "family": "multihop",
+   "golds": [
+    "pit"
+   ],
+   "greedy": "seed",
+   "sampled": [
+    "seed",
+    "seed",
+    "seed",
+    "seed",
+    "seed",
+    "seed",
+    "seed",
+    "seed",
+    "pit",
+    "seed"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-mh-v-077": {
+   "family": "multihop",
+   "golds": [
+    "coleslaw"
+   ],
+   "greedy": "coleslaw",
+   "sampled": [
+    "coleslaw",
+    "coleslaw",
+    "coleslaw",
+    "coleslaw",
+    "coleslaw",
+    "coleslaw",
+    "coleslaw",
+    "coleslaw",
+    "coleslaw",
+    "coleslaw"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-078": {
+   "family": "multihop",
+   "golds": [
+    "pickle"
+   ],
+   "greedy": "pickle",
+   "sampled": [
+    "pickle",
+    "pickle",
+    "pickle",
+    "pickle",
+    "pickle",
+    "pickle",
+    "pickle",
+    "pickle",
+    "pickle",
+    "pickle"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-079": {
+   "family": "multihop",
+   "golds": [
+    "Scoville"
+   ],
+   "greedy": "Scoville",
+   "sampled": [
+    "Scoville",
+    "Scoville",
+    "Scoville",
+    "Scoville",
+    "Scoville",
+    "Scoville",
+    "Scoville",
+    "Scoville",
+    "Scoville",
+    "Scoville"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-v-080": {
+   "family": "multihop",
+   "golds": [
+    "Limeys"
+   ],
+   "greedy": "limeys",
+   "sampled": [
+    "Limeys",
+    "limeys",
+    "Limeys",
+    "limeys",
+    "Limeys",
+    "limeys",
+    "limeys",
+    "limeys",
+    "Limeys",
+    "Limeys"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-005": {
+   "family": "multihop",
+   "golds": [
+    "English"
+   ],
+   "greedy": "English",
+   "sampled": [
+    "English",
+    "English",
+    "English",
+    "English",
+    "English",
+    "English",
+    "English",
+    "English",
+    "English",
+    "English"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-007": {
+   "family": "multihop",
+   "golds": [
+    "Norwegian"
+   ],
+   "greedy": "Norwegian",
+   "sampled": [
+    "Norwegian",
+    "Norwegian",
+    "Norwegian",
+    "Norwegian",
+    "Norwegian",
+    "Norwegian",
+    "Norwegian",
+    "Norwegian",
+    "Norwegian",
+    "Norwegian"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-010": {
+   "family": "multihop",
+   "golds": [
+    "Sinai"
+   ],
+   "greedy": "Sinai",
+   "sampled": [
+    "Sinai",
+    "Sinai",
+    "Sinai",
+    "Sinai",
+    "Sinai",
+    "Sinai",
+    "Sinai",
+    "Sinai",
+    "Sinai",
+    "Sinai"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-011": {
+   "family": "multihop",
+   "golds": [
+    "dove"
+   ],
+   "greedy": "dove",
+   "sampled": [
+    "dove",
+    "dove",
+    "dove",
+    "dove",
+    "dove",
+    "dove",
+    "dove",
+    "dove",
+    "dove",
+    "dove"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-012": {
+   "family": "multihop",
+   "golds": [
+    "Victory"
+   ],
+   "greedy": "Victory",
+   "sampled": [
+    "Victory",
+    "Victory",
+    "Victory",
+    "Victory",
+    "Victory",
+    "Victory",
+    "Victory",
+    "Victory",
+    "Victory",
+    "Victory"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-013": {
+   "family": "multihop",
+   "golds": [
+    "Jupiter"
+   ],
+   "greedy": "Jupiter",
+   "sampled": [
+    "Jupiter",
+    "Jupiter",
+    "Jupiter",
+    "Jupiter",
+    "Jupiter",
+    "Jupiter",
+    "Jupiter",
+    "Jupiter",
+    "Jupiter",
+    "Jupiter"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-016": {
+   "family": "multihop",
+   "golds": [
+    "fire"
+   ],
+   "greedy": "fire",
+   "sampled": [
+    "fire",
+    "fire",
+    "fire",
+    "fire",
+    "fire",
+    "fire",
+    "fire",
+    "fire",
+    "fire",
+    "fire"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-019": {
+   "family": "multihop",
+   "golds": [
+    "hammer"
+   ],
+   "greedy": "hammer",
+   "sampled": [
+    "hammer",
+    "hammer",
+    "hammer",
+    "hammer",
+    "hammer",
+    "hammer",
+    "mjolnir",
+    "hammer",
+    "hammer",
+    "hammer"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-w-020": {
+   "family": "multihop",
+   "golds": [
+    "Mecca"
+   ],
+   "greedy": "Mecca",
+   "sampled": [
+    "Mecca",
+    "mecca",
+    "Mecca",
+    "Mecca",
+    "Mecca",
+    "Mecca",
+    "Mecca",
+    "Mecca",
+    "Mecca",
+    "Mecca"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-021": {
+   "family": "multihop",
+   "golds": [
+    "quarter"
+   ],
+   "greedy": "one dollar bill",
+   "sampled": [
+    "one cent coin",
+    "penny",
+    "one dollar",
+    "quarter",
+    "penny",
+    "one dollar bill",
+    "penny",
+    "quarter",
+    "one dollar bill",
+    "cent"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.2,
+   "pass": false
+  },
+  "v2-mh-w-022": {
+   "family": "multihop",
+   "golds": [
+    "bear"
+   ],
+   "greedy": "bear",
+   "sampled": [
+    "bear",
+    "bear",
+    "bear",
+    "bear",
+    "bear",
+    "bear",
+    "bear",
+    "bear",
+    "bear",
+    "bear"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-024": {
+   "family": "multihop",
+   "golds": [
+    "Krypton"
+   ],
+   "greedy": "Krypton",
+   "sampled": [
+    "Krypton",
+    "Krypton",
+    "Krypton",
+    "Krypton",
+    "Krypton",
+    "Krypton",
+    "Krypton",
+    "Krypton",
+    "Krypton",
+    "Krypton"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-030": {
+   "family": "multihop",
+   "golds": [
+    "Enigma"
+   ],
+   "greedy": "Enigma",
+   "sampled": [
+    "Enigma",
+    "Enigma",
+    "Enigma",
+    "Enigma",
+    "Enigma",
+    "Enigma",
+    "Enigma",
+    "Enigma",
+    "Enigma",
+    "Enigma"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-033": {
+   "family": "multihop",
+   "golds": [
+    "Jaws"
+   ],
+   "greedy": "Jaws",
+   "sampled": [
+    "Jaws",
+    "Jaws",
+    "Jaws",
+    "Jaws",
+    "Jaws",
+    "Jaws",
+    "Jaws",
+    "Jaws",
+    "Jaws",
+    "Jaws"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-034": {
+   "family": "multihop",
+   "golds": [
+    "Queen"
+   ],
+   "greedy": "Queen",
+   "sampled": [
+    "Queen",
+    "Queen",
+    "Queen",
+    "Queen",
+    "Queen",
+    "Queen",
+    "Queen",
+    "Queen",
+    "Queen",
+    "Queen"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-035": {
+   "family": "multihop",
+   "golds": [
+    "Barcelona"
+   ],
+   "greedy": "Barcelona",
+   "sampled": [
+    "Barcelona",
+    "Barcelona",
+    "FC Barcelona",
+    "Barcelona",
+    "Barcelona",
+    "Barcelona",
+    "FC Barcelona",
+    "Barcelona",
+    "Barcelona",
+    "Barcelona"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-036": {
+   "family": "multihop",
+   "golds": [
+    "swimming"
+   ],
+   "greedy": "swimming",
+   "sampled": [
+    "swimming",
+    "swimming",
+    "track and field",
+    "swimming",
+    "swimming",
+    "track and field",
+    "track and field",
+    "swimming",
+    "swimming",
+    "track and field"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.6,
+   "pass": false
+  },
+  "v2-mh-w-037": {
+   "family": "multihop",
+   "golds": [
+    "boxing"
+   ],
+   "greedy": "boxing",
+   "sampled": [
+    "boxing",
+    "boxing",
+    "boxing",
+    "boxing",
+    "boxing",
+    "boxing",
+    "boxing",
+    "boxing",
+    "boxing",
+    "boxing"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-042": {
+   "family": "multihop",
+   "golds": [
+    "warren"
+   ],
+   "greedy": "warren",
+   "sampled": [
+    "warren",
+    "warren",
+    "warren",
+    "warren",
+    "warren",
+    "warren",
+    "warren",
+    "warren",
+    "warren",
+    "warren"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-043": {
+   "family": "multihop",
+   "golds": [
+    "keratin"
+   ],
+   "greedy": "keratin",
+   "sampled": [
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-044": {
+   "family": "multihop",
+   "golds": [
+    "pink"
+   ],
+   "greedy": "pink",
+   "sampled": [
+    "orange",
+    "orange",
+    "pink",
+    "pink",
+    "orange",
+    "orange",
+    "orange",
+    "orange",
+    "orange",
+    "orange"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.2,
+   "pass": false
+  },
+  "v2-mh-w-045": {
+   "family": "multihop",
+   "golds": [
+    "cartilage"
+   ],
+   "greedy": "cartilage",
+   "sampled": [
+    "cartilage",
+    "bone",
+    "cartilage",
+    "cartilage",
+    "cartilage",
+    "bone",
+    "cartilage",
+    "cartilage",
+    "cartilage",
+    "bone"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-mh-w-047": {
+   "family": "multihop",
+   "golds": [
+    "cygnet"
+   ],
+   "greedy": "cygnet",
+   "sampled": [
+    "cygnet",
+    "cygnet",
+    "cygnet",
+    "swan",
+    "cygnet",
+    "cygnet",
+    "cygnet",
+    "cygnet",
+    "cygnet",
+    "cygnet"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-w-049": {
+   "family": "multihop",
+   "golds": [
+    "pack"
+   ],
+   "greedy": "pack",
+   "sampled": [
+    "pack",
+    "pack",
+    "pack",
+    "pack",
+    "pack",
+    "pack",
+    "pack",
+    "wolf",
+    "pack",
+    "wolf"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-mh-w-061": {
+   "family": "multihop",
+   "golds": [
+    "brass"
+   ],
+   "greedy": "brass",
+   "sampled": [
+    "brass",
+    "brass",
+    "brass",
+    "brass",
+    "brass",
+    "brass",
+    "brass",
+    "brass",
+    "brass",
+    "brass"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-065": {
+   "family": "multihop",
+   "golds": [
+    "cones"
+   ],
+   "greedy": "cones",
+   "sampled": [
+    "cones",
+    "cones",
+    "cones",
+    "cones",
+    "cones",
+    "cones",
+    "cones",
+    "cones",
+    "cones",
+    "cones"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-066": {
+   "family": "multihop",
+   "golds": [
+    "thyroxine"
+   ],
+   "greedy": "thyroid hormone",
+   "sampled": [
+    "thyroid",
+    "thyroxine",
+    "thyroid hormone",
+    "thyroid hormone",
+    "thyroid",
+    "thyroid hormone",
+    "thyroid hormone",
+    "thyroid hormone",
+    "thyroid hormone",
+    "thyroid"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-mh-w-067": {
+   "family": "multihop",
+   "golds": [
+    "Halloween"
+   ],
+   "greedy": "Halloween",
+   "sampled": [
+    "Halloween",
+    "Halloween",
+    "Halloween",
+    "Halloween",
+    "Halloween",
+    "Halloween",
+    "Halloween",
+    "Halloween",
+    "Halloween",
+    "Halloween"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-068": {
+   "family": "multihop",
+   "golds": [
+    "Naples"
+   ],
+   "greedy": "Naples",
+   "sampled": [
+    "Naples",
+    "Naples",
+    "Naples",
+    "Naples",
+    "Naples",
+    "Naples",
+    "Naples",
+    "Naples",
+    "Naples",
+    "Naples"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-069": {
+   "family": "multihop",
+   "golds": [
+    "soy"
+   ],
+   "greedy": "soy",
+   "sampled": [
+    "soy",
+    "soybean",
+    "soy",
+    "soy",
+    "soybean",
+    "soy",
+    "soybean",
+    "soy",
+    "soy",
+    "soy"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-mh-w-070": {
+   "family": "multihop",
+   "golds": [
+    "plum"
+   ],
+   "greedy": "prune",
+   "sampled": [
+    "plum",
+    "prune",
+    "prune",
+    "prune",
+    "prune",
+    "prune",
+    "prune",
+    "prune",
+    "prune",
+    "prune"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-mh-w-071": {
+   "family": "multihop",
+   "golds": [
+    "acetic"
+   ],
+   "greedy": "vinegar",
+   "sampled": [
+    "vinegar",
+    "citric acid",
+    "citric acid",
+    "vinegar",
+    "citric acid",
+    "vinegar",
+    "citric acid",
+    "citric acid",
+    "citric acid",
+    "vinegar"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-mh-w-072": {
+   "family": "multihop",
+   "golds": [
+    "cane"
+   ],
+   "greedy": "sugarcane",
+   "sampled": [
+    "sugarcane",
+    "sugarcane",
+    "sugarcane",
+    "sugarcane",
+    "sugarcane",
+    "sugarcane",
+    "sugarcane",
+    "sugarcane",
+    "sugarcane",
+    "sugarcane"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-mh-w-076": {
+   "family": "multihop",
+   "golds": [
+    "malaria"
+   ],
+   "greedy": "malaria",
+   "sampled": [
+    "malaria",
+    "malaria",
+    "malaria",
+    "malaria",
+    "malaria",
+    "malaria",
+    "malaria",
+    "malaria",
+    "malaria",
+    "malaria"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-w-077": {
+   "family": "multihop",
+   "golds": [
+    "light"
+   ],
+   "greedy": "light",
+   "sampled": [
+    "light",
+    "light",
+    "light",
+    "light",
+    "light",
+    "light",
+    "light",
+    "light",
+    "light",
+    "light"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-001": {
+   "family": "multihop",
+   "golds": [
+    "Karl"
+   ],
+   "greedy": "Karl",
+   "sampled": [
+    "Karl",
+    "Karl",
+    "Karl",
+    "Karl",
+    "Karl",
+    "Karl",
+    "Karl",
+    "Karl",
+    "Karl",
+    "Karl"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-002": {
+   "family": "multihop",
+   "golds": [
+    "Eric"
+   ],
+   "greedy": "Eric",
+   "sampled": [
+    "Eric",
+    "Eric",
+    "Eric",
+    "Eric",
+    "Eric",
+    "Eric",
+    "Eric",
+    "Eric",
+    "Eric",
+    "er"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-x-003": {
+   "family": "multihop",
+   "golds": [
+    "Oscar"
+   ],
+   "greedy": "Oscar",
+   "sampled": [
+    "Oscar",
+    "Oscar",
+    "Oscar",
+    "Oscar",
+    "Oscar",
+    "Oscar",
+    "Oscar",
+    "Oscar",
+    "Oscar",
+    "Oscar"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-004": {
+   "family": "multihop",
+   "golds": [
+    "Victor"
+   ],
+   "greedy": "Victor",
+   "sampled": [
+    "Victor",
+    "Victor",
+    "Victor",
+    "Victor",
+    "Victor",
+    "Victor",
+    "Victor",
+    "Victor",
+    "Victor",
+    "Victor"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-005": {
+   "family": "multihop",
+   "golds": [
+    "dashes"
+   ],
+   "greedy": "dashes",
+   "sampled": [
+    "dashes",
+    "dashes",
+    "dashes",
+    "dashes",
+    "dashes",
+    "dashes",
+    "dashes",
+    "dashes",
+    "dashes",
+    "dashes"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-006": {
+   "family": "multihop",
+   "golds": [
+    "John"
+   ],
+   "greedy": "John",
+   "sampled": [
+    "John",
+    "John",
+    "John",
+    "John",
+    "John",
+    "John",
+    "John",
+    "John",
+    "John",
+    "John"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-007": {
+   "family": "multihop",
+   "golds": [
+    "Zimmerman"
+   ],
+   "greedy": "Dylan",
+   "sampled": [
+    "Dylan",
+    "Zimmer",
+    "Zim",
+    "Zim",
+    "Zim",
+    "Zimmerman",
+    "Dylan",
+    "Dylan",
+    "Dylan",
+    "Dylan"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-mh-x-008": {
+   "family": "multihop",
+   "golds": [
+    "44"
+   ],
+   "greedy": "44",
+   "sampled": [
+    "forty-four",
+    "44",
+    "forty-four",
+    "44",
+    "44",
+    "forty-four",
+    "44",
+    "44",
+    "44",
+    "forty-four"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.6,
+   "pass": false
+  },
+  "v2-mh-x-009": {
+   "family": "multihop",
+   "golds": [
+    "Microsoft"
+   ],
+   "greedy": "Microsoft",
+   "sampled": [
+    "Microsoft",
+    "Microsoft",
+    "Microsoft",
+    "Microsoft",
+    "Microsoft",
+    "Microsoft",
+    "Microsoft",
+    "Microsoft",
+    "Microsoft",
+    "Microsoft"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-010": {
+   "family": "multihop",
+   "golds": [
+    "boxing"
+   ],
+   "greedy": "boxing",
+   "sampled": [
+    "boxing",
+    "boxing",
+    "boxing",
+    "boxing",
+    "boxing",
+    "boxing",
+    "Boxing",
+    "boxing",
+    "boxing",
+    "boxing"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-011": {
+   "family": "multihop",
+   "golds": [
+    "Usain"
+   ],
+   "greedy": "Usain",
+   "sampled": [
+    "Carl",
+    "Usain",
+    "Carl",
+    "Carl",
+    "Usain",
+    "Carl",
+    "Carl",
+    "Carl",
+    "Carl",
+    "Carl"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.2,
+   "pass": false
+  },
+  "v2-mh-x-012": {
+   "family": "multihop",
+   "golds": [
+    "Ada"
+   ],
+   "greedy": "Augusta",
+   "sampled": [
+    "Augusta",
+    "Augusta",
+    "Augusta",
+    "Augusta",
+    "Augusta",
+    "Augusta",
+    "Augusta",
+    "Augusta",
+    "Augusta",
+    "Ada"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-mh-x-013": {
+   "family": "multihop",
+   "golds": [
+    "Herbert"
+   ],
+   "greedy": "H. G. Wells",
+   "sampled": [
+    "H. G. Wells",
+    "H. G. Wells",
+    "Herbert",
+    "H. G. Wells",
+    "H. G. Wells",
+    "H.G. Wells",
+    "H.G.",
+    "H. G. Wells",
+    "H. G. Wells",
+    "H. G. Wells"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-mh-x-014": {
+   "family": "multihop",
+   "golds": [
+    "Blaise"
+   ],
+   "greedy": "Blaise",
+   "sampled": [
+    "Blaise",
+    "Blaise",
+    "Blaise",
+    "Blaise",
+    "Blaise",
+    "Blaise",
+    "Blaise",
+    "Blaise",
+    "Blaise",
+    "Blaise"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-015": {
+   "family": "multihop",
+   "golds": [
+    "5050"
+   ],
+   "greedy": "5050",
+   "sampled": [
+    "5050",
+    "5050",
+    "5050",
+    "5050",
+    "5050",
+    "5050",
+    "5050",
+    "5050",
+    "5050",
+    "5050"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-016": {
+   "family": "multihop",
+   "golds": [
+    "Rudolf"
+   ],
+   "greedy": "Rudolf",
+   "sampled": [
+    "Rudolf",
+    "Rudolf",
+    "Rudolf",
+    "Rudolf",
+    "Rudolf",
+    "Rudolf",
+    "Rudolf",
+    "Rudolf",
+    "Rudolf",
+    "Rudolf"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-017": {
+   "family": "multihop",
+   "golds": [
+    "Siddhartha"
+   ],
+   "greedy": "Siddhartha Gautama",
+   "sampled": [
+    "Siddhartha Gautama",
+    "Siddhartha Gautama",
+    "Siddhartha Gautama",
+    "Siddhartha Gautama",
+    "Siddhartha Gautama",
+    "Siddhartha Gautama",
+    "Siddhartha Gautama",
+    "Siddhartha Gautama",
+    "Siddhartha Gautama",
+    "Siddhartha Gautama"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-018": {
+   "family": "multihop",
+   "golds": [
+    "Bethlehem"
+   ],
+   "greedy": "Bethlehem",
+   "sampled": [
+    "Bethlehem",
+    "Bethlehem",
+    "Bethlehem",
+    "Bethlehem",
+    "Bethlehem",
+    "Bethlehem",
+    "Bethlehem",
+    "Bethlehem",
+    "Bethlehem",
+    "Bethlehem"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-019": {
+   "family": "multihop",
+   "golds": [
+    "Isaac"
+   ],
+   "greedy": "Isaac",
+   "sampled": [
+    "Ishmael",
+    "Isaac",
+    "Isaac",
+    "Isaac",
+    "Isaac",
+    "Isaac",
+    "Ishmael",
+    "Isaac",
+    "Isaac",
+    "Isaac"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-mh-x-020": {
+   "family": "multihop",
+   "golds": [
+    "Sheba"
+   ],
+   "greedy": "Sheba",
+   "sampled": [
+    "Sheba",
+    "Sheba",
+    "Sheba",
+    "Sheba",
+    "sheba",
+    "Sheba",
+    "Sheba",
+    "Sheba",
+    "Sheba",
+    "Sheba"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-021": {
+   "family": "multihop",
+   "golds": [
+    "Eve"
+   ],
+   "greedy": "Eve",
+   "sampled": [
+    "Eve",
+    "Eve",
+    "Eve",
+    "Eve",
+    "Eve",
+    "Eve",
+    "Eve",
+    "eve",
+    "Eve",
+    "Eve"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-022": {
+   "family": "multihop",
+   "golds": [
+    "Abel"
+   ],
+   "greedy": "Abel",
+   "sampled": [
+    "Abel",
+    "Abel",
+    "Abel",
+    "Abel",
+    "Abel",
+    "Abel",
+    "Abel",
+    "Abel",
+    "Abel",
+    "Abel"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-023": {
+   "family": "multihop",
+   "golds": [
+    "Nineveh"
+   ],
+   "greedy": "Nineveh",
+   "sampled": [
+    "Nineveh",
+    "Nineveh",
+    "Nineveh",
+    "Nineveh",
+    "Nineveh",
+    "Nineveh",
+    "Nineveh",
+    "Nineveh",
+    "Nineveh",
+    "Nineveh"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-024": {
+   "family": "multihop",
+   "golds": [
+    "heel"
+   ],
+   "greedy": "heel",
+   "sampled": [
+    "heel",
+    "heel",
+    "heel",
+    "heel",
+    "heel",
+    "heel",
+    "heel",
+    "heel",
+    "heel",
+    "heel"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-025": {
+   "family": "multihop",
+   "golds": [
+    "Capulet"
+   ],
+   "greedy": "Capulet",
+   "sampled": [
+    "Capulet",
+    "Capulet",
+    "Capulet",
+    "Capulet",
+    "Capulet",
+    "Capulet",
+    "Capulet",
+    "Capulet",
+    "Capulet",
+    "Capulet"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-026": {
+   "family": "multihop",
+   "golds": [
+    "mouse"
+   ],
+   "greedy": "mouse",
+   "sampled": [
+    "mouse",
+    "mouse",
+    "mouse",
+    "mouse",
+    "mouse",
+    "mouse",
+    "mouse",
+    "mouse",
+    "mouse",
+    "mouse"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-029": {
+   "family": "multihop",
+   "golds": [
+    "Roald"
+   ],
+   "greedy": "Roald",
+   "sampled": [
+    "Roald",
+    "Roald",
+    "Roald",
+    "Roald",
+    "Roald",
+    "Ro",
+    "Roald Dahl",
+    "Roald",
+    "Roald",
+    "Roald"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-x-030": {
+   "family": "multihop",
+   "golds": [
+    "Arthur"
+   ],
+   "greedy": "Arthur",
+   "sampled": [
+    "Arthur",
+    "Arthur",
+    "Arthur",
+    "Arthur",
+    "Arthur",
+    "Arthur",
+    "Arthur",
+    "Arthur",
+    "Arthur",
+    "Arthur"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-031": {
+   "family": "multihop",
+   "golds": [
+    "Agatha"
+   ],
+   "greedy": "Agatha",
+   "sampled": [
+    "Agatha",
+    "Agatha",
+    "Agatha",
+    "Agatha",
+    "Agatha",
+    "Agatha",
+    "Agatha",
+    "Agatha",
+    "Agatha",
+    "Agatha"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-032": {
+   "family": "multihop",
+   "golds": [
+    "Hans"
+   ],
+   "greedy": "Hans",
+   "sampled": [
+    "Hans",
+    "Hans",
+    "Hans",
+    "Hans",
+    "Hans",
+    "Hans",
+    "Hans",
+    "Hans",
+    "Hans",
+    "Hans"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-033": {
+   "family": "multihop",
+   "golds": [
+    "Mary"
+   ],
+   "greedy": "Mary",
+   "sampled": [
+    "Mary",
+    "Mary",
+    "Mary",
+    "Mary",
+    "Mary",
+    "Mary",
+    "Mary",
+    "Mary",
+    "Mary",
+    "Mary"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-034": {
+   "family": "multihop",
+   "golds": [
+    "Steve"
+   ],
+   "greedy": "Steve",
+   "sampled": [
+    "Steve",
+    "Steve",
+    "Steve",
+    "Steve",
+    "Steve",
+    "Steve",
+    "Steve",
+    "Steve",
+    "Steve",
+    "Steve"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-035": {
+   "family": "multihop",
+   "golds": [
+    "Messiah"
+   ],
+   "greedy": "Messiah",
+   "sampled": [
+    "Messiah",
+    "Messiah",
+    "Messiah",
+    "Messiah",
+    "Messiah",
+    "Messiah",
+    "Messiah",
+    "Messiah",
+    "Messiah",
+    "Messiah"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-036": {
+   "family": "multihop",
+   "golds": [
+    "Bucephalus"
+   ],
+   "greedy": "Bucephalus",
+   "sampled": [
+    "Bucephalus",
+    "Bucephalus",
+    "Bucephalus",
+    "Bucephalus",
+    "Bucephalus",
+    "Bucephalus",
+    "Bucephalus",
+    "Bucephalus",
+    "Bucephalus",
+    "Bucephalus"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-037": {
+   "family": "multihop",
+   "golds": [
+    "smallpox"
+   ],
+   "greedy": "smallpox",
+   "sampled": [
+    "smallpox",
+    "smallpox",
+    "smallpox",
+    "smallpox",
+    "smallpox",
+    "smallpox",
+    "smallpox",
+    "smallpox",
+    "smallpox",
+    "smallpox"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-038": {
+   "family": "multihop",
+   "golds": [
+    "Artemis"
+   ],
+   "greedy": "Artemis",
+   "sampled": [
+    "Artemis",
+    "Artemis",
+    "Artemis",
+    "Artemis",
+    "Artemis",
+    "Artemis",
+    "Artemis",
+    "Artemis",
+    "Artemis",
+    "Artemis"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-039": {
+   "family": "multihop",
+   "golds": [
+    "Juno"
+   ],
+   "greedy": "Juno",
+   "sampled": [
+    "Juno",
+    "Juno",
+    "Juno",
+    "Juno",
+    "Juno",
+    "Juno",
+    "Juno",
+    "Juno",
+    "Juno",
+    "Juno"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-040": {
+   "family": "multihop",
+   "golds": [
+    "Mercury"
+   ],
+   "greedy": "Mercury",
+   "sampled": [
+    "Mercury",
+    "Mercury",
+    "Mercury",
+    "Mercury",
+    "Mercury",
+    "Mercury",
+    "Hermes",
+    "Mercury",
+    "Mercury",
+    "Mercury"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-x-041": {
+   "family": "multihop",
+   "golds": [
+    "rabbit"
+   ],
+   "greedy": "rabbit",
+   "sampled": [
+    "rabbit",
+    "hare",
+    "rabbit",
+    "rabbit",
+    "rabbit",
+    "rabbit",
+    "rabbit",
+    "rabbit",
+    "rabbit",
+    "rabbit"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-x-042": {
+   "family": "multihop",
+   "golds": [
+    "gruel"
+   ],
+   "greedy": "gruel",
+   "sampled": [
+    "gruel",
+    "gruel",
+    "gruel",
+    "gruel",
+    "gruel",
+    "gruel",
+    "gruel",
+    "gruel",
+    "gruel",
+    "gruel"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-043": {
+   "family": "multihop",
+   "golds": [
+    "Elon"
+   ],
+   "greedy": "Elon",
+   "sampled": [
+    "Elon",
+    "Elon",
+    "Elon",
+    "Elon",
+    "Elon",
+    "Elon",
+    "Elon",
+    "Elon",
+    "Elon",
+    "Elon"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-044": {
+   "family": "multihop",
+   "golds": [
+    "tuberculosis"
+   ],
+   "greedy": "tuberculosis",
+   "sampled": [
+    "tuberculosis",
+    "tuberculosis",
+    "tuberculosis",
+    "tuberculosis",
+    "tuberculosis",
+    "tuberculosis",
+    "tuberculosis",
+    "tuberculosis",
+    "tuberculosis",
+    "tuberculosis"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-045": {
+   "family": "multihop",
+   "golds": [
+    "Aphrodite"
+   ],
+   "greedy": "Aphrodite",
+   "sampled": [
+    "Aphrodite",
+    "Aphrodite",
+    "Aphrodite",
+    "Aphrodite",
+    "Aphrodite",
+    "Aphrodite",
+    "Aphrodite",
+    "Aphrodite",
+    "Aphrodite",
+    "Aphrodite"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-046": {
+   "family": "multihop",
+   "golds": [
+    "cub"
+   ],
+   "greedy": "cub",
+   "sampled": [
+    "cub",
+    "cub",
+    "cub",
+    "cub",
+    "cub",
+    "bear cub",
+    "cub",
+    "cub",
+    "cub",
+    "cub"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-047": {
+   "family": "multihop",
+   "golds": [
+    "echolocation"
+   ],
+   "greedy": "echolocation",
+   "sampled": [
+    "echolocation",
+    "echolocation",
+    "echolocation",
+    "echolocation",
+    "echolocation",
+    "hearing",
+    "echolocation",
+    "echolocation",
+    "echolocation",
+    "echolocation"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-x-048": {
+   "family": "multihop",
+   "golds": [
+    "reptile"
+   ],
+   "greedy": "reptiles",
+   "sampled": [
+    "reptiles",
+    "reptile",
+    "reptiles",
+    "reptiles",
+    "reptiles",
+    "reptiles",
+    "reptiles",
+    "reptiles",
+    "reptiles",
+    "reptiles"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-049": {
+   "family": "multihop",
+   "golds": [
+    "pup"
+   ],
+   "greedy": "pup",
+   "sampled": [
+    "pup",
+    "pup",
+    "pup",
+    "pup",
+    "pup",
+    "pup",
+    "pup",
+    "pup",
+    "seal pup",
+    "pup"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-050": {
+   "family": "multihop",
+   "golds": [
+    "pork"
+   ],
+   "greedy": "pork",
+   "sampled": [
+    "pork",
+    "pork",
+    "pork",
+    "pork",
+    "pork",
+    "pork",
+    "pork",
+    "pork",
+    "pork",
+    "pork"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-051": {
+   "family": "multihop",
+   "golds": [
+    "quack"
+   ],
+   "greedy": "quack",
+   "sampled": [
+    "quack",
+    "quack",
+    "quack",
+    "quack",
+    "quack",
+    "quack",
+    "quack",
+    "quack",
+    "quack",
+    "quack"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-052": {
+   "family": "multihop",
+   "golds": [
+    "murder"
+   ],
+   "greedy": "murder",
+   "sampled": [
+    "murder",
+    "murder",
+    "murder",
+    "murder",
+    "murder",
+    "murder",
+    "murder",
+    "murder",
+    "murder",
+    "murder"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-053": {
+   "family": "multihop",
+   "golds": [
+    "olive"
+   ],
+   "greedy": "olive branch",
+   "sampled": [
+    "olive branch",
+    "olive branch",
+    "olive branch",
+    "olive branch",
+    "olive branch",
+    "olive branch",
+    "olive",
+    "olive",
+    "olive branch",
+    "olive branch"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-054": {
+   "family": "multihop",
+   "golds": [
+    "Himalayas"
+   ],
+   "greedy": "Himalayas",
+   "sampled": [
+    "Himalayas",
+    "Himalayas",
+    "Himalayas",
+    "Himalayas",
+    "Himalayas",
+    "Himalayas",
+    "Himalayas",
+    "Himalayas",
+    "Himalayas",
+    "Himalayas"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-055": {
+   "family": "multihop",
+   "golds": [
+    "ink"
+   ],
+   "greedy": "ink",
+   "sampled": [
+    "ink",
+    "ink",
+    "ink",
+    "ink",
+    "ink",
+    "ink",
+    "ink",
+    "ink",
+    "ink",
+    "墨汁"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-x-056": {
+   "family": "multihop",
+   "golds": [
+    "sight"
+   ],
+   "greedy": "sight",
+   "sampled": [
+    "sight",
+    "sight",
+    "sight",
+    "sight",
+    "vision",
+    "sight",
+    "sight",
+    "sight",
+    "vision",
+    "sight"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-mh-x-057": {
+   "family": "multihop",
+   "golds": [
+    "bamboo"
+   ],
+   "greedy": "bamboo",
+   "sampled": [
+    "bamboo",
+    "bamboo",
+    "bamboo",
+    "bamboo",
+    "bamboo",
+    "bamboo",
+    "giant panda",
+    "bamboo",
+    "bamboo",
+    "bamboo"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-x-058": {
+   "family": "multihop",
+   "golds": [
+    "percussion"
+   ],
+   "greedy": "percussion",
+   "sampled": [
+    "percussion",
+    "percussion",
+    "percussion",
+    "percussion",
+    "percussion",
+    "percussion",
+    "percussion",
+    "percussion",
+    "percussion",
+    "percussion"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-059": {
+   "family": "multihop",
+   "golds": [
+    "alto"
+   ],
+   "greedy": "alto clef",
+   "sampled": [
+    "treble clef",
+    "alto",
+    "alto",
+    "treble",
+    "alto clef",
+    "alto",
+    "alto clef",
+    "violin",
+    "alto clef",
+    "alto clef"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-mh-x-060": {
+   "family": "multihop",
+   "golds": [
+    "pneumonia"
+   ],
+   "greedy": "pneumonia",
+   "sampled": [
+    "pneumonia",
+    "pneumonia",
+    "pneumonia",
+    "pneumonia",
+    "pneumonia",
+    "pneumonia",
+    "pneumonia",
+    "pneumonia",
+    "pneumonia",
+    "pneumonia"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-061": {
+   "family": "multihop",
+   "golds": [
+    "melanin"
+   ],
+   "greedy": "melanin",
+   "sampled": [
+    "melanin",
+    "melanin",
+    "melanin",
+    "melanin",
+    "melanin",
+    "melanin",
+    "melanin",
+    "melanin",
+    "melanin",
+    "melanin"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-062": {
+   "family": "multihop",
+   "golds": [
+    "patella"
+   ],
+   "greedy": "patella",
+   "sampled": [
+    "patella",
+    "patella",
+    "patella",
+    "patella",
+    "patella",
+    "patella",
+    "patella",
+    "patella",
+    "patella",
+    "patella"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-063": {
+   "family": "multihop",
+   "golds": [
+    "sake"
+   ],
+   "greedy": "sake",
+   "sampled": [
+    "sake",
+    "sake",
+    "sake",
+    "sake",
+    "sake",
+    "sake",
+    "sake",
+    "sake",
+    "sake",
+    "sake"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-064": {
+   "family": "multihop",
+   "golds": [
+    "popcorn"
+   ],
+   "greedy": "popcorn",
+   "sampled": [
+    "popcorn",
+    "popcorn",
+    "popcorn",
+    "popcorn",
+    "popcorn",
+    "popcorn",
+    "popcorn",
+    "popcorn",
+    "popcorn",
+    "popcorn"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-065": {
+   "family": "multihop",
+   "golds": [
+    "cry"
+   ],
+   "greedy": "water",
+   "sampled": [
+    "water",
+    "water",
+    "water",
+    "water",
+    "water",
+    "water",
+    "water",
+    "water",
+    "water",
+    "water"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-mh-x-066": {
+   "family": "multihop",
+   "golds": [
+    "ketchup"
+   ],
+   "greedy": "ketchup",
+   "sampled": [
+    "ketchup",
+    "ketchup",
+    "ketchup",
+    "ketchup",
+    "ketchup",
+    "ketchup",
+    "ketchup",
+    "ketchup",
+    "ketchup",
+    "ketchup"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-067": {
+   "family": "multihop",
+   "golds": [
+    "fries"
+   ],
+   "greedy": "french fries",
+   "sampled": [
+    "french fries",
+    "French fries",
+    "french fries",
+    "french fries",
+    "french fries",
+    "french fries",
+    "french fries",
+    "french fries",
+    "french fries",
+    "french fries"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-068": {
+   "family": "multihop",
+   "golds": [
+    "barley"
+   ],
+   "greedy": "barley",
+   "sampled": [
+    "barley",
+    "barley",
+    "barley",
+    "barley",
+    "barley",
+    "barley",
+    "barley",
+    "barley",
+    "barley",
+    "barley"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-069": {
+   "family": "multihop",
+   "golds": [
+    "charmer"
+   ],
+   "greedy": "charmer",
+   "sampled": [
+    "charmer",
+    "charmer",
+    "charmer",
+    "charmer",
+    "charmer",
+    "charmer",
+    "charmer",
+    "charmer",
+    "charmer",
+    "charmer"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-070": {
+   "family": "multihop",
+   "golds": [
+    "maggot"
+   ],
+   "greedy": "maggot",
+   "sampled": [
+    "maggot",
+    "maggot",
+    "fly",
+    "maggot",
+    "maggot",
+    "maggot",
+    "maggot",
+    "maggot",
+    "maggot",
+    "maggot"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-x-071": {
+   "family": "multihop",
+   "golds": [
+    "kitten"
+   ],
+   "greedy": "kitten",
+   "sampled": [
+    "kitten",
+    "kitten",
+    "kitten",
+    "kitten",
+    "kitten",
+    "kitten",
+    "kitten",
+    "kitten",
+    "kitten",
+    "kitten"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-072": {
+   "family": "multihop",
+   "golds": [
+    "Hamelin"
+   ],
+   "greedy": "Hamelin",
+   "sampled": [
+    "Hamelin",
+    "Hamelin",
+    "Hamelin",
+    "Hamelin",
+    "Hamelin",
+    "Hamelin",
+    "Hameln",
+    "Hameln",
+    "Hamelin",
+    "Hamelin"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-mh-x-073": {
+   "family": "multihop",
+   "golds": [
+    "ashes"
+   ],
+   "greedy": "ashes",
+   "sampled": [
+    "ashes",
+    "ashes",
+    "ashes",
+    "ashes",
+    "ashes",
+    "ashes",
+    "ashes",
+    "ashes",
+    "ashes",
+    "ashes"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-074": {
+   "family": "multihop",
+   "golds": [
+    "keratin"
+   ],
+   "greedy": "keratin",
+   "sampled": [
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin",
+    "keratin"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-075": {
+   "family": "multihop",
+   "golds": [
+    "hemoglobin"
+   ],
+   "greedy": "hemoglobin",
+   "sampled": [
+    "hemoglobin",
+    "hemoglobin",
+    "haemoglobin",
+    "haemoglobin",
+    "hemoglobin",
+    "hemoglobin",
+    "hemoglobin",
+    "hemoglobin",
+    "hemoglobin",
+    "hemoglobin"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-mh-x-076": {
+   "family": "multihop",
+   "golds": [
+    "Georgia"
+   ],
+   "greedy": "Georgia",
+   "sampled": [
+    "Georgia",
+    "Georgia",
+    "Georgia",
+    "Georgia",
+    "Georgia",
+    "Georgia",
+    "Georgia",
+    "Georgia",
+    "Georgia",
+    "Georgia"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-078": {
+   "family": "multihop",
+   "golds": [
+    "piglet"
+   ],
+   "greedy": "sow",
+   "sampled": [
+    "sow",
+    "sow",
+    "sow",
+    "sow",
+    "sow",
+    "sow",
+    "sow",
+    "sow",
+    "sow",
+    "sow"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-mh-x-079": {
+   "family": "multihop",
+   "golds": [
+    "hind"
+   ],
+   "greedy": "hind",
+   "sampled": [
+    "hind",
+    "hind",
+    "hind",
+    "hind",
+    "hind",
+    "hind",
+    "hind",
+    "hinde",
+    "hind",
+    "hind"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-x-080": {
+   "family": "multihop",
+   "golds": [
+    "yoke"
+   ],
+   "greedy": "yoke",
+   "sampled": [
+    "yoke",
+    "yoke",
+    "yoke",
+    "yoke",
+    "yoke",
+    "yoke",
+    "yoke",
+    "yoke",
+    "yoke",
+    "yoke"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-081": {
+   "family": "multihop",
+   "golds": [
+    "bleat"
+   ],
+   "greedy": "bleat",
+   "sampled": [
+    "bleat",
+    "bleat",
+    "baa",
+    "baa",
+    "bleat",
+    "bleat",
+    "bleat",
+    "bleat",
+    "baa",
+    "bleat"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-mh-x-082": {
+   "family": "multihop",
+   "golds": [
+    "cluck"
+   ],
+   "greedy": "cluck",
+   "sampled": [
+    "cluck",
+    "cluck",
+    "cluck",
+    "cluck",
+    "cluck",
+    "cluck",
+    "cluck",
+    "cluck",
+    "cluck",
+    "cluck"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-083": {
+   "family": "multihop",
+   "golds": [
+    "perry"
+   ],
+   "greedy": "perry",
+   "sampled": [
+    "perry",
+    "perry",
+    "perry",
+    "perry",
+    "perry",
+    "perry",
+    "perry",
+    "bulldog",
+    "perry",
+    "perriera"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-mh-x-084": {
+   "family": "multihop",
+   "golds": [
+    "prune"
+   ],
+   "greedy": "prune",
+   "sampled": [
+    "prune",
+    "prune",
+    "prune",
+    "prune",
+    "prune",
+    "prune",
+    "prune",
+    "prune",
+    "prune",
+    "prune"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-085": {
+   "family": "multihop",
+   "golds": [
+    "julep"
+   ],
+   "greedy": "mint julep",
+   "sampled": [
+    "mint julep",
+    "mint julep",
+    "mint julep",
+    "mint julep",
+    "mint julep",
+    "mint julep",
+    "mint julep",
+    "mint julep",
+    "mint julep",
+    "mint julep"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-086": {
+   "family": "multihop",
+   "golds": [
+    "stallion"
+   ],
+   "greedy": "stallion",
+   "sampled": [
+    "stallion",
+    "stallion",
+    "stallion",
+    "stallion",
+    "stallion",
+    "stallion",
+    "stallion",
+    "stallion",
+    "stallion",
+    "stallion"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-087": {
+   "family": "multihop",
+   "golds": [
+    "juniper"
+   ],
+   "greedy": "juniper",
+   "sampled": [
+    "gin",
+    "juniper",
+    "juniper",
+    "juniper",
+    "juniper",
+    "juniper",
+    "gin",
+    "gin",
+    "juniper",
+    "juniper"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-mh-x-088": {
+   "family": "multihop",
+   "golds": [
+    "acorn"
+   ],
+   "greedy": "acorn",
+   "sampled": [
+    "acorn",
+    "acorn",
+    "acorn",
+    "acorn",
+    "acorn",
+    "acorn",
+    "acorn",
+    "acorn",
+    "acorn",
+    "acorn"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-x-089": {
+   "family": "multihop",
+   "golds": [
+    "resin"
+   ],
+   "greedy": "resin",
+   "sampled": [
+    "resin",
+    "rosin",
+    "resin",
+    "rosin",
+    "pine resin",
+    "resin",
+    "resin",
+    "pine resin",
+    "resin",
+    "resin"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-mh-x-090": {
+   "family": "multihop",
+   "golds": [
+    "thorns"
+   ],
+   "greedy": "thorns",
+   "sampled": [
+    "thorns",
+    "thorns",
+    "thorns",
+    "thorns",
+    "thorns",
+    "thorns",
+    "thorns",
+    "thorns",
+    "thorns",
+    "thorns"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  }
+ },
+ "summary": {
+  "typo": {
+   "n": 88,
+   "pass": 88
+  },
+  "association": {
+   "n": 160,
+   "pass": 89
+  },
+  "multihop": {
+   "n": 157,
+   "pass": 129
+  }
+ }
+}

@@ -1,0 +1,30 @@
+id: fresh
+title: Finalists on fresh versus shared answers
+owner: C (j-lens-mean-19c), night-2
+status: diagnostic
+question: >
+  Do the night-2 finalists' gains survive on val items whose answers occur in no other family's fit bank, where a g
+  built with other families' targets cannot have remembered them?
+verdict: >
+  S20x does: +0.05 over fam on fresh answers under both readouts, about 80 % of its all-item gain. S21's single-token gain
+  is mostly on shared items, but a target-free centre (S14k) shows the same tilt, so that part is target frequency; S21's
+  correction itself adds +0.037 on fresh items. The label-free S14k and s14t64 do not beat fam on the single-token families.
+tiles:
+  - {label: "S20x, Δ fam on fresh answers", value: "+0.053", sub: "rms +0.050 (321 of 393 items)"}
+  - {label: "S21, Δ fam on fresh answers", value: "+0.016", sub: "all items +0.033"}
+  - {label: "S14k, Δ fam on fresh answers", value: "-0.022", sub: "shared +0.069: target frequency"}
+formulas:
+  - latex: '\text{fresh}(i) \iff A(i) \cap \bigcup_{G \neq F(i)} A_{\text{fit}}(G) = \varnothing'
+    note: "A(i): item i's accepted token ids (strict scorer); F(i) its family."
+diagram:
+  kind: pool
+  select: all
+  caption: "An item is fresh when none of its answers is among the other families' fit targets, the data a cross-family correction is fitted on."
+split: val
+arms: ["s20xt:1@fit|cos", "sched:40:s20xon:1:kmx64+s14t64@fit|cos", "sched:40:kmx64+s14t64@fit|cos"]
+controls: ["fam@fit|cos"]
+insights:
+  - {lead: "S20x's gain is not remembered answers", text: "+0.053 on fresh items (cos), +0.050 (rms), against +0.066 / +0.061 on all items."}
+  - {lead: "Shared-answer items are common-word items", text: "The target-free S14k gains +0.069 on shared and loses 0.022 on fresh items: a split by answer overlap also splits by target frequency."}
+  - {lead: "Label-free finalists win elsewhere", text: "S14k and s14t64 are at or below fam on the single-token families; their macro gains are on the _mt families, DM and UM."}
+next: []

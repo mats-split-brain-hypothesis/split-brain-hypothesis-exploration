@@ -1,0 +1,29 @@
+{
+ "claims_about_writeup": [],
+ "message_source": "credits",
+ "message_source_quote": "**Novelty:** The contribution is distinct from Raman et al. (2026, white-bear steering): while the stance contrast idea is the same, the entire prompt set, direction extraction, and dose optimization are new to this submission \u2014 no WSB family items are used to build the direction.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "Raman et al. showed that a think / don't-think stance direction from WSB's bench items makes implied\nconcepts readable. Our contribution: the same effect is obtained from an entirely self-authored\nprompt set \u2014 no WSB family items are needed.",
+ "differences": [],
+ "rationale": "Both documents name Raman et al. (2026, \"white-bear steering\") explicitly as the prior work whose stance-contrast idea the method reuses, and both state the same novelty claim: that the prompt set (self-authored, no WSB directed_modulation items), the direction-extraction procedure, and the dose optimization are new, while the underlying think/don't-think contrast idea is the same as the source. Neither document contains any material discrepancy in how it frames credit, overlap, or novelty relative to the other.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:10:25",
+  "input": 3882,
+  "cache_read": 1558,
+  "cache_write": 2322,
+  "output": 1057,
+  "cost_usd_list": 0.0201736,
+  "ms": 9888
+ },
+ "run": "p05-c1-A7a-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

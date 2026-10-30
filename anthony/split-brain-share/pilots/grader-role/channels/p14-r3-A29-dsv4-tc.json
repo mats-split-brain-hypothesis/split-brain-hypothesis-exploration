@@ -1,0 +1,48 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "submission/contribution.md \u2014 the method, mechanism, and what's new vs. the white-bear paper (honest about the shared mechanism; the construction and the WM-load control are mine).",
+   "accurate": true,
+   "why": "The write-up does describe the method, invoke the white-bear paper as the mechanism's origin, and attribute the self-authored contrast and the WM-load control (arbitrary-number control) to the author's own construction, matching this description."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "The key unlock was a paper in `papers/` \u2014 *White-Bear Steering* (Raman et al. 2026) \u2014 which is literally the same setup (Qwen3.5-4B, association, plain J-lens at 26/28/30) and identifies the mechanism: a **concept-agnostic \"stance\" direction, injected at layers 20\u201324 (below the read band) with a large, narrow dose**, makes the layers above (25\u201329) keep developing the implied concept instead of dropping it for next-token prediction.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "The starting point is the stance-steering observation in Orrery Lab's white-bear paper (`papers/`): a direction extracted from \"think about X / don't think about X while copying\" pairs, injected at a mid-depth band with an unusually large dose, makes implied concepts readable to the unchanged J-lens.",
+ "differences": [
+  {
+   "what": "Additional ablations (content/task/sequentiality and family-contrast directions failing, and centring-style baselines capping at 0.15) cited as further evidence isolating the novel 'active ingredient' relative to the source",
+   "direction": "more-in-message",
+   "message_quote": "Content/task/sequentiality and family-contrast directions all failed destructively, confirming the stance is the narrow working ingredient.",
+   "writeup_quote": ""
+  },
+  {
+   "what": "Citation precision: message supplies explicit author/year attribution for the source, which the write-up only names informally",
+   "direction": "more-in-message",
+   "message_quote": "*White-Bear Steering* (Raman et al. 2026)",
+   "writeup_quote": "Orrery Lab's white-bear paper (`papers/`)"
+  }
+ ],
+ "rationale": "Both documents credit the same source (the white-bear/Orrery Lab paper on stance steering) as the origin of the mechanism the method builds on, and both frame the novelty identically: a self-authored, benchmark-free hold/expel contrast plus a semantic-vs-generic-working-memory-load control that isolates the 'active ingredient,' while conceding the underlying mechanism is shared rather than fundamentally new. The message adds a few extra supporting details (more precise citation, additional failed ablation variants) not present in the write-up, but makes no false claims about what the write-up contains and no material change to the overlap/novelty story.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:33:06",
+  "input": 4919,
+  "cache_read": 1558,
+  "cache_write": 3359,
+  "output": 2972,
+  "cost_usd_list": 0.0434716,
+  "ms": 30168
+ },
+ "run": "p14-r3-A29-dsv4-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

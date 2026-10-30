@@ -1,0 +1,29 @@
+{
+ "claims_about_writeup": [],
+ "message_source": "credits",
+ "message_source_quote": "Inspired by the white-bear steering paper (Raman et al., 2026), but uses entirely self-written prompts with different concepts and carrier sentences. The vectors and the finding that the stance direction transfers to an independent prompt set are new to this submission.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "comes from the white-bear steering paper (Raman et al., 2026), which used WSB's directed_modulation pairs.",
+ "differences": [],
+ "rationale": "Both documents credit the white-bear steering paper (Raman et al., 2026) as the origin of the concept-agnostic stance-direction idea, and both describe the same novelty claim: that the direction generalizes to self-written prompts with non-target concepts and different carrier sentences rather than depending on WSB's directed_modulation items. The numbers (pass@10 0.7941, scale 1.07, read-only 0.44, context-only 0.15, dose curve shape) and the overall framing match closely, with no material addition, omission, or misstatement in either direction.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:08:48",
+  "input": 3951,
+  "cache_read": 1558,
+  "cache_write": 2391,
+  "output": 1131,
+  "cost_usd_list": 0.021189600000000003,
+  "ms": 12060
+ },
+ "run": "p04-r2-A3a-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

@@ -1,0 +1,15 @@
+{
+ "run": "p13-r2-A25a-glm52-tc",
+ "status": "read",
+ "found": false,
+ "passages": [],
+ "usage": {
+  "input": 65643,
+  "cache_read": 0,
+  "cache_write": 0,
+  "output": 449,
+  "cost_usd_list": 0.1358,
+  "ms": 6617,
+  "request_id": "msg_011CgQyHgkKxt5huWup1cYQG"
+ }
+}

@@ -1,0 +1,2236 @@
+{
+ "family": "typo-hard",
+ "parent_family": "typo-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": false,
+  "conjunctive_units": true
+ },
+ "source": "jlm-dev-mt-v1",
+ "split": "fit",
+ "gate": "Qwen3.6-27B: the bench's gate question, greedy correct and >= 8/10 at T=0.7; graded by anthropic/claude-haiku-5.5 with the bench's grading prompt",
+ "items": [
+  {
+   "name": "dev-tymt-087",
+   "subfamily": "arith",
+   "prompt": "156 + 271 = 472",
+   "typo_word": "472",
+   "target": "427",
+   "target_alts": [],
+   "intermediates": [
+    "427"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-098",
+   "subfamily": "arith",
+   "prompt": "302 + 459 = 716",
+   "typo_word": "716",
+   "target": "761",
+   "target_alts": [],
+   "intermediates": [
+    "761"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "761"
+      ]
+     },
+     "match": [
+      "761"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-097",
+   "subfamily": "arith",
+   "prompt": "375 + 191 = 656",
+   "typo_word": "656",
+   "target": "566",
+   "target_alts": [],
+   "intermediates": [
+    "566"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "566"
+      ]
+     },
+     "match": [
+      "566"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-093",
+   "subfamily": "arith",
+   "prompt": "89 × 7 = 632",
+   "typo_word": "632",
+   "target": "623",
+   "target_alts": [],
+   "intermediates": [
+    "623"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "623"
+      ]
+     },
+     "match": [
+      "623"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-099",
+   "subfamily": "arith",
+   "prompt": "245 × 3 = 753",
+   "typo_word": "753",
+   "target": "735",
+   "target_alts": [],
+   "intermediates": [
+    "735"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "735"
+      ]
+     },
+     "match": [
+      "735"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-090",
+   "subfamily": "arith",
+   "prompt": "238 + 99 = 373",
+   "typo_word": "373",
+   "target": "337",
+   "target_alts": [],
+   "intermediates": [
+    "337"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "337"
+      ]
+     },
+     "match": [
+      "337"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-091",
+   "subfamily": "arith",
+   "prompt": "117 × 6 = 720",
+   "typo_word": "720",
+   "target": "702",
+   "target_alts": [],
+   "intermediates": [
+    "702"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "702"
+      ]
+     },
+     "match": [
+      "702"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-043",
+   "subfamily": "novel",
+   "prompt": "The Russian novelist who wrote Crime and Punishment and The Brothers Karamazov was Fyodor Dostoevksy",
+   "typo_word": "Dostoevksy",
+   "target": "Dostoevsky",
+   "target_alts": [
+    "Dostoyevsky"
+   ],
+   "intermediates": [
+    "Dostoevsky"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Dostoevsky",
+       "Dostoyevsky"
+      ]
+     },
+     "match": [
+      "Dostoevsky",
+      "Dostoyevsky"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-048",
+   "subfamily": "novel",
+   "prompt": "His habit of eating breakfast standing up and only ever wearing odd socks was just one personal idiosyncracy",
+   "typo_word": "idiosyncracy",
+   "target": "idiosyncrasy",
+   "target_alts": [],
+   "intermediates": [
+    "idiosyncrasy"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "idiosyncrasy"
+      ]
+     },
+     "match": [
+      "idiosyncrasy"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-024",
+   "subfamily": "novel",
+   "prompt": "The evergreen shrub with large clusters of trumpet-shaped spring blossoms, a close relative of the azalea, is the rhododendrum",
+   "typo_word": "rhododendrum",
+   "target": "rhododendron",
+   "target_alts": [],
+   "intermediates": [
+    "rhododendron"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "rhododendron"
+      ]
+     },
+     "match": [
+      "rhododendron"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       5
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-008",
+   "subfamily": "novel",
+   "prompt": "The scientific study of fossilised bones, footprints and other traces of ancient life preserved in rock is called paleontolgy",
+   "typo_word": "paleontolgy",
+   "target": "paleontology",
+   "target_alts": [
+    "palaeontology"
+   ],
+   "intermediates": [
+    "paleontology"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "paleontology",
+       "palaeontology"
+      ]
+     },
+     "match": [
+      "paleontology",
+      "palaeontology"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-037",
+   "subfamily": "novel",
+   "prompt": "A flour tortilla folded over melted cheese and grilled on a hot griddle until golden is a Mexican quesidilla",
+   "typo_word": "quesidilla",
+   "target": "quesadilla",
+   "target_alts": [],
+   "intermediates": [
+    "quesadilla"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "quesadilla"
+      ]
+     },
+     "match": [
+      "quesadilla"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-032",
+   "subfamily": "novel",
+   "prompt": "Sumer, Akkad and Babylon all flourished in the fertile land between the Tigris and Euphrates rivers known as Mesopatamia",
+   "typo_word": "Mesopatamia",
+   "target": "Mesopotamia",
+   "target_alts": [],
+   "intermediates": [
+    "Mesopotamia"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Mesopotamia"
+      ]
+     },
+     "match": [
+      "Mesopotamia"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-045",
+   "subfamily": "novel",
+   "prompt": "The snow-capped dormant volcano in Tanzania that is the highest mountain in Africa is Mount Kilimanjoro",
+   "typo_word": "Kilimanjoro",
+   "target": "Kilimanjaro",
+   "target_alts": [],
+   "intermediates": [
+    "Kilimanjaro"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Kilimanjaro"
+      ]
+     },
+     "match": [
+      "Kilimanjaro"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-050",
+   "subfamily": "novel",
+   "prompt": "The Arctic whale whose males grow a single spiralled tusk up to three metres long, the unicorn of the sea, is the narwahl",
+   "typo_word": "narwahl",
+   "target": "narwhal",
+   "target_alts": [],
+   "intermediates": [
+    "narwhal"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "narwhal"
+      ]
+     },
+     "match": [
+      "narwhal"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-012",
+   "subfamily": "novel",
+   "prompt": "The branch of physics dealing with heat, work, entropy and the transfer of energy between systems is thermodynamcis",
+   "typo_word": "thermodynamcis",
+   "target": "thermodynamics",
+   "target_alts": [],
+   "intermediates": [
+    "thermodynamics"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "thermodynamics"
+      ]
+     },
+     "match": [
+      "thermodynamics"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-036",
+   "subfamily": "novel",
+   "prompt": "The thinly sliced, dry-cured Italian ham from the hills around Parma, often served with melon, is called prosciuto",
+   "typo_word": "prosciuto",
+   "target": "prosciutto",
+   "target_alts": [],
+   "intermediates": [
+    "prosciutto"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "prosciutto"
+      ]
+     },
+     "match": [
+      "prosciutto"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-029",
+   "subfamily": "novel",
+   "prompt": "The organelles that generate most of a cell's ATP through respiration, often called its powerhouses, are the mitochondira",
+   "typo_word": "mitochondira",
+   "target": "mitochondria",
+   "target_alts": [],
+   "intermediates": [
+    "mitochondria"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "mitochondria"
+      ]
+     },
+     "match": [
+      "mitochondria"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-004",
+   "subfamily": "novel",
+   "prompt": "The caterpillar's complete transformation inside its cocoon into a winged adult butterfly is the classic example of metamorphsis",
+   "typo_word": "metamorphsis",
+   "target": "metamorphosis",
+   "target_alts": [],
+   "intermediates": [
+    "metamorphosis"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "metamorphosis"
+      ]
+     },
+     "match": [
+      "metamorphosis"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-006",
+   "subfamily": "novel",
+   "prompt": "Ripe avocado mashed with lime juice, chopped onion, coriander and a little chili is the Mexican dip known as guacomole",
+   "typo_word": "guacomole",
+   "target": "guacamole",
+   "target_alts": [],
+   "intermediates": [
+    "guacamole"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "guacamole"
+      ]
+     },
+     "match": [
+      "guacamole"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-025",
+   "subfamily": "novel",
+   "prompt": "The tall Australian gum tree whose aromatic leaves are almost the only food a koala will eat is the eucalyptis",
+   "typo_word": "eucalyptis",
+   "target": "eucalyptus",
+   "target_alts": [],
+   "intermediates": [
+    "eucalyptus"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "eucalyptus"
+      ]
+     },
+     "match": [
+      "eucalyptus"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       5
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-014",
+   "subfamily": "novel",
+   "prompt": "The single-reed instrument invented by Adolphe Sax in the 1840s and beloved by jazz soloists is the saxaphone",
+   "typo_word": "saxaphone",
+   "target": "saxophone",
+   "target_alts": [],
+   "intermediates": [
+    "saxophone"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "saxophone"
+      ]
+     },
+     "match": [
+      "saxophone"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-026",
+   "subfamily": "novel",
+   "prompt": "A stage performer who throws their voice so that a wooden dummy on their knee seems to talk is a ventriloquest",
+   "typo_word": "ventriloquest",
+   "target": "ventriloquist",
+   "target_alts": [],
+   "intermediates": [
+    "ventriloquist"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "ventriloquist"
+      ]
+     },
+     "match": [
+      "ventriloquist"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-030",
+   "subfamily": "novel",
+   "prompt": "A four-sided plane figure whose opposite sides are both parallel and equal in length is called a parallelogarm",
+   "typo_word": "parallelogarm",
+   "target": "parallelogram",
+   "target_alts": [],
+   "intermediates": [
+    "parallelogram"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "parallelogram"
+      ]
+     },
+     "match": [
+      "parallelogram"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-013",
+   "subfamily": "novel",
+   "prompt": "A tube of angled mirrors and loose coloured glass that forms shifting symmetrical patterns as you rotate it is a kaleidoscpoe",
+   "typo_word": "kaleidoscpoe",
+   "target": "kaleidoscope",
+   "target_alts": [],
+   "intermediates": [
+    "kaleidoscope"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "kaleidoscope"
+      ]
+     },
+     "match": [
+      "kaleidoscope"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-003",
+   "subfamily": "novel",
+   "prompt": "Words such as buzz, sizzle, hiss and cuckoo, which imitate the very sounds they describe, are textbook examples of onomatopeia",
+   "typo_word": "onomatopeia",
+   "target": "onomatopoeia",
+   "target_alts": [],
+   "intermediates": [
+    "onomatopoeia"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "onomatopoeia"
+      ]
+     },
+     "match": [
+      "onomatopoeia"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       5
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-001",
+   "subfamily": "novel",
+   "prompt": "Green plants capture sunlight in their leaves and turn carbon dioxide and water into sugar through photosynthsis",
+   "typo_word": "photosynthsis",
+   "target": "photosynthesis",
+   "target_alts": [],
+   "intermediates": [
+    "photosynthesis"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "photosynthesis"
+      ]
+     },
+     "match": [
+      "photosynthesis"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-027",
+   "subfamily": "novel",
+   "prompt": "The doctor pressed the cold chest piece against my back, told me to breathe deeply, and listened through her stethescope",
+   "typo_word": "stethescope",
+   "target": "stethoscope",
+   "target_alts": [],
+   "intermediates": [
+    "stethoscope"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "stethoscope"
+      ]
+     },
+     "match": [
+      "stethoscope"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-002",
+   "subfamily": "novel",
+   "prompt": "The eerie blue glow given off by certain deep-sea jellyfish, fungi and fireflies is a form of light production called bioluminesence",
+   "typo_word": "bioluminesence",
+   "target": "bioluminescence",
+   "target_alts": [],
+   "intermediates": [
+    "bioluminescence"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "bioluminescence"
+      ]
+     },
+     "match": [
+      "bioluminescence"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-047",
+   "subfamily": "novel",
+   "prompt": "The thick, creamy cold sauce made by slowly whisking oil into egg yolks with a little vinegar or lemon is mayonaise",
+   "typo_word": "mayonaise",
+   "target": "mayonnaise",
+   "target_alts": [],
+   "intermediates": [
+    "mayonnaise"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "mayonnaise"
+      ]
+     },
+     "match": [
+      "mayonnaise"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-044",
+   "subfamily": "novel",
+   "prompt": "The Polish astronomer who in 1543 placed the Sun rather than the Earth at the centre of the universe was Nicolaus Copernicous",
+   "typo_word": "Copernicous",
+   "target": "Copernicus",
+   "target_alts": [],
+   "intermediates": [
+    "Copernicus"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Copernicus"
+      ]
+     },
+     "match": [
+      "Copernicus"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-015",
+   "subfamily": "novel",
+   "prompt": "The Baroque keyboard instrument whose strings are plucked by quills rather than struck by hammers is the harpsicord",
+   "typo_word": "harpsicord",
+   "target": "harpsichord",
+   "target_alts": [],
+   "intermediates": [
+    "harpsichord"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "harpsichord"
+      ]
+     },
+     "match": [
+      "harpsichord"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-059",
+   "subfamily": "realword",
+   "prompt": "His handwriting was so cramped and messy that the note he left on the fridge was barely comprehensive",
+   "typo_word": "comprehensive",
+   "target": "comprehensible",
+   "target_alts": [],
+   "intermediates": [
+    "comprehensible"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "comprehensible"
+      ]
+     },
+     "match": [
+      "comprehensible"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-058",
+   "subfamily": "realword",
+   "prompt": "Saffron, carpets and brass lanterns were piled high on the stalls of the crowded Istanbul bizarre",
+   "typo_word": "bizarre",
+   "target": "bazaar",
+   "target_alts": [],
+   "intermediates": [
+    "bazaar"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "bazaar"
+      ]
+     },
+     "match": [
+      "bazaar"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-053",
+   "subfamily": "realword",
+   "prompt": "Of all the beliefs in Gandhi's philosophy, non-violent resistance was the central tenant",
+   "typo_word": "tenant",
+   "target": "tenet",
+   "target_alts": [],
+   "intermediates": [
+    "tenet"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "tenet"
+      ]
+     },
+     "match": [
+      "tenet"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 0.9
+  },
+  {
+   "name": "dev-tymt-051",
+   "subfamily": "realword",
+   "prompt": "The suspect's alibi held up in court only because a second, independent witness was able to collaborate",
+   "typo_word": "collaborate",
+   "target": "corroborate",
+   "target_alts": [],
+   "intermediates": [
+    "corroborate"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "corroborate"
+      ]
+     },
+     "match": [
+      "corroborate"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-071",
+   "subfamily": "realword",
+   "prompt": "In 1860, angered by Lincoln's election, South Carolina's convention voted to break away from the Union and succeed",
+   "typo_word": "succeed",
+   "target": "secede",
+   "target_alts": [],
+   "intermediates": [
+    "secede"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "secede"
+      ]
+     },
+     "match": [
+      "secede"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-062",
+   "subfamily": "realword",
+   "prompt": "After the air show the ground crew towed the fighter jet back inside its hanger",
+   "typo_word": "hanger",
+   "target": "hangar",
+   "target_alts": [],
+   "intermediates": [
+    "hangar"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hangar"
+      ]
+     },
+     "match": [
+      "hangar"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-080",
+   "subfamily": "realword",
+   "prompt": "The belly dancer wore a small jewelled stud in her pierced naval",
+   "typo_word": "naval",
+   "target": "navel",
+   "target_alts": [],
+   "intermediates": [
+    "navel"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "navel"
+      ]
+     },
+     "match": [
+      "navel"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-055",
+   "subfamily": "realword",
+   "prompt": "The physicist argued that no signal can travel faster than light without violating the principle of casualty",
+   "typo_word": "casualty",
+   "target": "causality",
+   "target_alts": [],
+   "intermediates": [
+    "causality"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "causality"
+      ]
+     },
+     "match": [
+      "causality"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-073",
+   "subfamily": "realword",
+   "prompt": "White opened by offering a pawn on c4 to win control of the centre, the classic opening called the Queen's gamut",
+   "typo_word": "gamut",
+   "target": "gambit",
+   "target_alts": [],
+   "intermediates": [
+    "gambit"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "gambit"
+      ]
+     },
+     "match": [
+      "gambit"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-065",
+   "subfamily": "realword",
+   "prompt": "To soothe her cracked, chapped hands through the winter, the pharmacist recommended rubbing in a thick emolument",
+   "typo_word": "emolument",
+   "target": "emollient",
+   "target_alts": [],
+   "intermediates": [
+    "emollient"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "emollient"
+      ]
+     },
+     "match": [
+      "emollient"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-056",
+   "subfamily": "realword",
+   "prompt": "Critics argue that lazy casting and cartoonish villains are exactly the harmful stereotypes that films continue to perpetrate",
+   "typo_word": "perpetrate",
+   "target": "perpetuate",
+   "target_alts": [],
+   "intermediates": [
+    "perpetuate"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "perpetuate"
+      ]
+     },
+     "match": [
+      "perpetuate"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-070",
+   "subfamily": "realword",
+   "prompt": "Owning a vintage Leica camera still carries a certain snob appeal and social cache",
+   "typo_word": "cache",
+   "target": "cachet",
+   "target_alts": [],
+   "intermediates": [
+    "cachet"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "cachet"
+      ]
+     },
+     "match": [
+      "cachet"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-064",
+   "subfamily": "realword",
+   "prompt": "In Catholic teaching, a minor sin that does not cut the soul off from sanctifying grace is called venal",
+   "typo_word": "venal",
+   "target": "venial",
+   "target_alts": [],
+   "intermediates": [
+    "venial"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "venial"
+      ]
+     },
+     "match": [
+      "venial"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-082",
+   "subfamily": "realword",
+   "prompt": "In Greek myth, each of the drunken, goat-legged woodland companions of Dionysus is called a satire",
+   "typo_word": "satire",
+   "target": "satyr",
+   "target_alts": [],
+   "intermediates": [
+    "satyr"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "satyr"
+      ]
+     },
+     "match": [
+      "satyr"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-052",
+   "subfamily": "realword",
+   "prompt": "Paramedics rushed to inject the snakebite victim with the venom-neutralising anecdote",
+   "typo_word": "anecdote",
+   "target": "antidote",
+   "target_alts": [],
+   "intermediates": [
+    "antidote"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "antidote"
+      ]
+     },
+     "match": [
+      "antidote"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-066",
+   "subfamily": "realword",
+   "prompt": "After the walkout, the tension in the negotiating room was so thick it was almost palatable",
+   "typo_word": "palatable",
+   "target": "palpable",
+   "target_alts": [],
+   "intermediates": [
+    "palpable"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "palpable"
+      ]
+     },
+     "match": [
+      "palpable"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  }
+ ]
+}

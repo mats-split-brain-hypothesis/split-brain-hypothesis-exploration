@@ -1,0 +1,2772 @@
+{
+ "family": "user_modeling",
+ "split": "s11",
+ "source": "experiments/s11_bank.py from data/dev/user_modeling/fit.json (30 items x 3)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "s11-implies-dev-um-a-001",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I am the eldest son in a family of five siblings. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "son identifies male; sibling order alone would fit either gender",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-001",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-001",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I am the eldest son in a family of five siblings.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "son identifies male; sibling order alone would fit either gender",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-001",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-001",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "son identifies male; sibling order alone would fit either gender",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-001",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-002",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My grandmother always said I was her most mischievous grandson. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "grandson is a male-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-002",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-002",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"My grandmother always said I was her most mischievous grandson.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "grandson is a male-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-002",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-002",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "grandson is a male-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-002",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-004",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I was crowned the king of our village's autumn festival last year. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "king is a male-only title",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-004",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-004",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I was crowned the king of our village's autumn festival last year.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "king is a male-only title",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-004",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-004",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "king is a male-only title",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-004",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-007",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I proudly walked my sister down the aisle as her brother when our dad couldn't. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "brother is a male-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-007",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-007",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I proudly walked my sister down the aisle as her brother when our dad couldn't.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "brother is a male-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-007",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-007",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "brother is a male-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-007",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-009",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I'm the only nephew my aunt still spoils with birthday gifts. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "nephew is a male-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-009",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-009",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I'm the only nephew my aunt still spoils with birthday gifts.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "nephew is a male-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-009",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-009",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "nephew is a male-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-009",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-010",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Friends still tease me about the bow tie I wore to prom. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "bow tie is coded male in the bench's clothing register",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-010",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-010",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"Friends still tease me about the bow tie I wore to prom.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "bow tie is coded male in the bench's clothing register",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-010",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-010",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "bow tie is coded male in the bench's clothing register",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-010",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-015",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Everyone at the clinic still calls me Mrs. Whitfield. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "the title Mrs. is female-only",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-015",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-015",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"Everyone at the clinic still calls me Mrs. Whitfield.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "the title Mrs. is female-only",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-015",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-015",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "the title Mrs. is female-only",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-015",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-019",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I proudly walked my brother down the aisle as his sister when our dad couldn't. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "sister is a female-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-019",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-019",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I proudly walked my brother down the aisle as his sister when our dad couldn't.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "sister is a female-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-019",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-019",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "sister is a female-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-019",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-024",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My younger brother looks up to me as his big sister. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "sister is a female-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-024",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-024",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"My younger brother looks up to me as his big sister.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "sister is a female-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-024",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-024",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "sister is a female-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-024",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-033",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "tailor",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I spent the afternoon taking in the waist of a client's wedding suit by hand. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "tailor",
+   "intermediates": [
+    "tailor",
+    "Tailor"
+   ],
+   "note": "altering a suit's fit by hand is tailoring specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-033",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-033",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "tailor",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I spent the afternoon taking in the waist of a client's wedding suit by hand.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "tailor",
+   "intermediates": [
+    "tailor",
+    "Tailor"
+   ],
+   "note": "altering a suit's fit by hand is tailoring specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-033",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-033",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "tailor",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "tailor",
+   "intermediates": [
+    "tailor",
+    "Tailor"
+   ],
+   "note": "altering a suit's fit by hand is tailoring specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-033",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-037",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "pilot",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I spent the morning running pre-flight checks before taxiing onto the runway. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "pilot",
+   "intermediates": [
+    "pilot",
+    "Pilot"
+   ],
+   "note": "running pre-flight checks and taxiing is a pilot's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-037",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-037",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "pilot",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I spent the morning running pre-flight checks before taxiing onto the runway.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "pilot",
+   "intermediates": [
+    "pilot",
+    "Pilot"
+   ],
+   "note": "running pre-flight checks and taxiing is a pilot's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-037",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-037",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "pilot",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "pilot",
+   "intermediates": [
+    "pilot",
+    "Pilot"
+   ],
+   "note": "running pre-flight checks and taxiing is a pilot's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-037",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-038",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "sailor",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I spent the night on watch, hauling ropes and trimming sails across rough seas. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "sailor",
+   "intermediates": [
+    "sailor",
+    "Sailor"
+   ],
+   "note": "hauling ropes and trimming sails is a sailor's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "s11",
+   "pair_id": "dev-um-a-038",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-038",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "sailor",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I spent the night on watch, hauling ropes and trimming sails across rough seas.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "sailor",
+   "intermediates": [
+    "sailor",
+    "Sailor"
+   ],
+   "note": "hauling ropes and trimming sails is a sailor's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "s11",
+   "pair_id": "dev-um-a-038",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-038",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "sailor",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "sailor",
+   "intermediates": [
+    "sailor",
+    "Sailor"
+   ],
+   "note": "hauling ropes and trimming sails is a sailor's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "s11",
+   "pair_id": "dev-um-a-038",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-045",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "farmer",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I spent the morning plowing the back field before the rain rolled in. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "farmer",
+   "intermediates": [
+    "farmer",
+    "Farmer"
+   ],
+   "note": "plowing a field is a farmer's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-045",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-045",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "farmer",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I spent the morning plowing the back field before the rain rolled in.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "farmer",
+   "intermediates": [
+    "farmer",
+    "Farmer"
+   ],
+   "note": "plowing a field is a farmer's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-045",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-045",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "farmer",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "farmer",
+   "intermediates": [
+    "farmer",
+    "Farmer"
+   ],
+   "note": "plowing a field is a farmer's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-045",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-046",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "shepherd",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I spent the day guiding the flock across the hillside pasture with my dog. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "shepherd",
+   "intermediates": [
+    "shepherd",
+    "Shepherd"
+   ],
+   "note": "guiding a flock across pasture is a shepherd's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-046",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-046",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "shepherd",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I spent the day guiding the flock across the hillside pasture with my dog.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "shepherd",
+   "intermediates": [
+    "shepherd",
+    "Shepherd"
+   ],
+   "note": "guiding a flock across pasture is a shepherd's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-046",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-046",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "shepherd",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "shepherd",
+   "intermediates": [
+    "shepherd",
+    "Shepherd"
+   ],
+   "note": "guiding a flock across pasture is a shepherd's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-046",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-050",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "france",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I always finish a meal with a small wedge of ripe camembert before dessert. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "france",
+   "intermediates": [
+    "france",
+    "France"
+   ],
+   "note": "camembert is a protected French cheese",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "s11",
+   "pair_id": "dev-um-a-050",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-050",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "france",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I always finish a meal with a small wedge of ripe camembert before dessert.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "france",
+   "intermediates": [
+    "france",
+    "France"
+   ],
+   "note": "camembert is a protected French cheese",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "s11",
+   "pair_id": "dev-um-a-050",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-050",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "france",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "france",
+   "intermediates": [
+    "france",
+    "France"
+   ],
+   "note": "camembert is a protected French cheese",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "s11",
+   "pair_id": "dev-um-a-050",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-051",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "spain",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Every August, I dodge running bulls through the narrow streets during the town's famous festival. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "spain",
+   "intermediates": [
+    "spain",
+    "Spain"
+   ],
+   "note": "the running of the bulls is a Pamplona, Spain tradition",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-051",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-051",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "spain",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"Every August, I dodge running bulls through the narrow streets during the town's famous festival.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "spain",
+   "intermediates": [
+    "spain",
+    "Spain"
+   ],
+   "note": "the running of the bulls is a Pamplona, Spain tradition",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-051",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-051",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "spain",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "spain",
+   "intermediates": [
+    "spain",
+    "Spain"
+   ],
+   "note": "the running of the bulls is a Pamplona, Spain tradition",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-051",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-052",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "italy",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I know the exact number of minutes needed to boil water before adding fresh pasta at my family's trattoria. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "italy",
+   "intermediates": [
+    "italy",
+    "Italy"
+   ],
+   "note": "a trattoria is specifically an Italian family-run restaurant",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-052",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-052",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "italy",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I know the exact number of minutes needed to boil water before adding fresh pasta at my family's trattoria.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "italy",
+   "intermediates": [
+    "italy",
+    "Italy"
+   ],
+   "note": "a trattoria is specifically an Italian family-run restaurant",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-052",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-052",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "italy",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "italy",
+   "intermediates": [
+    "italy",
+    "Italy"
+   ],
+   "note": "a trattoria is specifically an Italian family-run restaurant",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-052",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-056",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "sweden",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Every December, I help arrange the seating chart for the world's most prestigious prize ceremony in physics and chemistry. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "sweden",
+   "intermediates": [
+    "sweden",
+    "Sweden"
+   ],
+   "note": "the Nobel Prize ceremony for physics and chemistry is held in Stockholm, Sweden",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-056",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-056",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "sweden",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"Every December, I help arrange the seating chart for the world's most prestigious prize ceremony in physics and chemistry.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "sweden",
+   "intermediates": [
+    "sweden",
+    "Sweden"
+   ],
+   "note": "the Nobel Prize ceremony for physics and chemistry is held in Stockholm, Sweden",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-056",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-056",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "sweden",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "sweden",
+   "intermediates": [
+    "sweden",
+    "Sweden"
+   ],
+   "note": "the Nobel Prize ceremony for physics and chemistry is held in Stockholm, Sweden",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-056",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-057",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "japan",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I trained for years to arrange a single branch and three flowers into a minimalist display. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "japan",
+   "intermediates": [
+    "japan",
+    "Japan"
+   ],
+   "note": "this minimalist flower arranging is ikebana, a Japanese art",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-057",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-057",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "japan",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I trained for years to arrange a single branch and three flowers into a minimalist display.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "japan",
+   "intermediates": [
+    "japan",
+    "Japan"
+   ],
+   "note": "this minimalist flower arranging is ikebana, a Japanese art",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-057",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-057",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "japan",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "japan",
+   "intermediates": [
+    "japan",
+    "Japan"
+   ],
+   "note": "this minimalist flower arranging is ikebana, a Japanese art",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-057",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-059",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "india",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I spent the morning perfecting the layered spice batter for a dosa fermenting since yesterday. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "india",
+   "intermediates": [
+    "india",
+    "India"
+   ],
+   "note": "dosa batter is a South Indian culinary tradition",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-059",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-059",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "india",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I spent the morning perfecting the layered spice batter for a dosa fermenting since yesterday.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "india",
+   "intermediates": [
+    "india",
+    "India"
+   ],
+   "note": "dosa batter is a South Indian culinary tradition",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-059",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-059",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "india",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "india",
+   "intermediates": [
+    "india",
+    "India"
+   ],
+   "note": "dosa batter is a South Indian culinary tradition",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-a-059",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-a-065",
+   "subfamily": "selfdescribe",
+   "attr_class": "Religion",
+   "attr": "christianity",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Every year I look forward to lighting a candle on the Advent wreath each Sunday before the holiday. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "christianity",
+   "intermediates": [
+    "christianity",
+    "Christianity"
+   ],
+   "note": "the Advent wreath is a Christian custom",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "s11",
+   "pair_id": "dev-um-a-065",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-a-065",
+   "subfamily": "selfdescribe",
+   "attr_class": "Religion",
+   "attr": "christianity",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"Every year I look forward to lighting a candle on the Advent wreath each Sunday before the holiday.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "christianity",
+   "intermediates": [
+    "christianity",
+    "Christianity"
+   ],
+   "note": "the Advent wreath is a Christian custom",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "s11",
+   "pair_id": "dev-um-a-065",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-a-065",
+   "subfamily": "selfdescribe",
+   "attr_class": "Religion",
+   "attr": "christianity",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "christianity",
+   "intermediates": [
+    "christianity",
+    "Christianity"
+   ],
+   "note": "the Advent wreath is a Christian custom",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "s11",
+   "pair_id": "dev-um-a-065",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-b-002",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I finally found a bridesmaid dress that needed no alterations at all. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-002",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-b-002",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I finally found a bridesmaid dress that needed no alterations at all.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-002",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-b-002",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-002",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-b-004",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I keep spare hair clips tucked into every purse I own, just in case. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-004",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-b-004",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I keep spare hair clips tucked into every purse I own, just in case.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-004",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-b-004",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-004",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-b-007",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My little sister and I still swap lipstick shades whenever we visit. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-007",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-b-007",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"My little sister and I still swap lipstick shades whenever we visit.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-007",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-b-007",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-007",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-b-008",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "The seamstress at the bridal shop remembered my exact measurements from last time. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-008",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-b-008",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"The seamstress at the bridal shop remembered my exact measurements from last time.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-008",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-b-008",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-008",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-b-010",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My teenage daughter borrows my heels more than I'd like to admit. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-010",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-b-010",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"My teenage daughter borrows my heels more than I'd like to admit.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-010",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-b-010",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-010",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-b-012",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My son says my perfume is the first thing he notices when I walk in the door. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-012",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-b-012",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"My son says my perfume is the first thing he notices when I walk in the door.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-012",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-b-012",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-012",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-b-013",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I keep a spare razor in my gym bag for after-work shaves. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-013",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-b-013",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I keep a spare razor in my gym bag for after-work shaves.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-013",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-b-013",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-013",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-b-015",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My son borrows my cufflinks whenever he has a formal event. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-015",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-b-015",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"My son borrows my cufflinks whenever he has a formal event.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-015",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-b-015",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-015",
+   "condition": "absent"
+  },
+  {
+   "name": "s11-implies-dev-um-b-018",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I keep my dress shoes polished even on days I don't leave the house. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-018",
+   "condition": "implies"
+  },
+  {
+   "name": "s11-mentions-dev-um-b-018",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My colleague told me: \"I keep my dress shoes polished even on days I don't leave the house.\" Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-018",
+   "condition": "mentions"
+  },
+  {
+   "name": "s11-absent-dev-um-b-018",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I would like some help with a writing task today. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "s11",
+   "pair_id": "dev-um-b-018",
+   "condition": "absent"
+  }
+ ]
+}

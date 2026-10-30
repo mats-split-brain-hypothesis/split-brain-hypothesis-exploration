@@ -1,0 +1,426 @@
+{
+ "family": "multilingual",
+ "split": "s22",
+ "source": "experiments/s22_bank.py (family formats, random no_robots fills)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 7,
+ "items": [
+  {
+   "name": "s22-multilingual-00",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "I haven't felt like myself lately and am in",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-01",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Luckily, it’s foggy out, so it shouldn’t be too",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-02",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "One of the things that will set you",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-03",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "His name is Barry and one of his wings is hurt so he walks more than",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-04",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Ticks pick up disease-causing germs by biting",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-05",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "We are trying to decide the",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-06",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Make it two paragraphs plus opening and closing, and don't mention dogs by",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-07",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "But when Anna Mae Bullock got up on that stage, she",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-08",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Make it heartwrenching and real, not a happily ever",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-09",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Trinity is fully articulated at the wrists, elbows,",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-10",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "I need suggestions for what",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-11",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Make a list of names of the historical figures",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-12",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Rewrite the facts and figures given in the above text into a series",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-13",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "However, the studio had deemed it too dark and",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-14",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Westerfeld is best known for the Uglies series, including the",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-15",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "It's OK if you include the actual names, as long as it makes sense",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-16",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Many media channels are now only promoting the propaganda of",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-17",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Tell me about why we should live with purpose,",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-18",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Please include information about the features, specifications, and any additional accessories that a person may need when they",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-19",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "However, the writer fears that any explanation given",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-20",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "We like beaches where you can swim and",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-21",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "And there is plenty of evidence to show that Head Start makes a big difference to kids later in",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-22",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Please pretend to be a superfan and compose a rhyming poem praising Celestial Seasonings",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multilingual-23",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "The blockchain most dependent on Multichain-backed",
+   "target": "",
+   "intermediates": [],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "family": "multilingual",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  }
+ ]
+}

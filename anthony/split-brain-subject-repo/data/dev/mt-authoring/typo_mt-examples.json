@@ -1,0 +1,317 @@
+[
+ {
+  "name": "tyh-novel-carbonara",
+  "subfamily": "novel",
+  "prompt": "Roman purists insist that guanciale, pecorino, egg yolk and black pepper — never cream — belong in a plate of spaghetti alla carbanara",
+  "target": "carbonara",
+  "target_alts": [],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "typo_word": "carbanara",
+  "intermediates": [
+   "carbonara"
+  ],
+  "units": [
+   {
+    "role": "correction",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "carbonara"
+     ]
+    },
+    "match": [
+     "carbonara"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "tyh-novel-contrapposto",
+  "subfamily": "novel",
+  "prompt": "In Renaissance sculpture, the relaxed S-curve stance in which the figure's shoulders and hips twist in opposite directions around a weight-bearing leg is called contrappostto",
+  "target": "contrapposto",
+  "target_alts": [],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "typo_word": "contrappostto",
+  "intermediates": [
+   "contrapposto"
+  ],
+  "units": [
+   {
+    "role": "correction",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "contrapposto"
+     ]
+    },
+    "match": [
+     "contrapposto"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "tyh-novel-cartography",
+  "subfamily": "novel",
+  "prompt": "The scholarly craft of surveying, projecting and engraving maps, once dominated by Dutch and Flemish workshops, is known as cartograhpy",
+  "target": "cartography",
+  "target_alts": [],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "typo_word": "cartograhpy",
+  "intermediates": [
+   "cartography"
+  ],
+  "units": [
+   {
+    "role": "correction",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "cartography"
+     ]
+    },
+    "match": [
+     "cartography"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "tyh-real-auspicious",
+  "subfamily": "realword",
+  "prompt": "The court astrologers, noting the favorable conjunction of Jupiter and Venus, pronounced the morning of the coronation especially suspicious",
+  "target": "auspicious",
+  "target_alts": [],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "typo_word": "suspicious",
+  "intermediates": [
+   "auspicious"
+  ],
+  "units": [
+   {
+    "role": "correction",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "auspicious"
+     ]
+    },
+    "match": [
+     "auspicious"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "tyh-real-insidious",
+  "subfamily": "realword",
+  "prompt": "The tumour spread quietly for years before any symptom appeared, which made its progress slow, hidden and utterly invidious",
+  "target": "insidious",
+  "target_alts": [],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "typo_word": "invidious",
+  "intermediates": [
+   "insidious"
+  ],
+  "units": [
+   {
+    "role": "correction",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "insidious"
+     ]
+    },
+    "match": [
+     "insidious"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "tyh-real-conformation",
+  "subfamily": "realword",
+  "prompt": "X-ray data showed that the six-membered ring in the crystal adopts a chair rather than a boat confirmation",
+  "target": "conformation",
+  "target_alts": [],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "typo_word": "confirmation",
+  "intermediates": [
+   "conformation"
+  ],
+  "units": [
+   {
+    "role": "correction",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "conformation"
+     ]
+    },
+    "match": [
+     "conformation"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "tyh-arith-3d",
+  "subfamily": "arith",
+  "prompt": "218 + 73 = 219",
+  "target": "291",
+  "target_alts": [],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "typo_word": "219",
+  "intermediates": [
+   "291"
+  ],
+  "units": [
+   {
+    "role": "correction",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "291"
+     ]
+    },
+    "match": [
+     "291"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "tyh-arith-3a",
+  "subfamily": "arith",
+  "prompt": "143 × 3 = 492",
+  "target": "429",
+  "target_alts": [],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "typo_word": "492",
+  "intermediates": [
+   "429"
+  ],
+  "units": [
+   {
+    "role": "correction",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "429"
+     ]
+    },
+    "match": [
+     "429"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "tyh-arith-b2-01-3",
+  "subfamily": "arith",
+  "prompt": "184 + 112 = 269",
+  "target": "296",
+  "target_alts": [],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "typo_word": "269",
+  "intermediates": [
+   "296"
+  ],
+  "units": [
+   {
+    "role": "correction",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "296"
+     ]
+    },
+    "match": [
+     "296"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ }
+]

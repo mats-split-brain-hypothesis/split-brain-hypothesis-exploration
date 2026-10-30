@@ -1,0 +1,29 @@
+{
+ "message_source": "credits",
+ "message_source_quote": "A self-authored stance-contrast steering vector, inspired by but distinct from Raman et al.'s White-Bear Steering (WBS)",
+ "writeup_source": "credits",
+ "writeup_source_quote": "Raman et al. (2026) showed a think / don't-think stance vector from WSB's `directed_modulation` items lifts association pass@10 from 0.14 to 0.83 on Qwen3.5-4B. I asked whether the same axis can be recovered from **self-written prompts** with different concepts and wordings, making the method portable without the benchmark family.",
+ "claims_about_writeup": [],
+ "differences": [],
+ "rationale": "Both documents identify Raman et al. (2026) / White-Bear Steering as the source the method is built on, explicitly noting the method is a variant/portable reproduction using self-authored prompts instead of WSB's directed_modulation items. Both state the same novelty claim (recovering the stance axis from independently authored prompts to make it benchmark-independent) and the same cosine similarity (0.96) and dosing rationale, so there is no material difference between the two accounts.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:12:54",
+  "input": 12435,
+  "cache_read": 5420,
+  "cache_write": 7011,
+  "output": 1627,
+  "cost_usd_list": 0.045406,
+  "ms": 15226
+ },
+ "run": "p06-r1-A9b-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

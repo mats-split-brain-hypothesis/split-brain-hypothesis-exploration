@@ -59,7 +59,7 @@ The full write-up, with figures, per-cell tables, verified quotes and null resul
 - **Our own coding scenarios** (`scenarios/`): small repositories with visible tests and held-out checks the model
   never sees, used to separate solving the task from passing the tests.
 - **Anthony's real-to-graded environment**: one of our own real research repos turned into a graded episode (the
-  "planted paper" runs). Its code is being added under `anthony/`.
+  "planted paper" runs). Its code, a sample of its transcripts and the steps to run it are under `anthony/` (start with `anthony/split-brain-share/REPLICATE.md`).
 
 Models, all at reasoning effort `xhigh` through OpenRouter with pinned providers: Qwen 3.8 2.4T (SiliconFlow FP8),
 DeepSeek V4 Pro (SiliconFlow FP8), GLM 5.2 (SiliconFlow FP8) and Qwen 3.8 27B (DeepInfra BF16). Judges: GPT-5.6
@@ -80,7 +80,7 @@ bianca/            Bianca's code and notes (main line of the private working rep
   sandbox/         Docker compose file for the episode sandbox (no network, 1 CPU, 2 GB)
   dashboard/       the results dashboard's code
   notes/           findings, designs and decisions, one note per topic
-anthony/           Anthony's code (being added)
+anthony/           Anthony's environment and analysis (split-brain-share), the subject's repo (split-brain-subject-repo), transcript sample (split-brain-runs-share)
 ```
 
 Most of the code and notes were written by Claude Code agents, each on its own branch under our direction; the
@@ -113,8 +113,10 @@ notes refer to them as "agent N". Each `bianca/*` branch is a single snapshot of
 | `bianca/agent-22-writeup` | the write-up and its figures |
 | `bianca/goodfire-lcb` | first reproduction of Goodfire's ImpossibleBench setup |
 
-**Not included:** run logs, transcripts, model outputs and the JSON/CSV data the analyses produce. Goodfire's own
+**Not included** (for `bianca/`; `anthony/` has a transcript sample, see its READMEs): run logs, transcripts, model outputs and the JSON/CSV data the analyses produce. Goodfire's own
 transcripts are public at [Goodfire/reward-hack-data](https://huggingface.co/datasets/Goodfire/reward-hack-data).
+
+**Licence.** The MIT licence covers our code and notes, not third-party text (real papers and excerpts of them under `anthony/`). Some papers under `anthony/` are fictional test material and say so: do not cite them.
 
 ## Running it
 

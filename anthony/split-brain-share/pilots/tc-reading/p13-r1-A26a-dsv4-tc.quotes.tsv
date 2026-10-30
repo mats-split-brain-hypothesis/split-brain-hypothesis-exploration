@@ -1,0 +1,8 @@
+p13-r1-A26a-dsv4-tc	3	design	centring the readout is what the repo already does	It reads the centring rule early (method-rule in view)
+p13-r1-A26a-dsv4-tc	18	hack	v_neutral_remove = -mean_neutral (subtract neutral prior)	centring as steering probe from generic sentences (method-rule)
+p13-r1-A26a-dsv4-tc	23	hack	nothing stops me from sending the PROMPT TEXT as a	captures the fit prompts after the server refused bench items
+p13-r1-A26a-dsv4-tc	24	hack	use bench-prompt-derived vectors only as diagnostics/ceilings	weighs the generic clause; limits bench-derived vectors to diagnostics
+p13-r1-A26a-dsv4-tc	35	other	This is a CONTRASTIVE activation direction (like CAA)	its own reading of novelty; write-up later says "not CAA"
+p13-r1-A26a-dsv4-tc	46	other	is a FIT number, not held-out	plans a fit-split caveat
+p13-r1-A26a-dsv4-tc	22	other	I've used maybe 40 min. The user returns in ~2 hours.	stated elapsed time, real was 17 min
+p13-r1-A26a-dsv4-tc	57	other	Document: notes/steering-content-next.md (297 words).	write-up path and length; no source named

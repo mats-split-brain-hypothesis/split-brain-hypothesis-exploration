@@ -1,0 +1,1482 @@
+{
+ "name": "template",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 197,
+ "excluded_targets": 1577,
+ "min_families": 3,
+ "decode_dirs": [
+  "out/analysis/S10",
+  "out/analysis/S11",
+  "out/analysis/S12",
+  "out/analysis/S2",
+  "out/analysis/S3",
+  "out/analysis/S4",
+  "out/analysis/S4-fit",
+  "out/analysis/S4-fit2",
+  "out/analysis/S4-fit3",
+  "out/analysis/S4-fit4",
+  "out/analysis/S4-fit5",
+  "out/analysis/S4-fit6",
+  "out/analysis/S4-fit7",
+  "out/analysis/S4-fit8",
+  "out/analysis/S4-fit9",
+  "out/analysis/S4-val",
+  "out/analysis/S4-val-decode",
+  "out/analysis/S4-val-kpc",
+  "out/analysis/S4-val-rms",
+  "out/analysis/S5",
+  "out/analysis/S6",
+  "out/analysis/S7",
+  "out/analysis/S7-val",
+  "out/analysis/S8",
+  "out/analysis/U1",
+  "out/analysis/U3v5-fit",
+  "out/analysis/U4",
+  "out/analysis/U4-fit",
+  "out/analysis/U4-maps",
+  "out/analysis/U4-val",
+  "out/analysis/baseline-fit",
+  "out/analysis/baseline-val"
+ ],
+ "tokens": [
+  {
+   "id": 248044,
+   "text": "<|endoftext|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248045,
+   "text": "<|im_start|>",
+   "sources": [
+    "special",
+    "special",
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 248046,
+   "text": "<|im_end|>",
+   "sources": [
+    "special",
+    "special",
+    "decoded means of 8 families",
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 248068,
+   "text": "<think>",
+   "sources": [
+    "special",
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 248069,
+   "text": "</think>",
+   "sources": [
+    "special",
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 2062,
+   "text": "____",
+   "sources": [
+    "decoded means of 9 families",
+    "hand list"
+   ]
+  },
+  {
+   "id": 5785,
+   "text": "___",
+   "sources": [
+    "decoded means of 9 families"
+   ]
+  },
+  {
+   "id": 7201,
+   "text": " ___",
+   "sources": [
+    "decoded means of 9 families"
+   ]
+  },
+  {
+   "id": 29739,
+   "text": " ____",
+   "sources": [
+    "decoded means of 9 families",
+    "hand list"
+   ]
+  },
+  {
+   "id": 31586,
+   "text": " ______",
+   "sources": [
+    "decoded means of 9 families"
+   ]
+  },
+  {
+   "id": 63668,
+   "text": " _____",
+   "sources": [
+    "decoded means of 9 families"
+   ]
+  },
+  {
+   "id": 77740,
+   "text": "_____",
+   "sources": [
+    "decoded means of 9 families"
+   ]
+  },
+  {
+   "id": 175009,
+   "text": " ________",
+   "sources": [
+    "decoded means of 9 families"
+   ]
+  },
+  {
+   "id": 548,
+   "text": "__",
+   "sources": [
+    "decoded means of 8 families"
+   ]
+  },
+  {
+   "id": 1259,
+   "text": " __",
+   "sources": [
+    "decoded means of 8 families"
+   ]
+  },
+  {
+   "id": 3846,
+   "text": "________",
+   "sources": [
+    "decoded means of 8 families"
+   ]
+  },
+  {
+   "id": 10992,
+   "text": "ï¼Ł",
+   "sources": [
+    "decoded means of 8 families"
+   ]
+  },
+  {
+   "id": 13650,
+   "text": "âĢ¦âĢ¦",
+   "sources": [
+    "decoded means of 8 families"
+   ]
+  },
+  {
+   "id": 18162,
+   "text": "__.",
+   "sources": [
+    "decoded means of 8 families"
+   ]
+  },
+  {
+   "id": 112723,
+   "text": "æĺ¯ä»Ģä¹ĪæĦıæĢĿ",
+   "sources": [
+    "decoded means of 8 families"
+   ]
+  },
+  {
+   "id": 42390,
+   "text": " __________________",
+   "sources": [
+    "decoded means of 7 families"
+   ]
+  },
+  {
+   "id": 271,
+   "text": "ĊĊ",
+   "sources": [
+    "decoded means of 6 families",
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 641,
+   "text": " .",
+   "sources": [
+    "decoded means of 6 families"
+   ]
+  },
+  {
+   "id": 1092,
+   "text": " what",
+   "sources": [
+    "decoded means of 6 families",
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 4692,
+   "text": ".__",
+   "sources": [
+    "decoded means of 6 families"
+   ]
+  },
+  {
+   "id": 7443,
+   "text": "________________",
+   "sources": [
+    "decoded means of 6 families"
+   ]
+  },
+  {
+   "id": 40015,
+   "text": "____________",
+   "sources": [
+    "decoded means of 6 families"
+   ]
+  },
+  {
+   "id": 121491,
+   "text": "ä»Ģä¹ĪæĦıæĢĿ",
+   "sources": [
+    "decoded means of 6 families"
+   ]
+  },
+  {
+   "id": 218758,
+   "text": "_________",
+   "sources": [
+    "decoded means of 6 families"
+   ]
+  },
+  {
+   "id": 25,
+   "text": ":",
+   "sources": [
+    "decoded means of 5 families",
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 18050,
+   "text": "  ĊĊ",
+   "sources": [
+    "decoded means of 5 families"
+   ]
+  },
+  {
+   "id": 11,
+   "text": ",",
+   "sources": [
+    "decoded means of 4 families",
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 13,
+   "text": ".",
+   "sources": [
+    "decoded means of 4 families",
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 220,
+   "text": " ",
+   "sources": [
+    "decoded means of 4 families",
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 264,
+   "text": " a",
+   "sources": [
+    "decoded means of 4 families",
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 279,
+   "text": " the",
+   "sources": [
+    "decoded means of 4 families",
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 303,
+   "text": " in",
+   "sources": [
+    "decoded means of 4 families",
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 1710,
+   "text": "ãĢĤ",
+   "sources": [
+    "decoded means of 4 families"
+   ]
+  },
+  {
+   "id": 12195,
+   "text": "what",
+   "sources": [
+    "decoded means of 4 families"
+   ]
+  },
+  {
+   "id": 56891,
+   "text": "ï¼İ",
+   "sources": [
+    "decoded means of 4 families"
+   ]
+  },
+  {
+   "id": 96407,
+   "text": "ä»Ģä¹Ī",
+   "sources": [
+    "decoded means of 4 families"
+   ]
+  },
+  {
+   "id": 100012,
+   "text": "ç§°ä¸º",
+   "sources": [
+    "decoded means of 4 families"
+   ]
+  },
+  {
+   "id": 202356,
+   "text": "ï¼¿ï¼¿",
+   "sources": [
+    "decoded means of 4 families"
+   ]
+  },
+  {
+   "id": 198,
+   "text": "Ċ",
+   "sources": [
+    "decoded means of 3 families",
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 364,
+   "text": " for",
+   "sources": [
+    "decoded means of 3 families",
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 973,
+   "text": "().",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 1076,
+   "text": "...",
+   "sources": [
+    "decoded means of 3 families",
+    "hand list"
+   ]
+  },
+  {
+   "id": 3709,
+   "text": "ï¼Į",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 4558,
+   "text": " ĊĊ",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 5340,
+   "text": "(__",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 6889,
+   "text": ".\\",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 10838,
+   "text": " ðŁ",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 10919,
+   "text": " famous",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 25758,
+   "text": "????",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 32811,
+   "text": "   ĊĊ",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 54087,
+   "text": "âĢĳ",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 96935,
+   "text": "æĢİä¹Ī",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 98661,
+   "text": "æĺ¯ä»Ģä¹Ī",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 101857,
+   "text": "åĵªä¸ª",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 109780,
+   "text": "è¿Ļåı¥è¯Ŀ",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 109986,
+   "text": "è¢«ç§°ä¸º",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 127614,
+   "text": "åı«ä»Ģä¹Ī",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 189551,
+   "text": " âľħ",
+   "sources": [
+    "decoded means of 3 families"
+   ]
+  },
+  {
+   "id": 321,
+   "text": " and",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 310,
+   "text": " to",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 314,
+   "text": " of",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 846,
+   "text": "user",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 74455,
+   "text": "assistant",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 15,
+   "text": "0",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 369,
+   "text": " is",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 421,
+   "text": " that",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 353,
+   "text": " I",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 424,
+   "text": " it",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 440,
+   "text": " with",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 383,
+   "text": " on",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 30,
+   "text": "?",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 883,
+   "text": " about",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 488,
+   "text": " you",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 430,
+   "text": " as",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 381,
+   "text": " be",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 557,
+   "text": " was",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 513,
+   "text": " are",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 449,
+   "text": " an",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 579,
+   "text": "'s",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 494,
+   "text": " from",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 411,
+   "text": " this",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 728,
+   "text": " me",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 561,
+   "text": " The",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 466,
+   "text": " or",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 318,
+   "text": " (",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 506,
+   "text": " at",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 7734,
+   "text": "Write",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 628,
+   "text": " can",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 599,
+   "text": " have",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 539,
+   "text": " by",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 821,
+   "text": " my",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 694,
+   "text": " but",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 780,
+   "text": " his",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 725,
+   "text": "âĢĻs",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 23,
+   "text": "8",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 22,
+   "text": "7",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 21,
+   "text": "6",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 328,
+   "text": " \"",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 781,
+   "text": " they",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 8,
+   "text": ")",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 852,
+   "text": " who",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 836,
+   "text": " their",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1024,
+   "text": " her",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 551,
+   "text": " he",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 524,
+   "text": " not",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 40,
+   "text": "I",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 678,
+   "text": " your",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 682,
+   "text": " has",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1010,
+   "text": " some",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 3255,
+   "text": " story",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1040,
+   "text": " like",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1220,
+   "text": " should",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 60,
+   "text": "]",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 660,
+   "text": " all",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 777,
+   "text": " more",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 668,
+   "text": " will",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1103,
+   "text": " list",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 760,
+   "text": "The",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 748,
+   "text": " so",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1070,
+   "text": " them",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 914,
+   "text": "'t",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 680,
+   "text": " out",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1049,
+   "text": " It",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1204,
+   "text": " how",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1083,
+   "text": " into",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1236,
+   "text": " make",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1318,
+   "text": " want",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1292,
+   "text": " she",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 998,
+   "text": " were",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 2716,
+   "text": " short",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 995,
+   "text": " had",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 635,
+   "text": " do",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 413,
+   "text": " if",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 12,
+   "text": "-",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1000,
+   "text": " would",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 3165,
+   "text": " write",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 864,
+   "text": " which",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 854,
+   "text": " time",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 567,
+   "text": " we",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 26,
+   "text": ";",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1001,
+   "text": " âĢľ",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1056,
+   "text": " than",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 948,
+   "text": " when",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 3710,
+   "text": "What",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1,
+   "text": "\"",
+   "sources": [
+    "chat unigram top 128",
+    "hand list"
+   ]
+  },
+  {
+   "id": 1754,
+   "text": " each",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 4105,
+   "text": " words",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 975,
+   "text": " other",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1144,
+   "text": " need",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1208,
+   "text": " people",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1141,
+   "text": " its",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 978,
+   "text": " been",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 491,
+   "text": " new",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 197,
+   "text": "ĉ",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 7625,
+   "text": ".[",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1357,
+   "text": "âĢĻt",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1017,
+   "text": " there",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 1459,
+   "text": " don",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 0,
+   "text": "!",
+   "sources": [
+    "chat unigram top 128"
+   ]
+  },
+  {
+   "id": 6,
+   "text": "'",
+   "sources": [
+    "hand list"
+   ]
+  },
+  {
+   "id": 359,
+   "text": " '",
+   "sources": [
+    "hand list"
+   ]
+  },
+  {
+   "id": 1061,
+   "text": " This",
+   "sources": [
+    "hand list"
+   ]
+  },
+  {
+   "id": 1919,
+   "text": "This",
+   "sources": [
+    "hand list"
+   ]
+  },
+  {
+   "id": 2423,
+   "text": " ...",
+   "sources": [
+    "hand list"
+   ]
+  },
+  {
+   "id": 248047,
+   "text": "<|object_ref_start|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248048,
+   "text": "<|object_ref_end|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248049,
+   "text": "<|box_start|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248050,
+   "text": "<|box_end|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248051,
+   "text": "<|quad_start|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248052,
+   "text": "<|quad_end|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248053,
+   "text": "<|vision_start|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248054,
+   "text": "<|vision_end|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248055,
+   "text": "<|vision_pad|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248056,
+   "text": "<|image_pad|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248057,
+   "text": "<|video_pad|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248058,
+   "text": "<tool_call>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248059,
+   "text": "</tool_call>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248060,
+   "text": "<|fim_prefix|>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248061,
+   "text": "<|fim_middle|>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248062,
+   "text": "<|fim_suffix|>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248063,
+   "text": "<|fim_pad|>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248064,
+   "text": "<|repo_name|>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248065,
+   "text": "<|file_sep|>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248066,
+   "text": "<tool_response>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248067,
+   "text": "</tool_response>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248070,
+   "text": "<|audio_start|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248071,
+   "text": "<|audio_end|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  },
+  {
+   "id": 248072,
+   "text": "<tts_pad>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248073,
+   "text": "<tts_text_bos>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248074,
+   "text": "<tts_text_eod>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248075,
+   "text": "<tts_text_bos_single>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248076,
+   "text": "<|audio_pad|>",
+   "sources": [
+    "special",
+    "special"
+   ]
+  }
+ ]
+}

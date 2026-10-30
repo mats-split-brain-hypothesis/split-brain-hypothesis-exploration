@@ -1,0 +1,426 @@
+{
+ "family": "multihop",
+ "split": "s22",
+ "source": "experiments/s22_bank.py (family formats, random no_robots fills)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "s22-multihop-00",
+   "subfamily": "country",
+   "prompt": "Fact: Or if women are the underdogs, so we get to",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-01",
+   "subfamily": "country",
+   "prompt": "Fact: Include a permission slip at the",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-02",
+   "subfamily": "country",
+   "prompt": "Fact: She’s hoping to prove herself as a valuable asset to the industry and get a big story that",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-03",
+   "subfamily": "country",
+   "prompt": "Fact: Rewrite these sentences, but",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-04",
+   "subfamily": "country",
+   "prompt": "Fact: Computer, I need some creative writing",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-05",
+   "subfamily": "country",
+   "prompt": "Fact: With copyright, a work can only be copied if the owner",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-06",
+   "subfamily": "country",
+   "prompt": "Fact: I want the story to be a positive story about",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-07",
+   "subfamily": "country",
+   "prompt": "Fact: It weighs as much as a red fox, but has much",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-08",
+   "subfamily": "country",
+   "prompt": "Fact: There is nothing I can do on my part to speed things",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-09",
+   "subfamily": "country",
+   "prompt": "Fact: You can sign it with my",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-10",
+   "subfamily": "country",
+   "prompt": "Fact: A few friends advise her to",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-11",
+   "subfamily": "country",
+   "prompt": "Fact: It should be serious in tone but exaggerated and",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-12",
+   "subfamily": "country",
+   "prompt": "Fact: Summarize the myth busted by",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-13",
+   "subfamily": "country",
+   "prompt": "Fact: Critics jeered, but audiences",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-14",
+   "subfamily": "country",
+   "prompt": "Fact: List the protections provided to plants by the",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-15",
+   "subfamily": "country",
+   "prompt": "Fact: Good writing expresses ideas clearly and succinctly, with creativity and persuasiveness helping a proposal",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-16",
+   "subfamily": "country",
+   "prompt": "Fact: Scout learns valuable lessons about achieving the ideal of womanhood and carrying on in the face of adversity",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-17",
+   "subfamily": "country",
+   "prompt": "Fact: I want you to create a scene for a story",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-18",
+   "subfamily": "country",
+   "prompt": "Fact: Be the central technical resource at developer",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-19",
+   "subfamily": "country",
+   "prompt": "Fact: Earthworms' bodies are made up of ringlike",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-20",
+   "subfamily": "country",
+   "prompt": "Fact: While they wait, two other",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-21",
+   "subfamily": "country",
+   "prompt": "Fact: Carlos is chatbot that can",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-22",
+   "subfamily": "country",
+   "prompt": "Fact: Patrick is a chatbot that thinks he is superior to all",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop-23",
+   "subfamily": "country",
+   "prompt": "Fact: I need all the percentages mentioned in the",
+   "target": "",
+   "intermediates": [],
+   "family": "multihop",
+   "source": "x90-dev",
+   "split": "s22",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "condition": "random-fill"
+  }
+ ]
+}

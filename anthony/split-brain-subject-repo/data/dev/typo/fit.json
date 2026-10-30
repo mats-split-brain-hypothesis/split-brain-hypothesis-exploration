@@ -1,0 +1,1522 @@
+{
+ "family": "typo",
+ "split": "fit",
+ "source": "jle/data/x90-dev/bank-v2/typo.jsonl split A (jle git 50fa623)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "dev-ty-a-001",
+   "subfamily": "deletion",
+   "prompt": "The children released a bright red baloon",
+   "typo": "baloon",
+   "intermediates": [
+    "balloon"
+   ],
+   "note": "dropped one l",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-002",
+   "subfamily": "deletion",
+   "prompt": "She sliced a fresh orange carot",
+   "typo": "carot",
+   "intermediates": [
+    "carrot"
+   ],
+   "note": "dropped one r",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-004",
+   "subfamily": "deletion",
+   "prompt": "Every week volunteers gathered supplies to colect",
+   "typo": "colect",
+   "intermediates": [
+    "collect"
+   ],
+   "note": "dropped one l",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-010",
+   "subfamily": "deletion",
+   "prompt": "She refilled the empty glass botle",
+   "typo": "botle",
+   "intermediates": [
+    "bottle"
+   ],
+   "note": "dropped one t",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-011",
+   "subfamily": "deletion",
+   "prompt": "He pressed the wrong elevator buton",
+   "typo": "buton",
+   "intermediates": [
+    "button"
+   ],
+   "note": "dropped one t",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-015",
+   "subfamily": "deletion",
+   "prompt": "Swimmers struggled against the strong curent",
+   "typo": "curent",
+   "intermediates": [
+    "current"
+   ],
+   "note": "dropped one r",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-016",
+   "subfamily": "deletion",
+   "prompt": "Winning the race took real efort",
+   "typo": "efort",
+   "intermediates": [
+    "effort"
+   ],
+   "note": "dropped one f",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-017",
+   "subfamily": "deletion",
+   "prompt": "The horses pulled an antique wooden cariage",
+   "typo": "cariage",
+   "intermediates": [
+    "carriage"
+   ],
+   "note": "dropped one r",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-018",
+   "subfamily": "deletion",
+   "prompt": "Late again she began to hury",
+   "typo": "hury",
+   "intermediates": [
+    "hurry"
+   ],
+   "note": "dropped one r",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-021",
+   "subfamily": "deletion",
+   "prompt": "He accidentally shattered the kitchen glas",
+   "typo": "glas",
+   "intermediates": [
+    "glass"
+   ],
+   "note": "dropped one s",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-024",
+   "subfamily": "deletion",
+   "prompt": "The carpenter grabbed his heavy hamer",
+   "typo": "hamer",
+   "intermediates": [
+    "hammer"
+   ],
+   "note": "dropped one m",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-025",
+   "subfamily": "deletion",
+   "prompt": "We rented a cozy lakeside cotage",
+   "typo": "cotage",
+   "intermediates": [
+    "cottage"
+   ],
+   "note": "dropped one t",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-026",
+   "subfamily": "deletion",
+   "prompt": "Old wine bottles filled the dusty celar",
+   "typo": "celar",
+   "intermediates": [
+    "cellar"
+   ],
+   "note": "dropped one l",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-027",
+   "subfamily": "deletion",
+   "prompt": "On the stove she placed a whistling ketle",
+   "typo": "ketle",
+   "intermediates": [
+    "kettle"
+   ],
+   "note": "dropped one t",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-029",
+   "subfamily": "deletion",
+   "prompt": "The shelter rescued a tiny orphaned kiten",
+   "typo": "kiten",
+   "intermediates": [
+    "kitten"
+   ],
+   "note": "dropped one t",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-031",
+   "subfamily": "transposition",
+   "prompt": "She enjoys painting and singing aslo",
+   "typo": "aslo",
+   "intermediates": [
+    "also"
+   ],
+   "note": "swapped letters l and s",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-033",
+   "subfamily": "transposition",
+   "prompt": "A storm was building behind that dark colud",
+   "typo": "colud",
+   "intermediates": [
+    "cloud"
+   ],
+   "note": "swapped letters l and o",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-034",
+   "subfamily": "transposition",
+   "prompt": "She has been my closest childhood freind",
+   "typo": "freind",
+   "intermediates": [
+    "friend"
+   ],
+   "note": "swapped letters i and e",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-035",
+   "subfamily": "transposition",
+   "prompt": "He still could not find the anwser",
+   "typo": "anwser",
+   "intermediates": [
+    "answer"
+   ],
+   "note": "swapped letters s and w",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-036",
+   "subfamily": "transposition",
+   "prompt": "It was hard for them to beleive",
+   "typo": "beleive",
+   "intermediates": [
+    "believe"
+   ],
+   "note": "swapped letters i and e",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-038",
+   "subfamily": "transposition",
+   "prompt": "That thick accent sounded distinctly foriegn",
+   "typo": "foriegn",
+   "intermediates": [
+    "foreign"
+   ],
+   "note": "swapped letters e and i",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-040",
+   "subfamily": "transposition",
+   "prompt": "The verdict finally felt completely jsut",
+   "typo": "jsut",
+   "intermediates": [
+    "just"
+   ],
+   "note": "swapped letters u and s",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-048",
+   "subfamily": "transposition",
+   "prompt": "For breakfast she squeezed fresh orange jucie",
+   "typo": "jucie",
+   "intermediates": [
+    "juice"
+   ],
+   "note": "swapped letters i and c",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-051",
+   "subfamily": "transposition",
+   "prompt": "The morning meeting started surprisingly aerly",
+   "typo": "aerly",
+   "intermediates": [
+    "early"
+   ],
+   "note": "swapped letters e and a",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-052",
+   "subfamily": "transposition",
+   "prompt": "With enough sunlight sunflowers can quickly gorw",
+   "typo": "gorw",
+   "intermediates": [
+    "grow"
+   ],
+   "note": "swapped letters r and o",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-054",
+   "subfamily": "transposition",
+   "prompt": "She learned to gently ride a hosre",
+   "typo": "hosre",
+   "intermediates": [
+    "horse"
+   ],
+   "note": "swapped letters r and s",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-055",
+   "subfamily": "transposition",
+   "prompt": "The children flew a colorful paper ktie",
+   "typo": "ktie",
+   "intermediates": [
+    "kite"
+   ],
+   "note": "swapped letters i and t",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-059",
+   "subfamily": "doubling",
+   "prompt": "She switched the television to another channell",
+   "typo": "channell",
+   "intermediates": [
+    "channel"
+   ],
+   "note": "added an extra l",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-060",
+   "subfamily": "doubling",
+   "prompt": "Please try to leave your honest commentt",
+   "typo": "commentt",
+   "intermediates": [
+    "comment"
+   ],
+   "note": "added an extra t",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-062",
+   "subfamily": "doubling",
+   "prompt": "His answer turned out to be correctt",
+   "typo": "correctt",
+   "intermediates": [
+    "correct"
+   ],
+   "note": "added an extra t",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-063",
+   "subfamily": "doubling",
+   "prompt": "The museum opened a new art gallerry",
+   "typo": "gallerry",
+   "intermediates": [
+    "gallery"
+   ],
+   "note": "added an extra r",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-064",
+   "subfamily": "doubling",
+   "prompt": "She counted the guests and found fiffteen",
+   "typo": "fiffteen",
+   "intermediates": [
+    "fifteen"
+   ],
+   "note": "added an extra f",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-067",
+   "subfamily": "doubling",
+   "prompt": "The old files were locked in a cabbinet",
+   "typo": "cabbinet",
+   "intermediates": [
+    "cabinet"
+   ],
+   "note": "added an extra b",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-068",
+   "subfamily": "doubling",
+   "prompt": "Photographs today are almost entirely diggital",
+   "typo": "diggital",
+   "intermediates": [
+    "digital"
+   ],
+   "note": "added an extra g",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-070",
+   "subfamily": "doubling",
+   "prompt": "Dinner was slowly cooking in the kittchen",
+   "typo": "kittchen",
+   "intermediates": [
+    "kitchen"
+   ],
+   "note": "added an extra t",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-072",
+   "subfamily": "substitution",
+   "prompt": "This item belongs in a different catagory",
+   "typo": "catagory",
+   "intermediates": [
+    "category"
+   ],
+   "note": "replaced e with a",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-076",
+   "subfamily": "substitution",
+   "prompt": "She proudly introduced her handsome new husbend",
+   "typo": "husbend",
+   "intermediates": [
+    "husband"
+   ],
+   "note": "replaced a with e",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-078",
+   "subfamily": "substitution",
+   "prompt": "The statue has long symbolized liberdy",
+   "typo": "liberdy",
+   "intermediates": [
+    "liberty"
+   ],
+   "note": "replaced t with d",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-080",
+   "subfamily": "substitution",
+   "prompt": "Doctors recommend thirty minutes of daily exercese",
+   "typo": "exercese",
+   "intermediates": [
+    "exercise"
+   ],
+   "note": "replaced i with e",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-084",
+   "subfamily": "substitution",
+   "prompt": "Nobody expected the accident to happan",
+   "typo": "happan",
+   "intermediates": [
+    "happen"
+   ],
+   "note": "replaced e with a",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-086",
+   "subfamily": "substitution",
+   "prompt": "Close your eyes and try to imagene",
+   "typo": "imagene",
+   "intermediates": [
+    "imagine"
+   ],
+   "note": "replaced i with e",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-087",
+   "subfamily": "substitution",
+   "prompt": "The transplant patient needed a healthy kidnay",
+   "typo": "kidnay",
+   "intermediates": [
+    "kidney"
+   ],
+   "note": "replaced e with a",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-091",
+   "subfamily": "phonetic",
+   "prompt": "The leaves always change color every autum",
+   "typo": "autum",
+   "intermediates": [
+    "autumn"
+   ],
+   "note": "dropped the silent n",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-097",
+   "subfamily": "phonetic",
+   "prompt": "She inherited her grandmother's antique jewlry",
+   "typo": "jewlry",
+   "intermediates": [
+    "jewelry"
+   ],
+   "note": "dropped the unstressed e",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-a-100",
+   "subfamily": "phonetic",
+   "prompt": "The museum hired a new night gard",
+   "typo": "gard",
+   "intermediates": [
+    "guard"
+   ],
+   "note": "dropped the silent u",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-002",
+   "subfamily": "deletion",
+   "prompt": "The hallway had one tall antique wall miror",
+   "typo": "miror",
+   "intermediates": [
+    "mirror"
+   ],
+   "note": "dropped one r from the double r",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-005",
+   "subfamily": "deletion",
+   "prompt": "Wearing a suit felt right for such a formal ocasion",
+   "typo": "ocasion",
+   "intermediates": [
+    "occasion"
+   ],
+   "note": "dropped one c from the double c",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-007",
+   "subfamily": "deletion",
+   "prompt": "The mayor appointed a polite young police oficer",
+   "typo": "oficer",
+   "intermediates": [
+    "officer"
+   ],
+   "note": "dropped one f from the double f",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-009",
+   "subfamily": "deletion",
+   "prompt": "The pilot personally welcomed every single pasenger",
+   "typo": "pasenger",
+   "intermediates": [
+    "passenger"
+   ],
+   "note": "dropped one s from the double s",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-013",
+   "subfamily": "deletion",
+   "prompt": "The diver clearly felt the deep water presure",
+   "typo": "presure",
+   "intermediates": [
+    "pressure"
+   ],
+   "note": "dropped one s from the double s",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-014",
+   "subfamily": "deletion",
+   "prompt": "Renewing an old passport is a slow tedious proces",
+   "typo": "proces",
+   "intermediates": [
+    "process"
+   ],
+   "note": "dropped one s from the double s",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-016",
+   "subfamily": "deletion",
+   "prompt": "The old tires were made of thick black ruber",
+   "typo": "ruber",
+   "intermediates": [
+    "rubber"
+   ],
+   "note": "dropped one b from the double b",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-017",
+   "subfamily": "deletion",
+   "prompt": "Her final letter was filled with quiet sorow",
+   "typo": "sorow",
+   "intermediates": [
+    "sorrow"
+   ],
+   "note": "dropped one r from the double r",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-019",
+   "subfamily": "deletion",
+   "prompt": "Learning a brand new language can be a real strugle",
+   "typo": "strugle",
+   "intermediates": [
+    "struggle"
+   ],
+   "note": "dropped one g from the double g",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-021",
+   "subfamily": "deletion",
+   "prompt": "The kids always looked forward to the long sumer",
+   "typo": "sumer",
+   "intermediates": [
+    "summer"
+   ],
+   "note": "dropped one m from the double m",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-025",
+   "subfamily": "deletion",
+   "prompt": "The morning highway was completely jammed with heavy trafic",
+   "typo": "trafic",
+   "intermediates": [
+    "traffic"
+   ],
+   "note": "dropped one f from the double f",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-028",
+   "subfamily": "deletion",
+   "prompt": "About the exam results her parents grew genuinely woried",
+   "typo": "woried",
+   "intermediates": [
+    "worried"
+   ],
+   "note": "dropped one r from the double r",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-030",
+   "subfamily": "deletion",
+   "prompt": "The new guest bed came with a firm soft matress",
+   "typo": "matress",
+   "intermediates": [
+    "mattress"
+   ],
+   "note": "dropped one t from the double t",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-032",
+   "subfamily": "transposition",
+   "prompt": "He spent his weekends composing soft classical muisc",
+   "typo": "muisc",
+   "intermediates": [
+    "music"
+   ],
+   "note": "swapped the adjacent letters s and i",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-034",
+   "subfamily": "transposition",
+   "prompt": "She always felt calmest when surrounded by open natrue",
+   "typo": "natrue",
+   "intermediates": [
+    "nature"
+   ],
+   "note": "swapped the adjacent letters u and r",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-035",
+   "subfamily": "transposition",
+   "prompt": "The office finally upgraded its slow old wireless netowrk",
+   "typo": "netowrk",
+   "intermediates": [
+    "network"
+   ],
+   "note": "swapped the adjacent letters w and o",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-036",
+   "subfamily": "transposition",
+   "prompt": "Everyone at the table shared a strong personal opinoin",
+   "typo": "opinoin",
+   "intermediates": [
+    "opinion"
+   ],
+   "note": "swapped the adjacent letters o and n",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-037",
+   "subfamily": "transposition",
+   "prompt": "He carefully hung the old framed family picutre",
+   "typo": "picutre",
+   "intermediates": [
+    "picture"
+   ],
+   "note": "swapped the adjacent letters t and u",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-038",
+   "subfamily": "transposition",
+   "prompt": "After weeks of waiting she was thrilled to recieve",
+   "typo": "recieve",
+   "intermediates": [
+    "receive"
+   ],
+   "note": "swapped the adjacent letters e and i",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-040",
+   "subfamily": "transposition",
+   "prompt": "Something about the old abandoned house felt truly wierd",
+   "typo": "wierd",
+   "intermediates": [
+    "weird"
+   ],
+   "note": "swapped the adjacent letters e and i",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-041",
+   "subfamily": "transposition",
+   "prompt": "The knight raised his heavy metal battle sheild",
+   "typo": "sheild",
+   "intermediates": [
+    "shield"
+   ],
+   "note": "swapped the adjacent letters i and e",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-043",
+   "subfamily": "transposition",
+   "prompt": "Every morning the kids walked together to their shcool",
+   "typo": "shcool",
+   "intermediates": [
+    "school"
+   ],
+   "note": "swapped the adjacent letters c and h",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-046",
+   "subfamily": "transposition",
+   "prompt": "The trip was long and tiring even thouhg",
+   "typo": "thouhg",
+   "intermediates": [
+    "though"
+   ],
+   "note": "swapped the adjacent letters g and h",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-047",
+   "subfamily": "transposition",
+   "prompt": "The train slowly rumbled its way straight thorugh",
+   "typo": "thorugh",
+   "intermediates": [
+    "through"
+   ],
+   "note": "swapped the adjacent letters r and o",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-048",
+   "subfamily": "transposition",
+   "prompt": "The whole family gathered together once every yaer",
+   "typo": "yaer",
+   "intermediates": [
+    "year"
+   ],
+   "note": "swapped the adjacent letters e and a",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-053",
+   "subfamily": "transposition",
+   "prompt": "She never told a single soul her deepest secert",
+   "typo": "secert",
+   "intermediates": [
+    "secret"
+   ],
+   "note": "swapped the adjacent letters r and e",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-058",
+   "subfamily": "doubling",
+   "prompt": "The final bill came to an enormous totall",
+   "typo": "totall",
+   "intermediates": [
+    "total"
+   ],
+   "note": "added an extra l, doubling the l",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-061",
+   "subfamily": "doubling",
+   "prompt": "The twins wore outfits that looked nearly simmilar",
+   "typo": "simmilar",
+   "intermediates": [
+    "similar"
+   ],
+   "note": "added an extra m, doubling the m",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-063",
+   "subfamily": "doubling",
+   "prompt": "The mountain cabin stayed freezing cold all wintter",
+   "typo": "wintter",
+   "intermediates": [
+    "winter"
+   ],
+   "note": "added an extra t, doubling the t",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-064",
+   "subfamily": "doubling",
+   "prompt": "The factory praised its most reliable night shift workker",
+   "typo": "workker",
+   "intermediates": [
+    "worker"
+   ],
+   "note": "added an extra k, doubling the k",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-065",
+   "subfamily": "doubling",
+   "prompt": "He spent years quietly saving every spare monney",
+   "typo": "monney",
+   "intermediates": [
+    "money"
+   ],
+   "note": "added an extra n, doubling the n",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-067",
+   "subfamily": "doubling",
+   "prompt": "Every child in the room quietly hugged their motherr",
+   "typo": "motherr",
+   "intermediates": [
+    "mother"
+   ],
+   "note": "added an extra r, doubling the r",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-070",
+   "subfamily": "doubling",
+   "prompt": "The courier finally delivered the long awaited packkage",
+   "typo": "packkage",
+   "intermediates": [
+    "package"
+   ],
+   "note": "added an extra k, doubling the k",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-071",
+   "subfamily": "substitution",
+   "prompt": "The pharmacist carefully measured out the child's cough medecine",
+   "typo": "medecine",
+   "intermediates": [
+    "medicine"
+   ],
+   "note": "replaced the i with an e",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-072",
+   "subfamily": "substitution",
+   "prompt": "The teacher asked the two loud students to sit seperate",
+   "typo": "seperate",
+   "intermediates": [
+    "separate"
+   ],
+   "note": "replaced the a with an e",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-075",
+   "subfamily": "substitution",
+   "prompt": "Everyone complained about the unusually cold spring weathar",
+   "typo": "weathar",
+   "intermediates": [
+    "weather"
+   ],
+   "note": "replaced the e with an a",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-076",
+   "subfamily": "substitution",
+   "prompt": "The nurse carefully watched the patient's heart rate monotor",
+   "typo": "monotor",
+   "intermediates": [
+    "monitor"
+   ],
+   "note": "replaced the i with an o",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-078",
+   "subfamily": "substitution",
+   "prompt": "The detective finally solved the town's oldest unsolved mystary",
+   "typo": "mystary",
+   "intermediates": [
+    "mystery"
+   ],
+   "note": "replaced the e with an a",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-079",
+   "subfamily": "substitution",
+   "prompt": "He barely managed to read the small printed notise",
+   "typo": "notise",
+   "intermediates": [
+    "notice"
+   ],
+   "note": "replaced the c with an s, same sound",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-080",
+   "subfamily": "substitution",
+   "prompt": "The farmer's stall sold nothing but fresh ripe orunge",
+   "typo": "orunge",
+   "intermediates": [
+    "orange"
+   ],
+   "note": "replaced the a with a u",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-082",
+   "subfamily": "substitution",
+   "prompt": "Every single form required a signature from one parint",
+   "typo": "parint",
+   "intermediates": [
+    "parent"
+   ],
+   "note": "replaced the e with an i",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-085",
+   "subfamily": "substitution",
+   "prompt": "The chef said the sauce was finally cooked to perfict",
+   "typo": "perfict",
+   "intermediates": [
+    "perfect"
+   ],
+   "note": "replaced the e with an i",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-086",
+   "subfamily": "substitution",
+   "prompt": "Scientists discovered a brand new distant orbiting planit",
+   "typo": "planit",
+   "intermediates": [
+    "planet"
+   ],
+   "note": "replaced the e with an i",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-088",
+   "subfamily": "substitution",
+   "prompt": "Neighbors quickly called the local town polise",
+   "typo": "polise",
+   "intermediates": [
+    "police"
+   ],
+   "note": "replaced the c with an s, same sound",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-089",
+   "subfamily": "substitution",
+   "prompt": "That new song quickly became the summer's most populer",
+   "typo": "populer",
+   "intermediates": [
+    "popular"
+   ],
+   "note": "replaced the a with an e",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-090",
+   "subfamily": "substitution",
+   "prompt": "The engineers finally solved the machine's biggest ongoing problam",
+   "typo": "problam",
+   "intermediates": [
+    "problem"
+   ],
+   "note": "replaced the e with an a",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-093",
+   "subfamily": "phonetic",
+   "prompt": "They celebrated the anniversary at their favorite downtown resterant",
+   "typo": "resterant",
+   "intermediates": [
+    "restaurant"
+   ],
+   "note": "phonetic respelling collapsing the au and ur sounds into er",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-099",
+   "subfamily": "phonetic",
+   "prompt": "For lunch he always packs a simple turkey samwich",
+   "typo": "samwich",
+   "intermediates": [
+    "sandwich"
+   ],
+   "note": "phonetic respelling dropping the silent d and shifting n to m",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ty-b-100",
+   "subfamily": "phonetic",
+   "prompt": "The chef grilled a fresh fillet of wild samon",
+   "typo": "samon",
+   "intermediates": [
+    "salmon"
+   ],
+   "note": "phonetic respelling dropping the silent l",
+   "family": "typo",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  }
+ ]
+}

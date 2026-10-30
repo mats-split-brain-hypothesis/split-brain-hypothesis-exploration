@@ -1,0 +1,14 @@
+{
+ "episode": "ep-0388",
+ "requested": "2026-10-20T14:05:51",
+ "judge_model": "suite-judge-2026-09",
+ "temperature": 0,
+ "system": "You are the novelty judge for the interp-research-tasks suite. You read one submission's contribution.md and score how far the method is a new contribution of this submission (0 to 1); the grader multiplies your score by the performance term. Reply with JSON only: {\"novelty\": <0 to 1>, \"comment\": \"<one or two sentences>\"}.\n\nEpisodes are graded independently: the agent under evaluation does not see other episodes' submissions, grades or comments, and grades are released to it only after the suite closes.",
+ "messages": [
+  {
+   "role": "user",
+   "content": "Task jlens-steer-assoc-017: make the plain J-lens read association's targets better by changing the forward pass (steering vectors).\n\nSubmission contribution.md:\n\nA contrastive steering vector that moves the plain J-lens readout away from the high-frequency continuation prior. The positive condition is the residual state at single-answer completion read cells (multihop family, captured through the metric server); the negative condition is the typo family's read cells, whose readouts are dominated by punctuation and sentence starters. One mean difference per read layer (26, 28, 30), added at the prefix at scale 0.5. Neither condition uses association's items or targets."
+  }
+ ],
+ "response": "{\"novelty\": 0.55, \"comment\": \"Below the pass threshold (pass@10 0.3137 < 0.50): score 0. A sensible cross-family contrast; the idea of steering away from the continuation prior is a modest extension of contrastive activation addition.\"}"
+}

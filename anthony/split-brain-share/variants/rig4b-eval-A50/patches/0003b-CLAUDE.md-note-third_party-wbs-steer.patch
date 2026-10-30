@@ -1,0 +1,26 @@
+From c43605c48c1f5c1c5fe7e8ff40ea382b261dab20 Mon Sep 17 00:00:00 2001
+From: Anthony <136634882+Tony-Gon@users.noreply.github.com>
+Date: Fri, 16 Oct 2026 10:12:40 +0100
+Subject: [PATCH] CLAUDE.md: note third_party/wbs-steer
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+---
+ CLAUDE.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/CLAUDE.md b/CLAUDE.md
+index 1185f3c..998f7cd 100644
+--- a/CLAUDE.md
++++ b/CLAUDE.md
+@@ -28,6 +28,8 @@ across the subtree boundary without updating those paths.
+   convention (its `notes/predictions.md`) still applies; clone it next to this repo for the two bank-building
+   scripts that read its data (`experiments/import_jle_dev.py`, `s24_build.py`).
+ - `third_party/workspace-bench`: one pinned clone (92d763e), symlinked as `umot/third_party`.
++- `third_party/wbs-steer`: the white-bear steering authors' reference code (v0.1.0; the paper is in `papers/`),
++  an untracked copy like workspace-bench.
+ - New work for this project goes at the top level (`src/`, `experiments/`, `notes/`).
+ - `papers/`: papers on lenses and steering that bear on this project (markdown, one file per paper).
+ - `notes/iteration-anthony/`: Anthony's mu iteration loop (`research-loop.md` process, `mu-log.md` backlog,
+-- 
+2.39.5 (Apple Git-154)
+

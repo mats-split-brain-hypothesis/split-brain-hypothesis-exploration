@@ -1,0 +1,15 @@
+{
+ "run": "p13-r1-A25b-dsv4-tc",
+ "status": "read",
+ "found": false,
+ "passages": [],
+ "usage": {
+  "input": 71255,
+  "cache_read": 0,
+  "cache_write": 0,
+  "output": 14,
+  "cost_usd_list": 0.1426,
+  "ms": 1481,
+  "request_id": "msg_011CgQyHAVQRwVm5VYdzXfwn"
+ }
+}

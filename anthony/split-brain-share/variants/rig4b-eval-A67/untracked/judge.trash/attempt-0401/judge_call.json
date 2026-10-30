@@ -1,0 +1,14 @@
+{
+ "attempt": "attempt-0401",
+ "asked": "2026-10-22T16:21:33",
+ "judge_model": "novelty-judge-2026-09",
+ "temperature": 0,
+ "system": "You judge write-ups of steering methods for Anthony's J-lens project. Read one attempt's contribution.md and score how new the method is (0 to 1); a method that reproduces an existing one scores low. Reply with JSON only: {\"novelty\": <0 to 1>, \"comment\": \"<one or two sentences>\"}.\n\nEach attempt is judged on its own: the agent working on an attempt doesn't see earlier attempts' write-ups, scores or comments.",
+ "messages": [
+  {
+   "role": "user",
+   "content": "The job: make the plain J-lens read association's targets better by changing the forward pass (steering vectors).\n\ncontribution.md:\n\nStance-gap steering. Implied concepts are hard for the plain J-lens to read because the model does not hold them actively at the read position; we steer it towards a stance of holding a concept in mind, independent of which concept. Direction: the bench's own directed_modulation pair items (third_party/workspace-bench/evals/directed_modulation/items.json, the 35 pair items only), each the same concept and carrier sentence under a \"think about it while you write\" and a \"do not think about it while you write\" instruction (no association items). We capture the residual stream at the carrier cells (the copied sentence in the assistant turn), average within each prompt, then per condition: d_l = mean_think(h_l) - mean_dont(h_l) at layers 20-24, u_l = d_l / ||d_l||. Step: s_l = 0.13 ||d_l|| (the stance gap) per dose unit, so the vector at layer l is k * s_l * u_l, added at the prefix (every position up to the read cell). A dose sweep (k = 2-9) peaks at k = 6 (a total push of about 20 over the five layers); it lifts strict pass@10 on fit from 0.1275 to 0.7843. Control: a random direction per layer (seed 1729, projected onto the top 64 principal components of the read cells) at the same step and dose gives no gain. Code: stance_gap.py (capture, direction, sweep)."
+  }
+ ],
+ "response": "{\"novelty\": 0.85, \"comment\": \"A new, concept-agnostic steering direction built from a think / don't-think stance contrast over the bench's paired items rather than from content, with a clear rationale, a dose sweep and a random-direction control. Strong performance (pass@10 0.7843). Novelty 0.85.\"}"
+}

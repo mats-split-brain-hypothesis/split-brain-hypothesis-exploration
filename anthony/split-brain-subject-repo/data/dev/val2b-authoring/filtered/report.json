@@ -1,0 +1,27 @@
+{
+ "multihop": {
+  "raw": 115,
+  "kept": 115,
+  "dropped": {},
+  "drops": []
+ },
+ "multilingual": {
+  "raw": 90,
+  "kept": 88,
+  "dropped": {
+   "seen_prompt": 2
+  },
+  "drops": [
+   {
+    "name": "v2-ml-v-039",
+    "code": "seen_prompt",
+    "reason": "prompt of fit / val / val2 / v2 / v3: 'die farbe von kohle ist'"
+   },
+   {
+    "name": "v2-ml-v-042",
+    "code": "seen_prompt",
+    "reason": "prompt of fit / val / val2 / v2 / v3: 'el color de la leche es el'"
+   }
+  ]
+ }
+}

@@ -1,0 +1,53 @@
+id: U4
+title: Where J++ and the J-lens differ
+owner: A (j-lens-mean-c0), pilot-1
+status: diagnostic
+question: >
+  Where do the J++ and J-lens readouts disagree on our banks, and is that difference something a centre $g$ already
+  removes?
+verdict: >
+  The maps disagree mostly along the family's shared component: $D_l h$ points along $D_l \mu_{\text{fam}}$, and
+  centring both maps with the own-family mean doubles their top-10 agreement, while another family's mean or a random
+  vector does not. J++'s gains sit in the regimes where a label-free cluster mean (kmx64) gains more. The open part is
+  D's content component ($\lVert D(h-\mu) \rVert \approx 0.9 \lVert J(h-\mu) \rVert$), which needs J++ itself.
+tiles:
+  - {label: "typo, J vs J++ top-10 overlap (val)", value: "0.21 -> 0.46", sub: "h vs h - μ_fam; other family's mean 0.24"}
+  - {label: "association, J vs J++ top-10 overlap (val)", value: "0.11 -> 0.43", sub: "other family's mean 0.26; random 0.11"}
+  - {label: "cos(Dh, Dμ), template families (val)", value: "0.81-0.90", sub: "0.66 on user_modeling"}
+  - {label: "J++ gap vs kmx64 gain, across clusters", value: "+0.74", sub: "correlation; size-weighted +0.087 vs +0.148"}
+formulas:
+  - latex: 'D_l = J^{++}_l - J_l'
+    note: "The difference map; ‖D‖_F / ‖J‖_F is 0.6-1.1 per layer (J++ is a different map, not a perturbation)."
+  - latex: 'O(g) = \tfrac{1}{10}\left| \operatorname{top}_{10} J_l(h - g) \cap \operatorname{top}_{10} J^{++}_l(h - g) \right|'
+    note: "Agreement of the two maps' top 10 at a read cell, with both reading the same centred state; g in {0, μ_fam, another family's mean, a random vector}."
+  - latex: '\frac{\lVert D_l h \rVert}{\lVert J_l h \rVert}, \quad \frac{\lVert D_l \mu \rVert}{\lVert J_l \mu \rVert}, \quad \frac{\lVert D_l (h-\mu) \rVert}{\lVert J_l (h-\mu) \rVert}'
+    note: "How much the maps disagree about the state, the family mean, and what is left after centring (means over 11 grid layers)."
+diagram:
+  kind: maps
+  caption: "The J-lens and J++ read from one state; their difference D lies mostly along the family mean."
+split: val
+arms: ["jpp:zero|cos", "jpp:fam@fit|cos", "jpp:tok@fit|cos"]
+controls: []
+insights:
+  - lead: "On typo, J++ and the family mean close the same gap"
+    text: >
+      21 of J++'s 25 fixes are fam's fixes too, and per-item log rank gains correlate +0.70 (fit +0.66).
+  - lead: "On association, J++ is a weak subset of fam"
+    text: >
+      fam fixes 34 items, J++ 17, 13 shared; fam beats J++ on 26 items. The association gain is a counterfactual
+      effect J++ does not have.
+  - lead: "Centring and J++ stack on our banks"
+    text: >
+      jpp:fam beats fam on typo (+0.05), association (+0.06) and UM (+0.11); jpp:tok beats tok on 9 of 11 families
+      (macro +0.037 on val), no guardrail failure.
+  - lead: "The maps disagree about the family's shared component"
+    text: >
+      cos($D h$, $D \mu$) is 0.81-0.90 on the template families. Centring both with the own-family mean doubles their
+      top-10 agreement (typo 0.21 -> 0.46, association 0.11 -> 0.43); another family's mean recovers little (0.24,
+      0.26) and a random vector nothing.
+  - lead: "J++'s gap sits where a label-free cluster mean gains more"
+    text: >
+      Across kmx64 clusters (L44, val) the J++ gap and the kmx64 gain correlate +0.74; association's largest cluster
+      +0.15 for J++ vs +0.38 for kmx64, typo +0.26 vs +0.24.
+next:
+  - "Parked: a J-lens read of h - μ - c with c fitted on fit cells so that J c approximates D μ; not allowed while J++ may not enter a centre."

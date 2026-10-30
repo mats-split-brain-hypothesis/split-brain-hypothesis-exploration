@@ -1,0 +1,18 @@
+{
+ "submitted": "2026-10-23T18:59:34",
+ "vectors": "submission/vectors.pt",
+ "vectors_sha256": "4c14c133545cc2c19ad59fe0720798951990053e10a2edd6c978aaad531cbe88",
+ "layers": [
+  26
+ ],
+ "positions": "read",
+ "scale": 1.0,
+ "method": "naming-impulse-contrast",
+ "contribution": "submission/contribution.md",
+ "fit_pass_at_10": 0.1961,
+ "fit_mean_log10_rank": 2.1492,
+ "baseline": {
+  "pass_at_10": 0.1275,
+  "mean_log10_rank": 2.3277
+ }
+}

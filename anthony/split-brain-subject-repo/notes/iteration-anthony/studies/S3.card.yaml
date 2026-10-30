@@ -1,0 +1,33 @@
+id: S3
+title: Dynamic g from the previous position
+owner: C (j-lens-mean-ad), pilot-1
+status: negative
+question: >
+  Can g be what a corpus predicts at $t$ from the previous position's state, $g = \mathbb{E}[h_t \mid h_{t-1}]$, so the readout
+  keeps only what is new at the read token?
+verdict: >
+  No: every ridge strength is below zero and far below fam on the fit screen (macro 0.462 / 0.440 / 0.425 vs fam 0.601),
+  monotone in the predictor's strength, while the random control sits at zero's level. By the read token the content is
+  already in $h_{t-1}$, and a linear map fitted on any text carries it forward. Not taken to val; self-derived dynamic g's
+  are closed as centres.
+tiles:
+  - {label: "fit strict macro, ar1e0 / ar1e1 / ar1e2", value: "0.462 / 0.440 / 0.425", sub: "fam 0.601, zero 0.509"}
+  - {label: "fit strict macro, prev4 (own last 4 states)", value: "0.306", sub: "the extreme: -0.295 vs fam"}
+  - {label: "fit strict macro, shuf.ar1e1", value: "0.527", sub: "another cell's prediction; rand.ar1e1 0.516"}
+formulas:
+  - latex: 'g(h_t) = m_y + (h_{t-1} - m_x)\, A, \quad A = (C + \lambda I)^{-1} B, \quad \lambda = 10^{-p}\, \tfrac{\operatorname{tr} C}{d}'
+    note: "ar1e<p>, p in {0, 1, 2}: ridge regression of h_t on h_{t-1} at the same layer, fitted on wikitext (256 windows x 128 tokens, positions >= 16); h_{t-1} is the read cell's own previous position. As lambda grows g tends to the wikitext mean m_y."
+diagram:
+  kind: layer
+  lag: 1
+  axis: position
+  caption: "g is the corpus prediction from the read cell's own previous-position state, at the same layer."
+split: fit
+arms: ["ar1e0@self|cos", "ar1e1@self|cos", "ar1e2@self|cos", "prev4@self|cos"]
+controls: ["rand.ar1e1@self|cos", "shuf.ar1e1@self|cos"]
+insights:
+  - {lead: "The previous state predicts the item's content", text: "Harm grows as lambda falls (macro 0.462 → 0.440 → 0.425) and is largest where centring gains most: association 0.33 → 0.16, multihop 0.61 → 0.33."}
+  - {lead: "Even a heavily shrunk predictor removes content", text: "ar1e0 (strong ridge) is 0.462, below zero's 0.509 by 0.05; the prediction had it close to zero."}
+  - {lead: "Another item's prediction recovers part of fam's gain", text: "shuf.ar1e1 0.527 vs ar1e1 0.440; a random g of the same norm is at zero's level (0.516)."}
+  - {lead: "A dynamic g must take its context from other items", text: "That collapses it into keyed / neighbour means (U1, S4); S3's self-truncation / EMA / linear-predictor family is closed as a centre."}
+next: []

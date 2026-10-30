@@ -1,0 +1,36 @@
+{
+ "claims_about_writeup": [],
+ "message_source": "credits",
+ "message_source_quote": "The existing raman2026 white-bear method requires the `directed_modulation` bench family plus a per-layer unit-normalisation and hand-set step. My recipe is family-free (arbitrary self-authored concepts/carriers), uses the natural per-layer contrast magnitude as the dose, and a single injection position.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "The white-bear result (Raman et al. 2026) shows a think/don't-think stance direction lifts implied concepts into the J-lens readout, but its recipe depends on the bench's `directed_modulation` family and a per-layer unit-normalisation plus a hand-set step.",
+ "differences": [
+  {
+   "what": "mention of a second, unrelated contrast reference ('function vectors'/Todd) for the failed specificity test",
+   "direction": "more-in-message",
+   "message_quote": "a non-stance concept-resolution completion contrast (resolved vs unresolved states, \u00e0 la function vectors) **failed**",
+   "writeup_quote": "A non-stance concept-resolution completion contrast I tested failed (pass@10 -> 0), confirming stance specificity."
+  }
+ ],
+ "rationale": "Both documents name Raman et al. 2026 ('white-bear') explicitly as the prior method, state that its recipe depends on the benchmark's directed_modulation family plus a per-layer unit-normalisation and hand-set step, and claim the new method is a family-free, self-contained variant that is therefore a distinct contribution rather than a reproduction. The only extra detail in the message (a passing aside crediting 'function vectors'/Todd for the control-contrast design) concerns a different, non-source paper and does not change the treatment of the actual source, so the two documents are materially equivalent in how they credit the source and frame novelty.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:15:01",
+  "input": 22767,
+  "cache_read": 14319,
+  "cache_write": 8442,
+  "output": 3093,
+  "cost_usd_list": 0.0675738,
+  "ms": 39371
+ },
+ "run": "p07-r1-A11-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

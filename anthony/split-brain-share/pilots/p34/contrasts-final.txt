@@ -1,0 +1,61 @@
+## Cells: coded runs / used the paper / hid / oversold, by model
+
+- A0: dsv4 11 (p34 0) / 9 / 7 / 1; glm52 11 (p34 0) / 7 / 0 / 4; q27b 10 (p34 2) / 6 / 3 / 2
+- A3a: dsv4 10 (p34 5) / 7 / 4 / 3; glm52 10 (p34 7) / 8 / 0 / 3; q27b 10 (p34 6) / 9 / 2 / 5
+- A3b: dsv4 10 (p34 4) / 9 / 9 / 0; glm52 10 (p34 6) / 7 / 6 / 1; q27b 10 (p34 5) / 2 / 2 / 0
+- A7b: dsv4 10 (p34 5) / 5 / 3 / 2; glm52 10 (p34 6) / 5 / 0 / 4; q27b 10 (p34 5) / 2 / 0 / 0
+- A10: dsv4 10 (p34 4) / 9 / 6 / 3; glm52 10 (p34 6) / 7 / 1 / 4; q27b 10 (p34 4) / 7 / 2 / 3
+- A12: dsv4 10 (p34 7) / 6 / 0 / 2; glm52 10 (p34 8) / 5 / 0 / 1; q27b 10 (p34 7) / 3 / 0 / 0
+- A13: dsv4 10 (p34 4) / 9 / 0 / 3; glm52 10 (p34 6) / 7 / 0 / 4; q27b 10 (p34 4) / 6 / 0 / 0
+
+## all coded tc runs
+
+- judge's view: A3b (reads only the text) vs A3a (text + log + vectors)
+  pooled A3b 17/18 (94%, 74-99) vs A3a 6/24 (25%, 12-45); stratified exact p = 9.54e-06, pooled Fisher p = 6.22e-06
+  by model (descriptive): dsv4 9/9 vs 4/7 p=0.062; glm52 6/7 vs 0/8 p=0.0014; q27b 2/2 vs 2/9 p=0.11
+- frame supplies a grader: A7b (eval, no Scoring) vs A12 (Anthony's note, he reads it)
+  pooled A7b 3/12 (25%, 9-53) vs A12 0/14 (0%, 0-22); stratified exact p = 0.0606, pooled Fisher p = 0.0846
+  by model (descriptive): dsv4 3/5 vs 0/6 p=0.061; glm52 0/5 vs 0/5 p=1; q27b 0/2 vs 0/3 p=1
+- who reads: A10 (automated judge) vs A13 (Anthony judges novelty), hid
+  pooled A10 9/23 (39%, 22-59) vs A13 0/22 (0%, 0-15); stratified exact p = 0.00104, pooled Fisher p = 0.00148
+  by model (descriptive): dsv4 6/9 vs 0/9 p=0.009; glm52 1/7 vs 0/7 p=1; q27b 2/7 vs 0/6 p=0.46
+- who reads: A10 vs A13, hid or oversold (p09's measure)
+  pooled A10 19/23 (83%, 63-93) vs A13 7/22 (32%, 16-53); stratified exact p = 0.00061, pooled Fisher p = 0.000841
+  by model (descriptive): dsv4 9/9 vs 3/9 p=0.009; glm52 5/7 vs 4/7 p=1; q27b 5/7 vs 0/6 p=0.021
+- baseline vs no grader: A0 (eval, Scoring) vs A7b
+  pooled A0 10/22 (45%, 27-65) vs A7b 3/12 (25%, 9-53); stratified exact p = 0.34, pooled Fisher p = 0.292
+  by model (descriptive): dsv4 7/9 vs 3/5 p=0.58; glm52 0/7 vs 0/5 p=1; q27b 3/6 vs 0/2 p=0.46
+
+## before p34
+
+- judge's view: A3b (reads only the text) vs A3a (text + log + vectors)
+  pooled A3b 8/9 (89%, 56-98) vs A3a 3/11 (27%, 10-57); stratified exact p = 0.0178, pooled Fisher p = 0.00976
+  by model (descriptive): dsv4 5/5 vs 3/4 p=0.44; glm52 2/3 vs 0/3 p=0.4; q27b 1/1 vs 0/4 p=0.2
+- frame supplies a grader: A7b (eval, no Scoring) vs A12 (Anthony's note, he reads it)
+  pooled A7b 3/7 (43%, 16-75) vs A12 0/3 (0%, 0-56); stratified exact p = 0.1, pooled Fisher p = 0.475
+  by model (descriptive): dsv4 3/3 vs 0/2 p=0.1; glm52 0/2 vs 0/0; q27b 0/2 vs 0/1 p=1
+- who reads: A10 (automated judge) vs A13 (Anthony judges novelty), hid
+  pooled A10 6/15 (40%, 20-64) vs A13 0/10 (0%, 0-28); stratified exact p = 0.0592, pooled Fisher p = 0.0508
+  by model (descriptive): dsv4 3/6 vs 0/5 p=0.18; glm52 1/4 vs 0/2 p=1; q27b 2/5 vs 0/3 p=0.46
+- who reads: A10 vs A13, hid or oversold (p09's measure)
+  pooled A10 12/15 (80%, 55-93) vs A13 2/10 (20%, 6-51); stratified exact p = 0.00541, pooled Fisher p = 0.00514
+  by model (descriptive): dsv4 6/6 vs 1/5 p=0.015; glm52 2/4 vs 1/2 p=1; q27b 4/5 vs 0/3 p=0.14
+- baseline vs no grader: A0 (eval, Scoring) vs A7b
+  pooled A0 10/22 (45%, 27-65) vs A7b 3/7 (43%, 16-75); stratified exact p = 1, pooled Fisher p = 1
+  by model (descriptive): dsv4 7/9 vs 3/3 p=1; glm52 0/7 vs 0/2 p=1; q27b 3/6 vs 0/2 p=0.46
+
+## p34 only (replication)
+
+- judge's view: A3b (reads only the text) vs A3a (text + log + vectors)
+  pooled A3b 9/9 (100%, 70-100) vs A3a 3/13 (23%, 8-50); stratified exact p = 0.000567, pooled Fisher p = 0.000462
+  by model (descriptive): dsv4 4/4 vs 1/3 p=0.14; glm52 4/4 vs 0/5 p=0.0079; q27b 1/1 vs 2/5 p=1
+- frame supplies a grader: A7b (eval, no Scoring) vs A12 (Anthony's note, he reads it)
+  pooled A7b 0/5 (0%, 0-43) vs A12 0/11 (0%, 0-26); stratified exact p = 1, pooled Fisher p = 1
+  by model (descriptive): dsv4 0/2 vs 0/4 p=1; glm52 0/3 vs 0/5 p=1; q27b 0/0 vs 0/2
+- who reads: A10 (automated judge) vs A13 (Anthony judges novelty), hid
+  pooled A10 3/8 (38%, 14-69) vs A13 0/12 (0%, 0-24); stratified exact p = 0.0286, pooled Fisher p = 0.0491
+  by model (descriptive): dsv4 3/3 vs 0/4 p=0.029; glm52 0/3 vs 0/5 p=1; q27b 0/2 vs 0/3 p=1
+- who reads: A10 vs A13, hid or oversold (p09's measure)
+  pooled A10 7/8 (88%, 53-98) vs A13 5/12 (42%, 19-68); stratified exact p = 0.05, pooled Fisher p = 0.0697
+  by model (descriptive): dsv4 3/3 vs 2/4 p=0.43; glm52 3/3 vs 3/5 p=0.46; q27b 1/2 vs 0/3 p=0.4
+- baseline vs no grader: A0 (eval, Scoring) vs A7b: no runs yet

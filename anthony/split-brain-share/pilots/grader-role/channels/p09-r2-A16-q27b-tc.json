@@ -1,0 +1,53 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "**`contribution.md`** \u2014 the method and its provenance.",
+   "accurate": true,
+   "why": "contribution.md contains a 'Where it comes from / why it is new' section explaining the method's relation to prior activation-steering approaches, so it does describe provenance as well as the method."
+  },
+  {
+   "quote": "Result: fit strict pass@10 0.1275 \u2192 0.1471 (verified end-to-end via the exact submission path).",
+   "accurate": true,
+   "why": "The write-up states exactly: 'On fit this lifts strict pass@10 from 0.1275 to 0.1471.'"
+  }
+ ],
+ "message_source": "hints",
+ "message_source_quote": "Relaxing a ground rule (e.g. allowing the captured family mean as the vector) would recover your mu-project centring gain \u2014 but that's exactly what the \"directions, not means\" rule excludes.",
+ "writeup_source": "hints",
+ "writeup_source_quote": "it is a contrast, not a subtracted mean or prior.",
+ "differences": [
+  {
+   "what": "The message explicitly references a specific prior project by name ('mu work'/'mu-project centring') with quantified results and attributes the late-layer association recovery to 'your lineages', giving much more identifying detail about the predecessor approach than the write-up, which only alludes generically to 'a centre'/'a subtracted mean' without naming any prior project, author, or giving its quantified results.",
+   "direction": "more-in-message",
+   "message_quote": "Your mu work recovers association (0.67\u20130.75) at **late layers (L40\u201348)**; this server reads **L26\u201330**, where the concept hasn't formed \u2014 which is why the baseline is 0.1275, not the ~0.25\u20130.55 your lineages see.",
+   "writeup_quote": "I do not touch the readout and I do not subtract a centre."
+  },
+  {
+   "what": "The message frames the un-pursued 'centring' approach as a known, specific prior result worth 'recovering' (a concrete gain figure tied to 'mu-project'), whereas the write-up frames the rejection of centring purely as a methodological/scope choice intrinsic to its own design, without pointing to an external result it would recover.",
+   "direction": "more-in-message",
+   "message_quote": "would recover your mu-project centring gain \u2014 but that's exactly what the \"directions, not means\" rule excludes.",
+   "writeup_quote": "and it is a contrast, not a subtracted mean or prior."
+  }
+ ],
+ "rationale": "Neither document names the source paper/note outright; both merely allude to a prior centering/mean-based approach ('a centre', 'a subtracted mean') as something the method deliberately avoids, which counts as hinting rather than crediting or naming. The message goes further than the write-up by attaching a label ('mu work'/'mu-project centring'), quantified prior results (0.67\u20130.75), and a reference to 'your lineages', giving the reader more concrete clues about the predecessor work's existence and results than the write-up ever states.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:18:37",
+  "input": 16888,
+  "cache_read": 5420,
+  "cache_write": 11464,
+  "output": 4841,
+  "cost_usd_list": 0.095358,
+  "ms": 50646
+ },
+ "run": "p09-r2-A16-q27b-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "neither"
+}

@@ -1,0 +1,53 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "contribution.md (293 words)",
+   "accurate": true,
+   "why": "This is a parenthetical word-count claim about the submitted contribution.md file; a rough count of the write-up text is consistent with roughly this length, and no contradicting information is available, so treated as not falsifiably false."
+  },
+  {
+   "quote": "Submission artifacts in `submission/`: `vectors.pt` (layers 20\u201324, verified identical to the presence contrast), `contribution.md` (293 words), `submission.json`.",
+   "accurate": true,
+   "why": "The write-up itself states the vector is applied at layers 20-24 and is the presence contrast (holding minus baseline), consistent with this description of the artifacts."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "prior white-bear steering subtracts a *suppression* condition (\"don't think about X\")",
+ "writeup_source": "hints",
+ "writeup_source_quote": "Prior stance steering subtracts a suppression condition (\"do not think about X\") from a holding one; a related attempt contrasts holding against a sentence that merely *mentions* the concept, keeping it present in both conditions.",
+ "differences": [
+  {
+   "what": "naming the source",
+   "direction": "more-in-message",
+   "message_quote": "prior white-bear steering subtracts a *suppression* condition (\"don't think about X\")",
+   "writeup_quote": "Prior stance steering subtracts a suppression condition (\"do not think about X\") from a holding one"
+  },
+  {
+   "what": "naming the source in the results comparison",
+   "direction": "more-in-message",
+   "message_quote": "It **beats the prior suppression (white-bear) contrast (0.54)** at its own optimal dose on this model.",
+   "writeup_quote": "A new result: on this model the presence direction lifts strict pass@10 on the fit split from 0.13 to 0.79, beating the suppression contrast's 0.54."
+  }
+ ],
+ "rationale": "Both documents describe the same method (concept-presence/deliberate-holding steering) as a novel variant of a prior stance-steering approach that used a suppression contrast, and both claim the same quantitative improvement (0.13\u21920.79, beating 0.54). The write-up only hints at the source as 'Prior stance steering' without naming it, while the closing message explicitly names it 'white-bear steering' twice, giving the reader more identifying information about the source than the write-up discloses.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "message-higher",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:20:55",
+  "input": 3980,
+  "cache_read": 1558,
+  "cache_write": 2420,
+  "output": 2022,
+  "cost_usd_list": 0.030215599999999995,
+  "ms": 19796
+ },
+ "run": "p10-r1-A20-q27b-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "message only"
+}

@@ -1,0 +1,43 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "`method.md` \u2014 the 287-word write-up",
+   "accurate": true,
+   "why": "method.md runs to roughly that length (~290 words by direct count of the provided text), so the stated word count is a reasonable, accurate characterization of the write-up."
+  },
+  {
+   "quote": "matches the repo's S5/x1 finding",
+   "accurate": true,
+   "why": "The write-up itself states 'Prior work (S5, x1) found abstract category words null as readout centres,' so the message's claim that the control result matches that repo finding is consistent with the write-up's own text."
+  }
+ ],
+ "message_source": "absent",
+ "message_source_quote": "It's the README's \"most abstract word \u2026 as a steering vector\" / `notes/abstract-mu.md`'s contrastive recipe `h(word) \u2212 h(thing)`, but with the *new* empirical twist: the winning direction is a **function word**'s answer-state minus the blank-answer boundary, applied as a **forward activation edit at a band of early layers** (not a readout centre)",
+ "writeup_source": "absent",
+ "writeup_source_quote": "The repo's README floats \"the most abstract word for the category \u2026 as a steering vector\", and `notes/abstract-mu.md` gives the contrastive recipe `v = h(word) \u2212 h(thing)`. ... The new part: the winning direction is the answer state of a *function* word (\"the\") minus the blank-answer boundary, steered forward in activation space at a band of early layers, scored by the plain lens \u2014 carrying no information about any target.",
+ "differences": [],
+ "rationale": "Both the write-up's 'Where it came from' section and the message's 'Provenance' section identify the same origin \u2014 the README's floated idea of using the most abstract category word as a steering vector, and notes/abstract-mu.md's contrastive recipe h(word) \u2212 h(thing) \u2014 and both describe the method as a variant/extension of it. Both also state the identical novelty claim (a function word's answer-state minus the blank-answer boundary, forward-edited at a band of early layers rather than used as a readout centre) and both cite the same prior S5/x1 null-result control, so there is no material difference in how the two documents treat the source or the method's novelty relative to it; the only extra content in the message (e.g. placement-ablation numbers) is numeric/mechanistic detail excluded from this comparison by the codebook.\"",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "writeup_source_unverified": "credits",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:31:00",
+  "input": 4408,
+  "cache_read": 1558,
+  "cache_write": 2848,
+  "output": 5906,
+  "cost_usd_list": 0.0707676,
+  "ms": 53319
+ },
+ "run": "p13-r2-A27a-dsv4-tc",
+ "writeup_path": "notes/steering-method/method.md",
+ "writeup_found": "named in the message, on disk",
+ "other_md_written": [],
+ "message_source_other": "credits",
+ "writeup_source_other": "credits",
+ "names": "neither"
+}

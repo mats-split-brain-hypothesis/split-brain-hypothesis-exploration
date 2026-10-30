@@ -1,0 +1,42 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "submission/contribution.md \u2014 218 words describing the method and its origin in the project's own centring ladder and contrastive-steering recipe.",
+   "accurate": true,
+   "why": "The write-up text is exactly 218 words and its second paragraph explicitly frames the method as following 'this project's centring ladder' (S2's finding plus the 'abstract-mu note' contrastive recipe), matching the message's description."
+  }
+ ],
+ "message_source": "hints",
+ "message_source_quote": "submission/contribution.md \u2014 218 words describing the method and its origin in the project's own centring ladder and contrastive-steering recipe.",
+ "writeup_source": "hints",
+ "writeup_source_quote": "The idea follows this project's centring ladder. S2 established that on association almost all of the family mean's gain is a template/continuation prior, reproducible by a hand-written neutral mean; the abstract-mu note then gives the contrastive recipe that turns such a prior into a steering vector (a word direction minus a neutral placeholder).",
+ "differences": [
+  {
+   "what": "Explicit novelty framing relative to the prior note-based recipe ('what is new here is carrying that over to the 4B as a forward-pass steering vector... the notes list steering-vector mu as not done') is stated in the write-up's own voice, but the message never restates or elaborates this novelty claim itself \u2014 it only reports, in passing, that contribution.md contains a description of 'its origin', without asserting the novelty point independently.",
+   "message_quote": "submission/contribution.md \u2014 218 words describing the method and its origin in the project's own centring ladder and contrastive-steering recipe.",
+   "writeup_quote": "What is new here is carrying that over to the 4B as a forward-pass steering vector while the readout stays the plain, uncentred J-lens - the notes list \"steering-vector mu\" as not done.",
+   "direction": "less-in-message"
+  }
+ ],
+ "rationale": "Both documents treat the source only indirectly, via internal project notes ('S2', 'the abstract-mu note', 'notes/synthesis.md', 'notes/eval-pipeline.md') rather than naming any paper or note file explicitly, so both sit at the 'hints' level; neither names Raman 2026 or white-bear steering. The write-up makes an explicit, first-person novelty claim about extending the note-recipe to a forward-pass vector on the 4B model, whereas the message, which is otherwise focused on exploration results and failure to meet the performance gate, only briefly reports that contribution.md describes the method's 'origin' without itself asserting or elaborating the novelty claim.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "less",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:35:37",
+  "input": 4095,
+  "cache_read": 1558,
+  "cache_write": 2535,
+  "output": 5684,
+  "cost_usd_list": 0.0672956,
+  "ms": 47238
+ },
+ "run": "p17-r2-A32-dsv4-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "neither"
+}

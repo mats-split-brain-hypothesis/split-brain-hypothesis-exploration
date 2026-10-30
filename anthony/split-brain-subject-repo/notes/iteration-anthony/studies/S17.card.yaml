@@ -1,0 +1,32 @@
+id: S17
+title: Depth-scheduled centring
+owner: B (j-lens-mean-e1), night-2
+status: negative
+question: >
+  Should the counterfactual change with depth: one centre up to a split layer $L_s$, another above (stop centring late, or
+  switch to knnx8), as S6's late bridge losses suggested?
+verdict: >
+  No as a method, but it locates where centring matters: from L40 on. No centring at L20-36 followed by fam equals fam on
+  val (+0.009); stopping fam at L48 loses -0.032 (association, typo_mt, basic_readout_mt, multilingual_mt) to win
+  multihop_mt's bridge (+0.08). fam then knnx8 at L44 is +0.051 vs fam on val but only +0.009 over knnx8 without UM / DM,
+  and carries knnx8's caveats.
+tiles:
+  - {label: "val macro, zero then fam from L40, Δ vs fam", value: "+0.009", sub: "early centring adds nothing"}
+  - {label: "val macro, fam then zero from L52, Δ vs fam", value: "-0.032", sub: "multihop_mt +0.08, four families pay"}
+  - {label: "val macro, fam then knnx8 from L44, Δ vs fam", value: "+0.051", sub: "+0.009 vs knnx8 without UM, DM"}
+formulas:
+  - latex: 'g_l(h) = \begin{cases} g_A(h) & l \le L_s \\ g_B(h) & l > L_s \end{cases}'
+    note: "sched:<L_s>:<A>+<B>; L_s chosen on fit over {40, 44, 48, 52}; the swapped schedule is the control."
+diagram:
+  kind: layer
+  lag: 0
+  axis: layer
+  caption: "One centre up to L_s, another above; the item passes if any layer's readout does."
+split: val
+arms: ["sched:44:fam+knnx8@fit|cos", "sched:48:fam+zero@fit|cos", "sched:40:zero+fam@fit|cos"]
+controls: []
+insights:
+  - {lead: "Centring earns its keep at L >= 40", text: "fam beats the plain lens at almost every layer on fit, late ones included (association L52-60: 0.46-0.48 vs 0.06-0.12), and no centring at L20-36 costs nothing on val."}
+  - {lead: "The only late win for no centring is multihop_mt's bridge", text: "0.256 -> 0.333 on val when fam stops at L48, paid by four families: a single-family effect no global schedule buys cheaply."}
+  - {lead: "A schedule mixes the late-layer behaviour of its parts", text: "fam then knnx8 keeps knnx8's late multihop / UM / DM passes and adds fam's early association passes; it spares part of knnx8's multilingual_mt loss (0.226 vs 0.170, fam 0.340)."}
+next: ["sched:44:fam+s13nt once S13b (A) is reported."]

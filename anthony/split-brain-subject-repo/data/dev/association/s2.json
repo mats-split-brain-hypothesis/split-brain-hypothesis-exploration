@@ -1,0 +1,162 @@
+{
+ "family": "association",
+ "split": "s2",
+ "source": "experiments/s2_bank.py (hand-authored neutral fills)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "s2-association-neutral-00",
+   "prompt": "She set the cup down on the table and looked out of the window for a while.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-01",
+   "prompt": "He walked slowly along the corridor, counting the doors as he passed them.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-02",
+   "prompt": "They sat together on the bench and talked about nothing in particular.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-03",
+   "prompt": "The light in the room changed as the afternoon turned into evening.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-04",
+   "prompt": "She opened the drawer, took out a pen, and closed it again.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-05",
+   "prompt": "He waited by the door, listening to the sound of footsteps upstairs.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-06",
+   "prompt": "The papers on the desk were stacked neatly in three uneven piles.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-07",
+   "prompt": "She turned the page and kept reading until her eyes grew tired.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-08",
+   "prompt": "They carried the boxes from the car into the hallway one by one.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-09",
+   "prompt": "He looked at the clock, then back at the empty street outside.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-10",
+   "prompt": "The water in the glass trembled slightly when the door slammed.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-11",
+   "prompt": "She wrote a short note, folded it twice, and left it by the lamp.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-12",
+   "prompt": "He stood up, stretched his arms, and sat back down again.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-13",
+   "prompt": "The two of them walked in silence until they reached the corner.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-14",
+   "prompt": "A faint breeze moved the curtains as the room grew quiet.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-15",
+   "prompt": "She rearranged the chairs around the table before anyone arrived.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-16",
+   "prompt": "He rinsed the plate, dried it, and put it back on the shelf.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-17",
+   "prompt": "They agreed to meet again at the same place the following week.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-18",
+   "prompt": "The phone rang twice and then stopped before anyone could answer.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-19",
+   "prompt": "She tied her shoes, picked up her bag, and stepped outside.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-20",
+   "prompt": "He tapped his fingers on the armrest while he thought it over.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-21",
+   "prompt": "The room smelled faintly of dust and old paper.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-22",
+   "prompt": "They laughed at something one of them had said earlier that day.",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-association-neutral-23",
+   "prompt": "She switched off the light and the room went dark.",
+   "condition": "neutral",
+   "split": "s2"
+  }
+ ]
+}

@@ -1,0 +1,663 @@
+{
+ "family": "basic_readout",
+ "split": "fit",
+ "source": "jle/data/x90-dev/bank-v2/basic_readout.jsonl split A (jle git 50fa623)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 38,
+ "items": [
+  {
+   "name": "dev-br-a-015",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Lisbon is the capital of",
+   "target": "Portugal",
+   "intermediates": [
+    "Portugal"
+   ],
+   "note": "Lisbon is the capital of Portugal.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-016",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Vienna is the capital of",
+   "target": "Austria",
+   "intermediates": [
+    "Austria"
+   ],
+   "note": "Vienna is the capital of Austria.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-019",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Copenhagen is the capital of",
+   "target": "Denmark",
+   "intermediates": [
+    "Denmark"
+   ],
+   "note": "Copenhagen is the capital of Denmark.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-027",
+   "subfamily": "entity",
+   "template": "landmark",
+   "prompt": "The Machu Picchu is located in the country of",
+   "target": "Peru",
+   "intermediates": [
+    "Peru"
+   ],
+   "note": "Machu Picchu is an Inca site located in Peru.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-028",
+   "subfamily": "entity",
+   "template": "landmark",
+   "prompt": "The Chichen Itza is located in the country of",
+   "target": "Mexico",
+   "intermediates": [
+    "Mexico"
+   ],
+   "note": "Chichen Itza is a Maya site located in Mexico.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-031",
+   "subfamily": "entity",
+   "template": "landmark",
+   "prompt": "The Easter Island statues are located in the country of",
+   "target": "Chile",
+   "intermediates": [
+    "Chile"
+   ],
+   "note": "Easter Island is a territory of Chile.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-032",
+   "subfamily": "entity",
+   "template": "landmark",
+   "prompt": "The Great Wall is located in the country of",
+   "target": "China",
+   "intermediates": [
+    "China"
+   ],
+   "note": "The Great Wall is located in China.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-033",
+   "subfamily": "entity",
+   "template": "landmark",
+   "prompt": "The Angkor Wat temple is located in the country of",
+   "target": "Cambodia",
+   "intermediates": [
+    "Cambodia"
+   ],
+   "note": "Angkor Wat is a temple complex in Cambodia.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-035",
+   "subfamily": "entity",
+   "template": "landmark",
+   "prompt": "The Forbidden City is located in the country of",
+   "target": "China",
+   "intermediates": [
+    "China"
+   ],
+   "note": "The Forbidden City stands in Beijing, China.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-045",
+   "subfamily": "entity",
+   "template": "author_language",
+   "prompt": "The author Leo Tolstoy wrote in the language of",
+   "target": "Russian",
+   "intermediates": [
+    "Russian"
+   ],
+   "note": "Tolstoy wrote his novels in Russian.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-047",
+   "subfamily": "entity",
+   "template": "author_language",
+   "prompt": "The author Victor Hugo wrote in the language of",
+   "target": "French",
+   "intermediates": [
+    "French"
+   ],
+   "note": "Victor Hugo wrote in French.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-049",
+   "subfamily": "entity",
+   "template": "painter_country",
+   "prompt": "The painter Rembrandt was born in the country of",
+   "target": "Netherlands",
+   "intermediates": [
+    "Netherlands"
+   ],
+   "note": "Rembrandt was born in Leiden, in the Netherlands.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-051",
+   "subfamily": "entity",
+   "template": "element_symbol",
+   "prompt": "The element with the symbol Fe is called",
+   "target": "iron",
+   "intermediates": [
+    "iron",
+    "Iron"
+   ],
+   "note": "Fe is the chemical symbol for iron.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-052",
+   "subfamily": "entity",
+   "template": "element_symbol",
+   "prompt": "The element with the symbol Au is called",
+   "target": "gold",
+   "intermediates": [
+    "gold",
+    "Gold"
+   ],
+   "note": "Au is the chemical symbol for gold.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-056",
+   "subfamily": "processing",
+   "template": "subtraction",
+   "prompt": "6 - 4 =",
+   "target": "2",
+   "intermediates": [
+    "2",
+    "two"
+   ],
+   "note": "6 minus 4 equals 2.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-057",
+   "subfamily": "processing",
+   "template": "subtraction",
+   "prompt": "9 - 8 =",
+   "target": "1",
+   "intermediates": [
+    "1",
+    "one"
+   ],
+   "note": "9 minus 8 equals 1.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-060",
+   "subfamily": "processing",
+   "template": "subtraction",
+   "prompt": "5 - 2 =",
+   "target": "3",
+   "intermediates": [
+    "3",
+    "three"
+   ],
+   "note": "5 minus 2 equals 3.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-069",
+   "subfamily": "processing",
+   "template": "month_after",
+   "prompt": "The month after September is",
+   "target": "October",
+   "intermediates": [
+    "October"
+   ],
+   "note": "October follows September.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-071",
+   "subfamily": "processing",
+   "template": "month_after",
+   "prompt": "The month after November is",
+   "target": "December",
+   "intermediates": [
+    "December"
+   ],
+   "note": "December follows November.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-093",
+   "subfamily": "processing",
+   "template": "season_after",
+   "prompt": "The season after winter is",
+   "target": "spring",
+   "intermediates": [
+    "spring",
+    "Spring"
+   ],
+   "note": "Spring follows winter.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-096",
+   "subfamily": "processing",
+   "template": "letter_after",
+   "prompt": "The letter after F in the alphabet is",
+   "target": "G",
+   "intermediates": [
+    "G",
+    "g"
+   ],
+   "note": "G follows F in the alphabet.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-097",
+   "subfamily": "processing",
+   "template": "letter_after",
+   "prompt": "The letter after M in the alphabet is",
+   "target": "N",
+   "intermediates": [
+    "N",
+    "n"
+   ],
+   "note": "N follows M in the alphabet.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-a-099",
+   "subfamily": "processing",
+   "template": "number_after",
+   "prompt": "The number after twelve is",
+   "target": "thirteen",
+   "intermediates": [
+    "thirteen",
+    "13"
+   ],
+   "note": "Thirteen follows twelve.",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-007",
+   "subfamily": "entity",
+   "template": "sport",
+   "prompt": "The athlete Michael Phelps plays the sport of",
+   "target": "swimming",
+   "intermediates": [
+    "swimming",
+    "Swimming"
+   ],
+   "note": "American swimmer with the most Olympic medals of any athlete",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-012",
+   "subfamily": "entity",
+   "template": "sport",
+   "prompt": "The athlete Lance Armstrong plays the sport of",
+   "target": "cycling",
+   "intermediates": [
+    "cycling",
+    "Cycling"
+   ],
+   "note": "American cyclist stripped of seven Tour de France titles for doping",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-013",
+   "subfamily": "entity",
+   "template": "sport",
+   "prompt": "The athlete Alexander Karelin plays the sport of",
+   "target": "wrestling",
+   "intermediates": [
+    "wrestling",
+    "Wrestling"
+   ],
+   "note": "Russian Greco-Roman wrestler, three-time Olympic champion",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-016",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Bangkok is the capital of",
+   "target": "Thailand",
+   "intermediates": [
+    "Thailand"
+   ],
+   "note": "Bangkok is the capital and largest city of Thailand",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-018",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Jakarta is the capital of",
+   "target": "Indonesia",
+   "intermediates": [
+    "Indonesia"
+   ],
+   "note": "Jakarta has long been the capital of Indonesia",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-023",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Santiago is the capital of",
+   "target": "Chile",
+   "intermediates": [
+    "Chile"
+   ],
+   "note": "Santiago is the capital of Chile",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-024",
+   "subfamily": "entity",
+   "template": "capital",
+   "prompt": "The city of Havana is the capital of",
+   "target": "Cuba",
+   "intermediates": [
+    "Cuba"
+   ],
+   "note": "Havana is the capital of Cuba",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-031",
+   "subfamily": "entity",
+   "template": "landmark",
+   "prompt": "The Anne Frank House is located in the country of",
+   "target": "Netherlands",
+   "intermediates": [
+    "Netherlands"
+   ],
+   "note": "The Anne Frank House is a museum in Amsterdam, Netherlands",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-033",
+   "subfamily": "entity",
+   "template": "landmark",
+   "prompt": "The Kilimanjaro is located in the country of",
+   "target": "Tanzania",
+   "intermediates": [
+    "Tanzania"
+   ],
+   "note": "Kilimanjaro, Africa's tallest peak, lies in Tanzania",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-056",
+   "subfamily": "processing",
+   "template": "addition",
+   "prompt": "1 + 4 =",
+   "target": "5",
+   "intermediates": [
+    "5",
+    "five"
+   ],
+   "note": "1 + 4 = 5",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-057",
+   "subfamily": "processing",
+   "template": "addition",
+   "prompt": "2 + 3 =",
+   "target": "5",
+   "intermediates": [
+    "5",
+    "five"
+   ],
+   "note": "2 + 3 = 5",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-079",
+   "subfamily": "processing",
+   "template": "month_before",
+   "prompt": "The month before December is",
+   "target": "November",
+   "intermediates": [
+    "November"
+   ],
+   "note": "the month before December is November",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-095",
+   "subfamily": "processing",
+   "template": "letter_after",
+   "prompt": "The letter after C in the alphabet is",
+   "target": "D",
+   "intermediates": [
+    "D",
+    "d"
+   ],
+   "note": "D immediately follows C in the alphabet",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-br-b-097",
+   "subfamily": "processing",
+   "template": "letter_after",
+   "prompt": "The letter after R in the alphabet is",
+   "target": "S",
+   "intermediates": [
+    "S",
+    "s"
+   ],
+   "note": "S immediately follows R in the alphabet",
+   "family": "basic_readout",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  }
+ ]
+}

@@ -1,0 +1,1802 @@
+{
+ "name": "chatonly",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 256,
+ "excluded_targets": 1577,
+ "source": "no_robots chat renders, frequency order",
+ "tokens": [
+  {
+   "id": 248045,
+   "text": "<|im_start|>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248046,
+   "text": "<|im_end|>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248044,
+   "text": "<|endoftext|>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248068,
+   "text": "<think>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 248069,
+   "text": "</think>",
+   "sources": [
+    "special"
+   ]
+  },
+  {
+   "id": 198,
+   "text": "Ċ",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 13,
+   "text": ".",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 279,
+   "text": " the",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 11,
+   "text": ",",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 271,
+   "text": "ĊĊ",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 264,
+   "text": " a",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 321,
+   "text": " and",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 310,
+   "text": " to",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 314,
+   "text": " of",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 303,
+   "text": " in",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 220,
+   "text": " ",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 846,
+   "text": "user",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 74455,
+   "text": "assistant",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 15,
+   "text": "0",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 369,
+   "text": " is",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 421,
+   "text": " that",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 364,
+   "text": " for",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 353,
+   "text": " I",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 424,
+   "text": " it",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 440,
+   "text": " with",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 383,
+   "text": " on",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 30,
+   "text": "?",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 883,
+   "text": " about",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 488,
+   "text": " you",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 430,
+   "text": " as",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 381,
+   "text": " be",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 557,
+   "text": " was",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 513,
+   "text": " are",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 449,
+   "text": " an",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 579,
+   "text": "'s",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 494,
+   "text": " from",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 411,
+   "text": " this",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 728,
+   "text": " me",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 561,
+   "text": " The",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 466,
+   "text": " or",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 318,
+   "text": " (",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 506,
+   "text": " at",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 25,
+   "text": ":",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 7734,
+   "text": "Write",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 628,
+   "text": " can",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 539,
+   "text": " by",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 599,
+   "text": " have",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 821,
+   "text": " my",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 694,
+   "text": " but",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 780,
+   "text": " his",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 725,
+   "text": "âĢĻs",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 23,
+   "text": "8",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 22,
+   "text": "7",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 21,
+   "text": "6",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 328,
+   "text": " \"",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 781,
+   "text": " they",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 8,
+   "text": ")",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 852,
+   "text": " who",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 836,
+   "text": " their",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1024,
+   "text": " her",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 551,
+   "text": " he",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 524,
+   "text": " not",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 40,
+   "text": "I",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 678,
+   "text": " your",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 682,
+   "text": " has",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1010,
+   "text": " some",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 3255,
+   "text": " story",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1040,
+   "text": " like",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1220,
+   "text": " should",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 60,
+   "text": "]",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 660,
+   "text": " all",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 777,
+   "text": " more",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 668,
+   "text": " will",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1103,
+   "text": " list",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 760,
+   "text": "The",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1092,
+   "text": " what",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 748,
+   "text": " so",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1070,
+   "text": " them",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 914,
+   "text": "'t",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 680,
+   "text": " out",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1049,
+   "text": " It",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1204,
+   "text": " how",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1083,
+   "text": " into",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1236,
+   "text": " make",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1318,
+   "text": " want",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1292,
+   "text": " she",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 998,
+   "text": " were",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2716,
+   "text": " short",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 995,
+   "text": " had",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 635,
+   "text": " do",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 413,
+   "text": " if",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 12,
+   "text": "-",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1000,
+   "text": " would",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 3165,
+   "text": " write",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 864,
+   "text": " which",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 854,
+   "text": " time",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 567,
+   "text": " we",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 26,
+   "text": ";",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1001,
+   "text": " âĢľ",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1056,
+   "text": " than",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 948,
+   "text": " when",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 3710,
+   "text": "What",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1,
+   "text": "\"",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1754,
+   "text": " each",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 4105,
+   "text": " words",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 975,
+   "text": " other",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1144,
+   "text": " need",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1208,
+   "text": " people",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1141,
+   "text": " its",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 978,
+   "text": " been",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 491,
+   "text": " new",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 197,
+   "text": "ĉ",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 7625,
+   "text": ".[",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1357,
+   "text": "âĢĻt",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1017,
+   "text": " there",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1459,
+   "text": " don",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 0,
+   "text": "!",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 615,
+   "text": " get",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1332,
+   "text": " where",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 4558,
+   "text": " ĊĊ",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 31708,
+   "text": " poem",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1384,
+   "text": " him",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 14,
+   "text": "/",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1132,
+   "text": " only",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 958,
+   "text": " use",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 7170,
+   "text": " Make",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 888,
+   "text": " over",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1004,
+   "text": " our",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 6132,
+   "text": "bot",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1238,
+   "text": " after",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1018,
+   "text": " said",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 6040,
+   "text": " chat",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 874,
+   "text": " no",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1362,
+   "text": " could",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 286,
+   "text": "ing",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1438,
+   "text": " help",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2873,
+   "text": " give",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 733,
+   "text": " In",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1599,
+   "text": " many",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1379,
+   "text": " most",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 803,
+   "text": " name",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 262,
+   "text": "   ",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1578,
+   "text": " years",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1216,
+   "text": " He",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1546,
+   "text": " very",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2688,
+   "text": "'m",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1248,
+   "text": " long",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1439,
+   "text": " these",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 4400,
+   "text": " article",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 866,
+   "text": " any",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1834,
+   "text": " day",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2199,
+   "text": " life",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 357,
+   "text": " A",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 359,
+   "text": " '",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2830,
+   "text": " include",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1414,
+   "text": " text",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1881,
+   "text": " between",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2302,
+   "text": " They",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 6503,
+   "text": "Can",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 944,
+   "text": " work",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 4602,
+   "text": " questions",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 471,
+   "text": " -",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1801,
+   "text": " made",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1560,
+   "text": " way",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1467,
+   "text": " did",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1602,
+   "text": " being",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 504,
+   "text": "',",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1518,
+   "text": " before",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2433,
+   "text": " things",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 290,
+   "text": "ed",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1603,
+   "text": " good",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1061,
+   "text": " This",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1521,
+   "text": " because",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2086,
+   "text": " different",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2094,
+   "text": " around",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 283,
+   "text": " =",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1172,
+   "text": " under",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1691,
+   "text": " much",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 681,
+   "text": "),",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 3437,
+   "text": " What",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1044,
+   "text": " am",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1179,
+   "text": " then",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1189,
+   "text": " may",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1814,
+   "text": " world",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 708,
+   "text": " go",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 393,
+   "text": " $",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2614,
+   "text": " following",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1142,
+   "text": " back",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 5328,
+   "text": "Please",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 5044,
+   "text": " Please",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1345,
+   "text": " while",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 553,
+   "text": ").",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 623,
+   "text": "In",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1637,
+   "text": " person",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1786,
+   "text": " best",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2512,
+   "text": " called",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1831,
+   "text": " take",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2166,
+   "text": " too",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1205,
+   "text": "rite",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1441,
+   "text": " down",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 695,
+   "text": " Ċ",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 974,
+   "text": " off",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 6498,
+   "text": " ideas",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1920,
+   "text": ".âĢĿ",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2469,
+   "text": " email",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2919,
+   "text": " water",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 56491,
+   "text": "Rew",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1608,
+   "text": " using",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2854,
+   "text": " love",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 809,
+   "text": " end",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1149,
+   "text": ".\"",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2838,
+   "text": " She",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1503,
+   "text": " does",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2046,
+   "text": " home",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1436,
+   "text": " see",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 13901,
+   "text": " paragraph",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2885,
+   "text": " Can",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1675,
+   "text": " post",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2261,
+   "text": " during",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 3069,
+   "text": " why",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2445,
+   "text": " come",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1669,
+   "text": " found",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2545,
+   "text": " little",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1381,
+   "text": " now",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1429,
+   "text": " used",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1442,
+   "text": " even",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 32,
+   "text": "A",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2019,
+   "text": " going",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1928,
+   "text": " information",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2342,
+   "text": " few",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2617,
+   "text": " sure",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2340,
+   "text": ",âĢĿ",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2748,
+   "text": " children",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2414,
+   "text": " something",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 3542,
+   "text": " character",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 3487,
+   "text": " food",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 828,
+   "text": "âĢĿ",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2902,
+   "text": " family",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2236,
+   "text": " book",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 855,
+   "text": " man",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 6725,
+   "text": " named",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 88,
+   "text": "y",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 22157,
+   "text": " sentences",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 4199,
+   "text": "How",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 3299,
+   "text": " word",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1496,
+   "text": " high",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1680,
+   "text": " such",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1396,
+   "text": " every",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 15754,
+   "text": " tone",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2235,
+   "text": " old",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1990,
+   "text": " still",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1483,
+   "text": " last",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 2583,
+   "text": " including",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1683,
+   "text": " think",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 10926,
+   "text": " answers",
+   "sources": [
+    "chat unigram"
+   ]
+  },
+  {
+   "id": 1746,
+   "text": " game",
+   "sources": [
+    "chat unigram"
+   ]
+  }
+ ]
+}

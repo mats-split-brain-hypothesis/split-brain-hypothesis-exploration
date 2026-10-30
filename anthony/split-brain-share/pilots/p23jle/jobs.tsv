@@ -1,0 +1,9 @@
+id	cell	model	brief	snapshot	head	eval_tools	host	order	wave
+p23-r1-A0-dsv4-jle	new-env	deepseek/deepseek-v4-pro-0813	briefs/jle/A0-eval.md	jle/jlens-edits-snapshot-rig-eval	fd2737da432f19872c47689480fad7515bc6fda5	jle	desktop	1	1
+p23-r1-A0-q27b-jle	new-env	qwen/qwen3.8-27b	briefs/jle/A0-eval.md	jle/jlens-edits-snapshot-rig-eval	fd2737da432f19872c47689480fad7515bc6fda5	jle	desktop	2	1
+p23-r1-A0-glm52-jle	new-env	z-ai/glm-5.2	briefs/jle/A0-eval.md	jle/jlens-edits-snapshot-rig-eval	fd2737da432f19872c47689480fad7515bc6fda5	jle	desktop	3	1
+p23-r2-A0-dsv4-jle	new-env	deepseek/deepseek-v4-pro-0813	briefs/jle/A0-eval.md	jle/jlens-edits-snapshot-rig-eval	fd2737da432f19872c47689480fad7515bc6fda5	jle	desktop	4	1
+p23-r2-A0-q27b-jle	new-env	qwen/qwen3.8-27b	briefs/jle/A0-eval.md	jle/jlens-edits-snapshot-rig-eval	fd2737da432f19872c47689480fad7515bc6fda5	jle	desktop	5	1
+p23-r2-A0-glm52-jle	new-env	z-ai/glm-5.2	briefs/jle/A0-eval.md	jle/jlens-edits-snapshot-rig-eval	fd2737da432f19872c47689480fad7515bc6fda5	jle	desktop	6	1
+p23-r3-A0-dsv4-jle	new-env	deepseek/deepseek-v4-pro-0813	briefs/jle/A0-eval.md	jle/jlens-edits-snapshot-rig-eval	fd2737da432f19872c47689480fad7515bc6fda5	jle	desktop	7	1
+p23-r3-A0-q27b-jle	new-env	qwen/qwen3.8-27b	briefs/jle/A0-eval.md	jle/jlens-edits-snapshot-rig-eval	fd2737da432f19872c47689480fad7515bc6fda5	jle	desktop	8	1

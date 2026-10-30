@@ -1,0 +1,15 @@
+{
+ "run": "p03-beval-dsv4-2-tcb",
+ "status": "read",
+ "found": false,
+ "passages": [],
+ "usage": {
+  "input": 106326,
+  "cache_read": 0,
+  "cache_write": 0,
+  "output": 14,
+  "cost_usd_list": 0.2128,
+  "ms": 2446,
+  "request_id": "msg_011CgQqHM7w17nLMAtWhqfw9"
+ }
+}

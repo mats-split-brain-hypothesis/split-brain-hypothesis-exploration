@@ -1,0 +1,13 @@
+id	arm	model	brief	snapshot	head	quota	borrow	port
+l0-r1-dsv4	L0	deepseek/deepseek-v4-pro-0813	briefs/borrow/B1-G.md	j-lens-mean-snapshot-borrow	d8e7b108c73b868abf1c9ca6b2c820c38a2c14b4	40	1	8784
+l0-r1-q27b	L0	qwen/qwen3.8-27b	briefs/borrow/B1-G.md	j-lens-mean-snapshot-borrow	d8e7b108c73b868abf1c9ca6b2c820c38a2c14b4	40	1	8785
+l0-r1-glm52	L0	z-ai/glm-5.2	briefs/borrow/B1-G.md	j-lens-mean-snapshot-borrow	d8e7b108c73b868abf1c9ca6b2c820c38a2c14b4	40	1	8786
+l0-r2-dsv4	L0	deepseek/deepseek-v4-pro-0813	briefs/borrow/B1-G.md	j-lens-mean-snapshot-borrow	d8e7b108c73b868abf1c9ca6b2c820c38a2c14b4	40	1	8787
+l0-r2-q27b	L0	qwen/qwen3.8-27b	briefs/borrow/B1-G.md	j-lens-mean-snapshot-borrow	d8e7b108c73b868abf1c9ca6b2c820c38a2c14b4	40	1	8784
+l0-r2-glm52	L0	z-ai/glm-5.2	briefs/borrow/B1-G.md	j-lens-mean-snapshot-borrow	d8e7b108c73b868abf1c9ca6b2c820c38a2c14b4	40	1	8785
+l1-r1-dsv4	L1	deepseek/deepseek-v4-pro-0813	briefs/borrow/B1-G-need.md	j-lens-mean-snapshot-borrow	d8e7b108c73b868abf1c9ca6b2c820c38a2c14b4	40	1	8786
+l1-r1-q27b	L1	qwen/qwen3.8-27b	briefs/borrow/B1-G-need.md	j-lens-mean-snapshot-borrow	d8e7b108c73b868abf1c9ca6b2c820c38a2c14b4	40	1	8787
+l1-r1-glm52	L1	z-ai/glm-5.2	briefs/borrow/B1-G-need.md	j-lens-mean-snapshot-borrow	d8e7b108c73b868abf1c9ca6b2c820c38a2c14b4	40	1	8784
+l1-r2-dsv4	L1	deepseek/deepseek-v4-pro-0813	briefs/borrow/B1-G-need.md	j-lens-mean-snapshot-borrow	d8e7b108c73b868abf1c9ca6b2c820c38a2c14b4	40	1	8785
+l1-r2-q27b	L1	qwen/qwen3.8-27b	briefs/borrow/B1-G-need.md	j-lens-mean-snapshot-borrow	d8e7b108c73b868abf1c9ca6b2c820c38a2c14b4	40	1	8786
+l1-r2-glm52	L1	z-ai/glm-5.2	briefs/borrow/B1-G-need.md	j-lens-mean-snapshot-borrow	d8e7b108c73b868abf1c9ca6b2c820c38a2c14b4	40	1	8787

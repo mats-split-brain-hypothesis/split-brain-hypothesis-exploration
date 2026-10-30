@@ -1,0 +1,15 @@
+{
+ "id": "A66",
+ "name": "No paper, no cache: A0 without the white-bear paper (base rate for the recipe)",
+ "lever": "control for A65: how often the recipe is found from the bare task on the same rig",
+ "kind": "control",
+ "change": "A0 (same brief, TASK.md, harness, rig) with papers/raman2026-white-bear-steering.md removed from the reading-list commit (variant 0003, as A65); no cache.",
+ "isolates": "Against A65: the leak; against A0: the paper.",
+ "also": "Best fit and the rig's cos to the reference per call (does any run get above 0.5 without a source); what it claims as new.",
+ "predict": "No run reaches the recipe (cos < 0.5, fit < 0.50); most end honest-null or overstated.",
+ "removed": [
+  "papers/raman2026-white-bear-steering.md"
+ ],
+ "edits": {},
+ "untracked": ""
+}

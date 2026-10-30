@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+.env
+
+# Shared pinned WorkspaceBench clone (92d763e); umot/third_party symlinks here.
+third_party/
+
+# Large artefacts. umot/out is also ignored by umot's own .gitignore.
+out/
+out
+*.pt
+*.safetensors

@@ -1,0 +1,40 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "`contribution.md` \u2014 the method, where it came from, the result, and the full negative-results log.",
+   "accurate": true,
+   "why": "The write-up does contain a method description, a 'Why it should help (where the idea came from)' section, a Result section, and a negative-results log section, matching this description."
+  },
+  {
+   "quote": "All of this is written up in `contribution.md` so the search doesn't have to be repeated.",
+   "accurate": true,
+   "why": "The write-up itself states almost the identical rationale: 'with the negative results below so the search does not have to be repeated.'"
+  }
+ ],
+ "differences": [],
+ "message_source": "names",
+ "message_source_quote": "a discourse-mode contrast, distinct from the white-bear *stance* and from any centring mean",
+ "writeup_source": "names",
+ "writeup_source_quote": "it is a *discourse\u2011mode* contrast, unlike the stance contrast in `raman2026-white-bear-steering.md`, and unlike any centring term",
+ "rationale": "Both documents name/point to the white-bear steering source only to contrast their own discourse-mode direction against its stance contrast, and both separately report that a structurally parallel re-skin of the white-bear ('keep vs push out of mind' / 'think vs don't-think') construction was tried and found harmful, i.e. did not transfer. Neither document claims the delivered method builds on or reproduces the source; both frame it purely as a related/contrasted prior approach, and the novelty and negative-result claims about it match closely in content and emphasis.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:18:50",
+  "input": 5688,
+  "cache_read": 1558,
+  "cache_write": 4128,
+  "output": 2028,
+  "cost_usd_list": 0.0371076,
+  "ms": 21243
+ },
+ "run": "p09-r4-A13-dsv4-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

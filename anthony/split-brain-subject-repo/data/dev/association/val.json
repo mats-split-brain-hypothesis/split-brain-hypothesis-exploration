@@ -1,0 +1,1548 @@
+{
+ "family": "association",
+ "split": "val",
+ "source": "jle/data/x90-dev/bank-v2/association.jsonl split B (jle git 50fa623)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "dev-as-a-004",
+   "prompt": "Her arms sliced through the chlorinated water, one goggle fogged, as she counted the black line beneath her.",
+   "intermediates": [
+    "swimming"
+   ],
+   "subfamily": "activity",
+   "note": "Chlorinated pool, goggles and a lane line are swimming-specific; the word swim never appears.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-006",
+   "prompt": "Eight oars dipped together in perfect rhythm as the scull sliced silently down the misty river.",
+   "intermediates": [
+    "rowing"
+   ],
+   "subfamily": "activity",
+   "note": "A scull and eight oars moving in rhythm is competitive rowing, without any word sharing the stem row.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-008",
+   "prompt": "She paddled hard into the swell, popped to her feet, and carved down the face of the breaking wave.",
+   "intermediates": [
+    "surfing"
+   ],
+   "subfamily": "activity",
+   "note": "Popping to her feet on a breaking wave, with no board mentioned as attached to a boat, is surfing.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-009",
+   "prompt": "He chalked his fingers, found a thin edge on the rock, and pulled himself up past the overhang.",
+   "intermediates": [
+    "climbing"
+   ],
+   "subfamily": "activity",
+   "note": "Chalked fingers and a rock overhang name climbing without using the word climb.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-011",
+   "prompt": "He sat on the end of the dock before sunrise, rod steady in his hands, waiting for the line to twitch and the reel to sing.",
+   "intermediates": [
+    "fishing"
+   ],
+   "subfamily": "activity",
+   "note": "Rod, line and reel at a dock name fishing without ever saying the word fish.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-013",
+   "prompt": "They pitched the tent as dusk fell, ate beans warmed over the flames, and zipped into their sleeping bags.",
+   "intermediates": [
+    "camping"
+   ],
+   "subfamily": "activity",
+   "note": "Pitching a tent and sleeping bags outdoors name camping without the word camp.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-019",
+   "prompt": "Two boys grappled on the mat, arms locked, until one pinned the other's shoulders to the floor.",
+   "intermediates": [
+    "wrestling"
+   ],
+   "subfamily": "activity",
+   "note": "Grappling on a mat until a pin names wrestling without the word wrestle.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-020",
+   "prompt": "She raised her foil, saluted her opponent through the mesh mask, and lunged down the narrow strip.",
+   "intermediates": [
+    "fencing"
+   ],
+   "subfamily": "activity",
+   "note": "Foil, mesh mask and strip are fencing-specific terms; the word fence is avoided.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-024",
+   "prompt": "Blades hissed across the rink as sticks clashed and the puck cracked off the boards.",
+   "intermediates": [
+    "hockey"
+   ],
+   "subfamily": "activity",
+   "note": "Blades, a rink, sticks and a puck together name ice hockey without the word.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-040",
+   "prompt": "The riverbed had cracked into a mosaic of dry plates, and the farmers watched the sky for clouds that never came.",
+   "intermediates": [
+    "drought"
+   ],
+   "subfamily": "place_event",
+   "note": "A cracked, dry riverbed and absent rain over time describe drought.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-050",
+   "prompt": "Ribbons of green and violet light rippled silently across the night sky above the frozen tundra.",
+   "intermediates": [
+    "aurora"
+   ],
+   "subfamily": "place_event",
+   "note": "Rippling colored light ribbons over a polar night sky describe an aurora.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-051",
+   "prompt": "The river had carved a channel a mile deep into the red rock, and the walls glowed orange as the sun dropped low.",
+   "intermediates": [
+    "canyon"
+   ],
+   "subfamily": "place_event",
+   "note": "A river-carved channel a mile deep into rock names a canyon.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-056",
+   "prompt": "Beneath the clear water, a maze of coral in every color sheltered fish too numerous to count.",
+   "intermediates": [
+    "reef"
+   ],
+   "subfamily": "place_event",
+   "note": "A maze of coral sheltering fish names a reef.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-063",
+   "prompt": "A glove-maker's son from a small English town wrote of star-crossed lovers and vengeful princes, then retired quietly home.",
+   "intermediates": [
+    "shakespeare"
+   ],
+   "subfamily": "proper",
+   "note": "A glove-maker's son from a small English town writing of star-crossed lovers uniquely names Shakespeare.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-069",
+   "prompt": "Convinced the earth was smaller than everyone believed, he sailed west for weeks seeking a shorter route to the spice islands.",
+   "intermediates": [
+    "columbus"
+   ],
+   "subfamily": "proper",
+   "note": "Sailing west believing the earth was smaller to reach the spice islands uniquely names Columbus.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-074",
+   "prompt": "The king of the gods hurled thunderbolts from a mountain throne and disguised himself endlessly to pursue mortal women below.",
+   "intermediates": [
+    "zeus"
+   ],
+   "subfamily": "proper",
+   "note": "A thunderbolt-hurling king of the gods on a mountain throne uniquely names Zeus.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-076",
+   "prompt": "She watched her friend twirl in the new dress everyone was admiring and felt something small and bitter curl in her chest.",
+   "intermediates": [
+    "jealousy"
+   ],
+   "subfamily": "abstract",
+   "note": "A bitter feeling at a friend's admired appearance names jealousy without using the word.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-079",
+   "prompt": "Her hands wouldn't stop moving, checking the lock a fourth time, replaying the meeting she hadn't even had yet.",
+   "intermediates": [
+    "anxiety"
+   ],
+   "subfamily": "abstract",
+   "note": "Compulsive checking and dread over an event that has not happened yet names anxiety.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-083",
+   "prompt": "After forty years at the same desk, he cleared out the drawers, shook every hand in the office, and walked out for the last time.",
+   "intermediates": [
+    "retirement"
+   ],
+   "subfamily": "abstract",
+   "note": "Clearing a desk after forty years and leaving work for the last time names retirement.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-085",
+   "prompt": "The lawyer explained, gently, that the business could not pay what it owed, and every asset would now be sold to settle the debts.",
+   "intermediates": [
+    "bankruptcy"
+   ],
+   "subfamily": "abstract",
+   "note": "A business unable to pay its debts having its assets sold names bankruptcy.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-089",
+   "prompt": "The child kept prying open every drawer in the house, not to take anything, just to see what was inside.",
+   "intermediates": [
+    "curiosity"
+   ],
+   "subfamily": "abstract",
+   "note": "Opening drawers purely to see what is inside, with no other motive, names curiosity.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-094",
+   "prompt": "Das klare Wasser strömte ruhig zwischen den Weiden hindurch und trug kleine Boote sanft in Richtung des fernen Meeres.",
+   "intermediates": [
+    "Fluss"
+   ],
+   "subfamily": "foreign",
+   "note": "Water flowing calmly between meadows toward the distant sea, carrying boats, names Fluss (river) in German.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-095",
+   "prompt": "Im Garten stand seit Generationen ein knorriger Riese mit ausladenden Ästen, unter dessen Schatten die ganze Familie jeden Sommer aß.",
+   "intermediates": [
+    "Baum"
+   ],
+   "subfamily": "foreign",
+   "note": "A gnarled giant with spreading branches shading a family gathering names Baum (tree) in German.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-097",
+   "prompt": "Cada mañana, la estrella brillante que calienta la Tierra aparecía sobre las montañas y despertaba a todo el pueblo con su luz.",
+   "intermediates": [
+    "sol"
+   ],
+   "subfamily": "foreign",
+   "note": "The bright star that warms the Earth and rises over the mountains each morning names sol (sun) in Spanish.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-098",
+   "prompt": "Aquella noche, un enorme disco plateado colgaba silencioso en el cielo y bañaba el océano entero con una luz pálida.",
+   "intermediates": [
+    "luna"
+   ],
+   "subfamily": "foreign",
+   "note": "A silvery disk hanging silently in the night sky and bathing the ocean in pale light names luna (moon) in Spanish.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-a-099",
+   "prompt": "Desde el acantilado se veía una extensión azul infinita que rompía en olas blancas contra las rocas de la costa.",
+   "intermediates": [
+    "mar"
+   ],
+   "subfamily": "foreign",
+   "note": "An infinite blue expanse breaking in white waves against a coastal cliff names mar (sea) in Spanish.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-008",
+   "prompt": "Old springs were replaced and fresh foam layered beneath new fabric, stretched taut and tacked along the wooden frame of the chair.",
+   "intermediates": [
+    "upholstery"
+   ],
+   "subfamily": "activity",
+   "note": "Springs, foam, and fabric tacked onto a chair frame describe upholstery specifically.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-038",
+   "prompt": "Black-clad mourners stood beneath dripping umbrellas as the coffin was lowered slowly into the freshly dug earth.",
+   "intermediates": [
+    "funeral"
+   ],
+   "subfamily": "place_event",
+   "note": "Mourners, a coffin, and a dug grave describe a funeral.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-040",
+   "prompt": "Weary travelers walked the dusty road for weeks, sandals worn thin, toward the distant shrine that drew them onward.",
+   "intermediates": [
+    "pilgrimage"
+   ],
+   "subfamily": "place_event",
+   "note": "Travelers walking for weeks toward a distant shrine describes a pilgrimage.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-041",
+   "prompt": "Robed figures walked slowly through the narrow streets, carrying candles and a gilded statue held high above the crowd.",
+   "intermediates": [
+    "procession"
+   ],
+   "subfamily": "place_event",
+   "note": "A slow, candlelit walk through streets carrying a raised statue is a procession.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-046",
+   "prompt": "Behind barred windows, patients paced long corridors under the watch of nurses in a building far from any town.",
+   "intermediates": [
+    "asylum"
+   ],
+   "subfamily": "place_event",
+   "note": "Barred windows, pacing patients, and nurses in an isolated building describe an asylum.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-053",
+   "prompt": "A council of master craftsmen, the only body allowed to set prices and standards in the city, examined the apprentice's finished piece before granting him its seal.",
+   "intermediates": [
+    "guild"
+   ],
+   "subfamily": "place_event",
+   "note": "A council of masters controlling trade standards and admitting an apprentice with its seal describes a guild.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-056",
+   "prompt": "Strangers gathered on the steps holding flickering candles through the night, saying nothing as they waited for news.",
+   "intermediates": [
+    "vigil"
+   ],
+   "subfamily": "place_event",
+   "note": "Silent strangers holding candles through the night waiting for news describes a vigil.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-059",
+   "prompt": "Citizens lined up at polling stations to mark a single yes or no question that would decide the nation's future.",
+   "intermediates": [
+    "referendum"
+   ],
+   "subfamily": "place_event",
+   "note": "A single yes-or-no national question at polling stations is a referendum, not a general election.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-066",
+   "prompt": "Gondoliers pushed narrow boats through canals lined with crumbling palaces while tourists fed pigeons in the flooded square.",
+   "intermediates": [
+    "Venice"
+   ],
+   "subfamily": "proper",
+   "note": "Gondoliers, canals, and a flooded main square are distinctively Venice, unlike other canal cities.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-068",
+   "prompt": "Ferries crossed the strait all day while the call to prayer drifted from minarets standing on two separate continents at once.",
+   "intermediates": [
+    "Istanbul"
+   ],
+   "subfamily": "proper",
+   "note": "A city split by a strait between two continents, with ferries and minarets, is uniquely Istanbul.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-083",
+   "prompt": "Her name was finally printed on the door of the corner office, the title beneath it two ranks higher than last month.",
+   "intermediates": [
+    "promotion"
+   ],
+   "subfamily": "abstract",
+   "note": "A new name and higher title on a corner office door names a promotion.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-085",
+   "prompt": "After the will was read, the modest farmhouse and every acre around it passed quietly into his hands alone.",
+   "intermediates": [
+    "inheritance"
+   ],
+   "subfamily": "abstract",
+   "note": "Property passing to someone after a will is read names an inheritance.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-090",
+   "prompt": "The town rebuilt every flooded shop and flattened home within a single year, refusing to let the disaster define them.",
+   "intermediates": [
+    "resilience"
+   ],
+   "subfamily": "abstract",
+   "note": "A town's rapid, defiant rebuilding after a flood names resilience, the abstract trait.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-092",
+   "prompt": "Des pinceaux trempaient dans la térébenthine et des toiles inachevées s'appuyaient contre chaque mur de la pièce silencieuse.",
+   "intermediates": [
+    "atelier"
+   ],
+   "subfamily": "foreign",
+   "note": "Brushes soaking in turpentine and unfinished canvases against the walls describe an atelier (studio) in French.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-093",
+   "prompt": "Les grues levaient des poutres d'acier tandis que les ouvriers en casque circulaient parmi les échafaudages poussiéreux.",
+   "intermediates": [
+    "chantier"
+   ],
+   "subfamily": "foreign",
+   "note": "Cranes, steel beams, helmeted workers, and scaffolding describe a chantier (building site) in French.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-b-094",
+   "prompt": "Dans la cave humide, des roues rondes vieillissaient sur des planches de bois, dégageant une odeur forte et piquante.",
+   "intermediates": [
+    "fromage"
+   ],
+   "subfamily": "foreign",
+   "note": "Round wheels aging on wooden boards in a damp cellar with a pungent smell describe fromage (cheese) in French.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-002",
+   "prompt": "Blades hissed across the frozen pond as she pushed off, arms swinging, gliding in wide loops past the huddled spectators on the bank.",
+   "intermediates": [
+    "skating"
+   ],
+   "subfamily": "activity",
+   "note": "Blades on ice and gliding loops are decisive for skating.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-012",
+   "prompt": "Every morning before work he trotted the same loop around the block at an easy pace, earbuds in, saying nothing to anyone.",
+   "intermediates": [
+    "jogging"
+   ],
+   "subfamily": "activity",
+   "note": "A solitary, easy daily loop distinguishes jogging from a race.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-013",
+   "prompt": "She unrolled her mat on the studio floor, folded into a slow forward bend, and breathed until her spine finally released.",
+   "intermediates": [
+    "yoga"
+   ],
+   "subfamily": "activity",
+   "note": "A mat, a studio floor and a slow held bend are decisive for yoga.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-015",
+   "prompt": "Two players traded fast shots off the front wall in the narrow glass court, the small black ball smacking back and forth.",
+   "intermediates": [
+    "squash"
+   ],
+   "subfamily": "activity",
+   "note": "A glass court and shots off a front wall are decisive for squash.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-017",
+   "prompt": "He gripped the microphone under the flashing lights, missed half the words on the screen, and belted the chorus anyway to loud applause.",
+   "intermediates": [
+    "karaoke"
+   ],
+   "subfamily": "activity",
+   "note": "A microphone and scrolling words on a screen are decisive for karaoke.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-024",
+   "prompt": "Thin needles stood in neat rows along his spine as he lay face down on the table, breathing slow under the dim light.",
+   "intermediates": [
+    "acupuncture"
+   ],
+   "subfamily": "activity",
+   "note": "Rows of thin needles left along the spine on a table is acupuncture.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-036",
+   "prompt": "Food stalls lined the park for three days as bands played on an outdoor stage and children ran between the crowds with painted faces.",
+   "intermediates": [
+    "festival"
+   ],
+   "subfamily": "place_event",
+   "note": "Stalls, a stage and days of crowds without floats name a festival.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-039",
+   "prompt": "Volunteers handed out flyers outside the polling station as voters queued for hours to mark their ballots before the count began.",
+   "intermediates": [
+    "election"
+   ],
+   "subfamily": "place_event",
+   "note": "A polling station, ballots and a count name an election.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-040",
+   "prompt": "Sixteen teams shook hands at center court before the brackets went up on the wall, one loss away from being sent home.",
+   "intermediates": [
+    "tournament"
+   ],
+   "subfamily": "place_event",
+   "note": "Brackets and single-loss elimination among many teams name a tournament.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-052",
+   "prompt": "She hit play on the black screen, a two-note chime sounded, and a bold red letter flashed just before episode four began unasked.",
+   "intermediates": [
+    "Netflix"
+   ],
+   "subfamily": "proper",
+   "note": "The two-note chime, red letter mark and unasked autoplay are Netflix's signature.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-057",
+   "prompt": "She flipped through pages of tiny numbered steps, turned the little wrench included in the box, and still had two screws left over.",
+   "intermediates": [
+    "IKEA"
+   ],
+   "subfamily": "proper",
+   "note": "Numbered instructions, an included wrench and leftover screws name IKEA flat-pack furniture.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-060",
+   "prompt": "Her chest tightened, the room seemed to close in, and her hands would not stop shaking no matter how slowly she tried to breathe.",
+   "intermediates": [
+    "panic"
+   ],
+   "subfamily": "abstract",
+   "note": "A tightening chest, closing room and shaking hands name panic.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-063",
+   "prompt": "Die Bäume standen so dicht, dass kaum Licht den moosigen Boden erreichte, und ein Reh verschwand lautlos zwischen den Stämmen.",
+   "intermediates": [
+    "Wald"
+   ],
+   "subfamily": "foreign",
+   "note": "German: dense trees, moss and a deer between trunks name Wald (forest).",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-066",
+   "prompt": "Los vecinos se reunían cada tarde bajo los soportales, los niños perseguían palomas mientras los ancianos jugaban cartas en bancos de piedra.",
+   "intermediates": [
+    "plaza"
+   ],
+   "subfamily": "foreign",
+   "note": "Spanish: arcades, pigeons and elders on stone benches name a plaza (town square).",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-c-070",
+   "prompt": "Le vigneron pressait les grappes violettes dans la cuve de bois, et un liquide sombre coulait lentement vers le fond.",
+   "intermediates": [
+    "vin"
+   ],
+   "subfamily": "foreign",
+   "note": "French: pressing purple grapes in a wooden vat names vin (wine).",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-001",
+   "prompt": "Headlamps flickered along the tunnel walls as pickaxes rang against black coal and carts creaked toward the shaft on rusted rails.",
+   "intermediates": [
+    "mining"
+   ],
+   "subfamily": "activity",
+   "note": "underground coal tunnel, pickaxe and cart imagery names only mining",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-007",
+   "prompt": "They stepped close together, her leg hooking around his calf as the bandoneon wailed, two bodies moving as one sharp, dramatic pause.",
+   "intermediates": [
+    "tango"
+   ],
+   "subfamily": "activity",
+   "note": "bandoneon plus the leg-hook embrace is specifically tango, not dance in general",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-015",
+   "prompt": "The small ball clattered around the spinning wheel while players leaned forward, chips already stacked on red, black, and a single number.",
+   "intermediates": [
+    "roulette"
+   ],
+   "subfamily": "activity",
+   "note": "ball, spinning wheel and bets on red, black or a number is roulette",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-017",
+   "prompt": "She fed raw wool onto the wheel with one hand, treadling steadily with her foot until a fine, twisted thread wound onto the bobbin.",
+   "intermediates": [
+    "spinning"
+   ],
+   "subfamily": "activity",
+   "note": "wool, treadle wheel and thread onto a bobbin is fiber spinning",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-018",
+   "prompt": "She dripped hot wax in careful patterns across the white cotton before dipping the cloth into indigo dye, the waxed lines resisting the color.",
+   "intermediates": [
+    "batik"
+   ],
+   "subfamily": "activity",
+   "note": "wax-resist patterning before dyeing cloth is batik",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-024",
+   "prompt": "He lifted each hay bale onto the trailer and set it flush against the last, building a solid wall four bales high by evening.",
+   "intermediates": [
+    "stacking"
+   ],
+   "subfamily": "activity",
+   "note": "building a flush, layered wall of bales is stacking",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-028",
+   "prompt": "She snipped away the tangled, dead canes from the rose bush, cutting each stem back to an outward-facing bud before the frost came.",
+   "intermediates": [
+    "pruning"
+   ],
+   "subfamily": "activity",
+   "note": "cutting canes back to a bud on a rose bush is pruning",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-029",
+   "prompt": "She pressed each seedling into the dark soil, firmed the earth around its roots with her thumbs, and moved on to the next row.",
+   "intermediates": [
+    "planting"
+   ],
+   "subfamily": "activity",
+   "note": "pressing seedlings into soil row by row is planting",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-031",
+   "prompt": "She sorted the pile into whites and colors, fed each load into the machine, and pinned the damp sheets to the line outside.",
+   "intermediates": [
+    "laundry"
+   ],
+   "subfamily": "activity",
+   "note": "sorting, washing and hanging sheets is doing laundry",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-034",
+   "prompt": "She scrubbed back through the timeline, trimming a half-second off the handshake and sliding the next clip in to tighten the whole scene.",
+   "intermediates": [
+    "editing"
+   ],
+   "subfamily": "activity",
+   "note": "trimming a timeline and sliding clips together is video editing",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-055",
+   "prompt": "Every evening she lit a candle in the window facing the harbor, certain that one clear night the boat would finally come home.",
+   "intermediates": [
+    "hope"
+   ],
+   "subfamily": "abstract",
+   "note": "a nightly ritual of expecting a longed-for return is hope",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-060",
+   "prompt": "He was told never to set foot in his homeland again, and spent the next twenty years watching the coastline from a foreign shore.",
+   "intermediates": [
+    "exile"
+   ],
+   "subfamily": "abstract",
+   "note": "permanent banishment from one's homeland is exile",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-063",
+   "prompt": "Strangers stopped her on the street now just to ask for a photograph, and the coffee shop she used to visit quietly banned cameras.",
+   "intermediates": [
+    "fame"
+   ],
+   "subfamily": "abstract",
+   "note": "strangers wanting photographs and a cafe banning cameras is fame",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-d-066",
+   "prompt": "The music dropped to a single held note as the hero's hand crept toward the wire, and the whole theater seemed to stop breathing.",
+   "intermediates": [
+    "suspense"
+   ],
+   "subfamily": "abstract",
+   "note": "a held note and an audience holding its breath is suspense",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-004",
+   "prompt": "Rows of worshippers removed their shoes at the threshold, knelt on patterned carpets, and bowed together toward Mecca as the call to prayer faded.",
+   "intermediates": [
+    "mosque"
+   ],
+   "subfamily": "place_event",
+   "note": "shoes removed, carpets, bowing toward Mecca and the call to prayer are decisive for a mosque.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-005",
+   "prompt": "Guards in ceremonial uniforms stood motionless outside gilded gates while tourists photographed the marble balconies where a monarch once waved to crowds.",
+   "intermediates": [
+    "palace"
+   ],
+   "subfamily": "place_event",
+   "note": "gilded gates, ceremonial guards and a monarch's balcony point at a palace.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-006",
+   "prompt": "Thick stone walls rose from the hillside, ringed by a dry moat, with arrow slits and a portcullis guarding the drawbridge below.",
+   "intermediates": [
+    "castle"
+   ],
+   "subfamily": "place_event",
+   "note": "moat, arrow slits, portcullis and drawbridge are castle-specific defensive features.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-008",
+   "prompt": "Wooden planks stretched far out over the waves, lined with amusement rides and fishing rods propped along the railing above the water.",
+   "intermediates": [
+    "pier"
+   ],
+   "subfamily": "place_event",
+   "note": "a plank walkway over water lined with amusement rides is a pier.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-009",
+   "prompt": "Children pressed their faces to the glass as a keeper tossed fish to the sea lions, while peacocks screeched from the aviary nearby.",
+   "intermediates": [
+    "zoo"
+   ],
+   "subfamily": "place_event",
+   "note": "a keeper, caged sea lions and an aviary of varied species point at a zoo.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-010",
+   "prompt": "A shark glided past the thick glass tunnel overhead while children looked up in silence, surrounded by tanks of glowing jellyfish and coral.",
+   "intermediates": [
+    "aquarium"
+   ],
+   "subfamily": "place_event",
+   "note": "a glass tunnel with a shark overhead and jellyfish tanks is specific to an aquarium.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-011",
+   "prompt": "The dome's roof slid open with a low grinding sound, and the astronomer swung the great telescope toward a cluster of distant stars.",
+   "intermediates": [
+    "observatory"
+   ],
+   "subfamily": "place_event",
+   "note": "a sliding dome roof and a great telescope are observatory-specific.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-012",
+   "prompt": "Rows of tomato vines climbed wooden stakes under glass panels that trapped the heat, condensation dripping steadily down every warm pane.",
+   "intermediates": [
+    "greenhouse"
+   ],
+   "subfamily": "place_event",
+   "note": "glass panels trapping heat over food crops point at a greenhouse rather than an ornamental conservatory.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-013",
+   "prompt": "Forklifts weaved between towering steel shelves stacked with pallets, their beeping echoing off the corrugated roof of the vast storage building.",
+   "intermediates": [
+    "warehouse"
+   ],
+   "subfamily": "place_event",
+   "note": "forklifts, steel shelving and pallets under a corrugated roof describe a warehouse.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-014",
+   "prompt": "Copper vats bubbled with hops and malt while workers rolled wooden kegs across the concrete floor toward the bottling line.",
+   "intermediates": [
+    "brewery"
+   ],
+   "subfamily": "place_event",
+   "note": "hops, malt and copper vats feeding a bottling line are brewery-specific.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-017",
+   "prompt": "Rows of cows stood patiently in metal stalls as machines hummed, drawing milk into steel tanks before it was chilled and bottled.",
+   "intermediates": [
+    "dairy"
+   ],
+   "subfamily": "place_event",
+   "note": "milking machinery and steel milk tanks point at a dairy rather than a generic farm.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-020",
+   "prompt": "A machete hacked through tangled vines as unseen monkeys screeched overhead, the air thick and wet beneath the dense green canopy.",
+   "intermediates": [
+    "jungle"
+   ],
+   "subfamily": "place_event",
+   "note": "a machete cutting through vines with screeching monkeys evokes a jungle rather than a scientific rainforest.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-023",
+   "prompt": "A streak of blinding light tore across the night sky and vanished in an instant, leaving a faint trail of glowing dust.",
+   "intermediates": [
+    "meteor"
+   ],
+   "subfamily": "place_event",
+   "note": "an instantaneous streak of light across the sky is a meteor.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-027",
+   "prompt": "The sky slowly turned from black to orange as the first sliver of light crept over the hills and birds began to sing.",
+   "intermediates": [
+    "sunrise"
+   ],
+   "subfamily": "place_event",
+   "note": "light appearing and growing over the hills with a dawn chorus is sunrise.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-028",
+   "prompt": "The sky burned orange and pink as the glowing disc sank slowly behind the hills, and the air began to cool.",
+   "intermediates": [
+    "sunset"
+   ],
+   "subfamily": "place_event",
+   "note": "a glowing disc sinking behind hills as the air cools is sunset.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-032",
+   "prompt": "A colossal wall of concrete held back millions of gallons of water, which roared through spillway gates into the river far below.",
+   "intermediates": [
+    "dam"
+   ],
+   "subfamily": "place_event",
+   "note": "a concrete wall with spillway gates holding back water is a dam.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-033",
+   "prompt": "Behind the concrete wall, a vast artificial lake supplied the city's drinking water, its level dropping visibly during the dry summer months.",
+   "intermediates": [
+    "reservoir"
+   ],
+   "subfamily": "place_event",
+   "note": "the artificial lake itself, supplying drinking water, is the reservoir, distinct from the dam wall that holds it back.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-036",
+   "prompt": "Sea surrounded the strip of land on three sides, narrowing to a single road that connected it to the mainland.",
+   "intermediates": [
+    "peninsula"
+   ],
+   "subfamily": "place_event",
+   "note": "land surrounded by sea on three sides, joined to the mainland, is a peninsula.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-044",
+   "prompt": "Raised on a quiet farm after his family sent him away from a dying planet, the mild-mannered reporter hid incredible strength behind thick glasses and a suit.",
+   "intermediates": [
+    "Superman"
+   ],
+   "subfamily": "proper",
+   "note": "the doomed home planet, farm upbringing and reporter disguise are core, undisputed Superman lore.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-046",
+   "prompt": "Two graduate students built a search engine in a rented garage that ranked every page on the web by counting how many other pages linked to it.",
+   "intermediates": [
+    "Google"
+   ],
+   "subfamily": "proper",
+   "note": "two Stanford graduate students building a link-counting search engine in a garage is the well-known Google origin story.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-047",
+   "prompt": "What began as an online bookstore run from a garage grew into a warehouse empire where robots fetch cardboard boxes onto trucks bound for doorsteps overnight.",
+   "intermediates": [
+    "Amazon"
+   ],
+   "subfamily": "proper",
+   "note": "the garage bookstore origin plus robotic warehouses and overnight delivery are decisive for the company, not the rainforest or river.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-048",
+   "prompt": "A Swedish startup let listeners stream almost any song free with occasional ads, then each December sent every user a colorful recap of their most-played tracks.",
+   "intermediates": [
+    "Spotify"
+   ],
+   "subfamily": "proper",
+   "note": "a Swedish streaming startup with a December year-end listening recap is specific to Spotify.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-049",
+   "prompt": "A track coach once poured rubber into his wife's waffle iron to shape a better sole, laying the tread for the sportswear brand he was building.",
+   "intermediates": [
+    "Nike"
+   ],
+   "subfamily": "proper",
+   "note": "the waffle-iron sole story is a well-known, undisputed fact from Nike's founding.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-051",
+   "prompt": "A Danish carpenter began molding small interlocking plastic bricks that snapped firmly together, letting children build almost anything one colorful block at a time.",
+   "intermediates": [
+    "Lego"
+   ],
+   "subfamily": "proper",
+   "note": "a Danish carpenter and interlocking plastic bricks are decisive for Lego.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-052",
+   "prompt": "The electric car maker built a vast network of charging stations along highways so drivers never worried about running out of battery on long trips.",
+   "intermediates": [
+    "Tesla"
+   ],
+   "subfamily": "proper",
+   "note": "an electric car maker with a highway charging network points at the company, not the historical inventor.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-054",
+   "prompt": "Every article on the free online encyclopedia could be edited by any visitor, with a banner appearing each year asking readers for a small donation.",
+   "intermediates": [
+    "Wikipedia"
+   ],
+   "subfamily": "proper",
+   "note": "a free, publicly editable online encyclopedia with an annual donation banner is Wikipedia.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-055",
+   "prompt": "Behind red brick walls topped with golden onion domes and towers, the Russian president's offices sat inside an ancient fortress in the heart of the capital.",
+   "intermediates": [
+    "Kremlin"
+   ],
+   "subfamily": "proper",
+   "note": "the Russian president's fortress with red walls and onion domes is the Kremlin, without naming Moscow directly.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-061",
+   "prompt": "Skyscrapers rose straight out of the desert sand beside an indoor ski slope, while offshore an artificial island had been shaped like a giant palm tree.",
+   "intermediates": [
+    "Dubai"
+   ],
+   "subfamily": "proper",
+   "note": "an indoor ski slope in the desert beside a palm-shaped artificial island is decisive for Dubai.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-065",
+   "prompt": "Bullet trains departed to the exact second while cherry blossoms drifted over crowded platforms, and sushi chefs sliced fresh fish with practiced precision nearby.",
+   "intermediates": [
+    "Japan"
+   ],
+   "subfamily": "proper",
+   "note": "punctual bullet trains, cherry blossoms and sushi together point at Japan as a country.",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-074",
+   "prompt": "Dunas douradas se estendiam até o horizonte sob um sol implacável, sem nenhuma sombra à vista, enquanto camelos avançavam lentamente sobre a areia quente.",
+   "intermediates": [
+    "deserto"
+   ],
+   "subfamily": "foreign",
+   "note": "Portuguese: golden dunes, relentless sun, no shade and camels describe a deserto (desert).",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  },
+  {
+   "name": "dev-as-e-078",
+   "prompt": "De la fumée grise montait lentement du sommet avant que la lave orange ne commence à couler le long de la pente rocheuse.",
+   "intermediates": [
+    "volcan"
+   ],
+   "subfamily": "foreign",
+   "note": "French: grey smoke from a summit followed by flowing orange lava describes a volcan (volcano).",
+   "family": "association",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "B"
+  }
+ ]
+}

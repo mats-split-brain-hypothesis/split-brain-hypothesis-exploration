@@ -1,0 +1,1 @@
+Run p04-r1-A0-dsv4-tc: UNCODED. The reading was stopped by a safety classifier partway through the reasoning dump (read blocks 0-45 of the dump; the rest unread). No items coded. Not retried or worked around.

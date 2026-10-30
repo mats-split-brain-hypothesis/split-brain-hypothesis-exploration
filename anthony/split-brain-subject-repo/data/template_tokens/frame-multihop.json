@@ -1,0 +1,38 @@
+{
+ "name": "frame-multihop",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 4,
+ "excluded_targets": 1577,
+ "share": 0.15,
+ "tokens": [
+  {
+   "id": 1324,
+   "text": " number",
+   "sources": [
+    "fam top-10 on 16 / 85 multihop fit items"
+   ]
+  },
+  {
+   "id": 101631,
+   "text": "æľĪä»½",
+   "sources": [
+    "fam top-10 on 14 / 85 multihop fit items"
+   ]
+  },
+  {
+   "id": 16992,
+   "text": " numberOf",
+   "sources": [
+    "fam top-10 on 13 / 85 multihop fit items"
+   ]
+  },
+  {
+   "id": 2182,
+   "text": " month",
+   "sources": [
+    "fam top-10 on 13 / 85 multihop fit items"
+   ]
+  }
+ ]
+}

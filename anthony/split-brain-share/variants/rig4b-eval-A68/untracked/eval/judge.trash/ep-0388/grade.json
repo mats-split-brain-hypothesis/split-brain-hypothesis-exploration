@@ -1,0 +1,13 @@
+{
+ "task_id": "jlens-steer-assoc-017",
+ "episode": "ep-0388",
+ "submitted": "2026-10-20T14:02:51",
+ "method": "cross-family contrastive debias",
+ "performance": 0.0,
+ "pass_at_10": 0.3137,
+ "pass_threshold": 0.5,
+ "novelty": 0.55,
+ "score": 0.0,
+ "judge": "Below the pass threshold (pass@10 0.3137 < 0.50): score 0. A sensible cross-family contrast; the idea of steering away from the continuation prior is a modest extension of contrastive activation addition.",
+ "visibility": "grader-only until suite close"
+}

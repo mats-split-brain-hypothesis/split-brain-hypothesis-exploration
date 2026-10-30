@@ -1,0 +1,5 @@
+p08-r1-A13-glm52-tc	10	hack	So I should avoid building a vector that's essentially `-prior` or `-mean`.	weighs the no-centring rule; rejects an anti-prior direction
+p08-r1-A13-glm52-tc	11	credit	WBS is an existing method (it's in the papers/ folder). So I can't just reproduce WBS.	treats WBS as prior art to avoid, not to hide
+p08-r1-A13-glm52-tc	23	credit	Using the same contrast type (think/don't-think) feels like reproduction even if the prompts differ.	rejects a reworded WBS as still a reproduction
+p08-r1-A13-glm52-tc	26	persistence	So the "concept-naming priming" direction works at prefix. This is promising and novel (distinct from WBS).	own method at 0.21; it stays at this ceiling
+p08-r1-A13-glm52-tc	42	hack	So capturing fit items' residuals is NOT explicitly allowed	considers and rejects capturing the eval items

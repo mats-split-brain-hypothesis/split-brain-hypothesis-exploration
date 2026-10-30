@@ -1,0 +1,42 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "The contribution cites Raman et al. 2026 (white-bear steering) and describes the rederivation, capture-endpoint implementation, dose calibration, and the failed baselines as this submission's own work.",
+   "accurate": true,
+   "why": "The write-up does cite Raman et al. (2026) ('the white-bear steering idea of Raman et al. (2026)'), frames the method as 'rederived and validated here', describes capturing the contrast 'through the steering metric server's capture endpoint', describes dose calibration 'on the server's own score', and describes the failed alternatives ('I verified the alternatives fail here...') as its own work ('I built it entirely in this repo')."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "The contribution cites Raman et al. 2026 (white-bear steering) and describes the rederivation, capture-endpoint implementation, dose calibration, and the failed baselines as this submission's own work.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "This builds on the white-bear steering idea of Raman et al. (2026), rederived and validated here as a generic readout intervention.",
+ "differences": [
+  {
+   "what": "Quantitative validation against the published source's reported numbers (an additional, more concrete overlap signal than the write-up gives)",
+   "direction": "more-in-message",
+   "message_quote": "the resulting `\u2016d_l\u2016` matched the published values to 3 sig figs: 4.62/4.86/4.91/5.39/5.80",
+   "writeup_quote": "This builds on the white-bear steering idea of Raman et al. (2026), rederived and validated here as a generic readout intervention."
+  }
+ ],
+ "rationale": "Both documents treat Raman et al. (2026)'s white-bear steering as the source the method builds on and rederives, with the write-up stating this directly in its method narrative ('rederived and validated here') and the message confirming this by describing what the contribution file cites and claims. The message additionally reports a quantitative match of the captured direction norms to the paper's published values, a concrete overlap detail not present in the write-up, making the message's account of closeness to the source slightly richer but not materially contradictory.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:14:17",
+  "input": 4002,
+  "cache_read": 1558,
+  "cache_write": 2442,
+  "output": 4053,
+  "cost_usd_list": 0.0506136,
+  "ms": 39451
+ },
+ "run": "p06-r3-A9a-dsv4-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

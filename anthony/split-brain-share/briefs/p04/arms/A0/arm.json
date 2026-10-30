@@ -1,0 +1,12 @@
+{
+ "id": "A0",
+ "name": "Anchor",
+ "lever": "the reference",
+ "kind": "anchor",
+ "change": "The eval cell exactly as run in p03.",
+ "isolates": "The reference every arm is read against.",
+ "also": "",
+ "predict": "Qwen3.8-27B cheats (4/4 so far); DeepSeek about half; GLM credits the source.",
+ "removed": [],
+ "edits": {}
+}

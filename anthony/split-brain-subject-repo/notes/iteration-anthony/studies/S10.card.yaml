@@ -1,0 +1,34 @@
+id: S10
+title: Why fam wins on multilingual_mt
+owner: C (j-lens-mean-ad), pilot-1
+status: diagnostic
+question: >
+  On multilingual_mt every arm that beats fam elsewhere loses to it (judged pco16 - fam -0.11). What do the matched
+  centres lose?
+verdict: >
+  The language-name unit, not the concept: a mean over cells that share X removes X. Matched centres (tok, knnx8, pco16)
+  share the prompt's language and subtract its name, while reading the concept as well or better than fam. A same-language
+  family mean reproduces the loss and an other-language mean does not, so the guardrail rewards not matching the language.
+tiles:
+  - {label: "val strict multilingual_mt pass", value: "0.189 vs 0.340", sub: "samelang vs otherlang; fam 0.340"}
+  - {label: "val language unit, L44 top-10", value: "0.06 vs 0.42", sub: "samelang vs otherlang; fam 0.38"}
+  - {label: "val concept unit, L56 top-10", value: "0.81", sub: "samelang; fam 0.70"}
+  - {label: "val Haiku-judged, pco16 - fam", value: "-0.11", sub: "[-0.21, -0.02]"}
+formulas:
+  - latex: 'g(h) = \bar h_{S}, \quad S = \{ r \in \mathcal{R} : \operatorname{lang}(r) = \operatorname{lang}(h) \}'
+    note: "samelang: the family mean over reference cells whose prompt has the read item's language (own group excluded; fam when |S| < 3). lang is bank metadata, not a target."
+  - latex: 'g(h) = \bar h_{\mathcal{R} \setminus S} = \frac{n_{\mathcal{R}}\, \mu_{\text{fam}} - n_S\, \bar h_S}{n_{\mathcal{R}} - n_S}'
+    note: "otherlang: the family mean over every other language."
+diagram:
+  kind: pool
+  select: language
+  caption: "samelang averages only cells in the read prompt's language and so subtracts the language's name; the other-language mean (otherlang) keeps it at fam's level."
+split: val
+arms: ["samelang@fit|cos", "otherlang@fit|cos"]
+controls: []
+insights:
+  - {lead: "Matched centres lose the language name, not the concept", text: "On val at L52 the concept unit is 0.62 (pco16) / 0.58 (knnx8) vs fam 0.51; the language unit at L44 is 0.04 / 0.08 vs fam 0.38. Under fam 33 of 53 val items show a language name; under pco16 15, knnx8 16."}
+  - {lead: "The mechanism is causal", text: "samelang drops the language unit from 0.38 to 0.06 at L44 and improves the concept (L56 0.81 vs 0.70); otherlang keeps the language (0.42) and equals fam on pass (0.340)."}
+  - {lead: "A mean over cells that share X removes X", text: "S6's mechanism mirrored: there the family mean shares the bridge's category; here knnx8's neighbours, pco16's top PCs and tok's read token share the prompt's language."}
+  - {lead: "The guardrail is a language-name check", text: "A guardrail on the concept unit alone would pass pco16 and knnx8; whether subtracting the language name is a harm is a scorer question for the user. multilingual (single-token) is unchanged: every arm 0.93-0.98."}
+next: ["A per-unit report for multilingual_mt (a scorer question for the user).", "A cross-language kNN, or knnx8 restricted to neighbours in another script (card idea for S4, not run)."]

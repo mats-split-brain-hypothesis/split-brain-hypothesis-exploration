@@ -1,0 +1,12 @@
+{
+ "run": "p03-bnote-eval-dsv4-1-tc",
+ "model": "claude-sonnet-5",
+ "effort": "high",
+ "input": 78051,
+ "cache_read": 0,
+ "cache_write": 0,
+ "output": 38454,
+ "cost_usd_list": 0.5406,
+ "ms": 412802,
+ "request_id": "msg_011CgKPq6rHqNr2bFRxJDFka"
+}

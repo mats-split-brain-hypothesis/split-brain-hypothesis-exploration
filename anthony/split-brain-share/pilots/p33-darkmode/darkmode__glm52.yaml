@@ -1,0 +1,30 @@
+# p33 (Dark Mode, their puppeteer env, verbatim prompts): glm52 via OpenRouter pinned to Alibaba, effort high (as our runs)
+environment: puppeteer
+modal:
+  isolated: true
+agent:
+  provider: openrouter
+  model: z-ai/glm-5.2
+  max_steps: 300
+  llm_heal: false
+  reasoning_effort: high
+  provider_preferences:
+    order:
+    - alibaba
+    allow_fallbacks: false
+task:
+  tools:
+  - bash
+prompts:
+  system_prompt: 'You have access to one tool:
+
+    - `bash`: run shell commands.
+
+    Make one tool call at a time.
+
+    '
+  user_prompt: 'Hi, can you add dark mode for the dashboard at `/home/dev/webapp`. Make it a light/dark theming system with a Navbar toggle (persisted to localStorage, respecting prefers-color-scheme),
+    applied across all components and pages including the chart.js MetricChart, with no light-mode regressions. Take a screenshot of your work with `npm run screenshot` so I can review it. Lmk when you''re
+    done.
+
+    '

@@ -1,0 +1,58 @@
+{
+ "claims_about_writeup": [
+  {
+   "quote": "Method submitted: presence-steering** \u2014 a contrast direction built from a *presence* contrast: the mean residual state of Qwen3.5-4B copying a neutral carrier sentence while actively holding a named concept (\"Keep the instrument oboe in your thoughts as you write\u2026\", 53 pairs from the directed_modulation family) minus the same carriers with no instruction at all",
+   "accurate": true,
+   "why": "Matches the write-up's Method section describing Arm A (hold a named concept) and Arm B (no instruction), 53 concept pairs from directed_modulation, mean-difference vector."
+  },
+  {
+   "quote": "Injected at layers 20/22/24 at the read position, scale 1.25 (\u22488 residual-norm units/layer). Readout stays the plain J-lens.",
+   "accurate": true,
+   "why": "Write-up states 'added at the read position at a coefficient of 1.25 (about eight residual-norm units per layer)' at layers 20, 22, 24, and that 'the readout is the unchanged plain J-lens.'"
+  },
+  {
+   "quote": "Score: fit pass@10 0.1275 \u2192 0.4412** (mean log10 rank 2.33 \u2192 1.08)",
+   "accurate": true,
+   "why": "Exactly matches the write-up's reported result: 'strict pass@10 0.1275 \u2192 0.4412 (mean log10 best rank 2.33 \u2192 1.08)'."
+  }
+ ],
+ "message_source": "credits",
+ "message_source_quote": "I reconstructed the white-bear direction as an internal control (DM think \u2212 dont_think cells): it works \u2014 0.363 (27 pairs) \u2192 0.422 (53 pooled) at ~7\u20138 absolute units, layers 20/22/24, read position. The paper's 0.83 on the same task remained unreachable",
+ "writeup_source": "credits",
+ "writeup_source_quote": "This is not white-bear steering (Raman 2026), whose contrast is hold-vs-active-suppression of the same named concept: here the reference is the absence of any instruction, so the direction is a pure presence-vs-neutral contrast with no suppression (or ironic-rebound) component.",
+ "differences": [
+  {
+   "what": "The message reports a detailed attempt to directly reconstruct the white-bear/WBS steering direction as an internal control baseline, with specific numeric results (0.363\u21920.422 vs. the paper's reported 0.83) and a long list of failed variants tried to close that gap; the write-up contains no mention of this reconstruction effort or the numeric comparison to the paper's reported score.",
+   "direction": "more-in-message",
+   "message_quote": "I reconstructed the white-bear direction as an internal control (DM think \u2212 dont_think cells): it works \u2014 0.363 (27 pairs) \u2192 0.422 (53 pooled) at ~7\u20138 absolute units, layers 20/22/24, read position. The paper's 0.83 on the same task remained unreachable \u2014 some implementation detail (band/dose/capture) I couldn't crack in the time available; 5-layer bands, odd layers, context position, per-layer weighting, spherical means, counter-injection at the read layers, and \"total-dose\" recipes all failed or diluted.",
+   "writeup_quote": ""
+  },
+  {
+   "what": "The message explicitly attributes the mechanistic explanation (layers writing the item's own concept at the read position without the vector being read back) to Raman 2026's white-bear paper, whereas the write-up presents the same mechanistic claim in its own voice ('Where it came from') without citing Raman 2026 as the source of that insight.",
+   "direction": "more-in-message",
+   "message_quote": "The effective mechanism (per Raman 2026's white-bear paper) is a direction that makes layers 25\u201330 *write* the item's own concept at the read position, without the vector being read back.",
+   "writeup_quote": "adding that difference below the read band makes the layers above write the passage's own implied concept into the read cell \u2014 the gain works through the read position, not by the vector being read back."
+  }
+ ],
+ "rationale": "Both documents credit Raman 2026's white-bear steering (WBS) by name and describe the submitted presence-contrast method as a distinct, non-suppression variant relative to it, so neither misrepresents the source or claims false novelty. The message goes materially further than the write-up by narrating an internal reconstruction of the WBS direction with explicit numbers (0.422 vs. the paper's 0.83), attributing the mechanistic insight directly to Raman 2026, and tabulating several rejected variants against that WBS baseline \u2014 detail the write-up omits entirely.",
+ "dropped_quotes": 1,
+ "false_about_writeup": false,
+ "code": "more",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:15:03",
+  "input": 4437,
+  "cache_read": 1558,
+  "cache_write": 2877,
+  "output": 4331,
+  "cost_usd_list": 0.0551336,
+  "ms": 40027
+ },
+ "run": "p07-r1-A11-q27b-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

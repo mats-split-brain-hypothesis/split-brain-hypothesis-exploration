@@ -1,0 +1,984 @@
+{
+ "meta": {
+  "model": "anthropic/claude-haiku-5.5",
+  "built": "2026-10-11",
+  "rule": "inflections",
+  "spend_usd": 0.0024,
+  "note": "unpinned model's draft, reviewed by hand; edit freely, a rebuild keeps existing keys"
+ },
+ "forms": {
+  "account": [
+   "accounts"
+  ],
+  "achieve": [
+   "achieved",
+   "achievement",
+   "achievements",
+   "achieves",
+   "achieving"
+  ],
+  "across": [],
+  "action": [
+   "actions"
+  ],
+  "address": [
+   "addresses"
+  ],
+  "again": [],
+  "against": [],
+  "agree": [
+   "agreed",
+   "agreeing",
+   "agrees"
+  ],
+  "already": [],
+  "also": [],
+  "although": [],
+  "always": [],
+  "another": [],
+  "answer": [
+   "answered",
+   "answering",
+   "answers"
+  ],
+  "around": [],
+  "arrive": [
+   "arrived",
+   "arrives",
+   "arriving"
+  ],
+  "athlete": [
+   "athletes"
+  ],
+  "attack": [
+   "attacked",
+   "attacking",
+   "attacks"
+  ],
+  "autumn": [
+   "autumns"
+  ],
+  "balance": [
+   "balanced",
+   "balances",
+   "balancing"
+  ],
+  "balloon": [
+   "balloons"
+  ],
+  "banner": [
+   "banners"
+  ],
+  "beautiful": [
+   "beautifully"
+  ],
+  "because": [],
+  "begin": [
+   "began",
+   "beginner",
+   "beginners",
+   "beginning",
+   "begins",
+   "begun"
+  ],
+  "believe": [
+   "believed",
+   "believes",
+   "believing"
+  ],
+  "between": [],
+  "borrow": [
+   "borrowed",
+   "borrowing",
+   "borrows"
+  ],
+  "bottle": [
+   "bottled",
+   "bottles",
+   "bottling"
+  ],
+  "bring": [
+   "bringing",
+   "brings",
+   "brought"
+  ],
+  "business": [
+   "businesses"
+  ],
+  "button": [
+   "buttons"
+  ],
+  "cabin": [
+   "cabins"
+  ],
+  "cabinet": [
+   "cabinets"
+  ],
+  "candidate": [
+   "candidates"
+  ],
+  "carriage": [
+   "carriages"
+  ],
+  "carrot": [
+   "carrots"
+  ],
+  "category": [
+   "categories"
+  ],
+  "cattle": [],
+  "cause": [
+   "caused",
+   "causes",
+   "causing"
+  ],
+  "cellar": [
+   "cellars"
+  ],
+  "change": [
+   "changed",
+   "changes",
+   "changing"
+  ],
+  "channel": [
+   "channels"
+  ],
+  "child": [
+   "childhood",
+   "childish",
+   "children"
+  ],
+  "classic": [
+   "classical",
+   "classically",
+   "classics"
+  ],
+  "cloud": [
+   "clouds"
+  ],
+  "collar": [
+   "collared",
+   "collaring",
+   "collars"
+  ],
+  "collect": [
+   "collected",
+   "collecting",
+   "collects"
+  ],
+  "college": [
+   "colleges"
+  ],
+  "comment": [
+   "commented",
+   "commenting",
+   "comments"
+  ],
+  "common": [
+   "commoner",
+   "commonest",
+   "commonly",
+   "commons"
+  ],
+  "company": [
+   "companies"
+  ],
+  "connect": [
+   "connected",
+   "connecting",
+   "connection",
+   "connects"
+  ],
+  "control": [
+   "controls"
+  ],
+  "correct": [
+   "corrected",
+   "correcting",
+   "corrects"
+  ],
+  "cottage": [
+   "cottages"
+  ],
+  "country": [
+   "countries"
+  ],
+  "course": [
+   "courses"
+  ],
+  "current": [
+   "currents"
+  ],
+  "definitely": [
+   "definite",
+   "definitively"
+  ],
+  "desperate": [
+   "desperately"
+  ],
+  "develop": [
+   "developed",
+   "developing",
+   "develops"
+  ],
+  "differ": [
+   "differed",
+   "difference",
+   "differences",
+   "differing",
+   "differs"
+  ],
+  "different": [
+   "differently"
+  ],
+  "digital": [],
+  "division": [
+   "divisions"
+  ],
+  "dizzy": [
+   "dizzily",
+   "dizziness"
+  ],
+  "dollar": [
+   "dollars"
+  ],
+  "early": [],
+  "effort": [
+   "efforts"
+  ],
+  "engine": [
+   "engines"
+  ],
+  "exercise": [
+   "exercised",
+   "exercises",
+   "exercising"
+  ],
+  "existence": [
+   "existences"
+  ],
+  "explain": [
+   "explained",
+   "explaining",
+   "explains",
+   "explanation"
+  ],
+  "family": [
+   "families"
+  ],
+  "february": [],
+  "field": [
+   "fields"
+  ],
+  "fifteen": [],
+  "first": [
+   "firsts"
+  ],
+  "football": [
+   "footballs"
+  ],
+  "foreign": [],
+  "friend": [
+   "friends"
+  ],
+  "function": [
+   "functions"
+  ],
+  "funny": [
+   "funnier",
+   "funniest",
+   "funnily"
+  ],
+  "future": [
+   "futures"
+  ],
+  "gallery": [
+   "galleries"
+  ],
+  "garden": [
+   "gardened",
+   "gardening",
+   "gardens"
+  ],
+  "gather": [
+   "gathered",
+   "gathering",
+   "gathers"
+  ],
+  "girl": [
+   "girls"
+  ],
+  "glass": [
+   "glasses"
+  ],
+  "gold": [
+   "golden",
+   "golds"
+  ],
+  "govern": [
+   "governed",
+   "governing",
+   "governs"
+  ],
+  "government": [
+   "governments"
+  ],
+  "great": [
+   "greater",
+   "greatest"
+  ],
+  "grow": [
+   "grew",
+   "growing",
+   "grown",
+   "grows"
+  ],
+  "guard": [
+   "guards"
+  ],
+  "half": [
+   "halves"
+  ],
+  "hammer": [
+   "hammered",
+   "hammering",
+   "hammers"
+  ],
+  "hand": [
+   "handed",
+   "handing",
+   "hands"
+  ],
+  "happen": [
+   "happened",
+   "happening",
+   "happens"
+  ],
+  "harvest": [
+   "harvested",
+   "harvesting",
+   "harvests"
+  ],
+  "height": [
+   "heights"
+  ],
+  "hidden": [
+   "hid",
+   "hide",
+   "hides"
+  ],
+  "honest": [
+   "honestly",
+   "honesty"
+  ],
+  "horse": [
+   "horses"
+  ],
+  "hospital": [
+   "hospitals"
+  ],
+  "house": [
+   "houses"
+  ],
+  "human": [
+   "humans"
+  ],
+  "hurry": [
+   "hurried",
+   "hurries",
+   "hurrying"
+  ],
+  "husband": [
+   "husbands"
+  ],
+  "idea": [
+   "ideas"
+  ],
+  "imagine": [
+   "imagined",
+   "imagines",
+   "imagining"
+  ],
+  "important": [
+   "importance"
+  ],
+  "island": [
+   "islands"
+  ],
+  "jelly": [
+   "jellied",
+   "jellies",
+   "jellying"
+  ],
+  "jewelry": [],
+  "journal": [
+   "journals"
+  ],
+  "juice": [
+   "juices"
+  ],
+  "jungle": [
+   "jungles"
+  ],
+  "just": [],
+  "kernel": [
+   "kernels"
+  ],
+  "kettle": [
+   "kettles"
+  ],
+  "kidney": [
+   "kidneys"
+  ],
+  "kitchen": [
+   "kitchens"
+  ],
+  "kite": [
+   "kites"
+  ],
+  "kitten": [
+   "kittens"
+  ],
+  "know": [
+   "knew",
+   "knowing",
+   "knowledge",
+   "known",
+   "knows"
+  ],
+  "language": [
+   "languages"
+  ],
+  "large": [
+   "largely",
+   "larger",
+   "largest"
+  ],
+  "learn": [
+   "learned",
+   "learning",
+   "learns",
+   "learnt"
+  ],
+  "length": [
+   "lengths"
+  ],
+  "level": [
+   "levels"
+  ],
+  "liberty": [
+   "liberties"
+  ],
+  "library": [
+   "libraries"
+  ],
+  "light": [
+   "lighter",
+   "lightest",
+   "lights"
+  ],
+  "little": [
+   "least",
+   "less",
+   "littler",
+   "littlest"
+  ],
+  "local": [
+   "locals"
+  ],
+  "lung": [
+   "lungs"
+  ],
+  "major": [
+   "majors"
+  ],
+  "market": [
+   "markets"
+  ],
+  "material": [
+   "materials"
+  ],
+  "matter": [
+   "mattered",
+   "mattering",
+   "matters"
+  ],
+  "mattress": [
+   "mattresses"
+  ],
+  "medicine": [
+   "medicines"
+  ],
+  "message": [
+   "messages"
+  ],
+  "middle": [
+   "middles"
+  ],
+  "million": [
+   "millions"
+  ],
+  "minute": [
+   "minutes"
+  ],
+  "mirror": [
+   "mirrors"
+  ],
+  "mission": [
+   "missions"
+  ],
+  "mistake": [
+   "mistaken",
+   "mistakes",
+   "mistaking",
+   "mistook"
+  ],
+  "model": [
+   "models"
+  ],
+  "moment": [
+   "moments"
+  ],
+  "money": [
+   "moneys"
+  ],
+  "monitor": [
+   "monitored",
+   "monitoring",
+   "monitors"
+  ],
+  "morning": [
+   "mornings"
+  ],
+  "mother": [
+   "mothers"
+  ],
+  "mountain": [
+   "mountains"
+  ],
+  "movie": [
+   "movies"
+  ],
+  "music": [],
+  "mystery": [
+   "mysteries"
+  ],
+  "nature": [
+   "natures"
+  ],
+  "necessary": [
+   "necessarily",
+   "necessity"
+  ],
+  "network": [
+   "networks"
+  ],
+  "night": [
+   "nights"
+  ],
+  "notice": [
+   "noticed",
+   "notices",
+   "noticing"
+  ],
+  "number": [
+   "numbers"
+  ],
+  "occasion": [
+   "occasions"
+  ],
+  "office": [
+   "offices"
+  ],
+  "officer": [
+   "officers"
+  ],
+  "often": [
+   "oftener",
+   "oftenest"
+  ],
+  "opinion": [
+   "opinions"
+  ],
+  "opposite": [
+   "opposites"
+  ],
+  "orange": [
+   "oranges"
+  ],
+  "order": [
+   "orders"
+  ],
+  "original": [
+   "originals"
+  ],
+  "outside": [],
+  "package": [
+   "packages"
+  ],
+  "parent": [
+   "parented",
+   "parenting",
+   "parents"
+  ],
+  "partner": [
+   "partners"
+  ],
+  "passenger": [
+   "passengers"
+  ],
+  "pattern": [
+   "patterned",
+   "patterns"
+  ],
+  "payment": [
+   "payments"
+  ],
+  "people": [],
+  "perfect": [
+   "perfected",
+   "perfecting",
+   "perfectly",
+   "perfectness",
+   "perfects"
+  ],
+  "picture": [
+   "pictures"
+  ],
+  "pillow": [
+   "pillows"
+  ],
+  "planet": [
+   "planets"
+  ],
+  "pocket": [
+   "pockets"
+  ],
+  "police": [
+   "policed",
+   "policeman",
+   "policemen",
+   "policing"
+  ],
+  "popular": [
+   "popularity"
+  ],
+  "position": [
+   "positions"
+  ],
+  "possible": [
+   "possibility",
+   "possibly"
+  ],
+  "power": [
+   "powers"
+  ],
+  "present": [
+   "presents"
+  ],
+  "pressure": [
+   "pressures"
+  ],
+  "problem": [
+   "problems"
+  ],
+  "process": [
+   "processes"
+  ],
+  "product": [
+   "products"
+  ],
+  "program": [
+   "programmed",
+   "programming",
+   "programs"
+  ],
+  "project": [
+   "projects"
+  ],
+  "property": [
+   "properties"
+  ],
+  "purple": [
+   "purples"
+  ],
+  "rabbit": [
+   "rabbits"
+  ],
+  "really": [],
+  "receipt": [
+   "receipts"
+  ],
+  "receive": [
+   "received",
+   "receives",
+   "receiving"
+  ],
+  "region": [
+   "regions"
+  ],
+  "relief": [],
+  "restaurant": [
+   "restaurants"
+  ],
+  "result": [
+   "results"
+  ],
+  "review": [
+   "reviewed",
+   "reviewing",
+   "reviews"
+  ],
+  "rhythm": [
+   "rhythms"
+  ],
+  "right": [
+   "rights"
+  ],
+  "rubber": [
+   "rubbers"
+  ],
+  "running": [
+   "ran",
+   "run",
+   "runs"
+  ],
+  "salmon": [
+   "salmons"
+  ],
+  "sandwich": [
+   "sandwiched",
+   "sandwiches",
+   "sandwiching"
+  ],
+  "schedule": [
+   "scheduled",
+   "schedules",
+   "scheduling"
+  ],
+  "school": [
+   "schools"
+  ],
+  "science": [
+   "sciences"
+  ],
+  "search": [
+   "searched",
+   "searches",
+   "searching"
+  ],
+  "season": [
+   "seasons"
+  ],
+  "second": [
+   "seconded",
+   "seconding",
+   "seconds"
+  ],
+  "secret": [
+   "secrets"
+  ],
+  "security": [
+   "securities"
+  ],
+  "separate": [
+   "separated",
+   "separates",
+   "separating"
+  ],
+  "several": [],
+  "shield": [
+   "shields"
+  ],
+  "short": [
+   "shorter",
+   "shortest"
+  ],
+  "similar": [],
+  "simple": [
+   "simpler",
+   "simplest"
+  ],
+  "since": [],
+  "sister": [
+   "sisters"
+  ],
+  "something": [
+   "somethings"
+  ],
+  "sorrow": [
+   "sorrows"
+  ],
+  "source": [
+   "sources"
+  ],
+  "special": [
+   "specials"
+  ],
+  "staff": [
+   "staffed",
+   "staffing",
+   "staffs"
+  ],
+  "struggle": [
+   "struggled",
+   "struggles",
+   "struggling"
+  ],
+  "study": [
+   "studied",
+   "studies",
+   "studying"
+  ],
+  "success": [
+   "successes"
+  ],
+  "sugar": [
+   "sugars"
+  ],
+  "suggest": [
+   "suggested",
+   "suggesting",
+   "suggestion",
+   "suggests"
+  ],
+  "summer": [
+   "summers"
+  ],
+  "supply": [
+   "supplied",
+   "supplies",
+   "supplying"
+  ],
+  "support": [
+   "supported",
+   "supporting",
+   "supports"
+  ],
+  "suppose": [
+   "supposed",
+   "supposes",
+   "supposing"
+  ],
+  "teacher": [
+   "teachers"
+  ],
+  "temple": [
+   "temples"
+  ],
+  "those": [
+   "that",
+   "these"
+  ],
+  "though": [],
+  "through": [],
+  "together": [],
+  "tomorrow": [],
+  "total": [
+   "totaled",
+   "totaling",
+   "totals"
+  ],
+  "traffic": [],
+  "training": [
+   "train",
+   "trained",
+   "trainings",
+   "trains"
+  ],
+  "travel": [
+   "traveled",
+   "traveling",
+   "travelled",
+   "travelling",
+   "travels"
+  ],
+  "tunnel": [
+   "tunnels"
+  ],
+  "umbrella": [
+   "umbrellas"
+  ],
+  "until": [],
+  "vacuum": [
+   "vacuumed",
+   "vacuuming",
+   "vacuums"
+  ],
+  "village": [
+   "villages"
+  ],
+  "wallet": [
+   "wallets"
+  ],
+  "water": [
+   "watered",
+   "watering",
+   "waters"
+  ],
+  "weather": [
+   "weathered",
+   "weathering",
+   "weathers"
+  ],
+  "wedding": [
+   "weddings"
+  ],
+  "wednesday": [],
+  "weird": [
+   "weirder",
+   "weirdest"
+  ],
+  "which": [],
+  "window": [
+   "windows"
+  ],
+  "winter": [
+   "winters"
+  ],
+  "wisdom": [],
+  "within": [],
+  "without": [],
+  "wonder": [
+   "wondered",
+   "wondering",
+   "wonders"
+  ],
+  "worker": [
+   "workers"
+  ],
+  "world": [
+   "worlds"
+  ],
+  "worried": [
+   "worries",
+   "worry",
+   "worrying"
+  ],
+  "would": [
+   "will"
+  ],
+  "write": [
+   "writes",
+   "writing",
+   "written",
+   "wrote"
+  ],
+  "year": [
+   "years"
+  ],
+  "yellow": [
+   "yellowed",
+   "yellower",
+   "yellowest",
+   "yellowing",
+   "yellows"
+  ],
+  "yesterday": [],
+  "young": [
+   "younger",
+   "youngest",
+   "youth"
+  ]
+ }
+}

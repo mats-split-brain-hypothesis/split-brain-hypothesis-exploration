@@ -1,0 +1,1094 @@
+{
+ "family": "typo-hard",
+ "parent_family": "typo-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": false,
+  "conjunctive_units": true
+ },
+ "source": "experiments/s22_bank.py (family formats, random no_robots fills)",
+ "split": "s22",
+ "gate": "Qwen3.6-27B: the bench's gate question, greedy correct and >= 8/10 at T=0.7; graded by anthropic/claude-haiku-5.5 with the bench's grading prompt",
+ "items": [
+  {
+   "name": "s22-typo_mt-00",
+   "subfamily": "arith",
+   "prompt": "Include examples of the emotions associated with various colors",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-01",
+   "subfamily": "arith",
+   "prompt": "They don't have to do this and they shouldn't participate if they feel bothered by it",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-02",
+   "subfamily": "arith",
+   "prompt": "Their presence is revealed briefly when their unusual-looking flowers emerge above the soil",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-03",
+   "subfamily": "arith",
+   "prompt": "The tone should be fun and playful",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-04",
+   "subfamily": "arith",
+   "prompt": "Increasing ridership while supporting agency budgets will help make the political case for deeper public investments in service and equipment",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-05",
+   "subfamily": "arith",
+   "prompt": "Deacon is a chatbot that answers questions with an annoyed tone in responses",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-06",
+   "subfamily": "arith",
+   "prompt": "Please name it and include creatures that live there",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-07",
+   "subfamily": "arith",
+   "prompt": "This methodology addresses the scalability challenges prevalent in today's AI models",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-08",
+   "subfamily": "arith",
+   "prompt": "Florida Governor Ron DeSantis signed a six-week abortion ban",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-09",
+   "subfamily": "arith",
+   "prompt": "Dana is a chatbot that helps users practice for interviews",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-10",
+   "subfamily": "arith",
+   "prompt": "Alex is a chatbot that answers your physics questions",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-11",
+   "subfamily": "arith",
+   "prompt": "Daniels watched her son take the test from their dining room table",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-12",
+   "subfamily": "arith",
+   "prompt": "I am going to be vacationing in Hilton Head, SC",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-13",
+   "subfamily": "arith",
+   "prompt": "Randy Moss was on the receiving end of Brady's lone touchdown pass",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-14",
+   "subfamily": "arith",
+   "prompt": "Nevertheless, Adams polled only a few less electoral votes than Jefferson, who became President",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-15",
+   "subfamily": "arith",
+   "prompt": "Be sure to add a few salad ideas",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-16",
+   "subfamily": "arith",
+   "prompt": "Nor has she given any outward indication that she is trying to find out what happened",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-17",
+   "subfamily": "arith",
+   "prompt": "List the protections provided to plants by the Endangered Species Act in a comma-separated list",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-18",
+   "subfamily": "arith",
+   "prompt": "More details will be announced as they become available",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-19",
+   "subfamily": "arith",
+   "prompt": "It will include both scientific and anecdotal evidence",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-20",
+   "subfamily": "arith",
+   "prompt": "He spent his final years feeding—and, he claimed, communicating with—the city’s pigeons",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-21",
+   "subfamily": "arith",
+   "prompt": "Incorporate color into the verses in the description",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-22",
+   "subfamily": "arith",
+   "prompt": "I want it to be a horror novel",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-typo_mt-23",
+   "subfamily": "arith",
+   "prompt": "I need some ideas for names for it",
+   "typo_word": "",
+   "target": "",
+   "target_alts": [],
+   "intermediates": [],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "427"
+      ]
+     },
+     "match": [
+      "427"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  }
+ ]
+}

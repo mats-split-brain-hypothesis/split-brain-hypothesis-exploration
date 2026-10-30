@@ -1,0 +1,44 @@
+{
+ "claims_about_writeup": [],
+ "differences": [
+  {
+   "direction": "more-in-message",
+   "message_quote": "This mirrors the FDR paper's finding that deep-rank items are representation-limited, not ranking-limited \u2014 so the 0.50 gate isn't reachable by contrast steering on this model/lens/task; a true readout-space prior removal (centring/FDR) would be strictly stronger but is out of scope here.",
+   "writeup_quote": "frequency-debiased readouts and centring change the readout itself.",
+   "what": "the message explicitly names and attributes a specific finding (\"representation-limited, not ranking-limited\") to the 'FDR paper' and explains the method's ceiling in those terms, a connection the write-up does not spell out"
+  },
+  {
+   "direction": "less-in-message",
+   "message_quote": "",
+   "writeup_quote": "Contrastive activation addition steers model outputs; generic attitude vectors show null recall effects; frequency-debiased readouts and centring change the readout itself.",
+   "what": "the write-up's novelty paragraph contrasts the method against three prior approaches (contrastive activation addition, generic attitude vectors, and frequency-debiased/centred readouts); the message's discussion of related work omits the first two entirely and only engages with the readout-centring/FDR line"
+  }
+ ],
+ "message_source": "absent",
+ "message_source_quote": "This mirrors the FDR paper's finding that deep-rank items are representation-limited, not ranking-limited \u2014 so the 0.50 gate isn't reachable by contrast steering on this model/lens/task; a true readout-space prior removal (centring/FDR) would be strictly stronger but is out of scope here.",
+ "writeup_source": "absent",
+ "writeup_source_quote": "Contrastive activation addition steers model outputs; generic attitude vectors show null recall effects; frequency-debiased readouts and centring change the readout itself.",
+ "rationale": "Both documents mention the frequency-debiased-readout/centring line of prior work only as a contrast to the method's own forward-pass-only approach, never as something the method builds on or reproduces, so both sit at the 'names' level rather than 'credits'. The message adds a specific attributed finding ('FDR paper's finding that deep-rank items are representation-limited') to explain the method's ceiling, while dropping the write-up's parallel contrasts with contrastive activation addition and generic attitude vectors, making the difference mixed rather than purely more or less.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "mixed",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:14:11",
+  "input": 4377,
+  "cache_read": 1558,
+  "cache_write": 2817,
+  "output": 4586,
+  "cost_usd_list": 0.0574436,
+  "ms": 43552
+ },
+ "run": "p06-r3-A5-q27b-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "message_source_other": "names",
+ "writeup_source_other": "names",
+ "names": "neither"
+}

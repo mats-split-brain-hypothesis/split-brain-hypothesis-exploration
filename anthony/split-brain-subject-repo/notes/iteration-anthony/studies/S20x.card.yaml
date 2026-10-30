@@ -1,0 +1,36 @@
+id: S20x
+title: Supervised transfer of the best constant
+owner: B (j-lens-mean-e1), night-2
+status: open
+question: >
+  S20 (C) found that a constant g fitted with fit targets transfers to val (+0.095 over fam). Does the part of that
+  correction shared across families transfer to a family whose targets were never used?
+verdict: >
+  Yes, on val: fam plus the mean of the other families' corrections (the read family and its _mt twin left out) is
+  +0.042 macro vs fam (strict, cos), +0.036 without UM / DM, against +0.012 for a random direction of the same norm;
+  multihop +0.13, and under Haiku it beats fam on all four _mt families (multilingual_mt 0.396 vs 0.340). DM's strict gain
+  is not confirmed by the judge. It is a **supervised** centre (other families' fit targets inside g): whether that counts
+  as a method is the user's call.
+tiles:
+  - {label: "val strict macro, Δ vs fam", value: "+0.042", sub: "random-direction control +0.012; knnx8 +0.049"}
+  - {label: "val strict without UM, DM, Δ vs fam", value: "+0.036", sub: "knnx8 +0.020"}
+  - {label: "val multihop, strict", value: "0.747", sub: "fam 0.614; 11 items won, 0 lost, none in the next-token top 10"}
+  - {label: "val Haiku _mt mean", value: "0.487", sub: "fam 0.416; multilingual_mt 0.396 vs 0.340"}
+  - {label: "fresh val2 (C, S24), Δ fam", value: "+0.050", sub: "[+0.020, +0.082]; typo / association / multihop, read once"}
+formulas:
+  - latex: 'g_F = \mu_{\text{fam},F} + \alpha\, \bar d_{-F}, \quad \bar d_{-F} = \frac{1}{|G|}\sum_{G \ne F,\, \text{twin}(F)} \left(g^{\text{ceil}}_G - \mu_{\text{fam},G}\right)'
+    note: "g^ceil_G: S20's constant for family G, fitted with G's fit targets; F's own and its _mt twin's never enter; alpha = 1 chosen on fit."
+diagram:
+  kind: none
+  caption: "Each family is read with its own mean plus the average correction the other families' targets taught their constants."
+split: val
+arms: ["s20xt:1@fit|cos", "s20x:1@fit|cos", "s20xp:1@fit|cos", "s20xm:1@fit|cos", "s20xt:1@fit|rms"]
+controls: ["s20xr:1@fit|cos", "shuf.s20x:1@fit|cos"]
+insights:
+  - {lead: "What dbar does: the readout's word form, not the concept", text: "Read through the lens, dbar demotes punctuation early, promotes capitalised names mid and restores the frequent-word prior fam removes late. On val2 (C's S24c) fam already holds the English target at rank 11-50 in 64-76 % of flips: dbar lifts it into the top 10; a Chinese-only form is 4-6 %, an absent concept (named entities) 19-32 %. S20z's flat Latin-vs-CJK prior explains at most a sixth of that and misses the depth structure."}
+  - {lead: "It replicates on a fresh held-out split", text: "C's val2 (authored after tonight's choices, read once): S20x +0.050 [+0.020, +0.082] vs fam on typo / association / multihop; the single centre kmx64 + correction +0.056, rms +0.068."}
+  - {lead: "S20's constant learns each family's answer class", text: "Decoded, ceil.const - fam promotes famous people (multihop), language names (multilingual_mt), number words (multilingual), concrete nouns (DM), and demotes template words and CJK function tokens. Fit and val share no target form on typo, association and DM, but 30 of 61 on multilingual and 16 of 42 on UM."}
+  - {lead: "The shared part is a coarse prior", text: "Averaged over other families the correction promotes capitalised Latin word starts and demotes CJK glue. Plain-only or _mt-only sources give the same val gain although their averages share little (cos 0.08-0.29)."}
+  - {lead: "It surfaces the unsaid bridge on multihop", text: "11 multihop val items won, 0 lost; none has a target in the model's own next-token top 10 (Bach, Poe, whale, cow, bread)."}
+  - {lead: "Strict and the judge disagree on multilingual_mt and DM", text: "The piece proxy loses the language unit (0.62 -> 0.42; the correction's own effect, S20y); the judge keeps it (40 of 53 vs 42) and gains the concept. DM's strict +0.07 is 5 items, partly a lottery of word starts, not confirmed by the judge."}
+next: ["S20w: a depth-dependent label-free version (early class prior + late partial mean).", "User: is a supervised transfer centre a method?"]

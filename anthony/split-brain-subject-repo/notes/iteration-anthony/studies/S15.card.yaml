@@ -1,0 +1,34 @@
+id: S15
+title: Where the mean sits in J's spectrum
+owner: A (j-lens-mean-2e), night-2
+status: diagnostic
+question: >
+  Does the family mean lie in the input directions the lens amplifies (J's top right singular vectors), and does removing
+  $h$'s component there, $g(h) = V_k V_k^{\top} h$, work as a centre?
+verdict: >
+  The lens does not attenuate the mean: $\|J\mu\|/\|Jh\|$ (0.74-0.96) is as large as $\|\mu\|/\|h\|$, so centring removes
+  most of what the lens reads at a cell. Outside the few massive-activation coordinates (B's S18), the family mean is
+  the part of the state J amplifies most, at every depth. As a centre, removing J's top-k directions is below fam on
+  every family but typo (s15top32 -0.081 on the 11-family fit macro): those directions hold content as well as the mean.
+tiles:
+  - {label: "‖Jμ‖/‖Jh‖ vs ‖μ‖/‖h‖ (fit, L44)", value: "0.79-0.89 vs 0.80-0.87", sub: "typo, association, multihop, multilingual_mt"}
+  - {label: "lens gain of fam vs h (multihop L44, massive coords out)", value: "4.4 vs 2.9", sub: "× a random direction's"}
+  - {label: "fit strict macro, s15top32 vs fam", value: "-0.081", sub: "random 32-dim subspace: zero's level"}
+formulas:
+  - latex: '\text{share}_k(v) = \frac{\|V_k^{\top} v\|^2}{\|v\|^2}, \quad \text{gain}(v) = \frac{\|J v\|^2 / \|v\|^2}{\operatorname{mean}_i \sigma_i^2}'
+    note: "V_k: the top k right singular vectors of J_l; random share = k / d."
+  - latex: 'g(h) = V_k V_k^{\top} h \quad (\texttt{s15top}k), \qquad g(h) = \mu_{\text{fam}} + V_k V_k^{\top}(h - \mu_{\text{fam}}) \quad (\texttt{s15famtop}k)'
+    note: "The centre half of the card; s15r<k> uses a random k-frame."
+diagram:
+  kind: subspace
+  k: 32
+  caption: "s15top32 removes h's component along J's 32 most amplified input directions; the diagnostic asks how much of fam, h and h - fam lies there."
+split: fit
+arms: ["s15top8@self|cos", "s15top32@self|cos", "s15top128@self|cos", "s15famtop32@self|cos", "s15top32@self|rms"]
+controls: ["s15r32@self|cos"]
+insights:
+  - {lead: "J reads the mean strongly", text: "‖Jμ‖/‖Jh‖ 0.74-0.96 against ‖μ‖/‖h‖ 0.70-0.90 (typo, association, multihop, multilingual_mt; L20-60): the synthesis's 0.34-0.57 (x98) does not replicate for J itself on these banks."}
+  - {lead: "Outside the massive coordinates the mean is what J amplifies most", text: "With fam's top-8 coordinates zeroed, fam's top-32 share and lens gain exceed h's at every depth (multihop L44 gain 4.4 vs 2.9); raw shares mostly measured the massive coordinates (corrected after B's S18)."}
+  - {lead: "J's top directions carry content too", text: "Removing more of them costs more (s15top8 / 32 / 128: -0.061 / -0.081 / -0.117 vs fam); only typo gains (0.685 -> 0.84), whose misspelling rival sits there."}
+  - {lead: "J's top singular directions at L20 are rarely used by states", text: "63 % of J's energy sits in 32 directions holding a random share of multihop / DM / UM states; low-rank models of J by its top singular directions miss what it does on real states."}
+next: []

@@ -1,0 +1,52 @@
+id: baseline
+title: Reference arms and standard controls
+owner: steward (j-lens-mean-f3), pilot-1
+status: diagnostic
+question: >
+  How do the reference centres (zero, $\mu_{\text{fam}}$, the token mean) score on every bank, and do random-direction
+  and shuffled controls separate content from a norm effect?
+verdict: >
+  Centring's gains are content: a random direction with the centre's norm is close to no centring (+0.02 / +0.03 vs
+  zero, against +0.08 / +0.10 for fam / tok on val). The cell-specific signal is token matching (shuffled tok keeps
+  little of tok's DM and UM gain). The family mean harms multihop_mt by its direction, and multilingual_mt is the
+  guardrail any token-keyed g must pass.
+tiles:
+  - {label: "val macro Δ vs zero, fam / tok", value: "+0.08 / +0.10", sub: "rand.fam +0.02, rand.tok +0.03"}
+  - {label: "DM val gain: tok / shuf.tok", value: "+0.24 / +0.05", sub: "UM: +0.07 / +0.02"}
+  - {label: "multihop_mt val, random g - fam", value: "+0.18", sub: "paired interval above 0; fam -0.10 vs zero"}
+  - {label: "multilingual_mt val, fam|cos vs zero", value: "+0.21", sub: "tok and rms arms lose 0.11-0.23 vs fam"}
+formulas:
+  - latex: '\mu_{\text{fam}}(h) = \bar h_{\mathcal{R}_{\text{fam}} \setminus G(h)}'
+    note: "Mean over every fit read cell of the family at the layer, own item and group excluded. zero: g = 0."
+  - latex: 'g_{\text{tok}}(h) = \bar h_{\{ r \in \mathcal{R}_{\text{fam}} \setminus G(h) \,:\, t(r) = t(h) \}}'
+    note: "Mean over the family's reference cells with the same read token t; falls back to μ_fam below 3 cells."
+  - latex: 'g_{\text{rand}}(h) = \lVert g(h) \rVert \, \frac{\xi_l}{\lVert \xi_l \rVert}, \qquad g_{\text{shuf}}(h_i) = g(h_{\pi(i)})'
+    note: "Controls: one seeded random direction ξ per layer with the cell's ‖g‖; another cell's g by a seeded derangement π (= the arm when g is one vector per layer)."
+diagram:
+  kind: pool
+  select: family
+  caption: "μ_fam = mean of the family's fit read cells at the layer, h's own group left out."
+split: val
+arms: ["zero|cos", "fam@fit|cos", "tok@fit|cos"]
+controls: ["shuf.tok@fit|cos", "rand.fam@fit|cos", "rand.tok@fit|cos"]
+insights:
+  - lead: "Centring's gains are content, not a norm effect"
+    text: >
+      A random direction with the centre's norm gets +0.02 (rand.fam) / +0.03 (rand.tok) macro vs zero, against
+      +0.08 / +0.10 for fam / tok. On typo and association it loses everything centring gained (-0.20, -0.34 vs fam).
+  - lead: "Token matching is what helps DM and UM"
+    text: >
+      Shuffled tok keeps +0.05 of tok's +0.24 on DM and +0.02 of +0.07 on UM. On the template families tok falls back
+      to the family mean, so shuffling changes nothing there.
+  - lead: "The family mean removes something multihop needs"
+    text: >
+      On multihop_mt a random g beats fam by +0.18 (paired interval above 0) and fam loses -0.10 vs zero; a random g
+      of the same norm does not hurt, so the harm is the mean's direction, not its size.
+  - lead: "multilingual_mt is the guardrail family"
+    text: >
+      tok and both rms arms lose 0.11-0.23 against fam there; fam|cos is the best arm (+0.21 vs zero).
+  - lead: "The targets are mostly unsaid"
+    text: >
+      The model's own next-token top 10 names the target for 0.08 of association items (val), and next-token overlap
+      of the centred readouts is about 0.01. Echo is 0.01-0.09 of the top 10.
+next: []

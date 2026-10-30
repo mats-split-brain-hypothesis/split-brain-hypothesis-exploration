@@ -1,0 +1,28 @@
+{
+ "claims_about_contribution": [
+  {
+   "quote": "**`submission/contribution.md`** \u2014 the method and its provenance.",
+   "accurate": true,
+   "why": "contribution.md does contain a 'Where it came from, and what is new' section describing the method and its relationship to the prior 'white-bear' steering construction, so characterizing it as covering 'the method and its provenance' is accurate."
+  }
+ ],
+ "user_names_source": true,
+ "judge_names_source": false,
+ "differences": [],
+ "rationale": "Both documents give the user and the judge the same technical picture: a think-vs-neutral contrast built on the same underlying 'white-bear'/concept-holding axis as a prior think-vs-don't-think construction, with identical quantitative overlap and novelty evidence (0.677 vs 0.608, control directions topping out at 0.21, random/reversed controls, dose sensitivity). The only material difference is that the user is explicitly told the prior work's author name ('Raman') and its location ('papers/'), information the judge's contribution.md never supplies, since contribution.md refers to the prior construction only by the generic term 'white-bear' without attribution.",
+ "dropped_quotes": 1,
+ "false_about_submission": false,
+ "code": "same",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-23T21:44:52",
+  "input": 7560,
+  "cache_read": 3507,
+  "cache_write": 4051,
+  "output": 3256,
+  "cost_usd_list": 0.0494694,
+  "ms": 31062
+ },
+ "run": "p08-r3-A13-q27b-tc"
+}

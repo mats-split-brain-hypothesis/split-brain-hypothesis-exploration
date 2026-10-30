@@ -1,0 +1,1800 @@
+{
+ "family": "multilingual",
+ "split": "fit",
+ "source": "jle/data/x90-dev/bank-v2/multilingual.jsonl split A (jle git 50fa623)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 7,
+ "items": [
+  {
+   "name": "dev-ml-a-002",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Le contraire de \"fort\" est \"",
+   "target": "faible",
+   "intermediates": [
+    "weak"
+   ],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "strong"
+   ],
+   "note": "The opposite of \"strong\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-004",
+   "subfamily": "opposite",
+   "lang": "French",
+   "prompt": "Le contraire de \"propre\" est \"",
+   "target": "sale",
+   "intermediates": [
+    "dirty"
+   ],
+   "reference_concepts": [
+    "French",
+    "opposite",
+    "clean"
+   ],
+   "note": "The opposite of \"clean\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-015",
+   "subfamily": "color",
+   "lang": "French",
+   "prompt": "La couleur d'une aubergine mûre est le",
+   "target": "violet",
+   "intermediates": [
+    "purple"
+   ],
+   "reference_concepts": [
+    "French",
+    "color",
+    "the color of a ripe eggplant"
+   ],
+   "note": "The color of a ripe eggplant is the",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-017",
+   "subfamily": "color",
+   "lang": "French",
+   "prompt": "La couleur d'un citron mûr est \"",
+   "target": "jaune",
+   "intermediates": [
+    "yellow"
+   ],
+   "reference_concepts": [
+    "French",
+    "color",
+    "the color of a ripe lemon"
+   ],
+   "note": "The color of a ripe lemon is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-020",
+   "subfamily": "number",
+   "lang": "French",
+   "prompt": "Le nombre après onze est \"",
+   "target": "douze",
+   "intermediates": [
+    "twelve"
+   ],
+   "reference_concepts": [
+    "French",
+    "number",
+    "the number after eleven"
+   ],
+   "note": "The number after eleven is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-023",
+   "subfamily": "place",
+   "lang": "French",
+   "prompt": "La capitale de l'Allemagne est",
+   "target": "Berlin",
+   "intermediates": [
+    "Berlin"
+   ],
+   "reference_concepts": [
+    "French",
+    "place",
+    "the capital of Germany"
+   ],
+   "note": "The capital of Germany is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-025",
+   "subfamily": "place",
+   "lang": "French",
+   "prompt": "Les pyramides de Gizeh se trouvent dans le pays appelé \"",
+   "target": "Égypte",
+   "intermediates": [
+    "Egypt"
+   ],
+   "reference_concepts": [
+    "French",
+    "place",
+    "the country of the Giza pyramids"
+   ],
+   "note": "The pyramids of Giza are found in the country called \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-026",
+   "subfamily": "place",
+   "lang": "French",
+   "prompt": "La capitale de la Grèce est \"",
+   "target": "Athènes",
+   "intermediates": [
+    "Athens"
+   ],
+   "reference_concepts": [
+    "French",
+    "place",
+    "the capital of Greece"
+   ],
+   "note": "The capital of Greece is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-029",
+   "subfamily": "family_body",
+   "lang": "French",
+   "prompt": "La fille de ton frère est ta \"",
+   "target": "nièce",
+   "intermediates": [
+    "niece"
+   ],
+   "reference_concepts": [
+    "French",
+    "family_body",
+    "your brother's daughter"
+   ],
+   "note": "Your brother's daughter is your \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-030",
+   "subfamily": "family_body",
+   "lang": "French",
+   "prompt": "La partie du corps qui te permet de voir est l'",
+   "target": "œil",
+   "intermediates": [
+    "eye"
+   ],
+   "reference_concepts": [
+    "French",
+    "family_body",
+    "the body part used for seeing"
+   ],
+   "note": "The body part that lets you see is the",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-031",
+   "subfamily": "category",
+   "lang": "French",
+   "prompt": "L'animal qui fait \"meuh\" est la",
+   "target": "vache",
+   "intermediates": [
+    "cow"
+   ],
+   "reference_concepts": [
+    "French",
+    "category",
+    "the animal that says moo"
+   ],
+   "note": "The animal that says \"moo\" is the",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-032",
+   "subfamily": "category",
+   "lang": "French",
+   "prompt": "Le petit du chien s'appelle le",
+   "target": "chiot",
+   "intermediates": [
+    "puppy"
+   ],
+   "reference_concepts": [
+    "French",
+    "category",
+    "a baby dog"
+   ],
+   "note": "A baby dog is called the",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-034",
+   "subfamily": "category",
+   "lang": "French",
+   "prompt": "La matière dont sont faites la plupart des fenêtres est le \"",
+   "target": "verre",
+   "intermediates": [
+    "glass"
+   ],
+   "reference_concepts": [
+    "French",
+    "category",
+    "the material of windows"
+   ],
+   "note": "The material most windows are made of is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-035",
+   "subfamily": "category",
+   "lang": "French",
+   "prompt": "Le petit du mouton s'appelle l'",
+   "target": "agneau",
+   "intermediates": [
+    "lamb"
+   ],
+   "reference_concepts": [
+    "French",
+    "category",
+    "a baby sheep"
+   ],
+   "note": "A baby sheep is called the",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-041",
+   "subfamily": "opposite",
+   "lang": "German",
+   "prompt": "Das Gegenteil von \"breit\" ist \"",
+   "target": "schmal",
+   "intermediates": [
+    "narrow"
+   ],
+   "reference_concepts": [
+    "German",
+    "opposite",
+    "wide"
+   ],
+   "note": "The opposite of \"wide\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-042",
+   "subfamily": "opposite",
+   "lang": "German",
+   "prompt": "Das Gegenteil von \"reich\" ist \"",
+   "target": "arm",
+   "intermediates": [
+    "poor"
+   ],
+   "reference_concepts": [
+    "German",
+    "opposite",
+    "rich"
+   ],
+   "note": "The opposite of \"rich\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-044",
+   "subfamily": "calendar",
+   "lang": "German",
+   "prompt": "Der Monat nach August ist der",
+   "target": "September",
+   "intermediates": [
+    "September"
+   ],
+   "reference_concepts": [
+    "German",
+    "calendar",
+    "the month after August"
+   ],
+   "note": "The month after August is the",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-046",
+   "subfamily": "calendar",
+   "lang": "German",
+   "prompt": "Der Tag nach Sonntag ist \"",
+   "target": "Montag",
+   "intermediates": [
+    "Monday"
+   ],
+   "reference_concepts": [
+    "German",
+    "calendar",
+    "the day after Sunday"
+   ],
+   "note": "The day after Sunday is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-047",
+   "subfamily": "calendar",
+   "lang": "German",
+   "prompt": "Die Jahreszeit nach dem Winter ist der \"",
+   "target": "Frühling",
+   "intermediates": [
+    "spring"
+   ],
+   "reference_concepts": [
+    "German",
+    "calendar",
+    "the season after winter"
+   ],
+   "note": "The season after winter is the \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-049",
+   "subfamily": "color",
+   "lang": "German",
+   "prompt": "Die Farbe von Flamingos ist \"",
+   "target": "rosa",
+   "intermediates": [
+    "pink"
+   ],
+   "reference_concepts": [
+    "German",
+    "color",
+    "the color of flamingos"
+   ],
+   "note": "The color of flamingos is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-055",
+   "subfamily": "place",
+   "lang": "German",
+   "prompt": "Die Hauptstadt von Italien ist",
+   "target": "Rom",
+   "intermediates": [
+    "Rome"
+   ],
+   "reference_concepts": [
+    "German",
+    "place",
+    "the capital of Italy"
+   ],
+   "note": "The capital of Italy is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-056",
+   "subfamily": "place",
+   "lang": "German",
+   "prompt": "Die Hauptstadt von Spanien ist",
+   "target": "Madrid",
+   "intermediates": [
+    "Madrid"
+   ],
+   "reference_concepts": [
+    "German",
+    "place",
+    "the capital of Spain"
+   ],
+   "note": "The capital of Spain is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-058",
+   "subfamily": "place",
+   "lang": "German",
+   "prompt": "Die große Pyramide von Gizeh steht in dem Land namens \"",
+   "target": "Ägypten",
+   "intermediates": [
+    "Egypt"
+   ],
+   "reference_concepts": [
+    "German",
+    "place",
+    "the country of the Great Pyramid of Giza"
+   ],
+   "note": "The Great Pyramid of Giza stands in the country called \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-060",
+   "subfamily": "family_body",
+   "lang": "German",
+   "prompt": "Das Organ, das das Blut durch den Körper pumpt, ist das",
+   "target": "Herz",
+   "intermediates": [
+    "heart"
+   ],
+   "reference_concepts": [
+    "German",
+    "family_body",
+    "the organ that pumps blood"
+   ],
+   "note": "The organ that pumps blood through the body is the",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-061",
+   "subfamily": "family_body",
+   "lang": "German",
+   "prompt": "Der Körperteil, mit dem du hörst, ist das \"",
+   "target": "Ohr",
+   "intermediates": [
+    "ear"
+   ],
+   "reference_concepts": [
+    "German",
+    "family_body",
+    "the body part used for hearing"
+   ],
+   "note": "The body part you hear with is the \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-071",
+   "subfamily": "calendar",
+   "lang": "Italian",
+   "prompt": "Il mese dopo agosto è",
+   "target": "settembre",
+   "intermediates": [
+    "September"
+   ],
+   "reference_concepts": [
+    "Italian",
+    "calendar",
+    "the month after August"
+   ],
+   "note": "The month after August is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-073",
+   "subfamily": "calendar",
+   "lang": "Italian",
+   "prompt": "La stagione dopo l'inverno è la",
+   "target": "primavera",
+   "intermediates": [
+    "spring"
+   ],
+   "reference_concepts": [
+    "Italian",
+    "calendar",
+    "the season after winter"
+   ],
+   "note": "The season after winter is the",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-074",
+   "subfamily": "color",
+   "lang": "Italian",
+   "prompt": "Il colore del cioccolato è il",
+   "target": "marrone",
+   "intermediates": [
+    "brown"
+   ],
+   "reference_concepts": [
+    "Italian",
+    "color",
+    "the color of chocolate"
+   ],
+   "note": "The color of chocolate is the",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-075",
+   "subfamily": "color",
+   "lang": "Italian",
+   "prompt": "Il colore di un limone maturo è \"",
+   "target": "giallo",
+   "intermediates": [
+    "yellow"
+   ],
+   "reference_concepts": [
+    "Italian",
+    "color",
+    "the color of a ripe lemon"
+   ],
+   "note": "The color of a ripe lemon is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-078",
+   "subfamily": "place",
+   "lang": "Italian",
+   "prompt": "La capitale della Germania è",
+   "target": "Berlino",
+   "intermediates": [
+    "Berlin"
+   ],
+   "reference_concepts": [
+    "Italian",
+    "place",
+    "the capital of Germany"
+   ],
+   "note": "The capital of Germany is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-080",
+   "subfamily": "family_body",
+   "lang": "Italian",
+   "prompt": "Il padre di tuo padre è tuo",
+   "target": "nonno",
+   "intermediates": [
+    "grandfather"
+   ],
+   "reference_concepts": [
+    "Italian",
+    "family_body",
+    "your father's father"
+   ],
+   "note": "Your father's father is your",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-082",
+   "subfamily": "category",
+   "lang": "Italian",
+   "prompt": "L'animale che fa \"bau\" è il",
+   "target": "cane",
+   "intermediates": [
+    "dog"
+   ],
+   "reference_concepts": [
+    "Italian",
+    "category",
+    "the animal that barks"
+   ],
+   "note": "The animal that says \"woof\" is the",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-087",
+   "subfamily": "color",
+   "lang": "Dutch",
+   "prompt": "De kleur van chocolade is \"",
+   "target": "bruin",
+   "intermediates": [
+    "brown"
+   ],
+   "reference_concepts": [
+    "Dutch",
+    "color",
+    "the color of chocolate"
+   ],
+   "note": "The color of chocolate is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-089",
+   "subfamily": "place",
+   "lang": "Dutch",
+   "prompt": "De hoofdstad van Portugal is",
+   "target": "Lissabon",
+   "intermediates": [
+    "Lisbon"
+   ],
+   "reference_concepts": [
+    "Dutch",
+    "place",
+    "the capital of Portugal"
+   ],
+   "note": "The capital of Portugal is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-091",
+   "subfamily": "opposite",
+   "lang": "Polish",
+   "prompt": "Przeciwieństwo słowa \"twardy\" to \"",
+   "target": "miękki",
+   "intermediates": [
+    "soft"
+   ],
+   "reference_concepts": [
+    "Polish",
+    "opposite",
+    "hard"
+   ],
+   "note": "The opposite of the word \"hard\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-092",
+   "subfamily": "calendar",
+   "lang": "Polish",
+   "prompt": "Miesiąc po lipcu to \"",
+   "target": "sierpień",
+   "intermediates": [
+    "August"
+   ],
+   "reference_concepts": [
+    "Polish",
+    "calendar",
+    "the month after July"
+   ],
+   "note": "The month after July is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-a-099",
+   "subfamily": "opposite",
+   "lang": "Ukrainian",
+   "prompt": "Протилежність слова \"солодкий\" - це \"",
+   "target": "гіркий",
+   "intermediates": [
+    "bitter"
+   ],
+   "reference_concepts": [
+    "Ukrainian",
+    "opposite",
+    "sweet"
+   ],
+   "note": "The opposite of the word \"sweet\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-003",
+   "subfamily": "opposite",
+   "lang": "Spanish",
+   "prompt": "Lo contrario de \"lejos\" es \"",
+   "target": "cerca",
+   "intermediates": [
+    "near"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "opposite",
+    "far"
+   ],
+   "note": "The opposite of \"far\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-004",
+   "subfamily": "opposite",
+   "lang": "Spanish",
+   "prompt": "Lo contrario de \"frío\" es \"",
+   "target": "caliente",
+   "intermediates": [
+    "hot"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "opposite",
+    "cold"
+   ],
+   "note": "The opposite of \"cold\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-005",
+   "subfamily": "opposite",
+   "lang": "Spanish",
+   "prompt": "Lo contrario de \"lento\" es \"",
+   "target": "rápido",
+   "intermediates": [
+    "fast"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "opposite",
+    "slow"
+   ],
+   "note": "The opposite of \"slow\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-008",
+   "subfamily": "opposite",
+   "lang": "Spanish",
+   "prompt": "Lo contrario de \"abajo\" es \"",
+   "target": "arriba",
+   "intermediates": [
+    "up"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "opposite",
+    "down"
+   ],
+   "note": "The opposite of \"down\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-009",
+   "subfamily": "opposite",
+   "lang": "Spanish",
+   "prompt": "Lo contrario de \"derecha\" es \"",
+   "target": "izquierda",
+   "intermediates": [
+    "left"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "opposite",
+    "right"
+   ],
+   "note": "The opposite of \"right\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-011",
+   "subfamily": "opposite",
+   "lang": "Spanish",
+   "prompt": "Lo contrario de \"lleno\" es \"",
+   "target": "vacío",
+   "intermediates": [
+    "empty"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "opposite",
+    "full"
+   ],
+   "note": "The opposite of \"full\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-013",
+   "subfamily": "opposite",
+   "lang": "Spanish",
+   "prompt": "Lo contrario de \"fuerte\" es \"",
+   "target": "débil",
+   "intermediates": [
+    "weak"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "opposite",
+    "strong"
+   ],
+   "note": "The opposite of \"strong\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-014",
+   "subfamily": "calendar",
+   "lang": "Spanish",
+   "prompt": "El mes antes de septiembre es \"",
+   "target": "agosto",
+   "intermediates": [
+    "August"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "calendar",
+    "month before September"
+   ],
+   "note": "The month before September is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-017",
+   "subfamily": "calendar",
+   "lang": "Spanish",
+   "prompt": "El día después del domingo es",
+   "target": "lunes",
+   "intermediates": [
+    "Monday"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "calendar",
+    "day after Sunday"
+   ],
+   "note": "The day after Sunday is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-018",
+   "subfamily": "calendar",
+   "lang": "Spanish",
+   "prompt": "El día antes de jueves es \"",
+   "target": "miércoles",
+   "intermediates": [
+    "Wednesday"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "calendar",
+    "day before Thursday"
+   ],
+   "note": "The day before Thursday is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-019",
+   "subfamily": "calendar",
+   "lang": "Spanish",
+   "prompt": "El día después del jueves es",
+   "target": "viernes",
+   "intermediates": [
+    "Friday"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "calendar",
+    "day after Thursday"
+   ],
+   "note": "The day after Thursday is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-020",
+   "subfamily": "calendar",
+   "lang": "Spanish",
+   "prompt": "La estación después del otoño es el \"",
+   "target": "invierno",
+   "intermediates": [
+    "winter"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "calendar",
+    "season after autumn"
+   ],
+   "note": "The season after autumn is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-026",
+   "subfamily": "number",
+   "lang": "Spanish",
+   "prompt": "El número después de seis es \"",
+   "target": "siete",
+   "intermediates": [
+    "seven"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "number",
+    "after six"
+   ],
+   "note": "The number after six is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-027",
+   "subfamily": "number",
+   "lang": "Spanish",
+   "prompt": "La suma de cuatro y cinco es",
+   "target": "nueve",
+   "intermediates": [
+    "nine"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "number",
+    "four plus five"
+   ],
+   "note": "Four plus five is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-028",
+   "subfamily": "number",
+   "lang": "Spanish",
+   "prompt": "La suma de cinco y seis es \"",
+   "target": "once",
+   "intermediates": [
+    "eleven"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "number",
+    "five plus six"
+   ],
+   "note": "Five plus six is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-029",
+   "subfamily": "number",
+   "lang": "Spanish",
+   "prompt": "El doble de seis es",
+   "target": "doce",
+   "intermediates": [
+    "twelve"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "number",
+    "double of six"
+   ],
+   "note": "Double six is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-030",
+   "subfamily": "number",
+   "lang": "Spanish",
+   "prompt": "El doble de diez es \"",
+   "target": "veinte",
+   "intermediates": [
+    "twenty"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "number",
+    "double of ten"
+   ],
+   "note": "Double ten is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-034",
+   "subfamily": "place",
+   "lang": "Spanish",
+   "prompt": "La capital de Kenia es",
+   "target": "Nairobi",
+   "intermediates": [
+    "Nairobi"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "place",
+    "capital of Kenya"
+   ],
+   "note": "The capital of Kenya is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-039",
+   "subfamily": "family_body",
+   "lang": "Spanish",
+   "prompt": "El padre de mi padre es mi \"",
+   "target": "abuelo",
+   "intermediates": [
+    "grandfather"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "family_body",
+    "my father's father"
+   ],
+   "note": "My father's father is my \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-041",
+   "subfamily": "family_body",
+   "lang": "Spanish",
+   "prompt": "La parte del cuerpo que usamos para escribir es la \"",
+   "target": "mano",
+   "intermediates": [
+    "hand"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "family_body",
+    "body part used to write"
+   ],
+   "note": "The body part we use to write is the \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-047",
+   "subfamily": "category",
+   "lang": "Spanish",
+   "prompt": "El material del que está hecho un violín es la",
+   "target": "madera",
+   "intermediates": [
+    "wood"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "category",
+    "material of a violin"
+   ],
+   "note": "The material a violin is made of is the",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-048",
+   "subfamily": "category",
+   "lang": "Spanish",
+   "prompt": "El material del que están hechas las ventanas es el \"",
+   "target": "vidrio",
+   "intermediates": [
+    "glass"
+   ],
+   "reference_concepts": [
+    "Spanish",
+    "category",
+    "material of windows"
+   ],
+   "note": "The material windows are made of is the \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-051",
+   "subfamily": "opposite",
+   "lang": "Portuguese",
+   "prompt": "O contrário de \"sujo\" é \"",
+   "target": "limpo",
+   "intermediates": [
+    "clean"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "opposite",
+    "dirty"
+   ],
+   "note": "The opposite of \"dirty\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-054",
+   "subfamily": "opposite",
+   "lang": "Portuguese",
+   "prompt": "O contrário de \"molhado\" é \"",
+   "target": "seco",
+   "intermediates": [
+    "dry"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "opposite",
+    "wet"
+   ],
+   "note": "The opposite of \"wet\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-055",
+   "subfamily": "opposite",
+   "lang": "Portuguese",
+   "prompt": "O contrário de \"barulhento\" é \"",
+   "target": "silencioso",
+   "intermediates": [
+    "quiet"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "opposite",
+    "noisy"
+   ],
+   "note": "The opposite of \"noisy\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-056",
+   "subfamily": "opposite",
+   "lang": "Portuguese",
+   "prompt": "O contrário de \"gordo\" é \"",
+   "target": "magro",
+   "intermediates": [
+    "thin"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "opposite",
+    "fat"
+   ],
+   "note": "The opposite of \"fat\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-057",
+   "subfamily": "opposite",
+   "lang": "Portuguese",
+   "prompt": "O contrário de \"rico\" é \"",
+   "target": "pobre",
+   "intermediates": [
+    "poor"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "opposite",
+    "rich"
+   ],
+   "note": "The opposite of \"rich\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-058",
+   "subfamily": "opposite",
+   "lang": "Portuguese",
+   "prompt": "O contrário de \"feliz\" é \"",
+   "target": "triste",
+   "intermediates": [
+    "sad"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "opposite",
+    "happy"
+   ],
+   "note": "The opposite of \"happy\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-059",
+   "subfamily": "opposite",
+   "lang": "Portuguese",
+   "prompt": "O contrário de \"corajoso\" é \"",
+   "target": "covarde",
+   "intermediates": [
+    "coward"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "opposite",
+    "brave"
+   ],
+   "note": "The opposite of \"brave\" is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-062",
+   "subfamily": "calendar",
+   "lang": "Portuguese",
+   "prompt": "O mês depois de novembro é",
+   "target": "dezembro",
+   "intermediates": [
+    "December"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "calendar",
+    "month after November"
+   ],
+   "note": "The month after November is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-072",
+   "subfamily": "number",
+   "lang": "Portuguese",
+   "prompt": "O dobro de cinquenta é",
+   "target": "cem",
+   "intermediates": [
+    "hundred"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "number",
+    "double of fifty"
+   ],
+   "note": "Double fifty is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-073",
+   "subfamily": "number",
+   "lang": "Portuguese",
+   "prompt": "A soma de dez e vinte é \"",
+   "target": "trinta",
+   "intermediates": [
+    "thirty"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "number",
+    "ten plus twenty"
+   ],
+   "note": "Ten plus twenty is \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-074",
+   "subfamily": "number",
+   "lang": "Portuguese",
+   "prompt": "A metade de trinta é",
+   "target": "quinze",
+   "intermediates": [
+    "fifteen"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "number",
+    "half of thirty"
+   ],
+   "note": "Half of thirty is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-079",
+   "subfamily": "place",
+   "lang": "Portuguese",
+   "prompt": "O país do Coliseu é",
+   "target": "Itália",
+   "intermediates": [
+    "Italy"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "place",
+    "country of the Colosseum"
+   ],
+   "note": "The country of the Colosseum is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-082",
+   "subfamily": "family_body",
+   "lang": "Portuguese",
+   "prompt": "O filho do meu filho é meu",
+   "target": "neto",
+   "intermediates": [
+    "grandson"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "family_body",
+    "son of my son"
+   ],
+   "note": "My son's son is my",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-084",
+   "subfamily": "family_body",
+   "lang": "Portuguese",
+   "prompt": "A parte do braço que fica perto do pescoço é o",
+   "target": "ombro",
+   "intermediates": [
+    "shoulder"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "family_body",
+    "part of the arm near the neck"
+   ],
+   "note": "The part of the arm near the neck is the",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-086",
+   "subfamily": "category",
+   "lang": "Portuguese",
+   "prompt": "O som que o leão faz é o \"",
+   "target": "rugido",
+   "intermediates": [
+    "roar"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "category",
+    "sound a lion makes"
+   ],
+   "note": "The sound a lion makes is the \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-087",
+   "subfamily": "category",
+   "lang": "Portuguese",
+   "prompt": "A cria da ovelha é o",
+   "target": "cordeiro",
+   "intermediates": [
+    "lamb"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "category",
+    "baby of a sheep"
+   ],
+   "note": "The baby of a sheep is the",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-088",
+   "subfamily": "category",
+   "lang": "Portuguese",
+   "prompt": "O material de que é feita uma camisa comum é o \"",
+   "target": "algodão",
+   "intermediates": [
+    "cotton"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "category",
+    "material of an ordinary shirt"
+   ],
+   "note": "The material an ordinary shirt is made of is the \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-090",
+   "subfamily": "category",
+   "lang": "Portuguese",
+   "prompt": "A ferramenta usada para costurar tecido é a \"",
+   "target": "agulha",
+   "intermediates": [
+    "needle"
+   ],
+   "reference_concepts": [
+    "Portuguese",
+    "category",
+    "tool for sewing fabric"
+   ],
+   "note": "The tool used to sew fabric is the \"",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-093",
+   "subfamily": "color",
+   "lang": "Indonesian",
+   "prompt": "Warna susu adalah",
+   "target": "putih",
+   "intermediates": [
+    "white"
+   ],
+   "reference_concepts": [
+    "Indonesian",
+    "color",
+    "milk"
+   ],
+   "note": "The color of milk is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-095",
+   "subfamily": "place",
+   "lang": "Japanese",
+   "prompt": "韓国の首都は",
+   "target": "ソウル",
+   "intermediates": [
+    "Seoul"
+   ],
+   "reference_concepts": [
+    "Japanese",
+    "place",
+    "capital of South Korea"
+   ],
+   "note": "The capital of South Korea is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-099",
+   "subfamily": "calendar",
+   "lang": "Arabic",
+   "prompt": "اليوم الذي يأتي بعد الأحد هو",
+   "target": "الاثنين",
+   "intermediates": [
+    "Monday"
+   ],
+   "reference_concepts": [
+    "Arabic",
+    "calendar",
+    "day after Sunday"
+   ],
+   "note": "The day that comes after Sunday is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-ml-b-100",
+   "subfamily": "category",
+   "lang": "Arabic",
+   "prompt": "المادة التي تُصنع منها معظم النوافذ هي",
+   "target": "الزجاج",
+   "intermediates": [
+    "glass"
+   ],
+   "reference_concepts": [
+    "Arabic",
+    "category",
+    "material of most windows"
+   ],
+   "note": "The material most windows are made from is",
+   "family": "multilingual",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A"
+  }
+ ]
+}

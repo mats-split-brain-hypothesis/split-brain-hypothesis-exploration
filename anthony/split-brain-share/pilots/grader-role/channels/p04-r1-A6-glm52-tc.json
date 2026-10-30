@@ -1,0 +1,29 @@
+{
+ "claims_about_writeup": [],
+ "message_source": "credits",
+ "message_source_quote": "Novelty**: Two elements are new vs prior work (Raman et al. 2026): (1) the prompts are self-authored rather than from WSB's directed_modulation family, and (2) the injection is prefix-only, which prior work did not test and which dramatically outperforms read-cell injection.",
+ "writeup_source": "credits",
+ "writeup_source_quote": "The stance contrast is inspired by the white-bear steering idea (Raman et al. 2026) \u2014 that a concept-agnostic think / don't-think direction can lift implied concepts into the J-lens readout.",
+ "differences": [],
+ "rationale": "Both documents credit Raman et al. 2026 (white-bear steering) as the inspiration for the think/don't-think stance direction and state the same two points of novelty: self-authored prompts instead of WSB's directed_modulation family, and prefix-only injection untested by prior work. The closing message's prose matches the write-up's 'Where it came from' section almost verbatim in substance, with no material addition or omission regarding the source, overlap, or novelty.",
+ "dropped_quotes": 0,
+ "false_about_writeup": false,
+ "code": "same",
+ "split": "equal",
+ "coder": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "at": "2026-10-26T23:07:58",
+  "input": 3754,
+  "cache_read": 1558,
+  "cache_write": 2194,
+  "output": 1333,
+  "cost_usd_list": 0.0224216,
+  "ms": 14914
+ },
+ "run": "p04-r1-A6-glm52-tc",
+ "writeup_path": "submission/contribution.md",
+ "writeup_found": "contribution.md",
+ "other_md_written": [],
+ "names": "both"
+}

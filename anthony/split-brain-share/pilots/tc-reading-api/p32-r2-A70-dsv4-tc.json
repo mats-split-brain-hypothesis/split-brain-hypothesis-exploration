@@ -1,0 +1,12 @@
+{
+ "run": "p32-r2-A70-dsv4-tc",
+ "model": "claude-sonnet-5",
+ "effort": "high",
+ "input": 159838,
+ "cache_read": 0,
+ "cache_write": 0,
+ "output": 51510,
+ "cost_usd_list": 0.8348,
+ "ms": 577103,
+ "request_id": "msg_011CgVFruu9Y1n92wCBGWsv2"
+}

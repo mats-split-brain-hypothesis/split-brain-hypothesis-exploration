@@ -1,0 +1,5384 @@
+{
+ "family": "multilingual-hard",
+ "parent_family": "multilingual-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": false,
+  "conjunctive_units": true
+ },
+ "source": "jlm-dev-mt-v1",
+ "split": "fit",
+ "gate": "Qwen3.6-27B: the bench's gate question, greedy correct and >= 8/10 at T=0.7; graded by anthropic/claude-haiku-5.5 with the bench's grading prompt",
+ "items": [
+  {
+   "name": "dev-mlmt-137",
+   "subfamily": "fwd",
+   "prompt": "Chiếc mũ hình chóp làm từ lá cọ hoặc lá buông, là biểu tượng của phụ nữ Việt Nam đi cùng tà áo dài, gọi là",
+   "target": "nón lá",
+   "target_alts": [
+    "chiếc nón lá",
+    "nón"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "conical hat"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "conical hat"
+      ],
+      "zh": [
+       "斗笠"
+      ]
+     },
+     "match": [
+      "conical hat",
+      "斗笠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nón lá",
+       "chiếc nón lá",
+       "nón"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nón lá",
+      "chiếc nón lá",
+      "nón"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       1
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     1
+    ]
+   },
+   "consistency": 0.9
+  },
+  {
+   "name": "dev-mlmt-187",
+   "subfamily": "fwd",
+   "prompt": "Kaurahiutaleista veteen tai maitoon keitetty lämmin aamiaisruoka on nimeltään",
+   "target": "kaurapuuro",
+   "target_alts": [
+    "puuro",
+    "kaurapuuroa"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "oatmeal"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "oatmeal",
+       "porridge"
+      ],
+      "zh": [
+       "燕麦粥"
+      ]
+     },
+     "match": [
+      "oatmeal",
+      "porridge",
+      "燕麦粥"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "kaurapuuro",
+       "puuro",
+       "kaurapuuroa"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "kaurapuuro",
+      "puuro",
+      "kaurapuuroa"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       4,
+       2,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     2,
+     5
+    ]
+   },
+   "consistency": 0.8
+  },
+  {
+   "name": "dev-mlmt-104",
+   "subfamily": "fwd",
+   "prompt": "Головная боль, жажда и тошнота наутро после того, как человек накануне выпил слишком много водки, называются",
+   "target": "похмелье",
+   "target_alts": [
+    "похмельем",
+    "похмельный синдром"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "hangover"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hangover"
+      ],
+      "zh": [
+       "宿醉"
+      ]
+     },
+     "match": [
+      "hangover",
+      "宿醉"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "похмелье",
+       "похмельем",
+       "похмельный синдром"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "похмелье",
+      "похмельем",
+      "похмельный синдром"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       4,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     4,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-089",
+   "subfamily": "fwd",
+   "prompt": "Çocukların plajda kovalarla şekil verip etrafına hendek kazdıkları kuleli oyun yapısının adı",
+   "target": "kumdan kale",
+   "target_alts": [
+    "kum kalesi",
+    "kumdan kaleler"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "tr",
+   "intermediates": [
+    "sandcastle"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sandcastle",
+       "sand castle"
+      ],
+      "zh": [
+       "沙堡"
+      ]
+     },
+     "match": [
+      "sandcastle",
+      "sand castle",
+      "沙堡"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Turkish"
+      ],
+      "zh": [
+       "土耳其语"
+      ],
+      "tr": [
+       "kumdan kale",
+       "kum kalesi",
+       "kumdan kaleler"
+      ]
+     },
+     "match": [
+      "Turkish",
+      "土耳其语",
+      "kumdan kale",
+      "kum kalesi",
+      "kumdan kaleler"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "tr": [
+       3,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-096",
+   "subfamily": "fwd",
+   "prompt": "Joka neljäs vuosi, jolloin helmikuussa on 29 päivää, on nimeltään",
+   "target": "karkausvuosi",
+   "target_alts": [
+    "karkausvuoden",
+    "karkausvuonna"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "leap year"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "leap year"
+      ],
+      "zh": [
+       "闰年"
+      ]
+     },
+     "match": [
+      "leap year",
+      "闰年"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "karkausvuosi",
+       "karkausvuoden",
+       "karkausvuonna"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "karkausvuosi",
+      "karkausvuoden",
+      "karkausvuonna"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       5,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     5,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-173",
+   "subfamily": "fwd",
+   "prompt": "Brązowy owoc dębu w małym kapturku, z którego dzieci robią jesienią ludziki z zapałek, to",
+   "target": "żołądź",
+   "target_alts": [
+    "żołędzie",
+    "żołędź"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "acorn"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "acorn"
+      ],
+      "zh": [
+       "橡子"
+      ]
+     },
+     "match": [
+      "acorn",
+      "橡子"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "żołądź",
+       "żołędzie",
+       "żołędź"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "żołądź",
+      "żołędzie",
+      "żołędź"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       5,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     2,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-140",
+   "subfamily": "fwd",
+   "prompt": "Bola-bola kecil dari kaca berwarna-warni yang dimainkan anak-anak dengan cara disentil ke arah bola lain di tanah disebut",
+   "target": "kelereng",
+   "target_alts": [
+    "gundu",
+    "kelereng kaca"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "marbles"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "marbles"
+      ],
+      "zh": [
+       "弹珠"
+      ]
+     },
+     "match": [
+      "marbles",
+      "弹珠"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "kelereng",
+       "gundu",
+       "kelereng kaca"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "kelereng",
+      "gundu",
+      "kelereng kaca"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       2,
+       4
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-183",
+   "subfamily": "fwd",
+   "prompt": "Η λεπτή μεμβράνη μέσα στο αυτί που δονείται όταν φτάνουν σε αυτήν τα ηχητικά κύματα λέγεται",
+   "target": "τύμπανο",
+   "target_alts": [
+    "τύμπανο του αυτιού",
+    "τυμπανική μεμβράνη"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "el",
+   "intermediates": [
+    "eardrum"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "eardrum"
+      ],
+      "zh": [
+       "鼓膜"
+      ]
+     },
+     "match": [
+      "eardrum",
+      "鼓膜"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Greek"
+      ],
+      "zh": [
+       "希腊语"
+      ],
+      "el": [
+       "τύμπανο",
+       "τύμπανο του αυτιού",
+       "τυμπανική μεμβράνη"
+      ]
+     },
+     "match": [
+      "Greek",
+      "希腊语",
+      "τύμπανο",
+      "τύμπανο του αυτιού",
+      "τυμπανική μεμβράνη"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "el": [
+       3,
+       7,
+       8
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     7,
+     8
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-165",
+   "subfamily": "fwd",
+   "prompt": "הבית העגול שבונים האינואיטים בקוטב הצפוני מגושים של שלג דחוס נקרא",
+   "target": "איגלו",
+   "target_alts": [
+    "האיגלו",
+    "איגלואים"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "igloo"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "igloo"
+      ],
+      "zh": [
+       "冰屋"
+      ]
+     },
+     "match": [
+      "igloo",
+      "冰屋"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "איגלו",
+       "האיגלו",
+       "איגלואים"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "איגלו",
+      "האיגלו",
+      "איגלואים"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       3,
+       3,
+       5
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     3,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-148",
+   "subfamily": "fwd",
+   "prompt": "Tempat beratap di pinggir jalan tempat orang duduk menunggu bus kota datang disebut",
+   "target": "halte",
+   "target_alts": [
+    "halte bus",
+    "halte bis"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "bus stop"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "bus stop"
+      ],
+      "zh": [
+       "公交车站"
+      ]
+     },
+     "match": [
+      "bus stop",
+      "公交车站"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "halte",
+       "halte bus",
+       "halte bis"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "halte",
+      "halte bus",
+      "halte bis"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       1,
+       2,
+       2
+      ]
+     }
+    },
+    "target": 1,
+    "target_alts": [
+     2,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-008",
+   "subfamily": "fwd",
+   "prompt": "المركبة الطائرة المكونة من كيس قماشي ضخم وسلة معلقة تحته يرتفع بها الركاب بفضل نار الموقد التي تسخن ما بداخل الكيس تُسمى",
+   "target": "المنطاد",
+   "target_alts": [
+    "منطاد",
+    "منطاد الهواء الساخن"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "hot air balloon"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hot air balloon"
+      ],
+      "zh": [
+       "热气球"
+      ]
+     },
+     "match": [
+      "hot air balloon",
+      "热气球"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "المنطاد",
+       "منطاد",
+       "منطاد الهواء الساخن"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "المنطاد",
+      "منطاد",
+      "منطاد الهواء الساخن"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       3,
+       3,
+       6
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     3,
+     6
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-063",
+   "subfamily": "fwd",
+   "prompt": "Медлительное животное из тропических лесов Южной Америки, которое почти всю жизнь висит вниз головой на ветках, — это",
+   "target": "ленивец",
+   "target_alts": [
+    "ленивца",
+    "ленивцы"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "sloth"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sloth"
+      ],
+      "zh": [
+       "树懒"
+      ]
+     },
+     "match": [
+      "sloth",
+      "树懒"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "ленивец",
+       "ленивца",
+       "ленивцы"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "ленивец",
+      "ленивца",
+      "ленивцы"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       2,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-070",
+   "subfamily": "fwd",
+   "prompt": "Mảnh giấy vuông nhỏ màu vàng có lớp keo ở mặt sau, dùng để viết vài dòng nhắc việc rồi dán lên màn hình máy tính, được gọi là",
+   "target": "giấy nhớ",
+   "target_alts": [
+    "giấy ghi chú",
+    "giấy dán ghi chú"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "sticky note"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sticky note"
+      ],
+      "zh": [
+       "便利贴"
+      ]
+     },
+     "match": [
+      "sticky note",
+      "便利贴"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "giấy nhớ",
+       "giấy ghi chú",
+       "giấy dán ghi chú"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "giấy nhớ",
+      "giấy ghi chú",
+      "giấy dán ghi chú"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-075",
+   "subfamily": "fwd",
+   "prompt": "Το ψηλό ροζ πουλί με τα μακριά λεπτά πόδια, που στέκεται συχνά στο ένα πόδι μέσα σε ρηχές λίμνες, λέγεται",
+   "target": "φλαμίνγκο",
+   "target_alts": [
+    "φλαμίγκο",
+    "φοινικόπτερος"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "el",
+   "intermediates": [
+    "flamingo"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "flamingo"
+      ],
+      "zh": [
+       "火烈鸟"
+      ]
+     },
+     "match": [
+      "flamingo",
+      "火烈鸟"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Greek"
+      ],
+      "zh": [
+       "希腊语"
+      ],
+      "el": [
+       "φλαμίνγκο",
+       "φλαμίγκο",
+       "φοινικόπτερος"
+      ]
+     },
+     "match": [
+      "Greek",
+      "希腊语",
+      "φλαμίνγκο",
+      "φλαμίγκο",
+      "φοινικόπτερος"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "el": [
+       6,
+       5,
+       6
+      ]
+     }
+    },
+    "target": 6,
+    "target_alts": [
+     5,
+     6
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-041",
+   "subfamily": "fwd",
+   "prompt": "Mainan berbentuk huruf Y dengan karet di kedua ujungnya yang dipakai anak-anak untuk melontarkan batu kecil disebut",
+   "target": "ketapel",
+   "target_alts": [
+    "katapel",
+    "plintengan"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "slingshot"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "slingshot"
+      ],
+      "zh": [
+       "弹弓"
+      ]
+     },
+     "match": [
+      "slingshot",
+      "弹弓"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "ketapel",
+       "katapel",
+       "plintengan"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "ketapel",
+      "katapel",
+      "plintengan"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       2,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     2,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-124",
+   "subfamily": "fwd",
+   "prompt": "Denize ya da havuza girerken giyilen, ıslanmaya uygun giysinin adı",
+   "target": "mayo",
+   "target_alts": [
+    "mayoyu",
+    "mayolar"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "tr",
+   "intermediates": [
+    "swimsuit"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "swimsuit",
+       "bathing suit"
+      ],
+      "zh": [
+       "泳衣"
+      ]
+     },
+     "match": [
+      "swimsuit",
+      "bathing suit",
+      "泳衣"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Turkish"
+      ],
+      "zh": [
+       "土耳其语"
+      ],
+      "tr": [
+       "mayo",
+       "mayoyu",
+       "mayolar"
+      ]
+     },
+     "match": [
+      "Turkish",
+      "土耳其语",
+      "mayo",
+      "mayoyu",
+      "mayolar"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "tr": [
+       1,
+       3,
+       2
+      ]
+     }
+    },
+    "target": 1,
+    "target_alts": [
+     3,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-149",
+   "subfamily": "fwd",
+   "prompt": "Alat mewarnai berbentuk batang kecil dari lilin berwarna-warni yang biasa dipakai anak TK untuk menggambar disebut",
+   "target": "krayon",
+   "target_alts": [
+    "krayon lilin",
+    "krayon warna"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "crayon"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "crayon",
+       "crayons"
+      ],
+      "zh": [
+       "蜡笔"
+      ]
+     },
+     "match": [
+      "crayon",
+      "crayons",
+      "蜡笔"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "krayon",
+       "krayon lilin",
+       "krayon warna"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "krayon",
+      "krayon lilin",
+      "krayon warna"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       5,
+       4
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     5,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-098",
+   "subfamily": "fwd",
+   "prompt": "건조한 겨울철에 방 안에 수증기를 뿜어 공기를 촉촉하게 만들어 주는 가전제품은",
+   "target": "가습기",
+   "target_alts": [
+    "가습기를",
+    "가습기가"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ko",
+   "intermediates": [
+    "humidifier"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "humidifier"
+      ],
+      "zh": [
+       "加湿器"
+      ]
+     },
+     "match": [
+      "humidifier",
+      "加湿器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Korean"
+      ],
+      "zh": [
+       "韩语",
+       "韩国语"
+      ],
+      "ko": [
+       "가습기",
+       "가습기를",
+       "가습기가"
+      ]
+     },
+     "match": [
+      "Korean",
+      "韩语",
+      "韩国语",
+      "가습기",
+      "가습기를",
+      "가습기가"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1,
+       2
+      ],
+      "ko": [
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-109",
+   "subfamily": "fwd",
+   "prompt": "Жёлто-чёрное насекомое в полоску, похожее на пчелу, но не дающее мёда, которое больно жалит и слетается на сладкое варенье, называется",
+   "target": "оса",
+   "target_alts": [
+    "осой",
+    "осы"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "wasp"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "wasp"
+      ],
+      "zh": [
+       "黄蜂"
+      ]
+     },
+     "match": [
+      "wasp",
+      "黄蜂"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "оса",
+       "осой",
+       "осы"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "оса",
+      "осой",
+      "осы"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       1,
+       2,
+       2
+      ]
+     }
+    },
+    "target": 1,
+    "target_alts": [
+     2,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-031",
+   "subfamily": "fwd",
+   "prompt": "A tengerfenéken élő, gömb alakú, hosszú tüskékkel borított tüskésbőrű állat a",
+   "target": "tengeri sün",
+   "target_alts": [
+    "tengeri süni",
+    "tengerisün"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "sea urchin"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sea urchin"
+      ],
+      "zh": [
+       "海胆"
+      ]
+     },
+     "match": [
+      "sea urchin",
+      "海胆"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "tengeri sün",
+       "tengeri süni",
+       "tengerisün"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "tengeri sün",
+      "tengeri süni",
+      "tengerisün"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       4
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       5,
+       5,
+       4
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     5,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-135",
+   "subfamily": "fwd",
+   "prompt": "Kiểu tóc mà các bạn gái gom hết tóc lại rồi buộc cao phía sau gáy bằng dây chun, để phần tóc thả lủng lẳng, gọi là tóc",
+   "target": "đuôi ngựa",
+   "target_alts": [
+    "tóc đuôi ngựa",
+    "kiểu đuôi ngựa"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "ponytail"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "ponytail"
+      ],
+      "zh": [
+       "马尾辫"
+      ]
+     },
+     "match": [
+      "ponytail",
+      "马尾辫"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "đuôi ngựa",
+       "tóc đuôi ngựa",
+       "kiểu đuôi ngựa"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "đuôi ngựa",
+      "tóc đuôi ngựa",
+      "kiểu đuôi ngựa"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-079",
+   "subfamily": "fwd",
+   "prompt": "Η συσκευή με το εκκρεμές που χτυπά σταθερά το ρυθμό, ώστε ο μαθητής του πιάνου να παίζει στο σωστό τέμπο, λέγεται",
+   "target": "μετρονόμος",
+   "target_alts": [
+    "μετρονόμου",
+    "μετρονόμοι"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "el",
+   "intermediates": [
+    "metronome"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "metronome"
+      ],
+      "zh": [
+       "节拍器"
+      ]
+     },
+     "match": [
+      "metronome",
+      "节拍器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Greek"
+      ],
+      "zh": [
+       "希腊语"
+      ],
+      "el": [
+       "μετρονόμος",
+       "μετρονόμου",
+       "μετρονόμοι"
+      ]
+     },
+     "match": [
+      "Greek",
+      "希腊语",
+      "μετρονόμος",
+      "μετρονόμου",
+      "μετρονόμοι"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "el": [
+       4,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     4,
+     5
+    ]
+   },
+   "consistency": 0.8
+  },
+  {
+   "name": "dev-mlmt-174",
+   "subfamily": "fwd",
+   "prompt": "Korzenne ciasto z miodem, imbirem i cynamonem, z którego słynie Toruń, to",
+   "target": "piernik",
+   "target_alts": [
+    "pierniki",
+    "toruński piernik"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "gingerbread"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "gingerbread"
+      ],
+      "zh": [
+       "姜饼"
+      ]
+     },
+     "match": [
+      "gingerbread",
+      "姜饼"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "piernik",
+       "pierniki",
+       "toruński piernik"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "piernik",
+      "pierniki",
+      "toruński piernik"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       3,
+       3,
+       6
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     3,
+     6
+    ]
+   },
+   "consistency": 0.9
+  },
+  {
+   "name": "dev-mlmt-184",
+   "subfamily": "fwd",
+   "prompt": "Το δροσερό καλοκαιρινό ρόφημα που φτιάχνεται από στυμμένο χυμό λεμονιού, κρύο νερό και ζάχαρη λέγεται",
+   "target": "λεμονάδα",
+   "target_alts": [
+    "λεμονάδες",
+    "η λεμονάδα"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "el",
+   "intermediates": [
+    "lemonade"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "lemonade"
+      ],
+      "zh": [
+       "柠檬水"
+      ]
+     },
+     "match": [
+      "lemonade",
+      "柠檬水"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Greek"
+      ],
+      "zh": [
+       "希腊语"
+      ],
+      "el": [
+       "λεμονάδα",
+       "λεμονάδες",
+       "η λεμονάδα"
+      ]
+     },
+     "match": [
+      "Greek",
+      "希腊语",
+      "λεμονάδα",
+      "λεμονάδες",
+      "η λεμονάδα"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "el": [
+       4,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     4,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-074",
+   "subfamily": "fwd",
+   "prompt": "Sau khi bị va đập mạnh, trên da xuất hiện một mảng màu xanh tím do máu tụ lại bên dưới, được gọi là",
+   "target": "vết bầm",
+   "target_alts": [
+    "vết bầm tím",
+    "bầm tím"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "bruise"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "bruise"
+      ],
+      "zh": [
+       "淤青"
+      ]
+     },
+     "match": [
+      "bruise",
+      "淤青"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "vết bầm",
+       "vết bầm tím",
+       "bầm tím"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "vết bầm",
+      "vết bầm tím",
+      "bầm tím"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       3,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-057",
+   "subfamily": "fwd",
+   "prompt": "Прочная лента в автомобиле, которую водитель пристёгивает перед поездкой, чтобы не удариться при аварии, называется",
+   "target": "ремень безопасности",
+   "target_alts": [
+    "ремня безопасности",
+    "ремнём безопасности"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "seat belt"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "seat belt",
+       "seatbelt"
+      ],
+      "zh": [
+       "汽车安全带"
+      ]
+     },
+     "match": [
+      "seat belt",
+      "seatbelt",
+      "汽车安全带"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "ремень безопасности",
+       "ремня безопасности",
+       "ремнём безопасности"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "ремень безопасности",
+      "ремня безопасности",
+      "ремнём безопасности"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 0.8
+  },
+  {
+   "name": "dev-mlmt-111",
+   "subfamily": "fwd",
+   "prompt": "Тихая нежная песня, которую мама поёт ребёнку у кроватки, чтобы он заснул, например «Баю-баюшки-баю», называется",
+   "target": "колыбельная",
+   "target_alts": [
+    "колыбельной",
+    "колыбельная песня"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "lullaby"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "lullaby"
+      ],
+      "zh": [
+       "摇篮曲"
+      ]
+     },
+     "match": [
+      "lullaby",
+      "摇篮曲"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "колыбельная",
+       "колыбельной",
+       "колыбельная песня"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "колыбельная",
+      "колыбельной",
+      "колыбельная песня"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       4,
+       4,
+       6
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     4,
+     6
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-067",
+   "subfamily": "fwd",
+   "prompt": "Đồ vật bằng sành hình một con vật có khe nhỏ trên lưng để trẻ em bỏ tiền tiết kiệm vào được gọi là",
+   "target": "heo đất",
+   "target_alts": [
+    "lợn đất",
+    "con heo đất"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "piggy bank"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "piggy bank"
+      ],
+      "zh": [
+       "存钱罐",
+       "扑满"
+      ]
+     },
+     "match": [
+      "piggy bank",
+      "存钱罐",
+      "扑满"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "heo đất",
+       "lợn đất",
+       "con heo đất"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "heo đất",
+      "lợn đất",
+      "con heo đất"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       3,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     2,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-141",
+   "subfamily": "fwd",
+   "prompt": "Permainan anak-anak di mana satu anak menutup mata dan berhitung, sementara teman-temannya bersembunyi lalu harus ia cari, disebut",
+   "target": "petak umpet",
+   "target_alts": [
+    "main petak umpet",
+    "petak-umpet"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "hide and seek"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hide and seek"
+      ],
+      "zh": [
+       "捉迷藏"
+      ]
+     },
+     "match": [
+      "hide and seek",
+      "捉迷藏"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "petak umpet",
+       "main petak umpet",
+       "petak-umpet"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "petak umpet",
+      "main petak umpet",
+      "petak-umpet"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       4,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     5,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-087",
+   "subfamily": "fwd",
+   "prompt": "Bebeğin uyuması için sallanabilen küçük ahşap yatağın adı",
+   "target": "beşik",
+   "target_alts": [
+    "beşiği",
+    "beşikte"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "tr",
+   "intermediates": [
+    "cradle"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "cradle"
+      ],
+      "zh": [
+       "婴儿摇篮"
+      ]
+     },
+     "match": [
+      "cradle",
+      "婴儿摇篮"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Turkish"
+      ],
+      "zh": [
+       "土耳其语"
+      ],
+      "tr": [
+       "beşik",
+       "beşiği",
+       "beşikte"
+      ]
+     },
+     "match": [
+      "Turkish",
+      "土耳其语",
+      "beşik",
+      "beşiği",
+      "beşikte"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "tr": [
+       2,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 0.8
+  },
+  {
+   "name": "dev-mlmt-103",
+   "subfamily": "fwd",
+   "prompt": "Мелкие белые чешуйки отмершей кожи головы, которые сыплются на плечи и с которыми борются специальным шампунем, называются",
+   "target": "перхоть",
+   "target_alts": [
+    "перхотью",
+    "перхоти"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "dandruff"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "dandruff"
+      ],
+      "zh": [
+       "头皮屑"
+      ]
+     },
+     "match": [
+      "dandruff",
+      "头皮屑"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "перхоть",
+       "перхотью",
+       "перхоти"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "перхоть",
+      "перхотью",
+      "перхоти"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       3,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-039",
+   "subfamily": "fwd",
+   "prompt": "Alat dapur listrik yang dipakai untuk memasak beras hingga matang dan menjaganya tetap hangat disebut",
+   "target": "penanak nasi",
+   "target_alts": [
+    "penanak nasi listrik",
+    "magic com"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "rice cooker"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "rice cooker"
+      ],
+      "zh": [
+       "电饭锅"
+      ]
+     },
+     "match": [
+      "rice cooker",
+      "电饭锅"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "penanak nasi",
+       "penanak nasi listrik",
+       "magic com"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "penanak nasi",
+      "penanak nasi listrik",
+      "magic com"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       4,
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-160",
+   "subfamily": "fwd",
+   "prompt": "המאפה המטוגן והעגול הממולא בריבה ומפוזר באבקת סוכר שאוכלים בחג החנוכה נקרא",
+   "target": "סופגנייה",
+   "target_alts": [
+    "סופגניה",
+    "סופגניות"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "doughnut"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "doughnut",
+       "donut",
+       "jelly doughnut"
+      ],
+      "zh": [
+       "甜甜圈"
+      ]
+     },
+     "match": [
+      "doughnut",
+      "donut",
+      "jelly doughnut",
+      "甜甜圈"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "סופגנייה",
+       "סופגניה",
+       "סופגניות"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "סופגנייה",
+      "סופגניה",
+      "סופגניות"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2,
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       5,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     4,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-114",
+   "subfamily": "fwd",
+   "prompt": "Bebeğin doğumdan sonra kesilen kordonundan karnının ortasında kalan küçük çukurun adı",
+   "target": "göbek",
+   "target_alts": [
+    "göbek deliği",
+    "göbeği"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "tr",
+   "intermediates": [
+    "belly button"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "belly button",
+       "navel"
+      ],
+      "zh": [
+       "肚脐"
+      ]
+     },
+     "match": [
+      "belly button",
+      "navel",
+      "肚脐"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Turkish"
+      ],
+      "zh": [
+       "土耳其语"
+      ],
+      "tr": [
+       "göbek",
+       "göbek deliği",
+       "göbeği"
+      ]
+     },
+     "match": [
+      "Turkish",
+      "土耳其语",
+      "göbek",
+      "göbek deliği",
+      "göbeği"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "tr": [
+       2,
+       5,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     5,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-001",
+   "subfamily": "fwd",
+   "prompt": "الأداة التي يضعها الطبيب في أذنيه ويضع طرفها المعدني على صدر المريض ليستمع إلى دقات قلبه وأنفاسه تُسمى",
+   "target": "السماعة الطبية",
+   "target_alts": [
+    "سماعة طبية",
+    "سماعة الطبيب"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "stethoscope"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "stethoscope"
+      ],
+      "zh": [
+       "听诊器"
+      ]
+     },
+     "match": [
+      "stethoscope",
+      "听诊器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "السماعة الطبية",
+       "سماعة طبية",
+       "سماعة الطبيب"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "السماعة الطبية",
+      "سماعة طبية",
+      "سماعة الطبيب"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-085",
+   "subfamily": "fwd",
+   "prompt": "Uyuyan kişinin boğazından çıkan ve yanındakini uyutmayan gürültülü sesin adı",
+   "target": "horultu",
+   "target_alts": [
+    "horlama",
+    "horlaması"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "tr",
+   "intermediates": [
+    "snoring"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "snoring"
+      ],
+      "zh": [
+       "打鼾",
+       "打呼噜"
+      ]
+     },
+     "match": [
+      "snoring",
+      "打鼾",
+      "打呼噜"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Turkish"
+      ],
+      "zh": [
+       "土耳其语"
+      ],
+      "tr": [
+       "horultu",
+       "horlama",
+       "horlaması"
+      ]
+     },
+     "match": [
+      "Turkish",
+      "土耳其语",
+      "horultu",
+      "horlama",
+      "horlaması"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "tr": [
+       3,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-021",
+   "subfamily": "fwd",
+   "prompt": "התכשיט העגול שהחתן עונד על אצבע הכלה מתחת לחופה נקרא",
+   "target": "טבעת נישואין",
+   "target_alts": [
+    "טבעת הנישואין",
+    "טבעת נישואים"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "wedding ring"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "wedding ring"
+      ],
+      "zh": [
+       "结婚戒指"
+      ]
+     },
+     "match": [
+      "wedding ring",
+      "结婚戒指"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "טבעת נישואין",
+       "טבעת הנישואין",
+       "טבעת נישואים"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "טבעת נישואין",
+      "טבעת הנישואין",
+      "טבעת נישואים"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       7,
+       8,
+       7
+      ]
+     }
+    },
+    "target": 7,
+    "target_alts": [
+     8,
+     7
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-061",
+   "subfamily": "fwd",
+   "prompt": "Состояние, когда после удара или от сухого воздуха из ноздрей вдруг начинает течь кровь, называется",
+   "target": "носовое кровотечение",
+   "target_alts": [
+    "кровотечение из носа",
+    "кровь из носа"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "nosebleed"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "nosebleed"
+      ],
+      "zh": [
+       "流鼻血"
+      ]
+     },
+     "match": [
+      "nosebleed",
+      "流鼻血"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "носовое кровотечение",
+       "кровотечение из носа",
+       "кровь из носа"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "носовое кровотечение",
+      "кровотечение из носа",
+      "кровь из носа"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       5,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-156",
+   "subfamily": "fwd",
+   "prompt": "الخيوط الرقيقة اللزجة التي ينسجها العنكبوت في زوايا البيت ليصطاد بها الذباب تُسمى",
+   "target": "بيت العنكبوت",
+   "target_alts": [
+    "شبكة العنكبوت",
+    "خيوط العنكبوت"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "spider web"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "spider web",
+       "cobweb"
+      ],
+      "zh": [
+       "蜘蛛网"
+      ]
+     },
+     "match": [
+      "spider web",
+      "cobweb",
+      "蜘蛛网"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "بيت العنكبوت",
+       "شبكة العنكبوت",
+       "خيوط العنكبوت"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "بيت العنكبوت",
+      "شبكة العنكبوت",
+      "خيوط العنكبوت"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       5,
+       5,
+       6
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     5,
+     6
+    ]
+   },
+   "consistency": 0.9
+  },
+  {
+   "name": "dev-mlmt-129",
+   "subfamily": "fwd",
+   "prompt": "Sau khi gội đầu, để tóc nhanh khô, người ta dùng một thiết bị điện thổi ra luồng gió nóng, gọi là",
+   "target": "máy sấy tóc",
+   "target_alts": [
+    "máy sấy",
+    "cái máy sấy tóc"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "hair dryer"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hair dryer",
+       "hairdryer"
+      ],
+      "zh": [
+       "吹风机"
+      ]
+     },
+     "match": [
+      "hair dryer",
+      "hairdryer",
+      "吹风机"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "máy sấy tóc",
+       "máy sấy",
+       "cái máy sấy tóc"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "máy sấy tóc",
+      "máy sấy",
+      "cái máy sấy tóc"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       3,
+       2,
+       4
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-107",
+   "subfamily": "fwd",
+   "prompt": "Медицинская работница в родильном доме, которая помогает женщине при родах и принимает новорождённого, называется",
+   "target": "акушерка",
+   "target_alts": [
+    "акушеркой",
+    "акушер"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "midwife"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "midwife"
+      ],
+      "zh": [
+       "助产士"
+      ]
+     },
+     "match": [
+      "midwife",
+      "助产士"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "акушерка",
+       "акушеркой",
+       "акушер"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "акушерка",
+      "акушеркой",
+      "акушер"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       3,
+       3,
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     3,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-054",
+   "subfamily": "fwd",
+   "prompt": "Wielki płetwonogi ssak z Arktyki z dwoma długimi kłami i sztywnymi wąsami, to",
+   "target": "mors",
+   "target_alts": [
+    "morsa",
+    "morsy"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "walrus"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "walrus"
+      ],
+      "zh": [
+       "海象"
+      ]
+     },
+     "match": [
+      "walrus",
+      "海象"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "mors",
+       "morsa",
+       "morsy"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "mors",
+      "morsa",
+      "morsy"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       1,
+       2,
+       2
+      ]
+     }
+    },
+    "target": 1,
+    "target_alts": [
+     2,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-066",
+   "subfamily": "fwd",
+   "prompt": "Loài sâu ăn lá dâu rồi nhả tơ kết thành kén để người ta dệt lụa được gọi là",
+   "target": "con tằm",
+   "target_alts": [
+    "tằm",
+    "tằm dâu"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "silkworm"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "silkworm"
+      ],
+      "zh": [
+       "家蚕",
+       "蚕宝宝"
+      ]
+     },
+     "match": [
+      "silkworm",
+      "家蚕",
+      "蚕宝宝"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "con tằm",
+       "tằm",
+       "tằm dâu"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "con tằm",
+      "tằm",
+      "tằm dâu"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       3,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-002",
+   "subfamily": "fwd",
+   "prompt": "أكبر طائر على وجه الأرض، لا يستطيع الطيران لكنه يجري بسرعة كبيرة في الصحراء ويضع بيضًا ضخمًا، يُسمى",
+   "target": "النعامة",
+   "target_alts": [
+    "نعامة",
+    "النعام"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "ostrich"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "ostrich"
+      ],
+      "zh": [
+       "鸵鸟"
+      ]
+     },
+     "match": [
+      "ostrich",
+      "鸵鸟"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "النعامة",
+       "نعامة",
+       "النعام"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "النعامة",
+      "نعامة",
+      "النعام"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       3,
+       2,
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-193",
+   "subfamily": "fwd",
+   "prompt": "잉크가 든 가는 대롱 끝에 작은 쇠구슬이 달려 있어 굴러가며 글씨가 써지는 필기구는",
+   "target": "볼펜",
+   "target_alts": [
+    "볼펜을",
+    "볼펜으로"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ko",
+   "intermediates": [
+    "ballpoint pen"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "ballpoint pen",
+       "ballpoint"
+      ],
+      "zh": [
+       "圆珠笔"
+      ]
+     },
+     "match": [
+      "ballpoint pen",
+      "ballpoint",
+      "圆珠笔"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Korean"
+      ],
+      "zh": [
+       "韩语",
+       "韩国语"
+      ],
+      "ko": [
+       "볼펜",
+       "볼펜을",
+       "볼펜으로"
+      ]
+     },
+     "match": [
+      "Korean",
+      "韩语",
+      "韩国语",
+      "볼펜",
+      "볼펜을",
+      "볼펜으로"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       2
+      ],
+      "zh": [
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1,
+       2
+      ],
+      "ko": [
+       2,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-094",
+   "subfamily": "fwd",
+   "prompt": "Lasikupu, jonka sisällä ohut volframilanka hehkuu sähkövirran kulkiessa ja antaa valoa, on nimeltään",
+   "target": "hehkulamppu",
+   "target_alts": [
+    "hehkulampun",
+    "hehkulamppua"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "light bulb"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "light bulb",
+       "lightbulb"
+      ],
+      "zh": [
+       "电灯泡"
+      ]
+     },
+     "match": [
+      "light bulb",
+      "lightbulb",
+      "电灯泡"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "hehkulamppu",
+       "hehkulampun",
+       "hehkulamppua"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "hehkulamppu",
+      "hehkulampun",
+      "hehkulamppua"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       5,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     5,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-147",
+   "subfamily": "fwd",
+   "prompt": "Telur yang dipecahkan langsung ke wajan tanpa dikocok sehingga kuningnya tetap bulat utuh di tengah disebut telur",
+   "target": "mata sapi",
+   "target_alts": [
+    "ceplok",
+    "telur mata sapi"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "fried egg"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "fried egg"
+      ],
+      "zh": [
+       "煎蛋"
+      ]
+     },
+     "match": [
+      "fried egg",
+      "煎蛋"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "mata sapi",
+       "ceplok",
+       "telur mata sapi"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "mata sapi",
+      "ceplok",
+      "telur mata sapi"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       2,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     2,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-153",
+   "subfamily": "fwd",
+   "prompt": "الشجرة الطويلة ذات الجذع الرفيع والسعف في أعلاها، التي تنمو في الواحات ويُجنى منها التمر، تُسمى",
+   "target": "النخلة",
+   "target_alts": [
+    "نخلة",
+    "النخيل"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "date palm"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "date palm"
+      ],
+      "zh": [
+       "椰枣树"
+      ]
+     },
+     "match": [
+      "date palm",
+      "椰枣树"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "النخلة",
+       "نخلة",
+       "النخيل"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "النخلة",
+      "نخلة",
+      "النخيل"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       3,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2,
+     3
+    ]
+   },
+   "consistency": 0.8
+  },
+  {
+   "name": "dev-mlmt-058",
+   "subfamily": "fwd",
+   "prompt": "Сосуд с двойными стенками, в котором чай в походе долго остаётся горячим, — это",
+   "target": "термос",
+   "target_alts": [
+    "термоса",
+    "термосе"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "thermos"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "thermos",
+       "vacuum flask"
+      ],
+      "zh": [
+       "保温瓶",
+       "暖水瓶"
+      ]
+     },
+     "match": [
+      "thermos",
+      "vacuum flask",
+      "保温瓶",
+      "暖水瓶"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "термос",
+       "термоса",
+       "термосе"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "термос",
+      "термоса",
+      "термосе"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       2,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-198",
+   "subfamily": "fwd",
+   "prompt": "Mtu ambaye kila siku huenda baharini kwa mtumbwi na nyavu kuvua samaki ili kujipatia riziki anaitwa",
+   "target": "mvuvi",
+   "target_alts": [
+    "wavuvi",
+    "mvuvi wa samaki"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "sw",
+   "intermediates": [
+    "fisherman"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "fisherman"
+      ],
+      "zh": [
+       "渔夫"
+      ]
+     },
+     "match": [
+      "fisherman",
+      "渔夫"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Swahili"
+      ],
+      "zh": [
+       "斯瓦希里语"
+      ],
+      "sw": [
+       "mvuvi",
+       "wavuvi",
+       "mvuvi wa samaki"
+      ]
+     },
+     "match": [
+      "Swahili",
+      "斯瓦希里语",
+      "mvuvi",
+      "wavuvi",
+      "mvuvi wa samaki"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       3
+      ],
+      "zh": [
+       5
+      ],
+      "sw": [
+       2,
+       2,
+       5
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     2,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-119",
+   "subfamily": "fwd",
+   "prompt": "Havuç ya da kaşar peynirini ince ince parçalamak için üzerinde keskin delikler bulunan mutfak aletinin adı",
+   "target": "rende",
+   "target_alts": [
+    "rendeyi",
+    "rendeler"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "tr",
+   "intermediates": [
+    "grater"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "grater"
+      ],
+      "zh": [
+       "擦菜板"
+      ]
+     },
+     "match": [
+      "grater",
+      "擦菜板"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Turkish"
+      ],
+      "zh": [
+       "土耳其语"
+      ],
+      "tr": [
+       "rende",
+       "rendeyi",
+       "rendeler"
+      ]
+     },
+     "match": [
+      "Turkish",
+      "土耳其语",
+      "rende",
+      "rendeyi",
+      "rendeler"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "tr": [
+       1,
+       3,
+       2
+      ]
+     }
+    },
+    "target": 1,
+    "target_alts": [
+     3,
+     2
+    ]
+   },
+   "consistency": 0.9
+  },
+  {
+   "name": "dev-mlmt-071",
+   "subfamily": "fwd",
+   "prompt": "Chiếc máy cũ có bàn phím, mỗi lần gõ phím thì một cần kim loại đập lên dải mực để in ký tự xuống giấy, được gọi là",
+   "target": "máy đánh chữ",
+   "target_alts": [
+    "máy chữ",
+    "cái máy đánh chữ"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "typewriter"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "typewriter"
+      ],
+      "zh": [
+       "打字机"
+      ]
+     },
+     "match": [
+      "typewriter",
+      "打字机"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "máy đánh chữ",
+       "máy chữ",
+       "cái máy đánh chữ"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "máy đánh chữ",
+      "máy chữ",
+      "cái máy đánh chữ"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       3,
+       2,
+       4
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mlmt-062",
+   "subfamily": "fwd",
+   "prompt": "Трубка с зеркалами и цветными стёклышками, в которой при повороте складываются всё новые узоры, — это",
+   "target": "калейдоскоп",
+   "target_alts": [
+    "калейдоскопа",
+    "калейдоскопом"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "kaleidoscope"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "kaleidoscope"
+      ],
+      "zh": [
+       "万花筒"
+      ]
+     },
+     "match": [
+      "kaleidoscope",
+      "万花筒"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "калейдоскоп",
+       "калейдоскопа",
+       "калейдоскопом"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "калейдоскоп",
+      "калейдоскопа",
+      "калейдоскопом"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       6,
+       6,
+       6
+      ]
+     }
+    },
+    "target": 6,
+    "target_alts": [
+     6,
+     6
+    ]
+   },
+   "consistency": 0.9
+  },
+  {
+   "name": "dev-mlmt-105",
+   "subfamily": "fwd",
+   "prompt": "Вторая жена отца по отношению к его детям от первого брака, как у Золушки, называется",
+   "target": "мачеха",
+   "target_alts": [
+    "мачехой",
+    "мачехи"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "stepmother"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "stepmother"
+      ],
+      "zh": [
+       "继母"
+      ]
+     },
+     "match": [
+      "stepmother",
+      "继母"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "мачеха",
+       "мачехой",
+       "мачехи"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "мачеха",
+      "мачехой",
+      "мачехи"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       3,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     4
+    ]
+   },
+   "consistency": 1.0
+  }
+ ]
+}

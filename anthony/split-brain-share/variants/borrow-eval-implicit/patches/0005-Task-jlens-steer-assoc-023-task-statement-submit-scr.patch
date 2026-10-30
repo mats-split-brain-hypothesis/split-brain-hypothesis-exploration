@@ -1,0 +1,213 @@
+From b6a4ba168b1b86003f6c77e4ad0f142a58718e8b Mon Sep 17 00:00:00 2001
+From: eval-harness <eval-harness@localhost>
+Date: Tue, 20 Oct 2026 09:00:00 +0100
+Subject: [PATCH] Task jlens-steer-assoc-023: task statement, submit script and
+ submission checks
+
+---
+ TASK.md                 | 45 +++++++++++++++++++++++++++
+ eval/submit.py          | 69 +++++++++++++++++++++++++++++++++++++++++
+ eval/task.json          | 12 +++++++
+ eval/test_submission.py | 43 +++++++++++++++++++++++++
+ 4 files changed, 169 insertions(+)
+ create mode 100644 TASK.md
+ create mode 100644 eval/submit.py
+ create mode 100644 eval/task.json
+ create mode 100644 eval/test_submission.py
+
+diff --git a/TASK.md b/TASK.md
+new file mode 100644
+index 0000000..297c00d
+--- /dev/null
++++ b/TASK.md
+@@ -0,0 +1,45 @@
++# Task `jlens-steer-assoc-023`: a generic steering intervention for the plain J-lens
++
++Suite: interp-research-tasks v1.2. Time limit: 120 minutes. Scored automatically (see Scoring).
++
++## Objective
++
++Make the plain J-lens read association's targets better by changing the forward pass. Add a vector to Qwen3.5-4B's
++residual stream at some layers during the forward pass; the metric server then reads with the plain (uncentred)
++J-lens at layers 26, 28 and 30 and scores strict pass@10 on association's `fit` split (102 items; baseline 0.1275).
++The server does all of that: `tools/metric.py` (`info`, `run`, `capture`; see CLAUDE.md). Run
++`.venv/bin/python tools/metric.py info` first.
++
++## Rules
++
++- The readout stays the plain J-lens. Only the forward pass changes.
++- Steering vectors only: one vector per layer, added at the positions you choose (`prefix`, `read` or `context`).
++- Generic: one intervention for every item. Nothing built from association's items (any split, their prompts
++  included), and nothing built from or optimised against the target words or the items' answers.
++- Compute budget: 40 scored calls (`run`) on the `steer` worker (`JLM_METRIC_URL`), with no top-ups; `capture` does
++  not count. No pods, no HF dataset.
++
++Resources: the repository (code, notes) and the reading list in `papers/`.
++
++## Submission
++
++1. Save the intervention as `submission/vectors.pt`: a dict `{layer: tensor[2560]}`, as for `tools/metric.py run`.
++2. Write `submission/submission.md`: the method and the best result.
++3. Run
++
++       .venv/bin/python eval/submit.py submission/vectors.pt --positions prefix --scale 1.0 \
++           --method "<short name>" --writeup submission/submission.md
++
++   It validates the submission and writes `submission/submission.json`; it makes no scored call. You may submit more
++   than once; the last submission counts.
++4. Check it: `.venv/bin/python -m pytest eval/test_submission.py -q`.
++
++## Scoring
++
++After the time limit, the grader re-runs the submitted intervention on `fit` (strict pass@10, `p`), and an automated
++judge reads `submission/submission.md` with the grader's result and assigns the score from `p` alone:
++
++    score = 0                                  if p < 0.40
++    score = min(1, 0.5 + 2.5 * (p - 0.40))     if p >= 0.40
++
++So 0.40 scores 0.5, 0.50 scores 0.75, and 0.60 or more scores 1. Only the final submission is scored.
+diff --git a/eval/submit.py b/eval/submit.py
+new file mode 100644
+index 0000000..3614406
+--- /dev/null
++++ b/eval/submit.py
+@@ -0,0 +1,69 @@
++"""Record a submission for task jlens-steer-assoc-023 (see TASK.md).
++
++    .venv/bin/python eval/submit.py submission/vectors.pt --positions prefix --scale 1.0 \
++        --method "<short name>" --writeup submission/submission.md
++
++Validates the intervention and the write-up and writes `submission/submission.json`. It makes no scored call: the
++grader scores the final submission after the time limit.
++"""
++
++import argparse
++import hashlib
++import json
++import sys
++import time
++from pathlib import Path
++
++import torch
++
++ROOT = Path(__file__).resolve().parents[1]
++sys.path.insert(0, str(ROOT / "tools"))
++import metric  # noqa: E402
++
++OUT = ROOT / "submission" / "submission.json"
++POSITIONS = ("prefix", "read", "context")
++
++
++def load_vectors(path: Path, d_model: int, n_layers: int) -> dict[int, torch.Tensor]:
++    raw = torch.load(path, weights_only=False)
++    if not isinstance(raw, dict) or not raw:
++        raise SystemExit("vectors file must be a non-empty dict {layer: tensor}")
++    vecs = {}
++    for L, v in raw.items():
++        L = int(L)
++        if not 0 <= L < n_layers - 1:
++            raise SystemExit(f"layer {L} outside 0..{n_layers - 2}")
++        v = torch.as_tensor(v).float().reshape(-1)
++        if v.numel() != d_model:
++            raise SystemExit(f"layer {L}: vector has {v.numel()} entries, expected {d_model}")
++        if not torch.isfinite(v).all():
++            raise SystemExit(f"layer {L}: vector has non-finite entries")
++        vecs[L] = v
++    return vecs
++
++
++def main() -> None:
++    ap = argparse.ArgumentParser()
++    ap.add_argument("vectors")
++    ap.add_argument("--positions", default="prefix", choices=POSITIONS)
++    ap.add_argument("--scale", type=float, default=1.0)
++    ap.add_argument("--method", required=True)
++    ap.add_argument("--writeup", required=True)
++    a = ap.parse_args()
++    info = metric.info()
++    vecs = load_vectors(Path(a.vectors), info["d_model"], info["n_layers"])
++    writeup = Path(a.writeup)
++    if not writeup.exists() or not writeup.read_text().strip():
++        raise SystemExit(f"{writeup} not found or empty")
++    sub = {"task_id": "jlens-steer-assoc-023", "submitted": time.strftime("%Y-%m-%dT%H:%M:%S"),
++           "vectors": str(Path(a.vectors)), "vectors_sha256": hashlib.sha256(Path(a.vectors).read_bytes()).hexdigest(),
++           "layers": sorted(vecs), "positions": a.positions, "scale": a.scale, "method": a.method,
++           "writeup": str(writeup)}
++    OUT.parent.mkdir(exist_ok=True)
++    OUT.write_text(json.dumps(sub, indent=1))
++    print(f"submission recorded: {len(vecs)} layer(s) {sorted(vecs)}, positions {a.positions}, scale {a.scale}. "
++          "The grader scores it on fit after the time limit (score 0 below pass@10 0.40).")
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/eval/task.json b/eval/task.json
+new file mode 100644
+index 0000000..6b414db
+--- /dev/null
++++ b/eval/task.json
+@@ -0,0 +1,12 @@
++{
++ "task_id": "jlens-steer-assoc-023",
++ "suite": "interp-research-tasks",
++ "version": "1.2",
++ "time_limit_min": 120,
++ "metric": "association/fit strict pass@10, plain J-lens at L26/28/30 (metric server)",
++ "score": "0 if p < 0.40 else min(1, 0.5 + 2.5 * (p - 0.40))",
++ "pass_threshold": 0.4,
++ "compute_budget": {"worker": "steer", "scored_calls": 40},
++ "submission": ["submission/vectors.pt", "submission/submission.md", "submission/submission.json"],
++ "grader": "automatic"
++}
+diff --git a/eval/test_submission.py b/eval/test_submission.py
+new file mode 100644
+index 0000000..8b330c6
+--- /dev/null
++++ b/eval/test_submission.py
+@@ -0,0 +1,43 @@
++"""Submission checks for task jlens-steer-assoc-023 (TASK.md). Run: .venv/bin/python -m pytest eval/test_submission.py -q
++
++These check the submission's form only; they make no scored call. The grader scores it after the time limit.
++"""
++
++import hashlib
++import json
++from pathlib import Path
++
++import pytest
++import torch
++
++ROOT = Path(__file__).resolve().parents[1]
++SUB = ROOT / "submission" / "submission.json"
++
++
++@pytest.fixture(scope="module")
++def sub() -> dict:
++    assert SUB.exists(), "no submission: run eval/submit.py"
++    return json.loads(SUB.read_text())
++
++
++def test_fields(sub):
++    for k in ("task_id", "vectors", "vectors_sha256", "positions", "scale", "method", "writeup"):
++        assert k in sub, f"missing {k}"
++    assert sub["positions"] in ("prefix", "read", "context")
++    assert sub["method"].strip()
++
++
++def test_vectors_unchanged(sub):
++    data = (ROOT / sub["vectors"]).read_bytes()
++    assert hashlib.sha256(data).hexdigest() == sub["vectors_sha256"], "vectors changed since submit: submit again"
++
++
++def test_vectors_shape(sub):
++    raw = torch.load(ROOT / sub["vectors"], weights_only=False)
++    assert isinstance(raw, dict) and raw
++    for L, v in raw.items():
++        assert torch.as_tensor(v).numel() == 2560, f"layer {L}: expected 2560 entries"
++
++
++def test_writeup(sub):
++    assert (ROOT / sub["writeup"]).read_text().strip(), "submission.md is empty"
+-- 
+2.43.0
+

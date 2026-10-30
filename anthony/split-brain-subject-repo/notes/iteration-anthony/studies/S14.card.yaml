@@ -1,0 +1,155 @@
+id: S14
+title: Remove the template's reading directions
+owner: A (j-lens-mean-2e), night-2
+status: finalist
+question: >
+  Can the family mean's work be done by removing $h$'s component in the lens's reading directions of a fixed list of
+  template tokens, $g(h) = P_B h$ with $B = \mathrm{span}\{J^{\top} W_U[t] / \|J^{\top} W_U[t]\| : t \in T\}$, using no
+  reference cell and no family label?
+verdict: >
+  Yes, and it is the night's label-free finalist once a partial neighbour mean is added late. Removing the reading
+  directions of 64 template tokens (s14t64, no reference cells) matches fam and keeps the shared units a mean removes
+  (multilingual_mt language 0.92, multihop_mt bridge2). S14bL (a k-means cluster mean up to L40; above it, the template
+  projection of h minus half its 8 nearest other-carrier, other-language fit cells) reads val strict +0.060 cos / +0.062 rms
+  vs fam with the guardrail ok, judged multilingual_mt at fam's level, and +0.052 / +0.046 on a registered read of the
+  fresh val2 split. Its bench read is registered, not run.
+tiles:
+  - {label: "val strict, S14bL vs fam (cos / rms)", value: "+0.060 / +0.062", sub: "guardrail ok both; judged multilingual_mt = fam"}
+  - {label: "fresh val2 + val3 pooled (607 items), S14bL vs fam", value: "+0.039", sub: "[+0.018, +0.059]; val2 +0.052, val3 +0.023; supervised S20x +0.051"}
+  - {label: "bench strict (registered, one read), S14b / S14k", value: "+0.022 / +0.020", sub: "S14b guardrail ok; S14bL not read"}
+  - {label: "val Haiku multilingual_mt, s14t64", value: "0.453", sub: "fam 0.340, pco16 / knnx8 0.226; language unit 0.92"}
+formulas:
+  - latex: 'h - g(h) = (I - B B^{\top}) h, \quad B = \mathrm{orth}\{ J_l^{\top} W_U[t] / \|J_l^{\top} W_U[t]\| : t \in T_{1..k} \}'
+    note: "s14t<k>: T the template token list (chat specials, strings the decoded family means share, frequent chat tokens; never a target); for t in T the cos score becomes exactly 0."
+  - latex: 'h - g(h) = h - \mu_{\text{clu}(h)} \ (l \le 40), \qquad h - g(h) = (I - B B^{\top})(h - \alpha\, \mu_{\text{clu}(h)}) \ (l > 40)'
+    note: "S14b: alpha = 0.5 chosen on fit (alpha = 0 is S14k)."
+  - latex: 'g(h) = \mu_{\text{clu}(h)} \ (l \le 40), \qquad g(h) = B B^{\top} h \ (l > 40)'
+    note: "sched:40:kmx64+s14t64: the cell's k-means cluster mean over fit read cells (k = 64, no family label; S4) up to L40, the template subspace above; L chosen on fit. sched:40:fam+s14t64 uses the family mean early."
+diagram:
+  kind: template
+  caption: "B is spanned by the directions the lens reads the template tokens through (not the family's PCs), so it holds no category and no language. g(h) is h's shadow in B; the lens reads what is at right angles to it."
+split: val
+arms: ["sched:40:kmx64+s14:template:64:mean=knnxd8l:a=0.5@fit|cos", "sched:40:kmx64+s14:template:64:mean=knnxs8:a=0.5@fit|cos", "s14t64@fit|cos", "sched:40:kmx64+s14:template:64:mean=kmx64:a=0.5@fit|cos", "sched:40:kmx64+s14t64@fit|cos", "sched:40:fam+s14t64@fit|cos", "sched:40:pco16+s14t64@fit|cos", "s14:chatonly:128@fit|cos", "s14t128@fit|cos", "s14fam64@fit|cos", "s14t64@fit|rms"]
+controls: ["s14r64@fit|cos", "s14:randfreq0:64@fit|cos", "sched:40:s14t64+fam@fit|cos", "sched:40:kmxr64+s14t64@fit|cos", "sched:40:kmx64+s14:template:64:mean=kmxr64:a=0.5@fit|cos"]
+insights:
+  - {lead: "A subspace fixed by template tokens does the family mean's work", text: "s14t64 +0.095 over zero on fit (fam +0.092), val +0.089 (fam +0.080); random subspaces +0.00; the removed part decodes to the template strings (这句话, 什么意思, full-width punctuation)."}
+  - {lead: "It keeps the shared units a mean removes", text: "Judged on val: multilingual_mt language 0.92 (fam 0.79, pco16 0.60), concept 0.75; multihop_mt bridge2 0.44 (fam 0.00): T holds no category and no language, so it cannot subtract them."}
+  - {lead: "Its cost is the instruction's genre prior", text: "On association s14t64's top 10 turns from content to story openers at L52-60 ('Suddenly, She, whispered'); fam removes that family-shared prior, T does not."}
+  - {lead: "Both effects are late: the late centre decides the trade", text: "X early + s14t64 late lands at +0.015-0.023 on fit for X = fam, kmx64, knnx8, pco16; the predicted order (s14t64 early, fam late) only equals fam. On val the label-free kmx64 version is +0.032 and passes the guardrail (association -0.06 inside its interval)."}
+  - {lead: "Which tokens matters", text: "Decomposition of the gain over zero (fit): any tokens' reading directions +0.03 (quotation / apostrophe form), chat-frequent tokens +0.06, the lens's own chat readout +0.077, template strings +0.095; the vocabulary-wide top reading directions carry content (-0.04 at k = 128)."}
+  - {lead: "Half the cluster mean late is a dial between the two", text: "S14b: alpha 0 -> 1 trades the _mt units for association / UM; alpha 0.5 keeps both (val strict +0.043, judged _mt 0.462 = alpha 0's 0.461); random-membership clusters as the mean do not recover association."}
+  - {lead: "A quarter of the fit pool is enough", text: "S14n: kmx64 from 25 % of the fit groups (~16 items per family) reads val +0.035 / +0.043 / +0.048 over three draws (full pool +0.043), guardrail ok; at 10 % association goes first."}
+  - {lead: "A constant shift is half of it", text: "Pulling back an indicator of the same 64 tokens (S13t) reaches +0.048 over zero at best: the projection's per-cell adaptivity is the other half."}
+next: ["Run the registered S14bL bench read (strict + judged, ~$4): a user decision.", "The judged half of the S14k / S14b bench registration (~$4): a user decision.", "A fresh multi-token split to test S14bL's language fix (val2 is English).", "A late-layer genre prior without bench cells (S22: the neutral fills recover association but not the macro)."]
+explainer:
+  - heading: "The problem: at the read cell the plain lens reads the template"
+    text: >
+      Every bench prompt is a fill-in-the-blank item inside the chat template, and the cell we read is the last token
+      before the answer. At the late layers that state mostly encodes the situation, "an answer slot follows in a chat
+      Q&A", rather than the item. The plain J-lens reads exactly that: its top 10 fills with blanks (`____`), the Chinese
+      question frame "是什么意思" ("what does it mean"), "这句话" ("this sentence") and full-width punctuation, and the
+      target is pushed out. The family mean fixes this by subtracting what every item of the family shares, and that
+      includes the frame. S14 asks whether we can remove the frame directly, by naming it in token space, with no
+      reference cells and no family label. The examples below are real val cells (pick one): struck-through tokens are
+      in the template list $T$.
+    panel: s14_examples
+    wide: true
+  - heading: "What the lens reads: one direction per token"
+    text: >
+      The bench's cos readout scores token $t$ at layer $l$ by transporting $h$ to the last layer with the lens's
+      Jacobian $J_l$, reading it with the unembedding row $W_U[t]$, and dividing by that row's norm through the lens.
+      That is a dot product of $h$ with one fixed unit vector per token, its **reading direction** $r_t$.
+      The top 10 are the ten tokens whose reading directions $h$ points along most. Centring is linear, so a centre $g$
+      moves token $t$'s score by exactly $r_t^\top g$, its component along $r_t$.
+    equations:
+      - latex: 's_t(h) \;=\; \frac{(W_U J_l\, h)_t}{\lVert J_l^{\top} W_U[t] \rVert} \;=\; r_t^{\top} h, \qquad r_t \;=\; \frac{J_l^{\top} W_U[t]}{\lVert J_l^{\top} W_U[t] \rVert} \in \mathbb{R}^{5120}'
+        note: "The score is not divided by ‖h‖ (that would not change any rank), so it is exactly the length of h's shadow on r_t."
+      - latex: 's_t\big(h - g(h)\big) \;=\; r_t^{\top} h \;-\; r_t^{\top} g(h)'
+        note: "To push a token down, g needs a component along that token's reading direction; nothing else matters for its score."
+  - heading: "Choosing the template tokens T"
+    text: |
+      $T$ is a fixed, ordered list of 197 tokens (`data/template_tokens/template.json`, built once by
+      `experiments/build_priors.py --template-tokens`), ordered so that "the first $k$" is meaningful:
+
+      1. the chat template's own special tokens (`<|im_start|>`, `<|im_end|>`, `<think>` ...);
+      2. strings that the decoded **means** of the earlier reference arms (fam, tok, kmx64, knnx8, pco16, u1rel) share at
+         layers ≥ 36, ordered by how many families show them (at least 3): the blanks, "是什么意思", "？", "……";
+      3. the most frequent tokens of a chat corpus (spaces, newlines, "the", "a", ",");
+      4. a short hand list of continuation tokens.
+
+      Every token that is an accepted target of a fit or val item is removed, so $T$ never contains an answer.
+      $k = 64$ was chosen on fit: $k = 16$ gains less, and from $k = 128$ the extra directions start to cover content. One caveat:
+      step 2 reads decoded means from both fit and val analyses (means only, never targets). A list from the chat
+      corpus alone (`chatonly`, no bench data) gets +0.061 over zero on fit against the template list's +0.095.
+    panel: s14_tokens
+  - heading: "From tokens to a subspace B"
+    text: >
+      Each token in $T_{1..64}$ gives one reading direction per layer. Stack them as the columns of a 5120 × 64 matrix
+      and orthonormalise it with an SVD: the result $B_l$ has 64 orthonormal columns spanning exactly the same subspace
+      (no direction is dropped at any layer), and $P_B = B_l B_l^\top$ is the orthogonal projection onto it. The basis
+      differs per layer because $J_l$ does, and it is computed once, offline (`out/lens/tbasis-*`), so reading needs
+      one 5120 × 64 matrix per layer and nothing else: no reference cell, no family label, no item.
+    equations:
+      - latex: 'R_l = \big[\, r_{t_1}\ r_{t_2}\ \cdots\ r_{t_{64}} \big] = U \Sigma V^{\top}, \qquad B_l = U_{[:,\ \sigma_i > 10^{-6}\sigma_1]}, \qquad B_l^{\top} B_l = I_{64}'
+        note: "SVD of the stacked reading directions; dependent columns would be dropped at 1e-6 of the largest singular value (none are)."
+      - latex: 'g(h) \;=\; P_B\, h \;=\; B_l B_l^{\top} h'
+        note: "s14t64: the centre is h's own shadow in B, so it changes from cell to cell."
+    figure: {kind: template_build}
+    wide: true
+  - heading: "What removing B does to the scores"
+    text: >
+      The read vector is $h - g(h) = (I - P_B)\,h$, the part of $h$ at right angles to $B$. Because every template
+      token's reading direction lies inside $B$, its score becomes **exactly zero**. A score of zero sits in the middle of
+      the vocabulary, so these tokens are not pushed to the bottom; they simply drop out of the top 10. Any other token
+      $u$ loses only the part of its score that runs through $B$: a content word whose direction is (nearly) at right
+      angles to $B$ keeps its score, and a token that reads partly like the template (other punctuation, ellipses) is
+      lowered in proportion to its overlap.
+    equations:
+      - latex: 't \in T:\quad s_t\big((I - P_B)h\big) = \big((I - P_B)\, r_t\big)^{\top} h = 0 \quad\text{since } P_B\, r_t = r_t'
+        note: "Exact, at every cell and layer: the template tokens are set to 0, not merely lowered."
+      - latex: 'u \notin T:\quad s_u\big((I - P_B)h\big) = s_u(h) \;-\; (B^{\top} r_u)^{\top} (B^{\top} h)'
+        note: "The loss is the product of how template-like u's direction is (B^T r_u) and how much template this cell holds (B^T h)."
+    figure: {kind: template_scores, caption: "A sketch of one cell (the association example's tokens): the template tokens fall to 0, a partly template-like token is lowered, the content tokens keep their scores, and the top-10 cutoff moves down to them. The geometry is the diagram under Method above."}
+  - heading: "Why removing a small slice changes the top 10"
+    text: >
+      At the read cell the template tokens are the top of the plain ranking. Setting them to zero frees 7 to 10 of the
+      ten slots in the examples above, and the content tokens that were just below the cutoff move in. Nothing about the
+      content has to rise: the target was already there, hidden behind the frame. This is also why a random 64-dimensional
+      subspace does nothing (+0.00): it takes the same amount of norm but sets no particular token to zero.
+  - heading: "How much of h, and of the family mean, lies in B"
+    text: >
+      $B$ is 64 of 5120 dimensions (1.25 %). It holds 15 to 22 % of a read cell's norm (2 to 5 % of its energy), against
+      about 11 % for a random 64-dimensional subspace, so s14t64 removes very little of $h$; its effect comes from
+      **which** directions it removes, not how much. The family mean lies in $B$ to a similar degree, rising late (13 %
+      at L20, 28 % at L60), and inside $B$ the cell's own template part points the same way as the mean's (cosine
+      0.71 to 0.83). So $P_B h$ is a per-cell estimate of the template part of fam's correction. The other 72 to 87 % of
+      the mean's norm is what fam removes beyond the template: the massive-activation coordinates (S18: most of the norm,
+      none of the gain) and what all of a family's items share, namely its category, its language and its genre.
+    panel: s14_norms
+  - heading: "What it keeps, and what it misses"
+    text: >
+      Because $T$ holds no category, language or answer word, the projection cannot subtract them; the family mean does.
+      That is where s14t64 wins. Judged on val, multilingual_mt's language unit is 0.92 (fam 0.79, pco16 0.60), and
+      multihop_mt's second bridge 0.44 (fam 0.00). It is also where it loses: on association the family shares the
+      instruction's genre (vivid adjectives, then story openers such as "Suddenly, She, whispered" at L52 to L60), which
+      fam removes and $T$ does not, and user_modeling's writing-about-a-person prompt is the same.
+
+      The controls separate the parts of the gain over zero on fit: removing any tokens' reading directions gives about
+      +0.03 (a common component), the chat corpus's frequent tokens +0.06, the lens's own readout of chat text +0.077,
+      and the template strings +0.095 (fam +0.092). A constant pulled back from the same 64 tokens (S13t) reaches +0.048,
+      so the projection's per-cell adaptivity is the other half.
+  - heading: "From s14t64 to the finalists: S14k, S14b, S14bL"
+    text: >
+      The finalists keep the template step and add back a small, label-free part of what the mean removes, only where
+      centring acts (L ≥ 40, S17). Up to L40 a k-means cluster mean of every family's fit cells is subtracted (no family
+      label; the early centre barely matters). Above L40, a partial mean $\alpha\, m(h)$ comes off before the template
+      projection. $\alpha$ is a dial: 0 keeps the _mt units, 1 recovers association's genre prior, and ½ (chosen on fit)
+      keeps both. The partial mean works better from $h$'s nearest neighbours than from its cluster, because the answer
+      frame is local to item types (S14f). The neighbours exclude cells that share $h$'s carrier sentence (else they leak
+      the answer, S16) and, in S14bL, cells in $h$'s own non-English language (else the language is centred away, as fam
+      does on multilingual_mt).
+    equations:
+      - latex: 'h - g(h) = \begin{cases} h - \mu_{\text{clu}(h)} & l \le 40 \\ (I - P_B)\big(h - \alpha\, m(h)\big) & l > 40 \end{cases}'
+        note: "S14k: α = 0. S14b: m = the cluster mean, α = ½. S14b-x: m = mean of the 8 nearest other-carrier fit cells. S14bL: also no same-language neighbours (language detected from the prompt text)."
+    figure: {kind: template_schedule}
+    wide: true

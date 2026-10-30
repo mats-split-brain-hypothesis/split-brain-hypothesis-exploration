@@ -1,0 +1,12 @@
+{
+ "run": "p19-r2-A53-glm52-tc",
+ "model": "claude-sonnet-5",
+ "effort": "high",
+ "input": 135162,
+ "cache_read": 0,
+ "cache_write": 0,
+ "output": 34218,
+ "cost_usd_list": 0.6125,
+ "ms": 373138,
+ "request_id": "msg_011CgSMs4n8Q8C9VmcDiVcqf"
+}

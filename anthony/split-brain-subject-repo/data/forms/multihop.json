@@ -1,0 +1,350 @@
+{
+ "meta": {
+  "model": "anthropic/claude-haiku-5.5",
+  "built": "2026-10-11",
+  "rule": "inflections; numbers: digit <-> English word",
+  "spend_usd": 0.0017,
+  "note": "unpinned model's draft, reviewed by hand; edit freely, a rebuild keeps existing keys",
+  "cleaned": "build_forms.py --clean (review rules in the module docstring)"
+ },
+ "forms": {
+  "11": [
+   "eleven"
+  ],
+  "12": [
+   "twelve"
+  ],
+  "2": [
+   "two"
+  ],
+  "3": [
+   "three"
+  ],
+  "4": [
+   "four"
+  ],
+  "5|five": [],
+  "6|six": [],
+  "7": [
+   "seven"
+  ],
+  "8": [
+   "eight"
+  ],
+  "9": [
+   "nine"
+  ],
+  "africa": [],
+  "aluminium|aluminum": [],
+  "ant": [
+   "ants"
+  ],
+  "antarctica": [],
+  "april": [],
+  "argentina": [],
+  "armenia": [],
+  "armstrong": [],
+  "august": [],
+  "australia": [],
+  "austria": [],
+  "autumn": [
+   "autumns"
+  ],
+  "azerbaijan": [],
+  "bach": [],
+  "bahamas": [],
+  "basketball": [],
+  "bee": [
+   "bees"
+  ],
+  "beet|beetroot": [
+   "beetroots",
+   "beets"
+  ],
+  "belgium": [],
+  "bell": [],
+  "bohr": [],
+  "bolivia": [],
+  "brain": [
+   "brains"
+  ],
+  "brazil": [],
+  "bread": [
+   "breads"
+  ],
+  "bulgaria": [],
+  "butter": [
+   "butters"
+  ],
+  "calcium": [
+   "calciums"
+  ],
+  "cambodia": [],
+  "camel": [
+   "camels"
+  ],
+  "canada": [],
+  "carbon": [
+   "carbons"
+  ],
+  "cheese": [
+   "cheeses"
+  ],
+  "chicago": [],
+  "chile": [],
+  "china": [],
+  "china|chinese": [],
+  "chromium": [],
+  "clay": [
+   "clays"
+  ],
+  "colombia": [],
+  "columbus": [],
+  "cook": [],
+  "cortes": [],
+  "cotton": [],
+  "cow": [
+   "cows"
+  ],
+  "croatia": [],
+  "cuba": [],
+  "dali|dalí": [],
+  "dante": [],
+  "darwin": [],
+  "day": [
+   "days"
+  ],
+  "december": [
+   "decembers"
+  ],
+  "deer": [],
+  "denmark": [],
+  "diamond": [
+   "diamonds"
+  ],
+  "dolphin": [
+   "dolphins"
+  ],
+  "down": [],
+  "drake": [],
+  "east": [],
+  "egypt": [],
+  "einstein": [],
+  "everest": [],
+  "february": [
+   "februarys"
+  ],
+  "finland": [],
+  "fleming": [],
+  "ford": [],
+  "france": [],
+  "franklin": [],
+  "frog": [
+   "frogs"
+  ],
+  "germany": [],
+  "ghana": [],
+  "glass": [
+   "glasses"
+  ],
+  "gold": [
+   "golds"
+  ],
+  "granite": [
+   "granites"
+  ],
+  "greece": [],
+  "guitar": [
+   "guitars"
+  ],
+  "heart": [
+   "hearts"
+  ],
+  "helium": [],
+  "high": [
+   "higher",
+   "highest"
+  ],
+  "hillary": [],
+  "holland|netherlands": [],
+  "homer": [],
+  "horse": [
+   "horses"
+  ],
+  "hungary": [],
+  "hydrogen": [],
+  "iceland": [],
+  "india": [],
+  "indonesia": [],
+  "ireland": [],
+  "iron": [
+   "irons"
+  ],
+  "italy": [],
+  "jamaica": [],
+  "january": [],
+  "japan": [],
+  "july": [
+   "julys"
+  ],
+  "june": [],
+  "kafka": [],
+  "kenya": [],
+  "kepler": [],
+  "kidney": [
+   "kidneys"
+  ],
+  "laos": [],
+  "leather": [
+   "leathers"
+  ],
+  "libya": [],
+  "lion": [],
+  "liver": [
+   "livers"
+  ],
+  "magnesium": [
+   "magnesiums"
+  ],
+  "malaysia": [],
+  "mali": [],
+  "malta": [],
+  "mandela": [],
+  "marble": [
+   "marbles"
+  ],
+  "march": [],
+  "mars": [],
+  "may": [],
+  "mexico": [],
+  "monday": [
+   "mondays"
+  ],
+  "monet": [],
+  "mongolia": [],
+  "morocco": [],
+  "myanmar": [],
+  "napoleon": [],
+  "neon": [],
+  "nepal": [],
+  "newton": [],
+  "nigeria": [],
+  "night": [
+   "nights"
+  ],
+  "nile": [],
+  "nitrogen": [],
+  "nobel": [],
+  "norway": [],
+  "november": [],
+  "octagon": [
+   "octagons"
+  ],
+  "october": [
+   "octobers"
+  ],
+  "olympus": [],
+  "owl": [
+   "owls"
+  ],
+  "oxygen": [
+   "oxygens"
+  ],
+  "peanut": [
+   "peanuts"
+  ],
+  "peru": [],
+  "picasso": [],
+  "plastic": [
+   "plastics"
+  ],
+  "platinum": [],
+  "plato": [],
+  "poe": [],
+  "poland": [],
+  "portugal": [],
+  "potassium": [],
+  "romania": [],
+  "rubber": [
+   "rubbers"
+  ],
+  "russia": [],
+  "rwanda": [],
+  "samoa": [],
+  "saturday": [],
+  "scotland": [],
+  "seattle": [],
+  "september": [],
+  "sheep": [],
+  "silk": [],
+  "south": [],
+  "spain": [],
+  "spider": [
+   "spiders"
+  ],
+  "spring": [
+   "springs"
+  ],
+  "sulfur|sulphur": [
+   "sulfurs",
+   "sulphurs"
+  ],
+  "summer": [
+   "summers"
+  ],
+  "sunday": [
+   "sundays"
+  ],
+  "sweden": [],
+  "switzerland": [],
+  "sydney": [],
+  "tanzania": [],
+  "tesla": [],
+  "thailand": [],
+  "three": [
+   "3"
+  ],
+  "thursday": [
+   "thursdays"
+  ],
+  "tiger": [
+   "tigers"
+  ],
+  "tin": [],
+  "titanium": [],
+  "tunisia": [],
+  "turkey": [],
+  "uganda": [],
+  "ukraine": [],
+  "uranium": [],
+  "vatican": [],
+  "venezuela": [],
+  "verdi": [],
+  "vietnam": [],
+  "violin": [
+   "violins"
+  ],
+  "volta": [],
+  "war": [
+   "wars"
+  ],
+  "watt": [],
+  "wax": [
+   "waxes"
+  ],
+  "wednesday": [
+   "wednesdays"
+  ],
+  "whale": [],
+  "wine": [
+   "wines"
+  ],
+  "winter": [
+   "winters"
+  ],
+  "wood": [],
+  "wool": [],
+  "wright": [],
+  "zinc": []
+ }
+}
