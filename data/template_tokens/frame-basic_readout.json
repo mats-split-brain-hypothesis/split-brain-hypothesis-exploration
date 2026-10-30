@@ -1,0 +1,80 @@
+{
+ "name": "frame-basic_readout",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 10,
+ "excluded_targets": 1577,
+ "share": 0.15,
+ "tokens": [
+  {
+   "id": 18561,
+   "text": " Nations",
+   "sources": [
+    "fam top-10 on 9 / 37 basic_readout fit items"
+   ]
+  },
+  {
+   "id": 53894,
+   "text": "(country",
+   "sources": [
+    "fam top-10 on 9 / 37 basic_readout fit items"
+   ]
+  },
+  {
+   "id": 123875,
+   "text": "åĲĽä¸»",
+   "sources": [
+    "fam top-10 on 9 / 37 basic_readout fit items"
+   ]
+  },
+  {
+   "id": 16185,
+   "text": " nations",
+   "sources": [
+    "fam top-10 on 8 / 37 basic_readout fit items"
+   ]
+  },
+  {
+   "id": 5656,
+   "text": " countries",
+   "sources": [
+    "fam top-10 on 7 / 37 basic_readout fit items"
+   ]
+  },
+  {
+   "id": 73296,
+   "text": "organisms",
+   "sources": [
+    "fam top-10 on 7 / 37 basic_readout fit items"
+   ]
+  },
+  {
+   "id": 51935,
+   "text": " Countries",
+   "sources": [
+    "fam top-10 on 7 / 37 basic_readout fit items"
+   ]
+  },
+  {
+   "id": 135022,
+   "text": "æĽ´æĹ©",
+   "sources": [
+    "fam top-10 on 7 / 37 basic_readout fit items"
+   ]
+  },
+  {
+   "id": 83526,
+   "text": "-State",
+   "sources": [
+    "fam top-10 on 6 / 37 basic_readout fit items"
+   ]
+  },
+  {
+   "id": 67935,
+   "text": " Honduras",
+   "sources": [
+    "fam top-10 on 6 / 37 basic_readout fit items"
+   ]
+  }
+ ]
+}

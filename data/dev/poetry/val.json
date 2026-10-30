@@ -1,0 +1,854 @@
+{
+ "family": "poetry",
+ "split": "val",
+ "source": "J++ lens-eval-poetry.json @ 93f02cd6c27db765abb127f20eff656bb5d27340, J++ split 'held' (umot/out/jpp/items.json)",
+ "read": "the newline token that ends line one of the couplet (the bench's line_one_newline)",
+ "bench_overlap": "34 of 65 prompts are WorkspaceBench poetry bench prompts: not held out from poetry/bench",
+ "items": [
+  {
+   "name": "couplet-stone-bone",
+   "prompt": "A rhyming couplet:\nThe ancient tomb was sealed with heavy stone,\nInside was nothing left but dust and ",
+   "intermediates": [
+    "bone"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-divine-wine",
+   "prompt": "A rhyming couplet:\nThe chapel glowed with light almost divine,\nThe priest raised up the consecrated ",
+   "intermediates": [
+    "wine"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-sleep-deep",
+   "prompt": "A rhyming couplet:\nShe drifted off into a dreamless sleep,\nHer breathing slow, her slumber long and ",
+   "intermediates": [
+    "deep"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-flight-night",
+   "prompt": "A rhyming couplet:\nThe owl spread wide its wings and took to flight,\nA silent hunter, swallowed by the ",
+   "intermediates": [
+    "night"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-true-through",
+   "prompt": "A rhyming couplet:\nThe arrow flew so straight, its aim was true,\nIt struck the target, passing cleanly ",
+   "intermediates": [
+    "through"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-divine-wine-to-sign",
+   "prompt": "A rhyming couplet:\nThe chapel glowed with light almost divine,\nThe priest raised up the consecrated ",
+   "intermediates": [
+    "wine"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-dust-trust",
+   "prompt": "A rhyming couplet:\nThe vow he made had long since turned to dust,\nAnd she would never give him back her ",
+   "intermediates": [
+    "trust"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-ground-sound",
+   "prompt": "A rhyming couplet:\nThe tree fell hard and shook the frozen ground,\nBut no one near had heard a single ",
+   "intermediates": [
+    "sound"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-bed-dead",
+   "prompt": "A rhyming couplet:\nShe found him cold and still upon the bed,\nAnd knew before she touched him he was ",
+   "intermediates": [
+    "dead"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-sea-free",
+   "prompt": "A rhyming couplet:\nThe dolphin leapt and shimmered in the sea,\nA creature never meant but to be ",
+   "intermediates": [
+    "free"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-moon-soon",
+   "prompt": "A rhyming couplet:\nThe clouds drew back and gave us up the moon,\nBut dawn would come and take her all too ",
+   "intermediates": [
+    "soon"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-art-heart",
+   "prompt": "A rhyming couplet:\nShe poured her every sorrow into art,\nAnd let the canvas hold her broken ",
+   "intermediates": [
+    "heart"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-rain-pain",
+   "prompt": "A rhyming couplet:\nShe pressed her palm against the window's rain,\nAs if the glass could wash away her ",
+   "intermediates": [
+    "pain"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-shore-more",
+   "prompt": "A rhyming couplet:\nShe gathered shells along the empty shore,\nAnd wished the tide would bring her something ",
+   "intermediates": [
+    "more"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-heart-apart",
+   "prompt": "A rhyming couplet:\nShe held the photo tight against her heart,\nAnd felt the years that kept them both ",
+   "intermediates": [
+    "apart"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-fall-wall",
+   "prompt": "A rhyming couplet:\nHe lost his grip and started down the fall,\nHis fingers scraping bloody down the ",
+   "intermediates": [
+    "wall"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-chase-face",
+   "prompt": "A rhyming couplet:\nThrough alleys dark she led him on the chase,\nBut turned at last and let him see her ",
+   "intermediates": [
+    "face"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-trap-map",
+   "prompt": "A rhyming couplet:\nHe should have known the treasure was a trap,\nThe moment that he'd trusted that old ",
+   "intermediates": [
+    "map"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-told-gold",
+   "prompt": "A rhyming couplet:\nOf all the stories ever to be told,\nThe oldest ones were never writ in ",
+   "intermediates": [
+    "gold"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-mind-find",
+   "prompt": "A rhyming couplet:\nShe searched the corridors of her own mind,\nFor something she was never meant to ",
+   "intermediates": [
+    "find"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-time-climb",
+   "prompt": "A rhyming couplet:\nHe watched the shadows mark the crawl of time,\nAnd knew the hill was still too steep to ",
+   "intermediates": [
+    "climb"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-war-door",
+   "prompt": "A rhyming couplet:\nHe'd given both his sons now to the war,\nAnd couldn't bear a third knock at his ",
+   "intermediates": [
+    "door"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-head-bed",
+   "prompt": "A rhyming couplet:\nThe fever burned and pounded in his head,\nHe hadn't strength to rise up from the ",
+   "intermediates": [
+    "bed"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-deep-keep",
+   "prompt": "A rhyming couplet:\nThe miners dug three hundred meters deep,\nFor something that the earth had meant to ",
+   "intermediates": [
+    "keep"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-cat-mat",
+   "prompt": "A rhyming couplet:\nShe tripped across the sleeping family cat,\nAnd swore revenge upon the doorway ",
+   "intermediates": [
+    "mat"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-cake-mistake",
+   "prompt": "A rhyming couplet:\nShe eyed the last surviving slice of cake,\nAnd knew that eating it would be a ",
+   "intermediates": [
+    "mistake"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-shoe-blue",
+   "prompt": "A rhyming couplet:\nShe searched the closet for the missing shoe,\nAnd found it hiding, painted oddly ",
+   "intermediates": [
+    "blue"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-foam-home",
+   "prompt": "A rhyming couplet:\nShe watched the tide reclaim the crumbling foam,\nAnd knew the sea would never be her ",
+   "intermediates": [
+    "home"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-clear-year",
+   "prompt": "A rhyming couplet:\nThe lake at dawn was glassy, still, and clear,\nAnd she would come to find it every ",
+   "intermediates": [
+    "year"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-star-far",
+   "prompt": "A rhyming couplet:\nHe traced the tail of one collapsing star,\nAnd wondered if she watched it from as ",
+   "intermediates": [
+    "far"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-bend-end",
+   "prompt": "A rhyming couplet:\nThe river curved and vanished round the bend,\nWhere all roads meet the same and certain ",
+   "intermediates": [
+    "end"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-bright-sight",
+   "prompt": "A rhyming couplet:\nThe flare went up, a burst of phosphor bright,\nAnd burned itself forever in her ",
+   "intermediates": [
+    "sight"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-white-write",
+   "prompt": "A rhyming couplet:\nThe page before her lay unmarked and white,\nAnd all she had were words she could not ",
+   "intermediates": [
+    "write"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-away-way",
+   "prompt": "A rhyming couplet:\nThe traveler had wandered far away,\nBut always knew the forest showed the ",
+   "intermediates": [
+    "way"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-chase-place",
+   "prompt": "A rhyming couplet:\nThe hounds set out upon the morning chase,\nBut found the fox had vanished from its ",
+   "intermediates": [
+    "place"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-pace-race",
+   "prompt": "A rhyming couplet:\nThe runner pushed to set a faster pace,\nDetermined that he would not lose the ",
+   "intermediates": [
+    "race"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-base-case",
+   "prompt": "A rhyming couplet:\nThe lawyer built her argument from base,\nAnd stone by stone constructed her whole ",
+   "intermediates": [
+    "case"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-blame-game",
+   "prompt": "A rhyming couplet:\nThey pointed fingers, passing round the blame,\nBut knew that they were playing the same ",
+   "intermediates": [
+    "game"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-frame-same",
+   "prompt": "A rhyming couplet:\nHe hung a second picture in a frame,\nBut found the two were utterly the ",
+   "intermediates": [
+    "same"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-scar-star",
+   "prompt": "A rhyming couplet:\nThe telescope revealed a distant scar,\nA wound of light that once had been a ",
+   "intermediates": [
+    "star"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-jar-car",
+   "prompt": "A rhyming couplet:\nThe engine sputtered with a sudden jar,\nShe pulled aside and stepped out of the ",
+   "intermediates": [
+    "car"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-sea-see",
+   "prompt": "A rhyming couplet:\nThe lighthouse beam swept out across the sea,\nA hundred miles of water it could ",
+   "intermediates": [
+    "see"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-lock-key",
+   "prompt": "A rhyming couplet:\nThe treasure chest was bound by iron lock,\nAnd nowhere could she find the golden ",
+   "intermediates": [
+    "key"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-crown-town",
+   "prompt": "A rhyming couplet:\nThe king rode through in velvet robe and crown,\nTo greet the people gathered in the ",
+   "intermediates": [
+    "town"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-gown-down",
+   "prompt": "A rhyming couplet:\nShe tripped upon the hem of her long gown,\nAnd, stumbling on the stairway, tumbled ",
+   "intermediates": [
+    "down"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-sold-told",
+   "prompt": "A rhyming couplet:\nThe merchant swore the goods could not be sold,\nA secret that he never should have ",
+   "intermediates": [
+    "told"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-regret-met",
+   "prompt": "A rhyming couplet:\nShe turned away and whispered her regret,\nFor wishing that the two had never ",
+   "intermediates": [
+    "met"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-hook-book",
+   "prompt": "A rhyming couplet:\nThe opening line had caught her like a hook,\nShe could not put aside the fascinating ",
+   "intermediates": [
+    "book"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-brook-look",
+   "prompt": "A rhyming couplet:\nHe paused beside the slowly winding brook,\nAnd cast across the water one last ",
+   "intermediates": [
+    "look"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-above-love",
+   "prompt": "A rhyming couplet:\nThe couple gazed at constellations above,\nAnd in the starlight, quietly spoke of ",
+   "intermediates": [
+    "love"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-heart-art",
+   "prompt": "A rhyming couplet:\nThe painter poured emotion from his heart,\nAnd made of every canvas, living ",
+   "intermediates": [
+    "art"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-apart-part",
+   "prompt": "A rhyming couplet:\nThe machinist pulled the engine all apart,\nThen labeled and examined every ",
+   "intermediates": [
+    "part"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-depart-start",
+   "prompt": "A rhyming couplet:\nThe runners gathered, ready to depart,\nAnd waited for the gunshot at the ",
+   "intermediates": [
+    "start"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-hall-call",
+   "prompt": "A rhyming couplet:\nHer voice rang out and echoed through the hall,\nBut no one there would answer to her ",
+   "intermediates": [
+    "call"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-tall-small",
+   "prompt": "A rhyming couplet:\nThe giant loomed above them, dark and tall,\nAnd made the bravest knight feel very ",
+   "intermediates": [
+    "small"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-hand-land",
+   "prompt": "A rhyming couplet:\nThe pilot gripped the lever in his hand,\nAnd brought the failing aircraft down to ",
+   "intermediates": [
+    "land"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-fun-won",
+   "prompt": "A rhyming couplet:\nThe children played their games and had their fun,\nBut no one cared to count which team had ",
+   "intermediates": [
+    "won"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-mistake-make",
+   "prompt": "A rhyming couplet:\nThe student learned from every old mistake,\nAnd vowed a better effort he would ",
+   "intermediates": [
+    "make"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-slow-low",
+   "prompt": "A rhyming couplet:\nThe submarine was sinking, smooth and slow,\nDescending through the darkness, deep and ",
+   "intermediates": [
+    "low"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-grow-show",
+   "prompt": "A rhyming couplet:\nThe actor practiced, letting talent grow,\nUntil the night arrived to start the ",
+   "intermediates": [
+    "show"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-below-know",
+   "prompt": "A rhyming couplet:\nThe scholars dug through layers far below,\nTo find the truth that only stones could ",
+   "intermediates": [
+    "know"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-dead-red",
+   "prompt": "A rhyming couplet:\nThe roses on the grave had long been dead,\nBut once had bloomed a brilliant shade of ",
+   "intermediates": [
+    "red"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-ahead-head",
+   "prompt": "A rhyming couplet:\nThe captain pointed at the route ahead,\nAnd told his crew to follow where he'd ",
+   "intermediates": [
+    "led"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-wait-late",
+   "prompt": "A rhyming couplet:\nShe checked her watch and settled in to wait,\nBut knew already that he'd be quite ",
+   "intermediates": [
+    "late"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-sound-found",
+   "prompt": "A rhyming couplet:\nThe searchers followed every distant sound,\nAnd deep within the cave, the child was ",
+   "intermediates": [
+    "found"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "held",
+   "in_bench": false
+  }
+ ]
+}

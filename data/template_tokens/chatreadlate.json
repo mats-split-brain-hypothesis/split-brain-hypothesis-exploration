@@ -1,0 +1,1809 @@
+{
+ "name": "chatreadlate",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 256,
+ "excluded_targets": 1577,
+ "source": "uncentred cos top-10 over chat-corpus cells",
+ "n_cells": 27072,
+ "layers": [
+  48,
+  52,
+  56,
+  60
+ ],
+ "tokens": [
+  {
+   "id": 248046,
+   "text": "<|im_end|>",
+   "sources": [
+    "chat readout top-10 count 13351"
+   ]
+  },
+  {
+   "id": 95815,
+   "text": "æĪĳ",
+   "sources": [
+    "chat readout top-10 count 6140"
+   ]
+  },
+  {
+   "id": 248068,
+   "text": "<think>",
+   "sources": [
+    "chat readout top-10 count 6035"
+   ]
+  },
+  {
+   "id": 95772,
+   "text": "åľ¨",
+   "sources": [
+    "chat readout top-10 count 5266"
+   ]
+  },
+  {
+   "id": 248045,
+   "text": "<|im_start|>",
+   "sources": [
+    "chat readout top-10 count 4744"
+   ]
+  },
+  {
+   "id": 95726,
+   "text": "çļĦ",
+   "sources": [
+    "chat readout top-10 count 4562"
+   ]
+  },
+  {
+   "id": 96220,
+   "text": "è¯·",
+   "sources": [
+    "chat readout top-10 count 4121"
+   ]
+  },
+  {
+   "id": 248058,
+   "text": "<tool_call>",
+   "sources": [
+    "chat readout top-10 count 3302"
+   ]
+  },
+  {
+   "id": 95933,
+   "text": "ä½ł",
+   "sources": [
+    "chat readout top-10 count 3264"
+   ]
+  },
+  {
+   "id": 97033,
+   "text": "å¦Ĥä½ķ",
+   "sources": [
+    "chat readout top-10 count 3071"
+   ]
+  },
+  {
+   "id": 31708,
+   "text": " poem",
+   "sources": [
+    "chat readout top-10 count 3068"
+   ]
+  },
+  {
+   "id": 264,
+   "text": " a",
+   "sources": [
+    "chat readout top-10 count 2848"
+   ]
+  },
+  {
+   "id": 61446,
+   "text": " concise",
+   "sources": [
+    "chat readout top-10 count 2702"
+   ]
+  },
+  {
+   "id": 8160,
+   "text": "Here",
+   "sources": [
+    "chat readout top-10 count 2652"
+   ]
+  },
+  {
+   "id": 13,
+   "text": ".",
+   "sources": [
+    "chat readout top-10 count 2501"
+   ]
+  },
+  {
+   "id": 11,
+   "text": ",",
+   "sources": [
+    "chat readout top-10 count 2425"
+   ]
+  },
+  {
+   "id": 69267,
+   "text": "Assistant",
+   "sources": [
+    "chat readout top-10 count 2382"
+   ]
+  },
+  {
+   "id": 279,
+   "text": " the",
+   "sources": [
+    "chat readout top-10 count 2345"
+   ]
+  },
+  {
+   "id": 3255,
+   "text": " story",
+   "sources": [
+    "chat readout top-10 count 2274"
+   ]
+  },
+  {
+   "id": 95761,
+   "text": "æĺ¯",
+   "sources": [
+    "chat readout top-10 count 2269"
+   ]
+  },
+  {
+   "id": 95789,
+   "text": "ä¸Ń",
+   "sources": [
+    "chat readout top-10 count 2259"
+   ]
+  },
+  {
+   "id": 103724,
+   "text": "æĪĳæĺ¯",
+   "sources": [
+    "chat readout top-10 count 2244"
+   ]
+  },
+  {
+   "id": 5514,
+   "text": " Here",
+   "sources": [
+    "chat readout top-10 count 2231"
+   ]
+  },
+  {
+   "id": 84948,
+   "text": "!/",
+   "sources": [
+    "chat readout top-10 count 2223"
+   ]
+  },
+  {
+   "id": 248065,
+   "text": "<|file_sep|>",
+   "sources": [
+    "chat readout top-10 count 2126"
+   ]
+  },
+  {
+   "id": 90700,
+   "text": "Thinking",
+   "sources": [
+    "chat readout top-10 count 2063"
+   ]
+  },
+  {
+   "id": 248069,
+   "text": "</think>",
+   "sources": [
+    "chat readout top-10 count 2023"
+   ]
+  },
+  {
+   "id": 45149,
+   "text": " vibe",
+   "sources": [
+    "chat readout top-10 count 2020"
+   ]
+  },
+  {
+   "id": 74455,
+   "text": "assistant",
+   "sources": [
+    "chat readout top-10 count 2017"
+   ]
+  },
+  {
+   "id": 18641,
+   "text": " narrative",
+   "sources": [
+    "chat readout top-10 count 1952"
+   ]
+  },
+  {
+   "id": 67481,
+   "text": " humorous",
+   "sources": [
+    "chat readout top-10 count 1927"
+   ]
+  },
+  {
+   "id": 31230,
+   "text": ")**",
+   "sources": [
+    "chat readout top-10 count 1854"
+   ]
+  },
+  {
+   "id": 14791,
+   "text": " AI",
+   "sources": [
+    "chat readout top-10 count 1820"
+   ]
+  },
+  {
+   "id": 449,
+   "text": " an",
+   "sources": [
+    "chat readout top-10 count 1815"
+   ]
+  },
+  {
+   "id": 97490,
+   "text": "è¿ĻéĩĮ",
+   "sources": [
+    "chat readout top-10 count 1733"
+   ]
+  },
+  {
+   "id": 488,
+   "text": " you",
+   "sources": [
+    "chat readout top-10 count 1678"
+   ]
+  },
+  {
+   "id": 220,
+   "text": " ",
+   "sources": [
+    "chat readout top-10 count 1618"
+   ]
+  },
+  {
+   "id": 96935,
+   "text": "æĢİä¹Ī",
+   "sources": [
+    "chat readout top-10 count 1610"
+   ]
+  },
+  {
+   "id": 303,
+   "text": " in",
+   "sources": [
+    "chat readout top-10 count 1610"
+   ]
+  },
+  {
+   "id": 46234,
+   "text": " storytelling",
+   "sources": [
+    "chat readout top-10 count 1599"
+   ]
+  },
+  {
+   "id": 72860,
+   "text": " poetic",
+   "sources": [
+    "chat readout top-10 count 1590"
+   ]
+  },
+  {
+   "id": 99496,
+   "text": "æĢĿèĢĥ",
+   "sources": [
+    "chat readout top-10 count 1575"
+   ]
+  },
+  {
+   "id": 332,
+   "text": "**",
+   "sources": [
+    "chat readout top-10 count 1567"
+   ]
+  },
+  {
+   "id": 203309,
+   "text": "ï¼ī**",
+   "sources": [
+    "chat readout top-10 count 1553"
+   ]
+  },
+  {
+   "id": 821,
+   "text": " my",
+   "sources": [
+    "chat readout top-10 count 1547"
+   ]
+  },
+  {
+   "id": 271,
+   "text": "ĊĊ",
+   "sources": [
+    "chat readout top-10 count 1547"
+   ]
+  },
+  {
+   "id": 1532,
+   "text": " here",
+   "sources": [
+    "chat readout top-10 count 1547"
+   ]
+  },
+  {
+   "id": 17313,
+   "text": " assistant",
+   "sources": [
+    "chat readout top-10 count 1535"
+   ]
+  },
+  {
+   "id": 103910,
+   "text": "çĶŁæĪĲ",
+   "sources": [
+    "chat readout top-10 count 1523"
+   ]
+  },
+  {
+   "id": 95895,
+   "text": "å¯¹",
+   "sources": [
+    "chat readout top-10 count 1516"
+   ]
+  },
+  {
+   "id": 3165,
+   "text": " write",
+   "sources": [
+    "chat readout top-10 count 1507"
+   ]
+  },
+  {
+   "id": 96746,
+   "text": "ç³»ç»Ł",
+   "sources": [
+    "chat readout top-10 count 1500"
+   ]
+  },
+  {
+   "id": 846,
+   "text": "user",
+   "sources": [
+    "chat readout top-10 count 1495"
+   ]
+  },
+  {
+   "id": 1168,
+   "text": "php",
+   "sources": [
+    "chat readout top-10 count 1483"
+   ]
+  },
+  {
+   "id": 15004,
+   "text": "DOCTYPE",
+   "sources": [
+    "chat readout top-10 count 1482"
+   ]
+  },
+  {
+   "id": 6843,
+   "text": "usr",
+   "sources": [
+    "chat readout top-10 count 1482"
+   ]
+  },
+  {
+   "id": 26498,
+   "text": " humor",
+   "sources": [
+    "chat readout top-10 count 1440"
+   ]
+  },
+  {
+   "id": 353,
+   "text": " I",
+   "sources": [
+    "chat readout top-10 count 1423"
+   ]
+  },
+  {
+   "id": 22537,
+   "text": " lyrics",
+   "sources": [
+    "chat readout top-10 count 1395"
+   ]
+  },
+  {
+   "id": 42140,
+   "text": " fictional",
+   "sources": [
+    "chat readout top-10 count 1307"
+   ]
+  },
+  {
+   "id": 4184,
+   "text": " someone",
+   "sources": [
+    "chat readout top-10 count 1288"
+   ]
+  },
+  {
+   "id": 561,
+   "text": " The",
+   "sources": [
+    "chat readout top-10 count 1270"
+   ]
+  },
+  {
+   "id": 1394,
+   "text": " You",
+   "sources": [
+    "chat readout top-10 count 1263"
+   ]
+  },
+  {
+   "id": 369,
+   "text": " is",
+   "sources": [
+    "chat readout top-10 count 1226"
+   ]
+  },
+  {
+   "id": 21251,
+   "text": " Hello",
+   "sources": [
+    "chat readout top-10 count 1225"
+   ]
+  },
+  {
+   "id": 6623,
+   "text": " kids",
+   "sources": [
+    "chat readout top-10 count 1184"
+   ]
+  },
+  {
+   "id": 153295,
+   "text": "à¸Ħà¸£à¸±à¸ļ",
+   "sources": [
+    "chat readout top-10 count 1165"
+   ]
+  },
+  {
+   "id": 6498,
+   "text": " ideas",
+   "sources": [
+    "chat readout top-10 count 1142"
+   ]
+  },
+  {
+   "id": 364,
+   "text": " for",
+   "sources": [
+    "chat readout top-10 count 1123"
+   ]
+  },
+  {
+   "id": 20732,
+   "text": " Assistant",
+   "sources": [
+    "chat readout top-10 count 1121"
+   ]
+  },
+  {
+   "id": 42134,
+   "text": " aqui",
+   "sources": [
+    "chat readout top-10 count 1119"
+   ]
+  },
+  {
+   "id": 51306,
+   "text": " aquÃŃ",
+   "sources": [
+    "chat readout top-10 count 1104"
+   ]
+  },
+  {
+   "id": 1103,
+   "text": " list",
+   "sources": [
+    "chat readout top-10 count 1099"
+   ]
+  },
+  {
+   "id": 579,
+   "text": "'s",
+   "sources": [
+    "chat readout top-10 count 1096"
+   ]
+  },
+  {
+   "id": 883,
+   "text": " about",
+   "sources": [
+    "chat readout top-10 count 1071"
+   ]
+  },
+  {
+   "id": 424,
+   "text": " it",
+   "sources": [
+    "chat readout top-10 count 1069"
+   ]
+  },
+  {
+   "id": 42749,
+   "text": " poems",
+   "sources": [
+    "chat readout top-10 count 1037"
+   ]
+  },
+  {
+   "id": 2854,
+   "text": " love",
+   "sources": [
+    "chat readout top-10 count 1031"
+   ]
+  },
+  {
+   "id": 310,
+   "text": " to",
+   "sources": [
+    "chat readout top-10 count 1018"
+   ]
+  },
+  {
+   "id": 96933,
+   "text": "æĪĳçļĦ",
+   "sources": [
+    "chat readout top-10 count 1014"
+   ]
+  },
+  {
+   "id": 171458,
+   "text": "!**",
+   "sources": [
+    "chat readout top-10 count 1014"
+   ]
+  },
+  {
+   "id": 321,
+   "text": " and",
+   "sources": [
+    "chat readout top-10 count 1009"
+   ]
+  },
+  {
+   "id": 30223,
+   "text": " poetry",
+   "sources": [
+    "chat readout top-10 count 981"
+   ]
+  },
+  {
+   "id": 12742,
+   "text": "\"/>",
+   "sources": [
+    "chat readout top-10 count 976"
+   ]
+  },
+  {
+   "id": 4338,
+   "text": " please",
+   "sources": [
+    "chat readout top-10 count 964"
+   ]
+  },
+  {
+   "id": 97237,
+   "text": "çĶ¨æĪ·",
+   "sources": [
+    "chat readout top-10 count 950"
+   ]
+  },
+  {
+   "id": 314,
+   "text": " of",
+   "sources": [
+    "chat readout top-10 count 950"
+   ]
+  },
+  {
+   "id": 4237,
+   "text": " writing",
+   "sources": [
+    "chat readout top-10 count 941"
+   ]
+  },
+  {
+   "id": 440,
+   "text": " with",
+   "sources": [
+    "chat readout top-10 count 941"
+   ]
+  },
+  {
+   "id": 1156,
+   "text": " user",
+   "sources": [
+    "chat readout top-10 count 929"
+   ]
+  },
+  {
+   "id": 79420,
+   "text": "thinking",
+   "sources": [
+    "chat readout top-10 count 926"
+   ]
+  },
+  {
+   "id": 23066,
+   "text": " hello",
+   "sources": [
+    "chat readout top-10 count 924"
+   ]
+  },
+  {
+   "id": 15338,
+   "text": " loves",
+   "sources": [
+    "chat readout top-10 count 916"
+   ]
+  },
+  {
+   "id": 6040,
+   "text": " chat",
+   "sources": [
+    "chat readout top-10 count 908"
+   ]
+  },
+  {
+   "id": 4465,
+   "text": " Your",
+   "sources": [
+    "chat readout top-10 count 906"
+   ]
+  },
+  {
+   "id": 11346,
+   "text": " detailed",
+   "sources": [
+    "chat readout top-10 count 899"
+   ]
+  },
+  {
+   "id": 4602,
+   "text": " questions",
+   "sources": [
+    "chat readout top-10 count 893"
+   ]
+  },
+  {
+   "id": 760,
+   "text": "The",
+   "sources": [
+    "chat readout top-10 count 881"
+   ]
+  },
+  {
+   "id": 3437,
+   "text": " What",
+   "sources": [
+    "chat readout top-10 count 879"
+   ]
+  },
+  {
+   "id": 1204,
+   "text": " how",
+   "sources": [
+    "chat readout top-10 count 872"
+   ]
+  },
+  {
+   "id": 172100,
+   "text": " **âĢľ",
+   "sources": [
+    "chat readout top-10 count 866"
+   ]
+  },
+  {
+   "id": 112723,
+   "text": "æĺ¯ä»Ģä¹ĪæĦıæĢĿ",
+   "sources": [
+    "chat readout top-10 count 865"
+   ]
+  },
+  {
+   "id": 641,
+   "text": " .",
+   "sources": [
+    "chat readout top-10 count 865"
+   ]
+  },
+  {
+   "id": 98925,
+   "text": "æĢĿç»´",
+   "sources": [
+    "chat readout top-10 count 861"
+   ]
+  },
+  {
+   "id": 173464,
+   "text": "âĢĿ**",
+   "sources": [
+    "chat readout top-10 count 860"
+   ]
+  },
+  {
+   "id": 97345,
+   "text": "è¯Ĺ",
+   "sources": [
+    "chat readout top-10 count 860"
+   ]
+  },
+  {
+   "id": 421,
+   "text": " that",
+   "sources": [
+    "chat readout top-10 count 856"
+   ]
+  },
+  {
+   "id": 207512,
+   "text": "âĢĻ**",
+   "sources": [
+    "chat readout top-10 count 844"
+   ]
+  },
+  {
+   "id": 13901,
+   "text": " paragraph",
+   "sources": [
+    "chat readout top-10 count 841"
+   ]
+  },
+  {
+   "id": 1049,
+   "text": " It",
+   "sources": [
+    "chat readout top-10 count 840"
+   ]
+  },
+  {
+   "id": 98661,
+   "text": "æĺ¯ä»Ģä¹Ī",
+   "sources": [
+    "chat readout top-10 count 835"
+   ]
+  },
+  {
+   "id": 6527,
+   "text": "here",
+   "sources": [
+    "chat readout top-10 count 829"
+   ]
+  },
+  {
+   "id": 11952,
+   "text": " robot",
+   "sources": [
+    "chat readout top-10 count 822"
+   ]
+  },
+  {
+   "id": 248044,
+   "text": "<|endoftext|>",
+   "sources": [
+    "chat readout top-10 count 819"
+   ]
+  },
+  {
+   "id": 121491,
+   "text": "ä»Ģä¹ĪæĦıæĢĿ",
+   "sources": [
+    "chat readout top-10 count 813"
+   ]
+  },
+  {
+   "id": 108829,
+   "text": "ä»Ģä¹Īæĺ¯",
+   "sources": [
+    "chat readout top-10 count 805"
+   ]
+  },
+  {
+   "id": 62095,
+   "text": "/write",
+   "sources": [
+    "chat readout top-10 count 804"
+   ]
+  },
+  {
+   "id": 20623,
+   "text": " dialogue",
+   "sources": [
+    "chat readout top-10 count 798"
+   ]
+  },
+  {
+   "id": 678,
+   "text": " your",
+   "sources": [
+    "chat readout top-10 count 798"
+   ]
+  },
+  {
+   "id": 91112,
+   "text": " comedic",
+   "sources": [
+    "chat readout top-10 count 791"
+   ]
+  },
+  {
+   "id": 239466,
+   "text": " **âĤ¬",
+   "sources": [
+    "chat readout top-10 count 788"
+   ]
+  },
+  {
+   "id": 3709,
+   "text": "ï¼Į",
+   "sources": [
+    "chat readout top-10 count 786"
+   ]
+  },
+  {
+   "id": 159029,
+   "text": ".**",
+   "sources": [
+    "chat readout top-10 count 786"
+   ]
+  },
+  {
+   "id": 2064,
+   "text": "It",
+   "sources": [
+    "chat readout top-10 count 785"
+   ]
+  },
+  {
+   "id": 201757,
+   "text": "**!",
+   "sources": [
+    "chat readout top-10 count 782"
+   ]
+  },
+  {
+   "id": 2972,
+   "text": " **",
+   "sources": [
+    "chat readout top-10 count 779"
+   ]
+  },
+  {
+   "id": 111124,
+   "text": "å·²çŁ¥",
+   "sources": [
+    "chat readout top-10 count 779"
+   ]
+  },
+  {
+   "id": 1785,
+   "text": " system",
+   "sources": [
+    "chat readout top-10 count 777"
+   ]
+  },
+  {
+   "id": 95793,
+   "text": "åĴĮ",
+   "sources": [
+    "chat readout top-10 count 772"
+   ]
+  },
+  {
+   "id": 97380,
+   "text": "æĸĩä»¶",
+   "sources": [
+    "chat readout top-10 count 771"
+   ]
+  },
+  {
+   "id": 109361,
+   "text": "è¯ĹæŃĮ",
+   "sources": [
+    "chat readout top-10 count 770"
+   ]
+  },
+  {
+   "id": 200386,
+   "text": "ï¼ģ**",
+   "sources": [
+    "chat readout top-10 count 770"
+   ]
+  },
+  {
+   "id": 83783,
+   "text": " brainstorm",
+   "sources": [
+    "chat readout top-10 count 768"
+   ]
+  },
+  {
+   "id": 173609,
+   "text": "ãĢĤ**",
+   "sources": [
+    "chat readout top-10 count 766"
+   ]
+  },
+  {
+   "id": 9955,
+   "text": "ĉT",
+   "sources": [
+    "chat readout top-10 count 762"
+   ]
+  },
+  {
+   "id": 96543,
+   "text": "å¼ł",
+   "sources": [
+    "chat readout top-10 count 760"
+   ]
+  },
+  {
+   "id": 96844,
+   "text": "ä¸įåĲĮ",
+   "sources": [
+    "chat readout top-10 count 759"
+   ]
+  },
+  {
+   "id": 95762,
+   "text": "æľī",
+   "sources": [
+    "chat readout top-10 count 759"
+   ]
+  },
+  {
+   "id": 27279,
+   "text": "ãģĮ",
+   "sources": [
+    "chat readout top-10 count 758"
+   ]
+  },
+  {
+   "id": 1791,
+   "text": " create",
+   "sources": [
+    "chat readout top-10 count 754"
+   ]
+  },
+  {
+   "id": 15352,
+   "text": " comprehensive",
+   "sources": [
+    "chat readout top-10 count 754"
+   ]
+  },
+  {
+   "id": 4105,
+   "text": " words",
+   "sources": [
+    "chat readout top-10 count 753"
+   ]
+  },
+  {
+   "id": 8678,
+   "text": "system",
+   "sources": [
+    "chat readout top-10 count 753"
+   ]
+  },
+  {
+   "id": 11572,
+   "text": " GT",
+   "sources": [
+    "chat readout top-10 count 752"
+   ]
+  },
+  {
+   "id": 93590,
+   "text": " rhyme",
+   "sources": [
+    "chat readout top-10 count 751"
+   ]
+  },
+  {
+   "id": 59920,
+   "text": "/U",
+   "sources": [
+    "chat readout top-10 count 749"
+   ]
+  },
+  {
+   "id": 38039,
+   "text": "ĉK",
+   "sources": [
+    "chat readout top-10 count 748"
+   ]
+  },
+  {
+   "id": 95826,
+   "text": "çĶ¨",
+   "sources": [
+    "chat readout top-10 count 748"
+   ]
+  },
+  {
+   "id": 96219,
+   "text": "æ¸ħ",
+   "sources": [
+    "chat readout top-10 count 747"
+   ]
+  },
+  {
+   "id": 11190,
+   "text": " creative",
+   "sources": [
+    "chat readout top-10 count 747"
+   ]
+  },
+  {
+   "id": 7543,
+   "text": " assist",
+   "sources": [
+    "chat readout top-10 count 747"
+   ]
+  },
+  {
+   "id": 9729,
+   "text": "ĉP",
+   "sources": [
+    "chat readout top-10 count 743"
+   ]
+  },
+  {
+   "id": 7960,
+   "text": " flash",
+   "sources": [
+    "chat readout top-10 count 743"
+   ]
+  },
+  {
+   "id": 73169,
+   "text": "ï¼ģâĢĿ",
+   "sources": [
+    "chat readout top-10 count 743"
+   ]
+  },
+  {
+   "id": 95999,
+   "text": "ä¸İ",
+   "sources": [
+    "chat readout top-10 count 742"
+   ]
+  },
+  {
+   "id": 31414,
+   "text": "/><",
+   "sources": [
+    "chat readout top-10 count 741"
+   ]
+  },
+  {
+   "id": 22075,
+   "text": "ĉE",
+   "sources": [
+    "chat readout top-10 count 741"
+   ]
+  },
+  {
+   "id": 97690,
+   "text": "éĹª",
+   "sources": [
+    "chat readout top-10 count 741"
+   ]
+  },
+  {
+   "id": 9183,
+   "text": " advice",
+   "sources": [
+    "chat readout top-10 count 741"
+   ]
+  },
+  {
+   "id": 100449,
+   "text": "éİ",
+   "sources": [
+    "chat readout top-10 count 741"
+   ]
+  },
+  {
+   "id": 48363,
+   "text": "(/^",
+   "sources": [
+    "chat readout top-10 count 741"
+   ]
+  },
+  {
+   "id": 20242,
+   "text": "áŀ",
+   "sources": [
+    "chat readout top-10 count 741"
+   ]
+  },
+  {
+   "id": 95828,
+   "text": "ä»¥",
+   "sources": [
+    "chat readout top-10 count 741"
+   ]
+  },
+  {
+   "id": 6246,
+   "text": "USER",
+   "sources": [
+    "chat readout top-10 count 741"
+   ]
+  },
+  {
+   "id": 2433,
+   "text": " things",
+   "sources": [
+    "chat readout top-10 count 737"
+   ]
+  },
+  {
+   "id": 18268,
+   "text": " cute",
+   "sources": [
+    "chat readout top-10 count 734"
+   ]
+  },
+  {
+   "id": 9357,
+   "text": " Write",
+   "sources": [
+    "chat readout top-10 count 731"
+   ]
+  },
+  {
+   "id": 105090,
+   "text": "ä»¥ä¸ĭæĺ¯",
+   "sources": [
+    "chat readout top-10 count 729"
+   ]
+  },
+  {
+   "id": 6587,
+   "text": " wants",
+   "sources": [
+    "chat readout top-10 count 725"
+   ]
+  },
+  {
+   "id": 852,
+   "text": " who",
+   "sources": [
+    "chat readout top-10 count 721"
+   ]
+  },
+  {
+   "id": 75654,
+   "text": "]**",
+   "sources": [
+    "chat readout top-10 count 720"
+   ]
+  },
+  {
+   "id": 96312,
+   "text": "åĬ©",
+   "sources": [
+    "chat readout top-10 count 716"
+   ]
+  },
+  {
+   "id": 3708,
+   "text": ".write",
+   "sources": [
+    "chat readout top-10 count 712"
+   ]
+  },
+  {
+   "id": 2716,
+   "text": " short",
+   "sources": [
+    "chat readout top-10 count 705"
+   ]
+  },
+  {
+   "id": 22157,
+   "text": " sentences",
+   "sources": [
+    "chat readout top-10 count 704"
+   ]
+  },
+  {
+   "id": 79784,
+   "text": " witty",
+   "sources": [
+    "chat readout top-10 count 704"
+   ]
+  },
+  {
+   "id": 1318,
+   "text": " want",
+   "sources": [
+    "chat readout top-10 count 703"
+   ]
+  },
+  {
+   "id": 513,
+   "text": " are",
+   "sources": [
+    "chat readout top-10 count 696"
+   ]
+  },
+  {
+   "id": 599,
+   "text": " have",
+   "sources": [
+    "chat readout top-10 count 692"
+   ]
+  },
+  {
+   "id": 30,
+   "text": "?",
+   "sources": [
+    "chat readout top-10 count 689"
+   ]
+  },
+  {
+   "id": 9419,
+   "text": "Hello",
+   "sources": [
+    "chat readout top-10 count 685"
+   ]
+  },
+  {
+   "id": 54185,
+   "text": " playful",
+   "sources": [
+    "chat readout top-10 count 685"
+   ]
+  },
+  {
+   "id": 168063,
+   "text": "ekkÃ¼r",
+   "sources": [
+    "chat readout top-10 count 683"
+   ]
+  },
+  {
+   "id": 13861,
+   "text": " emotional",
+   "sources": [
+    "chat readout top-10 count 680"
+   ]
+  },
+  {
+   "id": 41228,
+   "text": " paragraphs",
+   "sources": [
+    "chat readout top-10 count 672"
+   ]
+  },
+  {
+   "id": 1438,
+   "text": " help",
+   "sources": [
+    "chat readout top-10 count 668"
+   ]
+  },
+  {
+   "id": 112258,
+   "text": "åŃĹæķ°",
+   "sources": [
+    "chat readout top-10 count 667"
+   ]
+  },
+  {
+   "id": 17683,
+   "text": " suggestions",
+   "sources": [
+    "chat readout top-10 count 665"
+   ]
+  },
+  {
+   "id": 248051,
+   "text": "<|quad_start|>",
+   "sources": [
+    "chat readout top-10 count 658"
+   ]
+  },
+  {
+   "id": 3069,
+   "text": " why",
+   "sources": [
+    "chat readout top-10 count 657"
+   ]
+  },
+  {
+   "id": 1503,
+   "text": " does",
+   "sources": [
+    "chat readout top-10 count 653"
+   ]
+  },
+  {
+   "id": 5054,
+   "text": " woman",
+   "sources": [
+    "chat readout top-10 count 649"
+   ]
+  },
+  {
+   "id": 7047,
+   "text": " thinking",
+   "sources": [
+    "chat readout top-10 count 649"
+   ]
+  },
+  {
+   "id": 82552,
+   "text": " catchy",
+   "sources": [
+    "chat readout top-10 count 648"
+   ]
+  },
+  {
+   "id": 59970,
+   "text": "-write",
+   "sources": [
+    "chat readout top-10 count 646"
+   ]
+  },
+  {
+   "id": 14556,
+   "text": "hello",
+   "sources": [
+    "chat readout top-10 count 636"
+   ]
+  },
+  {
+   "id": 80241,
+   "text": " heartfelt",
+   "sources": [
+    "chat readout top-10 count 635"
+   ]
+  },
+  {
+   "id": 108972,
+   "text": "æ¸ħåįķ",
+   "sources": [
+    "chat readout top-10 count 631"
+   ]
+  },
+  {
+   "id": 3777,
+   "text": " young",
+   "sources": [
+    "chat readout top-10 count 631"
+   ]
+  },
+  {
+   "id": 9605,
+   "text": " animals",
+   "sources": [
+    "chat readout top-10 count 624"
+   ]
+  },
+  {
+   "id": 12960,
+   "text": " topics",
+   "sources": [
+    "chat readout top-10 count 616"
+   ]
+  },
+  {
+   "id": 169379,
+   "text": "âľ¨",
+   "sources": [
+    "chat readout top-10 count 616"
+   ]
+  },
+  {
+   "id": 1208,
+   "text": " people",
+   "sources": [
+    "chat readout top-10 count 611"
+   ]
+  },
+  {
+   "id": 152901,
+   "text": "ãģĹãģıãģĬé¡ĺãģĦ",
+   "sources": [
+    "chat readout top-10 count 611"
+   ]
+  },
+  {
+   "id": 4775,
+   "text": "write",
+   "sources": [
+    "chat readout top-10 count 593"
+   ]
+  },
+  {
+   "id": 10992,
+   "text": "ï¼Ł",
+   "sources": [
+    "chat readout top-10 count 592"
+   ]
+  },
+  {
+   "id": 5587,
+   "text": " characters",
+   "sources": [
+    "chat readout top-10 count 581"
+   ]
+  },
+  {
+   "id": 682,
+   "text": " has",
+   "sources": [
+    "chat readout top-10 count 580"
+   ]
+  },
+  {
+   "id": 207002,
+   "text": " pensÃ©e",
+   "sources": [
+    "chat readout top-10 count 578"
+   ]
+  },
+  {
+   "id": 2908,
+   "text": "'ve",
+   "sources": [
+    "chat readout top-10 count 565"
+   ]
+  },
+  {
+   "id": 108875,
+   "text": "åĬ©çĲĨ",
+   "sources": [
+    "chat readout top-10 count 558"
+   ]
+  },
+  {
+   "id": 803,
+   "text": " name",
+   "sources": [
+    "chat readout top-10 count 557"
+   ]
+  },
+  {
+   "id": 12313,
+   "text": " humans",
+   "sources": [
+    "chat readout top-10 count 557"
+   ]
+  },
+  {
+   "id": 50534,
+   "text": " Thinking",
+   "sources": [
+    "chat readout top-10 count 556"
+   ]
+  },
+  {
+   "id": 15877,
+   "text": ">The",
+   "sources": [
+    "chat readout top-10 count 555"
+   ]
+  },
+  {
+   "id": 174331,
+   "text": " KhÃ¡ch",
+   "sources": [
+    "chat readout top-10 count 555"
+   ]
+  },
+  {
+   "id": 2469,
+   "text": " email",
+   "sources": [
+    "chat readout top-10 count 554"
+   ]
+  },
+  {
+   "id": 3299,
+   "text": " word",
+   "sources": [
+    "chat readout top-10 count 551"
+   ]
+  },
+  {
+   "id": 31248,
+   "text": "Okay",
+   "sources": [
+    "chat readout top-10 count 547"
+   ]
+  },
+  {
+   "id": 177780,
+   "text": " Voici",
+   "sources": [
+    "chat readout top-10 count 545"
+   ]
+  },
+  {
+   "id": 10926,
+   "text": " answers",
+   "sources": [
+    "chat readout top-10 count 544"
+   ]
+  },
+  {
+   "id": 5148,
+   "text": " script",
+   "sources": [
+    "chat readout top-10 count 543"
+   ]
+  },
+  {
+   "id": 24891,
+   "text": " insights",
+   "sources": [
+    "chat readout top-10 count 542"
+   ]
+  },
+  {
+   "id": 7914,
+   "text": " boy",
+   "sources": [
+    "chat readout top-10 count 541"
+   ]
+  },
+  {
+   "id": 184316,
+   "text": " AquÃŃ",
+   "sources": [
+    "chat readout top-10 count 540"
+   ]
+  },
+  {
+   "id": 3849,
+   "text": "âĢĻve",
+   "sources": [
+    "chat readout top-10 count 533"
+   ]
+  },
+  {
+   "id": 9989,
+   "text": " examples",
+   "sources": [
+    "chat readout top-10 count 530"
+   ]
+  },
+  {
+   "id": 77264,
+   "text": "Hmm",
+   "sources": [
+    "chat readout top-10 count 525"
+   ]
+  },
+  {
+   "id": 30705,
+   "text": " phrases",
+   "sources": [
+    "chat readout top-10 count 521"
+   ]
+  },
+  {
+   "id": 17407,
+   "text": " adventure",
+   "sources": [
+    "chat readout top-10 count 519"
+   ]
+  },
+  {
+   "id": 170695,
+   "text": " ÙĩÙĨØ§",
+   "sources": [
+    "chat readout top-10 count 513"
+   ]
+  },
+  {
+   "id": 10793,
+   "text": " recipe",
+   "sources": [
+    "chat readout top-10 count 511"
+   ]
+  },
+  {
+   "id": 107680,
+   "text": "åĹ¯",
+   "sources": [
+    "chat readout top-10 count 509"
+   ]
+  },
+  {
+   "id": 38183,
+   "text": "Ð´Ð°",
+   "sources": [
+    "chat readout top-10 count 508"
+   ]
+  },
+  {
+   "id": 14853,
+   "text": " foods",
+   "sources": [
+    "chat readout top-10 count 508"
+   ]
+  },
+  {
+   "id": 224660,
+   "text": "à¦¾à¦°à§į",
+   "sources": [
+    "chat readout top-10 count 507"
+   ]
+  },
+  {
+   "id": 40557,
+   "text": "**)",
+   "sources": [
+    "chat readout top-10 count 506"
+   ]
+  },
+  {
+   "id": 27768,
+   "text": " robots",
+   "sources": [
+    "chat readout top-10 count 504"
+   ]
+  },
+  {
+   "id": 73026,
+   "text": ">Create",
+   "sources": [
+    "chat readout top-10 count 503"
+   ]
+  },
+  {
+   "id": 95637,
+   "text": " emojis",
+   "sources": [
+    "chat readout top-10 count 502"
+   ]
+  },
+  {
+   "id": 37962,
+   "text": " poet",
+   "sources": [
+    "chat readout top-10 count 501"
+   ]
+  },
+  {
+   "id": 1551,
+   "text": "list",
+   "sources": [
+    "chat readout top-10 count 500"
+   ]
+  },
+  {
+   "id": 72791,
+   "text": " shimmer",
+   "sources": [
+    "chat readout top-10 count 499"
+   ]
+  },
+  {
+   "id": 9008,
+   "text": "ðŁ",
+   "sources": [
+    "chat readout top-10 count 499"
+   ]
+  },
+  {
+   "id": 113955,
+   "text": "è¿ĻéĩĮæĺ¯",
+   "sources": [
+    "chat readout top-10 count 499"
+   ]
+  },
+  {
+   "id": 12228,
+   "text": " dogs",
+   "sources": [
+    "chat readout top-10 count 497"
+   ]
+  },
+  {
+   "id": 40958,
+   "text": " emoji",
+   "sources": [
+    "chat readout top-10 count 496"
+   ]
+  },
+  {
+   "id": 4627,
+   "text": " friends",
+   "sources": [
+    "chat readout top-10 count 495"
+   ]
+  },
+  {
+   "id": 101776,
+   "text": "è§£çŃĶ",
+   "sources": [
+    "chat readout top-10 count 494"
+   ]
+  },
+  {
+   "id": 109266,
+   "text": "ä½łå¥½",
+   "sources": [
+    "chat readout top-10 count 494"
+   ]
+  },
+  {
+   "id": 112523,
+   "text": "å¸®æĪĳ",
+   "sources": [
+    "chat readout top-10 count 493"
+   ]
+  },
+  {
+   "id": 44067,
+   "text": " protagonist",
+   "sources": [
+    "chat readout top-10 count 493"
+   ]
+  },
+  {
+   "id": 3487,
+   "text": " food",
+   "sources": [
+    "chat readout top-10 count 491"
+   ]
+  },
+  {
+   "id": 3300,
+   "text": " provide",
+   "sources": [
+    "chat readout top-10 count 490"
+   ]
+  },
+  {
+   "id": 1070,
+   "text": " them",
+   "sources": [
+    "chat readout top-10 count 485"
+   ]
+  },
+  {
+   "id": 30386,
+   "text": " jokes",
+   "sources": [
+    "chat readout top-10 count 482"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+id: S7
+title: Subspace removal around the family mean
+owner: C (j-lens-mean-ad), pilot-1
+status: closed
+question: >
+  Besides the family mean, should g also remove $h$'s component in a background subspace $B$, $g(h) = \mu_{\text{fam}} + P_B (h - \mu_{\text{fam}})$,
+  with $B$ the family's top principal directions (jle's pco)?
+verdict: >
+  Yes on the strict macro: pco16 beats fam on val strict under both readouts (cos +0.039, rms +0.027) and passes the mention
+  control (held 0.82 / mentioned 0.24), while a random 16-dim subspace and another cell's g sit at fam. But it fails the judged
+  multilingual_mt guardrail (-0.113 vs fam), which is the language-name unit (S10). On DM it has the fair profile (judged
+  0.61, between u1rel 0.57 and u1endcar 0.64; knnx8's 0.79 is the same-sentence leak, S4). Not registered.
+tiles:
+  - {label: "val strict cos, Δ vs fam", value: "+0.039", sub: "pco16; +0.034 without UM"}
+  - {label: "val strict rms, Δ vs fam", value: "+0.027", sub: "pco16 0.637 vs fam 0.610"}
+  - {label: "val Haiku-judged multilingual_mt, Δ vs fam", value: "-0.113", sub: "[-0.208, -0.019]: guardrail failure"}
+  - {label: "mention control, held / mentioned", value: "0.82 / 0.24", sub: "tok 0.82 / 0.59"}
+formulas:
+  - latex: 'g(h) = \mu_{\text{fam}} + V_k V_k^{\top} (h - \mu_{\text{fam}}), \quad h - g(h) = (I - V_k V_k^{\top})(h - \mu_{\text{fam}})'
+    note: "pco<k>: V_k the top k principal directions of the family's reference cells at the layer, fitted without the read cell's group; pcr<k> uses a random orthonormal k-frame instead."
+  - latex: 'g(h) = \mu_{\text{tok}}(h) + V_4 V_4^{\top} (h - \mu_{\text{tok}}(h))'
+    note: "tpco4: the token mean tok instead of the family mean, the family's top 4 PCs as above."
+diagram:
+  kind: subspace
+  k: 16
+  caption: "pco16 removes the family mean and h's component along the family's top 16 principal axes: where items differ in form (UM / DM), the final answer's type (multihop), or the language (multilingual_mt)."
+split: val
+arms: ["pco16@fit|cos", "pco16@fit|rms", "tpco4@fit|cos"]
+controls: ["pcr16@fit|cos", "pcr16@fit|rms", "shuf.pco16@fit|cos", "shuf.tpco4@fit|cos"]
+insights:
+  - {lead: "Token matching without a token key, and fair", text: "pco16 reaches tok's held rate on the mention control (0.82) while reading a merely mentioned concept 0.24 instead of tok's 0.59; on val strict it gets DM +0.19 [+0.11, +0.28] vs fam. tpco4 inherits tok's leak (0.82 / 0.59) and is dropped."}
+  - {lead: "The gain is the family's own top directions", text: "A random 16-dim subspace (pcr16, -0.003) and another cell's g (shuf.pco16, -0.001) sit at fam on val; other families' PCs (xpco16 0.602, xpco64 0.605 on fit) act like a random subspace."}
+  - {lead: "multilingual_mt is the cost: its PCs are language axes", text: "The judge turns the proxy's -0.09 into -0.113 [-0.208, -0.019] vs fam. Multilingual_mt's top PCs decode to languages (Arabic, Indonesia), and the target concept ranks 41-82 in the removed part at L36-44, better than in what is kept."}
+  - {lead: "On multihop it removes the final answer and frees the bridge", text: "pco16 multihop +0.11 [+0.02, +0.19] vs fam on val strict; the family's PCs include city names, the unscored answer's type (S6 finding 5)."}
+  - {lead: "On DM it reads like the fair centres, not like tok or knnx8", text: "DM val strict, items passing mid-sentence: pco16 10, fair centres 7-9, tok / knnx8 21; judged 0.61 vs u1rel 0.57, u1endcar 0.64 (tok, knnx8 0.79, mostly prompt reading). Its mention control used a pool without the probe's carriers, so the by-cell profile is the evidence."}
+  - {lead: "k = 16 is the balance", text: "On fit the macro peaks at k = 16 (0.629; pco8 0.627) and falls at 32 (0.614); pco64 moves gains from the template families to UM / DM (0.852 / 0.303)."}
+next: ["A pco that spares the language: needs a label-free language direction (open)."]

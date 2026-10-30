@@ -1,0 +1,274 @@
+{
+ "meta": {
+  "model": "anthropic/claude-haiku-5.5",
+  "built": "2026-10-11",
+  "rule": "inflections; numbers: digit <-> English word",
+  "spend_usd": 0.001,
+  "note": "unpinned model's draft, reviewed by hand; edit freely, a rebuild keeps existing keys",
+  "cleaned": "build_forms.py --clean (review rules in the module docstring)"
+ },
+ "forms": {
+  "13|thirteen": [],
+  "18|eighteen": [],
+  "1|one": [],
+  "2|two": [],
+  "3|three": [],
+  "4|four": [],
+  "5|five": [],
+  "6|six": [],
+  "7|seven": [],
+  "8|eight": [],
+  "9|ten": [
+   "nine"
+  ],
+  "apple": [
+   "apples"
+  ],
+  "april": [
+   "aprils"
+  ],
+  "argentina": [],
+  "august": [
+   "augusts"
+  ],
+  "australia": [],
+  "austria": [],
+  "autumn": [
+   "autumns"
+  ],
+  "baseball": [
+   "baseballs"
+  ],
+  "basketball": [
+   "basketballs"
+  ],
+  "belgium": [],
+  "bell": [
+   "bells"
+  ],
+  "blue": [
+   "bluer",
+   "bluest"
+  ],
+  "boxing": [
+   "box",
+   "boxed",
+   "boxes"
+  ],
+  "brazil": [],
+  "cambodia": [],
+  "canada": [],
+  "cello": [
+   "cellos"
+  ],
+  "chile": [],
+  "china": [],
+  "chocolate": [
+   "chocolates"
+  ],
+  "christmas": [
+   "christmases"
+  ],
+  "cuba": [],
+  "cycling": [
+   "cycle",
+   "cycled",
+   "cycles"
+  ],
+  "d": [],
+  "december": [],
+  "denmark": [],
+  "dog": [
+   "dogs"
+  ],
+  "dragon": [
+   "dragons"
+  ],
+  "drums": [
+   "drum"
+  ],
+  "egypt": [],
+  "england": [],
+  "ethiopia": [],
+  "february": [
+   "februaries",
+   "februarys"
+  ],
+  "fiji": [],
+  "football": [
+   "footballs"
+  ],
+  "france": [],
+  "french": [],
+  "friday": [
+   "fridays"
+  ],
+  "g": [],
+  "germany": [],
+  "ghana": [],
+  "gold": [
+   "golds"
+  ],
+  "golf": [
+   "golfed",
+   "golfing",
+   "golfs"
+  ],
+  "greece": [],
+  "guitar": [
+   "guitars"
+  ],
+  "hockey": [
+   "hockeys"
+  ],
+  "india": [],
+  "indonesia": [],
+  "ireland": [],
+  "iron": [
+   "ironed",
+   "ironing",
+   "irons"
+  ],
+  "italian": [],
+  "italy": [],
+  "january": [
+   "januaries",
+   "januarys"
+  ],
+  "japan": [],
+  "japanese": [],
+  "jazz": [],
+  "jordan": [],
+  "july": [
+   "julys"
+  ],
+  "june": [
+   "junes"
+  ],
+  "kenya": [],
+  "mali": [],
+  "march": [],
+  "may": [
+   "mays"
+  ],
+  "mexico": [],
+  "monday": [
+   "mondays"
+  ],
+  "morocco": [],
+  "n": [],
+  "netherlands": [],
+  "november": [],
+  "oak": [
+   "oaks"
+  ],
+  "october": [],
+  "octopus": [
+   "octopi",
+   "octopuses"
+  ],
+  "orion": [],
+  "owl": [
+   "owls"
+  ],
+  "pepperoni": [],
+  "peru": [],
+  "piano": [
+   "pianos"
+  ],
+  "poker": [
+   "pokers"
+  ],
+  "poland": [],
+  "portugal": [],
+  "python": [],
+  "queen": [
+   "queens"
+  ],
+  "rose": [
+   "rosed",
+   "roses",
+   "rosing"
+  ],
+  "russia": [],
+  "russian": [],
+  "s": [],
+  "salsa": [],
+  "saturday": [
+   "saturdays"
+  ],
+  "sci-fi": [],
+  "science": [],
+  "september": [
+   "septembers"
+  ],
+  "sneakers": [
+   "sneaker"
+  ],
+  "soccer": [
+   "soccers"
+  ],
+  "spain": [],
+  "spanish": [],
+  "spongebob": [],
+  "spring": [
+   "springs"
+  ],
+  "strawberry": [
+   "strawberries"
+  ],
+  "summer": [
+   "summers"
+  ],
+  "sunday": [
+   "sundays"
+  ],
+  "sunny": [
+   "sunnier",
+   "sunnies",
+   "sunniest"
+  ],
+  "sweden": [],
+  "swimming": [
+   "swam",
+   "swim",
+   "swims",
+   "swum"
+  ],
+  "t": [],
+  "tanzania": [],
+  "tennis": [],
+  "thailand": [],
+  "thursday": [
+   "thursdays"
+  ],
+  "tomato": [
+   "tomatoes"
+  ],
+  "trumpet": [
+   "trumpets"
+  ],
+  "tuesday": [
+   "tuesdays"
+  ],
+  "tunisia": [],
+  "twenty": [
+   "20"
+  ],
+  "vietnam": [],
+  "violin": [
+   "violins"
+  ],
+  "wednesday": [
+   "wednesdays"
+  ],
+  "winter": [
+   "winters"
+  ],
+  "wrestling": [
+   "wrestle",
+   "wrestled",
+   "wrestles"
+  ]
+ }
+}

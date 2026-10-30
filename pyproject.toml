@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "j-lens-mean"
+version = "0.0.0"
+description = "Centring the J-lens readout: J_l (h_l - mu_l), and what mu_l should be"
+readme = "README.md"
+requires-python = ">=3.12"
+# umot is a workspace member, self-contained under umot/ so its REPO_ROOT-relative
+# paths resolve unchanged. jle went back to its own repo (jlens-edits-1).
+dependencies = [
+    "umot",
+    "workspace-bench",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.9",
+    "ipykernel",
+    "matplotlib",
+    "datasets",
+]
+# umot/dashboard (Streamlit).
+dash = [
+    "streamlit>=1.64.0",
+    "plotly>=7.1.0",
+]
+
+[tool.hatch.build.targets.wheel]
+# The shared evaluation pipeline (src/jlm); see notes/eval-pipeline.md.
+packages = ["src/jlm"]
+
+[tool.uv]
+package = true
+default-groups = ["dev", "dash"]
+
+[tool.uv.workspace]
+members = ["umot"]
+
+[tool.uv.sources]
+umot = { workspace = true }
+# Shared pinned clone (92d763e), symlinked into umot/ as third_party/.
+workspace-bench = { path = "third_party/workspace-bench", editable = true }
+jlens = { git = "https://github.com/anthropics/jacobian-lens", rev = "581d398613e5602a5af361e1c34d3a92ea82ba8e" }
+torch = [{ index = "pytorch-cu130", marker = "sys_platform == 'win32'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true

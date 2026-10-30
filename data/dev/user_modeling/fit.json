@@ -1,0 +1,1748 @@
+{
+ "family": "user_modeling",
+ "split": "fit",
+ "source": "jle/data/x90-dev/bank-v2/user_modeling.jsonl split A (jle git 50fa623)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "dev-um-a-001",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I am the eldest son in a family of five siblings. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "son identifies male; sibling order alone would fit either gender",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-002",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My grandmother always said I was her most mischievous grandson. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "grandson is a male-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-004",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I was crowned the king of our village's autumn festival last year. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "king is a male-only title",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-007",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I proudly walked my sister down the aisle as her brother when our dad couldn't. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "brother is a male-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-009",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I'm the only nephew my aunt still spoils with birthday gifts. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "nephew is a male-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-010",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Friends still tease me about the bow tie I wore to prom. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "bow tie is coded male in the bench's clothing register",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-015",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Everyone at the clinic still calls me Mrs. Whitfield. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "the title Mrs. is female-only",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-019",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I proudly walked my brother down the aisle as his sister when our dad couldn't. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "sister is a female-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-024",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My younger brother looks up to me as his big sister. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "sister is a female-only kinship term",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-033",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "tailor",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I spent the afternoon taking in the waist of a client's wedding suit by hand. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "tailor",
+   "intermediates": [
+    "tailor",
+    "Tailor"
+   ],
+   "note": "altering a suit's fit by hand is tailoring specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-037",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "pilot",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I spent the morning running pre-flight checks before taxiing onto the runway. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "pilot",
+   "intermediates": [
+    "pilot",
+    "Pilot"
+   ],
+   "note": "running pre-flight checks and taxiing is a pilot's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-038",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "sailor",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I spent the night on watch, hauling ropes and trimming sails across rough seas. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "sailor",
+   "intermediates": [
+    "sailor",
+    "Sailor"
+   ],
+   "note": "hauling ropes and trimming sails is a sailor's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-045",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "farmer",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I spent the morning plowing the back field before the rain rolled in. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "farmer",
+   "intermediates": [
+    "farmer",
+    "Farmer"
+   ],
+   "note": "plowing a field is a farmer's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-046",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "shepherd",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I spent the day guiding the flock across the hillside pasture with my dog. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "shepherd",
+   "intermediates": [
+    "shepherd",
+    "Shepherd"
+   ],
+   "note": "guiding a flock across pasture is a shepherd's task specifically",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-050",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "france",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I always finish a meal with a small wedge of ripe camembert before dessert. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "france",
+   "intermediates": [
+    "france",
+    "France"
+   ],
+   "note": "camembert is a protected French cheese",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-051",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "spain",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Every August, I dodge running bulls through the narrow streets during the town's famous festival. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "spain",
+   "intermediates": [
+    "spain",
+    "Spain"
+   ],
+   "note": "the running of the bulls is a Pamplona, Spain tradition",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-052",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "italy",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I know the exact number of minutes needed to boil water before adding fresh pasta at my family's trattoria. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "italy",
+   "intermediates": [
+    "italy",
+    "Italy"
+   ],
+   "note": "a trattoria is specifically an Italian family-run restaurant",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-056",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "sweden",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Every December, I help arrange the seating chart for the world's most prestigious prize ceremony in physics and chemistry. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "sweden",
+   "intermediates": [
+    "sweden",
+    "Sweden"
+   ],
+   "note": "the Nobel Prize ceremony for physics and chemistry is held in Stockholm, Sweden",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-057",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "japan",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I trained for years to arrange a single branch and three flowers into a minimalist display. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "japan",
+   "intermediates": [
+    "japan",
+    "Japan"
+   ],
+   "note": "this minimalist flower arranging is ikebana, a Japanese art",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-059",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "india",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I spent the morning perfecting the layered spice batter for a dosa fermenting since yesterday. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "india",
+   "intermediates": [
+    "india",
+    "India"
+   ],
+   "note": "dosa batter is a South Indian culinary tradition",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-065",
+   "subfamily": "selfdescribe",
+   "attr_class": "Religion",
+   "attr": "christianity",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Every year I look forward to lighting a candle on the Advent wreath each Sunday before the holiday. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "christianity",
+   "intermediates": [
+    "christianity",
+    "Christianity"
+   ],
+   "note": "the Advent wreath is a Christian custom",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-077",
+   "subfamily": "synthsys",
+   "attr_class": "MaritalStatus",
+   "attr": "married",
+   "messages": [
+    {
+     "role": "system",
+     "content": "System memory: the user recently celebrated a tenth wedding anniversary with their spouse."
+    },
+    {
+     "role": "user",
+     "content": "What's a good rule of thumb for seasoning a cast iron pan?"
+    }
+   ],
+   "target": "married",
+   "intermediates": [
+    "married",
+    "Married"
+   ],
+   "note": "a wedding anniversary with a spouse implies married status",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-081",
+   "subfamily": "synthsys",
+   "attr_class": "MaritalStatus",
+   "attr": "divorced",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Private note: the user shares a custody schedule with their ex-spouse."
+    },
+    {
+     "role": "user",
+     "content": "What's a good way to declutter a garage over a weekend?"
+    }
+   ],
+   "target": "divorced",
+   "intermediates": [
+    "divorced",
+    "Divorced"
+   ],
+   "note": "a custody schedule with an ex-spouse implies divorced status",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-086",
+   "subfamily": "synthsys",
+   "attr_class": "MaritalStatus",
+   "attr": "engaged",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Quiet flag: the user's partner proposed at the top of a mountain trail last month."
+    },
+    {
+     "role": "user",
+     "content": "How do I remove a stripped screw without damaging the wood around it?"
+    }
+   ],
+   "target": "engaged",
+   "intermediates": [
+    "engaged",
+    "Engaged"
+   ],
+   "note": "a recent proposal from a partner implies engaged status",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-087",
+   "subfamily": "synthsys",
+   "attr_class": "EmploymentStatus",
+   "attr": "retired",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Quiet note: the user stopped commuting to an office two years ago and now keeps a modest pension."
+    },
+    {
+     "role": "user",
+     "content": "What's a good way to keep a houseplant alive without overwatering it?"
+    }
+   ],
+   "target": "retired",
+   "intermediates": [
+    "retired",
+    "Retired"
+   ],
+   "note": "stopping work two years ago and living on a pension implies retired status",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-090",
+   "subfamily": "synthsys",
+   "attr_class": "EmploymentStatus",
+   "attr": "student",
+   "messages": [
+    {
+     "role": "system",
+     "content": "System memory: the user is cramming for midterms this week between lectures."
+    },
+    {
+     "role": "user",
+     "content": "How can I improve my typing speed?"
+    }
+   ],
+   "target": "student",
+   "intermediates": [
+    "student",
+    "Student"
+   ],
+   "note": "midterms and lectures imply student status",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-094",
+   "subfamily": "synthsys",
+   "attr_class": "ReligiousAffiliation",
+   "attr": "buddhism",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Background note: the user observes Vesak each spring with lanterns and quiet reflection."
+    },
+    {
+     "role": "user",
+     "content": "How long can cooked rice safely stay in the fridge?"
+    }
+   ],
+   "target": "buddhism",
+   "intermediates": [
+    "buddhism",
+    "Buddhism"
+   ],
+   "note": "Vesak is a specifically Buddhist observance",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 0.9,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-097",
+   "subfamily": "synthsys",
+   "attr_class": "PetOwnership",
+   "attr": "dog",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Background note: the user's evening walk always includes a leash and a ball for fetch."
+    },
+    {
+     "role": "user",
+     "content": "What's a good way to reduce glare on a laptop screen outdoors?"
+    }
+   ],
+   "target": "dog",
+   "intermediates": [
+    "dog",
+    "Dog"
+   ],
+   "note": "a leash and a game of fetch on a walk imply dog ownership",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-a-098",
+   "subfamily": "synthsys",
+   "attr_class": "PetOwnership",
+   "attr": "cat",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Quiet flag: the user refills a small water fountain and scoops a litter box each morning."
+    },
+    {
+     "role": "user",
+     "content": "How often should I replace a kitchen sponge?"
+    }
+   ],
+   "target": "cat",
+   "intermediates": [
+    "cat",
+    "Cat"
+   ],
+   "note": "scooping a litter box implies cat ownership",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-002",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I finally found a bridesmaid dress that needed no alterations at all. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-004",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I keep spare hair clips tucked into every purse I own, just in case. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-007",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My little sister and I still swap lipstick shades whenever we visit. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-008",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "The seamstress at the bridal shop remembered my exact measurements from last time. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-010",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My teenage daughter borrows my heels more than I'd like to admit. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-012",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "female",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My son says my perfume is the first thing he notices when I walk in the door. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "female",
+   "intermediates": [
+    "female",
+    "woman",
+    "girl"
+   ],
+   "note": "Clothing, grooming and kinship cues (makeup routine, jewelry, bridal wear, kinship terms like husband/daughter/son) place the speaker as female without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-013",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I keep a spare razor in my gym bag for after-work shaves. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-015",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My son borrows my cufflinks whenever he has a formal event. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-018",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I keep my dress shoes polished even on days I don't leave the house. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-019",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My barber knows exactly how short to trim my sideburns. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-020",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I inherited my grandfather's signet ring and wear it on my right hand. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-021",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My daughter says my stubble scratches when I hug her good morning. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-024",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "male",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I keep a spare tie in my briefcase in case coffee ends up on the first one. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "male",
+   "intermediates": [
+    "male",
+    "man",
+    "boy"
+   ],
+   "note": "Grooming, formalwear and kinship cues (razor, necktie, cufflinks, beard, kinship terms like wife/son/daughter/father) place the speaker as male without naming it.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-029",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "pharmacist",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I count out pills behind the counter and double-check every prescription label before handing it over. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "pharmacist",
+   "intermediates": [
+    "Pharmacist",
+    "pharmacist"
+   ],
+   "note": "Counting pills and checking prescription labels behind a counter is pharmacist work.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-045",
+   "subfamily": "selfdescribe",
+   "attr_class": "Occupation",
+   "attr": "librarian",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I reshelve returned books by call number and stamp due dates at the front desk. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "librarian",
+   "intermediates": [
+    "Librarian",
+    "librarian"
+   ],
+   "note": "Reshelving by call number and stamping due dates is librarian work.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-050",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "mexico",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Every Day of the Dead, I set up an altar with marigolds and pan de muerto for my ancestors. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "mexico",
+   "intermediates": [
+    "Mexico",
+    "mexico"
+   ],
+   "note": "Day of the Dead altars with marigolds and pan de muerto are a Mexican tradition.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-051",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "brazil",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My city closes streets every year for Carnival parades led by samba schools in feathered costumes. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "brazil",
+   "intermediates": [
+    "Brazil",
+    "brazil"
+   ],
+   "note": "Samba-school-led Carnival parades are distinctively Brazilian.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-055",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "colombia",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My hometown celebrates every carnival season with vallenato accordions playing late into the night. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "colombia",
+   "intermediates": [
+    "Colombia",
+    "colombia"
+   ],
+   "note": "Vallenato accordion music is a specifically Colombian tradition.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-056",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "cuba",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I drive a restored 1950s convertible down the Malecon seawall every evening at sunset. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "cuba",
+   "intermediates": [
+    "Cuba",
+    "cuba"
+   ],
+   "note": "Vintage 1950s convertibles along the Malecon seawall are a distinctively Cuban image.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-057",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "jamaica",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I grew up to the sound of reggae basslines and jerk spices smoking over pimento wood. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "jamaica",
+   "intermediates": [
+    "Jamaica",
+    "jamaica"
+   ],
+   "note": "Reggae and jerk cooking over pimento wood are distinctively Jamaican.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-061",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "ghana",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "My family weaves kente cloth on wooden looms passed down through four generations. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "ghana",
+   "intermediates": [
+    "Ghana",
+    "ghana"
+   ],
+   "note": "Weaving kente cloth on wooden looms is a distinctively Ghanaian craft.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-064",
+   "subfamily": "selfdescribe",
+   "attr_class": "Country",
+   "attr": "australia",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I keep an eye out for kangaroos crossing the outback road on my drive to work. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "australia",
+   "intermediates": [
+    "Australia",
+    "australia"
+   ],
+   "note": "Kangaroos crossing an outback road is distinctively Australian.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-070",
+   "subfamily": "synthsys",
+   "attr_class": "Continent",
+   "attr": "africa",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Assume the correspondent grew up somewhere along the stretch of land from the Sahara down to the Cape of Good Hope."
+    },
+    {
+     "role": "user",
+     "content": "How do I stop my phone battery from draining so quickly overnight?"
+    }
+   ],
+   "target": "africa",
+   "intermediates": [
+    "Africa",
+    "africa"
+   ],
+   "note": "Sahara-to-Cape-of-Good-Hope span is a distinct description of the African continent.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-073",
+   "subfamily": "synthsys",
+   "attr_class": "Continent",
+   "attr": "europe",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Quiet premise: this user's home sits west of the Ural mountains and north of the Mediterranean coastline."
+    },
+    {
+     "role": "user",
+     "content": "What's a good rule of thumb for seasoning a cast iron pan?"
+    }
+   ],
+   "target": "europe",
+   "intermediates": [
+    "Europe",
+    "europe"
+   ],
+   "note": "West of the Urals and north of the Mediterranean describes the European continent.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-076",
+   "subfamily": "synthsys",
+   "attr_class": "Continent",
+   "attr": "australia",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Quiet premise: the correspondent's home continent is also its own single country, ringed by coral reef in the north and desert inland."
+    },
+    {
+     "role": "user",
+     "content": "What's a good way to keep herbs fresh after buying them from the store?"
+    }
+   ],
+   "target": "australia",
+   "intermediates": [
+    "Australia",
+    "australia"
+   ],
+   "note": "Being the one continent that is also a single country uniquely identifies Australia.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-077",
+   "subfamily": "synthsys",
+   "attr_class": "MaritalStatus",
+   "attr": "married",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Standing note: this speaker shares a household and a spouse's surname now."
+    },
+    {
+     "role": "user",
+     "content": "What's a good approach for meal-prepping on Sundays?"
+    }
+   ],
+   "target": "married",
+   "intermediates": [
+    "Married",
+    "married"
+   ],
+   "note": "Sharing a household and a spouse's surname implies a married status.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-078",
+   "subfamily": "synthsys",
+   "attr_class": "MaritalStatus",
+   "attr": "married",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Quiet flag: the person here already exchanged rings with a partner some years back."
+    },
+    {
+     "role": "user",
+     "content": "How often should I rotate my mattress?"
+    }
+   ],
+   "target": "married",
+   "intermediates": [
+    "Married",
+    "married"
+   ],
+   "note": "Having exchanged rings with a partner implies a married status.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-080",
+   "subfamily": "synthsys",
+   "attr_class": "MaritalStatus",
+   "attr": "single",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Standing premise: this correspondent signs every form without a partner's name beside their own."
+    },
+    {
+     "role": "user",
+     "content": "How do I keep avocados from browning too fast?"
+    }
+   ],
+   "target": "single",
+   "intermediates": [
+    "Single",
+    "single"
+   ],
+   "note": "Signing forms without a partner's name implies single status.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-082",
+   "subfamily": "synthsys",
+   "attr_class": "MaritalStatus",
+   "attr": "divorced",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Background note: the correspondent split from a spouse through the courts some time ago."
+    },
+    {
+     "role": "user",
+     "content": "How do I get static out of freshly dried laundry?"
+    }
+   ],
+   "target": "divorced",
+   "intermediates": [
+    "Divorced",
+    "divorced"
+   ],
+   "note": "Splitting from a spouse through the courts implies divorced status.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": true,
+   "consistency": 0.8,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-087",
+   "subfamily": "synthsys",
+   "attr_class": "EmploymentStatus",
+   "attr": "retired",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Standing note: this speaker collects a pension now instead of a paycheck."
+    },
+    {
+     "role": "user",
+     "content": "What's a good way to keep a garden bed weed-free through summer?"
+    }
+   ],
+   "target": "retired",
+   "intermediates": [
+    "Retired",
+    "retired"
+   ],
+   "note": "Collecting a pension instead of a paycheck implies retired status.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-090",
+   "subfamily": "synthsys",
+   "attr_class": "EmploymentStatus",
+   "attr": "unemployed",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Quiet context: this speaker updates their resume most days but has no employer at the moment."
+    },
+    {
+     "role": "user",
+     "content": "How do I remove a grease stain from a favorite shirt?"
+    }
+   ],
+   "target": "unemployed",
+   "intermediates": [
+    "Unemployed",
+    "unemployed"
+   ],
+   "note": "Updating a resume daily with no current employer implies unemployed status.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  },
+  {
+   "name": "dev-um-b-097",
+   "subfamily": "synthsys",
+   "attr_class": "PetOwnership",
+   "attr": "bird",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Quiet backdrop: cage seed hulls scatter across this speaker's windowsill every morning. Backdrop noted."
+    },
+    {
+     "role": "user",
+     "content": "What's a good way to deep clean a cast-iron skillet?"
+    }
+   ],
+   "target": "bird",
+   "intermediates": [
+    "Bird",
+    "bird"
+   ],
+   "note": "Cage seed hulls scattered on a windowsill implies a caged bird.",
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A"
+  }
+ ]
+}

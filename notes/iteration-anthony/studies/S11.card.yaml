@@ -1,0 +1,48 @@
+id: S11
+title: A mention control for user_modeling
+owner: B (j-lens-mean-cc), pilot-1
+status: diagnostic
+question: >-
+  Does a centre surface the user's attribute more when the user implies it about themself than when the same
+  sentence is quoted about a colleague? If so, that would be a fairness probe for UM, whose scorers cannot rank centres.
+verdict: >-
+  The premise fails: the plain lens itself surfaces the attribute more for the quote (0.97) than for the
+  self-description (0.70), and every centre does the same (0.90-0.97 vs 0.63-0.77). On UM the lens reads the prompt's
+  attribute content regardless of whom it is about, so UM pass@10 cannot validate a centre (it cannot separate user
+  modelling from reading the prompt).
+tiles:
+  - {label: "S11 bank strict, zero implies / mentions", value: "0.70 / 0.97", sub: "median best rank 3 / 0"}
+  - {label: "request cells, zero implies / mentions", value: "0.50 / 0.93", sub: "predicted implies > mentions, about 2:1"}
+  - {label: "every centre, implies / mentions", value: "0.63-0.77 / 0.90-0.97", sub: "position- and token-keyed alike"}
+  - {label: "absent floor, rand.u1rel", value: "0.30", sub: "real arms 0.00"}
+formulas:
+  - latex: '\text{pass@10}\big[J_l(h^{\text{implies}} - g)\big] \;\;\text{vs}\;\; \text{pass@10}\big[J_l(h^{\text{mentions}} - g)\big]'
+    note: "Same request and template; g fitted within the condition, never on the item's own variants (30 source items)."
+diagram:
+  kind: probe
+  left: "self-described"
+  left_text: "I am the eldest son in a family of five siblings. Write a ... infobox for me."
+  right: "quoted about a colleague"
+  right_text: "My colleague told me: \"I am the eldest son in a family of five siblings.\" Write a ... infobox for me."
+  caption: "Same request, same attribute words; only who they describe changes. A fair centre should favour the left."
+split: val
+arms: []
+controls: []
+insights:
+  - lead: On UM the lens reads attribute content, not attribution
+    text: >-
+      The attribute ("male", a country, a job) surfaces at least as often when quoted about a colleague, for the
+      uncentred lens (0.97 vs 0.70) and for every centre (fam 0.90 vs 0.63; tok, u1rel, u1endcar, u1carpos 0.93 vs 0.77).
+  - lead: UM pass@10 cannot validate a centre
+    text: >-
+      It cannot distinguish "the model has modelled the user" from "the prompt contains words that imply the attribute",
+      so UM gains (e.g. knnx8's UM 1.00 in S4) are not evidence for a centre.
+  - lead: No difference between position- and token-keyed centres
+    text: >-
+      Unlike DM's mention control (U1), u1rel and tok score the same here (implies 0.77, mentions 0.93).
+  - lead: Strict UM has a high random floor
+    text: >-
+      On the neutral absent prompts the random control reaches 0.30 (common targets such as "male" / "female" over 21
+      cells x 12 layers), so a UM probe needs a rank-based score first.
+next:
+  - "A content-changing UM probe (same request, attribute implied by unrelated words vs explicitly negated), after a rank-based UM score."

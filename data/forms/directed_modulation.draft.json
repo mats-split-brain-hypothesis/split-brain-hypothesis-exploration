@@ -1,0 +1,525 @@
+{
+ "meta": {
+  "model": "anthropic/claude-haiku-5.5",
+  "built": "2026-10-11",
+  "rule": "inflections",
+  "spend_usd": 0.0019,
+  "note": "unpinned model's draft, reviewed by hand; edit freely, a rebuild keeps existing keys"
+ },
+ "forms": {
+  "accordion": [
+   "accordions"
+  ],
+  "alcove": [
+   "alcoves"
+  ],
+  "almanac": [
+   "almanacs"
+  ],
+  "amethyst": [
+   "amethysts"
+  ],
+  "archery": [],
+  "artichoke": [
+   "artichokes"
+  ],
+  "astronomy": [
+   "astronomies"
+  ],
+  "avalanche": [
+   "avalanches"
+  ],
+  "baklava": [
+   "baklavas"
+  ],
+  "banjo": [
+   "banjoes",
+   "banjos"
+  ],
+  "baobab": [
+   "baobabs"
+  ],
+  "barnacle": [
+   "barnacles"
+  ],
+  "barometer": [
+   "barometers"
+  ],
+  "beadwork": [
+   "beadworks"
+  ],
+  "beekeeping": [],
+  "birdwatching": [
+   "birdwatch",
+   "birdwatched",
+   "birdwatches"
+  ],
+  "bishop": [
+   "bishops"
+  ],
+  "bonsai": [
+   "bonsais"
+  ],
+  "bookbinding": [
+   "bookbind",
+   "bookbinds",
+   "bookbound"
+  ],
+  "bramble": [
+   "brambles"
+  ],
+  "brownie": [
+   "brownies"
+  ],
+  "calligraphy": [],
+  "cannoli": [
+   "cannolis"
+  ],
+  "canoe": [
+   "canoed",
+   "canoeing",
+   "canoes"
+  ],
+  "catamaran": [
+   "catamarans"
+  ],
+  "cello": [
+   "cellist",
+   "cellists",
+   "cellos"
+  ],
+  "cicada": [
+   "cicadas"
+  ],
+  "cinnabar": [],
+  "citadel": [
+   "citadels"
+  ],
+  "citron": [
+   "citrons"
+  ],
+  "clavicle": [
+   "clavicles"
+  ],
+  "clog": [
+   "clogs"
+  ],
+  "cobalt": [
+   "cobalts"
+  ],
+  "cobblestone": [
+   "cobblestones"
+  ],
+  "colander": [
+   "colanders"
+  ],
+  "crescendo": [
+   "crescendoes",
+   "crescendos"
+  ],
+  "crescent": [
+   "crescents"
+  ],
+  "crochet": [
+   "crocheted",
+   "crocheting",
+   "crochets"
+  ],
+  "cross-stitch": [],
+  "donkey": [
+   "donkeys"
+  ],
+  "dread": [
+   "dreaded",
+   "dreadful",
+   "dreading",
+   "dreads"
+  ],
+  "eclair": [
+   "eclairs"
+  ],
+  "ellipse": [
+   "ellipses"
+  ],
+  "embroidery": [
+   "embroider",
+   "embroidered",
+   "embroidering",
+   "embroiders"
+  ],
+  "envy": [
+   "envied",
+   "envies",
+   "envying"
+  ],
+  "espadrille": [
+   "espadrilles"
+  ],
+  "falconry": [
+   "falconries"
+  ],
+  "femur": [
+   "femora",
+   "femurs"
+  ],
+  "fencing": [
+   "fence",
+   "fenced",
+   "fences"
+  ],
+  "fjord": [
+   "fjords"
+  ],
+  "garnet": [
+   "garnets"
+  ],
+  "gazebo": [
+   "gazeboes",
+   "gazebos"
+  ],
+  "geocaching": [
+   "geocache",
+   "geocached",
+   "geocaches"
+  ],
+  "glassblowing": [
+   "glassblowers"
+  ],
+  "gondola": [
+   "gondolas"
+  ],
+  "grater": [
+   "graters"
+  ],
+  "guilt": [],
+  "harp": [
+   "harpist",
+   "harpists",
+   "harps"
+  ],
+  "harpoon": [
+   "harpoons"
+  ],
+  "hexagon": [
+   "hexagons"
+  ],
+  "hornet": [
+   "hornets"
+  ],
+  "ikebana": [],
+  "iridium": [],
+  "isthmus": [
+   "isthmi",
+   "isthmuses"
+  ],
+  "juggling": [
+   "juggle",
+   "juggled",
+   "juggles"
+  ],
+  "juniper": [
+   "junipers"
+  ],
+  "jupiter": [],
+  "kayak": [
+   "kayaks"
+  ],
+  "kiln": [
+   "kilns"
+  ],
+  "knight": [
+   "knights"
+  ],
+  "knitting": [
+   "knit",
+   "knits",
+   "knitted"
+  ],
+  "kumquat": [
+   "kumquats"
+  ],
+  "labyrinth": [
+   "labyrinths"
+  ],
+  "lacemaking": [
+   "lacemade",
+   "lacemake",
+   "lacemakes"
+  ],
+  "ladle": [
+   "ladled",
+   "ladles",
+   "ladling"
+  ],
+  "lagoon": [
+   "lagoons"
+  ],
+  "lantern": [
+   "lanterns"
+  ],
+  "loafer": [
+   "loafers"
+  ],
+  "lychee": [
+   "lychees"
+  ],
+  "macrame": [
+   "macrames"
+  ],
+  "manatee": [
+   "manatees"
+  ],
+  "mantis": [
+   "mantids",
+   "mantises"
+  ],
+  "marigold": [
+   "marigolds"
+  ],
+  "marquetry": [
+   "marquetries"
+  ],
+  "mars": [],
+  "marzipan": [],
+  "meridian": [
+   "meridians"
+  ],
+  "metalsmithing": [
+   "metalsmith",
+   "metalsmithed",
+   "metalsmiths"
+  ],
+  "moccasin": [
+   "moccasins"
+  ],
+  "monsoon": [
+   "monsoons"
+  ],
+  "mosaic": [
+   "mosaics"
+  ],
+  "mule": [
+   "mules"
+  ],
+  "nebula": [
+   "nebulae",
+   "nebulas"
+  ],
+  "neptune": [],
+  "nostalgia": [],
+  "obelisk": [
+   "obeliscs",
+   "obelisks"
+  ],
+  "oboe": [
+   "oboes"
+  ],
+  "obsidian": [
+   "obsidians"
+  ],
+  "ocelot": [
+   "ocelots"
+  ],
+  "onyx": [
+   "onyxes"
+  ],
+  "opal": [
+   "opals"
+  ],
+  "orienteering": [],
+  "origami": [],
+  "palladium": [],
+  "parapet": [
+   "parapets"
+  ],
+  "parsnip": [
+   "parsnips"
+  ],
+  "patella": [
+   "patellae",
+   "patellas"
+  ],
+  "pawn": [
+   "pawns"
+  ],
+  "pergola": [
+   "pergolas"
+  ],
+  "periwinkle": [
+   "periwinkles"
+  ],
+  "persimmon": [
+   "persimmons"
+  ],
+  "philately": [],
+  "pottery": [
+   "potter",
+   "potteries",
+   "potters"
+  ],
+  "puppetry": [
+   "puppetries"
+  ],
+  "quarry": [
+   "quarries"
+  ],
+  "quasar": [
+   "quasars"
+  ],
+  "quilling": [
+   "quill",
+   "quilled",
+   "quills"
+  ],
+  "quince": [
+   "quinces"
+  ],
+  "ravine": [
+   "ravines"
+  ],
+  "rhombus": [
+   "rhombi",
+   "rhombuses"
+  ],
+  "rook": [
+   "rooks"
+  ],
+  "rowing": [
+   "row",
+   "rowed",
+   "rower",
+   "rowers",
+   "rows"
+  ],
+  "saffron": [],
+  "sailing": [
+   "sail",
+   "sailed",
+   "sails"
+  ],
+  "sandal": [
+   "sandals"
+  ],
+  "saturn": [],
+  "schooner": [
+   "schooners"
+  ],
+  "seahorse": [
+   "seahorses"
+  ],
+  "sequoia": [
+   "sequoias"
+  ],
+  "sextant": [
+   "sextants"
+  ],
+  "shame": [
+   "shamed",
+   "shames",
+   "shaming"
+  ],
+  "spatula": [
+   "spatulas"
+  ],
+  "spelunking": [
+   "spelunk",
+   "spelunked",
+   "spelunks"
+  ],
+  "squid": [
+   "squids"
+  ],
+  "sternum": [
+   "sternums"
+  ],
+  "stingray": [
+   "stingrays"
+  ],
+  "sundial": [
+   "sundials"
+  ],
+  "tamarind": [
+   "tamarinds"
+  ],
+  "tapir": [
+   "tapirs"
+  ],
+  "taxidermy": [
+   "taxidermist",
+   "taxidermists"
+  ],
+  "termite": [
+   "termites"
+  ],
+  "tibia": [
+   "tibias"
+  ],
+  "tiramisu": [
+   "tiramisus"
+  ],
+  "topaz": [
+   "topazes"
+  ],
+  "topiary": [
+   "topiaries"
+  ],
+  "trapezoid": [
+   "trapezia",
+   "trapeziums",
+   "trapezoids"
+  ],
+  "trellis": [
+   "trellised",
+   "trellises",
+   "trellising"
+  ],
+  "tundra": [
+   "tundras"
+  ],
+  "tungsten": [],
+  "turnip": [
+   "turnips"
+  ],
+  "turret": [
+   "turrets"
+  ],
+  "venus": [],
+  "vortex": [
+   "vortexes",
+   "vortices"
+  ],
+  "weevil": [
+   "weevils"
+  ],
+  "whisk": [
+   "whisked",
+   "whisking",
+   "whisks"
+  ],
+  "whittling": [
+   "whittle",
+   "whittled",
+   "whittles"
+  ],
+  "willow": [
+   "willows"
+  ],
+  "woodturning": [
+   "woodturn",
+   "woodturned",
+   "woodturner",
+   "woodturners",
+   "woodturns"
+  ],
+  "yak": [
+   "yaks"
+  ],
+  "zephyr": [
+   "zephyrs"
+  ],
+  "zeppelin": [
+   "zeppelins"
+  ],
+  "zinc": []
+ }
+}

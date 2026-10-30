@@ -1,0 +1,32 @@
+id: S23
+title: Per-layer centre selection
+owner: B (j-lens-mean-e1), night-2 (steward's card)
+status: negative
+question: >
+  S14's schedules switch centres once, at L40. Does choosing the centre per layer (on fit, among the label-free centres)
+  buy more than one switch?
+verdict: >
+  Not much (and, S23b, a schedule finalist is about its best single component): the fit-selected per-layer map beats the single switch (S14b) by +0.034 on fit but +0.010 on val (cos; rms
+  +0.002), inside the spread of random per-layer maps (val 0.597-0.658). The any-layer item rule rewards mixing centres
+  across layers by itself, so part of every schedule's gain is that union effect.
+tiles:
+  - {label: "val strict, selected map vs S14b", value: "+0.010", sub: "fit +0.034; rms +0.002"}
+  - {label: "val strict, selected map vs fam", value: "+0.053", sub: "guardrail ok"}
+  - {label: "50 random maps, val", value: "0.633", sub: "5-95 %: 0.597-0.658; S14b 0.642"}
+formulas:
+  - latex: 'g_l(h) = g_{c(l)}(h), \quad c(l) \in \{0, \text{kmx64}, \text{s14t64}, \text{S14b-late}, \text{knnxs8}\}'
+    note: "c chosen per layer by greedy coordinate ascent on the fit macro, scored exactly from the components' readouts (an item passes if some layer's assigned centre passes it)."
+diagram:
+  kind: layer
+  lag: 0
+  axis: layer
+  caption: "A different centre at each layer; the item passes if any layer's readout does."
+split: val
+arms: ["s23map:cos@fit|cos", "s23map:rms@fit|rms", "sched:40:kmx64+s14:template:64:mean=kmx64:a=0.5@fit|cos"]
+controls: []
+insights:
+  - {lead: "One switch is about as good as a per-layer choice", text: "The selected map keeps +0.010 (cos) / +0.002 (rms) of its +0.034 / +0.023 fit lead over S14b on val."}
+  - {lead: "The item rule rewards variety across layers", text: "Random per-layer maps average S14b's level and reach 0.663; all five centres at every layer would read 0.698 (5x the cells). Part of any schedule's gain is this union effect of pass@10's any-layer rule."}
+  - {lead: "knnxs8 early, template forms late", text: "Both readouts choose knnxs8 at L24-40 and the template forms at L44-56."}
+  - {lead: "S23b: the schedule finalists are their best single component", text: "S14k, S14b and S21b are each within about 0.01 of their best component used at every layer (val, cos and rms); the same centres in swapped order fall below it: no free union gain for two-centre schedules."}
+next: []

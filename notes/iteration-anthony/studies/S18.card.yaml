@@ -1,0 +1,36 @@
+id: S18
+title: Sparse mu on the massive-activation coordinates
+owner: B (j-lens-mean-e1), night-2
+status: negative
+question: >
+  The family mean's norm sits almost entirely in a few outlier coordinates of the residual stream. Does its gain sit there
+  too, so that a context-free value for those coordinates (the wikitext mean) could replace it?
+verdict: >
+  No: the gain is dense. Zeroing fam's 8 largest coordinates (60-90 % of $\|\mu_{\text{fam}}\|^2$) leaves fam's fit macro unchanged
+  (+0.001), and fam on those 8 alone scores as no centring (-0.094 vs -0.092). Wikitext values on the outliers are worse than
+  not centring, though they agree with fam there to cos 0.9-0.99. The outliers are what norms and cosines of raw states
+  measure, not what the readout reads; S20's better constant differs from fam only in the dense coordinates.
+tiles:
+  - {label: "fit macro, fam without its top-8 coords, Δ vs fam", value: "+0.001", sub: "s18c8 0.602 vs fam 0.601"}
+  - {label: "fit macro, fam on its top-8 coords only, Δ vs zero", value: "-0.002", sub: "s18k8 0.507 vs zero 0.509"}
+  - {label: "share of ||fam||² in 8 coordinates (L20-48)", value: "0.60-0.94", sub: "a read state h: 0.40-0.79"}
+  - {label: "fit macro, wikitext values on the top 32, Δ vs zero", value: "-0.024", sub: "s18w32; s18ww32 (wiki's own top 32) -0.039"}
+formulas:
+  - latex: 'g_{k}(h) = m_k \odot \mu_{\text{fam}}, \qquad g^{c}_{k}(h) = (1 - m_k) \odot \mu_{\text{fam}}'
+    note: "m_k: 0/1 mask of fam's top-k coordinates by |value| (per layer); s18k<k> keeps them, s18c<k> zeroes them (s18k + s18c = fam)."
+  - latex: 'g(h) = m_k \odot \bar h_{\text{wiki}}'
+    note: "s18w<k>: the wikitext corpus mean on fam's top-k coordinates; s18ww<k> on its own; s18r<k>: fam on k random coordinates (control)."
+diagram:
+  kind: none
+  caption: "fam = a handful of massive coordinates (most of its norm, none of its effect) + a dense remainder (all of its effect)."
+split: fit
+arms: ["s18c8@self|cos", "s18k8@self|cos", "s18k512@self|cos", "s18w32@self|cos", "s18ww32@self|cos"]
+controls: ["s18r32@self|cos", "s18r512@self|cos"]
+insights:
+  - {lead: "The mean's norm and its effect live in different coordinates", text: "fam's top 8 coordinates decode to generic openers (Interestingly, Indeed, 更是) at every family; the dense remainder decodes to the family's template prior (association: whispered, amid, nestled). ||mu||/||h|| = 0.81-0.98 is a statement about the outliers. A (S15) confirmed: with them zeroed, fam's share of J's top-32 input directions exceeds h's at every depth."}
+  - {lead: "Centred distances are not outlier-dominated (S16b, a refuted guess)", text: "I expected knnx's cosine and the pooled PCs to be set by the outliers. They are not: both centre by the pool mean first, which removes the shared outlier part; dropping the 32 outlier coordinates leaves knnx8's neighbours and score unchanged (fit 0.630 vs 0.634) and the PCs as poor."}
+  - {lead: "Small outlier errors are not harmless", text: "Wikitext agrees with fam on the outliers to cos 0.9-0.99, yet its values there make the readout worse than no centring (s18w32 -0.116 vs fam, zero -0.092): in readout space wikitext's error on the top 32 is 0.5-1.2x the size of fam's whole dense part, a mechanism for why corpus means (G1, kmw) fail."}
+  - {lead: "The better constant is a new dense direction", text: "S20's ceil.const (fitted with targets, +0.095 over fam on val) differs from fam with 0.00 of ||g - fam||² in fam's top-8 coordinates, ||g - fam|| 0.4-0.9 of fam's dense part, and orthogonal to it."}
+  - {lead: "The outlier offset explains the harm, not the null (S18b)", text: "The whole wikitext mean is below no centring (-0.037); with its own top 8-128 coordinates zeroed it is at zero's level (-0.006 to +0.008), never near fam: prose carries no template prior."}
+  - {lead: "A chat-format corpus does a little better, never fam (S18c)", text: "The chat-corpus mean is +0.018 over zero (+0.027 with its outliers zeroed), a quarter of fam's gain: the rest is the family's own question frame."}
+next: []

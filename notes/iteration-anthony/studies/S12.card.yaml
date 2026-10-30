@@ -1,0 +1,31 @@
+id: S12
+title: Same token, other content
+owner: C (j-lens-mean-ad), pilot-1
+status: negative
+question: >
+  tok helps UM / DM because its cells share the read token, but they also share the family's content and language. Does
+  a mean of the same token in the other families' prompts keep the form key and drop the content?
+verdict: >
+  Fair but weak: xtok passes the mention control (held 0.38 / mentioned 0.01) but falls below fam on the fit screen (macro
+  0.572 vs 0.601; tok 0.637), losing UM and the template families. The token alone is not what tok matches: the useful
+  counterfactual is this token in this family's context. Not taken to val.
+tiles:
+  - {label: "fit strict macro, xtok", value: "0.572", sub: "fam 0.601, tok 0.637"}
+  - {label: "mention control, held / mentioned", value: "0.38 / 0.01", sub: "tok 0.82 / 0.59, fam 0.29 / 0.05"}
+  - {label: "fit strict UM / DM, xtok", value: "0.672 / 0.105", sub: "fam 0.721 / 0.079, tok 0.803 / 0.250"}
+formulas:
+  - latex: 'g(h) = \bar h_{T}, \qquad T = \{\, r \in \mathcal{C}_{\neg\text{fam}} : \operatorname{tok}(r) = \operatorname{tok}(h) \,\}'
+    note: "xtok: the read token's mean over $\\mathcal{C}_{\\neg\\text{fam}}$, every position of the other 10 families' fit context captures; the family mean when |T| < 3. The pool never contains the read family's items."
+diagram:
+  kind: pool
+  select: token
+  caption: "xtok averages the read token's states in other families' prompts: the same token, other content and template."
+split: fit
+arms: ["xtok@self|cos", "tok@fit|cos"]
+controls: ["shuf.xtok@self|cos", "rand.xtok@self|cos"]
+insights:
+  - {lead: "The token alone is not what tok matches", text: "xtok 0.572 on fit vs u1tokany (same key within the read family) 0.610 and tok (at the read slot) 0.637: the closer the context, the better."}
+  - {lead: "UM / DM gains do not transfer across families", text: "UM 0.672 (below fam's 0.721), DM 0.105 (+0.03); the prediction had part of tok's gain."}
+  - {lead: "Fair, as designed", text: "Held 0.38 / mentioned 0.01 on the mention control (+0.37); multilingual_mt stays at fam's 0.259."}
+  - {lead: "Template families lose", text: "association 0.510 and multihop 0.529 vs fam 0.676 / 0.600: other families' templates differ."}
+next: []

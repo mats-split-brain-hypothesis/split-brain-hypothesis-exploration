@@ -1,0 +1,3521 @@
+{
+ "family": "mention_many",
+ "note": "One held concept among five in the prompt. The five are the item's own judge options (X and its four distractors), so the judge's question is \"which of these five, all present, is the readout about?\". Conditions, 35 items each:",
+ "templates": {
+  "hold": {
+   "early": "The {d} {c}: hold it in mind as you write.",
+   "middle": "Hold the {d} {c} in mind as you write.",
+   "late": "As you write, hold in mind the {d} {c}."
+  },
+  "mention": {
+   "early": "The {d} {c} came up in an article I read yesterday.",
+   "middle": "Yesterday an article about the {d} {c} caught my eye.",
+   "late": "Yesterday I read an article that mentioned the {d} {c}."
+  },
+  "list": "Yesterday I read articles that mentioned {phrases}.",
+  "refer": "Of these, hold the {d} {c} in mind as you write.",
+  "copy": "Now write exactly this sentence: \"{carrier}\""
+ },
+ "items": [
+  {
+   "id": "mm-listhold-dm-pair-00",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-00",
+   "source": "dm-pair-00-pos",
+   "concept": "clavicle",
+   "held": "clavicle",
+   "mentioned": [
+    "grater",
+    "kumquat",
+    "banjo",
+    "loafer"
+   ],
+   "listed": [
+    "grater",
+    "kumquat",
+    "banjo",
+    "loafer"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Yesterday I read articles that mentioned the utensil grater, the fruit kumquat, the instrument banjo and the footwear loafer. Hold the body part clavicle in mind as you write. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-00",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-00",
+   "source": "dm-pair-00-pos",
+   "concept": "clavicle",
+   "held": "clavicle",
+   "mentioned": [
+    "kumquat",
+    "grater",
+    "banjo",
+    "loafer"
+   ],
+   "listed": [
+    "kumquat",
+    "grater",
+    "banjo",
+    "loafer"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Hold the body part clavicle in mind as you write. Yesterday I read articles that mentioned the fruit kumquat, the utensil grater, the instrument banjo and the footwear loafer. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-listnone-dm-pair-00",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-00",
+   "source": "dm-pair-00-pos",
+   "concept": "clavicle",
+   "held": null,
+   "mentioned": [
+    "kumquat",
+    "banjo",
+    "clavicle",
+    "loafer",
+    "grater"
+   ],
+   "listed": [
+    "kumquat",
+    "banjo",
+    "clavicle",
+    "loafer",
+    "grater"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Yesterday I read articles that mentioned the fruit kumquat, the instrument banjo, the body part clavicle, the footwear loafer and the utensil grater. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-00",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-00",
+   "source": "dm-pair-00-pos",
+   "concept": "clavicle",
+   "held": "clavicle",
+   "mentioned": [
+    "grater",
+    "kumquat",
+    "clavicle",
+    "banjo",
+    "loafer"
+   ],
+   "listed": [
+    "grater",
+    "kumquat",
+    "clavicle",
+    "banjo",
+    "loafer"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Yesterday I read articles that mentioned the utensil grater, the fruit kumquat, the body part clavicle, the instrument banjo and the footwear loafer. Of these, hold the body part clavicle in mind as you write. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-listhold-dm-pair-01",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-01",
+   "source": "dm-pair-01-pos",
+   "concept": "bishop",
+   "held": "bishop",
+   "mentioned": [
+    "donkey",
+    "Neptune",
+    "ellipse",
+    "weevil"
+   ],
+   "listed": [
+    "donkey",
+    "Neptune",
+    "ellipse",
+    "weevil"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Yesterday I read articles that mentioned the animal donkey, the planet Neptune, the shape ellipse and the insect weevil. Hold the chess piece bishop in mind as you write. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-01",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-01",
+   "source": "dm-pair-01-pos",
+   "concept": "bishop",
+   "held": "bishop",
+   "mentioned": [
+    "ellipse",
+    "weevil",
+    "Neptune",
+    "donkey"
+   ],
+   "listed": [
+    "ellipse",
+    "weevil",
+    "Neptune",
+    "donkey"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Hold the chess piece bishop in mind as you write. Yesterday I read articles that mentioned the shape ellipse, the insect weevil, the planet Neptune and the animal donkey. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-listnone-dm-pair-01",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-01",
+   "source": "dm-pair-01-pos",
+   "concept": "bishop",
+   "held": null,
+   "mentioned": [
+    "Neptune",
+    "donkey",
+    "bishop",
+    "weevil",
+    "ellipse"
+   ],
+   "listed": [
+    "Neptune",
+    "donkey",
+    "bishop",
+    "weevil",
+    "ellipse"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Yesterday I read articles that mentioned the planet Neptune, the animal donkey, the chess piece bishop, the insect weevil and the shape ellipse. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-01",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-01",
+   "source": "dm-pair-01-pos",
+   "concept": "bishop",
+   "held": "bishop",
+   "mentioned": [
+    "Neptune",
+    "bishop",
+    "weevil",
+    "ellipse",
+    "donkey"
+   ],
+   "listed": [
+    "Neptune",
+    "bishop",
+    "weevil",
+    "ellipse",
+    "donkey"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Yesterday I read articles that mentioned the planet Neptune, the chess piece bishop, the insect weevil, the shape ellipse and the animal donkey. Of these, hold the chess piece bishop in mind as you write. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-listhold-dm-pair-02",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-02",
+   "source": "dm-pair-02-pos",
+   "concept": "citron",
+   "held": "citron",
+   "mentioned": [
+    "stingray",
+    "moccasin",
+    "brownie",
+    "amethyst"
+   ],
+   "listed": [
+    "stingray",
+    "moccasin",
+    "brownie",
+    "amethyst"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Yesterday I read articles that mentioned the sea creature stingray, the footwear moccasin, the dessert brownie and the gemstone amethyst. Hold the fruit citron in mind as you write. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-02",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-02",
+   "source": "dm-pair-02-pos",
+   "concept": "citron",
+   "held": "citron",
+   "mentioned": [
+    "amethyst",
+    "moccasin",
+    "stingray",
+    "brownie"
+   ],
+   "listed": [
+    "amethyst",
+    "moccasin",
+    "stingray",
+    "brownie"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Hold the fruit citron in mind as you write. Yesterday I read articles that mentioned the gemstone amethyst, the footwear moccasin, the sea creature stingray and the dessert brownie. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-listnone-dm-pair-02",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-02",
+   "source": "dm-pair-02-pos",
+   "concept": "citron",
+   "held": null,
+   "mentioned": [
+    "amethyst",
+    "stingray",
+    "moccasin",
+    "citron",
+    "brownie"
+   ],
+   "listed": [
+    "amethyst",
+    "stingray",
+    "moccasin",
+    "citron",
+    "brownie"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Yesterday I read articles that mentioned the gemstone amethyst, the sea creature stingray, the footwear moccasin, the fruit citron and the dessert brownie. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-02",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-02",
+   "source": "dm-pair-02-pos",
+   "concept": "citron",
+   "held": "citron",
+   "mentioned": [
+    "brownie",
+    "stingray",
+    "moccasin",
+    "amethyst",
+    "citron"
+   ],
+   "listed": [
+    "brownie",
+    "stingray",
+    "moccasin",
+    "amethyst",
+    "citron"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Yesterday I read articles that mentioned the dessert brownie, the sea creature stingray, the footwear moccasin, the gemstone amethyst and the fruit citron. Of these, hold the fruit citron in mind as you write. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-listhold-dm-pair-03",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-03",
+   "source": "dm-pair-03-pos",
+   "concept": "brownie",
+   "held": "brownie",
+   "mentioned": [
+    "colander",
+    "amethyst",
+    "canoe",
+    "citron"
+   ],
+   "listed": [
+    "colander",
+    "amethyst",
+    "canoe",
+    "citron"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Yesterday I read articles that mentioned the utensil colander, the gemstone amethyst, the boat canoe and the fruit citron. Hold the dessert brownie in mind as you write. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-03",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-03",
+   "source": "dm-pair-03-pos",
+   "concept": "brownie",
+   "held": "brownie",
+   "mentioned": [
+    "colander",
+    "citron",
+    "canoe",
+    "amethyst"
+   ],
+   "listed": [
+    "colander",
+    "citron",
+    "canoe",
+    "amethyst"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Hold the dessert brownie in mind as you write. Yesterday I read articles that mentioned the utensil colander, the fruit citron, the boat canoe and the gemstone amethyst. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-listnone-dm-pair-03",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-03",
+   "source": "dm-pair-03-pos",
+   "concept": "brownie",
+   "held": null,
+   "mentioned": [
+    "amethyst",
+    "brownie",
+    "colander",
+    "canoe",
+    "citron"
+   ],
+   "listed": [
+    "amethyst",
+    "brownie",
+    "colander",
+    "canoe",
+    "citron"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Yesterday I read articles that mentioned the gemstone amethyst, the dessert brownie, the utensil colander, the boat canoe and the fruit citron. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-03",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-03",
+   "source": "dm-pair-03-pos",
+   "concept": "brownie",
+   "held": "brownie",
+   "mentioned": [
+    "canoe",
+    "colander",
+    "brownie",
+    "citron",
+    "amethyst"
+   ],
+   "listed": [
+    "canoe",
+    "colander",
+    "brownie",
+    "citron",
+    "amethyst"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Yesterday I read articles that mentioned the boat canoe, the utensil colander, the dessert brownie, the fruit citron and the gemstone amethyst. Of these, hold the dessert brownie in mind as you write. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-listhold-dm-pair-04",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-04",
+   "source": "dm-pair-04-pos",
+   "concept": "envy",
+   "held": "envy",
+   "mentioned": [
+    "ellipse",
+    "stingray",
+    "grater",
+    "brownie"
+   ],
+   "listed": [
+    "ellipse",
+    "stingray",
+    "grater",
+    "brownie"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Yesterday I read articles that mentioned the shape ellipse, the sea creature stingray, the utensil grater and the dessert brownie. Hold the emotion envy in mind as you write. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-04",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-04",
+   "source": "dm-pair-04-pos",
+   "concept": "envy",
+   "held": "envy",
+   "mentioned": [
+    "ellipse",
+    "stingray",
+    "brownie",
+    "grater"
+   ],
+   "listed": [
+    "ellipse",
+    "stingray",
+    "brownie",
+    "grater"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Hold the emotion envy in mind as you write. Yesterday I read articles that mentioned the shape ellipse, the sea creature stingray, the dessert brownie and the utensil grater. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-listnone-dm-pair-04",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-04",
+   "source": "dm-pair-04-pos",
+   "concept": "envy",
+   "held": null,
+   "mentioned": [
+    "brownie",
+    "ellipse",
+    "envy",
+    "stingray",
+    "grater"
+   ],
+   "listed": [
+    "brownie",
+    "ellipse",
+    "envy",
+    "stingray",
+    "grater"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Yesterday I read articles that mentioned the dessert brownie, the shape ellipse, the emotion envy, the sea creature stingray and the utensil grater. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-04",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-04",
+   "source": "dm-pair-04-pos",
+   "concept": "envy",
+   "held": "envy",
+   "mentioned": [
+    "grater",
+    "brownie",
+    "ellipse",
+    "envy",
+    "stingray"
+   ],
+   "listed": [
+    "grater",
+    "brownie",
+    "ellipse",
+    "envy",
+    "stingray"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Yesterday I read articles that mentioned the utensil grater, the dessert brownie, the shape ellipse, the emotion envy and the sea creature stingray. Of these, hold the emotion envy in mind as you write. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-listhold-dm-pair-05",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-05",
+   "source": "dm-pair-05-pos",
+   "concept": "mule",
+   "held": "mule",
+   "mentioned": [
+    "colander",
+    "banjo",
+    "envy",
+    "baobab"
+   ],
+   "listed": [
+    "colander",
+    "banjo",
+    "envy",
+    "baobab"
+   ],
+   "carrier": "The meeting was moved to a larger room.",
+   "prompt": "Yesterday I read articles that mentioned the utensil colander, the instrument banjo, the emotion envy and the tree baobab. Hold the animal mule in mind as you write. Now write exactly this sentence: \"The meeting was moved to a larger room.\"",
+   "assistant": "The meeting was moved to a larger room."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-05",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-05",
+   "source": "dm-pair-05-pos",
+   "concept": "mule",
+   "held": "mule",
+   "mentioned": [
+    "baobab",
+    "envy",
+    "colander",
+    "banjo"
+   ],
+   "listed": [
+    "baobab",
+    "envy",
+    "colander",
+    "banjo"
+   ],
+   "carrier": "The meeting was moved to a larger room.",
+   "prompt": "Hold the animal mule in mind as you write. Yesterday I read articles that mentioned the tree baobab, the emotion envy, the utensil colander and the instrument banjo. Now write exactly this sentence: \"The meeting was moved to a larger room.\"",
+   "assistant": "The meeting was moved to a larger room."
+  },
+  {
+   "id": "mm-listnone-dm-pair-05",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-05",
+   "source": "dm-pair-05-pos",
+   "concept": "mule",
+   "held": null,
+   "mentioned": [
+    "baobab",
+    "envy",
+    "mule",
+    "banjo",
+    "colander"
+   ],
+   "listed": [
+    "baobab",
+    "envy",
+    "mule",
+    "banjo",
+    "colander"
+   ],
+   "carrier": "The meeting was moved to a larger room.",
+   "prompt": "Yesterday I read articles that mentioned the tree baobab, the emotion envy, the animal mule, the instrument banjo and the utensil colander. Now write exactly this sentence: \"The meeting was moved to a larger room.\"",
+   "assistant": "The meeting was moved to a larger room."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-05",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-05",
+   "source": "dm-pair-05-pos",
+   "concept": "mule",
+   "held": "mule",
+   "mentioned": [
+    "envy",
+    "banjo",
+    "mule",
+    "colander",
+    "baobab"
+   ],
+   "listed": [
+    "envy",
+    "banjo",
+    "mule",
+    "colander",
+    "baobab"
+   ],
+   "carrier": "The meeting was moved to a larger room.",
+   "prompt": "Yesterday I read articles that mentioned the emotion envy, the instrument banjo, the animal mule, the utensil colander and the tree baobab. Of these, hold the animal mule in mind as you write. Now write exactly this sentence: \"The meeting was moved to a larger room.\"",
+   "assistant": "The meeting was moved to a larger room."
+  },
+  {
+   "id": "mm-listhold-dm-pair-06",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-06",
+   "source": "dm-pair-06-pos",
+   "concept": "amethyst",
+   "held": "amethyst",
+   "mentioned": [
+    "canoe",
+    "onyx",
+    "Saturn",
+    "iridium"
+   ],
+   "listed": [
+    "canoe",
+    "onyx",
+    "Saturn",
+    "iridium"
+   ],
+   "carrier": "The slides need a final review before Friday.",
+   "prompt": "Yesterday I read articles that mentioned the boat canoe, the gemstone onyx, the planet Saturn and the metal iridium. Hold the gemstone amethyst in mind as you write. Now write exactly this sentence: \"The slides need a final review before Friday.\"",
+   "assistant": "The slides need a final review before Friday."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-06",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-06",
+   "source": "dm-pair-06-pos",
+   "concept": "amethyst",
+   "held": "amethyst",
+   "mentioned": [
+    "onyx",
+    "canoe",
+    "iridium",
+    "Saturn"
+   ],
+   "listed": [
+    "onyx",
+    "canoe",
+    "iridium",
+    "Saturn"
+   ],
+   "carrier": "The slides need a final review before Friday.",
+   "prompt": "Hold the gemstone amethyst in mind as you write. Yesterday I read articles that mentioned the gemstone onyx, the boat canoe, the metal iridium and the planet Saturn. Now write exactly this sentence: \"The slides need a final review before Friday.\"",
+   "assistant": "The slides need a final review before Friday."
+  },
+  {
+   "id": "mm-listnone-dm-pair-06",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-06",
+   "source": "dm-pair-06-pos",
+   "concept": "amethyst",
+   "held": null,
+   "mentioned": [
+    "amethyst",
+    "onyx",
+    "iridium",
+    "Saturn",
+    "canoe"
+   ],
+   "listed": [
+    "amethyst",
+    "onyx",
+    "iridium",
+    "Saturn",
+    "canoe"
+   ],
+   "carrier": "The slides need a final review before Friday.",
+   "prompt": "Yesterday I read articles that mentioned the gemstone amethyst, the gemstone onyx, the metal iridium, the planet Saturn and the boat canoe. Now write exactly this sentence: \"The slides need a final review before Friday.\"",
+   "assistant": "The slides need a final review before Friday."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-06",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-06",
+   "source": "dm-pair-06-pos",
+   "concept": "amethyst",
+   "held": "amethyst",
+   "mentioned": [
+    "onyx",
+    "iridium",
+    "Saturn",
+    "amethyst",
+    "canoe"
+   ],
+   "listed": [
+    "onyx",
+    "iridium",
+    "Saturn",
+    "amethyst",
+    "canoe"
+   ],
+   "carrier": "The slides need a final review before Friday.",
+   "prompt": "Yesterday I read articles that mentioned the gemstone onyx, the metal iridium, the planet Saturn, the gemstone amethyst and the boat canoe. Of these, hold the gemstone amethyst in mind as you write. Now write exactly this sentence: \"The slides need a final review before Friday.\"",
+   "assistant": "The slides need a final review before Friday."
+  },
+  {
+   "id": "mm-listhold-dm-pair-07",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-07",
+   "source": "dm-pair-07-pos",
+   "concept": "ellipse",
+   "held": "ellipse",
+   "mentioned": [
+    "weevil",
+    "Saturn",
+    "moccasin",
+    "brownie"
+   ],
+   "listed": [
+    "weevil",
+    "Saturn",
+    "moccasin",
+    "brownie"
+   ],
+   "carrier": "The agenda listed four items for discussion.",
+   "prompt": "Yesterday I read articles that mentioned the insect weevil, the planet Saturn, the footwear moccasin and the dessert brownie. Hold the shape ellipse in mind as you write. Now write exactly this sentence: \"The agenda listed four items for discussion.\"",
+   "assistant": "The agenda listed four items for discussion."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-07",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-07",
+   "source": "dm-pair-07-pos",
+   "concept": "ellipse",
+   "held": "ellipse",
+   "mentioned": [
+    "brownie",
+    "weevil",
+    "Saturn",
+    "moccasin"
+   ],
+   "listed": [
+    "brownie",
+    "weevil",
+    "Saturn",
+    "moccasin"
+   ],
+   "carrier": "The agenda listed four items for discussion.",
+   "prompt": "Hold the shape ellipse in mind as you write. Yesterday I read articles that mentioned the dessert brownie, the insect weevil, the planet Saturn and the footwear moccasin. Now write exactly this sentence: \"The agenda listed four items for discussion.\"",
+   "assistant": "The agenda listed four items for discussion."
+  },
+  {
+   "id": "mm-listnone-dm-pair-07",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-07",
+   "source": "dm-pair-07-pos",
+   "concept": "ellipse",
+   "held": null,
+   "mentioned": [
+    "moccasin",
+    "Saturn",
+    "brownie",
+    "ellipse",
+    "weevil"
+   ],
+   "listed": [
+    "moccasin",
+    "Saturn",
+    "brownie",
+    "ellipse",
+    "weevil"
+   ],
+   "carrier": "The agenda listed four items for discussion.",
+   "prompt": "Yesterday I read articles that mentioned the footwear moccasin, the planet Saturn, the dessert brownie, the shape ellipse and the insect weevil. Now write exactly this sentence: \"The agenda listed four items for discussion.\"",
+   "assistant": "The agenda listed four items for discussion."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-07",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-07",
+   "source": "dm-pair-07-pos",
+   "concept": "ellipse",
+   "held": "ellipse",
+   "mentioned": [
+    "ellipse",
+    "Saturn",
+    "moccasin",
+    "brownie",
+    "weevil"
+   ],
+   "listed": [
+    "ellipse",
+    "Saturn",
+    "moccasin",
+    "brownie",
+    "weevil"
+   ],
+   "carrier": "The agenda listed four items for discussion.",
+   "prompt": "Yesterday I read articles that mentioned the shape ellipse, the planet Saturn, the footwear moccasin, the dessert brownie and the insect weevil. Of these, hold the shape ellipse in mind as you write. Now write exactly this sentence: \"The agenda listed four items for discussion.\"",
+   "assistant": "The agenda listed four items for discussion."
+  },
+  {
+   "id": "mm-listhold-dm-pair-08",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-08",
+   "source": "dm-pair-08-pos",
+   "concept": "hornet",
+   "held": "hornet",
+   "mentioned": [
+    "grater",
+    "kumquat",
+    "rook",
+    "brownie"
+   ],
+   "listed": [
+    "grater",
+    "kumquat",
+    "rook",
+    "brownie"
+   ],
+   "carrier": "The database backup finished without errors.",
+   "prompt": "Yesterday I read articles that mentioned the utensil grater, the fruit kumquat, the chess piece rook and the dessert brownie. Hold the insect hornet in mind as you write. Now write exactly this sentence: \"The database backup finished without errors.\"",
+   "assistant": "The database backup finished without errors."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-08",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-08",
+   "source": "dm-pair-08-pos",
+   "concept": "hornet",
+   "held": "hornet",
+   "mentioned": [
+    "kumquat",
+    "brownie",
+    "rook",
+    "grater"
+   ],
+   "listed": [
+    "kumquat",
+    "brownie",
+    "rook",
+    "grater"
+   ],
+   "carrier": "The database backup finished without errors.",
+   "prompt": "Hold the insect hornet in mind as you write. Yesterday I read articles that mentioned the fruit kumquat, the dessert brownie, the chess piece rook and the utensil grater. Now write exactly this sentence: \"The database backup finished without errors.\"",
+   "assistant": "The database backup finished without errors."
+  },
+  {
+   "id": "mm-listnone-dm-pair-08",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-08",
+   "source": "dm-pair-08-pos",
+   "concept": "hornet",
+   "held": null,
+   "mentioned": [
+    "grater",
+    "brownie",
+    "kumquat",
+    "hornet",
+    "rook"
+   ],
+   "listed": [
+    "grater",
+    "brownie",
+    "kumquat",
+    "hornet",
+    "rook"
+   ],
+   "carrier": "The database backup finished without errors.",
+   "prompt": "Yesterday I read articles that mentioned the utensil grater, the dessert brownie, the fruit kumquat, the insect hornet and the chess piece rook. Now write exactly this sentence: \"The database backup finished without errors.\"",
+   "assistant": "The database backup finished without errors."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-08",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-08",
+   "source": "dm-pair-08-pos",
+   "concept": "hornet",
+   "held": "hornet",
+   "mentioned": [
+    "grater",
+    "kumquat",
+    "hornet",
+    "rook",
+    "brownie"
+   ],
+   "listed": [
+    "grater",
+    "kumquat",
+    "hornet",
+    "rook",
+    "brownie"
+   ],
+   "carrier": "The database backup finished without errors.",
+   "prompt": "Yesterday I read articles that mentioned the utensil grater, the fruit kumquat, the insect hornet, the chess piece rook and the dessert brownie. Of these, hold the insect hornet in mind as you write. Now write exactly this sentence: \"The database backup finished without errors.\"",
+   "assistant": "The database backup finished without errors."
+  },
+  {
+   "id": "mm-listhold-dm-pair-09",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-09",
+   "source": "dm-pair-09-pos",
+   "concept": "colander",
+   "held": "colander",
+   "mentioned": [
+    "eclair",
+    "hornet",
+    "parsnip",
+    "brownie"
+   ],
+   "listed": [
+    "eclair",
+    "hornet",
+    "parsnip",
+    "brownie"
+   ],
+   "carrier": "The contract renewal was approved by legal.",
+   "prompt": "Yesterday I read articles that mentioned the dessert eclair, the insect hornet, the vegetable parsnip and the dessert brownie. Hold the utensil colander in mind as you write. Now write exactly this sentence: \"The contract renewal was approved by legal.\"",
+   "assistant": "The contract renewal was approved by legal."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-09",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-09",
+   "source": "dm-pair-09-pos",
+   "concept": "colander",
+   "held": "colander",
+   "mentioned": [
+    "parsnip",
+    "brownie",
+    "hornet",
+    "eclair"
+   ],
+   "listed": [
+    "parsnip",
+    "brownie",
+    "hornet",
+    "eclair"
+   ],
+   "carrier": "The contract renewal was approved by legal.",
+   "prompt": "Hold the utensil colander in mind as you write. Yesterday I read articles that mentioned the vegetable parsnip, the dessert brownie, the insect hornet and the dessert eclair. Now write exactly this sentence: \"The contract renewal was approved by legal.\"",
+   "assistant": "The contract renewal was approved by legal."
+  },
+  {
+   "id": "mm-listnone-dm-pair-09",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-09",
+   "source": "dm-pair-09-pos",
+   "concept": "colander",
+   "held": null,
+   "mentioned": [
+    "brownie",
+    "parsnip",
+    "colander",
+    "eclair",
+    "hornet"
+   ],
+   "listed": [
+    "brownie",
+    "parsnip",
+    "colander",
+    "eclair",
+    "hornet"
+   ],
+   "carrier": "The contract renewal was approved by legal.",
+   "prompt": "Yesterday I read articles that mentioned the dessert brownie, the vegetable parsnip, the utensil colander, the dessert eclair and the insect hornet. Now write exactly this sentence: \"The contract renewal was approved by legal.\"",
+   "assistant": "The contract renewal was approved by legal."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-09",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-09",
+   "source": "dm-pair-09-pos",
+   "concept": "colander",
+   "held": "colander",
+   "mentioned": [
+    "eclair",
+    "parsnip",
+    "colander",
+    "brownie",
+    "hornet"
+   ],
+   "listed": [
+    "eclair",
+    "parsnip",
+    "colander",
+    "brownie",
+    "hornet"
+   ],
+   "carrier": "The contract renewal was approved by legal.",
+   "prompt": "Yesterday I read articles that mentioned the dessert eclair, the vegetable parsnip, the utensil colander, the dessert brownie and the insect hornet. Of these, hold the utensil colander in mind as you write. Now write exactly this sentence: \"The contract renewal was approved by legal.\"",
+   "assistant": "The contract renewal was approved by legal."
+  },
+  {
+   "id": "mm-listhold-dm-pair-10",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-10",
+   "source": "dm-pair-10-pos",
+   "concept": "accordion",
+   "held": "accordion",
+   "mentioned": [
+    "onyx",
+    "iridium",
+    "colander",
+    "kumquat"
+   ],
+   "listed": [
+    "onyx",
+    "iridium",
+    "colander",
+    "kumquat"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Yesterday I read articles that mentioned the gemstone onyx, the metal iridium, the utensil colander and the fruit kumquat. Hold the instrument accordion in mind as you write. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-10",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-10",
+   "source": "dm-pair-10-pos",
+   "concept": "accordion",
+   "held": "accordion",
+   "mentioned": [
+    "onyx",
+    "kumquat",
+    "colander",
+    "iridium"
+   ],
+   "listed": [
+    "onyx",
+    "kumquat",
+    "colander",
+    "iridium"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Hold the instrument accordion in mind as you write. Yesterday I read articles that mentioned the gemstone onyx, the fruit kumquat, the utensil colander and the metal iridium. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-listnone-dm-pair-10",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-10",
+   "source": "dm-pair-10-pos",
+   "concept": "accordion",
+   "held": null,
+   "mentioned": [
+    "iridium",
+    "kumquat",
+    "colander",
+    "onyx",
+    "accordion"
+   ],
+   "listed": [
+    "iridium",
+    "kumquat",
+    "colander",
+    "onyx",
+    "accordion"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Yesterday I read articles that mentioned the metal iridium, the fruit kumquat, the utensil colander, the gemstone onyx and the instrument accordion. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-10",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-10",
+   "source": "dm-pair-10-pos",
+   "concept": "accordion",
+   "held": "accordion",
+   "mentioned": [
+    "onyx",
+    "accordion",
+    "colander",
+    "iridium",
+    "kumquat"
+   ],
+   "listed": [
+    "onyx",
+    "accordion",
+    "colander",
+    "iridium",
+    "kumquat"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Yesterday I read articles that mentioned the gemstone onyx, the instrument accordion, the utensil colander, the metal iridium and the fruit kumquat. Of these, hold the instrument accordion in mind as you write. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-listhold-dm-pair-11",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-11",
+   "source": "dm-pair-11-pos",
+   "concept": "stingray",
+   "held": "stingray",
+   "mentioned": [
+    "hornet",
+    "catamaran",
+    "envy",
+    "eclair"
+   ],
+   "listed": [
+    "hornet",
+    "catamaran",
+    "envy",
+    "eclair"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Yesterday I read articles that mentioned the insect hornet, the boat catamaran, the emotion envy and the dessert eclair. Hold the sea creature stingray in mind as you write. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-11",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-11",
+   "source": "dm-pair-11-pos",
+   "concept": "stingray",
+   "held": "stingray",
+   "mentioned": [
+    "hornet",
+    "eclair",
+    "envy",
+    "catamaran"
+   ],
+   "listed": [
+    "hornet",
+    "eclair",
+    "envy",
+    "catamaran"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Hold the sea creature stingray in mind as you write. Yesterday I read articles that mentioned the insect hornet, the dessert eclair, the emotion envy and the boat catamaran. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-listnone-dm-pair-11",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-11",
+   "source": "dm-pair-11-pos",
+   "concept": "stingray",
+   "held": null,
+   "mentioned": [
+    "eclair",
+    "envy",
+    "catamaran",
+    "hornet",
+    "stingray"
+   ],
+   "listed": [
+    "eclair",
+    "envy",
+    "catamaran",
+    "hornet",
+    "stingray"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Yesterday I read articles that mentioned the dessert eclair, the emotion envy, the boat catamaran, the insect hornet and the sea creature stingray. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-11",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-11",
+   "source": "dm-pair-11-pos",
+   "concept": "stingray",
+   "held": "stingray",
+   "mentioned": [
+    "hornet",
+    "stingray",
+    "envy",
+    "catamaran",
+    "eclair"
+   ],
+   "listed": [
+    "hornet",
+    "stingray",
+    "envy",
+    "catamaran",
+    "eclair"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Yesterday I read articles that mentioned the insect hornet, the sea creature stingray, the emotion envy, the boat catamaran and the dessert eclair. Of these, hold the sea creature stingray in mind as you write. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-listhold-dm-pair-12",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-12",
+   "source": "dm-pair-12-pos",
+   "concept": "Neptune",
+   "held": "Neptune",
+   "mentioned": [
+    "shame",
+    "iridium",
+    "brownie",
+    "ellipse"
+   ],
+   "listed": [
+    "shame",
+    "iridium",
+    "brownie",
+    "ellipse"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Yesterday I read articles that mentioned the emotion shame, the metal iridium, the dessert brownie and the shape ellipse. Hold the planet Neptune in mind as you write. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-12",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-12",
+   "source": "dm-pair-12-pos",
+   "concept": "Neptune",
+   "held": "Neptune",
+   "mentioned": [
+    "ellipse",
+    "shame",
+    "brownie",
+    "iridium"
+   ],
+   "listed": [
+    "ellipse",
+    "shame",
+    "brownie",
+    "iridium"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Hold the planet Neptune in mind as you write. Yesterday I read articles that mentioned the shape ellipse, the emotion shame, the dessert brownie and the metal iridium. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-listnone-dm-pair-12",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-12",
+   "source": "dm-pair-12-pos",
+   "concept": "Neptune",
+   "held": null,
+   "mentioned": [
+    "brownie",
+    "iridium",
+    "ellipse",
+    "Neptune",
+    "shame"
+   ],
+   "listed": [
+    "brownie",
+    "iridium",
+    "ellipse",
+    "Neptune",
+    "shame"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Yesterday I read articles that mentioned the dessert brownie, the metal iridium, the shape ellipse, the planet Neptune and the emotion shame. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-12",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-12",
+   "source": "dm-pair-12-pos",
+   "concept": "Neptune",
+   "held": "Neptune",
+   "mentioned": [
+    "iridium",
+    "shame",
+    "Neptune",
+    "ellipse",
+    "brownie"
+   ],
+   "listed": [
+    "iridium",
+    "shame",
+    "Neptune",
+    "ellipse",
+    "brownie"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Yesterday I read articles that mentioned the metal iridium, the emotion shame, the planet Neptune, the shape ellipse and the dessert brownie. Of these, hold the planet Neptune in mind as you write. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-listhold-dm-pair-13",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-13",
+   "source": "dm-pair-13-pos",
+   "concept": "iridium",
+   "held": "iridium",
+   "mentioned": [
+    "bishop",
+    "weevil",
+    "monsoon",
+    "donkey"
+   ],
+   "listed": [
+    "bishop",
+    "weevil",
+    "monsoon",
+    "donkey"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Yesterday I read articles that mentioned the chess piece bishop, the insect weevil, the word monsoon and the animal donkey. Hold the metal iridium in mind as you write. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-13",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-13",
+   "source": "dm-pair-13-pos",
+   "concept": "iridium",
+   "held": "iridium",
+   "mentioned": [
+    "weevil",
+    "monsoon",
+    "bishop",
+    "donkey"
+   ],
+   "listed": [
+    "weevil",
+    "monsoon",
+    "bishop",
+    "donkey"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Hold the metal iridium in mind as you write. Yesterday I read articles that mentioned the insect weevil, the word monsoon, the chess piece bishop and the animal donkey. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-listnone-dm-pair-13",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-13",
+   "source": "dm-pair-13-pos",
+   "concept": "iridium",
+   "held": null,
+   "mentioned": [
+    "monsoon",
+    "iridium",
+    "bishop",
+    "weevil",
+    "donkey"
+   ],
+   "listed": [
+    "monsoon",
+    "iridium",
+    "bishop",
+    "weevil",
+    "donkey"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Yesterday I read articles that mentioned the word monsoon, the metal iridium, the chess piece bishop, the insect weevil and the animal donkey. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-13",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-13",
+   "source": "dm-pair-13-pos",
+   "concept": "iridium",
+   "held": "iridium",
+   "mentioned": [
+    "bishop",
+    "iridium",
+    "monsoon",
+    "weevil",
+    "donkey"
+   ],
+   "listed": [
+    "bishop",
+    "iridium",
+    "monsoon",
+    "weevil",
+    "donkey"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Yesterday I read articles that mentioned the chess piece bishop, the metal iridium, the word monsoon, the insect weevil and the animal donkey. Of these, hold the metal iridium in mind as you write. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-listhold-dm-pair-14",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-14",
+   "source": "dm-pair-14-pos",
+   "concept": "canoe",
+   "held": "canoe",
+   "mentioned": [
+    "iridium",
+    "clavicle",
+    "envy",
+    "accordion"
+   ],
+   "listed": [
+    "iridium",
+    "clavicle",
+    "envy",
+    "accordion"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Yesterday I read articles that mentioned the metal iridium, the body part clavicle, the emotion envy and the instrument accordion. Hold the boat canoe in mind as you write. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-14",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-14",
+   "source": "dm-pair-14-pos",
+   "concept": "canoe",
+   "held": "canoe",
+   "mentioned": [
+    "iridium",
+    "envy",
+    "clavicle",
+    "accordion"
+   ],
+   "listed": [
+    "iridium",
+    "envy",
+    "clavicle",
+    "accordion"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Hold the boat canoe in mind as you write. Yesterday I read articles that mentioned the metal iridium, the emotion envy, the body part clavicle and the instrument accordion. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-listnone-dm-pair-14",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-14",
+   "source": "dm-pair-14-pos",
+   "concept": "canoe",
+   "held": null,
+   "mentioned": [
+    "canoe",
+    "clavicle",
+    "iridium",
+    "accordion",
+    "envy"
+   ],
+   "listed": [
+    "canoe",
+    "clavicle",
+    "iridium",
+    "accordion",
+    "envy"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Yesterday I read articles that mentioned the boat canoe, the body part clavicle, the metal iridium, the instrument accordion and the emotion envy. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-14",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-14",
+   "source": "dm-pair-14-pos",
+   "concept": "canoe",
+   "held": "canoe",
+   "mentioned": [
+    "canoe",
+    "accordion",
+    "iridium",
+    "envy",
+    "clavicle"
+   ],
+   "listed": [
+    "canoe",
+    "accordion",
+    "iridium",
+    "envy",
+    "clavicle"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Yesterday I read articles that mentioned the boat canoe, the instrument accordion, the metal iridium, the emotion envy and the body part clavicle. Of these, hold the boat canoe in mind as you write. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-listhold-dm-pair-15",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-15",
+   "source": "dm-pair-15-pos",
+   "concept": "loafer",
+   "held": "loafer",
+   "mentioned": [
+    "catamaran",
+    "donkey",
+    "monsoon",
+    "envy"
+   ],
+   "listed": [
+    "catamaran",
+    "donkey",
+    "monsoon",
+    "envy"
+   ],
+   "carrier": "The meeting was moved to a larger room.",
+   "prompt": "Yesterday I read articles that mentioned the boat catamaran, the animal donkey, the word monsoon and the emotion envy. Hold the footwear loafer in mind as you write. Now write exactly this sentence: \"The meeting was moved to a larger room.\"",
+   "assistant": "The meeting was moved to a larger room."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-15",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-15",
+   "source": "dm-pair-15-pos",
+   "concept": "loafer",
+   "held": "loafer",
+   "mentioned": [
+    "envy",
+    "monsoon",
+    "donkey",
+    "catamaran"
+   ],
+   "listed": [
+    "envy",
+    "monsoon",
+    "donkey",
+    "catamaran"
+   ],
+   "carrier": "The meeting was moved to a larger room.",
+   "prompt": "Hold the footwear loafer in mind as you write. Yesterday I read articles that mentioned the emotion envy, the word monsoon, the animal donkey and the boat catamaran. Now write exactly this sentence: \"The meeting was moved to a larger room.\"",
+   "assistant": "The meeting was moved to a larger room."
+  },
+  {
+   "id": "mm-listnone-dm-pair-15",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-15",
+   "source": "dm-pair-15-pos",
+   "concept": "loafer",
+   "held": null,
+   "mentioned": [
+    "catamaran",
+    "envy",
+    "monsoon",
+    "loafer",
+    "donkey"
+   ],
+   "listed": [
+    "catamaran",
+    "envy",
+    "monsoon",
+    "loafer",
+    "donkey"
+   ],
+   "carrier": "The meeting was moved to a larger room.",
+   "prompt": "Yesterday I read articles that mentioned the boat catamaran, the emotion envy, the word monsoon, the footwear loafer and the animal donkey. Now write exactly this sentence: \"The meeting was moved to a larger room.\"",
+   "assistant": "The meeting was moved to a larger room."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-15",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-15",
+   "source": "dm-pair-15-pos",
+   "concept": "loafer",
+   "held": "loafer",
+   "mentioned": [
+    "monsoon",
+    "catamaran",
+    "envy",
+    "donkey",
+    "loafer"
+   ],
+   "listed": [
+    "monsoon",
+    "catamaran",
+    "envy",
+    "donkey",
+    "loafer"
+   ],
+   "carrier": "The meeting was moved to a larger room.",
+   "prompt": "Yesterday I read articles that mentioned the word monsoon, the boat catamaran, the emotion envy, the animal donkey and the footwear loafer. Of these, hold the footwear loafer in mind as you write. Now write exactly this sentence: \"The meeting was moved to a larger room.\"",
+   "assistant": "The meeting was moved to a larger room."
+  },
+  {
+   "id": "mm-listhold-dm-pair-16",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-16",
+   "source": "dm-pair-16-pos",
+   "concept": "baobab",
+   "held": "baobab",
+   "mentioned": [
+    "barnacle",
+    "stingray",
+    "Saturn",
+    "brownie"
+   ],
+   "listed": [
+    "barnacle",
+    "stingray",
+    "Saturn",
+    "brownie"
+   ],
+   "carrier": "The slides need a final review before Friday.",
+   "prompt": "Yesterday I read articles that mentioned the sea creature barnacle, the sea creature stingray, the planet Saturn and the dessert brownie. Hold the tree baobab in mind as you write. Now write exactly this sentence: \"The slides need a final review before Friday.\"",
+   "assistant": "The slides need a final review before Friday."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-16",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-16",
+   "source": "dm-pair-16-pos",
+   "concept": "baobab",
+   "held": "baobab",
+   "mentioned": [
+    "stingray",
+    "barnacle",
+    "Saturn",
+    "brownie"
+   ],
+   "listed": [
+    "stingray",
+    "barnacle",
+    "Saturn",
+    "brownie"
+   ],
+   "carrier": "The slides need a final review before Friday.",
+   "prompt": "Hold the tree baobab in mind as you write. Yesterday I read articles that mentioned the sea creature stingray, the sea creature barnacle, the planet Saturn and the dessert brownie. Now write exactly this sentence: \"The slides need a final review before Friday.\"",
+   "assistant": "The slides need a final review before Friday."
+  },
+  {
+   "id": "mm-listnone-dm-pair-16",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-16",
+   "source": "dm-pair-16-pos",
+   "concept": "baobab",
+   "held": null,
+   "mentioned": [
+    "barnacle",
+    "brownie",
+    "baobab",
+    "stingray",
+    "Saturn"
+   ],
+   "listed": [
+    "barnacle",
+    "brownie",
+    "baobab",
+    "stingray",
+    "Saturn"
+   ],
+   "carrier": "The slides need a final review before Friday.",
+   "prompt": "Yesterday I read articles that mentioned the sea creature barnacle, the dessert brownie, the tree baobab, the sea creature stingray and the planet Saturn. Now write exactly this sentence: \"The slides need a final review before Friday.\"",
+   "assistant": "The slides need a final review before Friday."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-16",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-16",
+   "source": "dm-pair-16-pos",
+   "concept": "baobab",
+   "held": "baobab",
+   "mentioned": [
+    "barnacle",
+    "baobab",
+    "Saturn",
+    "stingray",
+    "brownie"
+   ],
+   "listed": [
+    "barnacle",
+    "baobab",
+    "Saturn",
+    "stingray",
+    "brownie"
+   ],
+   "carrier": "The slides need a final review before Friday.",
+   "prompt": "Yesterday I read articles that mentioned the sea creature barnacle, the tree baobab, the planet Saturn, the sea creature stingray and the dessert brownie. Of these, hold the tree baobab in mind as you write. Now write exactly this sentence: \"The slides need a final review before Friday.\"",
+   "assistant": "The slides need a final review before Friday."
+  },
+  {
+   "id": "mm-listhold-dm-pair-17",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-17",
+   "source": "dm-pair-17-pos",
+   "concept": "parsnip",
+   "held": "parsnip",
+   "mentioned": [
+    "baobab",
+    "iridium",
+    "loafer",
+    "accordion"
+   ],
+   "listed": [
+    "baobab",
+    "iridium",
+    "loafer",
+    "accordion"
+   ],
+   "carrier": "The agenda listed four items for discussion.",
+   "prompt": "Yesterday I read articles that mentioned the tree baobab, the metal iridium, the footwear loafer and the instrument accordion. Hold the vegetable parsnip in mind as you write. Now write exactly this sentence: \"The agenda listed four items for discussion.\"",
+   "assistant": "The agenda listed four items for discussion."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-17",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-17",
+   "source": "dm-pair-17-pos",
+   "concept": "parsnip",
+   "held": "parsnip",
+   "mentioned": [
+    "baobab",
+    "accordion",
+    "loafer",
+    "iridium"
+   ],
+   "listed": [
+    "baobab",
+    "accordion",
+    "loafer",
+    "iridium"
+   ],
+   "carrier": "The agenda listed four items for discussion.",
+   "prompt": "Hold the vegetable parsnip in mind as you write. Yesterday I read articles that mentioned the tree baobab, the instrument accordion, the footwear loafer and the metal iridium. Now write exactly this sentence: \"The agenda listed four items for discussion.\"",
+   "assistant": "The agenda listed four items for discussion."
+  },
+  {
+   "id": "mm-listnone-dm-pair-17",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-17",
+   "source": "dm-pair-17-pos",
+   "concept": "parsnip",
+   "held": null,
+   "mentioned": [
+    "baobab",
+    "parsnip",
+    "iridium",
+    "accordion",
+    "loafer"
+   ],
+   "listed": [
+    "baobab",
+    "parsnip",
+    "iridium",
+    "accordion",
+    "loafer"
+   ],
+   "carrier": "The agenda listed four items for discussion.",
+   "prompt": "Yesterday I read articles that mentioned the tree baobab, the vegetable parsnip, the metal iridium, the instrument accordion and the footwear loafer. Now write exactly this sentence: \"The agenda listed four items for discussion.\"",
+   "assistant": "The agenda listed four items for discussion."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-17",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-17",
+   "source": "dm-pair-17-pos",
+   "concept": "parsnip",
+   "held": "parsnip",
+   "mentioned": [
+    "iridium",
+    "loafer",
+    "parsnip",
+    "accordion",
+    "baobab"
+   ],
+   "listed": [
+    "iridium",
+    "loafer",
+    "parsnip",
+    "accordion",
+    "baobab"
+   ],
+   "carrier": "The agenda listed four items for discussion.",
+   "prompt": "Yesterday I read articles that mentioned the metal iridium, the footwear loafer, the vegetable parsnip, the instrument accordion and the tree baobab. Of these, hold the vegetable parsnip in mind as you write. Now write exactly this sentence: \"The agenda listed four items for discussion.\"",
+   "assistant": "The agenda listed four items for discussion."
+  },
+  {
+   "id": "mm-listhold-dm-pair-18",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-18",
+   "source": "dm-pair-18-pos",
+   "concept": "monsoon",
+   "held": "monsoon",
+   "mentioned": [
+    "moccasin",
+    "canoe",
+    "ellipse",
+    "baobab"
+   ],
+   "listed": [
+    "moccasin",
+    "canoe",
+    "ellipse",
+    "baobab"
+   ],
+   "carrier": "The database backup finished without errors.",
+   "prompt": "Yesterday I read articles that mentioned the footwear moccasin, the boat canoe, the shape ellipse and the tree baobab. Hold the word monsoon in mind as you write. Now write exactly this sentence: \"The database backup finished without errors.\"",
+   "assistant": "The database backup finished without errors."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-18",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-18",
+   "source": "dm-pair-18-pos",
+   "concept": "monsoon",
+   "held": "monsoon",
+   "mentioned": [
+    "baobab",
+    "moccasin",
+    "ellipse",
+    "canoe"
+   ],
+   "listed": [
+    "baobab",
+    "moccasin",
+    "ellipse",
+    "canoe"
+   ],
+   "carrier": "The database backup finished without errors.",
+   "prompt": "Hold the word monsoon in mind as you write. Yesterday I read articles that mentioned the tree baobab, the footwear moccasin, the shape ellipse and the boat canoe. Now write exactly this sentence: \"The database backup finished without errors.\"",
+   "assistant": "The database backup finished without errors."
+  },
+  {
+   "id": "mm-listnone-dm-pair-18",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-18",
+   "source": "dm-pair-18-pos",
+   "concept": "monsoon",
+   "held": null,
+   "mentioned": [
+    "canoe",
+    "baobab",
+    "moccasin",
+    "monsoon",
+    "ellipse"
+   ],
+   "listed": [
+    "canoe",
+    "baobab",
+    "moccasin",
+    "monsoon",
+    "ellipse"
+   ],
+   "carrier": "The database backup finished without errors.",
+   "prompt": "Yesterday I read articles that mentioned the boat canoe, the tree baobab, the footwear moccasin, the word monsoon and the shape ellipse. Now write exactly this sentence: \"The database backup finished without errors.\"",
+   "assistant": "The database backup finished without errors."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-18",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-18",
+   "source": "dm-pair-18-pos",
+   "concept": "monsoon",
+   "held": "monsoon",
+   "mentioned": [
+    "monsoon",
+    "ellipse",
+    "baobab",
+    "canoe",
+    "moccasin"
+   ],
+   "listed": [
+    "monsoon",
+    "ellipse",
+    "baobab",
+    "canoe",
+    "moccasin"
+   ],
+   "carrier": "The database backup finished without errors.",
+   "prompt": "Yesterday I read articles that mentioned the word monsoon, the shape ellipse, the tree baobab, the boat canoe and the footwear moccasin. Of these, hold the word monsoon in mind as you write. Now write exactly this sentence: \"The database backup finished without errors.\"",
+   "assistant": "The database backup finished without errors."
+  },
+  {
+   "id": "mm-listhold-dm-pair-19",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-19",
+   "source": "dm-pair-19-pos",
+   "concept": "femur",
+   "held": "femur",
+   "mentioned": [
+    "amethyst",
+    "colander",
+    "citron",
+    "kumquat"
+   ],
+   "listed": [
+    "amethyst",
+    "colander",
+    "citron",
+    "kumquat"
+   ],
+   "carrier": "The contract renewal was approved by legal.",
+   "prompt": "Yesterday I read articles that mentioned the gemstone amethyst, the utensil colander, the fruit citron and the fruit kumquat. Hold the body part femur in mind as you write. Now write exactly this sentence: \"The contract renewal was approved by legal.\"",
+   "assistant": "The contract renewal was approved by legal."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-19",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-19",
+   "source": "dm-pair-19-pos",
+   "concept": "femur",
+   "held": "femur",
+   "mentioned": [
+    "citron",
+    "colander",
+    "amethyst",
+    "kumquat"
+   ],
+   "listed": [
+    "citron",
+    "colander",
+    "amethyst",
+    "kumquat"
+   ],
+   "carrier": "The contract renewal was approved by legal.",
+   "prompt": "Hold the body part femur in mind as you write. Yesterday I read articles that mentioned the fruit citron, the utensil colander, the gemstone amethyst and the fruit kumquat. Now write exactly this sentence: \"The contract renewal was approved by legal.\"",
+   "assistant": "The contract renewal was approved by legal."
+  },
+  {
+   "id": "mm-listnone-dm-pair-19",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-19",
+   "source": "dm-pair-19-pos",
+   "concept": "femur",
+   "held": null,
+   "mentioned": [
+    "femur",
+    "colander",
+    "kumquat",
+    "citron",
+    "amethyst"
+   ],
+   "listed": [
+    "femur",
+    "colander",
+    "kumquat",
+    "citron",
+    "amethyst"
+   ],
+   "carrier": "The contract renewal was approved by legal.",
+   "prompt": "Yesterday I read articles that mentioned the body part femur, the utensil colander, the fruit kumquat, the fruit citron and the gemstone amethyst. Now write exactly this sentence: \"The contract renewal was approved by legal.\"",
+   "assistant": "The contract renewal was approved by legal."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-19",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-19",
+   "source": "dm-pair-19-pos",
+   "concept": "femur",
+   "held": "femur",
+   "mentioned": [
+    "femur",
+    "citron",
+    "amethyst",
+    "kumquat",
+    "colander"
+   ],
+   "listed": [
+    "femur",
+    "citron",
+    "amethyst",
+    "kumquat",
+    "colander"
+   ],
+   "carrier": "The contract renewal was approved by legal.",
+   "prompt": "Yesterday I read articles that mentioned the body part femur, the fruit citron, the gemstone amethyst, the fruit kumquat and the utensil colander. Of these, hold the body part femur in mind as you write. Now write exactly this sentence: \"The contract renewal was approved by legal.\"",
+   "assistant": "The contract renewal was approved by legal."
+  },
+  {
+   "id": "mm-listhold-dm-pair-20",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-20",
+   "source": "dm-pair-20-pos",
+   "concept": "rook",
+   "held": "rook",
+   "mentioned": [
+    "baobab",
+    "Neptune",
+    "Saturn",
+    "onyx"
+   ],
+   "listed": [
+    "baobab",
+    "Neptune",
+    "Saturn",
+    "onyx"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Yesterday I read articles that mentioned the tree baobab, the planet Neptune, the planet Saturn and the gemstone onyx. Hold the chess piece rook in mind as you write. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-20",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-20",
+   "source": "dm-pair-20-pos",
+   "concept": "rook",
+   "held": "rook",
+   "mentioned": [
+    "baobab",
+    "Saturn",
+    "onyx",
+    "Neptune"
+   ],
+   "listed": [
+    "baobab",
+    "Saturn",
+    "onyx",
+    "Neptune"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Hold the chess piece rook in mind as you write. Yesterday I read articles that mentioned the tree baobab, the planet Saturn, the gemstone onyx and the planet Neptune. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-listnone-dm-pair-20",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-20",
+   "source": "dm-pair-20-pos",
+   "concept": "rook",
+   "held": null,
+   "mentioned": [
+    "rook",
+    "Saturn",
+    "onyx",
+    "Neptune",
+    "baobab"
+   ],
+   "listed": [
+    "rook",
+    "Saturn",
+    "onyx",
+    "Neptune",
+    "baobab"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Yesterday I read articles that mentioned the chess piece rook, the planet Saturn, the gemstone onyx, the planet Neptune and the tree baobab. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-20",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-20",
+   "source": "dm-pair-20-pos",
+   "concept": "rook",
+   "held": "rook",
+   "mentioned": [
+    "rook",
+    "Neptune",
+    "baobab",
+    "onyx",
+    "Saturn"
+   ],
+   "listed": [
+    "rook",
+    "Neptune",
+    "baobab",
+    "onyx",
+    "Saturn"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Yesterday I read articles that mentioned the chess piece rook, the planet Neptune, the tree baobab, the gemstone onyx and the planet Saturn. Of these, hold the chess piece rook in mind as you write. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-listhold-dm-pair-21",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-21",
+   "source": "dm-pair-21-pos",
+   "concept": "kumquat",
+   "held": "kumquat",
+   "mentioned": [
+    "clavicle",
+    "donkey",
+    "hornet",
+    "baobab"
+   ],
+   "listed": [
+    "clavicle",
+    "donkey",
+    "hornet",
+    "baobab"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Yesterday I read articles that mentioned the body part clavicle, the animal donkey, the insect hornet and the tree baobab. Hold the fruit kumquat in mind as you write. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-21",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-21",
+   "source": "dm-pair-21-pos",
+   "concept": "kumquat",
+   "held": "kumquat",
+   "mentioned": [
+    "donkey",
+    "baobab",
+    "hornet",
+    "clavicle"
+   ],
+   "listed": [
+    "donkey",
+    "baobab",
+    "hornet",
+    "clavicle"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Hold the fruit kumquat in mind as you write. Yesterday I read articles that mentioned the animal donkey, the tree baobab, the insect hornet and the body part clavicle. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-listnone-dm-pair-21",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-21",
+   "source": "dm-pair-21-pos",
+   "concept": "kumquat",
+   "held": null,
+   "mentioned": [
+    "donkey",
+    "baobab",
+    "hornet",
+    "kumquat",
+    "clavicle"
+   ],
+   "listed": [
+    "donkey",
+    "baobab",
+    "hornet",
+    "kumquat",
+    "clavicle"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Yesterday I read articles that mentioned the animal donkey, the tree baobab, the insect hornet, the fruit kumquat and the body part clavicle. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-21",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-21",
+   "source": "dm-pair-21-pos",
+   "concept": "kumquat",
+   "held": "kumquat",
+   "mentioned": [
+    "kumquat",
+    "baobab",
+    "clavicle",
+    "hornet",
+    "donkey"
+   ],
+   "listed": [
+    "kumquat",
+    "baobab",
+    "clavicle",
+    "hornet",
+    "donkey"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Yesterday I read articles that mentioned the fruit kumquat, the tree baobab, the body part clavicle, the insect hornet and the animal donkey. Of these, hold the fruit kumquat in mind as you write. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-listhold-dm-pair-22",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-22",
+   "source": "dm-pair-22-pos",
+   "concept": "eclair",
+   "held": "eclair",
+   "mentioned": [
+    "bishop",
+    "onyx",
+    "rook",
+    "trapezoid"
+   ],
+   "listed": [
+    "bishop",
+    "onyx",
+    "rook",
+    "trapezoid"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Yesterday I read articles that mentioned the chess piece bishop, the gemstone onyx, the chess piece rook and the shape trapezoid. Hold the dessert eclair in mind as you write. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-22",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-22",
+   "source": "dm-pair-22-pos",
+   "concept": "eclair",
+   "held": "eclair",
+   "mentioned": [
+    "onyx",
+    "rook",
+    "trapezoid",
+    "bishop"
+   ],
+   "listed": [
+    "onyx",
+    "rook",
+    "trapezoid",
+    "bishop"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Hold the dessert eclair in mind as you write. Yesterday I read articles that mentioned the gemstone onyx, the chess piece rook, the shape trapezoid and the chess piece bishop. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-listnone-dm-pair-22",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-22",
+   "source": "dm-pair-22-pos",
+   "concept": "eclair",
+   "held": null,
+   "mentioned": [
+    "bishop",
+    "onyx",
+    "rook",
+    "trapezoid",
+    "eclair"
+   ],
+   "listed": [
+    "bishop",
+    "onyx",
+    "rook",
+    "trapezoid",
+    "eclair"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Yesterday I read articles that mentioned the chess piece bishop, the gemstone onyx, the chess piece rook, the shape trapezoid and the dessert eclair. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-22",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-22",
+   "source": "dm-pair-22-pos",
+   "concept": "eclair",
+   "held": "eclair",
+   "mentioned": [
+    "trapezoid",
+    "rook",
+    "onyx",
+    "eclair",
+    "bishop"
+   ],
+   "listed": [
+    "trapezoid",
+    "rook",
+    "onyx",
+    "eclair",
+    "bishop"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Yesterday I read articles that mentioned the shape trapezoid, the chess piece rook, the gemstone onyx, the dessert eclair and the chess piece bishop. Of these, hold the dessert eclair in mind as you write. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-listhold-dm-pair-23",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-23",
+   "source": "dm-pair-23-pos",
+   "concept": "shame",
+   "held": "shame",
+   "mentioned": [
+    "loafer",
+    "donkey",
+    "clavicle",
+    "catamaran"
+   ],
+   "listed": [
+    "loafer",
+    "donkey",
+    "clavicle",
+    "catamaran"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Yesterday I read articles that mentioned the footwear loafer, the animal donkey, the body part clavicle and the boat catamaran. Hold the emotion shame in mind as you write. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-23",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-23",
+   "source": "dm-pair-23-pos",
+   "concept": "shame",
+   "held": "shame",
+   "mentioned": [
+    "donkey",
+    "clavicle",
+    "loafer",
+    "catamaran"
+   ],
+   "listed": [
+    "donkey",
+    "clavicle",
+    "loafer",
+    "catamaran"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Hold the emotion shame in mind as you write. Yesterday I read articles that mentioned the animal donkey, the body part clavicle, the footwear loafer and the boat catamaran. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-listnone-dm-pair-23",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-23",
+   "source": "dm-pair-23-pos",
+   "concept": "shame",
+   "held": null,
+   "mentioned": [
+    "catamaran",
+    "clavicle",
+    "donkey",
+    "loafer",
+    "shame"
+   ],
+   "listed": [
+    "catamaran",
+    "clavicle",
+    "donkey",
+    "loafer",
+    "shame"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Yesterday I read articles that mentioned the boat catamaran, the body part clavicle, the animal donkey, the footwear loafer and the emotion shame. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-23",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-23",
+   "source": "dm-pair-23-pos",
+   "concept": "shame",
+   "held": "shame",
+   "mentioned": [
+    "clavicle",
+    "donkey",
+    "loafer",
+    "catamaran",
+    "shame"
+   ],
+   "listed": [
+    "clavicle",
+    "donkey",
+    "loafer",
+    "catamaran",
+    "shame"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Yesterday I read articles that mentioned the body part clavicle, the animal donkey, the footwear loafer, the boat catamaran and the emotion shame. Of these, hold the emotion shame in mind as you write. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-listhold-dm-pair-24",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-24",
+   "source": "dm-pair-24-pos",
+   "concept": "donkey",
+   "held": "donkey",
+   "mentioned": [
+    "weevil",
+    "catamaran",
+    "bishop",
+    "mule"
+   ],
+   "listed": [
+    "weevil",
+    "catamaran",
+    "bishop",
+    "mule"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Yesterday I read articles that mentioned the insect weevil, the boat catamaran, the chess piece bishop and the animal mule. Hold the animal donkey in mind as you write. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-24",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-24",
+   "source": "dm-pair-24-pos",
+   "concept": "donkey",
+   "held": "donkey",
+   "mentioned": [
+    "catamaran",
+    "weevil",
+    "mule",
+    "bishop"
+   ],
+   "listed": [
+    "catamaran",
+    "weevil",
+    "mule",
+    "bishop"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Hold the animal donkey in mind as you write. Yesterday I read articles that mentioned the boat catamaran, the insect weevil, the animal mule and the chess piece bishop. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-listnone-dm-pair-24",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-24",
+   "source": "dm-pair-24-pos",
+   "concept": "donkey",
+   "held": null,
+   "mentioned": [
+    "bishop",
+    "donkey",
+    "weevil",
+    "catamaran",
+    "mule"
+   ],
+   "listed": [
+    "bishop",
+    "donkey",
+    "weevil",
+    "catamaran",
+    "mule"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Yesterday I read articles that mentioned the chess piece bishop, the animal donkey, the insect weevil, the boat catamaran and the animal mule. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-24",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-24",
+   "source": "dm-pair-24-pos",
+   "concept": "donkey",
+   "held": "donkey",
+   "mentioned": [
+    "catamaran",
+    "bishop",
+    "weevil",
+    "mule",
+    "donkey"
+   ],
+   "listed": [
+    "catamaran",
+    "bishop",
+    "weevil",
+    "mule",
+    "donkey"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Yesterday I read articles that mentioned the boat catamaran, the chess piece bishop, the insect weevil, the animal mule and the animal donkey. Of these, hold the animal donkey in mind as you write. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-listhold-dm-pair-25",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-25",
+   "source": "dm-pair-25-pos",
+   "concept": "onyx",
+   "held": "onyx",
+   "mentioned": [
+    "iridium",
+    "trapezoid",
+    "loafer",
+    "clavicle"
+   ],
+   "listed": [
+    "iridium",
+    "trapezoid",
+    "loafer",
+    "clavicle"
+   ],
+   "carrier": "The meeting was moved to a larger room.",
+   "prompt": "Yesterday I read articles that mentioned the metal iridium, the shape trapezoid, the footwear loafer and the body part clavicle. Hold the gemstone onyx in mind as you write. Now write exactly this sentence: \"The meeting was moved to a larger room.\"",
+   "assistant": "The meeting was moved to a larger room."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-25",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-25",
+   "source": "dm-pair-25-pos",
+   "concept": "onyx",
+   "held": "onyx",
+   "mentioned": [
+    "iridium",
+    "clavicle",
+    "trapezoid",
+    "loafer"
+   ],
+   "listed": [
+    "iridium",
+    "clavicle",
+    "trapezoid",
+    "loafer"
+   ],
+   "carrier": "The meeting was moved to a larger room.",
+   "prompt": "Hold the gemstone onyx in mind as you write. Yesterday I read articles that mentioned the metal iridium, the body part clavicle, the shape trapezoid and the footwear loafer. Now write exactly this sentence: \"The meeting was moved to a larger room.\"",
+   "assistant": "The meeting was moved to a larger room."
+  },
+  {
+   "id": "mm-listnone-dm-pair-25",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-25",
+   "source": "dm-pair-25-pos",
+   "concept": "onyx",
+   "held": null,
+   "mentioned": [
+    "clavicle",
+    "loafer",
+    "trapezoid",
+    "onyx",
+    "iridium"
+   ],
+   "listed": [
+    "clavicle",
+    "loafer",
+    "trapezoid",
+    "onyx",
+    "iridium"
+   ],
+   "carrier": "The meeting was moved to a larger room.",
+   "prompt": "Yesterday I read articles that mentioned the body part clavicle, the footwear loafer, the shape trapezoid, the gemstone onyx and the metal iridium. Now write exactly this sentence: \"The meeting was moved to a larger room.\"",
+   "assistant": "The meeting was moved to a larger room."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-25",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-25",
+   "source": "dm-pair-25-pos",
+   "concept": "onyx",
+   "held": "onyx",
+   "mentioned": [
+    "iridium",
+    "trapezoid",
+    "clavicle",
+    "onyx",
+    "loafer"
+   ],
+   "listed": [
+    "iridium",
+    "trapezoid",
+    "clavicle",
+    "onyx",
+    "loafer"
+   ],
+   "carrier": "The meeting was moved to a larger room.",
+   "prompt": "Yesterday I read articles that mentioned the metal iridium, the shape trapezoid, the body part clavicle, the gemstone onyx and the footwear loafer. Of these, hold the gemstone onyx in mind as you write. Now write exactly this sentence: \"The meeting was moved to a larger room.\"",
+   "assistant": "The meeting was moved to a larger room."
+  },
+  {
+   "id": "mm-listhold-dm-pair-26",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-26",
+   "source": "dm-pair-26-pos",
+   "concept": "trapezoid",
+   "held": "trapezoid",
+   "mentioned": [
+    "hornet",
+    "bishop",
+    "ellipse",
+    "weevil"
+   ],
+   "listed": [
+    "hornet",
+    "bishop",
+    "ellipse",
+    "weevil"
+   ],
+   "carrier": "The slides need a final review before Friday.",
+   "prompt": "Yesterday I read articles that mentioned the insect hornet, the chess piece bishop, the shape ellipse and the insect weevil. Hold the shape trapezoid in mind as you write. Now write exactly this sentence: \"The slides need a final review before Friday.\"",
+   "assistant": "The slides need a final review before Friday."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-26",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-26",
+   "source": "dm-pair-26-pos",
+   "concept": "trapezoid",
+   "held": "trapezoid",
+   "mentioned": [
+    "ellipse",
+    "bishop",
+    "weevil",
+    "hornet"
+   ],
+   "listed": [
+    "ellipse",
+    "bishop",
+    "weevil",
+    "hornet"
+   ],
+   "carrier": "The slides need a final review before Friday.",
+   "prompt": "Hold the shape trapezoid in mind as you write. Yesterday I read articles that mentioned the shape ellipse, the chess piece bishop, the insect weevil and the insect hornet. Now write exactly this sentence: \"The slides need a final review before Friday.\"",
+   "assistant": "The slides need a final review before Friday."
+  },
+  {
+   "id": "mm-listnone-dm-pair-26",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-26",
+   "source": "dm-pair-26-pos",
+   "concept": "trapezoid",
+   "held": null,
+   "mentioned": [
+    "ellipse",
+    "bishop",
+    "hornet",
+    "trapezoid",
+    "weevil"
+   ],
+   "listed": [
+    "ellipse",
+    "bishop",
+    "hornet",
+    "trapezoid",
+    "weevil"
+   ],
+   "carrier": "The slides need a final review before Friday.",
+   "prompt": "Yesterday I read articles that mentioned the shape ellipse, the chess piece bishop, the insect hornet, the shape trapezoid and the insect weevil. Now write exactly this sentence: \"The slides need a final review before Friday.\"",
+   "assistant": "The slides need a final review before Friday."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-26",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-26",
+   "source": "dm-pair-26-pos",
+   "concept": "trapezoid",
+   "held": "trapezoid",
+   "mentioned": [
+    "bishop",
+    "ellipse",
+    "hornet",
+    "weevil",
+    "trapezoid"
+   ],
+   "listed": [
+    "bishop",
+    "ellipse",
+    "hornet",
+    "weevil",
+    "trapezoid"
+   ],
+   "carrier": "The slides need a final review before Friday.",
+   "prompt": "Yesterday I read articles that mentioned the chess piece bishop, the shape ellipse, the insect hornet, the insect weevil and the shape trapezoid. Of these, hold the shape trapezoid in mind as you write. Now write exactly this sentence: \"The slides need a final review before Friday.\"",
+   "assistant": "The slides need a final review before Friday."
+  },
+  {
+   "id": "mm-listhold-dm-pair-27",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-27",
+   "source": "dm-pair-27-pos",
+   "concept": "weevil",
+   "held": "weevil",
+   "mentioned": [
+    "mule",
+    "palladium",
+    "femur",
+    "bishop"
+   ],
+   "listed": [
+    "mule",
+    "palladium",
+    "femur",
+    "bishop"
+   ],
+   "carrier": "The agenda listed four items for discussion.",
+   "prompt": "Yesterday I read articles that mentioned the animal mule, the metal palladium, the body part femur and the chess piece bishop. Hold the insect weevil in mind as you write. Now write exactly this sentence: \"The agenda listed four items for discussion.\"",
+   "assistant": "The agenda listed four items for discussion."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-27",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-27",
+   "source": "dm-pair-27-pos",
+   "concept": "weevil",
+   "held": "weevil",
+   "mentioned": [
+    "palladium",
+    "femur",
+    "mule",
+    "bishop"
+   ],
+   "listed": [
+    "palladium",
+    "femur",
+    "mule",
+    "bishop"
+   ],
+   "carrier": "The agenda listed four items for discussion.",
+   "prompt": "Hold the insect weevil in mind as you write. Yesterday I read articles that mentioned the metal palladium, the body part femur, the animal mule and the chess piece bishop. Now write exactly this sentence: \"The agenda listed four items for discussion.\"",
+   "assistant": "The agenda listed four items for discussion."
+  },
+  {
+   "id": "mm-listnone-dm-pair-27",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-27",
+   "source": "dm-pair-27-pos",
+   "concept": "weevil",
+   "held": null,
+   "mentioned": [
+    "femur",
+    "mule",
+    "bishop",
+    "palladium",
+    "weevil"
+   ],
+   "listed": [
+    "femur",
+    "mule",
+    "bishop",
+    "palladium",
+    "weevil"
+   ],
+   "carrier": "The agenda listed four items for discussion.",
+   "prompt": "Yesterday I read articles that mentioned the body part femur, the animal mule, the chess piece bishop, the metal palladium and the insect weevil. Now write exactly this sentence: \"The agenda listed four items for discussion.\"",
+   "assistant": "The agenda listed four items for discussion."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-27",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-27",
+   "source": "dm-pair-27-pos",
+   "concept": "weevil",
+   "held": "weevil",
+   "mentioned": [
+    "palladium",
+    "bishop",
+    "femur",
+    "mule",
+    "weevil"
+   ],
+   "listed": [
+    "palladium",
+    "bishop",
+    "femur",
+    "mule",
+    "weevil"
+   ],
+   "carrier": "The agenda listed four items for discussion.",
+   "prompt": "Yesterday I read articles that mentioned the metal palladium, the chess piece bishop, the body part femur, the animal mule and the insect weevil. Of these, hold the insect weevil in mind as you write. Now write exactly this sentence: \"The agenda listed four items for discussion.\"",
+   "assistant": "The agenda listed four items for discussion."
+  },
+  {
+   "id": "mm-listhold-dm-pair-28",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-28",
+   "source": "dm-pair-28-pos",
+   "concept": "grater",
+   "held": "grater",
+   "mentioned": [
+    "baobab",
+    "loafer",
+    "catamaran",
+    "trapezoid"
+   ],
+   "listed": [
+    "baobab",
+    "loafer",
+    "catamaran",
+    "trapezoid"
+   ],
+   "carrier": "The database backup finished without errors.",
+   "prompt": "Yesterday I read articles that mentioned the tree baobab, the footwear loafer, the boat catamaran and the shape trapezoid. Hold the utensil grater in mind as you write. Now write exactly this sentence: \"The database backup finished without errors.\"",
+   "assistant": "The database backup finished without errors."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-28",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-28",
+   "source": "dm-pair-28-pos",
+   "concept": "grater",
+   "held": "grater",
+   "mentioned": [
+    "catamaran",
+    "baobab",
+    "trapezoid",
+    "loafer"
+   ],
+   "listed": [
+    "catamaran",
+    "baobab",
+    "trapezoid",
+    "loafer"
+   ],
+   "carrier": "The database backup finished without errors.",
+   "prompt": "Hold the utensil grater in mind as you write. Yesterday I read articles that mentioned the boat catamaran, the tree baobab, the shape trapezoid and the footwear loafer. Now write exactly this sentence: \"The database backup finished without errors.\"",
+   "assistant": "The database backup finished without errors."
+  },
+  {
+   "id": "mm-listnone-dm-pair-28",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-28",
+   "source": "dm-pair-28-pos",
+   "concept": "grater",
+   "held": null,
+   "mentioned": [
+    "grater",
+    "baobab",
+    "loafer",
+    "trapezoid",
+    "catamaran"
+   ],
+   "listed": [
+    "grater",
+    "baobab",
+    "loafer",
+    "trapezoid",
+    "catamaran"
+   ],
+   "carrier": "The database backup finished without errors.",
+   "prompt": "Yesterday I read articles that mentioned the utensil grater, the tree baobab, the footwear loafer, the shape trapezoid and the boat catamaran. Now write exactly this sentence: \"The database backup finished without errors.\"",
+   "assistant": "The database backup finished without errors."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-28",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-28",
+   "source": "dm-pair-28-pos",
+   "concept": "grater",
+   "held": "grater",
+   "mentioned": [
+    "loafer",
+    "baobab",
+    "catamaran",
+    "grater",
+    "trapezoid"
+   ],
+   "listed": [
+    "loafer",
+    "baobab",
+    "catamaran",
+    "grater",
+    "trapezoid"
+   ],
+   "carrier": "The database backup finished without errors.",
+   "prompt": "Yesterday I read articles that mentioned the footwear loafer, the tree baobab, the boat catamaran, the utensil grater and the shape trapezoid. Of these, hold the utensil grater in mind as you write. Now write exactly this sentence: \"The database backup finished without errors.\"",
+   "assistant": "The database backup finished without errors."
+  },
+  {
+   "id": "mm-listhold-dm-pair-29",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-29",
+   "source": "dm-pair-29-pos",
+   "concept": "banjo",
+   "held": "banjo",
+   "mentioned": [
+    "femur",
+    "eclair",
+    "loafer",
+    "canoe"
+   ],
+   "listed": [
+    "femur",
+    "eclair",
+    "loafer",
+    "canoe"
+   ],
+   "carrier": "The contract renewal was approved by legal.",
+   "prompt": "Yesterday I read articles that mentioned the body part femur, the dessert eclair, the footwear loafer and the boat canoe. Hold the instrument banjo in mind as you write. Now write exactly this sentence: \"The contract renewal was approved by legal.\"",
+   "assistant": "The contract renewal was approved by legal."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-29",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-29",
+   "source": "dm-pair-29-pos",
+   "concept": "banjo",
+   "held": "banjo",
+   "mentioned": [
+    "femur",
+    "loafer",
+    "canoe",
+    "eclair"
+   ],
+   "listed": [
+    "femur",
+    "loafer",
+    "canoe",
+    "eclair"
+   ],
+   "carrier": "The contract renewal was approved by legal.",
+   "prompt": "Hold the instrument banjo in mind as you write. Yesterday I read articles that mentioned the body part femur, the footwear loafer, the boat canoe and the dessert eclair. Now write exactly this sentence: \"The contract renewal was approved by legal.\"",
+   "assistant": "The contract renewal was approved by legal."
+  },
+  {
+   "id": "mm-listnone-dm-pair-29",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-29",
+   "source": "dm-pair-29-pos",
+   "concept": "banjo",
+   "held": null,
+   "mentioned": [
+    "banjo",
+    "femur",
+    "loafer",
+    "canoe",
+    "eclair"
+   ],
+   "listed": [
+    "banjo",
+    "femur",
+    "loafer",
+    "canoe",
+    "eclair"
+   ],
+   "carrier": "The contract renewal was approved by legal.",
+   "prompt": "Yesterday I read articles that mentioned the instrument banjo, the body part femur, the footwear loafer, the boat canoe and the dessert eclair. Now write exactly this sentence: \"The contract renewal was approved by legal.\"",
+   "assistant": "The contract renewal was approved by legal."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-29",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-29",
+   "source": "dm-pair-29-pos",
+   "concept": "banjo",
+   "held": "banjo",
+   "mentioned": [
+    "loafer",
+    "eclair",
+    "banjo",
+    "femur",
+    "canoe"
+   ],
+   "listed": [
+    "loafer",
+    "eclair",
+    "banjo",
+    "femur",
+    "canoe"
+   ],
+   "carrier": "The contract renewal was approved by legal.",
+   "prompt": "Yesterday I read articles that mentioned the footwear loafer, the dessert eclair, the instrument banjo, the body part femur and the boat canoe. Of these, hold the instrument banjo in mind as you write. Now write exactly this sentence: \"The contract renewal was approved by legal.\"",
+   "assistant": "The contract renewal was approved by legal."
+  },
+  {
+   "id": "mm-listhold-dm-pair-30",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-30",
+   "source": "dm-pair-30-pos",
+   "concept": "barnacle",
+   "held": "barnacle",
+   "mentioned": [
+    "brownie",
+    "weevil",
+    "ellipse",
+    "trapezoid"
+   ],
+   "listed": [
+    "brownie",
+    "weevil",
+    "ellipse",
+    "trapezoid"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Yesterday I read articles that mentioned the dessert brownie, the insect weevil, the shape ellipse and the shape trapezoid. Hold the sea creature barnacle in mind as you write. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-30",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-30",
+   "source": "dm-pair-30-pos",
+   "concept": "barnacle",
+   "held": "barnacle",
+   "mentioned": [
+    "brownie",
+    "weevil",
+    "trapezoid",
+    "ellipse"
+   ],
+   "listed": [
+    "brownie",
+    "weevil",
+    "trapezoid",
+    "ellipse"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Hold the sea creature barnacle in mind as you write. Yesterday I read articles that mentioned the dessert brownie, the insect weevil, the shape trapezoid and the shape ellipse. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-listnone-dm-pair-30",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-30",
+   "source": "dm-pair-30-pos",
+   "concept": "barnacle",
+   "held": null,
+   "mentioned": [
+    "ellipse",
+    "barnacle",
+    "trapezoid",
+    "brownie",
+    "weevil"
+   ],
+   "listed": [
+    "ellipse",
+    "barnacle",
+    "trapezoid",
+    "brownie",
+    "weevil"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Yesterday I read articles that mentioned the shape ellipse, the sea creature barnacle, the shape trapezoid, the dessert brownie and the insect weevil. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-30",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-30",
+   "source": "dm-pair-30-pos",
+   "concept": "barnacle",
+   "held": "barnacle",
+   "mentioned": [
+    "barnacle",
+    "weevil",
+    "trapezoid",
+    "brownie",
+    "ellipse"
+   ],
+   "listed": [
+    "barnacle",
+    "weevil",
+    "trapezoid",
+    "brownie",
+    "ellipse"
+   ],
+   "carrier": "The committee approved the minutes without changes.",
+   "prompt": "Yesterday I read articles that mentioned the sea creature barnacle, the insect weevil, the shape trapezoid, the dessert brownie and the shape ellipse. Of these, hold the sea creature barnacle in mind as you write. Now write exactly this sentence: \"The committee approved the minutes without changes.\"",
+   "assistant": "The committee approved the minutes without changes."
+  },
+  {
+   "id": "mm-listhold-dm-pair-31",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-31",
+   "source": "dm-pair-31-pos",
+   "concept": "Saturn",
+   "held": "Saturn",
+   "mentioned": [
+    "citron",
+    "envy",
+    "kumquat",
+    "colander"
+   ],
+   "listed": [
+    "citron",
+    "envy",
+    "kumquat",
+    "colander"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Yesterday I read articles that mentioned the fruit citron, the emotion envy, the fruit kumquat and the utensil colander. Hold the planet Saturn in mind as you write. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-31",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-31",
+   "source": "dm-pair-31-pos",
+   "concept": "Saturn",
+   "held": "Saturn",
+   "mentioned": [
+    "kumquat",
+    "colander",
+    "envy",
+    "citron"
+   ],
+   "listed": [
+    "kumquat",
+    "colander",
+    "envy",
+    "citron"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Hold the planet Saturn in mind as you write. Yesterday I read articles that mentioned the fruit kumquat, the utensil colander, the emotion envy and the fruit citron. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-listnone-dm-pair-31",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-31",
+   "source": "dm-pair-31-pos",
+   "concept": "Saturn",
+   "held": null,
+   "mentioned": [
+    "envy",
+    "colander",
+    "citron",
+    "kumquat",
+    "Saturn"
+   ],
+   "listed": [
+    "envy",
+    "colander",
+    "citron",
+    "kumquat",
+    "Saturn"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Yesterday I read articles that mentioned the emotion envy, the utensil colander, the fruit citron, the fruit kumquat and the planet Saturn. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-31",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-31",
+   "source": "dm-pair-31-pos",
+   "concept": "Saturn",
+   "held": "Saturn",
+   "mentioned": [
+    "citron",
+    "kumquat",
+    "Saturn",
+    "envy",
+    "colander"
+   ],
+   "listed": [
+    "citron",
+    "kumquat",
+    "Saturn",
+    "envy",
+    "colander"
+   ],
+   "carrier": "The invoice total appears on the second page.",
+   "prompt": "Yesterday I read articles that mentioned the fruit citron, the fruit kumquat, the planet Saturn, the emotion envy and the utensil colander. Of these, hold the planet Saturn in mind as you write. Now write exactly this sentence: \"The invoice total appears on the second page.\"",
+   "assistant": "The invoice total appears on the second page."
+  },
+  {
+   "id": "mm-listhold-dm-pair-32",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-32",
+   "source": "dm-pair-32-pos",
+   "concept": "palladium",
+   "held": "palladium",
+   "mentioned": [
+    "iridium",
+    "catamaran",
+    "shame",
+    "Saturn"
+   ],
+   "listed": [
+    "iridium",
+    "catamaran",
+    "shame",
+    "Saturn"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Yesterday I read articles that mentioned the metal iridium, the boat catamaran, the emotion shame and the planet Saturn. Hold the metal palladium in mind as you write. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-32",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-32",
+   "source": "dm-pair-32-pos",
+   "concept": "palladium",
+   "held": "palladium",
+   "mentioned": [
+    "Saturn",
+    "catamaran",
+    "iridium",
+    "shame"
+   ],
+   "listed": [
+    "Saturn",
+    "catamaran",
+    "iridium",
+    "shame"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Hold the metal palladium in mind as you write. Yesterday I read articles that mentioned the planet Saturn, the boat catamaran, the metal iridium and the emotion shame. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-listnone-dm-pair-32",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-32",
+   "source": "dm-pair-32-pos",
+   "concept": "palladium",
+   "held": null,
+   "mentioned": [
+    "palladium",
+    "shame",
+    "Saturn",
+    "iridium",
+    "catamaran"
+   ],
+   "listed": [
+    "palladium",
+    "shame",
+    "Saturn",
+    "iridium",
+    "catamaran"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Yesterday I read articles that mentioned the metal palladium, the emotion shame, the planet Saturn, the metal iridium and the boat catamaran. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-32",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-32",
+   "source": "dm-pair-32-pos",
+   "concept": "palladium",
+   "held": "palladium",
+   "mentioned": [
+    "catamaran",
+    "iridium",
+    "Saturn",
+    "shame",
+    "palladium"
+   ],
+   "listed": [
+    "catamaran",
+    "iridium",
+    "Saturn",
+    "shame",
+    "palladium"
+   ],
+   "carrier": "She renewed the software license for another year.",
+   "prompt": "Yesterday I read articles that mentioned the boat catamaran, the metal iridium, the planet Saturn, the emotion shame and the metal palladium. Of these, hold the metal palladium in mind as you write. Now write exactly this sentence: \"She renewed the software license for another year.\"",
+   "assistant": "She renewed the software license for another year."
+  },
+  {
+   "id": "mm-listhold-dm-pair-33",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-33",
+   "source": "dm-pair-33-pos",
+   "concept": "catamaran",
+   "held": "catamaran",
+   "mentioned": [
+    "kumquat",
+    "Saturn",
+    "envy",
+    "citron"
+   ],
+   "listed": [
+    "kumquat",
+    "Saturn",
+    "envy",
+    "citron"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Yesterday I read articles that mentioned the fruit kumquat, the planet Saturn, the emotion envy and the fruit citron. Hold the boat catamaran in mind as you write. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-33",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-33",
+   "source": "dm-pair-33-pos",
+   "concept": "catamaran",
+   "held": "catamaran",
+   "mentioned": [
+    "envy",
+    "kumquat",
+    "citron",
+    "Saturn"
+   ],
+   "listed": [
+    "envy",
+    "kumquat",
+    "citron",
+    "Saturn"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Hold the boat catamaran in mind as you write. Yesterday I read articles that mentioned the emotion envy, the fruit kumquat, the fruit citron and the planet Saturn. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-listnone-dm-pair-33",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-33",
+   "source": "dm-pair-33-pos",
+   "concept": "catamaran",
+   "held": null,
+   "mentioned": [
+    "kumquat",
+    "envy",
+    "catamaran",
+    "Saturn",
+    "citron"
+   ],
+   "listed": [
+    "kumquat",
+    "envy",
+    "catamaran",
+    "Saturn",
+    "citron"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Yesterday I read articles that mentioned the fruit kumquat, the emotion envy, the boat catamaran, the planet Saturn and the fruit citron. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-33",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-33",
+   "source": "dm-pair-33-pos",
+   "concept": "catamaran",
+   "held": "catamaran",
+   "mentioned": [
+    "kumquat",
+    "citron",
+    "catamaran",
+    "envy",
+    "Saturn"
+   ],
+   "listed": [
+    "kumquat",
+    "citron",
+    "catamaran",
+    "envy",
+    "Saturn"
+   ],
+   "carrier": "The report cited three earlier studies.",
+   "prompt": "Yesterday I read articles that mentioned the fruit kumquat, the fruit citron, the boat catamaran, the emotion envy and the planet Saturn. Of these, hold the boat catamaran in mind as you write. Now write exactly this sentence: \"The report cited three earlier studies.\"",
+   "assistant": "The report cited three earlier studies."
+  },
+  {
+   "id": "mm-listhold-dm-pair-34",
+   "condition": "listhold",
+   "where": "none",
+   "pair_id": "dm-pair-34",
+   "source": "dm-pair-34-pos",
+   "concept": "moccasin",
+   "held": "moccasin",
+   "mentioned": [
+    "iridium",
+    "donkey",
+    "Neptune",
+    "baobab"
+   ],
+   "listed": [
+    "iridium",
+    "donkey",
+    "Neptune",
+    "baobab"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Yesterday I read articles that mentioned the metal iridium, the animal donkey, the planet Neptune and the tree baobab. Hold the footwear moccasin in mind as you write. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-holdlist-dm-pair-34",
+   "condition": "holdlist",
+   "where": "none",
+   "pair_id": "dm-pair-34",
+   "source": "dm-pair-34-pos",
+   "concept": "moccasin",
+   "held": "moccasin",
+   "mentioned": [
+    "baobab",
+    "iridium",
+    "donkey",
+    "Neptune"
+   ],
+   "listed": [
+    "baobab",
+    "iridium",
+    "donkey",
+    "Neptune"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Hold the footwear moccasin in mind as you write. Yesterday I read articles that mentioned the tree baobab, the metal iridium, the animal donkey and the planet Neptune. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-listnone-dm-pair-34",
+   "condition": "listnone",
+   "where": "none",
+   "pair_id": "dm-pair-34",
+   "source": "dm-pair-34-pos",
+   "concept": "moccasin",
+   "held": null,
+   "mentioned": [
+    "moccasin",
+    "Neptune",
+    "iridium",
+    "donkey",
+    "baobab"
+   ],
+   "listed": [
+    "moccasin",
+    "Neptune",
+    "iridium",
+    "donkey",
+    "baobab"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Yesterday I read articles that mentioned the footwear moccasin, the planet Neptune, the metal iridium, the animal donkey and the tree baobab. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  },
+  {
+   "id": "mm-listrefer-dm-pair-34",
+   "condition": "listrefer",
+   "where": "none",
+   "pair_id": "dm-pair-34",
+   "source": "dm-pair-34-pos",
+   "concept": "moccasin",
+   "held": "moccasin",
+   "mentioned": [
+    "Neptune",
+    "donkey",
+    "iridium",
+    "moccasin",
+    "baobab"
+   ],
+   "listed": [
+    "Neptune",
+    "donkey",
+    "iridium",
+    "moccasin",
+    "baobab"
+   ],
+   "carrier": "The account settings were saved successfully.",
+   "prompt": "Yesterday I read articles that mentioned the planet Neptune, the animal donkey, the metal iridium, the footwear moccasin and the tree baobab. Of these, hold the footwear moccasin in mind as you write. Now write exactly this sentence: \"The account settings were saved successfully.\"",
+   "assistant": "The account settings were saved successfully."
+  }
+ ]
+}

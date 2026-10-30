@@ -1,0 +1,1890 @@
+{
+ "family": "multihop",
+ "split": "fit",
+ "source": "jle/data/x90-dev/bank-v2/multihop.jsonl split A (jle git 50fa623)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "dev-mh-a-002",
+   "subfamily": "country",
+   "prompt": "Fact: The capital of the country where Fryderyk Chopin was born is",
+   "target": "Warsaw",
+   "intermediates": [
+    "Poland"
+   ],
+   "note": "Chopin born -> Poland; capital of Poland = Warsaw",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-006",
+   "subfamily": "country",
+   "prompt": "Fact: The capital of the country associated with the legend of Dracula and the Carpathian Mountains is",
+   "target": "Bucharest",
+   "intermediates": [
+    "Romania"
+   ],
+   "note": "Dracula/Carpathians -> Romania; capital of Romania = Bucharest",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-007",
+   "subfamily": "country",
+   "prompt": "Fact: The capital of the country famous for its rose oil production and yogurt tradition is",
+   "target": "Sofia",
+   "intermediates": [
+    "Bulgaria"
+   ],
+   "note": "rose oil/yogurt -> Bulgaria; capital of Bulgaria = Sofia",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-015",
+   "subfamily": "country",
+   "prompt": "Fact: The capital of the country famous for the dish pho and shaped like the letter S on the map is",
+   "target": "Hanoi",
+   "intermediates": [
+    "Vietnam"
+   ],
+   "note": "pho / S-shaped map -> Vietnam; capital of Vietnam = Hanoi",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-017",
+   "subfamily": "country",
+   "prompt": "Fact: The language spoken in the world's largest archipelago nation, home to the island of Bali, is",
+   "target": "Indonesian",
+   "intermediates": [
+    "Indonesia"
+   ],
+   "note": "largest archipelago/Bali -> Indonesia; language = Indonesian",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-022",
+   "subfamily": "country",
+   "prompt": "Fact: The language spoken in the first country in the world to adopt Christianity as a state religion is",
+   "target": "Armenian",
+   "intermediates": [
+    "Armenia"
+   ],
+   "note": "first state to adopt Christianity -> Armenia; language = Armenian",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-027",
+   "subfamily": "country",
+   "prompt": "Fact: The continent home to the country nicknamed the Land of a Million Elephants, a landlocked nation bordered by Thailand and Vietnam, is",
+   "target": "Asia",
+   "intermediates": [
+    "Laos"
+   ],
+   "note": "Land of a Million Elephants, landlocked between Thailand/Vietnam -> Laos; continent = Asia",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-029",
+   "subfamily": "country",
+   "prompt": "Fact: The continent home to the volcanic island nation famous for the Blue Lagoon geothermal spa is",
+   "target": "Europe",
+   "intermediates": [
+    "Iceland"
+   ],
+   "note": "Blue Lagoon -> Iceland; continent = Europe",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-030",
+   "subfamily": "country",
+   "prompt": "Fact: The continent home to the small Mediterranean island nation and former British colony known for its Knights' fortifications is",
+   "target": "Europe",
+   "intermediates": [
+    "Malta"
+   ],
+   "note": "Knights' fortifications island -> Malta; continent = Europe",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-032",
+   "subfamily": "country",
+   "prompt": "Fact: The currency of the Southeast Asian kingdom famous for its ornate royal palaces and street food culture in its capital is the",
+   "target": "baht",
+   "intermediates": [
+    "Thailand"
+   ],
+   "note": "royal palaces/street food (Bangkok) -> Thailand; currency = baht",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-047",
+   "subfamily": "person",
+   "prompt": "Fact: The scientist whose X-ray diffraction images were crucial to discovering the structure of DNA was born in century number ",
+   "target": "20",
+   "intermediates": [
+    "Franklin"
+   ],
+   "note": "X-ray diffraction of DNA -> Rosalind Franklin; born 1920 = 20th century",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-050",
+   "subfamily": "person",
+   "prompt": "Fact: The astronomer who formulated the laws of planetary motion was born in century number ",
+   "target": "16",
+   "intermediates": [
+    "Kepler"
+   ],
+   "note": "laws of planetary motion -> Kepler; born 1571 = 16th century",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-052",
+   "subfamily": "element_material",
+   "prompt": "Fact: The first letter of the chemical symbol for the element with atomic number 19, essential for nerve function in the human body, is \"",
+   "target": "K",
+   "intermediates": [
+    "Potassium"
+   ],
+   "note": "atomic number 19 / nerve function -> Potassium (K); first letter = K",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-057",
+   "subfamily": "element_material",
+   "prompt": "Fact: The first letter of the chemical symbol for the metal with atomic number 24, used to give stainless steel its shine, is \"",
+   "target": "C",
+   "intermediates": [
+    "Chromium"
+   ],
+   "note": "atomic number 24 / stainless steel shine -> Chromium (Cr); first letter = C",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-062",
+   "subfamily": "element_material",
+   "prompt": "Fact: The state of matter at room temperature of the element with atomic number 2, the second most abundant element in the universe and used to fill party balloons, is a",
+   "target": "gas",
+   "intermediates": [
+    "Helium"
+   ],
+   "note": "atomic number 2 / used to fill party balloons -> Helium; state = gas",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-064",
+   "subfamily": "calendar",
+   "prompt": "Fact: The first letter of the month containing the Feast of the Epiphany is \"",
+   "target": "J",
+   "intermediates": [
+    "January"
+   ],
+   "note": "Feast of the Epiphany -> January; first letter = J",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-067",
+   "subfamily": "calendar",
+   "prompt": "Fact: In the United States, the annual deadline for filing federal income tax returns falls in month number ",
+   "target": "4",
+   "intermediates": [
+    "April"
+   ],
+   "note": "US tax filing deadline (Tax Day) -> April; month number = 4",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-068",
+   "subfamily": "calendar",
+   "prompt": "Fact: The first letter of the month containing Earth Day is \"",
+   "target": "A",
+   "intermediates": [
+    "April"
+   ],
+   "note": "Earth Day -> April; first letter = A",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-070",
+   "subfamily": "calendar",
+   "prompt": "Fact: The first letter of the month containing the Midsummer's Eve celebrations is \"",
+   "target": "J",
+   "intermediates": [
+    "June"
+   ],
+   "note": "Midsummer's Eve -> June; first letter = J",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-071",
+   "subfamily": "calendar",
+   "prompt": "Fact: The Feast of the Assumption of Mary is celebrated in month number ",
+   "target": "8",
+   "intermediates": [
+    "August"
+   ],
+   "note": "Feast of the Assumption -> August; month number = 8",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-073",
+   "subfamily": "calendar",
+   "prompt": "Fact: The month that immediately follows the one containing the United States' Labor Day holiday is",
+   "target": "October",
+   "intermediates": [
+    "September"
+   ],
+   "note": "US Labor Day -> September; following month = October",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-075",
+   "subfamily": "calendar",
+   "prompt": "Fact: The month that immediately follows the one containing the United States' Thanksgiving holiday is",
+   "target": "December",
+   "intermediates": [
+    "November"
+   ],
+   "note": "US Thanksgiving -> November; following month = December",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-077",
+   "subfamily": "number",
+   "prompt": "Fact: The number of wheels on a standard car, plus one, is ",
+   "target": "5",
+   "intermediates": [
+    "4"
+   ],
+   "note": "wheels on a car = 4; plus one = 5",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-091",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The habitat of the humped animal famous for storing fat, not water, and surviving long stretches without drinking is the",
+   "target": "desert",
+   "intermediates": [
+    "camel"
+   ],
+   "note": "hump for fat storage -> camel; habitat = desert",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-a-096",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The location in the body of the largest internal organ, responsible for filtering toxins from the blood and producing bile, is the",
+   "target": "abdomen",
+   "intermediates": [
+    "liver"
+   ],
+   "note": "toxin-filtering bile-producing organ -> liver; location = abdomen",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-001",
+   "subfamily": "country",
+   "prompt": "Fact: The capital of the South American country home to the ancient mountaintop citadel of Machu Picchu is",
+   "target": "Lima",
+   "intermediates": [
+    "Peru"
+   ],
+   "note": "Machu Picchu -> Peru; capital of Peru = Lima",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-008",
+   "subfamily": "country",
+   "prompt": "Fact: The capital of the Caribbean island nation famous for its cigars and vintage American cars is",
+   "target": "Havana",
+   "intermediates": [
+    "Cuba"
+   ],
+   "note": "cigars and vintage cars -> Cuba; capital of Cuba = Havana",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-009",
+   "subfamily": "country",
+   "prompt": "Fact: The capital of the Caribbean island nation where reggae music was born is",
+   "target": "Kingston",
+   "intermediates": [
+    "Jamaica"
+   ],
+   "note": "birthplace of reggae -> Jamaica; capital of Jamaica = Kingston",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-014",
+   "subfamily": "country",
+   "prompt": "Fact: The currency of the landlocked South American country home to the Uyuni salt flats is the",
+   "target": "boliviano",
+   "intermediates": [
+    "Bolivia"
+   ],
+   "note": "Uyuni salt flats -> Bolivia; currency of Bolivia = boliviano",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-017",
+   "subfamily": "country",
+   "prompt": "Fact: The capital of the North African country famous for the city of Marrakesh and the Atlas Mountains is",
+   "target": "Rabat",
+   "intermediates": [
+    "Morocco"
+   ],
+   "note": "Marrakesh and Atlas Mountains -> Morocco; capital of Morocco = Rabat",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-018",
+   "subfamily": "country",
+   "prompt": "Fact: The capital of the West African country formerly known as the Gold Coast is",
+   "target": "Accra",
+   "intermediates": [
+    "Ghana"
+   ],
+   "note": "formerly Gold Coast -> Ghana; capital of Ghana = Accra",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-019",
+   "subfamily": "country",
+   "prompt": "Fact: The most widely spoken language in the East African country home to Mount Kilimanjaro is",
+   "target": "Swahili",
+   "intermediates": [
+    "Tanzania"
+   ],
+   "note": "Mount Kilimanjaro -> Tanzania; most widely spoken language of Tanzania = Swahili",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-022",
+   "subfamily": "country",
+   "prompt": "Fact: The capital of the North African country where the Arab Spring uprisings began, in 2010, is",
+   "target": "Tunis",
+   "intermediates": [
+    "Tunisia"
+   ],
+   "note": "Arab Spring began 2010 -> Tunisia; capital of Tunisia = Tunis",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-023",
+   "subfamily": "country",
+   "prompt": "Fact: The capital of the North African country whose flag was, for decades, the only national flag of a single solid colour is",
+   "target": "Tripoli",
+   "intermediates": [
+    "Libya"
+   ],
+   "note": "plain green flag 1977-2011 -> Libya; capital of Libya = Tripoli",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-036",
+   "subfamily": "person",
+   "prompt": "Fact: The nationality of the artist who co-founded Cubism and painted \"Guernica\" in response to a wartime bombing in his home country is",
+   "target": "Spanish",
+   "intermediates": [
+    "Picasso"
+   ],
+   "note": "co-founded Cubism, painted Guernica -> Picasso; nationality of Picasso = Spanish",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-037",
+   "subfamily": "person",
+   "prompt": "Fact: The nationality of the painter who founded the art movement named after his work \"Impression, Sunrise\" is",
+   "target": "French",
+   "intermediates": [
+    "Monet"
+   ],
+   "note": "founded Impressionism -> Monet; nationality of Monet = French",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-054",
+   "subfamily": "element_material",
+   "prompt": "Fact: The first letter of the chemical symbol for the metal essential for nerve function, abundant in bananas, whose chemical symbol comes from its Latin name, kalium, is \"",
+   "target": "K",
+   "intermediates": [
+    "Potassium"
+   ],
+   "note": "essential for nerve function, abundant in bananas, Latin kalium -> Potassium; symbol K",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-057",
+   "subfamily": "element_material",
+   "prompt": "Fact: The colour of the element that gives rotten eggs their smell and is found around volcanic vents is",
+   "target": "yellow",
+   "intermediates": [
+    "Sulfur",
+    "Sulphur"
+   ],
+   "note": "rotten egg smell, volcanic vents -> Sulfur; colour of Sulfur = yellow",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-060",
+   "subfamily": "element_material",
+   "prompt": "Fact: The first letter of the chemical symbol for the strong, lightweight metal named after mythological giants, used in aircraft frames and hip replacements, is \"",
+   "target": "T",
+   "intermediates": [
+    "Titanium"
+   ],
+   "note": "named after mythological giants, used in aircraft and hip replacements -> Titanium; symbol Ti starts with T",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-064",
+   "subfamily": "calendar",
+   "prompt": "Fact: The Roman leader Julius Caesar was assassinated on the ides of a month; that month is month number ",
+   "target": "3",
+   "intermediates": [
+    "March"
+   ],
+   "note": "Ides of assassination -> March; March = month 3",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-065",
+   "subfamily": "calendar",
+   "prompt": "Fact: The month in which the RMS Titanic sank after striking an iceberg, in 1912, is month number ",
+   "target": "4",
+   "intermediates": [
+    "April"
+   ],
+   "note": "Titanic sank 1912 -> April; April = month 4",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-066",
+   "subfamily": "calendar",
+   "prompt": "Fact: The month in which Allied forces landed in Normandy on D-Day, in 1944, is month number ",
+   "target": "6",
+   "intermediates": [
+    "June"
+   ],
+   "note": "D-Day 1944 -> June; June = month 6",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-067",
+   "subfamily": "calendar",
+   "prompt": "Fact: The month in which atomic bombs were dropped on Hiroshima and Nagasaki, in 1945, is month number ",
+   "target": "8",
+   "intermediates": [
+    "August"
+   ],
+   "note": "Hiroshima and Nagasaki 1945 -> August; August = month 8",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-069",
+   "subfamily": "calendar",
+   "prompt": "Fact: The month in which the Berlin Wall fell, in 1989, is month number ",
+   "target": "11",
+   "intermediates": [
+    "November"
+   ],
+   "note": "Berlin Wall fell 1989 -> November; November = month 11",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-070",
+   "subfamily": "calendar",
+   "prompt": "Fact: The first letter of the month in which the Rose Bowl, one of the oldest American college football games, is traditionally played, is \"",
+   "target": "J",
+   "intermediates": [
+    "January"
+   ],
+   "note": "Rose Bowl traditionally played -> January; first letter J",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-072",
+   "subfamily": "calendar",
+   "prompt": "Fact: The first letter of the month in which the guns fell silent at the end of World War I fighting, in 1918, is \"",
+   "target": "N",
+   "intermediates": [
+    "November"
+   ],
+   "note": "WWI armistice 1918 -> November; first letter N",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-074",
+   "subfamily": "calendar",
+   "prompt": "Fact: The season, in the Northern Hemisphere, during which the Chernobyl nuclear disaster occurred in Ukraine, in 1986, is",
+   "target": "spring",
+   "intermediates": [
+    "April"
+   ],
+   "note": "Chernobyl disaster 1986 -> April; Northern Hemisphere season of April = spring",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-085",
+   "subfamily": "number",
+   "prompt": "Fact: The parity of the number of strings on a standard ukulele is",
+   "target": "even",
+   "intermediates": [
+    "4"
+   ],
+   "note": "strings on a standard ukulele -> 4; parity of 4 = even",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-094",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The colour of the root vegetable whose juice is sometimes used as a natural dye and can turn urine and stool pink after being eaten, is",
+   "target": "red",
+   "intermediates": [
+    "Beetroot",
+    "Beet"
+   ],
+   "note": "juice used as dye, causes pink urine -> Beetroot; colour of Beetroot = red",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-b-098",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The botanical class of the seed ground into a popular sandwich spread, despite the word nut in its common name, is",
+   "target": "legume",
+   "intermediates": [
+    "Peanut"
+   ],
+   "note": "ground into sandwich spread, misleadingly named -> Peanut; botanical class of Peanut = legume",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-004",
+   "subfamily": "person",
+   "prompt": "Fact: The century, as a number, in which the inventor of dynamite who endowed the prizes bearing his name was born is ",
+   "target": "19",
+   "intermediates": [
+    "Nobel"
+   ],
+   "note": "inventor of dynamite, prizes bear his name -> Nobel; Nobel born 1833 = 19th century",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-007",
+   "subfamily": "person",
+   "prompt": "Fact: The nationality of the military leader defeated at the Battle of Waterloo is",
+   "target": "French",
+   "intermediates": [
+    "Napoleon"
+   ],
+   "note": "leader defeated at Waterloo -> Napoleon; Napoleon's nationality = French",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-009",
+   "subfamily": "person",
+   "prompt": "Fact: The continent of the leader who was imprisoned for 27 years before becoming president of his country is",
+   "target": "Africa",
+   "intermediates": [
+    "Mandela"
+   ],
+   "note": "imprisoned 27 years, later president -> Mandela; Mandela's continent = Africa",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-012",
+   "subfamily": "person",
+   "prompt": "Fact: The nationality of the composer of the opera Aida is",
+   "target": "Italian",
+   "intermediates": [
+    "Verdi"
+   ],
+   "note": "composer of Aida -> Verdi; Verdi's nationality = Italian",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-014",
+   "subfamily": "person",
+   "prompt": "Fact: The native language of the writer whose novel begins with a man waking up transformed into an insect is",
+   "target": "German",
+   "intermediates": [
+    "Kafka"
+   ],
+   "note": "man wakes transformed into an insect -> Kafka; Kafka's native language = German",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-017",
+   "subfamily": "person",
+   "prompt": "Fact: The nationality of the scientist who discovered the antibiotic penicillin by accident is",
+   "target": "Scottish",
+   "intermediates": [
+    "Fleming"
+   ],
+   "note": "discoverer of penicillin by accident -> Fleming; Fleming's nationality = Scottish",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-018",
+   "subfamily": "person",
+   "prompt": "Fact: The nationality of the engineer whose improvements to the steam engine helped power the Industrial Revolution is",
+   "target": "Scottish",
+   "intermediates": [
+    "Watt"
+   ],
+   "note": "steam engine improver -> Watt; Watt's nationality = Scottish",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-020",
+   "subfamily": "person",
+   "prompt": "Fact: The nationality of the brothers credited with building and flying the first powered airplane is",
+   "target": "American",
+   "intermediates": [
+    "Wright"
+   ],
+   "note": "first powered airplane -> Wright brothers; the Wrights' nationality = American",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-023",
+   "subfamily": "person",
+   "prompt": "Fact: The century, as a number, in which the sea captain who was the first English commander to sail all the way around the world was born is ",
+   "target": "16",
+   "intermediates": [
+    "Drake"
+   ],
+   "note": "first English commander to circumnavigate the globe -> Drake; Drake born c.1540 = 16th century",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.8,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-025",
+   "subfamily": "person",
+   "prompt": "Fact: The nationality of the ancient philosopher who wrote about an ideal city ruled by philosopher-kings is",
+   "target": "Greek",
+   "intermediates": [
+    "Plato"
+   ],
+   "note": "ideal city ruled by philosopher-kings -> Plato; Plato's nationality = Greek",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-027",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The number of legs on the big cat known as the king of the savanna, with males growing a thick mane, is ",
+   "target": "4",
+   "intermediates": [
+    "lion"
+   ],
+   "note": "big cat, king of savanna, maned males -> lion; lion has 4 legs",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-030",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The animal class of the nocturnal hunter known for turning its head almost all the way around is",
+   "target": "bird",
+   "intermediates": [
+    "owl"
+   ],
+   "note": "nocturnal hunter that turns head around -> owl; owl's class = bird",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 0.9,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-035",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The animal class of the striped flying creature that turns flower nectar into a sweet food is",
+   "target": "insect",
+   "intermediates": [
+    "bee"
+   ],
+   "note": "striped flyer turning nectar into sweet food -> bee; bee's class = insect",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-036",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The number of legs on the amphibian known for its powerful jump and loud croaking at night is ",
+   "target": "4",
+   "intermediates": [
+    "frog"
+   ],
+   "note": "jumping, croaking amphibian -> frog; frog has 4 legs",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-039",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The material sheared from the fluffy farm animal that follows a shepherd is called",
+   "target": "wool",
+   "intermediates": [
+    "sheep"
+   ],
+   "note": "fluffy farm animal sheared by a shepherd -> sheep; sheep is sheared for wool",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-040",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The number of legs on the animal ridden by knights and cowboys, known for galloping and neighing, is ",
+   "target": "4",
+   "intermediates": [
+    "horse"
+   ],
+   "note": "ridden by knights/cowboys, gallops and neighs -> horse; horse has 4 legs",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -2
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-048",
+   "subfamily": "object_animal",
+   "prompt": "Fact: The liquid that the solid dairy food, aged and often having holes or a rind, is made from is",
+   "target": "milk",
+   "intermediates": [
+    "cheese"
+   ],
+   "note": "aged solid dairy food with holes/rind -> cheese; cheese is made from milk",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-051",
+   "subfamily": "element_material",
+   "prompt": "Fact: The physical state at room temperature of the invisible substance that makes up about four-fifths of the air we breathe is a",
+   "target": "gas",
+   "intermediates": [
+    "nitrogen"
+   ],
+   "note": "invisible substance ~80% of air -> nitrogen; nitrogen's state at room temp = gas",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-052",
+   "subfamily": "element_material",
+   "prompt": "Fact: The first letter of the chemical symbol of the lightest and most abundant element in the universe, which fuels the sun, is \"",
+   "target": "H",
+   "intermediates": [
+    "hydrogen"
+   ],
+   "note": "lightest, most abundant element, fuels the sun -> hydrogen; hydrogen's symbol H, first letter = H",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-055",
+   "subfamily": "element_material",
+   "prompt": "Fact: The physical state at room temperature of the rare, dense, silvery-white metal prized in fine jewellery is a",
+   "target": "solid",
+   "intermediates": [
+    "platinum"
+   ],
+   "note": "rare dense silvery-white metal in jewellery -> platinum; platinum's state at room temp = solid",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-059",
+   "subfamily": "element_material",
+   "prompt": "Fact: The physical state at room temperature of the hard, transparent material made by melting sand, used for windows and bottles, is a",
+   "target": "solid",
+   "intermediates": [
+    "glass"
+   ],
+   "note": "hard transparent material from melted sand for windows/bottles -> glass; glass's state at room temp = solid",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-060",
+   "subfamily": "element_material",
+   "prompt": "Fact: The natural colour of the soft plant fibre harvested from fluffy bolls and spun into most T-shirts is",
+   "target": "white",
+   "intermediates": [
+    "cotton"
+   ],
+   "note": "soft plant fibre from bolls, spun into T-shirts -> cotton; cotton's natural colour = white",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-061",
+   "subfamily": "element_material",
+   "prompt": "Fact: The physical state at room temperature of the soft fibre sheared from sheep and knitted into warm sweaters is a",
+   "target": "solid",
+   "intermediates": [
+    "wool"
+   ],
+   "note": "soft fibre sheared from sheep, knitted into sweaters -> wool; wool's state at room temp = solid",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-062",
+   "subfamily": "element_material",
+   "prompt": "Fact: The natural colour of the smooth, shiny fibre spun by a certain caterpillar to make its cocoon is",
+   "target": "white",
+   "intermediates": [
+    "silk"
+   ],
+   "note": "smooth shiny fibre spun by a caterpillar into a cocoon -> silk; silk's natural colour = white",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-063",
+   "subfamily": "element_material",
+   "prompt": "Fact: The physical state at room temperature of the stretchy material tapped from tropical trees and used to make tyres is a",
+   "target": "solid",
+   "intermediates": [
+    "rubber"
+   ],
+   "note": "stretchy material tapped from tropical trees for tyres -> rubber; rubber's state at room temp = solid",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-069",
+   "subfamily": "element_material",
+   "prompt": "Fact: The physical state at room temperature of the material that melts easily and is moulded into candles is a",
+   "target": "solid",
+   "intermediates": [
+    "wax"
+   ],
+   "note": "material that melts easily, moulded into candles -> wax; wax's state at room temp = solid",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-072",
+   "subfamily": "calendar",
+   "prompt": "Fact: The first letter of the first weekday after the weekend, when most people return to work or school, is \"",
+   "target": "M",
+   "intermediates": [
+    "Monday"
+   ],
+   "note": "first weekday after the weekend -> Monday; first letter = M",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-075",
+   "subfamily": "calendar",
+   "prompt": "Fact: The first letter of the weekday named after the Norse god of thunder is \"",
+   "target": "T",
+   "intermediates": [
+    "Thursday"
+   ],
+   "note": "weekday named after the Norse thunder god -> Thursday; first letter = T",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-086",
+   "subfamily": "country",
+   "prompt": "Fact: The main language spoken in the country that gave the world the automobile and is famous for its sausages and beer halls is",
+   "target": "German",
+   "intermediates": [
+    "Germany"
+   ],
+   "note": "country of automobile invention, sausages, beer halls -> Germany; Germany's main language = German",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-088",
+   "subfamily": "country",
+   "prompt": "Fact: The continent of the country famous for the waltz music of the Strauss family and its Alpine ski resorts is",
+   "target": "Europe",
+   "intermediates": [
+    "Austria"
+   ],
+   "note": "waltz music of the Strauss family, Alpine ski resorts -> Austria; Austria's continent = Europe",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-091",
+   "subfamily": "country",
+   "prompt": "Fact: The main language spoken in the South American country famous for its earthquake-prone geology and for producing some of the world's finest wines is",
+   "target": "Spanish",
+   "intermediates": [
+    "Chile"
+   ],
+   "note": "earthquake-prone geology, fine wines -> Chile; Chile's main language = Spanish",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-093",
+   "subfamily": "country",
+   "prompt": "Fact: The continent of the country famous for its dominant long-distance running champions and for exporting much of the world's black tea is",
+   "target": "Africa",
+   "intermediates": [
+    "Kenya"
+   ],
+   "note": "long-distance running champions, black tea exports -> Kenya; Kenya's continent = Africa",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-094",
+   "subfamily": "country",
+   "prompt": "Fact: The capital city of the Southeast Asian country nicknamed the Land of Smiles, famous for its tuk-tuk taxis weaving through busy floating markets, is",
+   "target": "Bangkok",
+   "intermediates": [
+    "Thailand"
+   ],
+   "note": "nicknamed Land of Smiles, tuk-tuks, floating markets -> Thailand; Thailand's capital = Bangkok",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-097",
+   "subfamily": "number",
+   "prompt": "Fact: The number of wings on a typical bird, spelled out as a word, is",
+   "target": "two",
+   "intermediates": [
+    "2"
+   ],
+   "note": "typical bird has 2 wings -> bridge 2; spelled out = two",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "dev-mh-c-100",
+   "subfamily": "number",
+   "prompt": "Fact: The number of players in the starting lineup of a baseball team, spelled out as a word, is",
+   "target": "nine",
+   "intermediates": [
+    "9"
+   ],
+   "note": "baseball starting lineup has 9 players -> bridge 9; spelled out = nine",
+   "family": "multihop",
+   "source": "x90-dev",
+   "verified": true,
+   "target_in_bench": false,
+   "consistency": 1.0,
+   "split": "A",
+   "readout": {
+    "kind": "last_word_token",
+    "offsets": [
+     -1
+    ]
+   }
+  }
+ ]
+}

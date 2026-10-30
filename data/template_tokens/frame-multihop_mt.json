@@ -1,0 +1,31 @@
+{
+ "name": "frame-multihop_mt",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 3,
+ "excluded_targets": 1577,
+ "share": 0.15,
+ "tokens": [
+  {
+   "id": 98303,
+   "text": "åĩºçīĪ",
+   "sources": [
+    "fam top-10 on 6 / 40 multihop_mt fit items"
+   ]
+  },
+  {
+   "id": 97441,
+   "text": "å°ıè¯´",
+   "sources": [
+    "fam top-10 on 6 / 40 multihop_mt fit items"
+   ]
+  },
+  {
+   "id": 99527,
+   "text": "æĸĩåŃ¦",
+   "sources": [
+    "fam top-10 on 6 / 40 multihop_mt fit items"
+   ]
+  }
+ ]
+}

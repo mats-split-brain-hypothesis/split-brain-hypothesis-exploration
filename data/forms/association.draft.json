@@ -1,0 +1,1326 @@
+{
+ "meta": {
+  "model": "anthropic/claude-haiku-5.5",
+  "built": "2026-10-11",
+  "rule": "inflections + derived words naming the same thing",
+  "spend_usd": 0.0042,
+  "note": "unpinned model's draft, reviewed by hand; edit freely, a rebuild keeps existing keys"
+ },
+ "forms": {
+  "acupuncture": [
+   "acupuncturist",
+   "acupuncturists"
+  ],
+  "adoption": [
+   "adopt",
+   "adopted",
+   "adopter",
+   "adopters",
+   "adopting",
+   "adopts"
+  ],
+  "airbnb": [],
+  "airport": [],
+  "amazon": [],
+  "animation": [
+   "animate",
+   "animated",
+   "animates",
+   "animating",
+   "animations",
+   "animator",
+   "animators"
+  ],
+  "anxiety": [
+   "anxieties",
+   "anxious",
+   "anxiously"
+  ],
+  "apology": [
+   "apologetic",
+   "apologies",
+   "apologize",
+   "apologized",
+   "apologizes",
+   "apologizing"
+  ],
+  "aquarium": [
+   "aquariums"
+  ],
+  "archery": [
+   "archer",
+   "archers"
+  ],
+  "asylum": [
+   "asylums"
+  ],
+  "atelier": [
+   "ateliers"
+  ],
+  "auction": [
+   "auctioned",
+   "auctioneer",
+   "auctioneers",
+   "auctioning",
+   "auctions"
+  ],
+  "aurora": [
+   "auroras"
+  ],
+  "avalanche": [
+   "avalanches"
+  ],
+  "bahnhof": [],
+  "bakery": [
+   "bake",
+   "baked",
+   "baker",
+   "bakeries",
+   "bakers",
+   "bakes",
+   "baking"
+  ],
+  "ballet": [
+   "ballerina",
+   "ballerinas",
+   "ballerino",
+   "ballets"
+  ],
+  "bankruptcy": [
+   "bankrupt",
+   "bankrupted",
+   "bankrupting",
+   "bankrupts"
+  ],
+  "baptism": [
+   "baptise",
+   "baptised",
+   "baptises",
+   "baptising",
+   "baptize",
+   "baptized",
+   "baptizes",
+   "baptizing"
+  ],
+  "barbecue": [
+   "barbecued",
+   "barbecues",
+   "barbecuing"
+  ],
+  "barber": [
+   "barbered",
+   "barbering",
+   "barbers"
+  ],
+  "baseball": [],
+  "batik": [
+   "batiks"
+  ],
+  "baum": [
+   "baeume"
+  ],
+  "beekeeping": [
+   "beekeep",
+   "beekeeper",
+   "beekeepers",
+   "beekeeps",
+   "beekept"
+  ],
+  "birthday": [
+   "birthdays"
+  ],
+  "blackjack": [],
+  "blacksmith": [
+   "blacksmithing",
+   "blacksmiths"
+  ],
+  "bowling": [
+   "bowl",
+   "bowled",
+   "bowler",
+   "bowlers",
+   "bowls"
+  ],
+  "boxing": [
+   "boxed",
+   "boxer",
+   "boxers",
+   "boxes"
+  ],
+  "brewery": [
+   "brew",
+   "brewed",
+   "brewer",
+   "breweries",
+   "brewers",
+   "brewing",
+   "brews"
+  ],
+  "camping": [
+   "camp",
+   "camped",
+   "camper",
+   "campers",
+   "camps"
+  ],
+  "canyon": [
+   "canyons"
+  ],
+  "carnaval": [],
+  "casino": [
+   "casinos"
+  ],
+  "castle": [
+   "castles"
+  ],
+  "cave": [
+   "caved",
+   "caver",
+   "cavers",
+   "caves",
+   "caving"
+  ],
+  "chantier": [
+   "chantiers"
+  ],
+  "chess": [],
+  "child": [
+   "children"
+  ],
+  "christmas": [],
+  "churchill": [],
+  "cia": [],
+  "cleopatra": [
+   "cleopatras"
+  ],
+  "cliff": [
+   "cliffs"
+  ],
+  "climbing": [
+   "climb",
+   "climbed",
+   "climber",
+   "climbers",
+   "climbs"
+  ],
+  "coffee": [
+   "coffees"
+  ],
+  "columbus": [],
+  "comet": [
+   "cometary",
+   "comets"
+  ],
+  "composing": [
+   "compose",
+   "composed",
+   "composer",
+   "composers",
+   "composes"
+  ],
+  "crater": [
+   "craters"
+  ],
+  "crochet": [
+   "crocheted",
+   "crocheter",
+   "crocheters",
+   "crocheting",
+   "crochets"
+  ],
+  "curiosity": [
+   "curious",
+   "curiouser",
+   "curiousest",
+   "curiouslier"
+  ],
+  "cycling": [
+   "cycle",
+   "cycled",
+   "cycles",
+   "cyclist",
+   "cyclists"
+  ],
+  "dairy": [
+   "dairies"
+  ],
+  "dam": [
+   "dammed",
+   "damming",
+   "dams"
+  ],
+  "darwin": [],
+  "dawn": [
+   "dawned",
+   "dawning",
+   "dawns"
+  ],
+  "death": [
+   "dead",
+   "die",
+   "died",
+   "dies",
+   "dying"
+  ],
+  "delta": [
+   "deltaic",
+   "deltas"
+  ],
+  "dentist": [
+   "dentistry",
+   "dentists"
+  ],
+  "desert": [
+   "deserted",
+   "deserting",
+   "deserts"
+  ],
+  "deserto": [],
+  "detailing": [
+   "detail",
+   "detailed",
+   "detailer",
+   "detailers",
+   "details"
+  ],
+  "detective|holmes|sherlock": [
+   "detect",
+   "detected",
+   "detecting",
+   "detectives",
+   "detects"
+  ],
+  "diving": [
+   "dive",
+   "dived",
+   "diver",
+   "divers",
+   "dives",
+   "dove"
+  ],
+  "divorce": [
+   "divorced",
+   "divorces",
+   "divorcing"
+  ],
+  "dominoes": [
+   "domino"
+  ],
+  "drought": [
+   "droughts"
+  ],
+  "dubai": [],
+  "earthquake": [
+   "earthquakes"
+  ],
+  "easter": [],
+  "eclipse": [
+   "eclipsed",
+   "eclipses",
+   "eclipsing"
+  ],
+  "editing": [
+   "edit",
+   "edited",
+   "editor",
+   "editors",
+   "edits"
+  ],
+  "einstein": [],
+  "election": [
+   "elect",
+   "elected",
+   "electing",
+   "elector",
+   "electoral",
+   "electorate",
+   "electors",
+   "elects"
+  ],
+  "exile": [
+   "exiled",
+   "exiles",
+   "exiling"
+  ],
+  "fame": [
+   "famous",
+   "famously"
+  ],
+  "fencing": [
+   "fence",
+   "fenced",
+   "fencer",
+   "fencers",
+   "fences"
+  ],
+  "ferrari": [
+   "ferraris"
+  ],
+  "festival": [
+   "festivals"
+  ],
+  "fifa": [],
+  "film": [
+   "filmed",
+   "filming",
+   "filmmaker",
+   "filmmakers",
+   "films"
+  ],
+  "fire": [
+   "fired",
+   "fires",
+   "firing"
+  ],
+  "fired": [
+   "fire",
+   "fires"
+  ],
+  "fireworks": [
+   "firework"
+  ],
+  "fishing": [
+   "fish",
+   "fished",
+   "fisher",
+   "fisherman",
+   "fishermen",
+   "fishers",
+   "fishes"
+  ],
+  "fiume": [
+   "fiumi"
+  ],
+  "flood": [
+   "flooded",
+   "flooding",
+   "floods",
+   "floodwater",
+   "floodwaters"
+  ],
+  "fluss": [
+   "fluesse"
+  ],
+  "forêt": [],
+  "free": [
+   "freed",
+   "freedom",
+   "freedoms",
+   "freeing",
+   "frees"
+  ],
+  "fromage": [
+   "fromages"
+  ],
+  "funeral": [
+   "funerals",
+   "funerary",
+   "funereal"
+  ],
+  "game": [
+   "gamed",
+   "games",
+   "gaming"
+  ],
+  "gardening": [
+   "garden",
+   "gardened",
+   "gardener",
+   "gardeners",
+   "gardens"
+  ],
+  "gato": [
+   "gata",
+   "gatas",
+   "gatos"
+  ],
+  "gatsby": [],
+  "glacier": [
+   "glacial",
+   "glaciers"
+  ],
+  "golf": [
+   "golfed",
+   "golfer",
+   "golfers",
+   "golfing",
+   "golfs"
+  ],
+  "google": [],
+  "graduation": [
+   "graduate",
+   "graduated",
+   "graduates",
+   "graduating"
+  ],
+  "grammy": [],
+  "greed": [
+   "greedier",
+   "greediest",
+   "greedy"
+  ],
+  "greenhouse": [
+   "greenhouses"
+  ],
+  "grief": [
+   "grieve",
+   "grieved",
+   "grieves",
+   "grieving"
+  ],
+  "grooming": [
+   "groom",
+   "groomed",
+   "groomer",
+   "groomers",
+   "grooms"
+  ],
+  "guild": [
+   "guilds"
+  ],
+  "halloween": [],
+  "harbor": [
+   "harbored",
+   "harboring",
+   "harbors",
+   "harbour",
+   "harbours"
+  ],
+  "harvest": [
+   "harvested",
+   "harvester",
+   "harvesters",
+   "harvesting",
+   "harvests"
+  ],
+  "hiking": [
+   "hike",
+   "hiked",
+   "hiker",
+   "hikers",
+   "hikes"
+  ],
+  "history": [
+   "historian",
+   "historians",
+   "historic",
+   "historical",
+   "histories"
+  ],
+  "hochzeit": [
+   "hochzeiten"
+  ],
+  "hockey": [],
+  "honesty": [
+   "honest",
+   "honester",
+   "honestest",
+   "honestly",
+   "honestness"
+  ],
+  "hope": [
+   "hoped",
+   "hopeful",
+   "hopefully",
+   "hopes",
+   "hoping"
+  ],
+  "hund": [
+   "hunde",
+   "hunden",
+   "hunds"
+  ],
+  "hurricane": [
+   "hurricanes"
+  ],
+  "icarus": [
+   "icaruss"
+  ],
+  "iceberg": [
+   "icebergs"
+  ],
+  "igreja": [
+   "igrejas"
+  ],
+  "ikea": [],
+  "inauguration": [
+   "inaugural",
+   "inaugurate",
+   "inaugurated",
+   "inaugurates",
+   "inaugurating"
+  ],
+  "inheritance": [
+   "inherit",
+   "inherited",
+   "inheriting",
+   "inheritor",
+   "inheritors",
+   "inherits"
+  ],
+  "istanbul": [],
+  "japan": [],
+  "jealousy": [
+   "jealous",
+   "jealously"
+  ],
+  "jogging": [
+   "jog",
+   "jogged",
+   "jogger",
+   "joggers",
+   "jogs"
+  ],
+  "jousting": [
+   "joust",
+   "jousted",
+   "jouster",
+   "jousters",
+   "jousts"
+  ],
+  "juggling": [
+   "juggle",
+   "juggled",
+   "juggler",
+   "jugglers",
+   "juggles"
+  ],
+  "jungle": [
+   "jungles"
+  ],
+  "karaoke": [
+   "karaokes"
+  ],
+  "karate": [
+   "karateka",
+   "karates"
+  ],
+  "knitting": [
+   "knit",
+   "knits",
+   "knitted",
+   "knitter",
+   "knitters"
+  ],
+  "kremlin": [
+   "kremlins"
+  ],
+  "könig": [],
+  "landslide": [
+   "landslides"
+  ],
+  "laundry": [
+   "launder",
+   "laundered",
+   "launderer",
+   "launderers",
+   "laundering",
+   "launders",
+   "laundries"
+  ],
+  "lego": [],
+  "leonardo": [],
+  "library": [
+   "librarian",
+   "librarians",
+   "libraries"
+  ],
+  "lie": [
+   "liar",
+   "liars",
+   "lied",
+   "lies",
+   "lying"
+  ],
+  "lifeguard": [
+   "lifeguarding",
+   "lifeguards"
+  ],
+  "lighthouse": [
+   "lighthouses"
+  ],
+  "lincoln": [],
+  "lisbon": [],
+  "logging": [
+   "log",
+   "logged",
+   "logger",
+   "loggers",
+   "logs"
+  ],
+  "love": [
+   "loved",
+   "lover",
+   "lovers",
+   "loves",
+   "loving"
+  ],
+  "loyalty": [
+   "loyal",
+   "loyaler",
+   "loyalest",
+   "loyally",
+   "loyals"
+  ],
+  "luna": [
+   "lunar",
+   "lunas"
+  ],
+  "madonna": [],
+  "magician": [
+   "magic",
+   "magicians",
+   "magics"
+  ],
+  "mar": [
+   "meer",
+   "meere",
+   "meeres"
+  ],
+  "marathon": [
+   "marathoner",
+   "marathoners",
+   "marathons"
+  ],
+  "market": [
+   "marketed",
+   "marketer",
+   "marketers",
+   "marketing",
+   "markets"
+  ],
+  "massage": [
+   "massaged",
+   "massages",
+   "massaging",
+   "masseur",
+   "masseurs",
+   "masseuse",
+   "masseuses"
+  ],
+  "meditation": [
+   "meditate",
+   "meditated",
+   "meditates",
+   "meditating",
+   "meditator",
+   "meditators"
+  ],
+  "mercado": [
+   "mercados"
+  ],
+  "mercato": [
+   "mercatos"
+  ],
+  "meteor": [
+   "meteorite",
+   "meteorites",
+   "meteors"
+  ],
+  "mining": [
+   "mine",
+   "mined",
+   "miner",
+   "miners",
+   "mines"
+  ],
+  "mirage": [
+   "mirages"
+  ],
+  "moses": [
+   "mosaic"
+  ],
+  "mosque": [
+   "mosques"
+  ],
+  "museum": [
+   "museological",
+   "museums"
+  ],
+  "napoleon": [],
+  "nasa": [],
+  "neighbors": [
+   "neighbor",
+   "neighbour",
+   "neighbours"
+  ],
+  "netflix": [],
+  "nightmare": [
+   "nightmares",
+   "nightmarish"
+  ],
+  "nike": [],
+  "nobel": [],
+  "noir": [],
+  "nostalgia": [
+   "nostalgic"
+  ],
+  "oasis": [
+   "oases"
+  ],
+  "observatory": [
+   "observatories"
+  ],
+  "oktoberfest": [],
+  "olympics": [
+   "olympian",
+   "olympians",
+   "olympic"
+  ],
+  "opera": [
+   "operas",
+   "operatic",
+   "operatically"
+  ],
+  "painting": [
+   "paint",
+   "painted",
+   "painter",
+   "painters",
+   "paintings",
+   "paints"
+  ],
+  "palace": [
+   "palaces"
+  ],
+  "panic": [
+   "panicked",
+   "panicking",
+   "panicky",
+   "panics"
+  ],
+  "parade": [
+   "paraded",
+   "parader",
+   "paraders",
+   "parades",
+   "parading"
+  ],
+  "paris": [],
+  "parliament": [
+   "parliamentarian",
+   "parliamentarians",
+   "parliamentary",
+   "parliaments"
+  ],
+  "parole": [
+   "paroled",
+   "parolee",
+   "parolees",
+   "paroles",
+   "paroling"
+  ],
+  "peninsula": [
+   "peninsulas"
+  ],
+  "pennsylvania": [],
+  "pentagon": [],
+  "photography": [
+   "photograph",
+   "photographed",
+   "photographer",
+   "photographers",
+   "photographing",
+   "photographs"
+  ],
+  "piano": [
+   "pianist",
+   "pianists",
+   "pianos"
+  ],
+  "pier": [
+   "piers"
+  ],
+  "piercing": [
+   "pierce",
+   "pierced",
+   "piercer",
+   "piercers",
+   "pierces"
+  ],
+  "pilgrimage": [
+   "pilgrim",
+   "pilgrimaged",
+   "pilgrimages",
+   "pilgrimaging",
+   "pilgrims"
+  ],
+  "pinocchio": [],
+  "pizza": [
+   "pizzas",
+   "pizzeria",
+   "pizzerias"
+  ],
+  "planting": [
+   "plant",
+   "planted",
+   "planter",
+   "planters",
+   "plants"
+  ],
+  "playa": [
+   "playas"
+  ],
+  "plaza": [
+   "plazas"
+  ],
+  "poker": [],
+  "polo": [
+   "polos"
+  ],
+  "ponte": [
+   "ponti"
+  ],
+  "portrait": [
+   "portraitist",
+   "portraitists",
+   "portraits",
+   "portray",
+   "portrayed",
+   "portrays"
+  ],
+  "postman": [
+   "post",
+   "posted",
+   "posting",
+   "postmen",
+   "posts"
+  ],
+  "pottery": [
+   "potter",
+   "potteries",
+   "potters"
+  ],
+  "prague": [],
+  "praia": [],
+  "prairie": [
+   "prairies"
+  ],
+  "pregnant": [
+   "pregnancies",
+   "pregnancy",
+   "pregnantly"
+  ],
+  "printing": [
+   "print",
+   "printed",
+   "printer",
+   "printers",
+   "prints"
+  ],
+  "prison": [
+   "imprison",
+   "imprisoned",
+   "imprisoning",
+   "imprisons",
+   "prisoner",
+   "prisoners",
+   "prisons"
+  ],
+  "procession": [
+   "process",
+   "processed",
+   "processes",
+   "processing",
+   "processional",
+   "processions"
+  ],
+  "promotion": [
+   "promote",
+   "promoted",
+   "promotes",
+   "promoting",
+   "promotions"
+  ],
+  "pruning": [
+   "prune",
+   "pruned",
+   "pruner",
+   "pruners",
+   "prunes",
+   "prunings"
+  ],
+  "quarry": [
+   "quarried",
+   "quarrier",
+   "quarriers",
+   "quarries",
+   "quarrying"
+  ],
+  "quixote": [
+   "quixotes",
+   "quixotic"
+  ],
+  "rain": [
+   "rained",
+   "raining",
+   "rains",
+   "rainy"
+  ],
+  "rainbow": [
+   "rainbows"
+  ],
+  "reef": [
+   "reefs"
+  ],
+  "referendum": [
+   "referenda",
+   "referendary",
+   "referendums"
+  ],
+  "regret": [
+   "regretful",
+   "regrets",
+   "regretted",
+   "regretting"
+  ],
+  "reservoir": [
+   "reservoirs"
+  ],
+  "resilience": [
+   "resiliences",
+   "resilient",
+   "resiliently"
+  ],
+  "retirement": [
+   "retire",
+   "retired",
+   "retiree",
+   "retirees",
+   "retires",
+   "retiring"
+  ],
+  "reunion": [
+   "reunions",
+   "reunite",
+   "reunited",
+   "reunites",
+   "reuniting"
+  ],
+  "romance": [
+   "romances",
+   "romantic",
+   "romantics"
+  ],
+  "roulette": [
+   "roulettes"
+  ],
+  "rowing": [
+   "row",
+   "rowed",
+   "rower",
+   "rowers",
+   "rows"
+  ],
+  "rugby": [],
+  "sailing": [
+   "sail",
+   "sailed",
+   "sailor",
+   "sailors",
+   "sails"
+  ],
+  "sauna": [
+   "saunaed",
+   "saunas"
+  ],
+  "scandal": [
+   "scandalize",
+   "scandalized",
+   "scandalous",
+   "scandals"
+  ],
+  "sewing": [
+   "seamstress",
+   "seamstresses",
+   "sew",
+   "sewed",
+   "sewer",
+   "sewers",
+   "sewn",
+   "sews"
+  ],
+  "shakespeare": [],
+  "siesta": [
+   "siestas"
+  ],
+  "singapore": [],
+  "skateboarding": [
+   "skateboard",
+   "skateboarded",
+   "skateboarder",
+   "skateboarders",
+   "skateboards"
+  ],
+  "skating": [
+   "skate",
+   "skated",
+   "skater",
+   "skaters",
+   "skates"
+  ],
+  "skiing": [
+   "ski",
+   "skied",
+   "skier",
+   "skiers",
+   "skis"
+  ],
+  "snow": [
+   "snowed",
+   "snowing",
+   "snows",
+   "snowy"
+  ],
+  "sol": [
+   "sonne",
+   "sonnen"
+  ],
+  "space": [
+   "spaced",
+   "spaces",
+   "spacing"
+  ],
+  "spinning": [
+   "spin",
+   "spinner",
+   "spinners",
+   "spins",
+   "spun"
+  ],
+  "spotify": [],
+  "squash": [
+   "squashed",
+   "squashes",
+   "squashing"
+  ],
+  "stacking": [
+   "stack",
+   "stacked",
+   "stacker",
+   "stackers",
+   "stacks"
+  ],
+  "submarine": [
+   "submarines"
+  ],
+  "subway": [
+   "subways"
+  ],
+  "sunrise": [
+   "rise",
+   "risen",
+   "rises",
+   "rising",
+   "rose",
+   "sunrises"
+  ],
+  "sunset": [
+   "set",
+   "sets",
+   "setting",
+   "sunsets"
+  ],
+  "superman": [],
+  "surfing": [
+   "surf",
+   "surfed",
+   "surfer",
+   "surfers",
+   "surfs"
+  ],
+  "surgery": [
+   "surgeon",
+   "surgeons",
+   "surgeries",
+   "surgical"
+  ],
+  "suspense": [
+   "suspenses"
+  ],
+  "swimming": [
+   "swam",
+   "swim",
+   "swimmed",
+   "swimmer",
+   "swimmers",
+   "swims",
+   "swum"
+  ],
+  "tango": [
+   "dance",
+   "dancer",
+   "dancers",
+   "tangoed",
+   "tangoing",
+   "tangos"
+  ],
+  "tennis": [
+   "tennises"
+  ],
+  "terremoto": [
+   "terremotos"
+  ],
+  "tesla": [],
+  "time": [
+   "timed",
+   "times",
+   "timing"
+  ],
+  "titanic": [],
+  "tokyo": [],
+  "tornado": [
+   "tornadoes",
+   "tornados"
+  ],
+  "tournament": [
+   "tournaments"
+  ],
+  "tragedy": [
+   "tragedies",
+   "tragic"
+  ],
+  "troy": [
+   "troys"
+  ],
+  "tsunami": [
+   "tsunamis"
+  ],
+  "unesco": [],
+  "university": [
+   "universal",
+   "universally",
+   "universities"
+  ],
+  "upholstery": [
+   "upholster",
+   "upholstered",
+   "upholsterer",
+   "upholsterers",
+   "upholstering",
+   "upholsters"
+  ],
+  "vaccination": [
+   "vaccinate",
+   "vaccinated",
+   "vaccinates",
+   "vaccinating",
+   "vaccinations",
+   "vaccine",
+   "vaccines"
+  ],
+  "valley": [
+   "valleys"
+  ],
+  "vampire": [
+   "vampires",
+   "vampiric"
+  ],
+  "venice": [],
+  "vigil": [
+   "vigils"
+  ],
+  "vin": [
+   "vins"
+  ],
+  "vineyard": [
+   "vineyards",
+   "vintner",
+   "vintners"
+  ],
+  "vogel": [
+   "vogels"
+  ],
+  "volcan": [
+   "volcanic",
+   "volcanoes"
+  ],
+  "volcano": [
+   "volcanic",
+   "volcanically",
+   "volcanoes"
+  ],
+  "volleyball": [
+   "volleyballer",
+   "volleyballers",
+   "volleyballs"
+  ],
+  "wald": [
+   "waelder"
+  ],
+  "warehouse": [
+   "warehoused",
+   "warehouses",
+   "warehousing"
+  ],
+  "waterfall": [
+   "waterfalls"
+  ],
+  "wealth": [
+   "wealthier",
+   "wealthiest",
+   "wealthy"
+  ],
+  "weaving": [
+   "weave",
+   "weaved",
+   "weaver",
+   "weavers",
+   "weaves",
+   "wove",
+   "woven"
+  ],
+  "wedding": [
+   "wed",
+   "wedded",
+   "weddings"
+  ],
+  "weightlifting": [
+   "weightlift",
+   "weightlifted",
+   "weightlifter",
+   "weightlifters",
+   "weightlifts"
+  ],
+  "weihnachten": [],
+  "welding": [
+   "weld",
+   "welded",
+   "welder",
+   "welders",
+   "welds"
+  ],
+  "well": [
+   "welled",
+   "welling",
+   "wells"
+  ],
+  "wikipedia": [],
+  "wildfire": [
+   "wildfires"
+  ],
+  "wimbledon": [],
+  "winter": [
+   "winters",
+   "wintry"
+  ],
+  "wrestling": [
+   "wrestle",
+   "wrestled",
+   "wrestler",
+   "wrestlers",
+   "wrestles"
+  ],
+  "yoga": [
+   "yogi",
+   "yogin",
+   "yogis"
+  ],
+  "zeus": [],
+  "zoo": [
+   "zoologist",
+   "zoologists",
+   "zoos"
+  ]
+ }
+}

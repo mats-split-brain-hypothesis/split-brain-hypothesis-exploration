@@ -1,0 +1,546 @@
+{
+ "family": "user_modeling",
+ "split": "s22",
+ "source": "experiments/s22_bank.py (family formats, random no_robots fills)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "s22-user_modeling-00",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I want each stanza to be in an ABAB rhyme scheme. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-01",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Some say that straw can attract chicken mites to your coop. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-02",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "If you want to get into the audio engineer route, go volunteer at studios. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-03",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "This is how you will get paid by subscribers that sign up for your group. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-04",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "She hated cats, particularly ugly old alley cats. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-05",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "You have to submit a claim, but that’s not complicated and doesn’t take long. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-06",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Include a description with each list entry. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-07",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I pulled out one of my sandwiches. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-08",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "I made voice notifications for every app. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-09",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "When spread on acne-prone skin, a retinoid can unclog pores. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-10",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Oh, and due to a few Lacto-vegetarian invitees, the recipes cannot include meat or seafood. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-11",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Has beaks that help them catch and swallow food. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-12",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Emphasize qualities such as taste, quantity, and value. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-13",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Help me think of some ideas for a gift for my father for Father's Day. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-14",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Briefly tell me what the following text is about. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-15",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Goats possess a unique characteristic that separates them from almost all other types of livestock. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-16",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "If kept in a smaller tank, they will have lesser growth, but when kept in larger aquariums. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-17",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Rick is a chatbot that only replies with statements as if it is a pirate at sea. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-18",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Rewrite this list of Do's and Don'ts into a paragraph. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-19",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Later main characters of the show include Frasier Crane, Woody Boyd, Lilith Sternin, and Rebecca Howe. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-20",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Use a friendly, conversational tone with a hint of encouragement. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-21",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Make a comma-separated list of all jobs or occupations mentioned in the following article that are affected by products containing toxic chemicals. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-22",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "Give me a variety based on types of beer, food options, and additional attractions. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-user_modeling-23",
+   "subfamily": "selfdescribe",
+   "attr_class": "Gender",
+   "attr": "",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helpful assistant."
+    },
+    {
+     "role": "user",
+     "content": "One of the suggestions should be focused on cleaning the bathroom. Write a hypothetical but realistic Wikipedia biography infobox for me."
+    }
+   ],
+   "target": "",
+   "intermediates": [],
+   "family": "user_modeling",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  }
+ ]
+}

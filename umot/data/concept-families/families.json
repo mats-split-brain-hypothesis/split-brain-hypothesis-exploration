@@ -1,0 +1,3496 @@
+{
+  "provenance": {
+    "dataset": "wsbench/directed_modulation",
+    "extra": {
+      "related": "data/concept-families/related.json",
+      "rules": "Tiers (a token is in at most one; the first that claims it wins):"
+    },
+    "git_dirty": true,
+    "git_sha": "8d2069e32c9c00cff00ce4a54889ccc571014862",
+    "host": "laptop",
+    "model": "Qwen/Qwen3.6-27B",
+    "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+    "reader": null,
+    "reader_revision": null,
+    "seed": null
+  },
+  "result": {
+    "families": {
+      "Neptune": {
+        "category": [
+          {
+            "id": 11247,
+            "text": " planet"
+          },
+          {
+            "id": 27893,
+            "text": " Planet"
+          },
+          {
+            "id": 48389,
+            "text": "planet"
+          },
+          {
+            "id": 57618,
+            "text": "Planet"
+          }
+        ],
+        "descriptor": "planet",
+        "exact": [
+          {
+            "id": 76879,
+            "text": " Neptune"
+          }
+        ],
+        "piece": [],
+        "related": [
+          {
+            "id": 88891,
+            "text": " Trident"
+          },
+          {
+            "id": 91942,
+            "text": " uranus"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "Poseidon",
+          "\u6d77\u738b\u661f"
+        ]
+      },
+      "Saturn": {
+        "category": [
+          {
+            "id": 11247,
+            "text": " planet"
+          },
+          {
+            "id": 27893,
+            "text": " Planet"
+          },
+          {
+            "id": 48389,
+            "text": "planet"
+          },
+          {
+            "id": 57618,
+            "text": "Planet"
+          }
+        ],
+        "descriptor": "planet",
+        "exact": [
+          {
+            "id": 47503,
+            "text": " Saturn"
+          },
+          {
+            "id": 81767,
+            "text": " saturn"
+          }
+        ],
+        "piece": [
+          {
+            "id": 33725,
+            "text": "Sat"
+          },
+          {
+            "id": 35264,
+            "text": "sat"
+          }
+        ],
+        "related": [
+          {
+            "id": 23769,
+            "text": " rings"
+          },
+          {
+            "id": 26557,
+            "text": " Titan"
+          },
+          {
+            "id": 44738,
+            "text": " Rings"
+          },
+          {
+            "id": 48017,
+            "text": " Jupiter"
+          },
+          {
+            "id": 82559,
+            "text": " titan"
+          },
+          {
+            "id": 90890,
+            "text": "Titan"
+          }
+        ],
+        "shared": [],
+        "surface": [
+          {
+            "id": 56587,
+            "text": " satu"
+          },
+          {
+            "id": 90258,
+            "text": " satur"
+          },
+          {
+            "id": 178065,
+            "text": " Satu"
+          },
+          {
+            "id": 191500,
+            "text": " Satur"
+          }
+        ],
+        "unresolved": [
+          "ringed",
+          "\u571f\u661f"
+        ]
+      },
+      "accordion": {
+        "category": [
+          {
+            "id": 13736,
+            "text": " instrument"
+          },
+          {
+            "id": 40900,
+            "text": " Instrument"
+          },
+          {
+            "id": 54431,
+            "text": "Instrument"
+          },
+          {
+            "id": 64130,
+            "text": "instrument"
+          }
+        ],
+        "descriptor": "instrument",
+        "exact": [
+          {
+            "id": 34166,
+            "text": "accordion"
+          },
+          {
+            "id": 69172,
+            "text": "Accordion"
+          },
+          {
+            "id": 83999,
+            "text": " accordion"
+          }
+        ],
+        "piece": [],
+        "related": [],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "bellows",
+          "squeezebox",
+          "polka",
+          "concertina",
+          "\u624b\u98ce\u7434",
+          "Akkordeon"
+        ]
+      },
+      "alcove": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 32921,
+            "text": " niche"
+          },
+          {
+            "id": 45198,
+            "text": " recess"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "nook",
+          "\u58c1\u9f9b"
+        ]
+      },
+      "amethyst": {
+        "category": [],
+        "descriptor": "gemstone",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 24142,
+            "text": " purple"
+          },
+          {
+            "id": 24261,
+            "text": " crystal"
+          },
+          {
+            "id": 27010,
+            "text": " Crystal"
+          },
+          {
+            "id": 39052,
+            "text": " Purple"
+          },
+          {
+            "id": 49433,
+            "text": " quartz"
+          },
+          {
+            "id": 54613,
+            "text": "purple"
+          },
+          {
+            "id": 62890,
+            "text": " Quartz"
+          },
+          {
+            "id": 71978,
+            "text": "Purple"
+          },
+          {
+            "id": 78147,
+            "text": "Crystal"
+          }
+        ],
+        "shared": [
+          {
+            "id": 70976,
+            "text": " Violet"
+          },
+          {
+            "id": 76990,
+            "text": " violet"
+          }
+        ],
+        "surface": [
+          {
+            "id": 26335,
+            "text": " amet"
+          },
+          {
+            "id": 221446,
+            "text": "amet"
+          }
+        ],
+        "unresolved": [
+          "\u7d2b\u6c34\u6676"
+        ]
+      },
+      "banjo": {
+        "category": [
+          {
+            "id": 13736,
+            "text": " instrument"
+          },
+          {
+            "id": 40900,
+            "text": " Instrument"
+          },
+          {
+            "id": 54431,
+            "text": "Instrument"
+          },
+          {
+            "id": 64130,
+            "text": "instrument"
+          }
+        ],
+        "descriptor": "instrument",
+        "exact": [],
+        "piece": [
+          {
+            "id": 6636,
+            "text": "ban"
+          },
+          {
+            "id": 8673,
+            "text": " ban"
+          },
+          {
+            "id": 22023,
+            "text": " Ban"
+          },
+          {
+            "id": 48554,
+            "text": "Ban"
+          }
+        ],
+        "related": [
+          {
+            "id": 8796,
+            "text": " strings"
+          },
+          {
+            "id": 18034,
+            "text": "strings"
+          },
+          {
+            "id": 20224,
+            "text": "Strings"
+          },
+          {
+            "id": 40275,
+            "text": " Strings"
+          },
+          {
+            "id": 56521,
+            "text": "pluck"
+          }
+        ],
+        "shared": [],
+        "surface": [
+          {
+            "id": 163398,
+            "text": " Banj"
+          },
+          {
+            "id": 166057,
+            "text": " banj"
+          }
+        ],
+        "unresolved": [
+          "bluegrass",
+          "fiddle",
+          "\u73ed\u5353\u7434"
+        ]
+      },
+      "baobab": {
+        "category": [
+          {
+            "id": 4757,
+            "text": " tree"
+          },
+          {
+            "id": 6330,
+            "text": "Tree"
+          },
+          {
+            "id": 8672,
+            "text": " Tree"
+          },
+          {
+            "id": 9066,
+            "text": "tree"
+          }
+        ],
+        "descriptor": "tree",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 91359,
+            "text": " Madagascar"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "Adansonia",
+          "savanna",
+          "\u7334\u9762\u5305\u6811"
+        ]
+      },
+      "barnacle": {
+        "category": [
+          {
+            "id": 9117,
+            "text": " sea"
+          },
+          {
+            "id": 14593,
+            "text": " Sea"
+          },
+          {
+            "id": 16710,
+            "text": " creature"
+          },
+          {
+            "id": 35237,
+            "text": "sea"
+          },
+          {
+            "id": 45909,
+            "text": "Creature"
+          },
+          {
+            "id": 50745,
+            "text": " Creature"
+          },
+          {
+            "id": 57160,
+            "text": "Sea"
+          },
+          {
+            "id": 61961,
+            "text": "creature"
+          }
+        ],
+        "descriptor": "sea creature",
+        "exact": [],
+        "piece": [
+          {
+            "id": 21722,
+            "text": " Barn"
+          },
+          {
+            "id": 31253,
+            "text": " barn"
+          }
+        ],
+        "related": [
+          {
+            "id": 12168,
+            "text": " shell"
+          },
+          {
+            "id": 20728,
+            "text": "shell"
+          },
+          {
+            "id": 24485,
+            "text": "Shell"
+          },
+          {
+            "id": 28442,
+            "text": " Shell"
+          }
+        ],
+        "shared": [
+          {
+            "id": 38866,
+            "text": " hull"
+          },
+          {
+            "id": 55464,
+            "text": " Hull"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "crustacean",
+          "\u85e4\u58f6"
+        ]
+      },
+      "beekeeping": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 24924,
+            "text": " honey"
+          },
+          {
+            "id": 30976,
+            "text": "bee"
+          },
+          {
+            "id": 35997,
+            "text": " bee"
+          },
+          {
+            "id": 36192,
+            "text": " Bee"
+          },
+          {
+            "id": 38152,
+            "text": " bees"
+          },
+          {
+            "id": 38303,
+            "text": " Honey"
+          },
+          {
+            "id": 63298,
+            "text": " hive"
+          },
+          {
+            "id": 65873,
+            "text": " Hive"
+          },
+          {
+            "id": 85520,
+            "text": "hive"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "\u517b\u8702"
+        ]
+      },
+      "bishop": {
+        "category": [
+          {
+            "id": 6365,
+            "text": " piece"
+          },
+          {
+            "id": 21666,
+            "text": "piece"
+          },
+          {
+            "id": 27988,
+            "text": " Piece"
+          },
+          {
+            "id": 30187,
+            "text": "Piece"
+          }
+        ],
+        "descriptor": "chess piece",
+        "exact": [
+          {
+            "id": 32139,
+            "text": " Bishop"
+          },
+          {
+            "id": 51418,
+            "text": " bishop"
+          },
+          {
+            "id": 58244,
+            "text": "bishop"
+          }
+        ],
+        "piece": [],
+        "related": [
+          {
+            "id": 36004,
+            "text": " diagonal"
+          },
+          {
+            "id": 60379,
+            "text": " clergy"
+          },
+          {
+            "id": 134194,
+            "text": "\u4e3b\u6559"
+          }
+        ],
+        "shared": [
+          {
+            "id": 31634,
+            "text": " chess"
+          },
+          {
+            "id": 45808,
+            "text": " Chess"
+          },
+          {
+            "id": 85202,
+            "text": "Chess"
+          }
+        ],
+        "surface": [
+          {
+            "id": 55765,
+            "text": "bish"
+          },
+          {
+            "id": 63409,
+            "text": " bishops"
+          }
+        ],
+        "unresolved": [
+          "mitre",
+          "\u00e9v\u00eaque"
+        ]
+      },
+      "bonsai": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 54865,
+            "text": " miniature"
+          },
+          {
+            "id": 126054,
+            "text": "\u76c6\u666f"
+          }
+        ],
+        "shared": [
+          {
+            "id": 82253,
+            "text": " pruning"
+          }
+        ],
+        "surface": [
+          {
+            "id": 44966,
+            "text": "bons"
+          },
+          {
+            "id": 78241,
+            "text": " bons"
+          },
+          {
+            "id": 217956,
+            "text": " Bons"
+          }
+        ],
+        "unresolved": []
+      },
+      "bramble": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 74294,
+            "text": " Thorn"
+          },
+          {
+            "id": 129062,
+            "text": "\u8346\u68d8"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "blackberry",
+          "thorns",
+          "briar"
+        ]
+      },
+      "brownie": {
+        "category": [
+          {
+            "id": 41334,
+            "text": " dessert"
+          }
+        ],
+        "descriptor": "dessert",
+        "exact": [],
+        "piece": [
+          {
+            "id": 10158,
+            "text": " Brown"
+          },
+          {
+            "id": 13477,
+            "text": " brown"
+          },
+          {
+            "id": 46776,
+            "text": "Brown"
+          },
+          {
+            "id": 62284,
+            "text": "brown"
+          }
+        ],
+        "related": [
+          {
+            "id": 17395,
+            "text": " chocolate"
+          },
+          {
+            "id": 26912,
+            "text": " baking"
+          },
+          {
+            "id": 37145,
+            "text": " Chocolate"
+          },
+          {
+            "id": 59704,
+            "text": " cocoa"
+          },
+          {
+            "id": 73067,
+            "text": " Cocoa"
+          },
+          {
+            "id": 89764,
+            "text": "Chocolate"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "fudge",
+          "\u5e03\u6717\u5c3c"
+        ]
+      },
+      "calligraphy": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 741,
+            "text": "ink"
+          },
+          {
+            "id": 15166,
+            "text": " brush"
+          },
+          {
+            "id": 24169,
+            "text": "Brush"
+          },
+          {
+            "id": 25570,
+            "text": " ink"
+          },
+          {
+            "id": 31895,
+            "text": " Brush"
+          },
+          {
+            "id": 34867,
+            "text": "brush"
+          },
+          {
+            "id": 39726,
+            "text": " Ink"
+          },
+          {
+            "id": 88546,
+            "text": " handwriting"
+          },
+          {
+            "id": 102075,
+            "text": "\u4e66\u6cd5"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "lettering"
+        ]
+      },
+      "canoe": {
+        "category": [
+          {
+            "id": 14882,
+            "text": " boat"
+          },
+          {
+            "id": 36516,
+            "text": "boat"
+          },
+          {
+            "id": 42762,
+            "text": " Boat"
+          }
+        ],
+        "descriptor": "boat",
+        "exact": [
+          {
+            "id": 80611,
+            "text": " canoe"
+          }
+        ],
+        "piece": [
+          {
+            "id": 2885,
+            "text": " Can"
+          },
+          {
+            "id": 4660,
+            "text": "can"
+          },
+          {
+            "id": 6503,
+            "text": "Can"
+          }
+        ],
+        "related": [
+          {
+            "id": 23423,
+            "text": "rowing"
+          },
+          {
+            "id": 38003,
+            "text": " paddle"
+          },
+          {
+            "id": 83978,
+            "text": " kayak"
+          }
+        ],
+        "shared": [],
+        "surface": [
+          {
+            "id": 65968,
+            "text": "cano"
+          },
+          {
+            "id": 237694,
+            "text": " Cano"
+          }
+        ],
+        "unresolved": [
+          "\u72ec\u6728\u821f",
+          "Kanu"
+        ]
+      },
+      "catamaran": {
+        "category": [
+          {
+            "id": 14882,
+            "text": " boat"
+          },
+          {
+            "id": 36516,
+            "text": "boat"
+          },
+          {
+            "id": 42762,
+            "text": " Boat"
+          }
+        ],
+        "descriptor": "boat",
+        "exact": [],
+        "piece": [
+          {
+            "id": 4466,
+            "text": "cat"
+          },
+          {
+            "id": 7993,
+            "text": " cat"
+          },
+          {
+            "id": 16847,
+            "text": " Cat"
+          },
+          {
+            "id": 25944,
+            "text": "Cat"
+          }
+        ],
+        "related": [
+          {
+            "id": 48345,
+            "text": " sailing"
+          },
+          {
+            "id": 69489,
+            "text": " yacht"
+          }
+        ],
+        "shared": [
+          {
+            "id": 38866,
+            "text": " hull"
+          },
+          {
+            "id": 55464,
+            "text": " Hull"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "hulls",
+          "sailboat",
+          "\u53cc\u4f53\u8239"
+        ]
+      },
+      "citron": {
+        "category": [
+          {
+            "id": 13383,
+            "text": " fruit"
+          },
+          {
+            "id": 34421,
+            "text": "fruit"
+          },
+          {
+            "id": 41665,
+            "text": " Fruit"
+          }
+        ],
+        "descriptor": "fruit",
+        "exact": [
+          {
+            "id": 202303,
+            "text": " citron"
+          }
+        ],
+        "piece": [
+          {
+            "id": 17022,
+            "text": " Cit"
+          },
+          {
+            "id": 52055,
+            "text": "cit"
+          },
+          {
+            "id": 62379,
+            "text": "Cit"
+          }
+        ],
+        "related": [
+          {
+            "id": 28503,
+            "text": " lemon"
+          },
+          {
+            "id": 49488,
+            "text": " Lemon"
+          },
+          {
+            "id": 55201,
+            "text": " peel"
+          },
+          {
+            "id": 77753,
+            "text": " zest"
+          },
+          {
+            "id": 85545,
+            "text": " Peel"
+          },
+          {
+            "id": 112228,
+            "text": "\u67e0\u6aac"
+          }
+        ],
+        "shared": [
+          {
+            "id": 57189,
+            "text": " citrus"
+          }
+        ],
+        "surface": [
+          {
+            "id": 212098,
+            "text": " Citro"
+          }
+        ],
+        "unresolved": [
+          "cedro",
+          "Zitrone"
+        ]
+      },
+      "clavicle": {
+        "category": [
+          {
+            "id": 919,
+            "text": " part"
+          },
+          {
+            "id": 2407,
+            "text": " body"
+          },
+          {
+            "id": 2513,
+            "text": "body"
+          },
+          {
+            "id": 3534,
+            "text": " Part"
+          },
+          {
+            "id": 4332,
+            "text": "part"
+          },
+          {
+            "id": 5273,
+            "text": "Body"
+          },
+          {
+            "id": 5619,
+            "text": "Part"
+          },
+          {
+            "id": 13557,
+            "text": " Body"
+          }
+        ],
+        "descriptor": "body part",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 16388,
+            "text": " shoulder"
+          },
+          {
+            "id": 34909,
+            "text": " collar"
+          },
+          {
+            "id": 77024,
+            "text": " Shoulder"
+          },
+          {
+            "id": 147700,
+            "text": "\u9501\u9aa8"
+          }
+        ],
+        "shared": [
+          {
+            "id": 16732,
+            "text": " bone"
+          },
+          {
+            "id": 19153,
+            "text": "bone"
+          },
+          {
+            "id": 24066,
+            "text": " bones"
+          },
+          {
+            "id": 44084,
+            "text": " Bone"
+          },
+          {
+            "id": 60230,
+            "text": "Bone"
+          },
+          {
+            "id": 68880,
+            "text": " Bones"
+          },
+          {
+            "id": 78198,
+            "text": "bones"
+          }
+        ],
+        "surface": [
+          {
+            "id": 243166,
+            "text": " clav"
+          }
+        ],
+        "unresolved": [
+          "collarbone",
+          "sternum",
+          "scapula",
+          "Schl\u00fcsselbein"
+        ]
+      },
+      "colander": {
+        "category": [],
+        "descriptor": "utensil",
+        "exact": [],
+        "piece": [
+          {
+            "id": 1327,
+            "text": " col"
+          },
+          {
+            "id": 2006,
+            "text": "col"
+          },
+          {
+            "id": 4115,
+            "text": " Col"
+          },
+          {
+            "id": 5935,
+            "text": "Col"
+          }
+        ],
+        "related": [
+          {
+            "id": 22985,
+            "text": " drain"
+          },
+          {
+            "id": 35243,
+            "text": " pasta"
+          },
+          {
+            "id": 59199,
+            "text": " Drain"
+          },
+          {
+            "id": 71808,
+            "text": " sieve"
+          },
+          {
+            "id": 93988,
+            "text": " Pasta"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "strainer",
+          "\u6f0f\u52fa"
+        ]
+      },
+      "donkey": {
+        "category": [
+          {
+            "id": 9572,
+            "text": " animal"
+          },
+          {
+            "id": 20637,
+            "text": " Animal"
+          },
+          {
+            "id": 40044,
+            "text": "Animal"
+          },
+          {
+            "id": 46300,
+            "text": "animal"
+          }
+        ],
+        "descriptor": "animal",
+        "exact": [],
+        "piece": [
+          {
+            "id": 1459,
+            "text": " don"
+          },
+          {
+            "id": 4179,
+            "text": " Don"
+          },
+          {
+            "id": 7751,
+            "text": "Don"
+          },
+          {
+            "id": 14572,
+            "text": "don"
+          }
+        ],
+        "related": [
+          {
+            "id": 389,
+            "text": "ass"
+          },
+          {
+            "id": 1036,
+            "text": " ass"
+          },
+          {
+            "id": 2601,
+            "text": " Ass"
+          },
+          {
+            "id": 5439,
+            "text": "Ass"
+          },
+          {
+            "id": 84792,
+            "text": " Bray"
+          },
+          {
+            "id": 107807,
+            "text": "\u9a74"
+          },
+          {
+            "id": 213265,
+            "text": " burro"
+          },
+          {
+            "id": 234078,
+            "text": "esel"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "mule (dropped: another bank concept)"
+        ]
+      },
+      "eclair": {
+        "category": [
+          {
+            "id": 41334,
+            "text": " dessert"
+          }
+        ],
+        "descriptor": "dessert",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 12281,
+            "text": " cream"
+          },
+          {
+            "id": 28730,
+            "text": " Cream"
+          },
+          {
+            "id": 44463,
+            "text": "cream"
+          },
+          {
+            "id": 70571,
+            "text": " pastry"
+          },
+          {
+            "id": 95364,
+            "text": "Cream"
+          },
+          {
+            "id": 207729,
+            "text": " \u00e9clair"
+          },
+          {
+            "id": 241221,
+            "text": "\u00e9clair"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "choux",
+          "custard",
+          "\u6ce1\u8299"
+        ]
+      },
+      "ellipse": {
+        "category": [
+          {
+            "id": 5893,
+            "text": " shape"
+          },
+          {
+            "id": 11882,
+            "text": "shape"
+          },
+          {
+            "id": 11948,
+            "text": "Shape"
+          },
+          {
+            "id": 21826,
+            "text": " Shape"
+          }
+        ],
+        "descriptor": "shape",
+        "exact": [
+          {
+            "id": 55475,
+            "text": " ellipse"
+          },
+          {
+            "id": 65709,
+            "text": "ellipse"
+          },
+          {
+            "id": 78763,
+            "text": "Ellipse"
+          }
+        ],
+        "piece": [
+          {
+            "id": 13150,
+            "text": " Ell"
+          }
+        ],
+        "related": [
+          {
+            "id": 13126,
+            "text": "oval"
+          },
+          {
+            "id": 25659,
+            "text": " orbit"
+          },
+          {
+            "id": 53820,
+            "text": " Oval"
+          },
+          {
+            "id": 58011,
+            "text": " oval"
+          },
+          {
+            "id": 71813,
+            "text": "orbit"
+          },
+          {
+            "id": 81544,
+            "text": " Orbit"
+          },
+          {
+            "id": 126212,
+            "text": "\u692d\u5706"
+          }
+        ],
+        "shared": [],
+        "surface": [
+          {
+            "id": 19883,
+            "text": "elli"
+          },
+          {
+            "id": 45150,
+            "text": " Elli"
+          },
+          {
+            "id": 213052,
+            "text": "ELLI"
+          }
+        ],
+        "unresolved": [
+          "elliptical",
+          "ellipsoid"
+        ]
+      },
+      "envy": {
+        "category": [
+          {
+            "id": 19169,
+            "text": " emotion"
+          },
+          {
+            "id": 70856,
+            "text": "emotion"
+          }
+        ],
+        "descriptor": "emotion",
+        "exact": [
+          {
+            "id": 63226,
+            "text": " envy"
+          }
+        ],
+        "piece": [],
+        "related": [
+          {
+            "id": 39251,
+            "text": " jealous"
+          },
+          {
+            "id": 76976,
+            "text": " jealousy"
+          },
+          {
+            "id": 116933,
+            "text": "\u5ac9\u5992"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "envious",
+          "covet",
+          "Neid"
+        ]
+      },
+      "falconry": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 41443,
+            "text": " Falcon"
+          },
+          {
+            "id": 53466,
+            "text": " Hawk"
+          },
+          {
+            "id": 73229,
+            "text": " hawk"
+          },
+          {
+            "id": 78357,
+            "text": "hawk"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "raptor",
+          "falconer",
+          "\u730e\u9e70"
+        ]
+      },
+      "femur": {
+        "category": [
+          {
+            "id": 919,
+            "text": " part"
+          },
+          {
+            "id": 2407,
+            "text": " body"
+          },
+          {
+            "id": 2513,
+            "text": "body"
+          },
+          {
+            "id": 3534,
+            "text": " Part"
+          },
+          {
+            "id": 4332,
+            "text": "part"
+          },
+          {
+            "id": 5273,
+            "text": "Body"
+          },
+          {
+            "id": 5619,
+            "text": "Part"
+          },
+          {
+            "id": 13557,
+            "text": " Body"
+          }
+        ],
+        "descriptor": "body part",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 1871,
+            "text": "leg"
+          },
+          {
+            "id": 2082,
+            "text": "hip"
+          },
+          {
+            "id": 2392,
+            "text": " leg"
+          },
+          {
+            "id": 7369,
+            "text": " Leg"
+          },
+          {
+            "id": 17603,
+            "text": " hip"
+          },
+          {
+            "id": 18340,
+            "text": "Leg"
+          },
+          {
+            "id": 37389,
+            "text": " thigh"
+          },
+          {
+            "id": 43050,
+            "text": " Hip"
+          },
+          {
+            "id": 87422,
+            "text": "Hip"
+          }
+        ],
+        "shared": [
+          {
+            "id": 16732,
+            "text": " bone"
+          },
+          {
+            "id": 19153,
+            "text": "bone"
+          },
+          {
+            "id": 24066,
+            "text": " bones"
+          },
+          {
+            "id": 44084,
+            "text": " Bone"
+          },
+          {
+            "id": 60230,
+            "text": "Bone"
+          },
+          {
+            "id": 68880,
+            "text": " Bones"
+          },
+          {
+            "id": 78198,
+            "text": "bones"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "thighbone",
+          "\u80a1\u9aa8"
+        ]
+      },
+      "fjord": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 30466,
+            "text": " Norway"
+          },
+          {
+            "id": 76396,
+            "text": " inlet"
+          },
+          {
+            "id": 82884,
+            "text": " cliffs"
+          },
+          {
+            "id": 90533,
+            "text": " glacier"
+          },
+          {
+            "id": 92089,
+            "text": " Glacier"
+          },
+          {
+            "id": 193755,
+            "text": " norway"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "\u5ce1\u6e7e"
+        ]
+      },
+      "gazebo": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 13159,
+            "text": " garden"
+          },
+          {
+            "id": 18448,
+            "text": " Garden"
+          },
+          {
+            "id": 71945,
+            "text": " Pavilion"
+          }
+        ],
+        "shared": [
+          {
+            "id": 62358,
+            "text": " Arbor"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "pergola (dropped: another bank concept)",
+          "\u51c9\u4ead"
+        ]
+      },
+      "geocaching": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 6297,
+            "text": " cache"
+          },
+          {
+            "id": 7976,
+            "text": "Cache"
+          },
+          {
+            "id": 9082,
+            "text": "cache"
+          },
+          {
+            "id": 18887,
+            "text": " Cache"
+          },
+          {
+            "id": 22619,
+            "text": " GPS"
+          },
+          {
+            "id": 30587,
+            "text": " treasure"
+          },
+          {
+            "id": 44050,
+            "text": " gps"
+          },
+          {
+            "id": 55235,
+            "text": " Treasure"
+          },
+          {
+            "id": 61042,
+            "text": "GPS"
+          },
+          {
+            "id": 71976,
+            "text": "gps"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "geocache"
+        ]
+      },
+      "glassblowing": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 52637,
+            "text": " furnace"
+          }
+        ],
+        "shared": [
+          {
+            "id": 8720,
+            "text": " glass"
+          },
+          {
+            "id": 20106,
+            "text": " Glass"
+          },
+          {
+            "id": 56465,
+            "text": "glass"
+          },
+          {
+            "id": 81107,
+            "text": "Glass"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "molten",
+          "blowpipe",
+          "\u5439\u73bb\u7483"
+        ]
+      },
+      "grater": {
+        "category": [],
+        "descriptor": "utensil",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 16657,
+            "text": " cheese"
+          },
+          {
+            "id": 42847,
+            "text": " Cheese"
+          },
+          {
+            "id": 82404,
+            "text": " grate"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "grating",
+          "zester",
+          "\u64e6\u4e1d"
+        ]
+      },
+      "hornet": {
+        "category": [
+          {
+            "id": 25158,
+            "text": " insect"
+          }
+        ],
+        "descriptor": "insect",
+        "exact": [],
+        "piece": [
+          {
+            "id": 20005,
+            "text": " horn"
+          },
+          {
+            "id": 25280,
+            "text": " Horn"
+          },
+          {
+            "id": 49172,
+            "text": "horn"
+          }
+        ],
+        "related": [
+          {
+            "id": 20757,
+            "text": "nest"
+          },
+          {
+            "id": 22081,
+            "text": " nest"
+          },
+          {
+            "id": 37617,
+            "text": " Nest"
+          },
+          {
+            "id": 52489,
+            "text": " sting"
+          },
+          {
+            "id": 80010,
+            "text": " Sting"
+          }
+        ],
+        "shared": [],
+        "surface": [
+          {
+            "id": 92035,
+            "text": " Hornets"
+          }
+        ],
+        "unresolved": [
+          "wasp",
+          "stinger",
+          "\u9ec4\u8702",
+          "Hornisse"
+        ]
+      },
+      "ikebana": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 18698,
+            "text": " flowers"
+          },
+          {
+            "id": 21655,
+            "text": " flower"
+          },
+          {
+            "id": 25278,
+            "text": " arrangement"
+          },
+          {
+            "id": 37471,
+            "text": "flower"
+          },
+          {
+            "id": 41271,
+            "text": " Flower"
+          },
+          {
+            "id": 49808,
+            "text": " Flowers"
+          },
+          {
+            "id": 85617,
+            "text": "flowers"
+          },
+          {
+            "id": 146457,
+            "text": "\u63d2\u82b1"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": []
+      },
+      "iridium": {
+        "category": [
+          {
+            "id": 9041,
+            "text": " metal"
+          },
+          {
+            "id": 18626,
+            "text": " Metal"
+          },
+          {
+            "id": 52195,
+            "text": "metal"
+          },
+          {
+            "id": 63447,
+            "text": "Metal"
+          }
+        ],
+        "descriptor": "metal",
+        "exact": [],
+        "piece": [],
+        "related": [],
+        "shared": [
+          {
+            "id": 42536,
+            "text": " Platinum"
+          },
+          {
+            "id": 60131,
+            "text": " platinum"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "osmium",
+          "\u94f1"
+        ]
+      },
+      "isthmus": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 1867,
+            "text": "land"
+          },
+          {
+            "id": 4128,
+            "text": " land"
+          },
+          {
+            "id": 11098,
+            "text": " Land"
+          },
+          {
+            "id": 40571,
+            "text": "Land"
+          },
+          {
+            "id": 46434,
+            "text": " Panama"
+          },
+          {
+            "id": 47943,
+            "text": " Peninsula"
+          },
+          {
+            "id": 63188,
+            "text": " peninsula"
+          },
+          {
+            "id": 79230,
+            "text": " Strait"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "\u5730\u5ce1"
+        ]
+      },
+      "kumquat": {
+        "category": [
+          {
+            "id": 13383,
+            "text": " fruit"
+          },
+          {
+            "id": 34421,
+            "text": "fruit"
+          },
+          {
+            "id": 41665,
+            "text": " Fruit"
+          }
+        ],
+        "descriptor": "fruit",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 18016,
+            "text": " orange"
+          },
+          {
+            "id": 21281,
+            "text": " Orange"
+          },
+          {
+            "id": 33034,
+            "text": "orange"
+          },
+          {
+            "id": 40582,
+            "text": "Orange"
+          }
+        ],
+        "shared": [
+          {
+            "id": 57189,
+            "text": " citrus"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "tangerine",
+          "\u91d1\u6854",
+          "\u91d1\u6a58"
+        ]
+      },
+      "loafer": {
+        "category": [
+          {
+            "id": 64805,
+            "text": " footwear"
+          }
+        ],
+        "descriptor": "footwear",
+        "exact": [],
+        "piece": [
+          {
+            "id": 182441,
+            "text": " loa"
+          },
+          {
+            "id": 229569,
+            "text": " Loa"
+          }
+        ],
+        "related": [
+          {
+            "id": 20485,
+            "text": " slip"
+          },
+          {
+            "id": 47425,
+            "text": " penny"
+          },
+          {
+            "id": 51137,
+            "text": " Penny"
+          },
+          {
+            "id": 56554,
+            "text": " Slip"
+          }
+        ],
+        "shared": [
+          {
+            "id": 28031,
+            "text": " shoe"
+          },
+          {
+            "id": 64814,
+            "text": " Shoe"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "moccasin (dropped: another bank concept)",
+          "loafers"
+        ]
+      },
+      "macrame": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 21630,
+            "text": " cord"
+          },
+          {
+            "id": 29972,
+            "text": "cord"
+          },
+          {
+            "id": 35664,
+            "text": " Cord"
+          },
+          {
+            "id": 49091,
+            "text": " knot"
+          },
+          {
+            "id": 58186,
+            "text": " knots"
+          },
+          {
+            "id": 80725,
+            "text": " weaving"
+          },
+          {
+            "id": 88967,
+            "text": " Knot"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "macram\u00e9"
+        ]
+      },
+      "marzipan": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 59976,
+            "text": " almond"
+          },
+          {
+            "id": 84794,
+            "text": " almonds"
+          },
+          {
+            "id": 121998,
+            "text": "\u674f\u4ec1"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "confection"
+        ]
+      },
+      "moccasin": {
+        "category": [
+          {
+            "id": 64805,
+            "text": " footwear"
+          }
+        ],
+        "descriptor": "footwear",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 17032,
+            "text": " leather"
+          },
+          {
+            "id": 30060,
+            "text": " Leather"
+          }
+        ],
+        "shared": [
+          {
+            "id": 28031,
+            "text": " shoe"
+          },
+          {
+            "id": 64814,
+            "text": " Shoe"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "loafer (dropped: another bank concept)",
+          "slipper"
+        ]
+      },
+      "monsoon": {
+        "category": [
+          {
+            "id": 1119,
+            "text": "word"
+          },
+          {
+            "id": 3299,
+            "text": " word"
+          },
+          {
+            "id": 9045,
+            "text": " Word"
+          },
+          {
+            "id": 10561,
+            "text": "Word"
+          }
+        ],
+        "descriptor": "word",
+        "exact": [],
+        "piece": [
+          {
+            "id": 1559,
+            "text": " mon"
+          },
+          {
+            "id": 1588,
+            "text": "mon"
+          },
+          {
+            "id": 3028,
+            "text": " Mon"
+          },
+          {
+            "id": 10772,
+            "text": "Mon"
+          }
+        ],
+        "related": [
+          {
+            "id": 10849,
+            "text": " rain"
+          },
+          {
+            "id": 21235,
+            "text": " Rain"
+          },
+          {
+            "id": 28142,
+            "text": "rain"
+          },
+          {
+            "id": 51080,
+            "text": " rainfall"
+          },
+          {
+            "id": 57044,
+            "text": "Rain"
+          },
+          {
+            "id": 60643,
+            "text": " rainy"
+          },
+          {
+            "id": 134518,
+            "text": "\u5b63\u98ce"
+          }
+        ],
+        "shared": [],
+        "surface": [
+          {
+            "id": 22834,
+            "text": "mons"
+          },
+          {
+            "id": 47837,
+            "text": " Mons"
+          },
+          {
+            "id": 182111,
+            "text": " mons"
+          }
+        ],
+        "unresolved": [
+          "Monsun"
+        ]
+      },
+      "mule": {
+        "category": [
+          {
+            "id": 9572,
+            "text": " animal"
+          },
+          {
+            "id": 20637,
+            "text": " Animal"
+          },
+          {
+            "id": 40044,
+            "text": "Animal"
+          },
+          {
+            "id": 46300,
+            "text": "animal"
+          }
+        ],
+        "descriptor": "animal",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 14780,
+            "text": " horse"
+          },
+          {
+            "id": 32189,
+            "text": " Horse"
+          },
+          {
+            "id": 49666,
+            "text": " stubborn"
+          },
+          {
+            "id": 57659,
+            "text": "horse"
+          },
+          {
+            "id": 108519,
+            "text": "\u9aa1"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "donkey (dropped: another bank concept)",
+          "mulo"
+        ]
+      },
+      "obelisk": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 14437,
+            "text": " Egypt"
+          },
+          {
+            "id": 31416,
+            "text": " Egyptian"
+          },
+          {
+            "id": 35674,
+            "text": " monument"
+          },
+          {
+            "id": 59142,
+            "text": " pillar"
+          },
+          {
+            "id": 68858,
+            "text": " Monument"
+          },
+          {
+            "id": 73885,
+            "text": "pillar"
+          },
+          {
+            "id": 82707,
+            "text": "Egypt"
+          }
+        ],
+        "shared": [],
+        "surface": [
+          {
+            "id": 74470,
+            "text": "obel"
+          }
+        ],
+        "unresolved": [
+          "\u65b9\u5c16\u7891"
+        ]
+      },
+      "obsidian": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 55637,
+            "text": " lava"
+          },
+          {
+            "id": 63834,
+            "text": " volcanic"
+          },
+          {
+            "id": 184883,
+            "text": "lava"
+          },
+          {
+            "id": 230395,
+            "text": " Lava"
+          }
+        ],
+        "shared": [
+          {
+            "id": 3565,
+            "text": " black"
+          },
+          {
+            "id": 5068,
+            "text": " Black"
+          },
+          {
+            "id": 8720,
+            "text": " glass"
+          },
+          {
+            "id": 11124,
+            "text": "black"
+          },
+          {
+            "id": 14004,
+            "text": "Black"
+          },
+          {
+            "id": 20106,
+            "text": " Glass"
+          },
+          {
+            "id": 56465,
+            "text": "glass"
+          },
+          {
+            "id": 81107,
+            "text": "Glass"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "\u9ed1\u66dc\u77f3"
+        ]
+      },
+      "onyx": {
+        "category": [],
+        "descriptor": "gemstone",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 45271,
+            "text": "agate"
+          }
+        ],
+        "shared": [
+          {
+            "id": 3565,
+            "text": " black"
+          },
+          {
+            "id": 5068,
+            "text": " Black"
+          },
+          {
+            "id": 11124,
+            "text": "black"
+          },
+          {
+            "id": 14004,
+            "text": "Black"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "chalcedony",
+          "\u7f1f\u739b\u7459"
+        ]
+      },
+      "orienteering": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 2117,
+            "text": "map"
+          },
+          {
+            "id": 2155,
+            "text": "Map"
+          },
+          {
+            "id": 2336,
+            "text": " map"
+          },
+          {
+            "id": 4866,
+            "text": " Map"
+          },
+          {
+            "id": 22979,
+            "text": " compass"
+          },
+          {
+            "id": 29821,
+            "text": "compass"
+          },
+          {
+            "id": 57567,
+            "text": " Compass"
+          }
+        ],
+        "shared": [
+          {
+            "id": 10331,
+            "text": " navigation"
+          },
+          {
+            "id": 15918,
+            "text": "Navigation"
+          },
+          {
+            "id": 17444,
+            "text": " Navigation"
+          },
+          {
+            "id": 21906,
+            "text": "navigation"
+          }
+        ],
+        "surface": [
+          {
+            "id": 193879,
+            "text": " Oriente"
+          }
+        ],
+        "unresolved": [
+          "\u5b9a\u5411\u8d8a\u91ce"
+        ]
+      },
+      "origami": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 11223,
+            "text": " fold"
+          },
+          {
+            "id": 19352,
+            "text": "fold"
+          },
+          {
+            "id": 43254,
+            "text": " folding"
+          },
+          {
+            "id": 58435,
+            "text": " Fold"
+          },
+          {
+            "id": 70422,
+            "text": " Crane"
+          },
+          {
+            "id": 70466,
+            "text": " crane"
+          },
+          {
+            "id": 72958,
+            "text": "Fold"
+          },
+          {
+            "id": 88010,
+            "text": " Folding"
+          }
+        ],
+        "shared": [
+          {
+            "id": 5392,
+            "text": " paper"
+          },
+          {
+            "id": 17328,
+            "text": " Paper"
+          },
+          {
+            "id": 18586,
+            "text": "paper"
+          },
+          {
+            "id": 29885,
+            "text": "Paper"
+          }
+        ],
+        "surface": [
+          {
+            "id": 2626,
+            "text": " orig"
+          },
+          {
+            "id": 4518,
+            "text": "orig"
+          },
+          {
+            "id": 43981,
+            "text": " Orig"
+          },
+          {
+            "id": 60613,
+            "text": "Orig"
+          },
+          {
+            "id": 233233,
+            "text": " ORIG"
+          }
+        ],
+        "unresolved": [
+          "\u6298\u7eb8"
+        ]
+      },
+      "palladium": {
+        "category": [
+          {
+            "id": 9041,
+            "text": " metal"
+          },
+          {
+            "id": 18626,
+            "text": " Metal"
+          },
+          {
+            "id": 52195,
+            "text": "metal"
+          },
+          {
+            "id": 63447,
+            "text": "Metal"
+          }
+        ],
+        "descriptor": "metal",
+        "exact": [],
+        "piece": [
+          {
+            "id": 64252,
+            "text": " pall"
+          },
+          {
+            "id": 68938,
+            "text": " Pall"
+          }
+        ],
+        "related": [],
+        "shared": [
+          {
+            "id": 42536,
+            "text": " Platinum"
+          },
+          {
+            "id": 60131,
+            "text": " platinum"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "catalytic",
+          "\u94af"
+        ]
+      },
+      "parsnip": {
+        "category": [
+          {
+            "id": 34308,
+            "text": " vegetable"
+          },
+          {
+            "id": 91039,
+            "text": " Vegetable"
+          }
+        ],
+        "descriptor": "vegetable",
+        "exact": [],
+        "piece": [
+          {
+            "id": 1298,
+            "text": " par"
+          }
+        ],
+        "related": [
+          {
+            "id": 2794,
+            "text": "root"
+          },
+          {
+            "id": 3578,
+            "text": " root"
+          },
+          {
+            "id": 8179,
+            "text": "Root"
+          },
+          {
+            "id": 18284,
+            "text": " Root"
+          },
+          {
+            "id": 71670,
+            "text": " carrot"
+          }
+        ],
+        "shared": [],
+        "surface": [
+          {
+            "id": 9852,
+            "text": " pars"
+          },
+          {
+            "id": 50937,
+            "text": " Pars"
+          },
+          {
+            "id": 69923,
+            "text": "pars"
+          }
+        ],
+        "unresolved": [
+          "turnip",
+          "radish",
+          "\u6b27\u6d32\u9632\u98ce"
+        ]
+      },
+      "pergola": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 82478,
+            "text": " vines"
+          }
+        ],
+        "shared": [
+          {
+            "id": 62358,
+            "text": " Arbor"
+          }
+        ],
+        "surface": [
+          {
+            "id": 86694,
+            "text": " perg"
+          },
+          {
+            "id": 233869,
+            "text": " Perg"
+          }
+        ],
+        "unresolved": [
+          "trellis",
+          "gazebo (dropped: another bank concept)",
+          "\u85e4\u67b6"
+        ]
+      },
+      "periwinkle": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 6105,
+            "text": " blue"
+          },
+          {
+            "id": 8432,
+            "text": " Blue"
+          },
+          {
+            "id": 10025,
+            "text": "Blue"
+          },
+          {
+            "id": 11855,
+            "text": "blue"
+          },
+          {
+            "id": 77591,
+            "text": " lavender"
+          }
+        ],
+        "shared": [
+          {
+            "id": 70976,
+            "text": " Violet"
+          },
+          {
+            "id": 76990,
+            "text": " violet"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "snail",
+          "\u957f\u6625\u82b1"
+        ]
+      },
+      "philately": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 20268,
+            "text": "Stamp"
+          },
+          {
+            "id": 20555,
+            "text": " stamp"
+          },
+          {
+            "id": 30901,
+            "text": " collector"
+          },
+          {
+            "id": 47464,
+            "text": "stamp"
+          },
+          {
+            "id": 47558,
+            "text": " stamps"
+          },
+          {
+            "id": 51893,
+            "text": "Collector"
+          },
+          {
+            "id": 52943,
+            "text": " Stamp"
+          },
+          {
+            "id": 56570,
+            "text": " Collector"
+          },
+          {
+            "id": 74407,
+            "text": " postage"
+          },
+          {
+            "id": 88318,
+            "text": "collector"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "\u96c6\u90ae"
+        ]
+      },
+      "quasar": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 19061,
+            "text": " Galaxy"
+          },
+          {
+            "id": 32060,
+            "text": " galaxy"
+          },
+          {
+            "id": 59433,
+            "text": " nucleus"
+          }
+        ],
+        "shared": [],
+        "surface": [
+          {
+            "id": 168889,
+            "text": " quas"
+          }
+        ],
+        "unresolved": [
+          "pulsar",
+          "blackhole",
+          "\u7c7b\u661f\u4f53"
+        ]
+      },
+      "quilling": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 68366,
+            "text": " coils"
+          }
+        ],
+        "shared": [
+          {
+            "id": 5392,
+            "text": " paper"
+          },
+          {
+            "id": 17328,
+            "text": " Paper"
+          },
+          {
+            "id": 18586,
+            "text": "paper"
+          },
+          {
+            "id": 29885,
+            "text": "Paper"
+          }
+        ],
+        "surface": [
+          {
+            "id": 72316,
+            "text": " quil"
+          },
+          {
+            "id": 84565,
+            "text": "quil"
+          }
+        ],
+        "unresolved": [
+          "filigree",
+          "\u884d\u7eb8"
+        ]
+      },
+      "rook": {
+        "category": [
+          {
+            "id": 6365,
+            "text": " piece"
+          },
+          {
+            "id": 21666,
+            "text": "piece"
+          },
+          {
+            "id": 27988,
+            "text": " Piece"
+          },
+          {
+            "id": 30187,
+            "text": "Piece"
+          }
+        ],
+        "descriptor": "chess piece",
+        "exact": [],
+        "piece": [],
+        "related": [],
+        "shared": [
+          {
+            "id": 20618,
+            "text": " tower"
+          },
+          {
+            "id": 21262,
+            "text": " Tower"
+          },
+          {
+            "id": 26027,
+            "text": " Castle"
+          },
+          {
+            "id": 31508,
+            "text": " castle"
+          },
+          {
+            "id": 31634,
+            "text": " chess"
+          },
+          {
+            "id": 33946,
+            "text": "castle"
+          },
+          {
+            "id": 45808,
+            "text": " Chess"
+          },
+          {
+            "id": 74923,
+            "text": "tower"
+          },
+          {
+            "id": 83613,
+            "text": "Castle"
+          },
+          {
+            "id": 85202,
+            "text": "Chess"
+          },
+          {
+            "id": 92510,
+            "text": "Tower"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "castling"
+        ]
+      },
+      "sextant": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 19385,
+            "text": "Navigator"
+          },
+          {
+            "id": 20214,
+            "text": " latitude"
+          },
+          {
+            "id": 22976,
+            "text": "latitude"
+          },
+          {
+            "id": 25694,
+            "text": " Navigator"
+          },
+          {
+            "id": 34238,
+            "text": " navigator"
+          },
+          {
+            "id": 36755,
+            "text": "Latitude"
+          },
+          {
+            "id": 60968,
+            "text": "navigator"
+          },
+          {
+            "id": 65067,
+            "text": " Latitude"
+          }
+        ],
+        "shared": [
+          {
+            "id": 10331,
+            "text": " navigation"
+          },
+          {
+            "id": 15918,
+            "text": "Navigation"
+          },
+          {
+            "id": 17444,
+            "text": " Navigation"
+          },
+          {
+            "id": 21906,
+            "text": "navigation"
+          }
+        ],
+        "surface": [
+          {
+            "id": 175088,
+            "text": " sexta"
+          }
+        ],
+        "unresolved": [
+          "astrolabe",
+          "\u516d\u5206\u4eea"
+        ]
+      },
+      "shame": {
+        "category": [
+          {
+            "id": 19169,
+            "text": " emotion"
+          },
+          {
+            "id": 70856,
+            "text": "emotion"
+          }
+        ],
+        "descriptor": "emotion",
+        "exact": [
+          {
+            "id": 20333,
+            "text": " shame"
+          },
+          {
+            "id": 84518,
+            "text": " Shame"
+          }
+        ],
+        "piece": [],
+        "related": [
+          {
+            "id": 32732,
+            "text": " guilt"
+          },
+          {
+            "id": 49163,
+            "text": " ashamed"
+          },
+          {
+            "id": 56937,
+            "text": " embarrassment"
+          },
+          {
+            "id": 69281,
+            "text": " humiliation"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "\u7f9e\u803b",
+          "Scham"
+        ]
+      },
+      "spelunking": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 24580,
+            "text": " cave"
+          },
+          {
+            "id": 47731,
+            "text": " Cave"
+          },
+          {
+            "id": 63353,
+            "text": " caves"
+          },
+          {
+            "id": 72643,
+            "text": " cavern"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "caving",
+          "\u63a2\u6d1e"
+        ]
+      },
+      "stingray": {
+        "category": [
+          {
+            "id": 9117,
+            "text": " sea"
+          },
+          {
+            "id": 14593,
+            "text": " Sea"
+          },
+          {
+            "id": 16710,
+            "text": " creature"
+          },
+          {
+            "id": 35237,
+            "text": "sea"
+          },
+          {
+            "id": 45909,
+            "text": "Creature"
+          },
+          {
+            "id": 50745,
+            "text": " Creature"
+          },
+          {
+            "id": 57160,
+            "text": "Sea"
+          },
+          {
+            "id": 61961,
+            "text": "creature"
+          }
+        ],
+        "descriptor": "sea creature",
+        "exact": [],
+        "piece": [
+          {
+            "id": 52489,
+            "text": " sting"
+          },
+          {
+            "id": 80010,
+            "text": " Sting"
+          }
+        ],
+        "related": [
+          {
+            "id": 11278,
+            "text": "ray"
+          },
+          {
+            "id": 12870,
+            "text": " Ray"
+          },
+          {
+            "id": 17754,
+            "text": " ray"
+          },
+          {
+            "id": 28232,
+            "text": "Ray"
+          },
+          {
+            "id": 41363,
+            "text": " skate"
+          },
+          {
+            "id": 44505,
+            "text": " Barb"
+          },
+          {
+            "id": 93357,
+            "text": " Skate"
+          },
+          {
+            "id": 211627,
+            "text": " barb"
+          }
+        ],
+        "shared": [],
+        "surface": [
+          {
+            "id": 45878,
+            "text": "stin"
+          }
+        ],
+        "unresolved": [
+          "manta",
+          "\u9ec4\u8c82\u9c7c"
+        ]
+      },
+      "sundial": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 8598,
+            "text": " clock"
+          },
+          {
+            "id": 12098,
+            "text": " shadow"
+          },
+          {
+            "id": 20040,
+            "text": "clock"
+          },
+          {
+            "id": 22926,
+            "text": "Shadow"
+          },
+          {
+            "id": 23536,
+            "text": " Shadow"
+          },
+          {
+            "id": 25270,
+            "text": "Clock"
+          },
+          {
+            "id": 25307,
+            "text": " Clock"
+          },
+          {
+            "id": 31859,
+            "text": "shadow"
+          }
+        ],
+        "shared": [],
+        "surface": [
+          {
+            "id": 35583,
+            "text": " Sund"
+          },
+          {
+            "id": 48879,
+            "text": " sund"
+          }
+        ],
+        "unresolved": [
+          "gnomon",
+          "\u65e5\u6677"
+        ]
+      },
+      "topiary": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 40289,
+            "text": " hedge"
+          },
+          {
+            "id": 76314,
+            "text": " Hedge"
+          }
+        ],
+        "shared": [
+          {
+            "id": 82253,
+            "text": " pruning"
+          }
+        ],
+        "surface": [],
+        "unresolved": [
+          "hedges",
+          "shrub"
+        ]
+      },
+      "trapezoid": {
+        "category": [
+          {
+            "id": 5893,
+            "text": " shape"
+          },
+          {
+            "id": 11882,
+            "text": "shape"
+          },
+          {
+            "id": 11948,
+            "text": "Shape"
+          },
+          {
+            "id": 21826,
+            "text": " Shape"
+          }
+        ],
+        "descriptor": "shape",
+        "exact": [],
+        "piece": [
+          {
+            "id": 16788,
+            "text": " Tra"
+          }
+        ],
+        "related": [
+          {
+            "id": 14835,
+            "text": " parallel"
+          },
+          {
+            "id": 16059,
+            "text": "Parallel"
+          },
+          {
+            "id": 44564,
+            "text": "parallel"
+          },
+          {
+            "id": 47614,
+            "text": " Parallel"
+          },
+          {
+            "id": 137283,
+            "text": "\u68af\u5f62"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "trapezium",
+          "quadrilateral",
+          "Trapez"
+        ]
+      },
+      "turret": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [],
+        "shared": [
+          {
+            "id": 20618,
+            "text": " tower"
+          },
+          {
+            "id": 21262,
+            "text": " Tower"
+          },
+          {
+            "id": 26027,
+            "text": " Castle"
+          },
+          {
+            "id": 31508,
+            "text": " castle"
+          },
+          {
+            "id": 33946,
+            "text": "castle"
+          },
+          {
+            "id": 74923,
+            "text": "tower"
+          },
+          {
+            "id": 83613,
+            "text": "Castle"
+          },
+          {
+            "id": 92510,
+            "text": "Tower"
+          }
+        ],
+        "surface": [
+          {
+            "id": 62213,
+            "text": " turret"
+          }
+        ],
+        "unresolved": [
+          "battlement",
+          "\u70ae\u5854"
+        ]
+      },
+      "weevil": {
+        "category": [
+          {
+            "id": 25158,
+            "text": " insect"
+          }
+        ],
+        "descriptor": "insect",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 23177,
+            "text": " grain"
+          },
+          {
+            "id": 71746,
+            "text": " Grain"
+          },
+          {
+            "id": 88534,
+            "text": " Beetle"
+          },
+          {
+            "id": 94027,
+            "text": " beetle"
+          },
+          {
+            "id": 197616,
+            "text": " boll"
+          },
+          {
+            "id": 220500,
+            "text": " Boll"
+          },
+          {
+            "id": 236934,
+            "text": "boll"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "snout",
+          "\u8c61\u9f3b\u866b"
+        ]
+      },
+      "whittling": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 6451,
+            "text": "wood"
+          },
+          {
+            "id": 7339,
+            "text": " wood"
+          },
+          {
+            "id": 11786,
+            "text": " Wood"
+          },
+          {
+            "id": 20773,
+            "text": " knife"
+          },
+          {
+            "id": 41305,
+            "text": "knife"
+          },
+          {
+            "id": 46779,
+            "text": "Wood"
+          },
+          {
+            "id": 54511,
+            "text": "Knife"
+          },
+          {
+            "id": 59137,
+            "text": " Knife"
+          },
+          {
+            "id": 74068,
+            "text": " carving"
+          },
+          {
+            "id": 132615,
+            "text": "\u6728\u96d5"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": [
+          "whittle"
+        ]
+      },
+      "zephyr": {
+        "category": [],
+        "descriptor": "",
+        "exact": [],
+        "piece": [],
+        "related": [
+          {
+            "id": 9662,
+            "text": " wind"
+          },
+          {
+            "id": 18574,
+            "text": "wind"
+          },
+          {
+            "id": 21403,
+            "text": " Wind"
+          },
+          {
+            "id": 43776,
+            "text": " breeze"
+          },
+          {
+            "id": 56829,
+            "text": "Wind"
+          },
+          {
+            "id": 118844,
+            "text": "\u5fae\u98ce"
+          }
+        ],
+        "shared": [],
+        "surface": [],
+        "unresolved": []
+      }
+    },
+    "word_list": "/usr/share/dict/words"
+  }
+}

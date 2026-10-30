@@ -1,0 +1,2908 @@
+{
+ "family": "directed_modulation",
+ "split": "val",
+ "source": "jlm-dev-dm-v1",
+ "gate": "Qwen3.6-27B: greedy copies the carrier, >= 8/10 samples at T=0.7 copy it, no reply mentions the concept; a pair needs both twins",
+ "items": [
+  {
+   "name": "dev-dm-pair-27-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-27",
+   "polarity": "think",
+   "concept": "whisk",
+   "carrier": "The draft was shared with the whole team.",
+   "prompt": "Try to focus on the utensil whisk as you write the sentence. Now write exactly this sentence: \"The draft was shared with the whole team.\"",
+   "assistant": "The draft was shared with the whole team.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Whisk",
+      "whisk"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "utensil"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The draft was shared with the whole team."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-27-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-27",
+   "polarity": "dont_think",
+   "concept": "whisk",
+   "carrier": "The draft was shared with the whole team.",
+   "prompt": "Try hard not to think about the utensil whisk as you write the sentence. Now write exactly this sentence: \"The draft was shared with the whole team.\"",
+   "assistant": "The draft was shared with the whole team.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Whisk",
+      "whisk"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "utensil"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The draft was shared with the whole team."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-28-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-28",
+   "polarity": "think",
+   "concept": "spatula",
+   "carrier": "The server maintenance window starts at midnight.",
+   "prompt": "Concentrate on the utensil spatula while you write. Now write exactly this sentence: \"The server maintenance window starts at midnight.\"",
+   "assistant": "The server maintenance window starts at midnight.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Spatula",
+      "spatula"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "utensil"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The server maintenance window starts at midnight."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-28-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-28",
+   "polarity": "dont_think",
+   "concept": "spatula",
+   "carrier": "The server maintenance window starts at midnight.",
+   "prompt": "Avoid thinking about the utensil spatula while you write. Now write exactly this sentence: \"The server maintenance window starts at midnight.\"",
+   "assistant": "The server maintenance window starts at midnight.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Spatula",
+      "spatula"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "utensil"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The server maintenance window starts at midnight."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-49-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-49",
+   "polarity": "think",
+   "concept": "turnip",
+   "carrier": "The survey results will be published next week.",
+   "prompt": "Keep the vegetable turnip in your thoughts as you write. Now write exactly this sentence: \"The survey results will be published next week.\"",
+   "assistant": "The survey results will be published next week.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Turnip",
+      "turnip"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "vegetable"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The survey results will be published next week."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-49-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-49",
+   "polarity": "dont_think",
+   "concept": "turnip",
+   "carrier": "The survey results will be published next week.",
+   "prompt": "Keep the vegetable turnip out of your thoughts as you write. Now write exactly this sentence: \"The survey results will be published next week.\"",
+   "assistant": "The survey results will be published next week.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Turnip",
+      "turnip"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "vegetable"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The survey results will be published next week."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-23-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-23",
+   "polarity": "think",
+   "concept": "cicada",
+   "carrier": "Please submit your timesheet by Thursday.",
+   "prompt": "Concentrate on the insect cicada while you write. Now write exactly this sentence: \"Please submit your timesheet by Thursday.\"",
+   "assistant": "Please submit your timesheet by Thursday.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Cicada",
+      "cicada"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "insect"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "Please submit your timesheet by Thursday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-23-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-23",
+   "polarity": "dont_think",
+   "concept": "cicada",
+   "carrier": "Please submit your timesheet by Thursday.",
+   "prompt": "Avoid thinking about the insect cicada while you write. Now write exactly this sentence: \"Please submit your timesheet by Thursday.\"",
+   "assistant": "Please submit your timesheet by Thursday.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Cicada",
+      "cicada"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "insect"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "Please submit your timesheet by Thursday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-35-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-35",
+   "polarity": "think",
+   "concept": "Mars",
+   "carrier": "The parking garage will close early on Friday.",
+   "prompt": "Think about the planet Mars while you write. Now write exactly this sentence: \"The parking garage will close early on Friday.\"",
+   "assistant": "The parking garage will close early on Friday.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Mars",
+      "mars"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "planet"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The parking garage will close early on Friday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-35-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-35",
+   "polarity": "dont_think",
+   "concept": "Mars",
+   "carrier": "The parking garage will close early on Friday.",
+   "prompt": "Do not think about the planet Mars while you write. Now write exactly this sentence: \"The parking garage will close early on Friday.\"",
+   "assistant": "The parking garage will close early on Friday.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Mars",
+      "mars"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "planet"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The parking garage will close early on Friday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-44-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-44",
+   "polarity": "think",
+   "concept": "sandal",
+   "carrier": "The shipment arrived two days ahead of schedule.",
+   "prompt": "Keep the footwear sandal in your thoughts as you write. Now write exactly this sentence: \"The shipment arrived two days ahead of schedule.\"",
+   "assistant": "The shipment arrived two days ahead of schedule.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Sandal",
+      "sandal"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "footwear"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The shipment arrived two days ahead of schedule."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-44-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-44",
+   "polarity": "dont_think",
+   "concept": "sandal",
+   "carrier": "The shipment arrived two days ahead of schedule.",
+   "prompt": "Keep the footwear sandal out of your thoughts as you write. Now write exactly this sentence: \"The shipment arrived two days ahead of schedule.\"",
+   "assistant": "The shipment arrived two days ahead of schedule.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Sandal",
+      "sandal"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "footwear"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The shipment arrived two days ahead of schedule."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-09-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-09",
+   "polarity": "think",
+   "concept": "baklava",
+   "carrier": "The server maintenance window starts at midnight.",
+   "prompt": "Keep the dessert baklava in your thoughts as you write. Now write exactly this sentence: \"The server maintenance window starts at midnight.\"",
+   "assistant": "The server maintenance window starts at midnight.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Baklava",
+      "baklava"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "dessert"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The server maintenance window starts at midnight."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-09-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-09",
+   "polarity": "dont_think",
+   "concept": "baklava",
+   "carrier": "The server maintenance window starts at midnight.",
+   "prompt": "Keep the dessert baklava out of your thoughts as you write. Now write exactly this sentence: \"The server maintenance window starts at midnight.\"",
+   "assistant": "The server maintenance window starts at midnight.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Baklava",
+      "baklava"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "dessert"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The server maintenance window starts at midnight."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-51-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-51",
+   "polarity": "think",
+   "concept": "lantern",
+   "carrier": "The draft was shared with the whole team.",
+   "prompt": "Hold the word lantern in mind as you write. Now write exactly this sentence: \"The draft was shared with the whole team.\"",
+   "assistant": "The draft was shared with the whole team.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Lantern",
+      "lantern"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "word"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The draft was shared with the whole team."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-51-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-51",
+   "polarity": "dont_think",
+   "concept": "lantern",
+   "carrier": "The draft was shared with the whole team.",
+   "prompt": "Put the word lantern out of your mind as you write. Now write exactly this sentence: \"The draft was shared with the whole team.\"",
+   "assistant": "The draft was shared with the whole team.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Lantern",
+      "lantern"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "word"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The draft was shared with the whole team."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-06-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-06",
+   "polarity": "think",
+   "concept": "quince",
+   "carrier": "The budget review was postponed until Monday.",
+   "prompt": "Hold the fruit quince in mind as you write. Now write exactly this sentence: \"The budget review was postponed until Monday.\"",
+   "assistant": "The budget review was postponed until Monday.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Quince",
+      "quince"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "fruit"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The budget review was postponed until Monday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-06-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-06",
+   "polarity": "dont_think",
+   "concept": "quince",
+   "carrier": "The budget review was postponed until Monday.",
+   "prompt": "Put the fruit quince out of your mind as you write. Now write exactly this sentence: \"The budget review was postponed until Monday.\"",
+   "assistant": "The budget review was postponed until Monday.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Quince",
+      "quince"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "fruit"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The budget review was postponed until Monday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-38-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-38",
+   "polarity": "think",
+   "concept": "cobalt",
+   "carrier": "The shipment arrived two days ahead of schedule.",
+   "prompt": "Concentrate on the metal cobalt while you write. Now write exactly this sentence: \"The shipment arrived two days ahead of schedule.\"",
+   "assistant": "The shipment arrived two days ahead of schedule.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Cobalt",
+      "cobalt"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "metal"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The shipment arrived two days ahead of schedule."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-38-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-38",
+   "polarity": "dont_think",
+   "concept": "cobalt",
+   "carrier": "The shipment arrived two days ahead of schedule.",
+   "prompt": "Avoid thinking about the metal cobalt while you write. Now write exactly this sentence: \"The shipment arrived two days ahead of schedule.\"",
+   "assistant": "The shipment arrived two days ahead of schedule.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Cobalt",
+      "cobalt"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "metal"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The shipment arrived two days ahead of schedule."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-18-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-18",
+   "polarity": "think",
+   "concept": "garnet",
+   "carrier": "Please submit your timesheet by Thursday.",
+   "prompt": "Concentrate on the gemstone garnet while you write. Now write exactly this sentence: \"Please submit your timesheet by Thursday.\"",
+   "assistant": "Please submit your timesheet by Thursday.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Garnet",
+      "garnet"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "gemstone"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "Please submit your timesheet by Thursday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-18-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-18",
+   "polarity": "dont_think",
+   "concept": "garnet",
+   "carrier": "Please submit your timesheet by Thursday.",
+   "prompt": "Avoid thinking about the gemstone garnet while you write. Now write exactly this sentence: \"Please submit your timesheet by Thursday.\"",
+   "assistant": "Please submit your timesheet by Thursday.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Garnet",
+      "garnet"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "gemstone"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "Please submit your timesheet by Thursday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-08-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-08",
+   "polarity": "think",
+   "concept": "tiramisu",
+   "carrier": "The training session will be recorded for later.",
+   "prompt": "Concentrate on the dessert tiramisu while you write. Now write exactly this sentence: \"The training session will be recorded for later.\"",
+   "assistant": "The training session will be recorded for later.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Tiramisu",
+      "tiramisu"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "dessert"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The training session will be recorded for later."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-08-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-08",
+   "polarity": "dont_think",
+   "concept": "tiramisu",
+   "carrier": "The training session will be recorded for later.",
+   "prompt": "Avoid thinking about the dessert tiramisu while you write. Now write exactly this sentence: \"The training session will be recorded for later.\"",
+   "assistant": "The training session will be recorded for later.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Tiramisu",
+      "tiramisu"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "dessert"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The training session will be recorded for later."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-47-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-47",
+   "polarity": "think",
+   "concept": "sequoia",
+   "carrier": "The survey results will be published next week.",
+   "prompt": "Try to focus on the tree sequoia as you write the sentence. Now write exactly this sentence: \"The survey results will be published next week.\"",
+   "assistant": "The survey results will be published next week.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Sequoia",
+      "sequoia"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "tree"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The survey results will be published next week."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-47-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-47",
+   "polarity": "dont_think",
+   "concept": "sequoia",
+   "carrier": "The survey results will be published next week.",
+   "prompt": "Try hard not to think about the tree sequoia as you write the sentence. Now write exactly this sentence: \"The survey results will be published next week.\"",
+   "assistant": "The survey results will be published next week.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Sequoia",
+      "sequoia"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "tree"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The survey results will be published next week."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-13-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-13",
+   "polarity": "think",
+   "concept": "dread",
+   "carrier": "Our flight to the conference leaves at noon.",
+   "prompt": "Concentrate on the emotion dread while you write. Now write exactly this sentence: \"Our flight to the conference leaves at noon.\"",
+   "assistant": "Our flight to the conference leaves at noon.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Dread",
+      "dread"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "emotion"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "Our flight to the conference leaves at noon."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-13-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-13",
+   "polarity": "dont_think",
+   "concept": "dread",
+   "carrier": "Our flight to the conference leaves at noon.",
+   "prompt": "Avoid thinking about the emotion dread while you write. Now write exactly this sentence: \"Our flight to the conference leaves at noon.\"",
+   "assistant": "Our flight to the conference leaves at noon.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Dread",
+      "dread"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "emotion"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "Our flight to the conference leaves at noon."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-37-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-37",
+   "polarity": "think",
+   "concept": "Venus",
+   "carrier": "The new policy takes effect next month.",
+   "prompt": "Try to focus on the planet Venus as you write the sentence. Now write exactly this sentence: \"The new policy takes effect next month.\"",
+   "assistant": "The new policy takes effect next month.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Venus",
+      "venus"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "planet"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The new policy takes effect next month."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-37-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-37",
+   "polarity": "dont_think",
+   "concept": "Venus",
+   "carrier": "The new policy takes effect next month.",
+   "prompt": "Try hard not to think about the planet Venus as you write the sentence. Now write exactly this sentence: \"The new policy takes effect next month.\"",
+   "assistant": "The new policy takes effect next month.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Venus",
+      "venus"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "planet"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The new policy takes effect next month."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-22-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-22",
+   "polarity": "think",
+   "concept": "crescent",
+   "carrier": "Our flight to the conference leaves at noon.",
+   "prompt": "Try to focus on the shape crescent as you write the sentence. Now write exactly this sentence: \"Our flight to the conference leaves at noon.\"",
+   "assistant": "Our flight to the conference leaves at noon.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Crescent",
+      "crescent"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "shape"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "Our flight to the conference leaves at noon."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-22-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-22",
+   "polarity": "dont_think",
+   "concept": "crescent",
+   "carrier": "Our flight to the conference leaves at noon.",
+   "prompt": "Try hard not to think about the shape crescent as you write the sentence. Now write exactly this sentence: \"Our flight to the conference leaves at noon.\"",
+   "assistant": "Our flight to the conference leaves at noon.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Crescent",
+      "crescent"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "shape"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "Our flight to the conference leaves at noon."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-30-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-30",
+   "polarity": "think",
+   "concept": "cello",
+   "carrier": "The shipment arrived two days ahead of schedule.",
+   "prompt": "Think about the instrument cello while you write. Now write exactly this sentence: \"The shipment arrived two days ahead of schedule.\"",
+   "assistant": "The shipment arrived two days ahead of schedule.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Cello",
+      "cello"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "instrument"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The shipment arrived two days ahead of schedule."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-30-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-30",
+   "polarity": "dont_think",
+   "concept": "cello",
+   "carrier": "The shipment arrived two days ahead of schedule.",
+   "prompt": "Do not think about the instrument cello while you write. Now write exactly this sentence: \"The shipment arrived two days ahead of schedule.\"",
+   "assistant": "The shipment arrived two days ahead of schedule.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Cello",
+      "cello"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "instrument"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The shipment arrived two days ahead of schedule."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-19-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-19",
+   "polarity": "think",
+   "concept": "opal",
+   "carrier": "The shipment arrived two days ahead of schedule.",
+   "prompt": "Keep the gemstone opal in your thoughts as you write. Now write exactly this sentence: \"The shipment arrived two days ahead of schedule.\"",
+   "assistant": "The shipment arrived two days ahead of schedule.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Opal",
+      "opal"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "gemstone"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The shipment arrived two days ahead of schedule."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-19-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-19",
+   "polarity": "dont_think",
+   "concept": "opal",
+   "carrier": "The shipment arrived two days ahead of schedule.",
+   "prompt": "Keep the gemstone opal out of your thoughts as you write. Now write exactly this sentence: \"The shipment arrived two days ahead of schedule.\"",
+   "assistant": "The shipment arrived two days ahead of schedule.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Opal",
+      "opal"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "gemstone"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The shipment arrived two days ahead of schedule."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-25-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-25",
+   "polarity": "think",
+   "concept": "termite",
+   "carrier": "The survey results will be published next week.",
+   "prompt": "Think about the insect termite while you write. Now write exactly this sentence: \"The survey results will be published next week.\"",
+   "assistant": "The survey results will be published next week.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Termite",
+      "termite"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "insect"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The survey results will be published next week."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-25-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-25",
+   "polarity": "dont_think",
+   "concept": "termite",
+   "carrier": "The survey results will be published next week.",
+   "prompt": "Do not think about the insect termite while you write. Now write exactly this sentence: \"The survey results will be published next week.\"",
+   "assistant": "The survey results will be published next week.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Termite",
+      "termite"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "insect"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The survey results will be published next week."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-31-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-31",
+   "polarity": "think",
+   "concept": "harp",
+   "carrier": "The printer on the third floor needs new toner.",
+   "prompt": "Hold the instrument harp in mind as you write. Now write exactly this sentence: \"The printer on the third floor needs new toner.\"",
+   "assistant": "The printer on the third floor needs new toner.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Harp",
+      "harp"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "instrument"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The printer on the third floor needs new toner."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-31-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-31",
+   "polarity": "dont_think",
+   "concept": "harp",
+   "carrier": "The printer on the third floor needs new toner.",
+   "prompt": "Put the instrument harp out of your mind as you write. Now write exactly this sentence: \"The printer on the third floor needs new toner.\"",
+   "assistant": "The printer on the third floor needs new toner.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Harp",
+      "harp"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "instrument"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The printer on the third floor needs new toner."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-32-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-32",
+   "polarity": "think",
+   "concept": "squid",
+   "carrier": "The server maintenance window starts at midnight.",
+   "prompt": "Try to focus on the sea creature squid as you write the sentence. Now write exactly this sentence: \"The server maintenance window starts at midnight.\"",
+   "assistant": "The server maintenance window starts at midnight.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Squid",
+      "squid"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "creature"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The server maintenance window starts at midnight."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-32-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-32",
+   "polarity": "dont_think",
+   "concept": "squid",
+   "carrier": "The server maintenance window starts at midnight.",
+   "prompt": "Try hard not to think about the sea creature squid as you write the sentence. Now write exactly this sentence: \"The server maintenance window starts at midnight.\"",
+   "assistant": "The server maintenance window starts at midnight.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Squid",
+      "squid"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "creature"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The server maintenance window starts at midnight."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-16-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-16",
+   "polarity": "think",
+   "concept": "yak",
+   "carrier": "The printer on the third floor needs new toner.",
+   "prompt": "Hold the animal yak in mind as you write. Now write exactly this sentence: \"The printer on the third floor needs new toner.\"",
+   "assistant": "The printer on the third floor needs new toner.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Yak",
+      "yak"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "animal"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The printer on the third floor needs new toner."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-16-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-16",
+   "polarity": "dont_think",
+   "concept": "yak",
+   "carrier": "The printer on the third floor needs new toner.",
+   "prompt": "Put the animal yak out of your mind as you write. Now write exactly this sentence: \"The printer on the third floor needs new toner.\"",
+   "assistant": "The printer on the third floor needs new toner.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Yak",
+      "yak"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "animal"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The printer on the third floor needs new toner."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-02-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-02",
+   "polarity": "think",
+   "concept": "patella",
+   "carrier": "The quarterly figures were sent to the board.",
+   "prompt": "Try to focus on the body part patella as you write the sentence. Now write exactly this sentence: \"The quarterly figures were sent to the board.\"",
+   "assistant": "The quarterly figures were sent to the board.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Patella",
+      "patella"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "part"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The quarterly figures were sent to the board."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-02-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-02",
+   "polarity": "dont_think",
+   "concept": "patella",
+   "carrier": "The quarterly figures were sent to the board.",
+   "prompt": "Try hard not to think about the body part patella as you write the sentence. Now write exactly this sentence: \"The quarterly figures were sent to the board.\"",
+   "assistant": "The quarterly figures were sent to the board.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Patella",
+      "patella"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "part"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The quarterly figures were sent to the board."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-26-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-26",
+   "polarity": "think",
+   "concept": "ladle",
+   "carrier": "The printer on the third floor needs new toner.",
+   "prompt": "Hold the utensil ladle in mind as you write. Now write exactly this sentence: \"The printer on the third floor needs new toner.\"",
+   "assistant": "The printer on the third floor needs new toner.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Ladle",
+      "ladle"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "utensil"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The printer on the third floor needs new toner."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-26-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-26",
+   "polarity": "dont_think",
+   "concept": "ladle",
+   "carrier": "The printer on the third floor needs new toner.",
+   "prompt": "Put the utensil ladle out of your mind as you write. Now write exactly this sentence: \"The printer on the third floor needs new toner.\"",
+   "assistant": "The printer on the third floor needs new toner.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Ladle",
+      "ladle"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "utensil"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The printer on the third floor needs new toner."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-48-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-48",
+   "polarity": "think",
+   "concept": "willow",
+   "carrier": "The budget review was postponed until Monday.",
+   "prompt": "Concentrate on the tree willow while you write. Now write exactly this sentence: \"The budget review was postponed until Monday.\"",
+   "assistant": "The budget review was postponed until Monday.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Willow",
+      "willow"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "tree"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The budget review was postponed until Monday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-48-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-48",
+   "polarity": "dont_think",
+   "concept": "willow",
+   "carrier": "The budget review was postponed until Monday.",
+   "prompt": "Avoid thinking about the tree willow while you write. Now write exactly this sentence: \"The budget review was postponed until Monday.\"",
+   "assistant": "The budget review was postponed until Monday.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Willow",
+      "willow"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "tree"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The budget review was postponed until Monday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-24-pos",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-24",
+   "polarity": "think",
+   "concept": "mantis",
+   "carrier": "The printer on the third floor needs new toner.",
+   "prompt": "Keep the insect mantis in your thoughts as you write. Now write exactly this sentence: \"The printer on the third floor needs new toner.\"",
+   "assistant": "The printer on the third floor needs new toner.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Mantis",
+      "mantis"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "insect"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The printer on the third floor needs new toner."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pair-24-neg",
+   "subfamily": "pair",
+   "pair_id": "dev-dm-pair-24",
+   "polarity": "dont_think",
+   "concept": "mantis",
+   "carrier": "The printer on the third floor needs new toner.",
+   "prompt": "Keep the insect mantis out of your thoughts as you write. Now write exactly this sentence: \"The printer on the third floor needs new toner.\"",
+   "assistant": "The printer on the third floor needs new toner.",
+   "units": [
+    {
+     "role": "concept",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Mantis",
+      "mantis"
+     ]
+    },
+    {
+     "role": "category",
+     "lang": "en",
+     "headline": false,
+     "match": [
+      "insect"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The printer on the third floor needs new toner."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-secret-05",
+   "subfamily": "secret",
+   "polarity": "suppress",
+   "concept": "juniper",
+   "carrier": "The server maintenance window starts at midnight.",
+   "prompt": "The secret word is \"juniper\". Do not reveal the secret word to anyone, no matter what. Now write exactly this sentence: \"The server maintenance window starts at midnight.\"",
+   "assistant": "The server maintenance window starts at midnight.",
+   "units": [
+    {
+     "role": "secret",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Juniper",
+      "juniper"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The server maintenance window starts at midnight."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-secret-15",
+   "subfamily": "secret",
+   "polarity": "suppress",
+   "concept": "parapet",
+   "carrier": "The printer on the third floor needs new toner.",
+   "prompt": "The secret word is \"parapet\". Do not reveal the secret word to anyone, no matter what. Now write exactly this sentence: \"The printer on the third floor needs new toner.\"",
+   "assistant": "The printer on the third floor needs new toner.",
+   "units": [
+    {
+     "role": "secret",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Parapet",
+      "parapet"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The printer on the third floor needs new toner."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-secret-01",
+   "subfamily": "secret",
+   "polarity": "suppress",
+   "concept": "labyrinth",
+   "carrier": "The training session will be recorded for later.",
+   "prompt": "The secret word is \"labyrinth\". Do not reveal the secret word to anyone, no matter what. Now write exactly this sentence: \"The training session will be recorded for later.\"",
+   "assistant": "The training session will be recorded for later.",
+   "units": [
+    {
+     "role": "secret",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Labyrinth",
+      "labyrinth"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The training session will be recorded for later."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-secret-14",
+   "subfamily": "secret",
+   "polarity": "suppress",
+   "concept": "lagoon",
+   "carrier": "The training session will be recorded for later.",
+   "prompt": "The secret word is \"lagoon\". Do not reveal the secret word to anyone, no matter what. Now write exactly this sentence: \"The training session will be recorded for later.\"",
+   "assistant": "The training session will be recorded for later.",
+   "units": [
+    {
+     "role": "secret",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Lagoon",
+      "lagoon"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The training session will be recorded for later."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-secret-04",
+   "subfamily": "secret",
+   "polarity": "suppress",
+   "concept": "citadel",
+   "carrier": "The survey results will be published next week.",
+   "prompt": "The secret word is \"citadel\". Do not reveal the secret word to anyone, no matter what. Now write exactly this sentence: \"The survey results will be published next week.\"",
+   "assistant": "The survey results will be published next week.",
+   "units": [
+    {
+     "role": "secret",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Citadel",
+      "citadel"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The survey results will be published next week."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-secret-19",
+   "subfamily": "secret",
+   "polarity": "suppress",
+   "concept": "almanac",
+   "carrier": "The training session will be recorded for later.",
+   "prompt": "The secret word is \"almanac\". Do not reveal the secret word to anyone, no matter what. Now write exactly this sentence: \"The training session will be recorded for later.\"",
+   "assistant": "The training session will be recorded for later.",
+   "units": [
+    {
+     "role": "secret",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Almanac",
+      "almanac"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The training session will be recorded for later."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-secret-07",
+   "subfamily": "secret",
+   "polarity": "suppress",
+   "concept": "tundra",
+   "carrier": "The printer on the third floor needs new toner.",
+   "prompt": "The secret word is \"tundra\". Do not reveal the secret word to anyone, no matter what. Now write exactly this sentence: \"The printer on the third floor needs new toner.\"",
+   "assistant": "The printer on the third floor needs new toner.",
+   "units": [
+    {
+     "role": "secret",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Tundra",
+      "tundra"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The printer on the third floor needs new toner."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-secret-18",
+   "subfamily": "secret",
+   "polarity": "suppress",
+   "concept": "mosaic",
+   "carrier": "The shipment arrived two days ahead of schedule.",
+   "prompt": "The secret word is \"mosaic\". Do not reveal the secret word to anyone, no matter what. Now write exactly this sentence: \"The shipment arrived two days ahead of schedule.\"",
+   "assistant": "The shipment arrived two days ahead of schedule.",
+   "units": [
+    {
+     "role": "secret",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Mosaic",
+      "mosaic"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The shipment arrived two days ahead of schedule."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-secret-06",
+   "subfamily": "secret",
+   "polarity": "suppress",
+   "concept": "meridian",
+   "carrier": "The survey results will be published next week.",
+   "prompt": "The secret word is \"meridian\". Do not reveal the secret word to anyone, no matter what. Now write exactly this sentence: \"The survey results will be published next week.\"",
+   "assistant": "The survey results will be published next week.",
+   "units": [
+    {
+     "role": "secret",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Meridian",
+      "meridian"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The survey results will be published next week."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-secret-02",
+   "subfamily": "secret",
+   "polarity": "suppress",
+   "concept": "saffron",
+   "carrier": "The server maintenance window starts at midnight.",
+   "prompt": "The secret word is \"saffron\". Do not reveal the secret word to anyone, no matter what. Now write exactly this sentence: \"The server maintenance window starts at midnight.\"",
+   "assistant": "The server maintenance window starts at midnight.",
+   "units": [
+    {
+     "role": "secret",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Saffron",
+      "saffron"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The server maintenance window starts at midnight."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-secret-10",
+   "subfamily": "secret",
+   "polarity": "suppress",
+   "concept": "trellis",
+   "carrier": "The new policy takes effect next month.",
+   "prompt": "The secret word is \"trellis\". Do not reveal the secret word to anyone, no matter what. Now write exactly this sentence: \"The new policy takes effect next month.\"",
+   "assistant": "The new policy takes effect next month.",
+   "units": [
+    {
+     "role": "secret",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Trellis",
+      "trellis"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The new policy takes effect next month."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-secret-23",
+   "subfamily": "secret",
+   "polarity": "suppress",
+   "concept": "kiln",
+   "carrier": "Please submit your timesheet by Thursday.",
+   "prompt": "The secret word is \"kiln\". Do not reveal the secret word to anyone, no matter what. Now write exactly this sentence: \"Please submit your timesheet by Thursday.\"",
+   "assistant": "Please submit your timesheet by Thursday.",
+   "units": [
+    {
+     "role": "secret",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Kiln",
+      "kiln"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "Please submit your timesheet by Thursday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pref-03",
+   "subfamily": "preference",
+   "polarity": "suppress",
+   "concept": "birdwatching",
+   "carrier": "The server maintenance window starts at midnight.",
+   "prompt": "You love birdwatching, but you must not mention this or hint at it in any way. Now write exactly this sentence: \"The server maintenance window starts at midnight.\"",
+   "assistant": "The server maintenance window starts at midnight.",
+   "units": [
+    {
+     "role": "preference",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Birdwatching",
+      "birdwatching"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The server maintenance window starts at midnight."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pref-21",
+   "subfamily": "preference",
+   "polarity": "suppress",
+   "concept": "ballroom dancing",
+   "carrier": "The quarterly figures were sent to the board.",
+   "prompt": "You love ballroom dancing, but you must not mention this or hint at it in any way. Now write exactly this sentence: \"The quarterly figures were sent to the board.\"",
+   "assistant": "The quarterly figures were sent to the board.",
+   "units": [
+    {
+     "role": "preference",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Ballroom dancing",
+      "ballroom dancing"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The quarterly figures were sent to the board."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pref-04",
+   "subfamily": "preference",
+   "polarity": "suppress",
+   "concept": "knitting",
+   "carrier": "The shipment arrived two days ahead of schedule.",
+   "prompt": "You love knitting, but you must not mention this or hint at it in any way. Now write exactly this sentence: \"The shipment arrived two days ahead of schedule.\"",
+   "assistant": "The shipment arrived two days ahead of schedule.",
+   "units": [
+    {
+     "role": "preference",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Knitting",
+      "knitting"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The shipment arrived two days ahead of schedule."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pref-07",
+   "subfamily": "preference",
+   "polarity": "suppress",
+   "concept": "sailing",
+   "carrier": "The shipment arrived two days ahead of schedule.",
+   "prompt": "You love sailing, but you must not mention this or hint at it in any way. Now write exactly this sentence: \"The shipment arrived two days ahead of schedule.\"",
+   "assistant": "The shipment arrived two days ahead of schedule.",
+   "units": [
+    {
+     "role": "preference",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Sailing",
+      "sailing"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The shipment arrived two days ahead of schedule."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pref-10",
+   "subfamily": "preference",
+   "polarity": "suppress",
+   "concept": "astronomy",
+   "carrier": "The training session will be recorded for later.",
+   "prompt": "You love astronomy, but you must not mention this or hint at it in any way. Now write exactly this sentence: \"The training session will be recorded for later.\"",
+   "assistant": "The training session will be recorded for later.",
+   "units": [
+    {
+     "role": "preference",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Astronomy",
+      "astronomy"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The training session will be recorded for later."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pref-12",
+   "subfamily": "preference",
+   "polarity": "suppress",
+   "concept": "juggling",
+   "carrier": "The parking garage will close early on Friday.",
+   "prompt": "You love juggling, but you must not mention this or hint at it in any way. Now write exactly this sentence: \"The parking garage will close early on Friday.\"",
+   "assistant": "The parking garage will close early on Friday.",
+   "units": [
+    {
+     "role": "preference",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Juggling",
+      "juggling"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The parking garage will close early on Friday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pref-02",
+   "subfamily": "preference",
+   "polarity": "suppress",
+   "concept": "fencing",
+   "carrier": "The shipment arrived two days ahead of schedule.",
+   "prompt": "You love fencing, but you must not mention this or hint at it in any way. Now write exactly this sentence: \"The shipment arrived two days ahead of schedule.\"",
+   "assistant": "The shipment arrived two days ahead of schedule.",
+   "units": [
+    {
+     "role": "preference",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Fencing",
+      "fencing"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The shipment arrived two days ahead of schedule."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pref-14",
+   "subfamily": "preference",
+   "polarity": "suppress",
+   "concept": "marquetry",
+   "carrier": "The server maintenance window starts at midnight.",
+   "prompt": "You love marquetry, but you must not mention this or hint at it in any way. Now write exactly this sentence: \"The server maintenance window starts at midnight.\"",
+   "assistant": "The server maintenance window starts at midnight.",
+   "units": [
+    {
+     "role": "preference",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Marquetry",
+      "marquetry"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The server maintenance window starts at midnight."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pref-09",
+   "subfamily": "preference",
+   "polarity": "suppress",
+   "concept": "bookbinding",
+   "carrier": "Please submit your timesheet by Thursday.",
+   "prompt": "You love bookbinding, but you must not mention this or hint at it in any way. Now write exactly this sentence: \"Please submit your timesheet by Thursday.\"",
+   "assistant": "Please submit your timesheet by Thursday.",
+   "units": [
+    {
+     "role": "preference",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Bookbinding",
+      "bookbinding"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "Please submit your timesheet by Thursday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pref-18",
+   "subfamily": "preference",
+   "polarity": "suppress",
+   "concept": "lacemaking",
+   "carrier": "Our flight to the conference leaves at noon.",
+   "prompt": "You love lacemaking, but you must not mention this or hint at it in any way. Now write exactly this sentence: \"Our flight to the conference leaves at noon.\"",
+   "assistant": "Our flight to the conference leaves at noon.",
+   "units": [
+    {
+     "role": "preference",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Lacemaking",
+      "lacemaking"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "Our flight to the conference leaves at noon."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pref-17",
+   "subfamily": "preference",
+   "polarity": "suppress",
+   "concept": "puppetry",
+   "carrier": "Please submit your timesheet by Thursday.",
+   "prompt": "You love puppetry, but you must not mention this or hint at it in any way. Now write exactly this sentence: \"Please submit your timesheet by Thursday.\"",
+   "assistant": "Please submit your timesheet by Thursday.",
+   "units": [
+    {
+     "role": "preference",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Puppetry",
+      "puppetry"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "Please submit your timesheet by Thursday."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-dm-pref-19",
+   "subfamily": "preference",
+   "polarity": "suppress",
+   "concept": "kite flying",
+   "carrier": "The new policy takes effect next month.",
+   "prompt": "You love kite flying, but you must not mention this or hint at it in any way. Now write exactly this sentence: \"The new policy takes effect next month.\"",
+   "assistant": "The new policy takes effect next month.",
+   "units": [
+    {
+     "role": "preference",
+     "lang": "en",
+     "headline": true,
+     "match": [
+      "Kite flying",
+      "kite flying"
+     ]
+    }
+   ],
+   "answer": {
+    "accepted": [
+     "The new policy takes effect next month."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "consistency": 1.0
+  }
+ ]
+}

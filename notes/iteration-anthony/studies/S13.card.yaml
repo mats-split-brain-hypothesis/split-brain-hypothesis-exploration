@@ -1,0 +1,30 @@
+id: S13
+title: Pulled-back continuation priors
+owner: A (j-lens-mean-2e), night-2
+status: negative
+question: >
+  Can a prior over the next token, pulled back into the residual through the readout map, $g = \beta\,(W_U J)^{+} c$,
+  replace the family mean as a bench-free centre?
+verdict: >
+  No. The chat-corpus unigram prior is below the uncentred lens at every scale (its tail lifts rare pieces), its
+  frequent-token head does nothing, the model's own next-token prior at other cells removes multihop_mt's bridge (0.275 vs
+  zero 0.400), and a constant demotion of the template tokens cannot be expressed by one pulled-back vector (fit 0.95-0.98
+  residual; even at beta 256 it reaches only half of S14's gain over zero, -0.045 vs fam). The prior the bench cells carry is the chat template's, and a projection (S14) removes it where a constant
+  shift cannot.
+tiles:
+  - {label: "fit macro vs fam, s13uni (beta 1)", value: "-0.136", sub: "zero -0.092; shuffled-prior control -0.093"}
+  - {label: "fit macro vs fam, s13nt", value: "-0.076", sub: "multihop_mt 0.275 vs zero 0.400"}
+  - {label: "fit macro, head-2k prior", value: "= zero", sub: "the whole harm came from the tail"}
+formulas:
+  - latex: 'g_l = \beta \arg\min_g \|P(L_l(g) - c)\|^2 + \lambda \|g\|^2, \quad L_l(g) = D_l^{-1} W_U J_l g'
+    note: "c: a centred log-prior over the vocabulary; P removes the constant-score direction; D_l the cos readout's per-token norms."
+  - latex: 'c^{\text{nt}} = \operatorname{mean}_{r \in \mathcal{R}_{\text{fam}} \setminus \text{own}} \log \operatorname{softmax}(W_U\, \mathrm{norm}(h^{(63)}_r))'
+    note: "s13nt: the model's own next-token log-softmax at the family's other reference cells."
+split: fit
+arms: ["s13uni@self|cos", "s13:unigram-norobots:0.5@self|cos", "s13:unigram-norobots-head2000:1@self|cos", "s13nt@self|cos", "s13ntf@self|cos", "s13:ind-template-64:256@self|cos"]
+controls: ["s13:unigram-norobots-shuf0:1@self|cos", "s13:unigram-norobots-shuf0:4@self|cos"]
+insights:
+  - {lead: "The bench's prior is the chat template's, not the corpus's", text: "Subtracting the unigram log-prior leaves the template strings in the top 10 and lifts rare CJK pieces (association L44 non-ASCII share 0.41 -> 0.64); every beta in 0.5-4 is worse than 0."}
+  - {lead: "The model's own next-token prior names the family's answer category", text: "Averaged over other items, it removes multihop_mt's bridge more than fam does (0.275 / 0.225 at beta 1 / 2): a mean over cells that share X removes X, by another route."}
+  - {lead: "One vector cannot demote 64 tokens", text: "The pullback of a template-token indicator fits at 0.95-0.98 relative residual; the constant demotion stays at zero's level where the projection onto the same tokens' reading directions (S14) matches fam."}
+next: []

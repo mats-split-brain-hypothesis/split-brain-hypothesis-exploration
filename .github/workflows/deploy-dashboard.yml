@@ -1,0 +1,38 @@
+# Redeploy the shared dashboard (private HF Space [org]/j-lens-mean-dashboard) whenever eval-pipeline (shared
+# infrastructure) or a collaborator's branch (their pages) changes the dashboard or the code it imports. The Space is
+# eval-pipeline merged with the branches in .github/dashboard-branches (tools/deploy_space.py); keep the branch list
+# below in step with that file. A push that cannot be merged stops here and the log names the conflicting files.
+# Needs the repository secret HF_TOKEN: a WRITE token for the [org] org (the Space's own HF_TOKEN, a read
+# token for the dataset, is set once in the Space settings). Results never go through here: pipeline steps push
+# them to the dataset themselves (jlm.hfdata.share) and the Space pulls them.
+name: deploy dashboard
+on:
+  push:
+    branches: [eval-pipeline, constant-mean-exploration, iteration]
+    paths:
+      - "dashboard/**"
+      - ".streamlit/**"
+      - "src/jlm/**"
+      - "umot/src/umot/**"
+      - "data/**"
+      - "notes/iteration-anthony/studies/**"
+      - "tools/deploy_space.py"
+      - ".github/dashboard-branches"
+  workflow_dispatch: {}
+concurrency:
+  group: deploy-dashboard
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "huggingface_hub==2.2.0" "hf_xet==1.7.0"
+      - run: python tools/deploy_space.py --space [org]/j-lens-mean-dashboard --dataset [org]/j-lens-mean-data
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}

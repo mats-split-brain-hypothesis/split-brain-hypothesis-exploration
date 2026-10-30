@@ -1,0 +1,143 @@
+{
+ "typo": {
+  "raw": 120,
+  "kept": 120,
+  "dropped": {},
+  "drops": []
+ },
+ "association": {
+  "raw": 200,
+  "kept": 193,
+  "dropped": {
+   "duplicate": 2,
+   "shared_target": 5
+  },
+  "drops": [
+   {
+    "name": "v3-as-b-017",
+    "code": "duplicate",
+    "reason": "('negotiation',)"
+   },
+   {
+    "name": "v3-as-b-032",
+    "code": "duplicate",
+    "reason": "('voting',)"
+   },
+   {
+    "name": "v3-as-a-040",
+    "code": "shared_target",
+    "reason": "['fountain', 'fountains']"
+   },
+   {
+    "name": "v3-as-a-062",
+    "code": "shared_target",
+    "reason": "['balcony', 'balconys']"
+   },
+   {
+    "name": "v3-as-a-063",
+    "code": "shared_target",
+    "reason": "['basement', 'basements']"
+   },
+   {
+    "name": "v3-as-b-050",
+    "code": "shared_target",
+    "reason": "['vacation', 'vacations']"
+   },
+   {
+    "name": "v3-as-b-068",
+    "code": "shared_target",
+    "reason": "['tower', 'towers']"
+   }
+  ]
+ },
+ "multihop": {
+  "raw": 140,
+  "kept": 124,
+  "dropped": {
+   "shared_target": 14,
+   "seen_target": 2
+  },
+  "drops": [
+   {
+    "name": "v3-mh-a-032",
+    "code": "shared_target",
+    "reason": "['robin', 'robins']"
+   },
+   {
+    "name": "v3-mh-a-040",
+    "code": "shared_target",
+    "reason": "['lobster', 'lobsters']"
+   },
+   {
+    "name": "v3-mh-a-050",
+    "code": "shared_target",
+    "reason": "['coconut', 'coconuts']"
+   },
+   {
+    "name": "v3-mh-a-053",
+    "code": "shared_target",
+    "reason": "['elbow', 'elbows']"
+   },
+   {
+    "name": "v3-mh-a-057",
+    "code": "shared_target",
+    "reason": "['barrel', 'barrels']"
+   },
+   {
+    "name": "v3-mh-b-010",
+    "code": "shared_target",
+    "reason": "['herbert', 'herberts']"
+   },
+   {
+    "name": "v3-mh-b-027",
+    "code": "shared_target",
+    "reason": "['friedrich', 'friedrichs']"
+   },
+   {
+    "name": "v3-mh-b-029",
+    "code": "shared_target",
+    "reason": "['iri', 'iris', 'iriss', 'pupil', 'pupils']"
+   },
+   {
+    "name": "v3-mh-b-030",
+    "code": "seen_target",
+    "reason": "['lung']"
+   },
+   {
+    "name": "v3-mh-b-042",
+    "code": "shared_target",
+    "reason": "['robin', 'robins']"
+   },
+   {
+    "name": "v3-mh-b-046",
+    "code": "seen_target",
+    "reason": "['jaws']"
+   },
+   {
+    "name": "v3-mh-b-047",
+    "code": "shared_target",
+    "reason": "['prince', 'princes']"
+   },
+   {
+    "name": "v3-mh-b-048",
+    "code": "shared_target",
+    "reason": "['robert', 'roberts']"
+   },
+   {
+    "name": "v3-mh-b-062",
+    "code": "shared_target",
+    "reason": "['pigeon', 'pigeons']"
+   },
+   {
+    "name": "v3-mh-b-064",
+    "code": "shared_target",
+    "reason": "['beach', 'beachs']"
+   },
+   {
+    "name": "v3-mh-b-068",
+    "code": "shared_target",
+    "reason": "['hogwart', 'hogwarts', 'hogwartss']"
+   }
+  ]
+ }
+}

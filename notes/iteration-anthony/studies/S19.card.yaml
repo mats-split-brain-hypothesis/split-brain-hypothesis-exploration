@@ -1,0 +1,35 @@
+id: S19
+title: Learned g with the controls as the loss
+owner: C (j-lens-mean-19c), night-2
+status: negative
+question: >
+  Can a small learned map $g(h) = U V^{\top} h + b$, fitted with no targets to keep each cell's prompt words and the model's
+  own next-token guess out of the readout's top 10, make a fair centre?
+verdict: >
+  No. Every variant (rank 16 at two penalty strengths, a tied rank-16 subspace removal, a learned constant) reads the fit
+  split far below even the uncentred lens (macro 0.08-0.3 vs zero 0.51, fam 0.60). The loss is minimised by crowding the
+  top 10 with generic tokens, and the targets go with the prompt; a random direction of the same norm stays at zero's level.
+  The few directions that carry a cell's prompt words and next-token guess in the readout also carry its other content.
+tiles:
+  - {label: "fit macro, s19r16 (λ 0.1)", value: "0.08", sub: "zero 0.51, fam 0.60"}
+  - {label: "fit macro, tied rank 16 (λ 1)", value: "0.35", sub: "removes 2-5 % of ‖h‖ at L20-48"}
+  - {label: "multihop, tied rank 16", value: "0.61 → 0.19", sub: "zero → s19:t16l1"}
+  - {label: "random direction, same norm", value: "= zero", sub: "rand.s19:r16l1: the harm is the learned direction"}
+formulas:
+  - latex: 'g(h) = U V^{\top} h + b, \qquad \min_{U,V,b}\ \frac{1}{|S|}\sum_{t \in S} \mathrm{softplus}\!\Big(\frac{s_t - c_{10}}{\tau}\Big) + \lambda \frac{\overline{\|g\|^2}}{\overline{\|h\|^2}}'
+    note: "S: the cell's prompt-content ids and the model's own next-token top 10; s = cos readout of h - g; c_10 the 10th best score outside S. No targets. Fitted on the pooled fit cells of 11 families, 3-fold by group for the fit read."
+  - latex: 'g(h) = b + Q Q^{\top} h, \quad Q^{\top} Q = I_{16}'
+    note: "the tied variant: a learned subspace removed (bounded by ‖h‖)."
+diagram:
+  kind: subspace
+  k: 16
+  caption: "S19 learns which directions to remove so that the prompt's words and the next-token guess leave the readout; the tied variant removes a learned 16-dim subspace, which takes the targets with it."
+split: fit
+arms: ["s19r16@self|cos", "s19:r16l1@self|cos", "s19:t16l1@self|cos", "s19:bl1@self|cos"]
+controls: ["rand.s19r16@self|cos", "rand.s19:r16l1@self|cos"]
+insights:
+  - {lead: "A removal-only loss crowds the top 10", text: "Even the learned constant (b only, 7-37 % of ‖h‖) wins the loss by raising a fixed set of generic tokens (' knee', ' ball', ' corner', function words) into every cell's top 10: association 0.03, multihop 0.01."}
+  - {lead: "Prompt reading and content share the readout's directions", text: "A tied subspace of 2-5 % of ‖h‖ that removes the prompt and next-token readout drops multihop 0.61 → 0.19 and basic_readout 0.92 → 0.62."}
+  - {lead: "An anchored loss is bounded by masking", text: "Forbidding any other token to rise leaves g only the freedom to lower S: the prompt-masked readout evaluate.py already reports. Not run."}
+  - {lead: "The learned row that works uses others' targets", text: "S20's target-fitted constants transfer across families (B, S20x: +0.042 vs fam on val strict, other families' targets only)."}
+next: []

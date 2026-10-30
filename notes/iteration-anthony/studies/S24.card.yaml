@@ -1,0 +1,39 @@
+id: S24
+title: A fresh held-out dev split
+owner: C (j-lens-mean-19c), night-2
+status: diagnostic
+question: >
+  Tonight val chose among the finalists' forms. On a fresh split whose answers occur in no other bank (val2: typo 88,
+  association 89, multihop 129 gated items), read once, which gains survive?
+verdict: >
+  The supervised cross-family corrections hold at about two thirds of their val gain (S20x +0.050, S21b +0.049,
+  s20xon:1:kmx64 +0.056 over fam, intervals clear of zero), and a label-free arm matches them (S14b with a late knnxs8
+  mean, +0.052). S14k does not replicate on these families (+0.003). Under rms the single supervised centre gains +0.068.
+  val2 holds only single-token families (no _mt, DM, UM). S24b (val2b) adds multihop's closed-answer subfamilies, where the
+  supervised gain is larger (+0.07 to +0.13) but sits on shared answers, and multilingual, which is at ceiling.
+tiles:
+  - {label: "pooled val2 + val3 (607 fresh items): S20x / s20xon vs fam", value: "+0.051", sub: "[+0.030, +0.073]; replicated on val3 (+0.050)"}
+  - {label: "pooled: label-free S14bL vs fam", value: "+0.039", sub: "[+0.018, +0.059]; val3 +0.023"}
+  - {label: "S20x / S21b vs fam, val2", value: "+0.050 / +0.049", sub: "macro over typo / assoc / mhop, CIs > 0"}
+  - {label: "S14b-knnxs8 (label-free) vs fam", value: "+0.052", sub: "[+0.024, +0.083]"}
+  - {label: "S14k vs fam", value: "+0.003", sub: "val gain came from _mt / DM / UM"}
+  - {label: "val2 items", value: "306", sub: "typo 88, assoc 89, mhop 129; no shared target"}
+formulas:
+  - latex: '\Delta = \tfrac{1}{3}\sum_{F} \big(\text{pass}_F(\text{arm}) - \text{pass}_F(\mu_{\text{fam}})\big), \quad F \in \{\text{typo}, \text{assoc}, \text{mhop}\}'
+    note: "strict pass on val2, refs = fit; paired bootstrap within family."
+diagram:
+  kind: pool
+  select: all
+  caption: "val2: Sonnet-authored items with no target shared with the bench, fit, val or each other, 27B-gated, read once."
+split: val
+arms: ["s20xt:1@fit|cos", "sched:40:s20xon:1:kmx64+s14:template:64:mean=kmx64:a=0.5@fit|cos", "sched:40:kmx64+s14:template:64:mean=knnxs8:a=0.5@fit|cos"]
+controls: ["fam@fit|cos", "zero|cos"]
+insights:
+  - {lead: "The supervised corrections are not val selection", text: "S20x / S21b / s20xon keep +0.05 on items whose answers occur in no bank: two thirds of val's +0.08 / +0.07, as predicted."}
+  - {lead: "A label-free arm matches them", text: "S14b with a late neighbour mean (knnxs8, other sentences only, no targets) gains +0.052 [+0.024, +0.083]."}
+  - {lead: "S14k does not replicate on the single-token families", text: "+0.003: its val gain was on the _mt families, DM and UM, which val2 does not hold."}
+  - {lead: "S24b: on multihop's answer-type subfamilies the supervised gain is larger but sits on shared answers", text: "val2b multihop (country / calendar / element / number): S20x +0.074, s20xon +0.128 vs fam, all on items whose answers other families' fit targets hold; the fresh subset (23) is at ceiling. multilingual val2b: every arm at fam's 0.987."}
+  - {lead: "S24c: the gain is mostly re-ranking what fam already reads", text: "Of the val2 flips, 64-76 % had the English target already in fam's top 50 (rank 11-50), often below its Chinese form; 4-6 % only in another script; 19-32 % absent from fam's top 50 (s20xon 32 %, S14b-knnxs8 19 %)."}
+  - {lead: "S24d: a second fresh batch replicates the supervised gain and halves the label-free one", text: "val3 (303 items): S20x +0.050, s20xon +0.043, S14bL +0.023, S21b +0.026. Pooled with val2: S20x / s20xon +0.051, S14bL +0.039; supervised minus label-free +0.012 [-0.009, +0.033]: not separated."}
+  - {lead: "The gains are directions, not sizes", text: "fam + a random direction with each arm's per-cell change norm reads at fam's level (-0.002 to -0.012); arm minus that matched null, pooled: S20x +0.053, s20xon +0.055, S14bL +0.051 (post-read control)."}
+next: ["A val2 for the _mt families, DM and UM (judged), so the label-free schedules can be checked where they gained."]

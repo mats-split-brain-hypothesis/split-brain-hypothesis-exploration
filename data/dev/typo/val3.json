@@ -1,0 +1,2174 @@
+{
+ "family": "typo",
+ "split": "val3",
+ "source": "S24 val3: Sonnet-authored from jle x90 briefs, filtered, 27B-gated",
+ "gate": {
+  "note": "rebuilt from the read-cell captures (the pass set); per-item gate results lost with the pod",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "v3-ty-a-001",
+   "subfamily": "deletion",
+   "prompt": "Be careful because the ice is very slipery",
+   "typo": "slipery",
+   "intermediates": [
+    "slippery"
+   ],
+   "note": "deletion: slippery misspelled slipery",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-002",
+   "subfamily": "deletion",
+   "prompt": "The toy stopped moving because of a dead batery",
+   "typo": "batery",
+   "intermediates": [
+    "battery"
+   ],
+   "note": "deletion: battery misspelled batery",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-003",
+   "subfamily": "deletion",
+   "prompt": "The river runs through a wide green valey",
+   "typo": "valey",
+   "intermediates": [
+    "valley"
+   ],
+   "note": "deletion: valley misspelled valey",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-004",
+   "subfamily": "deletion",
+   "prompt": "The girl begged her parents for a pupy",
+   "typo": "pupy",
+   "intermediates": [
+    "puppy"
+   ],
+   "note": "deletion: puppy misspelled pupy",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-005",
+   "subfamily": "deletion",
+   "prompt": "We usually eat lunch in the early afternon",
+   "typo": "afternon",
+   "intermediates": [
+    "afternoon"
+   ],
+   "note": "deletion: afternoon misspelled afternon",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-006",
+   "subfamily": "deletion",
+   "prompt": "The story has a slow and quiet begining",
+   "typo": "begining",
+   "intermediates": [
+    "beginning"
+   ],
+   "note": "deletion: beginning misspelled begining",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-007",
+   "subfamily": "deletion",
+   "prompt": "She is a famous university profesor",
+   "typo": "profesor",
+   "intermediates": [
+    "professor"
+   ],
+   "note": "deletion: professor misspelled profesor",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-008",
+   "subfamily": "deletion",
+   "prompt": "He broke his leg in a car acident",
+   "typo": "acident",
+   "intermediates": [
+    "accident"
+   ],
+   "note": "deletion: accident misspelled acident",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-009",
+   "subfamily": "deletion",
+   "prompt": "He made a brave but failed atempt",
+   "typo": "atempt",
+   "intermediates": [
+    "attempt"
+   ],
+   "note": "deletion: attempt misspelled atempt",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-010",
+   "subfamily": "deletion",
+   "prompt": "He fell and skinned his knee on the pavment",
+   "typo": "pavment",
+   "intermediates": [
+    "pavement"
+   ],
+   "note": "deletion: pavement misspelled pavment",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-011",
+   "subfamily": "deletion",
+   "prompt": "He peeled a ripe yellow banan",
+   "typo": "banan",
+   "intermediates": [
+    "banana"
+   ],
+   "note": "deletion: banana misspelled banan",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-012",
+   "subfamily": "deletion",
+   "prompt": "They carved a face into the big orange pumkin",
+   "typo": "pumkin",
+   "intermediates": [
+    "pumpkin"
+   ],
+   "note": "deletion: pumpkin misspelled pumkin",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-013",
+   "subfamily": "deletion",
+   "prompt": "She topped the cake with a red chery",
+   "typo": "chery",
+   "intermediates": [
+    "cherry"
+   ],
+   "note": "deletion: cherry misspelled chery",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-014",
+   "subfamily": "deletion",
+   "prompt": "She has an appointment with the denist",
+   "typo": "denist",
+   "intermediates": [
+    "dentist"
+   ],
+   "note": "deletion: dentist misspelled denist",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-015",
+   "subfamily": "deletion",
+   "prompt": "The ship's captain was an experienced salor",
+   "typo": "salor",
+   "intermediates": [
+    "sailor"
+   ],
+   "note": "deletion: sailor misspelled salor",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-016",
+   "subfamily": "deletion",
+   "prompt": "The wine was stored in a wooden barel",
+   "typo": "barel",
+   "intermediates": [
+    "barrel"
+   ],
+   "note": "deletion: barrel misspelled barel",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-017",
+   "subfamily": "deletion",
+   "prompt": "Pink and gold filled the sky at sunet",
+   "typo": "sunet",
+   "intermediates": [
+    "sunset"
+   ],
+   "note": "deletion: sunset misspelled sunet",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-018",
+   "subfamily": "deletion",
+   "prompt": "Fishing boats returned to the habor",
+   "typo": "habor",
+   "intermediates": [
+    "harbor"
+   ],
+   "note": "deletion: harbor misspelled habor",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-019",
+   "subfamily": "deletion",
+   "prompt": "Kids kicked a ball around playing socer",
+   "typo": "socer",
+   "intermediates": [
+    "soccer"
+   ],
+   "note": "deletion: soccer misspelled socer",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-020",
+   "subfamily": "deletion",
+   "prompt": "A bird dropped a single fether",
+   "typo": "fether",
+   "intermediates": [
+    "feather"
+   ],
+   "note": "deletion: feather misspelled fether",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-021",
+   "subfamily": "deletion",
+   "prompt": "She leaned in and spoke in a wisper",
+   "typo": "wisper",
+   "intermediates": [
+    "whisper"
+   ],
+   "note": "deletion: whisper misspelled wisper",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-022",
+   "subfamily": "deletion",
+   "prompt": "The bread popped out of the toaser",
+   "typo": "toaser",
+   "intermediates": [
+    "toaster"
+   ],
+   "note": "deletion: toaster misspelled toaser",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-023",
+   "subfamily": "deletion",
+   "prompt": "A spider hung from the celing",
+   "typo": "celing",
+   "intermediates": [
+    "ceiling"
+   ],
+   "note": "deletion: ceiling misspelled celing",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-024",
+   "subfamily": "deletion",
+   "prompt": "On Tuesday the truck collects the gabage",
+   "typo": "gabage",
+   "intermediates": [
+    "garbage"
+   ],
+   "note": "deletion: garbage misspelled gabage",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-025",
+   "subfamily": "deletion",
+   "prompt": "It was cold so she wore a warm sweter",
+   "typo": "sweter",
+   "intermediates": [
+    "sweater"
+   ],
+   "note": "deletion: sweater misspelled sweter",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-026",
+   "subfamily": "deletion",
+   "prompt": "She finished reading the last chaper",
+   "typo": "chaper",
+   "intermediates": [
+    "chapter"
+   ],
+   "note": "deletion: chapter misspelled chaper",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-027",
+   "subfamily": "deletion",
+   "prompt": "Coins lay at the bottom of the fountan",
+   "typo": "fountan",
+   "intermediates": [
+    "fountain"
+   ],
+   "note": "deletion: fountain misspelled fountan",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-028",
+   "subfamily": "deletion",
+   "prompt": "Our weekly choir practice is every Tuesay",
+   "typo": "Tuesay",
+   "intermediates": [
+    "Tuesday"
+   ],
+   "note": "deletion: Tuesday misspelled Tuesay",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-029",
+   "subfamily": "deletion",
+   "prompt": "We stayed at a hotel on our vacaton",
+   "typo": "vacaton",
+   "intermediates": [
+    "vacation"
+   ],
+   "note": "deletion: vacation misspelled vacaton",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-030",
+   "subfamily": "deletion",
+   "prompt": "Egypt is famous for its ancient pyramd",
+   "typo": "pyramd",
+   "intermediates": [
+    "pyramid"
+   ],
+   "note": "deletion: pyramid misspelled pyramd",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-031",
+   "subfamily": "deletion",
+   "prompt": "She boiled a fresh red lobser",
+   "typo": "lobser",
+   "intermediates": [
+    "lobster"
+   ],
+   "note": "deletion: lobster misspelled lobser",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-032",
+   "subfamily": "deletion",
+   "prompt": "The cherry tree was covered in pink blosom",
+   "typo": "blosom",
+   "intermediates": [
+    "blossom"
+   ],
+   "note": "deletion: blossom misspelled blosom",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-033",
+   "subfamily": "deletion",
+   "prompt": "She leaned on the counter with her elbo",
+   "typo": "elbo",
+   "intermediates": [
+    "elbow"
+   ],
+   "note": "deletion: elbow misspelled elbo",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-034",
+   "subfamily": "deletion",
+   "prompt": "She slipped on ice and twisted her ankl",
+   "typo": "ankl",
+   "intermediates": [
+    "ankle"
+   ],
+   "note": "deletion: ankle misspelled ankl",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-035",
+   "subfamily": "deletion",
+   "prompt": "On the beach we felt a cool breze",
+   "typo": "breze",
+   "intermediates": [
+    "breeze"
+   ],
+   "note": "deletion: breeze misspelled breze",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-036",
+   "subfamily": "deletion",
+   "prompt": "He played a loud note on the trumet",
+   "typo": "trumet",
+   "intermediates": [
+    "trumpet"
+   ],
+   "note": "deletion: trumpet misspelled trumet",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-037",
+   "subfamily": "transposition",
+   "prompt": "The lion is a big wild aminal",
+   "typo": "aminal",
+   "intermediates": [
+    "animal"
+   ],
+   "note": "transposition: animal misspelled aminal",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-038",
+   "subfamily": "transposition",
+   "prompt": "Her kind words touched his haert",
+   "typo": "haert",
+   "intermediates": [
+    "heart"
+   ],
+   "note": "transposition: heart misspelled haert",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-039",
+   "subfamily": "transposition",
+   "prompt": "Her face lit up with a big smlie",
+   "typo": "smlie",
+   "intermediates": [
+    "smile"
+   ],
+   "note": "transposition: smile misspelled smlie",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-040",
+   "subfamily": "transposition",
+   "prompt": "The bicycle had a flat whele",
+   "typo": "whele",
+   "intermediates": [
+    "wheel"
+   ],
+   "note": "transposition: wheel misspelled whele",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-041",
+   "subfamily": "transposition",
+   "prompt": "On Sunday we had roasted chicekn",
+   "typo": "chicekn",
+   "intermediates": [
+    "chicken"
+   ],
+   "note": "transposition: chicken misspelled chicekn",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-042",
+   "subfamily": "transposition",
+   "prompt": "Last night I had a strange draem",
+   "typo": "draem",
+   "intermediates": [
+    "dream"
+   ],
+   "note": "transposition: dream misspelled draem",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-043",
+   "subfamily": "transposition",
+   "prompt": "The team plays its next match on Fridya",
+   "typo": "Fridya",
+   "intermediates": [
+    "Friday"
+   ],
+   "note": "transposition: Friday misspelled Fridya",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-044",
+   "subfamily": "transposition",
+   "prompt": "The shop is closed every Mondya",
+   "typo": "Mondya",
+   "intermediates": [
+    "Monday"
+   ],
+   "note": "transposition: Monday misspelled Mondya",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-045",
+   "subfamily": "transposition",
+   "prompt": "The judge listened to the lawyre",
+   "typo": "lawyre",
+   "intermediates": [
+    "lawyer"
+   ],
+   "note": "transposition: lawyer misspelled lawyre",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-046",
+   "subfamily": "transposition",
+   "prompt": "We built sandcastles on the baech",
+   "typo": "baech",
+   "intermediates": [
+    "beach"
+   ],
+   "note": "transposition: beach misspelled baech",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-047",
+   "subfamily": "transposition",
+   "prompt": "The bees in the hive made sweet hoeny",
+   "typo": "hoeny",
+   "intermediates": [
+    "honey"
+   ],
+   "note": "transposition: honey misspelled hoeny",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-048",
+   "subfamily": "transposition",
+   "prompt": "He dropped his phone and cracked the sceren",
+   "typo": "sceren",
+   "intermediates": [
+    "screen"
+   ],
+   "note": "transposition: screen misspelled sceren",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-049",
+   "subfamily": "transposition",
+   "prompt": "The farmer drove a big red tractro",
+   "typo": "tractro",
+   "intermediates": [
+    "tractor"
+   ],
+   "note": "transposition: tractor misspelled tractro",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-050",
+   "subfamily": "transposition",
+   "prompt": "The old man in the story was a wizrad",
+   "typo": "wizrad",
+   "intermediates": [
+    "wizard"
+   ],
+   "note": "transposition: wizard misspelled wizrad",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-051",
+   "subfamily": "transposition",
+   "prompt": "Into battle rode the brave young kinght",
+   "typo": "kinght",
+   "intermediates": [
+    "knight"
+   ],
+   "note": "transposition: knight misspelled kinght",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-052",
+   "subfamily": "transposition",
+   "prompt": "The king ruled beside his quene",
+   "typo": "quene",
+   "intermediates": [
+    "queen"
+   ],
+   "note": "transposition: queen misspelled quene",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-053",
+   "subfamily": "transposition",
+   "prompt": "She is a very bright studnet",
+   "typo": "studnet",
+   "intermediates": [
+    "student"
+   ],
+   "note": "transposition: student misspelled studnet",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-054",
+   "subfamily": "transposition",
+   "prompt": "At university he studied ancient Roman hsitory",
+   "typo": "hsitory",
+   "intermediates": [
+    "history"
+   ],
+   "note": "transposition: history misspelled hsitory",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-055",
+   "subfamily": "transposition",
+   "prompt": "The sign on the cliff warned of dagner",
+   "typo": "dagner",
+   "intermediates": [
+    "danger"
+   ],
+   "note": "transposition: danger misspelled dagner",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-056",
+   "subfamily": "transposition",
+   "prompt": "Fruit and vegetables keep you helathy",
+   "typo": "helathy",
+   "intermediates": [
+    "healthy"
+   ],
+   "note": "transposition: healthy misspelled helathy",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-057",
+   "subfamily": "transposition",
+   "prompt": "She slipped on the wet stiars",
+   "typo": "stiars",
+   "intermediates": [
+    "stairs"
+   ],
+   "note": "transposition: stairs misspelled stiars",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-058",
+   "subfamily": "transposition",
+   "prompt": "Over the whole room fell a sudden silecne",
+   "typo": "silecne",
+   "intermediates": [
+    "silence"
+   ],
+   "note": "transposition: silence misspelled silecne",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-059",
+   "subfamily": "transposition",
+   "prompt": "The apple fell to the gruond",
+   "typo": "gruond",
+   "intermediates": [
+    "ground"
+   ],
+   "note": "transposition: ground misspelled gruond",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-060",
+   "subfamily": "transposition",
+   "prompt": "Flowers bloom everywhere in the warm sprnig",
+   "typo": "sprnig",
+   "intermediates": [
+    "spring"
+   ],
+   "note": "transposition: spring misspelled sprnig",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-061",
+   "subfamily": "transposition",
+   "prompt": "He chopped up a head of cabbgae",
+   "typo": "cabbgae",
+   "intermediates": [
+    "cabbage"
+   ],
+   "note": "transposition: cabbage misspelled cabbgae",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-062",
+   "subfamily": "transposition",
+   "prompt": "The neighbors complained about the loud nosie",
+   "typo": "nosie",
+   "intermediates": [
+    "noise"
+   ],
+   "note": "transposition: noise misspelled nosie",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-063",
+   "subfamily": "transposition",
+   "prompt": "She put the food on a clean palte",
+   "typo": "palte",
+   "intermediates": [
+    "plate"
+   ],
+   "note": "transposition: plate misspelled palte",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-064",
+   "subfamily": "transposition",
+   "prompt": "The circus had a funny colwn",
+   "typo": "colwn",
+   "intermediates": [
+    "clown"
+   ],
+   "note": "transposition: clown misspelled colwn",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-065",
+   "subfamily": "transposition",
+   "prompt": "The case was heard by a fair jugde",
+   "typo": "jugde",
+   "intermediates": [
+    "judge"
+   ],
+   "note": "transposition: judge misspelled jugde",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-066",
+   "subfamily": "transposition",
+   "prompt": "The frog turned into a handsome pirnce",
+   "typo": "pirnce",
+   "intermediates": [
+    "prince"
+   ],
+   "note": "transposition: prince misspelled pirnce",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-067",
+   "subfamily": "doubling",
+   "prompt": "She read the whole book on her tabblet",
+   "typo": "tabblet",
+   "intermediates": [
+    "tablet"
+   ],
+   "note": "doubling: tablet misspelled tabblet",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-068",
+   "subfamily": "doubling",
+   "prompt": "Under the bed lived a scary monsster",
+   "typo": "monsster",
+   "intermediates": [
+    "monster"
+   ],
+   "note": "doubling: monster misspelled monsster",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-069",
+   "subfamily": "doubling",
+   "prompt": "The old library was completely sillent",
+   "typo": "sillent",
+   "intermediates": [
+    "silent"
+   ],
+   "note": "doubling: silent misspelled sillent",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-070",
+   "subfamily": "doubling",
+   "prompt": "She wore a gold ring on her fingger",
+   "typo": "fingger",
+   "intermediates": [
+    "finger"
+   ],
+   "note": "doubling: finger misspelled fingger",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-071",
+   "subfamily": "doubling",
+   "prompt": "We bought fresh bread at the local bakkery",
+   "typo": "bakkery",
+   "intermediates": [
+    "bakery"
+   ],
+   "note": "doubling: bakery misspelled bakkery",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-072",
+   "subfamily": "doubling",
+   "prompt": "The porter offered to help me carrry",
+   "typo": "carrry",
+   "intermediates": [
+    "carry"
+   ],
+   "note": "doubling: carry misspelled carrry",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-073",
+   "subfamily": "doubling",
+   "prompt": "She sliced a ripe red tommato",
+   "typo": "tommato",
+   "intermediates": [
+    "tomato"
+   ],
+   "note": "doubling: tomato misspelled tommato",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-074",
+   "subfamily": "doubling",
+   "prompt": "The hotel greeted every single visittor",
+   "typo": "visittor",
+   "intermediates": [
+    "visitor"
+   ],
+   "note": "doubling: visitor misspelled visittor",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-075",
+   "subfamily": "doubling",
+   "prompt": "They walked through the cave with a lanttern",
+   "typo": "lanttern",
+   "intermediates": [
+    "lantern"
+   ],
+   "note": "doubling: lantern misspelled lanttern",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-076",
+   "subfamily": "doubling",
+   "prompt": "After the storm we saw a rainbbow",
+   "typo": "rainbbow",
+   "intermediates": [
+    "rainbow"
+   ],
+   "note": "doubling: rainbow misspelled rainbbow",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-077",
+   "subfamily": "doubling",
+   "prompt": "The ship's brave and loyal capttain",
+   "typo": "capttain",
+   "intermediates": [
+    "captain"
+   ],
+   "note": "doubling: captain misspelled capttain",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-078",
+   "subfamily": "doubling",
+   "prompt": "We stored the old boxes in the bassement",
+   "typo": "bassement",
+   "intermediates": [
+    "basement"
+   ],
+   "note": "doubling: basement misspelled bassement",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-079",
+   "subfamily": "doubling",
+   "prompt": "We usually go hiking every Saturrday",
+   "typo": "Saturrday",
+   "intermediates": [
+    "Saturday"
+   ],
+   "note": "doubling: Saturday misspelled Saturrday",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-080",
+   "subfamily": "doubling",
+   "prompt": "Put the ice cream in the freezzer",
+   "typo": "freezzer",
+   "intermediates": [
+    "freezer"
+   ],
+   "note": "doubling: freezer misspelled freezzer",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-081",
+   "subfamily": "doubling",
+   "prompt": "Her wall had a big movie postter",
+   "typo": "postter",
+   "intermediates": [
+    "poster"
+   ],
+   "note": "doubling: poster misspelled postter",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-082",
+   "subfamily": "doubling",
+   "prompt": "We ate breakfast out on the ballcony",
+   "typo": "ballcony",
+   "intermediates": [
+    "balcony"
+   ],
+   "note": "doubling: balcony misspelled ballcony",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-083",
+   "subfamily": "doubling",
+   "prompt": "She had fruit mixed into plain yoggurt",
+   "typo": "yoggurt",
+   "intermediates": [
+    "yogurt"
+   ],
+   "note": "doubling: yogurt misspelled yoggurt",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-084",
+   "subfamily": "doubling",
+   "prompt": "The factory built a tiny robbot",
+   "typo": "robbot",
+   "intermediates": [
+    "robot"
+   ],
+   "note": "doubling: robot misspelled robbot",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-085",
+   "subfamily": "substitution",
+   "prompt": "He rode his shiny new bicicle",
+   "typo": "bicicle",
+   "intermediates": [
+    "bicycle"
+   ],
+   "note": "substitution: bicycle misspelled bicicle",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-086",
+   "subfamily": "substitution",
+   "prompt": "He poured cold milk on his cerial",
+   "typo": "cerial",
+   "intermediates": [
+    "cereal"
+   ],
+   "note": "substitution: cereal misspelled cerial",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-087",
+   "subfamily": "substitution",
+   "prompt": "At the aquarium we saw a playful dolphen",
+   "typo": "dolphen",
+   "intermediates": [
+    "dolphin"
+   ],
+   "note": "substitution: dolphin misspelled dolphen",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-088",
+   "subfamily": "substitution",
+   "prompt": "The clock hung on top of the tallest towar",
+   "typo": "towar",
+   "intermediates": [
+    "tower"
+   ],
+   "note": "substitution: tower misspelled towar",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-089",
+   "subfamily": "substitution",
+   "prompt": "The cows were milked by the farmar",
+   "typo": "farmar",
+   "intermediates": [
+    "farmer"
+   ],
+   "note": "substitution: farmer misspelled farmar",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-090",
+   "subfamily": "substitution",
+   "prompt": "Smoke rose from the brick chimmey",
+   "typo": "chimmey",
+   "intermediates": [
+    "chimney"
+   ],
+   "note": "substitution: chimney misspelled chimmey",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-091",
+   "subfamily": "substitution",
+   "prompt": "She practiced for hours on her violen",
+   "typo": "violen",
+   "intermediates": [
+    "violin"
+   ],
+   "note": "substitution: violin misspelled violen",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-092",
+   "subfamily": "substitution",
+   "prompt": "The well water was drawn in a buckit",
+   "typo": "buckit",
+   "intermediates": [
+    "bucket"
+   ],
+   "note": "substitution: bucket misspelled buckit",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-093",
+   "subfamily": "substitution",
+   "prompt": "At Thanksgiving we ate roast turkay",
+   "typo": "turkay",
+   "intermediates": [
+    "turkey"
+   ],
+   "note": "substitution: turkey misspelled turkay",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-094",
+   "subfamily": "substitution",
+   "prompt": "He visited his aunt and his unkle",
+   "typo": "unkle",
+   "intermediates": [
+    "uncle"
+   ],
+   "note": "substitution: uncle misspelled unkle",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-095",
+   "subfamily": "substitution",
+   "prompt": "The sauce was seasoned with garlik",
+   "typo": "garlik",
+   "intermediates": [
+    "garlic"
+   ],
+   "note": "substitution: garlic misspelled garlik",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-096",
+   "subfamily": "substitution",
+   "prompt": "On the warm rock sat a small green lizerd",
+   "typo": "lizerd",
+   "intermediates": [
+    "lizard"
+   ],
+   "note": "substitution: lizard misspelled lizerd",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-097",
+   "subfamily": "substitution",
+   "prompt": "The cookies were flavored with ginjer",
+   "typo": "ginjer",
+   "intermediates": [
+    "ginger"
+   ],
+   "note": "substitution: ginger misspelled ginjer",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-098",
+   "subfamily": "substitution",
+   "prompt": "Crumbs on the bench attracted a hungry pigion",
+   "typo": "pigion",
+   "intermediates": [
+    "pigeon"
+   ],
+   "note": "substitution: pigeon misspelled pigion",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-099",
+   "subfamily": "substitution",
+   "prompt": "He chopped carrots, onions and celary",
+   "typo": "celary",
+   "intermediates": [
+    "celery"
+   ],
+   "note": "substitution: celery misspelled celary",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-100",
+   "subfamily": "substitution",
+   "prompt": "On his hot dog he spread yellow mustord",
+   "typo": "mustord",
+   "intermediates": [
+    "mustard"
+   ],
+   "note": "substitution: mustard misspelled mustord",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-101",
+   "subfamily": "substitution",
+   "prompt": "The river carved a deep canyen",
+   "typo": "canyen",
+   "intermediates": [
+    "canyon"
+   ],
+   "note": "substitution: canyon misspelled canyen",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-102",
+   "subfamily": "substitution",
+   "prompt": "Smoke poured out of the volcono",
+   "typo": "volcono",
+   "intermediates": [
+    "volcano"
+   ],
+   "note": "substitution: volcano misspelled volcono",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-103",
+   "subfamily": "substitution",
+   "prompt": "She wrapped a thick wool scorf",
+   "typo": "scorf",
+   "intermediates": [
+    "scarf"
+   ],
+   "note": "substitution: scarf misspelled scorf",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-104",
+   "subfamily": "substitution",
+   "prompt": "The needle stuck to the magnit",
+   "typo": "magnit",
+   "intermediates": [
+    "magnet"
+   ],
+   "note": "substitution: magnet misspelled magnit",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-105",
+   "subfamily": "substitution",
+   "prompt": "He drank the milky water from a cocanut",
+   "typo": "cocanut",
+   "intermediates": [
+    "coconut"
+   ],
+   "note": "substitution: coconut misspelled cocanut",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-106",
+   "subfamily": "substitution",
+   "prompt": "The sailors dropped the ship's heavy ancher",
+   "typo": "ancher",
+   "intermediates": [
+    "anchor"
+   ],
+   "note": "substitution: anchor misspelled ancher",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-107",
+   "subfamily": "substitution",
+   "prompt": "A red-breasted bird sang, the robon",
+   "typo": "robon",
+   "intermediates": [
+    "robin"
+   ],
+   "note": "substitution: robin misspelled robon",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-108",
+   "subfamily": "substitution",
+   "prompt": "He wrote on the whiteboard with a markar",
+   "typo": "markar",
+   "intermediates": [
+    "marker"
+   ],
+   "note": "substitution: marker misspelled markar",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-109",
+   "subfamily": "phonetic",
+   "prompt": "The ringing made her pick up the fone",
+   "typo": "fone",
+   "intermediates": [
+    "phone"
+   ],
+   "note": "phonetic: phone misspelled fone",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-110",
+   "subfamily": "phonetic",
+   "prompt": "Please read aloud the next sentance",
+   "typo": "sentance",
+   "intermediates": [
+    "sentence"
+   ],
+   "note": "phonetic: sentence misspelled sentance",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-111",
+   "subfamily": "phonetic",
+   "prompt": "After all the help she felt very greatful",
+   "typo": "greatful",
+   "intermediates": [
+    "grateful"
+   ],
+   "note": "phonetic: grateful misspelled greatful",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-112",
+   "subfamily": "phonetic",
+   "prompt": "He stepped on the scale to check his wayt",
+   "typo": "wayt",
+   "intermediates": [
+    "weight"
+   ],
+   "note": "phonetic: weight misspelled wayt",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-113",
+   "subfamily": "phonetic",
+   "prompt": "Our monthly meeting is held next Thersday",
+   "typo": "Thersday",
+   "intermediates": [
+    "Thursday"
+   ],
+   "note": "phonetic: Thursday misspelled Thersday",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-114",
+   "subfamily": "phonetic",
+   "prompt": "Broccoli is a very healthy vegtable",
+   "typo": "vegtable",
+   "intermediates": [
+    "vegetable"
+   ],
+   "note": "phonetic: vegetable misspelled vegtable",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-115",
+   "subfamily": "phonetic",
+   "prompt": "The old house was haunted by a gost",
+   "typo": "gost",
+   "intermediates": [
+    "ghost"
+   ],
+   "note": "phonetic: ghost misspelled gost",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-116",
+   "subfamily": "phonetic",
+   "prompt": "I took a pill for my headake",
+   "typo": "headake",
+   "intermediates": [
+    "headache"
+   ],
+   "note": "phonetic: headache misspelled headake",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-117",
+   "subfamily": "phonetic",
+   "prompt": "He hit a nail and hurt his thum",
+   "typo": "thum",
+   "intermediates": [
+    "thumb"
+   ],
+   "note": "phonetic: thumb misspelled thum",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-118",
+   "subfamily": "phonetic",
+   "prompt": "She got top marks in kemistry",
+   "typo": "kemistry",
+   "intermediates": [
+    "chemistry"
+   ],
+   "note": "phonetic: chemistry misspelled kemistry",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-119",
+   "subfamily": "phonetic",
+   "prompt": "It was a long and tiring jerney",
+   "typo": "jerney",
+   "intermediates": [
+    "journey"
+   ],
+   "note": "phonetic: journey misspelled jerney",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  },
+  {
+   "name": "v3-ty-a-120",
+   "subfamily": "phonetic",
+   "prompt": "She bought a toy for her nefew",
+   "typo": "nefew",
+   "intermediates": [
+    "nephew"
+   ],
+   "note": "phonetic: nephew misspelled nefew",
+   "family": "typo",
+   "source": "S24 val3 (Sonnet-authored from jle x90 briefs)",
+   "verified": false,
+   "target_in_bench": false,
+   "fresh_target": true,
+   "fresh_answer": true,
+   "split": "val3",
+   "consistency": null
+  }
+ ]
+}

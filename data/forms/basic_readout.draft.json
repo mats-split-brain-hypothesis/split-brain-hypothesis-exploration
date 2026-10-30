@@ -1,0 +1,334 @@
+{
+ "meta": {
+  "model": "anthropic/claude-haiku-5.5",
+  "built": "2026-10-11",
+  "rule": "inflections",
+  "spend_usd": 0.001,
+  "note": "unpinned model's draft, reviewed by hand; edit freely, a rebuild keeps existing keys"
+ },
+ "forms": {
+  "13|thirteen": [
+   "thirteens",
+   "thirteenth",
+   "thirteenths"
+  ],
+  "18|eighteen": [
+   "eighteens"
+  ],
+  "1|one": [
+   "ones"
+  ],
+  "2|two": [
+   "second",
+   "seconds",
+   "twos"
+  ],
+  "3|three": [
+   "threes"
+  ],
+  "4|four": [
+   "fours",
+   "fourth",
+   "fourths"
+  ],
+  "5|five": [
+   "fifth",
+   "fifths",
+   "fives"
+  ],
+  "6|six": [
+   "sixed",
+   "sixes",
+   "sixing"
+  ],
+  "7|seven": [
+   "sevens",
+   "seventh",
+   "sevenths"
+  ],
+  "8|eight": [
+   "eighth",
+   "eighths",
+   "eights"
+  ],
+  "9|ten": [
+   "nine",
+   "nines",
+   "tens"
+  ],
+  "apple": [
+   "apples"
+  ],
+  "april": [
+   "aprils"
+  ],
+  "argentina": [],
+  "august": [
+   "augusts"
+  ],
+  "australia": [],
+  "austria": [],
+  "autumn": [
+   "autumns"
+  ],
+  "baseball": [
+   "baseballs"
+  ],
+  "basketball": [
+   "basketballs"
+  ],
+  "belgium": [],
+  "bell": [
+   "bells"
+  ],
+  "blue": [
+   "bluer",
+   "blues",
+   "bluest"
+  ],
+  "boxing": [
+   "box",
+   "boxed",
+   "boxer",
+   "boxers",
+   "boxes"
+  ],
+  "brazil": [],
+  "cambodia": [],
+  "canada": [],
+  "cello": [
+   "cellos"
+  ],
+  "chile": [],
+  "china": [],
+  "chocolate": [
+   "chocolates"
+  ],
+  "christmas": [
+   "christmases"
+  ],
+  "cuba": [],
+  "cycling": [
+   "cycle",
+   "cycled",
+   "cycles"
+  ],
+  "d": [
+   "ds"
+  ],
+  "december": [],
+  "denmark": [],
+  "dog": [
+   "dogs"
+  ],
+  "dragon": [
+   "dragons"
+  ],
+  "drums": [
+   "drum"
+  ],
+  "egypt": [],
+  "england": [],
+  "ethiopia": [],
+  "february": [
+   "februaries",
+   "februarys"
+  ],
+  "fiji": [],
+  "football": [
+   "footballs"
+  ],
+  "france": [],
+  "french": [],
+  "friday": [
+   "fridays"
+  ],
+  "g": [
+   "gs"
+  ],
+  "germany": [],
+  "ghana": [],
+  "gold": [
+   "golds"
+  ],
+  "golf": [
+   "golfed",
+   "golfer",
+   "golfers",
+   "golfing",
+   "golfs"
+  ],
+  "greece": [],
+  "guitar": [
+   "guitars"
+  ],
+  "hockey": [
+   "hockeys"
+  ],
+  "india": [],
+  "indonesia": [],
+  "ireland": [],
+  "iron": [
+   "ironed",
+   "ironing",
+   "irons"
+  ],
+  "italian": [],
+  "italy": [],
+  "january": [
+   "januaries",
+   "januarys"
+  ],
+  "japan": [],
+  "japanese": [],
+  "jazz": [],
+  "jordan": [],
+  "july": [
+   "julys"
+  ],
+  "june": [
+   "junes"
+  ],
+  "kenya": [],
+  "mali": [],
+  "march": [
+   "marched",
+   "marches",
+   "marching"
+  ],
+  "may": [
+   "mays"
+  ],
+  "mexico": [],
+  "monday": [
+   "mondays"
+  ],
+  "morocco": [],
+  "n": [
+   "ns"
+  ],
+  "netherlands": [],
+  "november": [],
+  "oak": [
+   "oaken",
+   "oaks"
+  ],
+  "october": [],
+  "octopus": [
+   "octopi",
+   "octopuses"
+  ],
+  "orion": [],
+  "owl": [
+   "owls"
+  ],
+  "pepperoni": [],
+  "peru": [],
+  "piano": [
+   "pianos"
+  ],
+  "poker": [
+   "poke",
+   "poked",
+   "pokers",
+   "pokes",
+   "poking"
+  ],
+  "poland": [],
+  "portugal": [],
+  "python": [],
+  "queen": [
+   "queens"
+  ],
+  "rose": [
+   "rosed",
+   "roses",
+   "rosing"
+  ],
+  "russia": [],
+  "russian": [],
+  "s": [
+   "ss"
+  ],
+  "salsa": [],
+  "saturday": [
+   "saturdays"
+  ],
+  "sci-fi": [],
+  "science": [],
+  "september": [
+   "septembers"
+  ],
+  "sneakers": [
+   "sneaker"
+  ],
+  "soccer": [
+   "soccers"
+  ],
+  "spain": [],
+  "spanish": [],
+  "spongebob": [],
+  "spring": [
+   "sprang",
+   "springing",
+   "springs",
+   "sprung"
+  ],
+  "strawberry": [
+   "strawberries"
+  ],
+  "summer": [
+   "summers"
+  ],
+  "sunday": [
+   "sundays"
+  ],
+  "sunny": [
+   "sunnier",
+   "sunnies",
+   "sunniest"
+  ],
+  "sweden": [],
+  "swimming": [
+   "swam",
+   "swim",
+   "swims",
+   "swum"
+  ],
+  "t": [],
+  "tanzania": [],
+  "tennis": [],
+  "thailand": [],
+  "thursday": [
+   "thursdays"
+  ],
+  "tomato": [
+   "tomatoes"
+  ],
+  "trumpet": [
+   "trumpets"
+  ],
+  "tuesday": [
+   "tuesdays"
+  ],
+  "tunisia": [],
+  "twenty": [
+   "twenties"
+  ],
+  "vietnam": [],
+  "violin": [
+   "violins"
+  ],
+  "wednesday": [
+   "wednesdays"
+  ],
+  "winter": [
+   "winters"
+  ],
+  "wrestling": [
+   "wrestle",
+   "wrestled",
+   "wrestles"
+  ]
+ }
+}

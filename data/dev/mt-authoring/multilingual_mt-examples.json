@@ -1,0 +1,211 @@
+[
+ {
+  "name": "mlh-id-cacar-air",
+  "subfamily": "fwd",
+  "prompt": "Penyakit menular yang sering menyerang anak-anak dan menimbulkan bintil kecil berisi cairan di sekujur tubuh disebut",
+  "target": "cacar air",
+  "target_alts": [
+   "cacar air",
+   "varisela"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "lang": "id",
+  "intermediates": [
+   "chicken pox"
+  ],
+  "units": [
+   {
+    "role": "concept",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "chicken pox",
+      "chickenpox"
+     ],
+     "zh": [
+      "水痘"
+     ]
+    },
+    "match": [
+     "chicken pox",
+     "chickenpox",
+     "水痘"
+    ]
+   },
+   {
+    "role": "language",
+    "required": true,
+    "multi_token": false,
+    "forms": {
+     "en": [
+      "Indonesian"
+     ],
+     "zh": [
+      "印尼语",
+      "印度尼西亚语"
+     ],
+     "id": [
+      "cacar air",
+      "varisela"
+     ]
+    },
+    "match": [
+     "Indonesian",
+     "印尼语",
+     "印度尼西亚语",
+     "cacar air",
+     "varisela"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "mlh-vi-neckscarf",
+  "subfamily": "fwd",
+  "prompt": "Vào mùa đông giá rét, để giữ ấm phần dưới cằm, người ta thường quấn quanh mình một chiếc",
+  "target": "khăn quàng cổ",
+  "target_alts": [
+   "khăn choàng cổ",
+   "khăn quàng"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "lang": "vi",
+  "intermediates": [
+   "neck scarf"
+  ],
+  "units": [
+   {
+    "role": "concept",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "neck scarf",
+      "winter scarf"
+     ],
+     "zh": [
+      "围巾",
+      "颈巾"
+     ]
+    },
+    "match": [
+     "neck scarf",
+     "winter scarf",
+     "围巾",
+     "颈巾"
+    ]
+   },
+   {
+    "role": "language",
+    "required": true,
+    "multi_token": false,
+    "forms": {
+     "en": [
+      "Vietnamese"
+     ],
+     "zh": [
+      "越南语"
+     ],
+     "vi": [
+      "khăn quàng cổ",
+      "khăn choàng cổ"
+     ]
+    },
+    "match": [
+     "Vietnamese",
+     "越南语",
+     "khăn quàng cổ",
+     "khăn choàng cổ"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "mlh-id-hailstone",
+  "subfamily": "fwd",
+  "prompt": "Butiran padat membeku yang berjatuhan dari awan badai dan kadang merusak atap seng warga disebut",
+  "target": "hujan es",
+  "target_alts": [
+   "butiran hujan es",
+   "hujan batu es"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "lang": "id",
+  "intermediates": [
+   "hailstone"
+  ],
+  "units": [
+   {
+    "role": "concept",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "hailstone",
+      "hail shower"
+     ],
+     "zh": [
+      "冰雹",
+      "雹子"
+     ]
+    },
+    "match": [
+     "hailstone",
+     "hail shower",
+     "冰雹",
+     "雹子"
+    ]
+   },
+   {
+    "role": "language",
+    "required": true,
+    "multi_token": false,
+    "forms": {
+     "en": [
+      "Indonesian"
+     ],
+     "zh": [
+      "印尼语",
+      "印度尼西亚语"
+     ],
+     "id": [
+      "hujan es",
+      "hujan batu es"
+     ]
+    },
+    "match": [
+     "Indonesian",
+     "印尼语",
+     "印度尼西亚语",
+     "hujan es",
+     "hujan batu es"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ }
+]

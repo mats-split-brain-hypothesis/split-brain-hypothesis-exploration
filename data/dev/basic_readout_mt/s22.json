@@ -1,0 +1,1310 @@
+{
+ "family": "basic-readout-hard",
+ "parent_family": "basic-readout-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": false,
+  "conjunctive_units": true
+ },
+ "source": "experiments/s22_bank.py (family formats, random no_robots fills)",
+ "split": "s22",
+ "gate": "Qwen3.6-27B: the bench's gate question, greedy correct and >= 8/10 at T=0.7; graded by anthropic/claude-haiku-5.5 with the bench's grading prompt",
+ "items": [
+  {
+   "name": "s22-basic_readout_mt-00",
+   "subfamily": "entity",
+   "prompt": "Compose an expressionist stream of consciousness conversation about lasagna, a",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-01",
+   "subfamily": "entity",
+   "prompt": "Convert the tips about seeing bears in residential areas of",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-02",
+   "subfamily": "entity",
+   "prompt": "Patrick is a chatbot that thinks",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-03",
+   "subfamily": "entity",
+   "prompt": "DeSantis is expected to formally announce his presidential candidacy after the end of the",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-04",
+   "subfamily": "entity",
+   "prompt": "We rely on the forward-looking combination of",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-05",
+   "subfamily": "entity",
+   "prompt": "I especially appreciate your",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-06",
+   "subfamily": "entity",
+   "prompt": "It offers prompts, suggests alternatives to overused phrases, and",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-07",
+   "subfamily": "entity",
+   "prompt": "In the extreme case, females return to the",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-08",
+   "subfamily": "entity",
+   "prompt": "To serve, spoon the polenta into shallow bowls and",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-09",
+   "subfamily": "entity",
+   "prompt": "I can tell there are patterns to be",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-10",
+   "subfamily": "entity",
+   "prompt": "This only occurs if the bee is",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-11",
+   "subfamily": "entity",
+   "prompt": "That doesn’t mean adults shouldn’t get",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-12",
+   "subfamily": "entity",
+   "prompt": "Create a summary that explains why Austalian Shepards are not the pet for",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-13",
+   "subfamily": "entity",
+   "prompt": "Jacob is skeptical but accepts",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-14",
+   "subfamily": "entity",
+   "prompt": "Tell me about the TV",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-15",
+   "subfamily": "entity",
+   "prompt": "The interviewer is a dainty,",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-16",
+   "subfamily": "entity",
+   "prompt": "Ability to plan and",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-17",
+   "subfamily": "entity",
+   "prompt": "Carrie is a chatbot that gives career guidance",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-18",
+   "subfamily": "entity",
+   "prompt": "Make it heartwarming and",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-19",
+   "subfamily": "entity",
+   "prompt": "And Taylor missed this more than",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-20",
+   "subfamily": "entity",
+   "prompt": "Make the letter emphasize a",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-21",
+   "subfamily": "entity",
+   "prompt": "Summarize the negative points",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-22",
+   "subfamily": "entity",
+   "prompt": "Create a help-wanted classified ad for a replacement to fill his",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-basic_readout_mt-23",
+   "subfamily": "entity",
+   "prompt": "Include a bulleted list of things to think about after",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  }
+ ]
+}

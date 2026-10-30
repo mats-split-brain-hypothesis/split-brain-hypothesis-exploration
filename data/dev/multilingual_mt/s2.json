@@ -1,0 +1,158 @@
+{
+ "family": "multilingual-hard",
+ "parent_family": "multilingual-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": false,
+  "conjunctive_units": true
+ },
+ "source": "experiments/s2_bank.py (hand-authored neutral fills)",
+ "split": "s2",
+ "gate": "Qwen3.6-27B: the bench's gate question, greedy correct and >= 8/10 at T=0.7; graded by anthropic/claude-haiku-5.5 with the bench's grading prompt",
+ "items": [
+  {
+   "name": "s2-multilingual_mt-neutral-00",
+   "prompt": "Прибор для измерения температуры тела называется",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-01",
+   "prompt": "Фигура с тремя сторонами и тремя углами называется",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-02",
+   "prompt": "Ngọn núi có miệng phun ra dung nham nóng chảy được gọi là",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-03",
+   "prompt": "Dải màu xuất hiện trên bầu trời sau cơn mưa khi có nắng được gọi là",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-04",
+   "prompt": "Alat yang digunakan untuk menentukan arah utara disebut",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-05",
+   "prompt": "Benda yang dipakai untuk melindungi diri dari hujan saat berjalan disebut",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-06",
+   "prompt": "Uzaktaki yıldızları büyüterek gösteren aletin adı",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-07",
+   "prompt": "Yüksek yerlere çıkmak için kullanılan basamaklı aracın adı",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-08",
+   "prompt": "العضو الذي ينقي الدم من الفضلات في جسم الإنسان يسمى",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-09",
+   "prompt": "قطعة المعدن التي تجذب الحديد إليها تسمى",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-10",
+   "prompt": "Η μεγάλη μάζα πάγου που κινείται αργά στις πλαγιές των βουνών λέγεται",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-11",
+   "prompt": "Το όργανο που μετρά την ατμοσφαιρική πίεση λέγεται",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-12",
+   "prompt": "Sairauksilta suojaava, ihoon pistettävä valmiste on nimeltään",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-13",
+   "prompt": "Laite, jolla hyvin pieniä asioita katsotaan suurennettuina, on nimeltään",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-14",
+   "prompt": "Urządzenie, które pokazuje aktualną godzinę, nazywa się",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-15",
+   "prompt": "Najmniejsza cząstka pierwiastka chemicznego to",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-16",
+   "prompt": "המכשיר שמשמש לחישוב מספרים נקרא",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-17",
+   "prompt": "הכוכב שסביבו מסתובב כדור הארץ נקרא",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-18",
+   "prompt": "물이 얼어서 생긴 단단한 고체를 부르는 말은",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-19",
+   "prompt": "높은 곳에서 물이 아래로 떨어지는 곳을 부르는 말은",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-20",
+   "prompt": "A szívből a test felé vért szállító eret úgy hívják, hogy",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-21",
+   "prompt": "Az a szerszám, amellyel szöget verünk a falba, a",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-22",
+   "prompt": "Kifaa kinachotumika kupima uzito wa vitu kinaitwa",
+   "condition": "neutral",
+   "split": "s2"
+  },
+  {
+   "name": "s2-multilingual_mt-neutral-23",
+   "prompt": "Chombo kinachotumika kupima joto la hewa kinaitwa",
+   "condition": "neutral",
+   "split": "s2"
+  }
+ ]
+}

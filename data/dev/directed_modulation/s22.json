@@ -1,0 +1,584 @@
+{
+ "family": "directed_modulation",
+ "split": "s22",
+ "source": "experiments/s22_bank.py (family formats, random no_robots fills)",
+ "gate": "Qwen3.6-27B: greedy copies the carrier, >= 8/10 samples at T=0.7 copy it, no reply mentions the concept; a pair needs both twins",
+ "items": [
+  {
+   "name": "s22-directed_modulation-00",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-00",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "It is unclear when that image was taken.",
+   "prompt": "Now write exactly this sentence: \"It is unclear when that image was taken.\"",
+   "assistant": "It is unclear when that image was taken.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "It is unclear when that image was taken."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-01",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-01",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "Jack was terrified and went and hid inside.",
+   "prompt": "Now write exactly this sentence: \"Jack was terrified and went and hid inside.\"",
+   "assistant": "Jack was terrified and went and hid inside.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "Jack was terrified and went and hid inside."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-02",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-02",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "The texture of my skin is very smooth now and the scars from the acne on my cheeks is slowly fading.",
+   "prompt": "Now write exactly this sentence: \"The texture of my skin is very smooth now and the scars from the acne on my cheeks is slowly fading.\"",
+   "assistant": "The texture of my skin is very smooth now and the scars from the acne on my cheeks is slowly fading.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "The texture of my skin is very smooth now and the scars from the acne on my cheeks is slowly fading."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-03",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-03",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "Johnny is a chatbot that responds with a depressing fact to every response.",
+   "prompt": "Now write exactly this sentence: \"Johnny is a chatbot that responds with a depressing fact to every response.\"",
+   "assistant": "Johnny is a chatbot that responds with a depressing fact to every response.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "Johnny is a chatbot that responds with a depressing fact to every response."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-04",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-04",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "But they rarely pose a threat to humans.",
+   "prompt": "Now write exactly this sentence: \"But they rarely pose a threat to humans.\"",
+   "assistant": "But they rarely pose a threat to humans.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "But they rarely pose a threat to humans."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-05",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-05",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "I understand how frustrating this must have been for you.",
+   "prompt": "Now write exactly this sentence: \"I understand how frustrating this must have been for you.\"",
+   "assistant": "I understand how frustrating this must have been for you.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "I understand how frustrating this must have been for you."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-06",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-06",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "We began to feel like we had a chance to survive these dark days.",
+   "prompt": "Now write exactly this sentence: \"We began to feel like we had a chance to survive these dark days.\"",
+   "assistant": "We began to feel like we had a chance to survive these dark days.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "We began to feel like we had a chance to survive these dark days."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-07",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-07",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "Publicly, Eleanor did not criticize this internment.",
+   "prompt": "Now write exactly this sentence: \"Publicly, Eleanor did not criticize this internment.\"",
+   "assistant": "Publicly, Eleanor did not criticize this internment.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "Publicly, Eleanor did not criticize this internment."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-08",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-08",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "One dog’s name is Astro and the other dog is named Scout.",
+   "prompt": "Now write exactly this sentence: \"One dog’s name is Astro and the other dog is named Scout.\"",
+   "assistant": "One dog’s name is Astro and the other dog is named Scout.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "One dog’s name is Astro and the other dog is named Scout."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-09",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-09",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "I need potential ideas for sustainable, eco-friendly packaging materials.",
+   "prompt": "Now write exactly this sentence: \"I need potential ideas for sustainable, eco-friendly packaging materials.\"",
+   "assistant": "I need potential ideas for sustainable, eco-friendly packaging materials.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "I need potential ideas for sustainable, eco-friendly packaging materials."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-10",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-10",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "Summarize the information in this article about Ellen Terry.",
+   "prompt": "Now write exactly this sentence: \"Summarize the information in this article about Ellen Terry.\"",
+   "assistant": "Summarize the information in this article about Ellen Terry.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "Summarize the information in this article about Ellen Terry."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-11",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-11",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "He tries to recognize her and asks her what she needs and invites her inside.",
+   "prompt": "Now write exactly this sentence: \"He tries to recognize her and asks her what she needs and invites her inside.\"",
+   "assistant": "He tries to recognize her and asks her what she needs and invites her inside.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "He tries to recognize her and asks her what she needs and invites her inside."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-12",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-12",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "Capitalize the letter C if the word starts with C.",
+   "prompt": "Now write exactly this sentence: \"Capitalize the letter C if the word starts with C.\"",
+   "assistant": "Capitalize the letter C if the word starts with C.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "Capitalize the letter C if the word starts with C."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-13",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-13",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "Include headings for each section of the article.",
+   "prompt": "Now write exactly this sentence: \"Include headings for each section of the article.\"",
+   "assistant": "Include headings for each section of the article.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "Include headings for each section of the article."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-14",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-14",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "Create a children’s nursery rhyme about bunnies.",
+   "prompt": "Now write exactly this sentence: \"Create a children’s nursery rhyme about bunnies.\"",
+   "assistant": "Create a children’s nursery rhyme about bunnies.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "Create a children’s nursery rhyme about bunnies."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-15",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-15",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "He joins an engineer, Samantha, in the communal eating area.",
+   "prompt": "Now write exactly this sentence: \"He joins an engineer, Samantha, in the communal eating area.\"",
+   "assistant": "He joins an engineer, Samantha, in the communal eating area.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "He joins an engineer, Samantha, in the communal eating area."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-16",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-16",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "I am looking to get into the YouTube scene.",
+   "prompt": "Now write exactly this sentence: \"I am looking to get into the YouTube scene.\"",
+   "assistant": "I am looking to get into the YouTube scene.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "I am looking to get into the YouTube scene."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-17",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-17",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "Harold is a chatbot that will make any conversation extremely mellow, easy-going, and peaceful.",
+   "prompt": "Now write exactly this sentence: \"Harold is a chatbot that will make any conversation extremely mellow, easy-going, and peaceful.\"",
+   "assistant": "Harold is a chatbot that will make any conversation extremely mellow, easy-going, and peaceful.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "Harold is a chatbot that will make any conversation extremely mellow, easy-going, and peaceful."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-18",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-18",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "Warm pockets of air then flow toward colder regions, generating winds.",
+   "prompt": "Now write exactly this sentence: \"Warm pockets of air then flow toward colder regions, generating winds.\"",
+   "assistant": "Warm pockets of air then flow toward colder regions, generating winds.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "Warm pockets of air then flow toward colder regions, generating winds."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-19",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-19",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "I’ve got enough to pay the bills, buy food etc.",
+   "prompt": "Now write exactly this sentence: \"I’ve got enough to pay the bills, buy food etc.\"",
+   "assistant": "I’ve got enough to pay the bills, buy food etc.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "I’ve got enough to pay the bills, buy food etc."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-20",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-20",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "Each adventure begins with them needing to find a ship and the adventure ends with their ship being destroyed, captured, or lost.",
+   "prompt": "Now write exactly this sentence: \"Each adventure begins with them needing to find a ship and the adventure ends with their ship being destroyed, captured, or lost.\"",
+   "assistant": "Each adventure begins with them needing to find a ship and the adventure ends with their ship being destroyed, captured, or lost.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "Each adventure begins with them needing to find a ship and the adventure ends with their ship being destroyed, captured, or lost."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-21",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-21",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "Please use a friendly and conversational tone.",
+   "prompt": "Now write exactly this sentence: \"Please use a friendly and conversational tone.\"",
+   "assistant": "Please use a friendly and conversational tone.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "Please use a friendly and conversational tone."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-22",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-22",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "Give me a reason why I cannot return this item.",
+   "prompt": "Now write exactly this sentence: \"Give me a reason why I cannot return this item.\"",
+   "assistant": "Give me a reason why I cannot return this item.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "Give me a reason why I cannot return this item."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-directed_modulation-23",
+   "subfamily": "pair",
+   "pair_id": "s22-directed_modulation-23",
+   "polarity": "none",
+   "concept": "",
+   "carrier": "Atticus interrupts the meeting to report that Tom Robinson had been killed in an escape attempt.",
+   "prompt": "Now write exactly this sentence: \"Atticus interrupts the meeting to report that Tom Robinson had been killed in an escape attempt.\"",
+   "assistant": "Atticus interrupts the meeting to report that Tom Robinson had been killed in an escape attempt.",
+   "units": [],
+   "answer": {
+    "accepted": [
+     "Atticus interrupts the meeting to report that Tom Robinson had been killed in an escape attempt."
+    ]
+   },
+   "source": "jlm-dev-dm-v1",
+   "gate_variant": "chat_dm",
+   "eval_render": "chat_dm",
+   "readout": {
+    "kind": "writing_positions"
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  }
+ ]
+}

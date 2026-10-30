@@ -1,0 +1,2091 @@
+{
+ "family": "typo-hard",
+ "parent_family": "typo-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": false,
+  "conjunctive_units": true
+ },
+ "source": "jlm-dev-mt-v1",
+ "split": "val",
+ "gate": "Qwen3.6-27B: the bench's gate question, greedy correct and >= 8/10 at T=0.7; graded by anthropic/claude-haiku-5.5 with the bench's grading prompt",
+ "items": [
+  {
+   "name": "dev-tymt-095",
+   "subfamily": "arith",
+   "prompt": "196 + 389 = 558",
+   "typo_word": "558",
+   "target": "585",
+   "target_alts": [],
+   "intermediates": [
+    "585"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "585"
+      ]
+     },
+     "match": [
+      "585"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-096",
+   "subfamily": "arith",
+   "prompt": "64 × 9 = 567",
+   "typo_word": "567",
+   "target": "576",
+   "target_alts": [],
+   "intermediates": [
+    "576"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "576"
+      ]
+     },
+     "match": [
+      "576"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-092",
+   "subfamily": "arith",
+   "prompt": "351 + 286 = 673",
+   "typo_word": "673",
+   "target": "637",
+   "target_alts": [],
+   "intermediates": [
+    "637"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "637"
+      ]
+     },
+     "match": [
+      "637"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-086",
+   "subfamily": "arith",
+   "prompt": "237 + 145 = 328",
+   "typo_word": "328",
+   "target": "382",
+   "target_alts": [],
+   "intermediates": [
+    "382"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "382"
+      ]
+     },
+     "match": [
+      "382"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-100",
+   "subfamily": "arith",
+   "prompt": "528 + 186 = 741",
+   "typo_word": "741",
+   "target": "714",
+   "target_alts": [],
+   "intermediates": [
+    "714"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "714"
+      ]
+     },
+     "match": [
+      "714"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-094",
+   "subfamily": "arith",
+   "prompt": "221 × 2 = 424",
+   "typo_word": "424",
+   "target": "442",
+   "target_alts": [],
+   "intermediates": [
+    "442"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "442"
+      ]
+     },
+     "match": [
+      "442"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-016",
+   "subfamily": "novel",
+   "prompt": "The percussion instrument made of tuned wooden bars laid out like a piano keyboard and struck with mallets is the xylophnoe",
+   "typo_word": "xylophnoe",
+   "target": "xylophone",
+   "target_alts": [],
+   "intermediates": [
+    "xylophone"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "xylophone"
+      ]
+     },
+     "match": [
+      "xylophone"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-018",
+   "subfamily": "novel",
+   "prompt": "The lizard famous for changing the colour of its skin and swivelling each eye independently is the chamelon",
+   "typo_word": "chamelon",
+   "target": "chameleon",
+   "target_alts": [
+    "chamaeleon"
+   ],
+   "intermediates": [
+    "chameleon"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "chameleon",
+       "chamaeleon"
+      ]
+     },
+     "match": [
+      "chameleon",
+      "chamaeleon"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-034",
+   "subfamily": "novel",
+   "prompt": "The Russian composer of Swan Lake, The Nutcracker and the 1812 Overture was Pyotr Ilyich Tchaikovksy",
+   "typo_word": "Tchaikovksy",
+   "target": "Tchaikovsky",
+   "target_alts": [],
+   "intermediates": [
+    "Tchaikovsky"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Tchaikovsky"
+      ]
+     },
+     "match": [
+      "Tchaikovsky"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-021",
+   "subfamily": "novel",
+   "prompt": "The soft white Italian cheese made from water-buffalo milk that melts over a Neapolitan margherita pizza is mozzerella",
+   "typo_word": "mozzerella",
+   "target": "mozzarella",
+   "target_alts": [],
+   "intermediates": [
+    "mozzarella"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "mozzarella"
+      ]
+     },
+     "match": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-042",
+   "subfamily": "novel",
+   "prompt": "An intense fear of small, enclosed spaces such as lifts, tunnels and MRI scanners is called claustraphobia",
+   "typo_word": "claustraphobia",
+   "target": "claustrophobia",
+   "target_alts": [],
+   "intermediates": [
+    "claustrophobia"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "claustrophobia"
+      ]
+     },
+     "match": [
+      "claustrophobia"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-011",
+   "subfamily": "novel",
+   "prompt": "The ancient Egyptian writing system of pictorial signs carved into temple walls and painted inside tombs is known as heiroglyphics",
+   "typo_word": "heiroglyphics",
+   "target": "hieroglyphics",
+   "target_alts": [],
+   "intermediates": [
+    "hieroglyphics"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hieroglyphics"
+      ]
+     },
+     "match": [
+      "hieroglyphics"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-028",
+   "subfamily": "novel",
+   "prompt": "The gradual loss of bone density that leaves elderly patients prone to hip and wrist fractures is osteoperosis",
+   "typo_word": "osteoperosis",
+   "target": "osteoporosis",
+   "target_alts": [],
+   "intermediates": [
+    "osteoporosis"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "osteoporosis"
+      ]
+     },
+     "match": [
+      "osteoporosis"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-023",
+   "subfamily": "novel",
+   "prompt": "The thorny climbing vine with brilliant magenta paper-like bracts that drapes over whitewashed walls in Greece is bouganvillea",
+   "typo_word": "bouganvillea",
+   "target": "bougainvillea",
+   "target_alts": [],
+   "intermediates": [
+    "bougainvillea"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "bougainvillea"
+      ]
+     },
+     "match": [
+      "bougainvillea"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-038",
+   "subfamily": "novel",
+   "prompt": "The Ligurian flatbread, dimpled with fingertips, drenched in olive oil and sprinkled with coarse salt and rosemary, is foccacia",
+   "typo_word": "foccacia",
+   "target": "focaccia",
+   "target_alts": [],
+   "intermediates": [
+    "focaccia"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "focaccia"
+      ]
+     },
+     "match": [
+      "focaccia"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-031",
+   "subfamily": "novel",
+   "prompt": "In a right-angled triangle, the longest side, lying opposite the right angle, is called the hypoteneuse",
+   "typo_word": "hypoteneuse",
+   "target": "hypotenuse",
+   "target_alts": [],
+   "intermediates": [
+    "hypotenuse"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hypotenuse"
+      ]
+     },
+     "match": [
+      "hypotenuse"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-022",
+   "subfamily": "novel",
+   "prompt": "The flaky crescent-shaped French breakfast pastry made from laminated, buttery yeast dough is the croissent",
+   "typo_word": "croissent",
+   "target": "croissant",
+   "target_alts": [],
+   "intermediates": [
+    "croissant"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "croissant"
+      ]
+     },
+     "match": [
+      "croissant"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-005",
+   "subfamily": "novel",
+   "prompt": "Layers of espresso-soaked ladyfingers and whipped mascarpone cream, dusted with cocoa powder, make up the Venetian dessert tiramsiu",
+   "typo_word": "tiramsiu",
+   "target": "tiramisu",
+   "target_alts": [],
+   "intermediates": [
+    "tiramisu"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "tiramisu"
+      ]
+     },
+     "match": [
+      "tiramisu"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-046",
+   "subfamily": "novel",
+   "prompt": "Finely shredded white cabbage, salted and left to ferment until sour, is the German side dish sauerkrout",
+   "typo_word": "sauerkrout",
+   "target": "sauerkraut",
+   "target_alts": [],
+   "intermediates": [
+    "sauerkraut"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sauerkraut"
+      ]
+     },
+     "match": [
+      "sauerkraut"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-020",
+   "subfamily": "novel",
+   "prompt": "A shot of espresso topped with steamed milk and a thick cap of velvety foam, often dusted with cocoa, is a capuccino",
+   "typo_word": "capuccino",
+   "target": "cappuccino",
+   "target_alts": [],
+   "intermediates": [
+    "cappuccino"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "cappuccino"
+      ]
+     },
+     "match": [
+      "cappuccino"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-010",
+   "subfamily": "novel",
+   "prompt": "Mineral formations that hang down like icicles from the ceiling of a limestone cave are called stalactities",
+   "typo_word": "stalactities",
+   "target": "stalactites",
+   "target_alts": [],
+   "intermediates": [
+    "stalactites"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "stalactites"
+      ]
+     },
+     "match": [
+      "stalactites"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-039",
+   "subfamily": "novel",
+   "prompt": "The leathery red fruit packed with hundreds of juicy, jewel-like seeds, a symbol of fertility in Persian art, is the pomegranite",
+   "typo_word": "pomegranite",
+   "target": "pomegranate",
+   "target_alts": [],
+   "intermediates": [
+    "pomegranate"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "pomegranate"
+      ]
+     },
+     "match": [
+      "pomegranate"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-035",
+   "subfamily": "novel",
+   "prompt": "At the restaurant, the wine steward who recommends a bottle to pair with each course of your meal is the somelier",
+   "typo_word": "somelier",
+   "target": "sommelier",
+   "target_alts": [],
+   "intermediates": [
+    "sommelier"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sommelier"
+      ]
+     },
+     "match": [
+      "sommelier"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 0.9
+  },
+  {
+   "name": "dev-tymt-017",
+   "subfamily": "novel",
+   "prompt": "The enormous semi-aquatic African mammal whose Greek name means river horse is the hippopotamous",
+   "typo_word": "hippopotamous",
+   "target": "hippopotamus",
+   "target_alts": [],
+   "intermediates": [
+    "hippopotamus"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hippopotamus"
+      ]
+     },
+     "match": [
+      "hippopotamus"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-040",
+   "subfamily": "novel",
+   "prompt": "The green pigment in plant leaves that absorbs red and blue light to power photosynthesis is clorophyll",
+   "typo_word": "clorophyll",
+   "target": "chlorophyll",
+   "target_alts": [],
+   "intermediates": [
+    "chlorophyll"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "chlorophyll"
+      ]
+     },
+     "match": [
+      "chlorophyll"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-007",
+   "subfamily": "novel",
+   "prompt": "The Provençal vegetable stew of slow-cooked aubergine, courgette, peppers, onion and tomato is called ratatoullie",
+   "typo_word": "ratatoullie",
+   "target": "ratatouille",
+   "target_alts": [],
+   "intermediates": [
+    "ratatouille"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "ratatouille"
+      ]
+     },
+     "match": [
+      "ratatouille"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-049",
+   "subfamily": "novel",
+   "prompt": "The egg-laying Australian mammal with a duck-like bill, webbed feet and a venomous spur on its hind leg is the platipus",
+   "typo_word": "platipus",
+   "target": "platypus",
+   "target_alts": [],
+   "intermediates": [
+    "platypus"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "platypus"
+      ]
+     },
+     "match": [
+      "platypus"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-019",
+   "subfamily": "novel",
+   "prompt": "Putting off an urgent deadline by tidying your desk, scrolling your phone and making yet another coffee is classic procrastinaton",
+   "typo_word": "procrastinaton",
+   "target": "procrastination",
+   "target_alts": [],
+   "intermediates": [
+    "procrastination"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "procrastination"
+      ]
+     },
+     "match": [
+      "procrastination"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-009",
+   "subfamily": "novel",
+   "prompt": "The science of forecasting rain, wind and storms from measurements of air pressure, humidity and temperature is meterology",
+   "typo_word": "meterology",
+   "target": "meteorology",
+   "target_alts": [],
+   "intermediates": [
+    "meteorology"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "meteorology"
+      ]
+     },
+     "match": [
+      "meteorology"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-033",
+   "subfamily": "novel",
+   "prompt": "Before the Ottoman conquest of 1453, the Byzantine capital on the Bosphorus that is now Istanbul was called Constantinolpe",
+   "typo_word": "Constantinolpe",
+   "target": "Constantinople",
+   "target_alts": [],
+   "intermediates": [
+    "Constantinople"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Constantinople"
+      ]
+     },
+     "match": [
+      "Constantinople"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-076",
+   "subfamily": "realword",
+   "prompt": "The drummer ended his solo with a thunderous crash on the large brass symbol",
+   "typo_word": "symbol",
+   "target": "cymbal",
+   "target_alts": [],
+   "intermediates": [
+    "cymbal"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "cymbal"
+      ]
+     },
+     "match": [
+      "cymbal"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-057",
+   "subfamily": "realword",
+   "prompt": "Despite roadblocks, helicopters and a nationwide manhunt, the escaped convict managed for months to allude",
+   "typo_word": "allude",
+   "target": "elude",
+   "target_alts": [],
+   "intermediates": [
+    "elude"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "elude"
+      ]
+     },
+     "match": [
+      "elude"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-072",
+   "subfamily": "realword",
+   "prompt": "Of the more than one hundred plays Sophocles wrote, only seven complete tragedies survive today and are still extent",
+   "typo_word": "extent",
+   "target": "extant",
+   "target_alts": [],
+   "intermediates": [
+    "extant"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "extant"
+      ]
+     },
+     "match": [
+      "extant"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-084",
+   "subfamily": "realword",
+   "prompt": "After shouting for my team all afternoon in the freezing stadium, my voice was completely horse",
+   "typo_word": "horse",
+   "target": "hoarse",
+   "target_alts": [],
+   "intermediates": [
+    "hoarse"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hoarse"
+      ]
+     },
+     "match": [
+      "hoarse"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-077",
+   "subfamily": "realword",
+   "prompt": "The Belgian bistro's famous dish is moules-frites: chips served with a steaming pot of shellfish called muscles",
+   "typo_word": "muscles",
+   "target": "mussels",
+   "target_alts": [],
+   "intermediates": [
+    "mussels"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "mussels"
+      ]
+     },
+     "match": [
+      "mussels"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-079",
+   "subfamily": "realword",
+   "prompt": "The chemist drew a few drops of the clear serum into a tiny stoppered glass vile",
+   "typo_word": "vile",
+   "target": "vial",
+   "target_alts": [],
+   "intermediates": [
+    "vial"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "vial"
+      ]
+     },
+     "match": [
+      "vial"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-075",
+   "subfamily": "realword",
+   "prompt": "She tipped the pot of boiled spaghetti into the sink to drain it through a perforated metal calendar",
+   "typo_word": "calendar",
+   "target": "colander",
+   "target_alts": [],
+   "intermediates": [
+    "colander"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "colander"
+      ]
+     },
+     "match": [
+      "colander"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-078",
+   "subfamily": "realword",
+   "prompt": "The central bank keeps much of the nation's reserves stacked in its underground vaults as bars of gold bouillon",
+   "typo_word": "bouillon",
+   "target": "bullion",
+   "target_alts": [],
+   "intermediates": [
+    "bullion"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "bullion"
+      ]
+     },
+     "match": [
+      "bullion"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-069",
+   "subfamily": "realword",
+   "prompt": "Once the main theorem was proved, the result about the base angles of isosceles triangles followed as an immediate coronary",
+   "typo_word": "coronary",
+   "target": "corollary",
+   "target_alts": [],
+   "intermediates": [
+    "corollary"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "corollary"
+      ]
+     },
+     "match": [
+      "corollary"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-060",
+   "subfamily": "realword",
+   "prompt": "Having taken holy vows of chastity, the Catholic priest was required to remain celebrate",
+   "typo_word": "celebrate",
+   "target": "celibate",
+   "target_alts": [],
+   "intermediates": [
+    "celibate"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "celibate"
+      ]
+     },
+     "match": [
+      "celibate"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-054",
+   "subfamily": "realword",
+   "prompt": "The monk renounced every comfort, slept on a stone floor, fasted for days and lived a life that was strictly aesthetic",
+   "typo_word": "aesthetic",
+   "target": "ascetic",
+   "target_alts": [],
+   "intermediates": [
+    "ascetic"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "ascetic"
+      ]
+     },
+     "match": [
+      "ascetic"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-067",
+   "subfamily": "realword",
+   "prompt": "From the tan line on the man's wrist and the red clay on his boots, Holmes was able to deduct",
+   "typo_word": "deduct",
+   "target": "deduce",
+   "target_alts": [],
+   "intermediates": [
+    "deduce"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "deduce"
+      ]
+     },
+     "match": [
+      "deduce"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-068",
+   "subfamily": "realword",
+   "prompt": "The referee sent him off at once, calling the elbow to the opponent's face deliberate, blatant and utterly fragrant",
+   "typo_word": "fragrant",
+   "target": "flagrant",
+   "target_alts": [],
+   "intermediates": [
+    "flagrant"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "flagrant"
+      ]
+     },
+     "match": [
+      "flagrant"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-081",
+   "subfamily": "realword",
+   "prompt": "The bee brushed pollen from the anthers onto the sticky stigma at the top of the flower's pistol",
+   "typo_word": "pistol",
+   "target": "pistil",
+   "target_alts": [],
+   "intermediates": [
+    "pistil"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "pistil"
+      ]
+     },
+     "match": [
+      "pistil"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-tymt-061",
+   "subfamily": "realword",
+   "prompt": "The X-ray showed a clean break in the long bone of the upper arm, the humorous",
+   "typo_word": "humorous",
+   "target": "humerus",
+   "target_alts": [],
+   "intermediates": [
+    "humerus"
+   ],
+   "units": [
+    {
+     "role": "correction",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "humerus"
+      ]
+     },
+     "match": [
+      "humerus"
+     ]
+    }
+   ],
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "eval_render": "plain",
+   "source": "jlm-dev-mt-v1",
+   "probe_token_lens": {
+    "units": {
+     "correction": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  }
+ ]
+}

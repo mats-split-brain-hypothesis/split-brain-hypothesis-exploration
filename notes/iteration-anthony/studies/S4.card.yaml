@@ -1,0 +1,63 @@
+id: S4
+title: Cluster and nearest-neighbour means
+owner: A (j-lens-mean-c0), pilot-1
+status: finalist
+question: >
+  Does a regime-conditioned $g$ beat one family mean, and can a label-free cluster mean replace the family label?
+verdict: >
+  Yes on read-cell pools. `knnx8` (mean of the 8 nearest fit read cells of any family, own group excluded) is the
+  strongest label-free centre: +0.049 macro vs fam on val strict, multihop 0.61 -> 0.70 (bridge up, answer down).
+  It pays the language-name unit on multilingual_mt (-0.11 judged), its DM gain does not count (same-sentence leak),
+  and its UM 1.00 cannot credit user modelling (S11). `kmx64` matches fam with no label and keeps multilingual_mt;
+  wikitext clusters fail.
+tiles:
+  - {label: "knnx8, val strict, macro Δ vs fam", value: "+0.049", sub: "vs tok +0.026; shuf.knnx8 -0.006"}
+  - {label: "knnx8, multihop val strict", value: "0.61 -> 0.70", sub: "fam -> knnx8; tok 0.65"}
+  - {label: "knnx8 - fam, multilingual_mt val Haiku", value: "-0.11", sub: "[-0.21, -0.04]: the language-name unit"}
+  - {label: "kmx64, val strict, macro Δ vs fam", value: "+0.032", sub: "no family label; guardrail ok"}
+formulas:
+  - latex: 'g_{\text{knnx8}}(h) = \frac{1}{8}\sum_{r \in N_8(h)} r'
+    note: "Raw mean of the 8 nearest reference cells; R = every family's fit read cells pooled (2.5k cells), own group excluded."
+  - latex: 'N_8(h) = \mathop{\text{top-}8}_{r \in \mathcal{R} \setminus G(h)} \langle u(h), u(r) \rangle, \qquad u(x) = \frac{x}{\lVert x \rVert} - \bar u'
+    note: "Cosine in the centred unit space (J++'s router without PCA); ū = the pool's mean unit vector at the layer; G(h) = h's own group."
+  - latex: 'g_{\text{kmx64}}(h) = \bar h_{C_{c(h)} \setminus G(h)}, \qquad c(h) = \arg\min_c \lVert u(h) - m_c \rVert'
+    note: "k-means (k = 64, k-means++ seed 0) on u(R) per layer; g = raw mean of h's cluster, own group out."
+diagram:
+  kind: pool
+  select: knn
+  exclude: own_group
+  caption: "g = mean of the 8 fit read cells (any family) nearest h by cosine, h's own group left out."
+split: val
+arms: ["knnx8@fit|cos", "kmx64@fit|cos", "kpc16_8@fit|cos"]
+controls: ["shuf.knnx8@fit|cos", "rand.knnx8@fit|cos", "shuf.kmx64@fit|cos"]
+insights:
+  - lead: "Clusters recover the family label without being told"
+    text: >
+      0.90-0.98 of val cells land in a cluster whose majority is their own family at $k \ge 16$. kmx64 is +0.032
+      vs fam on val strict with the guardrail ok; random members of the same sizes (kmxr64) lose it all (-0.050).
+  - lead: "knnx8 lifts multihop by a trade, not a better read"
+    text: >
+      multihop 0.61 -> 0.70 on val strict, the first centre to move it. The scored target is the bridge; knnx8 lifts it
+      by pushing the final answer down (answer in top 10 at L52: 0.43 vs fam 0.58), since question-type neighbours
+      share the answer's type.
+  - lead: "A matched centre removes what the match shares"
+    text: >
+      On multilingual_mt knnx8's same-language neighbours carry the language: the language unit falls 0.62 -> 0.30
+      (concept 0.91 -> 0.94), Haiku -0.11 [-0.21, -0.04] vs fam. The language pieces rank 24 (median) in
+      $L(g_{\text{knnx8}} - \mu_{\text{fam}})$ at L44. Cross-token kNN and blending do not fix it.
+  - lead: "knnx8's DM and UM gains do not count"
+    text: >
+      DM: its mid-sentence passes (21) equal tok's (21), against 8-10 for fair other-sentence kNN: the same-sentence
+      leak. Only its final "." passes (17, tok 15) are defensible. UM Haiku 1.00 vs zero 0.885 shows the attribute is
+      surfaced, not a user model (S11).
+  - lead: "kNN, cluster PCA and family PCA estimate one local subspace"
+    text: >
+      kpc16_8 (+0.034 fit), knnx8 (+0.033) and pco16 (+0.028) have the same per-family profile and the same language
+      cost. On val knnx8 is the best estimate (+0.049 vs kpc16_8 +0.029).
+  - lead: "Wikitext clusters fail"
+    text: >
+      Every corpus-pool arm is below zero on fit (macro -0.034 to -0.051 vs zero); clustering does not rescue the
+      corpus mean (kmw32 = kmwr32 = kmw1 within 0.01).
+next:
+  - "S4b: a new dev split (more fit items) to test kNN's n-scaling beyond 729 items; registration and bench read of knnx8 (not DM; flag multilingual_mt)."
+  - "S4d: a cross-language kNN (exclude neighbours in the cell's prompt language); needs a screen other than fit, which does not show the loss."

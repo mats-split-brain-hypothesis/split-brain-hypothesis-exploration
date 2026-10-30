@@ -1,0 +1,9 @@
+{
+  // Use the uv-managed venv (created by `uv sync`) and activate it in every new integrated terminal.
+  // Paths are relative to the workspace, so this works on any macOS/Linux clone.
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  // Same behaviour under the newer Python Environments extension.
+  "python-envs.terminal.autoActivationType": "command"
+}

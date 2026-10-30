@@ -1,0 +1,334 @@
+[
+ {
+  "name": "brh-ent-orpiment",
+  "subfamily": "entity",
+  "prompt": "The bright yellow arsenic sulfide long ground up to make the painters' pigment known as king's yellow is the mineral",
+  "target": "orpiment",
+  "target_alts": [
+   "auripigmentum"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "intermediates": [
+   "orpiment"
+  ],
+  "units": [
+   {
+    "role": "readout",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "orpiment",
+      "auripigmentum"
+     ]
+    },
+    "match": [
+     "orpiment",
+     "auripigmentum"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "brh-ent-currency-mozambique",
+  "subfamily": "entity",
+  "prompt": "The name of the national currency of Mozambique is",
+  "target": "metical",
+  "target_alts": [
+   "the metical",
+   "meticais"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "intermediates": [
+   "metical"
+  ],
+  "units": [
+   {
+    "role": "readout",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "metical",
+      "the metical",
+      "meticais"
+     ]
+    },
+    "match": [
+     "metical",
+     "the metical",
+     "meticais"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "brh-ent-min-kunzite-parent",
+  "subfamily": "entity",
+  "prompt": "The lithium-bearing pyroxene whose lilac gem variety is called kunzite is",
+  "target": "spodumene",
+  "target_alts": [
+   "triphane"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "intermediates": [
+   "spodumene"
+  ],
+  "units": [
+   {
+    "role": "readout",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "spodumene",
+      "triphane"
+     ]
+    },
+    "match": [
+     "spodumene",
+     "triphane"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "brh-id-selandiabaru-tasman",
+  "subfamily": "l2_factual",
+  "prompt": "Pada tahun 1642 pelaut Abel Tasman menjadi orang Eropa pertama yang melihat gugusan pulau besar di Pasifik selatan yang sekarang disebut",
+  "target": "Selandia Baru",
+  "target_alts": [
+   "Selandia Baru",
+   "Negeri Selandia Baru"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "lang": "id",
+  "intermediates": [
+   "New Zealand"
+  ],
+  "units": [
+   {
+    "role": "readout",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "New Zealand",
+      "Realm of New Zealand"
+     ],
+     "zh": [
+      "新西兰",
+      "纽西兰"
+     ]
+    },
+    "match": [
+     "New Zealand",
+     "Realm of New Zealand",
+     "新西兰",
+     "纽西兰"
+    ]
+   },
+   {
+    "role": "language",
+    "required": true,
+    "multi_token": false,
+    "forms": {
+     "en": [
+      "Indonesian"
+     ],
+     "zh": [
+      "印尼语",
+      "印度尼西亚语"
+     ],
+     "id": [
+      "Selandia Baru",
+      "Negeri Selandia Baru"
+     ]
+    },
+    "match": [
+     "Indonesian",
+     "印尼语",
+     "印度尼西亚语",
+     "Selandia Baru",
+     "Negeri Selandia Baru"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "brh-ar-kitab-almanazir-author",
+  "subfamily": "l2_factual",
+  "prompt": "صاحب كتاب المناظر الذي أرسى فيه أسس علم البصريات وشرح كيفية الإبصار هو",
+  "target": "الحسن بن الهيثم",
+  "target_alts": [
+   "ابن الهيثم",
+   "أبو علي الحسن بن الهيثم"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "lang": "ar",
+  "intermediates": [
+   "Ibn al-Haytham"
+  ],
+  "units": [
+   {
+    "role": "readout",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "Ibn al-Haytham",
+      "Hasan Ibn al-Haytham"
+     ],
+     "zh": [
+      "伊本·海赛姆",
+      "阿尔哈曾"
+     ]
+    },
+    "match": [
+     "Ibn al-Haytham",
+     "Hasan Ibn al-Haytham",
+     "伊本·海赛姆",
+     "阿尔哈曾"
+    ]
+   },
+   {
+    "role": "language",
+    "required": true,
+    "multi_token": false,
+    "forms": {
+     "en": [
+      "Arabic"
+     ],
+     "zh": [
+      "阿拉伯语"
+     ],
+     "ar": [
+      "الحسن بن الهيثم",
+      "ابن الهيثم",
+      "أبو علي الحسن بن الهيثم"
+     ]
+    },
+    "match": [
+     "Arabic",
+     "阿拉伯语",
+     "الحسن بن الهيثم",
+     "ابن الهيثم",
+     "أبو علي الحسن بن الهيثم"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "brh-hu-erkel-ferenc",
+  "subfamily": "l2_factual",
+  "prompt": "A Bánk bán című nagyopera zeneszerzője",
+  "target": "Erkel Ferenc",
+  "target_alts": [
+   "Erkel Ferencet",
+   "Erkel Ferencnek",
+   "Erkel Ferenctől",
+   "Erkel"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "lang": "hu",
+  "intermediates": [
+   "Ferenc Erkel"
+  ],
+  "units": [
+   {
+    "role": "readout",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "Ferenc Erkel",
+      "composer Erkel"
+     ],
+     "zh": [
+      "费伦茨·埃尔凯尔",
+      "埃尔凯尔·费伦茨"
+     ]
+    },
+    "match": [
+     "Ferenc Erkel",
+     "composer Erkel",
+     "费伦茨·埃尔凯尔",
+     "埃尔凯尔·费伦茨"
+    ]
+   },
+   {
+    "role": "language",
+    "required": true,
+    "multi_token": false,
+    "forms": {
+     "en": [
+      "Hungarian"
+     ],
+     "zh": [
+      "匈牙利语"
+     ],
+     "hu": [
+      "Erkel Ferenc",
+      "Erkel Ferencet",
+      "Erkel Ferencnek"
+     ]
+    },
+    "match": [
+     "Hungarian",
+     "匈牙利语",
+     "Erkel Ferenc",
+     "Erkel Ferencet",
+     "Erkel Ferencnek"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ }
+]

@@ -1,0 +1,159 @@
+{
+  "note": "The abstract-concept dictionary: what kind of content the model's global workspace holds at the read cell, per WorkspaceBench family and per sample. Words are category labels (one bit each), never an item's target. Built 2026-10-10 from the banks' own data (see notes/abstract-mu.md).",
+  "global_set": {
+    "stimulus_latent": [
+      "typo",
+      "meaning",
+      "word",
+      "language"
+    ],
+    "recalled_fact": [
+      "fact",
+      "month",
+      "element",
+      "organ",
+      "place",
+      "organization",
+      "person",
+      "number"
+    ],
+    "computed_intermediate": [
+      "number",
+      "colour"
+    ],
+    "inferred_attribute": [
+      "identity",
+      "country",
+      "continent",
+      "gender",
+      "occupation",
+      "religion",
+      "diet",
+      "marriage",
+      "pet",
+      "job",
+      "age",
+      "emotion",
+      "theme",
+      "game",
+      "event"
+    ],
+    "output_commitment": [
+      "answer",
+      "preference",
+      "rhyme"
+    ],
+    "self_meta": [
+      "bug",
+      "deception",
+      "instruction",
+      "plan",
+      "reason",
+      "secret",
+      "thought"
+    ]
+  },
+  "dictionary": [
+    "typo",
+    "theme",
+    "answer",
+    "fact",
+    "meaning",
+    "identity",
+    "preference",
+    "number",
+    "month",
+    "element",
+    "organ",
+    "colour",
+    "word",
+    "language",
+    "game",
+    "place",
+    "organization",
+    "person",
+    "event",
+    "emotion",
+    "country",
+    "continent",
+    "gender",
+    "occupation",
+    "religion",
+    "diet",
+    "marriage",
+    "pet",
+    "job",
+    "age",
+    "association",
+    "completion",
+    "inference",
+    "translation",
+    "user",
+    "instruction",
+    "secret",
+    "thought"
+  ],
+  "neutral": [
+    "giraffe",
+    "violin",
+    "glacier"
+  ],
+  "family_word": {
+    "typo": "typo",
+    "association": "theme",
+    "basic_readout": "answer",
+    "multihop": "fact",
+    "multilingual": "meaning",
+    "user_modeling": "identity",
+    "directed_modulation": "secret"
+  },
+  "family_word_v2": {
+    "note": "x5: the test's own name as a FRAME word (naturalized where the family name is jargon: basic_readout -> completion, multihop -> inference).",
+    "typo": "typo",
+    "association": "association",
+    "basic_readout": "completion",
+    "multihop": "inference",
+    "multilingual": "translation",
+    "user_modeling": "user",
+    "directed_modulation": "instruction"
+  },
+  "stratum_field": {
+    "basic_readout": "subfamily",
+    "user_modeling": "attr_class",
+    "directed_modulation": "subfamily"
+  },
+  "stratum_word": {
+    "basic_readout": {
+      "entity": "fact",
+      "processing": "number",
+      "implicit": "preference"
+    },
+    "user_modeling": {
+      "Country": "country",
+      "Continent": "continent",
+      "Gender": "gender",
+      "Occupation": "occupation",
+      "Religion": "religion",
+      "ReligiousAffiliation": "religion",
+      "Diets": "diet",
+      "MaritalStatus": "marriage",
+      "PetOwnership": "pet",
+      "EmploymentStatus": "job",
+      "AgeGroup": "age"
+    },
+    "directed_modulation": {
+      "pair": "thought",
+      "secret": "secret",
+      "preference": "preference"
+    }
+  },
+  "derangement": {
+    "typo": "continent",
+    "association": "diet",
+    "basic_readout": "marriage",
+    "multihop": "pet",
+    "multilingual": "occupation",
+    "user_modeling": "colour",
+    "directed_modulation": "colour"
+  }
+}

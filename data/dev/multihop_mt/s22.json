@@ -1,0 +1,1430 @@
+{
+ "family": "multihop-hard",
+ "parent_family": "multihop-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": true,
+  "conjunctive_units": true
+ },
+ "source": "experiments/s22_bank.py (family formats, random no_robots fills)",
+ "split": "s22",
+ "gate": "Qwen3.6-27B: the bench's gate question, greedy correct and >= 8/10 at T=0.7, every bridge question too; graded by anthropic/claude-haiku-5.5 with the bench's grading prompt",
+ "items": [
+  {
+   "name": "s22-multihop_mt-00",
+   "subfamily": "2hop",
+   "prompt": "Information has been included",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-01",
+   "subfamily": "2hop",
+   "prompt": "Include a twist ending for the scenes where the protagonist finds a way to uncover",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-02",
+   "subfamily": "2hop",
+   "prompt": "Choose a controversial topic",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-03",
+   "subfamily": "2hop",
+   "prompt": "Give some supporting evidence for",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-04",
+   "subfamily": "2hop",
+   "prompt": "Create Searchable Notes Keep notes on",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-05",
+   "subfamily": "2hop",
+   "prompt": "Try to keep the writing somber, don't name",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-06",
+   "subfamily": "2hop",
+   "prompt": "Wrap up with a conclusion that summarizes key ideas and include a page",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-07",
+   "subfamily": "2hop",
+   "prompt": "The tone should be casual, entertaining, and with some dry humor rather",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-08",
+   "subfamily": "2hop",
+   "prompt": "Come up with an ending to the dream where I",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-09",
+   "subfamily": "2hop",
+   "prompt": "I need help coming up",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-10",
+   "subfamily": "2hop",
+   "prompt": "When Pauline heard the crying,",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-11",
+   "subfamily": "2hop",
+   "prompt": "Pull out all books mentioned in the below excerpt and put them into a list separated by",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-12",
+   "subfamily": "2hop",
+   "prompt": "Optical factors of the eye influence the",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-13",
+   "subfamily": "2hop",
+   "prompt": "We will be hiding eggs with candy for their",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-14",
+   "subfamily": "2hop",
+   "prompt": "Please rewrite this passage",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-15",
+   "subfamily": "2hop",
+   "prompt": "The names should be silly and",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-16",
+   "subfamily": "2hop",
+   "prompt": "Rewrite these sentences, but do not include any",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-17",
+   "subfamily": "2hop",
+   "prompt": "This multi-page article lists",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-18",
+   "subfamily": "2hop",
+   "prompt": "If a word starts with a vowel, say yay at the",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-19",
+   "subfamily": "2hop",
+   "prompt": "By daybreak, our flat was heavy with the odor of fried sesame balls and sweet curried chicken",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-20",
+   "subfamily": "2hop",
+   "prompt": "It should be aimed at kids",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-21",
+   "subfamily": "2hop",
+   "prompt": "Negotiations have not resumed, and Hollywood",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-22",
+   "subfamily": "2hop",
+   "prompt": "List the colors used",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-multihop_mt-23",
+   "subfamily": "2hop",
+   "prompt": "A parasite might be driving some wolves to",
+   "target": "",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "split": "s22",
+   "condition": "random-fill"
+  }
+ ]
+}

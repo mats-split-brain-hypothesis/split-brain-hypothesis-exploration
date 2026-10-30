@@ -1,0 +1,2982 @@
+{
+ "family": "multihop-hard",
+ "parent_family": "multihop-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": true,
+  "conjunctive_units": true
+ },
+ "source": "jlm-dev-mt-v1",
+ "split": "fit",
+ "gate": "Qwen3.6-27B: the bench's gate question, greedy correct and >= 8/10 at T=0.7, every bridge question too; graded by anthropic/claude-haiku-5.5 with the bench's grading prompt",
+ "items": [
+  {
+   "name": "dev-mhmt-014",
+   "subfamily": "2hop",
+   "prompt": "Fact: the Victorian novelist who wrote Oliver Twist also wrote a novella about the miser Ebenezer Scrooge titled",
+   "target": "A Christmas Carol",
+   "target_alts": [
+    "Christmas Carol"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Charles Dickens"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Dickens"
+      ]
+     },
+     "match": [
+      "Charles Dickens"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Victorian novelist wrote Oliver Twist?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Dickens",
+      "Dickens"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-038",
+   "subfamily": "2hop",
+   "prompt": "Fact: the only one of the Seven Wonders of the Ancient World still largely intact was built as the tomb of the pharaoh",
+   "target": "Khufu",
+   "target_alts": [
+    "Cheops",
+    "Pharaoh Khufu"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Great Pyramid of Giza"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Great Pyramid of Giza",
+       "Great Pyramid",
+       "Pyramid of Khufu"
+      ]
+     },
+     "match": [
+      "Great Pyramid of Giza",
+      "Great Pyramid",
+      "Pyramid of Khufu"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which of the Seven Wonders of the Ancient World is still largely intact?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Great Pyramid of Giza",
+      "Great Pyramid",
+      "Pyramid of Khufu",
+      "Pyramid of Cheops"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       5,
+       2,
+       5
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-034",
+   "subfamily": "2hop",
+   "prompt": "Fact: the 1925 Jazz Age novel narrated by Nick Carraway was written by",
+   "target": "F. Scott Fitzgerald",
+   "target_alts": [
+    "Scott Fitzgerald",
+    "Francis Scott Fitzgerald"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "The Great Gatsby"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "The Great Gatsby",
+       "Great Gatsby"
+      ]
+     },
+     "match": [
+      "The Great Gatsby",
+      "Great Gatsby"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which 1925 novel is narrated by Nick Carraway?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "The Great Gatsby",
+      "Great Gatsby"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       4,
+       3
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     2,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-041",
+   "subfamily": "2hop",
+   "prompt": "Fact: the sail-roofed performing arts venue on Bennelong Point in Sydney Harbour was designed by the Danish architect",
+   "target": "Jørn Utzon",
+   "target_alts": [
+    "Jorn Utzon",
+    "Utzon"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Sydney Opera House"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Sydney Opera House"
+      ]
+     },
+     "match": [
+      "Sydney Opera House"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "What is the sail-roofed performing arts venue on Bennelong Point in Sydney Harbour?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Sydney Opera House",
+      "the Sydney Opera House"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     3,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-050",
+   "subfamily": "2hop",
+   "prompt": "Fact: the waterfall known locally as Mosi-oa-Tunya, 'the smoke that thunders', lies on the river",
+   "target": "Zambezi",
+   "target_alts": [
+    "Zambezi River",
+    "Zambesi"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Victoria Falls"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Victoria Falls"
+      ]
+     },
+     "match": [
+      "Victoria Falls"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which waterfall is known locally as Mosi-oa-Tunya?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Victoria Falls"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-048",
+   "subfamily": "2hop",
+   "prompt": "Fact: the first human to travel into outer space orbited the Earth in April 1961 aboard the spacecraft",
+   "target": "Vostok 1",
+   "target_alts": [
+    "Vostok-1",
+    "Vostok"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Yuri Gagarin"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Yuri Gagarin",
+       "Gagarin"
+      ]
+     },
+     "match": [
+      "Yuri Gagarin",
+      "Gagarin"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Who was the first human to travel into outer space?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Yuri Gagarin",
+      "Gagarin",
+      "Yuri Alekseyevich Gagarin"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       4,
+       3
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     4,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-054",
+   "subfamily": "2hop",
+   "prompt": "Fact: Japan's tallest mountain straddles the border between Yamanashi Prefecture and",
+   "target": "Shizuoka Prefecture",
+   "target_alts": [
+    "Shizuoka"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Mount Fuji"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Mount Fuji",
+       "Fujisan",
+       "Fuji-san"
+      ]
+     },
+     "match": [
+      "Mount Fuji",
+      "Fujisan",
+      "Fuji-san"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "What is the tallest mountain in Japan?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Mount Fuji",
+      "Fuji",
+      "Fujisan",
+      "Fuji-san"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2,
+       2,
+       2
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-006",
+   "subfamily": "2hop",
+   "prompt": "Fact: the Dutch painter of the Sunflowers series who cut off part of his own ear in December 1888 was then living in the Provençal town of",
+   "target": "Arles",
+   "target_alts": [
+    "Arles, France"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Vincent van Gogh"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Vincent van Gogh",
+       "Van Gogh"
+      ]
+     },
+     "match": [
+      "Vincent van Gogh",
+      "Van Gogh"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Dutch Post-Impressionist painted the Sunflowers series?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Vincent van Gogh",
+      "Van Gogh"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-009",
+   "subfamily": "2hop",
+   "prompt": "Fact: the French emperor defeated at Waterloo in 1815 died in exile in 1821 on the South Atlantic island of",
+   "target": "Saint Helena",
+   "target_alts": [
+    "St. Helena",
+    "St Helena"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Napoleon Bonaparte"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Napoleon Bonaparte",
+       "Napoleon I",
+       "Napoléon Bonaparte"
+      ]
+     },
+     "match": [
+      "Napoleon Bonaparte",
+      "Napoleon I",
+      "Napoléon Bonaparte"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which French emperor was defeated at the Battle of Waterloo in 1815?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Napoleon",
+      "Napoleon Bonaparte",
+      "Napoleon I"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       4,
+       2,
+       6
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-057",
+   "subfamily": "2hop",
+   "prompt": "Fact: the charter of liberties sealed at Runnymede in June 1215 was granted by",
+   "target": "King John",
+   "target_alts": [
+    "John of England",
+    "John Lackland"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Magna Carta"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Charta"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Charta"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which charter was sealed at Runnymede in June 1215?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Magna Carta",
+      "Magna Charta"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-062",
+   "subfamily": "2hop",
+   "prompt": "Fact: the American author of The Old Man and the Sea lived for two decades on an estate near Havana called",
+   "target": "Finca Vigía",
+   "target_alts": [
+    "Finca Vigia",
+    "Lookout Farm"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Ernest Hemingway"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Ernest Hemingway",
+       "Hemingway"
+      ]
+     },
+     "match": [
+      "Ernest Hemingway",
+      "Hemingway"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which American author wrote The Old Man and the Sea?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Ernest Hemingway",
+      "Hemingway"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       4,
+       3
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     4,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-067",
+   "subfamily": "2hop",
+   "prompt": "Fact: the Carthaginian general who led war elephants across the Alps in 218 BC crushed a Roman army in 216 BC at the",
+   "target": "Battle of Cannae",
+   "target_alts": [
+    "Cannae"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Hannibal Barca"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Hannibal Barca",
+       "Hannibal"
+      ]
+     },
+     "match": [
+      "Hannibal Barca",
+      "Hannibal"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Carthaginian general led war elephants across the Alps in 218 BC?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Hannibal",
+      "Hannibal Barca"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       3,
+       2
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-028",
+   "subfamily": "2hop",
+   "prompt": "Fact: the civil rights leader who gave the 'I Have a Dream' speech was assassinated in 1968 in the city of",
+   "target": "Memphis",
+   "target_alts": [
+    "Memphis, Tennessee"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Martin Luther King Jr."
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Martin Luther King Jr.",
+       "Martin Luther King",
+       "MLK"
+      ]
+     },
+     "match": [
+      "Martin Luther King Jr.",
+      "Martin Luther King",
+      "MLK"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which civil rights leader gave the 'I Have a Dream' speech?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Martin Luther King Jr.",
+      "Martin Luther King",
+      "MLK"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       5,
+       3,
+       2
+      ]
+     }
+    },
+    "target": 1,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-032",
+   "subfamily": "2hop",
+   "prompt": "Fact: the fictional boy wizard who attends Hogwarts School of Witchcraft and Wizardry was created by the author",
+   "target": "J. K. Rowling",
+   "target_alts": [
+    "J.K. Rowling",
+    "Joanne Rowling",
+    "Rowling"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Harry Potter"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Harry Potter"
+      ]
+     },
+     "match": [
+      "Harry Potter"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Who is the fictional boy wizard famous for attending Hogwarts?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Harry Potter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     4,
+     3,
+     1
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-033",
+   "subfamily": "2hop",
+   "prompt": "Fact: the deluded Spanish nobleman who tilts at windmills alongside his squire Sancho Panza was created by",
+   "target": "Miguel de Cervantes",
+   "target_alts": [
+    "Cervantes",
+    "Miguel de Cervantes Saavedra"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Don Quixote"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Don Quixote",
+       "Don Quijote"
+      ]
+     },
+     "match": [
+      "Don Quixote",
+      "Don Quijote"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which deluded fictional nobleman tilts at windmills with his squire Sancho Panza?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Don Quixote",
+      "Don Quijote"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     2,
+     7
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-068",
+   "subfamily": "2hop",
+   "prompt": "Fact: the Viennese 'Waltz King' who composed The Blue Danube also wrote the 1874 operetta",
+   "target": "Die Fledermaus",
+   "target_alts": [
+    "The Bat",
+    "Fledermaus"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Johann Strauss II"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Johann Strauss II",
+       "Johann Strauss",
+       "Johann Strauss the Younger"
+      ]
+     },
+     "match": [
+      "Johann Strauss II",
+      "Johann Strauss",
+      "Johann Strauss the Younger"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Viennese 'Waltz King' composed The Blue Danube?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Johann Strauss II",
+      "Johann Strauss",
+      "Johann Strauss the Younger",
+      "Strauss"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       3,
+       2,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     2,
+     3
+    ]
+   },
+   "consistency": 0.8
+  },
+  {
+   "name": "dev-mhmt-001",
+   "subfamily": "2hop",
+   "prompt": "Fact: the Shakespeare tragedy about two star-crossed young lovers in Verona turns on a feud between the Montagues and the house of",
+   "target": "Capulet",
+   "target_alts": [
+    "the Capulets",
+    "House of Capulet"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Romeo and Juliet"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Romeo and Juliet"
+      ]
+     },
+     "match": [
+      "Romeo and Juliet"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Shakespeare tragedy is about two star-crossed young lovers in Verona?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Romeo and Juliet",
+      "The Tragedy of Romeo and Juliet"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-002",
+   "subfamily": "2hop",
+   "prompt": "Fact: the physicist who formulated the general theory of relativity received the 1921 Nobel Prize in Physics for his explanation of the",
+   "target": "photoelectric effect",
+   "target_alts": [
+    "law of the photoelectric effect"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Albert Einstein"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Albert Einstein"
+      ]
+     },
+     "match": [
+      "Albert Einstein"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which physicist formulated the general theory of relativity?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Albert Einstein",
+      "Einstein"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     6
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-046",
+   "subfamily": "2hop",
+   "prompt": "Fact: the aviator who made the first solo nonstop transatlantic flight in 1927 flew a monoplane named the",
+   "target": "Spirit of St. Louis",
+   "target_alts": [
+    "Spirit of St Louis"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Charles Lindbergh"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Charles Lindbergh",
+       "Lindbergh"
+      ]
+     },
+     "match": [
+      "Charles Lindbergh",
+      "Lindbergh"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Who made the first solo nonstop transatlantic flight in 1927?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Charles Lindbergh",
+      "Lindbergh",
+      "Charles A. Lindbergh"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       4,
+       3
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-043",
+   "subfamily": "2hop",
+   "prompt": "Fact: the glass pyramid that serves as the main entrance to the world's most-visited art museum was designed by the architect",
+   "target": "I. M. Pei",
+   "target_alts": [
+    "I.M. Pei",
+    "Ieoh Ming Pei",
+    "Pei"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Louvre Museum"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Louvre Museum",
+       "Musée du Louvre",
+       "the Louvre"
+      ]
+     },
+     "match": [
+      "Louvre Museum",
+      "Musée du Louvre",
+      "the Louvre"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which is the world's most-visited art museum?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Louvre",
+      "the Louvre",
+      "Louvre Museum",
+      "Musée du Louvre"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       3,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 6,
+    "target_alts": [
+     5,
+     5,
+     1
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-016",
+   "subfamily": "2hop",
+   "prompt": "Fact: the British author of Nineteen Eighty-Four also wrote a satirical fable about a revolt of farm animals called",
+   "target": "Animal Farm",
+   "target_alts": [
+    "Animal Farm: A Fairy Story"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "George Orwell"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "George Orwell",
+       "Eric Arthur Blair"
+      ]
+     },
+     "match": [
+      "George Orwell",
+      "Eric Arthur Blair"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which British author wrote Nineteen Eighty-Four?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "George Orwell",
+      "Orwell",
+      "Eric Blair"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     6
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-018",
+   "subfamily": "2hop",
+   "prompt": "Fact: the largest amphitheatre ever built in ancient Rome was begun around AD 70 under the emperor",
+   "target": "Vespasian",
+   "target_alts": [
+    "Titus Flavius Vespasianus",
+    "Emperor Vespasian"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Colosseum"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Colosseum",
+       "Flavian Amphitheatre",
+       "Coliseum"
+      ]
+     },
+     "match": [
+      "Colosseum",
+      "Flavian Amphitheatre",
+      "Coliseum"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "What is the largest amphitheatre ever built in ancient Rome?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Colosseum",
+      "Flavian Amphitheatre",
+      "Coliseum",
+      "Colosseo"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       3,
+       5,
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     9,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-058",
+   "subfamily": "2hop",
+   "prompt": "Fact: the Liverpool band whose members included John Lennon and Paul McCartney had as its drummer from 1962",
+   "target": "Ringo Starr",
+   "target_alts": [
+    "Richard Starkey"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "The Beatles"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "The Beatles"
+      ]
+     },
+     "match": [
+      "The Beatles"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Liverpool band included John Lennon and Paul McCartney?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "The Beatles",
+      "Beatles"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-053",
+   "subfamily": "2hop",
+   "prompt": "Fact: the hypersaline lake whose shore is the lowest land on Earth is fed mainly by the",
+   "target": "Jordan River",
+   "target_alts": [
+    "River Jordan",
+    "Jordan"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Dead Sea"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Dead Sea"
+      ]
+     },
+     "match": [
+      "Dead Sea"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which hypersaline lake has the lowest land elevation on Earth on its shore?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Dead Sea",
+      "the Dead Sea"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     2,
+     1
+    ]
+   },
+   "consistency": 0.8
+  },
+  {
+   "name": "dev-mhmt-024",
+   "subfamily": "2hop",
+   "prompt": "Fact: the two American brothers who made the first powered airplane flight in 1903 ran a bicycle shop in the Ohio city of",
+   "target": "Dayton",
+   "target_alts": [
+    "Dayton, Ohio"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Wright brothers"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Wright brothers",
+       "Orville and Wilbur Wright",
+       "Wilbur and Orville Wright"
+      ]
+     },
+     "match": [
+      "Wright brothers",
+      "Orville and Wilbur Wright",
+      "Wilbur and Orville Wright"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which two American brothers made the first powered airplane flight in 1903?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Wright brothers",
+      "the Wright brothers",
+      "Orville and Wilbur Wright",
+      "Wilbur and Orville Wright"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2,
+       6,
+       6
+      ]
+     }
+    },
+    "target": 1,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-040",
+   "subfamily": "2hop",
+   "prompt": "Fact: the suspension bridge spanning the strait at the entrance to San Francisco Bay is painted in a colour called",
+   "target": "International Orange",
+   "target_alts": [
+    "international orange"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Golden Gate Bridge"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Golden Gate Bridge"
+      ]
+     },
+     "match": [
+      "Golden Gate Bridge"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which suspension bridge spans the strait at the entrance to San Francisco Bay?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Golden Gate Bridge",
+      "the Golden Gate Bridge"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-012",
+   "subfamily": "2hop",
+   "prompt": "Fact: the Russian author of Crime and Punishment completed shortly before his death a final novel titled",
+   "target": "The Brothers Karamazov",
+   "target_alts": [
+    "Brothers Karamazov"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Fyodor Dostoevsky"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Fyodor Dostoevsky",
+       "Dostoevsky",
+       "Dostoyevsky"
+      ]
+     },
+     "match": [
+      "Fyodor Dostoevsky",
+      "Dostoevsky",
+      "Dostoyevsky"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Russian author wrote Crime and Punishment?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Fyodor Dostoevsky",
+      "Dostoevsky",
+      "Dostoyevsky",
+      "Fyodor Dostoyevsky"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       6,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 6,
+    "target_alts": [
+     5
+    ]
+   },
+   "consistency": 0.9
+  },
+  {
+   "name": "dev-mhmt-052",
+   "subfamily": "2hop",
+   "prompt": "Fact: the mile-deep gorge in northern Arizona was carved over millions of years by the",
+   "target": "Colorado River",
+   "target_alts": [
+    "Colorado"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Grand Canyon"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Grand Canyon"
+      ]
+     },
+     "match": [
+      "Grand Canyon"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "What is the mile-deep gorge in northern Arizona called?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Grand Canyon",
+      "the Grand Canyon"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     1
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-013",
+   "subfamily": "2hop",
+   "prompt": "Fact: the English novelist who wrote Pride and Prejudice also wrote a novel about the Dashwood sisters titled",
+   "target": "Sense and Sensibility",
+   "target_alts": [],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Jane Austen"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Jane Austen",
+       "Austen"
+      ]
+     },
+     "match": [
+      "Jane Austen",
+      "Austen"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which English novelist wrote Pride and Prejudice?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Jane Austen",
+      "Austen"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       3,
+       2
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": []
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-004",
+   "subfamily": "2hop",
+   "prompt": "Fact: the river that carries more water than any other river in the world empties into the",
+   "target": "Atlantic Ocean",
+   "target_alts": [
+    "Atlantic",
+    "the Atlantic"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Amazon River"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Amazon River",
+       "the Amazon",
+       "River Amazon"
+      ]
+     },
+     "match": [
+      "Amazon River",
+      "the Amazon",
+      "River Amazon"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which river has the largest discharge of water in the world?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Amazon River",
+      "Amazon",
+      "the Amazon"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2,
+       2,
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     1,
+     2
+    ]
+   },
+   "consistency": 0.8
+  },
+  {
+   "name": "dev-mhmt-088",
+   "subfamily": "3hop",
+   "prompt": "Fact: the adopted heir of the Roman dictator murdered on the Ides of March defeated Mark Antony and Cleopatra in 31 BC at the naval battle of",
+   "target": "Actium",
+   "target_alts": [
+    "Battle of Actium"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Julius Caesar",
+    "Augustus"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Julius Caesar",
+       "Gaius Julius Caesar"
+      ]
+     },
+     "match": [
+      "Julius Caesar",
+      "Gaius Julius Caesar"
+     ]
+    },
+    {
+     "role": "bridge2",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Augustus",
+       "Octavian",
+       "Caesar Augustus"
+      ]
+     },
+     "match": [
+      "Augustus",
+      "Octavian",
+      "Caesar Augustus"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which Roman dictator was murdered on the Ides of March in 44 BC?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Julius Caesar",
+      "Caesar",
+      "Gaius Julius Caesar"
+     ]
+    },
+    {
+     "question": "Who was the adopted heir of Julius Caesar?",
+     "units": [
+      "bridge2"
+     ],
+     "answers": [
+      "Augustus",
+      "Octavian",
+      "Caesar Augustus",
+      "Octavius"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2,
+       5
+      ]
+     },
+     "bridge2": {
+      "en": [
+       2,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-078",
+   "subfamily": "3hop",
+   "prompt": "Fact: the creator of the detective who lives at 221B Baker Street studied medicine at the University of",
+   "target": "Edinburgh",
+   "target_alts": [
+    "University of Edinburgh"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Sherlock Holmes",
+    "Arthur Conan Doyle"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Sherlock Holmes"
+      ]
+     },
+     "match": [
+      "Sherlock Holmes"
+     ]
+    },
+    {
+     "role": "bridge2",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Arthur Conan Doyle",
+       "Conan Doyle"
+      ]
+     },
+     "match": [
+      "Arthur Conan Doyle",
+      "Conan Doyle"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which fictional detective lives at 221B Baker Street?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Sherlock Holmes",
+      "Holmes"
+     ]
+    },
+    {
+     "question": "Who created Sherlock Holmes?",
+     "units": [
+      "bridge2"
+     ],
+     "answers": [
+      "Arthur Conan Doyle",
+      "Conan Doyle",
+      "Sir Arthur Conan Doyle"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     },
+     "bridge2": {
+      "en": [
+       3,
+       2
+      ]
+     }
+    },
+    "target": 1,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-074",
+   "subfamily": "3hop",
+   "prompt": "Fact: the composer of the ballet in which the princess Odette is turned into a swan died in 1893 in the city of",
+   "target": "Saint Petersburg",
+   "target_alts": [
+    "St. Petersburg",
+    "St Petersburg"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Swan Lake",
+    "Pyotr Ilyich Tchaikovsky"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Swan Lake"
+      ]
+     },
+     "match": [
+      "Swan Lake"
+     ]
+    },
+    {
+     "role": "bridge2",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Pyotr Ilyich Tchaikovsky",
+       "Tchaikovsky"
+      ]
+     },
+     "match": [
+      "Pyotr Ilyich Tchaikovsky",
+      "Tchaikovsky"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "In which ballet is the princess Odette turned into a swan?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Swan Lake"
+     ]
+    },
+    {
+     "question": "Who composed Swan Lake?",
+     "units": [
+      "bridge2"
+     ],
+     "answers": [
+      "Pyotr Ilyich Tchaikovsky",
+      "Tchaikovsky",
+      "Peter Tchaikovsky"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     },
+     "bridge2": {
+      "en": [
+       9,
+       4
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-096",
+   "subfamily": "3hop",
+   "prompt": "Fact: the father of the English queen who reigned when the Spanish Armada was defeated was born in 1491 at the royal palace of",
+   "target": "Greenwich Palace",
+   "target_alts": [
+    "Palace of Placentia",
+    "Greenwich",
+    "Placentia"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Elizabeth I",
+    "Henry VIII"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Elizabeth I",
+       "Queen Elizabeth I"
+      ]
+     },
+     "match": [
+      "Elizabeth I",
+      "Queen Elizabeth I"
+     ]
+    },
+    {
+     "role": "bridge2",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Henry VIII",
+       "King Henry VIII"
+      ]
+     },
+     "match": [
+      "Henry VIII",
+      "King Henry VIII"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which English queen reigned when the Spanish Armada was defeated in 1588?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Elizabeth I",
+      "Queen Elizabeth I"
+     ]
+    },
+    {
+     "question": "Who was the father of Elizabeth I?",
+     "units": [
+      "bridge2"
+     ],
+     "answers": [
+      "Henry VIII",
+      "King Henry VIII"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2,
+       3
+      ]
+     },
+     "bridge2": {
+      "en": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     5,
+     1,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-089",
+   "subfamily": "3hop",
+   "prompt": "Fact: the creator of the boy wizard who attends Hogwarts has also published adult crime novels under the pseudonym",
+   "target": "Robert Galbraith",
+   "target_alts": [
+    "Galbraith"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Harry Potter",
+    "J. K. Rowling"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Harry Potter"
+      ]
+     },
+     "match": [
+      "Harry Potter"
+     ]
+    },
+    {
+     "role": "bridge2",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "J. K. Rowling",
+       "J.K. Rowling",
+       "Joanne Rowling"
+      ]
+     },
+     "match": [
+      "J. K. Rowling",
+      "J.K. Rowling",
+      "Joanne Rowling"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which fictional boy wizard attends Hogwarts?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Harry Potter"
+     ]
+    },
+    {
+     "question": "Who created Harry Potter?",
+     "units": [
+      "bridge2"
+     ],
+     "answers": [
+      "J. K. Rowling",
+      "J.K. Rowling",
+      "Rowling",
+      "Joanne Rowling"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     },
+     "bridge2": {
+      "en": [
+       5,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-070",
+   "subfamily": "3hop",
+   "prompt": "Fact: the painter of the swirling night sky over a village, now held at MoMA in New York, died in 1890 in the village of",
+   "target": "Auvers-sur-Oise",
+   "target_alts": [
+    "Auvers"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "The Starry Night",
+    "Vincent van Gogh"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "The Starry Night",
+       "Starry Night"
+      ]
+     },
+     "match": [
+      "The Starry Night",
+      "Starry Night"
+     ]
+    },
+    {
+     "role": "bridge2",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Vincent van Gogh",
+       "Van Gogh"
+      ]
+     },
+     "match": [
+      "Vincent van Gogh",
+      "Van Gogh"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which painting of a swirling night sky over a village is held at MoMA in New York?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "The Starry Night",
+      "Starry Night"
+     ]
+    },
+    {
+     "question": "Who painted The Starry Night?",
+     "units": [
+      "bridge2"
+     ],
+     "answers": [
+      "Vincent van Gogh",
+      "Van Gogh"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       4,
+       3
+      ]
+     },
+     "bridge2": {
+      "en": [
+       4,
+       3
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     2
+    ]
+   },
+   "consistency": 0.9
+  },
+  {
+   "name": "dev-mhmt-094",
+   "subfamily": "3hop",
+   "prompt": "Fact: the university founded by the principal author of the Declaration of Independence is located in the city of",
+   "target": "Charlottesville",
+   "target_alts": [
+    "Charlottesville, Virginia"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Thomas Jefferson",
+    "University of Virginia"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Thomas Jefferson"
+      ]
+     },
+     "match": [
+      "Thomas Jefferson"
+     ]
+    },
+    {
+     "role": "bridge2",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "University of Virginia"
+      ]
+     },
+     "match": [
+      "University of Virginia"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Who was the principal author of the Declaration of Independence?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Thomas Jefferson",
+      "Jefferson"
+     ]
+    },
+    {
+     "question": "Which university did Thomas Jefferson found?",
+     "units": [
+      "bridge2"
+     ],
+     "answers": [
+      "University of Virginia",
+      "UVA",
+      "UVa"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     },
+     "bridge2": {
+      "en": [
+       3
+      ]
+     }
+    },
+    "target": 1,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-084",
+   "subfamily": "3hop",
+   "prompt": "Fact: the director of the 1993 film about cloned dinosaurs on Isla Nublar had earlier directed a 1975 shark thriller titled",
+   "target": "Jaws",
+   "target_alts": [
+    "Jaws (1975)"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Jurassic Park",
+    "Steven Spielberg"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Jurassic Park"
+      ]
+     },
+     "match": [
+      "Jurassic Park"
+     ]
+    },
+    {
+     "role": "bridge2",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Steven Spielberg"
+      ]
+     },
+     "match": [
+      "Steven Spielberg"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which 1993 film is about cloned dinosaurs on Isla Nublar?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Jurassic Park"
+     ]
+    },
+    {
+     "question": "Who directed Jurassic Park (1993)?",
+     "units": [
+      "bridge2"
+     ],
+     "answers": [
+      "Steven Spielberg",
+      "Spielberg"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2
+      ]
+     },
+     "bridge2": {
+      "en": [
+       2
+      ]
+     }
+    },
+    "target": 1,
+    "target_alts": [
+     7
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-091",
+   "subfamily": "3hop",
+   "prompt": "Fact: the shipyard that built the ocean liner sunk by an iceberg on its maiden voyage in 1912 is in the city of",
+   "target": "Belfast",
+   "target_alts": [
+    "Belfast, Northern Ireland"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "RMS Titanic",
+    "Harland and Wolff"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "RMS Titanic",
+       "the Titanic"
+      ]
+     },
+     "match": [
+      "RMS Titanic",
+      "the Titanic"
+     ]
+    },
+    {
+     "role": "bridge2",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Harland and Wolff",
+       "Harland & Wolff"
+      ]
+     },
+     "match": [
+      "Harland and Wolff",
+      "Harland & Wolff"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Which ocean liner sank after hitting an iceberg on its maiden voyage in 1912?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Titanic",
+      "RMS Titanic"
+     ]
+    },
+    {
+     "question": "Which shipyard built the RMS Titanic?",
+     "units": [
+      "bridge2"
+     ],
+     "answers": [
+      "Harland and Wolff",
+      "Harland & Wolff"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       2,
+       2
+      ]
+     },
+     "bridge2": {
+      "en": [
+       4,
+       4
+      ]
+     }
+    },
+    "target": 1,
+    "target_alts": [
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-mhmt-098",
+   "subfamily": "3hop",
+   "prompt": "Fact: the grandson of the founder of the Mongol Empire who established the Yuan dynasty received at his court the Venetian traveller",
+   "target": "Marco Polo",
+   "target_alts": [
+    "Polo"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Genghis Khan",
+    "Kublai Khan"
+   ],
+   "units": [
+    {
+     "role": "bridge1",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Genghis Khan",
+       "Chinggis Khan"
+      ]
+     },
+     "match": [
+      "Genghis Khan",
+      "Chinggis Khan"
+     ]
+    },
+    {
+     "role": "bridge2",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Kublai Khan",
+       "Khubilai Khan"
+      ]
+     },
+     "match": [
+      "Kublai Khan",
+      "Khubilai Khan"
+     ]
+    }
+   ],
+   "bridges": [
+    {
+     "question": "Who founded the Mongol Empire?",
+     "units": [
+      "bridge1"
+     ],
+     "answers": [
+      "Genghis Khan",
+      "Chinggis Khan",
+      "Temüjin"
+     ]
+    },
+    {
+     "question": "Which grandson of Genghis Khan founded the Yuan dynasty?",
+     "units": [
+      "bridge2"
+     ],
+     "answers": [
+      "Kublai Khan",
+      "Khubilai Khan",
+      "Kublai"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "bridge1": {
+      "en": [
+       3,
+       3
+      ]
+     },
+     "bridge2": {
+      "en": [
+       3,
+       4
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     1
+    ]
+   },
+   "consistency": 1.0
+  }
+ ]
+}

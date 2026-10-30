@@ -1,0 +1,3637 @@
+{
+ "family": "basic-readout-hard",
+ "parent_family": "basic-readout-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": false,
+  "conjunctive_units": true
+ },
+ "source": "jlm-dev-mt-v1",
+ "split": "fit",
+ "gate": "Qwen3.6-27B: the bench's gate question, greedy correct and >= 8/10 at T=0.7; graded by anthropic/claude-haiku-5.5 with the bench's grading prompt",
+ "items": [
+  {
+   "name": "dev-brmt-013",
+   "subfamily": "entity",
+   "prompt": "The charter of liberties sealed by King John at Runnymede in 1215 is known as",
+   "target": "Magna Carta",
+   "target_alts": [
+    "Magna Carta Libertatum",
+    "the Great Charter"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Magna Carta"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Magna Carta",
+       "Magna Carta Libertatum",
+       "the Great Charter"
+      ]
+     },
+     "match": [
+      "Magna Carta",
+      "Magna Carta Libertatum",
+      "the Great Charter"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-034",
+   "subfamily": "entity",
+   "prompt": "The chemical name of the common painkiller sold under the trade name aspirin is",
+   "target": "acetylsalicylic acid",
+   "target_alts": [
+    "2-acetoxybenzoic acid"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "acetylsalicylic acid"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "acetylsalicylic acid",
+       "2-acetoxybenzoic acid"
+      ]
+     },
+     "match": [
+      "acetylsalicylic acid",
+      "2-acetoxybenzoic acid"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       7,
+       8
+      ]
+     }
+    },
+    "target": 7,
+    "target_alts": [
+     8
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-030",
+   "subfamily": "entity",
+   "prompt": "The connective-tissue disorder caused by mutations in the fibrillin-1 gene, marked by long limbs, lens dislocation and aortic dilation, is",
+   "target": "Marfan syndrome",
+   "target_alts": [
+    "Marfan's syndrome"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Marfan syndrome"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Marfan syndrome",
+       "Marfan's syndrome"
+      ]
+     },
+     "match": [
+      "Marfan syndrome",
+      "Marfan's syndrome"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-037",
+   "subfamily": "entity",
+   "prompt": "The narrow waterway that separates Spain from Morocco and links the Atlantic Ocean to the Mediterranean is the",
+   "target": "Strait of Gibraltar",
+   "target_alts": [
+    "Straits of Gibraltar",
+    "Gibraltar Strait"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Strait of Gibraltar"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Strait of Gibraltar",
+       "Straits of Gibraltar",
+       "Gibraltar Strait"
+      ]
+     },
+     "match": [
+      "Strait of Gibraltar",
+      "Straits of Gibraltar",
+      "Gibraltar Strait"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4,
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-045",
+   "subfamily": "entity",
+   "prompt": "The national currency of Poland is the",
+   "target": "Polish złoty",
+   "target_alts": [
+    "złoty",
+    "zloty"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Polish złoty"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Polish złoty",
+       "złoty",
+       "zloty"
+      ]
+     },
+     "match": [
+      "Polish złoty",
+      "złoty",
+      "zloty"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-043",
+   "subfamily": "entity",
+   "prompt": "The large high-altitude lake straddling the border between Peru and Bolivia is",
+   "target": "Lake Titicaca",
+   "target_alts": [
+    "Titicaca"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Lake Titicaca"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Lake Titicaca",
+       "Titicaca"
+      ]
+     },
+     "match": [
+      "Lake Titicaca",
+      "Titicaca"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-048",
+   "subfamily": "entity",
+   "prompt": "The national currency of Mongolia is the",
+   "target": "Mongolian tögrög",
+   "target_alts": [
+    "tögrög",
+    "tugrik"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Mongolian tögrög"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Mongolian tögrög",
+       "tögrög",
+       "tugrik"
+      ]
+     },
+     "match": [
+      "Mongolian tögrög",
+      "tögrög",
+      "tugrik"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       3,
+       2
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     3,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-006",
+   "subfamily": "entity",
+   "prompt": "The ruling house founded by Saladin, which governed Egypt and Syria at the end of the twelfth century, is called the",
+   "target": "Ayyubid dynasty",
+   "target_alts": [
+    "Ayyubids",
+    "Ayyubid Sultanate"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Ayyubid dynasty"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Ayyubid dynasty",
+       "Ayyubids",
+       "Ayyubid Sultanate"
+      ]
+     },
+     "match": [
+      "Ayyubid dynasty",
+      "Ayyubids",
+      "Ayyubid Sultanate"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4,
+       6
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     4,
+     6
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-008",
+   "subfamily": "entity",
+   "prompt": "The Berber reformist movement founded by Ibn Tumart, which ruled the Maghreb and al-Andalus in the twelfth century, is known as the",
+   "target": "Almohad Caliphate",
+   "target_alts": [
+    "Almohads",
+    "Almohad dynasty"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Almohad Caliphate"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Almohad Caliphate",
+       "Almohads",
+       "Almohad dynasty"
+      ]
+     },
+     "match": [
+      "Almohad Caliphate",
+      "Almohads",
+      "Almohad dynasty"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       3,
+       4
+      ]
+     }
+    },
+    "target": 6,
+    "target_alts": [
+     3,
+     4
+    ]
+   },
+   "consistency": 0.9
+  },
+  {
+   "name": "dev-brmt-051",
+   "subfamily": "entity",
+   "prompt": "The national currency of Georgia, the republic in the South Caucasus, is the",
+   "target": "Georgian lari",
+   "target_alts": [
+    "the Georgian lari"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Georgian lari"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Georgian lari",
+       "the Georgian lari"
+      ]
+     },
+     "match": [
+      "Georgian lari",
+      "the Georgian lari"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-056",
+   "subfamily": "entity",
+   "prompt": "The German physicist who formulated the uncertainty principle in 1927 was",
+   "target": "Werner Heisenberg",
+   "target_alts": [
+    "Heisenberg"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Werner Heisenberg"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Werner Heisenberg",
+       "Heisenberg"
+      ]
+     },
+     "match": [
+      "Werner Heisenberg",
+      "Heisenberg"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-059",
+   "subfamily": "entity",
+   "prompt": "The Scottish bacteriologist who discovered penicillin in 1928 was",
+   "target": "Alexander Fleming",
+   "target_alts": [
+    "Sir Alexander Fleming"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Alexander Fleming"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Alexander Fleming",
+       "Sir Alexander Fleming"
+      ]
+     },
+     "match": [
+      "Alexander Fleming",
+      "Sir Alexander Fleming"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-024",
+   "subfamily": "entity",
+   "prompt": "The rule that no two identical fermions can occupy the same quantum state at the same time is the",
+   "target": "Pauli exclusion principle",
+   "target_alts": [
+    "Pauli principle",
+    "exclusion principle"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Pauli exclusion principle"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Pauli exclusion principle",
+       "Pauli principle",
+       "exclusion principle"
+      ]
+     },
+     "match": [
+      "Pauli exclusion principle",
+      "Pauli principle",
+      "exclusion principle"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3,
+       2
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     3,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-028",
+   "subfamily": "entity",
+   "prompt": "The acute autoimmune polyneuropathy that causes rapidly ascending muscle weakness, often after a Campylobacter infection, is",
+   "target": "Guillain-Barré syndrome",
+   "target_alts": [
+    "Guillain–Barré syndrome",
+    "Guillain-Barre syndrome"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Guillain-Barré syndrome"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Guillain-Barré syndrome",
+       "Guillain–Barré syndrome",
+       "Guillain-Barre syndrome"
+      ]
+     },
+     "match": [
+      "Guillain-Barré syndrome",
+      "Guillain–Barré syndrome",
+      "Guillain-Barre syndrome"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       7,
+       5
+      ]
+     }
+    },
+    "target": 6,
+    "target_alts": [
+     7,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-029",
+   "subfamily": "entity",
+   "prompt": "The congenital heart defect combining pulmonary stenosis, a ventricular septal defect, an overriding aorta and right ventricular hypertrophy is",
+   "target": "tetralogy of Fallot",
+   "target_alts": [
+    "Fallot's tetralogy",
+    "Fallot tetralogy"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "tetralogy of Fallot"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "tetralogy of Fallot",
+       "Fallot's tetralogy",
+       "Fallot tetralogy"
+      ]
+     },
+     "match": [
+      "tetralogy of Fallot",
+      "Fallot's tetralogy",
+      "Fallot tetralogy"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       6,
+       5
+      ]
+     }
+    },
+    "target": 6,
+    "target_alts": [
+     6,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-060",
+   "subfamily": "entity",
+   "prompt": "The Byzantine emperor who commissioned the Hagia Sophia and the Corpus Juris Civilis was",
+   "target": "Justinian I",
+   "target_alts": [
+    "Justinian the Great",
+    "Emperor Justinian"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Justinian I"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Justinian I",
+       "Justinian the Great",
+       "Emperor Justinian"
+      ]
+     },
+     "match": [
+      "Justinian I",
+      "Justinian the Great",
+      "Emperor Justinian"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-001",
+   "subfamily": "entity",
+   "prompt": "The 1494 agreement that divided newly discovered lands outside Europe between Portugal and Castile along a meridian west of the Cape Verde islands is known as the",
+   "target": "Treaty of Tordesillas",
+   "target_alts": [
+    "Tordesillas Treaty"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Treaty of Tordesillas"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Treaty of Tordesillas",
+       "Tordesillas Treaty"
+      ]
+     },
+     "match": [
+      "Treaty of Tordesillas",
+      "Tordesillas Treaty"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-002",
+   "subfamily": "entity",
+   "prompt": "The 1648 settlements signed at Osnabrück and Münster that ended the Thirty Years' War are collectively known as the",
+   "target": "Peace of Westphalia",
+   "target_alts": [
+    "Treaty of Westphalia",
+    "Westphalian peace"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Peace of Westphalia"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Peace of Westphalia",
+       "Treaty of Westphalia",
+       "Westphalian peace"
+      ]
+     },
+     "match": [
+      "Peace of Westphalia",
+      "Treaty of Westphalia",
+      "Westphalian peace"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       5,
+       4
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     5,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-042",
+   "subfamily": "entity",
+   "prompt": "The highest mountain in Africa, a dormant volcano in northeastern Tanzania, is",
+   "target": "Mount Kilimanjaro",
+   "target_alts": [
+    "Kilimanjaro"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Mount Kilimanjaro"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Mount Kilimanjaro",
+       "Kilimanjaro"
+      ]
+     },
+     "match": [
+      "Mount Kilimanjaro",
+      "Kilimanjaro"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-039",
+   "subfamily": "entity",
+   "prompt": "The extremely arid coastal plateau in northern Chile, often called the driest non-polar desert on Earth, is the",
+   "target": "Atacama Desert",
+   "target_alts": [
+    "Atacama"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Atacama Desert"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Atacama Desert",
+       "Atacama"
+      ]
+     },
+     "match": [
+      "Atacama Desert",
+      "Atacama"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-015",
+   "subfamily": "entity",
+   "prompt": "The 1814-1815 conference of European powers that redrew the map of the continent after Napoleon's defeat is known as the",
+   "target": "Congress of Vienna",
+   "target_alts": [
+    "Vienna Congress"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Congress of Vienna"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Congress of Vienna",
+       "Vienna Congress"
+      ]
+     },
+     "match": [
+      "Congress of Vienna",
+      "Vienna Congress"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-016",
+   "subfamily": "entity",
+   "prompt": "The 1868 political upheaval that returned practical power in Japan to the emperor and launched rapid modernization is known as the",
+   "target": "Meiji Restoration",
+   "target_alts": [
+    "Meiji Ishin",
+    "Meiji Revolution"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Meiji Restoration"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Meiji Restoration",
+       "Meiji Ishin",
+       "Meiji Revolution"
+      ]
+     },
+     "match": [
+      "Meiji Restoration",
+      "Meiji Ishin",
+      "Meiji Revolution"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-052",
+   "subfamily": "entity",
+   "prompt": "In the Republic of Venice, the elected chief magistrate who headed the state for over a thousand years bore the title of",
+   "target": "Doge of Venice",
+   "target_alts": [
+    "Venetian Doge"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Doge of Venice"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Doge of Venice",
+       "Venetian Doge"
+      ]
+     },
+     "match": [
+      "Doge of Venice",
+      "Venetian Doge"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-047",
+   "subfamily": "entity",
+   "prompt": "The national currency of Kazakhstan is the",
+   "target": "Kazakhstani tenge",
+   "target_alts": [
+    "tenge"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Kazakhstani tenge"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Kazakhstani tenge",
+       "tenge"
+      ]
+     },
+     "match": [
+      "Kazakhstani tenge",
+      "tenge"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       2
+      ]
+     }
+    },
+    "target": 6,
+    "target_alts": [
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-021",
+   "subfamily": "entity",
+   "prompt": "The physical constant of 1.380649×10⁻²³ joules per kelvin that links the average kinetic energy of particles to temperature is the",
+   "target": "Boltzmann constant",
+   "target_alts": [
+    "Boltzmann's constant"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Boltzmann constant"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Boltzmann constant",
+       "Boltzmann's constant"
+      ]
+     },
+     "match": [
+      "Boltzmann constant",
+      "Boltzmann's constant"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-036",
+   "subfamily": "entity",
+   "prompt": "The deepest oceanic trench on Earth, which contains the Challenger Deep, is the",
+   "target": "Mariana Trench",
+   "target_alts": [
+    "Marianas Trench"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Mariana Trench"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Mariana Trench",
+       "Marianas Trench"
+      ]
+     },
+     "match": [
+      "Mariana Trench",
+      "Marianas Trench"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-011",
+   "subfamily": "entity",
+   "prompt": "The medieval commercial confederation of north German merchant towns, led by Lübeck, is known as the",
+   "target": "Hanseatic League",
+   "target_alts": [
+    "the Hanse",
+    "Hanseatic Confederation"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Hanseatic League"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Hanseatic League",
+       "the Hanse",
+       "Hanseatic Confederation"
+      ]
+     },
+     "match": [
+      "Hanseatic League",
+      "the Hanse",
+      "Hanseatic Confederation"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     3,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-046",
+   "subfamily": "entity",
+   "prompt": "The national currency of Hungary is the",
+   "target": "Hungarian forint",
+   "target_alts": [
+    "the Hungarian forint"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Hungarian forint"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Hungarian forint",
+       "the Hungarian forint"
+      ]
+     },
+     "match": [
+      "Hungarian forint",
+      "the Hungarian forint"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-012",
+   "subfamily": "entity",
+   "prompt": "The 1598 decree by which Henry IV of France granted religious toleration to the Huguenots is the",
+   "target": "Edict of Nantes",
+   "target_alts": [
+    "Nantes Edict"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Edict of Nantes"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Edict of Nantes",
+       "Nantes Edict"
+      ]
+     },
+     "match": [
+      "Edict of Nantes",
+      "Nantes Edict"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-004",
+   "subfamily": "entity",
+   "prompt": "The military government that ruled Japan from Edo between 1603 and 1868 is known as the",
+   "target": "Tokugawa shogunate",
+   "target_alts": [
+    "Edo shogunate",
+    "Tokugawa bakufu"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Tokugawa shogunate"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Tokugawa shogunate",
+       "Edo shogunate",
+       "Tokugawa bakufu"
+      ]
+     },
+     "match": [
+      "Tokugawa shogunate",
+      "Edo shogunate",
+      "Tokugawa bakufu"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       4,
+       6
+      ]
+     }
+    },
+    "target": 6,
+    "target_alts": [
+     4,
+     6
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-069",
+   "subfamily": "l2_factual",
+   "prompt": "Sungai terpanjang di Afrika, yang mengalir ke utara melalui Sudan dan Mesir lalu bermuara di Laut Tengah, adalah Sungai",
+   "target": "Nil",
+   "target_alts": [
+    "Sungai Nil"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Nile River"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Nile River",
+       "River Nile"
+      ],
+      "zh": [
+       "尼罗河",
+       "尼罗河流域"
+      ]
+     },
+     "match": [
+      "Nile River",
+      "River Nile",
+      "尼罗河",
+      "尼罗河流域"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Sungai Nil",
+       "Nil"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Sungai Nil",
+      "Nil"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       2,
+       1
+      ]
+     }
+    },
+    "target": 1,
+    "target_alts": [
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-068",
+   "subfamily": "l2_factual",
+   "prompt": "Negara kepulauan di Asia Tenggara yang beribu kota di Manila adalah",
+   "target": "Filipina",
+   "target_alts": [
+    "Republik Filipina"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "the Philippines"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "the Philippines",
+       "Republic of the Philippines"
+      ],
+      "zh": [
+       "菲律宾共和国",
+       "菲律宾群岛"
+      ]
+     },
+     "match": [
+      "the Philippines",
+      "Republic of the Philippines",
+      "菲律宾共和国",
+      "菲律宾群岛"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Filipina",
+       "Republik Filipina"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Filipina",
+      "Republik Filipina"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-063",
+   "subfamily": "l2_factual",
+   "prompt": "Danau vulkanik terbesar di dunia, yang terletak di Provinsi Sumatra Utara dan mengelilingi Pulau Samosir, adalah Danau",
+   "target": "Toba",
+   "target_alts": [
+    "Danau Toba"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Lake Toba"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Lake Toba",
+       "Toba caldera"
+      ],
+      "zh": [
+       "多巴湖",
+       "多巴火山口湖"
+      ]
+     },
+     "match": [
+      "Lake Toba",
+      "Toba caldera",
+      "多巴湖",
+      "多巴火山口湖"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Danau Toba",
+       "Toba"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Danau Toba",
+      "Toba"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4
+      ],
+      "zh": [
+       2,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       4,
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-061",
+   "subfamily": "l2_factual",
+   "prompt": "Candi Hindu terbesar di Indonesia, yang dibangun pada abad ke-9 di dekat Yogyakarta untuk memuliakan Trimurti, bernama Candi",
+   "target": "Prambanan",
+   "target_alts": [
+    "Candi Prambanan",
+    "Rara Jonggrang"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Prambanan Temple"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Prambanan Temple",
+       "Prambanan"
+      ],
+      "zh": [
+       "普兰巴南",
+       "普兰巴南神庙"
+      ]
+     },
+     "match": [
+      "Prambanan Temple",
+      "Prambanan",
+      "普兰巴南",
+      "普兰巴南神庙"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Prambanan",
+       "Candi Prambanan"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Prambanan",
+      "Candi Prambanan"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3
+      ],
+      "zh": [
+       4,
+       5
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       5
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     5,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-081",
+   "subfamily": "l2_factual",
+   "prompt": "Afrikan mantereen eteläisin valtio, jonka presidenttinä Nelson Mandela toimi vuosina 1994–1999, on",
+   "target": "Etelä-Afrikka",
+   "target_alts": [
+    "Etelä-Afrikan",
+    "Etelä-Afrikassa",
+    "Etelä-Afrikan tasavalta"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "South Africa"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "South Africa",
+       "Republic of South Africa"
+      ],
+      "zh": [
+       "南非共和国"
+      ]
+     },
+     "match": [
+      "South Africa",
+      "Republic of South Africa",
+      "南非共和国"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "Etelä-Afrikka",
+       "Etelä-Afrikan",
+       "Etelä-Afrikassa"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "Etelä-Afrikka",
+      "Etelä-Afrikan",
+      "Etelä-Afrikassa"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       7,
+       6,
+       7
+      ]
+     }
+    },
+    "target": 7,
+    "target_alts": [
+     6,
+     7,
+     9
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-073",
+   "subfamily": "l2_factual",
+   "prompt": "الرحالة المغربي الذي وُلد في طنجة سنة 1304 وجاب العالم الإسلامي ودوّن رحلته في كتاب تحفة النظار هو",
+   "target": "ابن بطوطة",
+   "target_alts": [
+    "محمد بن عبد الله بن بطوطة",
+    "بن بطوطة"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "Ibn Battuta"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Ibn Battuta",
+       "Ibn Batuta"
+      ],
+      "zh": [
+       "伊本·白图泰",
+       "伊本·巴图塔"
+      ]
+     },
+     "match": [
+      "Ibn Battuta",
+      "Ibn Batuta",
+      "伊本·白图泰",
+      "伊本·巴图塔"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "ابن بطوطة",
+       "محمد بن عبد الله بن بطوطة"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "ابن بطوطة",
+      "محمد بن عبد الله بن بطوطة"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       3
+      ],
+      "zh": [
+       6,
+       6
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       4,
+       8
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     8,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-091",
+   "subfamily": "l2_factual",
+   "prompt": "Szlovákia mai fővárosa, amely 1536 és 1783 között a Magyar Királyság fővárosa volt, magyar nevén",
+   "target": "Pozsony",
+   "target_alts": [
+    "Pozsonyban",
+    "Pozsonyt",
+    "Pozsonyba"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "Bratislava"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Bratislava",
+       "Pressburg"
+      ],
+      "zh": [
+       "布拉迪斯拉发",
+       "普雷斯堡"
+      ]
+     },
+     "match": [
+      "Bratislava",
+      "Pressburg",
+      "布拉迪斯拉发",
+      "普雷斯堡"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "Pozsony",
+       "Pozsonyban",
+       "Pozsonyt"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "Pozsony",
+      "Pozsonyban",
+      "Pozsonyt"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       4,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       3,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     3,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-065",
+   "subfamily": "l2_factual",
+   "prompt": "Perairan sempit yang memisahkan Pulau Jawa dari Pulau Sumatra, tempat Gunung Krakatau berada, disebut Selat",
+   "target": "Sunda",
+   "target_alts": [
+    "Selat Sunda"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Sunda Strait"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Sunda Strait",
+       "Strait of Sunda"
+      ],
+      "zh": [
+       "巽他海峡"
+      ]
+     },
+     "match": [
+      "Sunda Strait",
+      "Strait of Sunda",
+      "巽他海峡"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Selat Sunda",
+       "Sunda"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Selat Sunda",
+      "Sunda"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4
+      ],
+      "zh": [
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       4,
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-084",
+   "subfamily": "l2_factual",
+   "prompt": "ראש הממשלה הראשון של מדינת ישראל, שהכריז על הקמתה במאי 1948, היה",
+   "target": "דוד בן-גוריון",
+   "target_alts": [
+    "בן-גוריון",
+    "דוד בן גוריון"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "David Ben-Gurion"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "David Ben-Gurion",
+       "Ben-Gurion"
+      ],
+      "zh": [
+       "戴维·本-古里安",
+       "本-古里安"
+      ]
+     },
+     "match": [
+      "David Ben-Gurion",
+      "Ben-Gurion",
+      "戴维·本-古里安",
+      "本-古里安"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "דוד בן-גוריון",
+       "בן-גוריון",
+       "דוד בן גוריון"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "דוד בן-גוריון",
+      "בן-גוריון",
+      "דוד בן גוריון"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4
+      ],
+      "zh": [
+       8,
+       5
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       9,
+       7,
+       8
+      ]
+     }
+    },
+    "target": 9,
+    "target_alts": [
+     7,
+     8
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-075",
+   "subfamily": "l2_factual",
+   "prompt": "الفيلسوف والطبيب الملقب بالشيخ الرئيس وصاحب كتاب القانون في الطب هو",
+   "target": "ابن سينا",
+   "target_alts": [
+    "أبو علي ابن سينا",
+    "أبو علي الحسين بن عبد الله بن سينا"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "Ibn Sina"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Ibn Sina",
+       "Avicenna"
+      ],
+      "zh": [
+       "伊本·西那",
+       "阿维森纳"
+      ]
+     },
+     "match": [
+      "Ibn Sina",
+      "Avicenna",
+      "伊本·西那",
+      "阿维森纳"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "ابن سينا",
+       "أبو علي ابن سينا"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "ابن سينا",
+      "أبو علي ابن سينا"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       2
+      ],
+      "zh": [
+       5,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       3,
+       5
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     5,
+     9
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-095",
+   "subfamily": "l2_factual",
+   "prompt": "제주도 한가운데 솟아 있으며 남한에서 가장 높은 산의 이름은",
+   "target": "한라산",
+   "target_alts": [
+    "한라산이다",
+    "한라산은"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ko",
+   "intermediates": [
+    "Mount Halla"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Mount Halla",
+       "Hallasan"
+      ],
+      "zh": [
+       "汉拿山",
+       "汉拏山"
+      ]
+     },
+     "match": [
+      "Mount Halla",
+      "Hallasan",
+      "汉拿山",
+      "汉拏山"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Korean"
+      ],
+      "zh": [
+       "韩语",
+       "韩国语"
+      ],
+      "ko": [
+       "한라산",
+       "한라산이다"
+      ]
+     },
+     "match": [
+      "Korean",
+      "韩语",
+      "韩国语",
+      "한라산",
+      "한라산이다"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       2
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1,
+       2
+      ],
+      "ko": [
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-080",
+   "subfamily": "l2_factual",
+   "prompt": "Venäjän keisarikunnan pääkaupunkina vuosina 1712–1918 toiminut, Nevajoen suulle rakennettu kaupunki on suomeksi nimeltään",
+   "target": "Pietari",
+   "target_alts": [
+    "Pietarin",
+    "Pietarissa",
+    "Pietariin"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "Saint Petersburg"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Saint Petersburg",
+       "St. Petersburg"
+      ],
+      "zh": [
+       "圣彼得堡",
+       "彼得格勒"
+      ]
+     },
+     "match": [
+      "Saint Petersburg",
+      "St. Petersburg",
+      "圣彼得堡",
+      "彼得格勒"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "Pietari",
+       "Pietarin",
+       "Pietarissa"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "Pietari",
+      "Pietarin",
+      "Pietarissa"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       2,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     2,
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-074",
+   "subfamily": "l2_factual",
+   "prompt": "مؤلف كتاب المقدمة الذي يُعدّ من مؤسسي علم الاجتماع هو المؤرخ التونسي",
+   "target": "ابن خلدون",
+   "target_alts": [
+    "عبد الرحمن بن خلدون"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "Ibn Khaldun"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Ibn Khaldun",
+       "Ibn Khaldoun"
+      ],
+      "zh": [
+       "伊本·赫勒敦",
+       "伊本·哈勒敦"
+      ]
+     },
+     "match": [
+      "Ibn Khaldun",
+      "Ibn Khaldoun",
+      "伊本·赫勒敦",
+      "伊本·哈勒敦"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "ابن خلدون",
+       "عبد الرحمن بن خلدون"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "ابن خلدون",
+      "عبد الرحمن بن خلدون"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       4
+      ],
+      "zh": [
+       6,
+       6
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       4,
+       6
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     6
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-093",
+   "subfamily": "l2_factual",
+   "prompt": "1443년 한글을 창제하고 1446년 훈민정음을 반포한 조선의 제4대 왕은",
+   "target": "세종대왕",
+   "target_alts": [
+    "세종",
+    "세종 대왕"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ko",
+   "intermediates": [
+    "Sejong the Great"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Sejong the Great",
+       "King Sejong"
+      ],
+      "zh": [
+       "世宗大王",
+       "朝鲜世宗"
+      ]
+     },
+     "match": [
+      "Sejong the Great",
+      "King Sejong",
+      "世宗大王",
+      "朝鲜世宗"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Korean"
+      ],
+      "zh": [
+       "韩语",
+       "韩国语"
+      ],
+      "ko": [
+       "세종대왕",
+       "세종"
+      ]
+     },
+     "match": [
+      "Korean",
+      "韩语",
+      "韩国语",
+      "세종대왕",
+      "세종"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1,
+       2
+      ],
+      "ko": [
+       3,
+       1
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     1,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-062",
+   "subfamily": "l2_factual",
+   "prompt": "Tokoh yang membacakan teks Proklamasi Kemerdekaan Indonesia pada 17 Agustus 1945 bersama Mohammad Hatta adalah",
+   "target": "Soekarno",
+   "target_alts": [
+    "Sukarno",
+    "Bung Karno",
+    "Ir. Soekarno"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Sukarno"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Sukarno",
+       "President Sukarno"
+      ],
+      "zh": [
+       "苏加诺",
+       "苏加诺总统"
+      ]
+     },
+     "match": [
+      "Sukarno",
+      "President Sukarno",
+      "苏加诺",
+      "苏加诺总统"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Soekarno",
+       "Bung Karno",
+       "Ir. Soekarno"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Soekarno",
+      "Bung Karno",
+      "Ir. Soekarno"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       3,
+       5
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2,
+     3,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-076",
+   "subfamily": "l2_factual",
+   "prompt": "المعركة التي انتصر فيها صلاح الدين الأيوبي على جيوش الصليبيين سنة 1187 قرب بحيرة طبرية هي معركة",
+   "target": "حطين",
+   "target_alts": [
+    "معركة حطين",
+    "قرون حطين"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "Battle of Hattin"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Battle of Hattin",
+       "Horns of Hattin"
+      ],
+      "zh": [
+       "哈丁战役",
+       "哈廷战役"
+      ]
+     },
+     "match": [
+      "Battle of Hattin",
+      "Horns of Hattin",
+      "哈丁战役",
+      "哈廷战役"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "حطين",
+       "معركة حطين"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "حطين",
+      "معركة حطين"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       4
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-087",
+   "subfamily": "l2_factual",
+   "prompt": "הסופר העברי שזכה בפרס נובל לספרות בשנת 1966 היה",
+   "target": "ש\"י עגנון",
+   "target_alts": [
+    "שמואל יוסף עגנון",
+    "עגנון",
+    "ש״י עגנון"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "Shmuel Yosef Agnon"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Shmuel Yosef Agnon",
+       "S. Y. Agnon"
+      ],
+      "zh": [
+       "阿格农",
+       "萨缪尔·约瑟夫·阿格农"
+      ]
+     },
+     "match": [
+      "Shmuel Yosef Agnon",
+      "S. Y. Agnon",
+      "阿格农",
+      "萨缪尔·约瑟夫·阿格农"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "ש\"י עגנון",
+       "שמואל יוסף עגנון",
+       "עגנון"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "ש\"י עגנון",
+      "שמואל יוסף עגנון",
+      "עגנון"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       7,
+       6
+      ],
+      "zh": [
+       3,
+       11
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       7,
+       10,
+       4
+      ]
+     }
+    },
+    "target": 7,
+    "target_alts": [
+     10,
+     4,
+     8
+    ]
+   },
+   "consistency": 0.9
+  },
+  {
+   "name": "dev-brmt-067",
+   "subfamily": "l2_factual",
+   "prompt": "Bunga tunggal terbesar di dunia, yang berbau seperti bangkai dan tumbuh sebagai parasit di hutan Sumatra, adalah",
+   "target": "Rafflesia arnoldii",
+   "target_alts": [
+    "Padma raksasa",
+    "bunga Rafflesia"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Rafflesia arnoldii"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Rafflesia arnoldii",
+       "Rafflesia flower"
+      ],
+      "zh": [
+       "阿诺尔特大王花",
+       "大王花"
+      ]
+     },
+     "match": [
+      "Rafflesia arnoldii",
+      "Rafflesia flower",
+      "阿诺尔特大王花",
+      "大王花"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Rafflesia arnoldii",
+       "Padma raksasa"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Rafflesia arnoldii",
+      "Padma raksasa"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       7,
+       4
+      ],
+      "zh": [
+       5,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       7,
+       4
+      ]
+     }
+    },
+    "target": 7,
+    "target_alts": [
+     4,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-083",
+   "subfamily": "l2_factual",
+   "prompt": "Turkin, Ukrainan ja Bulgarian rannoille ulottuva sisämeri, johon Tonava laskee, on nimeltään",
+   "target": "Mustameri",
+   "target_alts": [
+    "Mustanmeren",
+    "Mustallamerellä",
+    "Musta meri"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "Black Sea"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Black Sea",
+       "the Black Sea"
+      ],
+      "zh": [
+       "黑海",
+       "黑海海域"
+      ]
+     },
+     "match": [
+      "Black Sea",
+      "the Black Sea",
+      "黑海",
+      "黑海海域"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "Mustameri",
+       "Mustanmeren",
+       "Mustallamerellä"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "Mustameri",
+      "Mustanmeren",
+      "Mustallamerellä"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       3,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     4,
+     3
+    ]
+   },
+   "consistency": 1.0
+  }
+ ]
+}

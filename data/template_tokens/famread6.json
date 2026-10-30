@@ -1,0 +1,424 @@
+{
+ "name": "famread6",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 59,
+ "excluded_targets": 1577,
+ "min_families": 6,
+ "source": "fam-at-self__cos top-10 at the fit read cells",
+ "tokens": [
+  {
+   "id": 94860,
+   "text": " subscript",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 166 times"
+   ]
+  },
+  {
+   "id": 18337,
+   "text": " downtown",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 144 times"
+   ]
+  },
+  {
+   "id": 108819,
+   "text": "åĨ¬åŃ£",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 45 times"
+   ]
+  },
+  {
+   "id": 111548,
+   "text": "æ¼Ķå¥ı",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 33 times"
+   ]
+  },
+  {
+   "id": 17415,
+   "text": " ocean",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 29 times"
+   ]
+  },
+  {
+   "id": 8446,
+   "text": " whom",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 20 times"
+   ]
+  },
+  {
+   "id": 101917,
+   "text": "åŃ£èĬĤ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 96 times"
+   ]
+  },
+  {
+   "id": 73959,
+   "text": " pigment",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 79 times"
+   ]
+  },
+  {
+   "id": 10124,
+   "text": " texture",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 61 times"
+   ]
+  },
+  {
+   "id": 9605,
+   "text": " animals",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 58 times"
+   ]
+  },
+  {
+   "id": 852,
+   "text": " who",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 44 times"
+   ]
+  },
+  {
+   "id": 100012,
+   "text": "ç§°ä¸º",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 38 times"
+   ]
+  },
+  {
+   "id": 99961,
+   "text": "åĬ¨çī©",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 36 times"
+   ]
+  },
+  {
+   "id": 31883,
+   "text": " vibrant",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 35 times"
+   ]
+  },
+  {
+   "id": 7172,
+   "text": " located",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 24 times"
+   ]
+  },
+  {
+   "id": 108936,
+   "text": "æĦıå¤§åĪ©",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 24 times"
+   ]
+  },
+  {
+   "id": 58801,
+   "text": " ecosystems",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 23 times"
+   ]
+  },
+  {
+   "id": 9572,
+   "text": " animal",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 23 times"
+   ]
+  },
+  {
+   "id": 7348,
+   "text": " Tuesday",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 273 times"
+   ]
+  },
+  {
+   "id": 30137,
+   "text": " moisture",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 145 times"
+   ]
+  },
+  {
+   "id": 98436,
+   "text": "åĲįç§°",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 117 times"
+   ]
+  },
+  {
+   "id": 99527,
+   "text": "æĸĩåŃ¦",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 113 times"
+   ]
+  },
+  {
+   "id": 9432,
+   "text": " cities",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 109 times"
+   ]
+  },
+  {
+   "id": 206737,
+   "text": "ãĢįãĢģãĢĮ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 99 times"
+   ]
+  },
+  {
+   "id": 99455,
+   "text": "å¥¹çļĦ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 90 times"
+   ]
+  },
+  {
+   "id": 52637,
+   "text": " furnace",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 77 times"
+   ]
+  },
+  {
+   "id": 10462,
+   "text": " plants",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 73 times"
+   ]
+  },
+  {
+   "id": 5656,
+   "text": " countries",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 70 times"
+   ]
+  },
+  {
+   "id": 3177,
+   "text": " city",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 65 times"
+   ]
+  },
+  {
+   "id": 159424,
+   "text": " Ð³Ð¾ÑĢÐ¾Ð´Ð°",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 58 times"
+   ]
+  },
+  {
+   "id": 109406,
+   "text": "æĺ¯è°ģ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 55 times"
+   ]
+  },
+  {
+   "id": 29215,
+   "text": "-season",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 52 times"
+   ]
+  },
+  {
+   "id": 9039,
+   "text": " temperature",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 51 times"
+   ]
+  },
+  {
+   "id": 109005,
+   "text": "åĨ¬å¤©",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 44 times"
+   ]
+  },
+  {
+   "id": 9871,
+   "text": " Africa",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 44 times"
+   ]
+  },
+  {
+   "id": 98661,
+   "text": "æĺ¯ä»Ģä¹Ī",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 41 times"
+   ]
+  },
+  {
+   "id": 99452,
+   "text": "å¹´åº¦",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 35 times"
+   ]
+  },
+  {
+   "id": 28346,
+   "text": " wildlife",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 35 times"
+   ]
+  },
+  {
+   "id": 86088,
+   "text": " bustling",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 35 times"
+   ]
+  },
+  {
+   "id": 97649,
+   "text": "åĨ¬",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 34 times"
+   ]
+  },
+  {
+   "id": 74171,
+   "text": "animals",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 32 times"
+   ]
+  },
+  {
+   "id": 1092,
+   "text": " what",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 30 times"
+   ]
+  },
+  {
+   "id": 11308,
+   "text": " African",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 30 times"
+   ]
+  },
+  {
+   "id": 98635,
+   "text": "å²Ĺä½į",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 28 times"
+   ]
+  },
+  {
+   "id": 28053,
+   "text": " islands",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 28 times"
+   ]
+  },
+  {
+   "id": 53234,
+   "text": " cidade",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 26 times"
+   ]
+  },
+  {
+   "id": 137590,
+   "text": "è¥¿çıŃçīĻè¯Ń",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 26 times"
+   ]
+  },
+  {
+   "id": 3061,
+   "text": " software",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 25 times"
+   ]
+  },
+  {
+   "id": 25467,
+   "text": " palette",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 25 times"
+   ]
+  },
+  {
+   "id": 123875,
+   "text": "åĲĽä¸»",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 24 times"
+   ]
+  },
+  {
+   "id": 116384,
+   "text": "ä¿Ĺç§°",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 24 times"
+   ]
+  },
+  {
+   "id": 14202,
+   "text": "who",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 23 times"
+   ]
+  },
+  {
+   "id": 53702,
+   "text": " mammals",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 23 times"
+   ]
+  },
+  {
+   "id": 17163,
+   "text": " Spain",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 23 times"
+   ]
+  },
+  {
+   "id": 51935,
+   "text": " Countries",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 21 times"
+   ]
+  },
+  {
+   "id": 100738,
+   "text": "æĺ¥èĬĤ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 20 times"
+   ]
+  },
+  {
+   "id": 44253,
+   "text": " nowadays",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 18 times"
+   ]
+  },
+  {
+   "id": 10201,
+   "text": " funds",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 16 times"
+   ]
+  },
+  {
+   "id": 2062,
+   "text": "____",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 10 times"
+   ]
+  }
+ ]
+}

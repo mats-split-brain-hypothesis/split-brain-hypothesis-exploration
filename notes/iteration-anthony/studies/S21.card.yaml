@@ -1,0 +1,39 @@
+id: S21
+title: Label-free schedule plus an early transferred correction
+owner: B (j-lens-mean-e1), night-2 (steward's card; A's S14k + B's S20x)
+status: open
+question: >
+  Does S20x's cross-family correction add on top of A's label-free finalist S14k (k-means cluster mean up to L40, template
+  subspace removal above) without losing the _mt units S14k keeps?
+verdict: >
+  Yes, if it is applied only where it works, up to L40: val strict +0.047 vs fam (+0.048 without UM / DM), guardrail ok,
+  +0.014 over S14k (multihop +0.10, typo +0.05) with S14k's language unit and bridge kept; a random direction adds +0.001.
+  Applied late it costs the strict language unit again. Under Haiku its _mt mean equals S14k's (0.449 vs 0.461): the
+  gain is on the single-token families. Under rms it holds when the correction is fitted through the rms map (+0.042
+  vs rms fam; the cos-fitted one read through rms gives +0.006). Supervised (other families' fit targets), as S20x.
+tiles:
+  - {label: "val strict macro, Δ vs fam", value: "+0.047", sub: "+0.048 without UM / DM; guardrail ok"}
+  - {label: "val strict, Δ vs S14k", value: "+0.014", sub: "random-direction control +0.001; fit-only pick +0.045 vs fam"}
+  - {label: "val multihop, strict", value: "0.747", sub: "S14k 0.651, fam 0.614"}
+  - {label: "val Haiku _mt mean", value: "0.449", sub: "S14k 0.461, fam 0.416"}
+  - {label: "val strict, rms readout, Δ vs rms fam", value: "+0.042", sub: "rms-fitted correction; cos-fitted +0.006; S14k +0.020"}
+  - {label: "fresh val2 (C, S24), S21b Δ fam", value: "+0.049", sub: "[+0.012, +0.086]; single centre +0.056"}
+formulas:
+  - latex: 'g_l(h) = \begin{cases} \bar h_{C(h)} + \bar d_{-F} & l \le 40 \\ P_{B_l} h & l > 40 \end{cases}'
+    note: "C(h): h's k-means cluster (k = 64) of every family's fit read cells; d̄_{-F}: S20x's mean correction of the other families (twin out); B_l: the span of the lens's reading directions of 64 template tokens (A's S14)."
+diagram:
+  kind: layer
+  lag: 0
+  axis: layer
+  caption: "Early layers: cluster mean plus the transferred correction; late layers: the template subspace removed."
+split: val
+arms: ["sched:40:s20xon:1:kmx64+s14t64@fit|cos", "sched:40:s20xon:1:kmx64+s20xon:1:s14t64@fit|cos", "sched:40:kmx64+s20xon:1:s14t64@fit|cos", "sched:40:kmx64+s14t64@fit|cos"]
+controls: ["sched:40:s20xron:1:kmx64+s20xron:1:s14t64@fit|cos"]
+insights:
+  - {lead: "S21b replicates on a fresh held-out split", text: "C's val2: S21b +0.049 [+0.012, +0.086] vs fam, its single-centre form +0.056; the label-free S14k base does not replicate (+0.003)."}
+  - {lead: "The two gains are separable by depth and add", text: "S20x's correction works at L20-40 (multihop's bridge, typo), where the family mean adds nothing (S17); S14k's template removal works above L40 (language unit, bridge2, DM). Each in its place: +0.014 over S14k with nothing lost."}
+  - {lead: "S20x's language-unit cost is a late-layer effect", text: "The every-layer and late-only versions lose the strict language unit (0.58 / 0.26 pass), the early-only version keeps it (0.77)."}
+  - {lead: "The judge sees no gain over the label-free base", text: "Haiku _mt mean S21 0.449 vs S14k 0.461, DM 0.276 vs 0.303 (think / don't contrast +14 vs +18); S21b (on S14b) 0.424 vs 0.462 and DM 0.382 vs 0.395. The supervised gain is strict single-token (multihop, typo)."}
+  - {lead: "S21b: the correction on S14b keeps association", text: "Val strict +0.058 cos / +0.057 rms, guardrail ok; S14b's late half cluster mean restores the rewrite frame S21 lost."}
+  - {lead: "Val-selection audit", text: "Fit alone picks S21's every-layer form (val +0.045, w/o UM / DM +0.037) over the early-only headline (+0.047 / +0.048)."}
+next: ["A fresh dev split: val has chosen among the S20x / S21 forms tonight.", "User: is a supervised transfer centre a method?"]

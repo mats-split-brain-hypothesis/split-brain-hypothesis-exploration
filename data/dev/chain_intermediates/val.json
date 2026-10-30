@@ -1,0 +1,6174 @@
+{
+ "family": "chain_intermediates",
+ "split": "val",
+ "source": "jlm-dev-intermediates-v1",
+ "gate": "Qwen3.6-27B, seed-last prompt: greedy correct, 10/10 samples at T=0.8, top-p 0.95 correct, no reply names an intermediate",
+ "n": 170,
+ "items": [
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "triple"
+   ],
+   "steps": [
+    "Double it.",
+    "Multiply it by 3."
+   ],
+   "start": 12,
+   "intermediates": [
+    24
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 72,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nMultiply it by 3.\nThe starting number is 12. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 12 and apply the steps below, in order.\nDouble it.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    12
+   ],
+   "name": "dev-chain-d2-0001",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "72",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_up"
+   ],
+   "steps": [
+    "Subtract 8.",
+    "Halve it, rounding up."
+   ],
+   "start": 25,
+   "intermediates": [
+    17
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 9,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 8.\nHalve it, rounding up.\nThe starting number is 25. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 25 and apply the steps below, in order.\nSubtract 8.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    25
+   ],
+   "name": "dev-chain-d2-0002",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "9",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "sub"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Subtract 5."
+   ],
+   "start": 26,
+   "intermediates": [
+    13
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 8,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nSubtract 5.\nThe starting number is 26. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 26 and apply the steps below, in order.\nHalve it, rounding up.\nSubtract 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    26
+   ],
+   "name": "dev-chain-d2-0003",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "8",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 9."
+   ],
+   "start": 20,
+   "intermediates": [
+    40
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 49,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 9.\nThe starting number is 20. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 20 and apply the steps below, in order.\nDouble it.\nAdd 9.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9,
+    20
+   ],
+   "name": "dev-chain-d2-0006",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "49",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "double"
+   ],
+   "steps": [
+    "Subtract 4.",
+    "Double it."
+   ],
+   "start": 11,
+   "intermediates": [
+    7
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 14,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 4.\nDouble it.\nThe starting number is 11. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 11 and apply the steps below, in order.\nSubtract 4.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    11
+   ],
+   "name": "dev-chain-d2-0009",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "14",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_down",
+    "sub"
+   ],
+   "steps": [
+    "Halve it, rounding down.",
+    "Subtract 4."
+   ],
+   "start": 20,
+   "intermediates": [
+    10
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 6,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding down.\nSubtract 4.\nThe starting number is 20. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 20 and apply the steps below, in order.\nHalve it, rounding down.\nSubtract 4.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    20
+   ],
+   "name": "dev-chain-d2-0012",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "6",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "triple"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Multiply it by 3."
+   ],
+   "start": 24,
+   "intermediates": [
+    12
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 36,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nMultiply it by 3.\nThe starting number is 24. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 24 and apply the steps below, in order.\nHalve it, rounding up.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    24
+   ],
+   "name": "dev-chain-d2-0015",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "36",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "halve_down"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Halve it, rounding down."
+   ],
+   "start": 14,
+   "intermediates": [
+    42
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 21,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nHalve it, rounding down.\nThe starting number is 14. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 14 and apply the steps below, in order.\nMultiply it by 3.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    14
+   ],
+   "name": "dev-chain-d2-0021",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "21",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "halve_down"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Halve it, rounding down."
+   ],
+   "start": 7,
+   "intermediates": [
+    21
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 10,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nHalve it, rounding down.\nThe starting number is 7. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 7 and apply the steps below, in order.\nMultiply it by 3.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7
+   ],
+   "name": "dev-chain-d2-0023",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "10",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "sub"
+   ],
+   "steps": [
+    "Double it.",
+    "Subtract 5."
+   ],
+   "start": 27,
+   "intermediates": [
+    54
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 49,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nSubtract 5.\nThe starting number is 27. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 27 and apply the steps below, in order.\nDouble it.\nSubtract 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    27
+   ],
+   "name": "dev-chain-d2-0024",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "49",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "sub"
+   ],
+   "steps": [
+    "Subtract 9.",
+    "Subtract 7."
+   ],
+   "start": 22,
+   "intermediates": [
+    13
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 6,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 9.\nSubtract 7.\nThe starting number is 22. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 22 and apply the steps below, in order.\nSubtract 9.\nSubtract 7.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7,
+    9,
+    22
+   ],
+   "name": "dev-chain-d2-0025",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "6",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "add"
+   ],
+   "steps": [
+    "Subtract 8.",
+    "Add 7."
+   ],
+   "start": 9,
+   "intermediates": [
+    1
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 8,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 8.\nAdd 7.\nThe starting number is 9. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 9 and apply the steps below, in order.\nSubtract 8.\nAdd 7.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7,
+    8,
+    9
+   ],
+   "name": "dev-chain-d2-0028",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "8",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_down",
+    "add"
+   ],
+   "steps": [
+    "Halve it, rounding down.",
+    "Add 3."
+   ],
+   "start": 29,
+   "intermediates": [
+    14
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 17,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding down.\nAdd 3.\nThe starting number is 29. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 29 and apply the steps below, in order.\nHalve it, rounding down.\nAdd 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    29
+   ],
+   "name": "dev-chain-d2-0034",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "17",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_down",
+    "add"
+   ],
+   "steps": [
+    "Halve it, rounding down.",
+    "Add 2."
+   ],
+   "start": 11,
+   "intermediates": [
+    5
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 7,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding down.\nAdd 2.\nThe starting number is 11. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 11 and apply the steps below, in order.\nHalve it, rounding down.\nAdd 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    11
+   ],
+   "name": "dev-chain-d2-0036",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "7",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_down",
+    "halve_down"
+   ],
+   "steps": [
+    "Halve it, rounding down.",
+    "Halve it, rounding down."
+   ],
+   "start": 8,
+   "intermediates": [
+    4
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 2,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding down.\nHalve it, rounding down.\nThe starting number is 8. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 8 and apply the steps below, in order.\nHalve it, rounding down.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8
+   ],
+   "name": "dev-chain-d2-0039",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "2",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "sub"
+   ],
+   "steps": [
+    "Double it.",
+    "Subtract 2."
+   ],
+   "start": 6,
+   "intermediates": [
+    12
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 10,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nSubtract 2.\nThe starting number is 6. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 6 and apply the steps below, in order.\nDouble it.\nSubtract 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    6
+   ],
+   "name": "dev-chain-d2-0042",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "10",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "halve_down"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Halve it, rounding down."
+   ],
+   "start": 27,
+   "intermediates": [
+    81
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 40,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nHalve it, rounding down.\nThe starting number is 27. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 27 and apply the steps below, in order.\nMultiply it by 3.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    27
+   ],
+   "name": "dev-chain-d2-0046",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "40",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_down",
+    "triple"
+   ],
+   "steps": [
+    "Halve it, rounding down.",
+    "Multiply it by 3."
+   ],
+   "start": 26,
+   "intermediates": [
+    13
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 39,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding down.\nMultiply it by 3.\nThe starting number is 26. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 26 and apply the steps below, in order.\nHalve it, rounding down.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    26
+   ],
+   "name": "dev-chain-d2-0047",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "39",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_down",
+    "halve_down"
+   ],
+   "steps": [
+    "Halve it, rounding down.",
+    "Halve it, rounding down."
+   ],
+   "start": 9,
+   "intermediates": [
+    4
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 2,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding down.\nHalve it, rounding down.\nThe starting number is 9. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 9 and apply the steps below, in order.\nHalve it, rounding down.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9
+   ],
+   "name": "dev-chain-d2-0050",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "2",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 9."
+   ],
+   "start": 10,
+   "intermediates": [
+    20
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 29,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 9.\nThe starting number is 10. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 10 and apply the steps below, in order.\nDouble it.\nAdd 9.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9,
+    10
+   ],
+   "name": "dev-chain-d2-0051",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "29",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "add"
+   ],
+   "steps": [
+    "Add 4.",
+    "Add 6."
+   ],
+   "start": 29,
+   "intermediates": [
+    33
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 39,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 4.\nAdd 6.\nThe starting number is 29. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 29 and apply the steps below, in order.\nAdd 4.\nAdd 6.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    6,
+    29
+   ],
+   "name": "dev-chain-d2-0055",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "39",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "add"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Add 2."
+   ],
+   "start": 13,
+   "intermediates": [
+    7
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 9,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nAdd 2.\nThe starting number is 13. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 13 and apply the steps below, in order.\nHalve it, rounding up.\nAdd 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    13
+   ],
+   "name": "dev-chain-d2-0061",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "9",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 3."
+   ],
+   "start": 9,
+   "intermediates": [
+    18
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 21,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 3.\nThe starting number is 9. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 9 and apply the steps below, in order.\nDouble it.\nAdd 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    9
+   ],
+   "name": "dev-chain-d2-0065",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "21",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "triple"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Multiply it by 3."
+   ],
+   "start": 3,
+   "intermediates": [
+    9
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 27,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nMultiply it by 3.\nThe starting number is 3. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 3 and apply the steps below, in order.\nMultiply it by 3.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3
+   ],
+   "name": "dev-chain-d2-0066",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "27",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "add"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Add 9."
+   ],
+   "start": 20,
+   "intermediates": [
+    10
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 19,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nAdd 9.\nThe starting number is 20. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 20 and apply the steps below, in order.\nHalve it, rounding up.\nAdd 9.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9,
+    20
+   ],
+   "name": "dev-chain-d2-0072",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "19",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "sub"
+   ],
+   "steps": [
+    "Add 3.",
+    "Subtract 2."
+   ],
+   "start": 30,
+   "intermediates": [
+    33
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 31,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 3.\nSubtract 2.\nThe starting number is 30. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 30 and apply the steps below, in order.\nAdd 3.\nSubtract 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    3,
+    30
+   ],
+   "name": "dev-chain-d2-0078",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "31",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 7."
+   ],
+   "start": 21,
+   "intermediates": [
+    42
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 49,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 7.\nThe starting number is 21. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 21 and apply the steps below, in order.\nDouble it.\nAdd 7.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7,
+    21
+   ],
+   "name": "dev-chain-d2-0084",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "49",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "sub"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Subtract 8."
+   ],
+   "start": 9,
+   "intermediates": [
+    27
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 19,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nSubtract 8.\nThe starting number is 9. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 9 and apply the steps below, in order.\nMultiply it by 3.\nSubtract 8.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    9
+   ],
+   "name": "dev-chain-d2-0085",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "19",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "sub"
+   ],
+   "steps": [
+    "Double it.",
+    "Subtract 5."
+   ],
+   "start": 24,
+   "intermediates": [
+    48
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 43,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nSubtract 5.\nThe starting number is 24. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 24 and apply the steps below, in order.\nDouble it.\nSubtract 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    24
+   ],
+   "name": "dev-chain-d2-0087",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "43",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_down"
+   ],
+   "steps": [
+    "Subtract 7.",
+    "Halve it, rounding down."
+   ],
+   "start": 16,
+   "intermediates": [
+    9
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 4,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 7.\nHalve it, rounding down.\nThe starting number is 16. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 16 and apply the steps below, in order.\nSubtract 7.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7,
+    16
+   ],
+   "name": "dev-chain-d2-0090",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "4",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_down"
+   ],
+   "steps": [
+    "Subtract 6.",
+    "Halve it, rounding down."
+   ],
+   "start": 10,
+   "intermediates": [
+    4
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 2,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 6.\nHalve it, rounding down.\nThe starting number is 10. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 10 and apply the steps below, in order.\nSubtract 6.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    6,
+    10
+   ],
+   "name": "dev-chain-d2-0092",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "2",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "halve_down"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Halve it, rounding down."
+   ],
+   "start": 16,
+   "intermediates": [
+    48
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 24,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nHalve it, rounding down.\nThe starting number is 16. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 16 and apply the steps below, in order.\nMultiply it by 3.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    16
+   ],
+   "name": "dev-chain-d2-0096",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "24",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "halve_up"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Halve it, rounding up."
+   ],
+   "start": 6,
+   "intermediates": [
+    3
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 2,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nHalve it, rounding up.\nThe starting number is 6. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 6 and apply the steps below, in order.\nHalve it, rounding up.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    6
+   ],
+   "name": "dev-chain-d2-0097",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "2",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "add"
+   ],
+   "steps": [
+    "Add 7.",
+    "Add 4."
+   ],
+   "start": 5,
+   "intermediates": [
+    12
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 16,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 7.\nAdd 4.\nThe starting number is 5. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 5 and apply the steps below, in order.\nAdd 7.\nAdd 4.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    5,
+    7
+   ],
+   "name": "dev-chain-d2-0102",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "16",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "halve_up"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Halve it, rounding up."
+   ],
+   "start": 14,
+   "intermediates": [
+    42
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 21,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nHalve it, rounding up.\nThe starting number is 14. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 14 and apply the steps below, in order.\nMultiply it by 3.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    14
+   ],
+   "name": "dev-chain-d2-0105",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "21",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "add"
+   ],
+   "steps": [
+    "Add 8.",
+    "Add 4."
+   ],
+   "start": 30,
+   "intermediates": [
+    38
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 42,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 8.\nAdd 4.\nThe starting number is 30. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 30 and apply the steps below, in order.\nAdd 8.\nAdd 4.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    8,
+    30
+   ],
+   "name": "dev-chain-d2-0106",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "42",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "halve_up"
+   ],
+   "steps": [
+    "Add 8.",
+    "Halve it, rounding up."
+   ],
+   "start": 20,
+   "intermediates": [
+    28
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 14,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 8.\nHalve it, rounding up.\nThe starting number is 20. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 20 and apply the steps below, in order.\nAdd 8.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    20
+   ],
+   "name": "dev-chain-d2-0111",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "14",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "add"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Add 9."
+   ],
+   "start": 20,
+   "intermediates": [
+    60
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 69,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nAdd 9.\nThe starting number is 20. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 20 and apply the steps below, in order.\nMultiply it by 3.\nAdd 9.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9,
+    20
+   ],
+   "name": "dev-chain-d2-0114",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "69",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "sub"
+   ],
+   "steps": [
+    "Subtract 9.",
+    "Subtract 3."
+   ],
+   "start": 14,
+   "intermediates": [
+    5
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 2,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 9.\nSubtract 3.\nThe starting number is 14. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 14 and apply the steps below, in order.\nSubtract 9.\nSubtract 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    9,
+    14
+   ],
+   "name": "dev-chain-d2-0116",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "2",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "double"
+   ],
+   "steps": [
+    "Add 7.",
+    "Double it."
+   ],
+   "start": 9,
+   "intermediates": [
+    16
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 32,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 7.\nDouble it.\nThe starting number is 9. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 9 and apply the steps below, in order.\nAdd 7.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7,
+    9
+   ],
+   "name": "dev-chain-d2-0121",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "32",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "halve_up"
+   ],
+   "steps": [
+    "Add 4.",
+    "Halve it, rounding up."
+   ],
+   "start": 7,
+   "intermediates": [
+    11
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 6,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 4.\nHalve it, rounding up.\nThe starting number is 7. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 7 and apply the steps below, in order.\nAdd 4.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    7
+   ],
+   "name": "dev-chain-d2-0122",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "6",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "sub"
+   ],
+   "steps": [
+    "Subtract 2.",
+    "Subtract 5."
+   ],
+   "start": 28,
+   "intermediates": [
+    26
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 21,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 2.\nSubtract 5.\nThe starting number is 28. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 28 and apply the steps below, in order.\nSubtract 2.\nSubtract 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    5,
+    28
+   ],
+   "name": "dev-chain-d2-0125",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "21",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "double"
+   ],
+   "steps": [
+    "Double it.",
+    "Double it."
+   ],
+   "start": 14,
+   "intermediates": [
+    28
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 56,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nDouble it.\nThe starting number is 14. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 14 and apply the steps below, in order.\nDouble it.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    14
+   ],
+   "name": "dev-chain-d2-0130",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "56",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "halve_up"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Halve it, rounding up."
+   ],
+   "start": 4,
+   "intermediates": [
+    12
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 6,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nHalve it, rounding up.\nThe starting number is 4. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 4 and apply the steps below, in order.\nMultiply it by 3.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4
+   ],
+   "name": "dev-chain-d2-0131",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "6",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "double"
+   ],
+   "steps": [
+    "Double it.",
+    "Double it."
+   ],
+   "start": 11,
+   "intermediates": [
+    22
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 44,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nDouble it.\nThe starting number is 11. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 11 and apply the steps below, in order.\nDouble it.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    11
+   ],
+   "name": "dev-chain-d2-0133",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "44",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "sub"
+   ],
+   "steps": [
+    "Subtract 3.",
+    "Subtract 5."
+   ],
+   "start": 17,
+   "intermediates": [
+    14
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 9,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 3.\nSubtract 5.\nThe starting number is 17. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 17 and apply the steps below, in order.\nSubtract 3.\nSubtract 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    5,
+    17
+   ],
+   "name": "dev-chain-d2-0135",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "9",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "halve_down"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Halve it, rounding down."
+   ],
+   "start": 16,
+   "intermediates": [
+    8
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 4,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nHalve it, rounding down.\nThe starting number is 16. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 16 and apply the steps below, in order.\nHalve it, rounding up.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    16
+   ],
+   "name": "dev-chain-d2-0145",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "4",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "triple"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Multiply it by 3."
+   ],
+   "start": 20,
+   "intermediates": [
+    10
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 30,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nMultiply it by 3.\nThe starting number is 20. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 20 and apply the steps below, in order.\nHalve it, rounding up.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    20
+   ],
+   "name": "dev-chain-d2-0146",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "30",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "add"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Add 7."
+   ],
+   "start": 11,
+   "intermediates": [
+    33
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 40,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nAdd 7.\nThe starting number is 11. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 11 and apply the steps below, in order.\nMultiply it by 3.\nAdd 7.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7,
+    11
+   ],
+   "name": "dev-chain-d2-0147",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "40",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "sub"
+   ],
+   "steps": [
+    "Add 8.",
+    "Subtract 6."
+   ],
+   "start": 25,
+   "intermediates": [
+    33
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 27,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 8.\nSubtract 6.\nThe starting number is 25. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 25 and apply the steps below, in order.\nAdd 8.\nSubtract 6.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    6,
+    8,
+    25
+   ],
+   "name": "dev-chain-d2-0153",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "27",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 2."
+   ],
+   "start": 13,
+   "intermediates": [
+    26
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 28,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 2.\nThe starting number is 13. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 13 and apply the steps below, in order.\nDouble it.\nAdd 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    13
+   ],
+   "name": "dev-chain-d2-0158",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "28",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "triple"
+   ],
+   "steps": [
+    "Subtract 8.",
+    "Multiply it by 3."
+   ],
+   "start": 30,
+   "intermediates": [
+    22
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 66,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 8.\nMultiply it by 3.\nThe starting number is 30. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 30 and apply the steps below, in order.\nSubtract 8.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    30
+   ],
+   "name": "dev-chain-d2-0163",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "66",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "sub"
+   ],
+   "steps": [
+    "Add 3.",
+    "Subtract 4."
+   ],
+   "start": 20,
+   "intermediates": [
+    23
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 19,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 3.\nSubtract 4.\nThe starting number is 20. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 20 and apply the steps below, in order.\nAdd 3.\nSubtract 4.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    4,
+    20
+   ],
+   "name": "dev-chain-d2-0164",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "19",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "double"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Double it."
+   ],
+   "start": 13,
+   "intermediates": [
+    39
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 78,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nDouble it.\nThe starting number is 13. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 13 and apply the steps below, in order.\nMultiply it by 3.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    13
+   ],
+   "name": "dev-chain-d2-0165",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "78",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "sub"
+   ],
+   "steps": [
+    "Subtract 7.",
+    "Subtract 5."
+   ],
+   "start": 25,
+   "intermediates": [
+    18
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 13,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 7.\nSubtract 5.\nThe starting number is 25. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 25 and apply the steps below, in order.\nSubtract 7.\nSubtract 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    7,
+    25
+   ],
+   "name": "dev-chain-d2-0170",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "13",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "add"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Add 7."
+   ],
+   "start": 9,
+   "intermediates": [
+    27
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 34,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nAdd 7.\nThe starting number is 9. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 9 and apply the steps below, in order.\nMultiply it by 3.\nAdd 7.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7,
+    9
+   ],
+   "name": "dev-chain-d2-0176",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "34",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "halve_down"
+   ],
+   "steps": [
+    "Add 4.",
+    "Halve it, rounding down."
+   ],
+   "start": 15,
+   "intermediates": [
+    19
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 9,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 4.\nHalve it, rounding down.\nThe starting number is 15. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 15 and apply the steps below, in order.\nAdd 4.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    15
+   ],
+   "name": "dev-chain-d2-0178",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "9",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "add"
+   ],
+   "steps": [
+    "Add 9.",
+    "Add 2."
+   ],
+   "start": 10,
+   "intermediates": [
+    19
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 21,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 9.\nAdd 2.\nThe starting number is 10. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 10 and apply the steps below, in order.\nAdd 9.\nAdd 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    9,
+    10
+   ],
+   "name": "dev-chain-d2-0179",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "21",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "sub"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Subtract 6."
+   ],
+   "start": 29,
+   "intermediates": [
+    87
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 81,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nSubtract 6.\nThe starting number is 29. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 29 and apply the steps below, in order.\nMultiply it by 3.\nSubtract 6.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    6,
+    29
+   ],
+   "name": "dev-chain-d2-0180",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "81",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "halve_up"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Halve it, rounding up."
+   ],
+   "start": 7,
+   "intermediates": [
+    4
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 2,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nHalve it, rounding up.\nThe starting number is 7. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 7 and apply the steps below, in order.\nHalve it, rounding up.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7
+   ],
+   "name": "dev-chain-d2-0185",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "2",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 9."
+   ],
+   "start": 30,
+   "intermediates": [
+    60
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 69,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 9.\nThe starting number is 30. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 30 and apply the steps below, in order.\nDouble it.\nAdd 9.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9,
+    30
+   ],
+   "name": "dev-chain-d2-0187",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "69",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "double"
+   ],
+   "steps": [
+    "Subtract 6.",
+    "Double it."
+   ],
+   "start": 30,
+   "intermediates": [
+    24
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 48,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 6.\nDouble it.\nThe starting number is 30. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 30 and apply the steps below, in order.\nSubtract 6.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    6,
+    30
+   ],
+   "name": "dev-chain-d2-0188",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "48",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "double"
+   ],
+   "steps": [
+    "Add 7.",
+    "Double it."
+   ],
+   "start": 6,
+   "intermediates": [
+    13
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 26,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 7.\nDouble it.\nThe starting number is 6. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 6 and apply the steps below, in order.\nAdd 7.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    6,
+    7
+   ],
+   "name": "dev-chain-d2-0189",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "26",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "double"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Double it."
+   ],
+   "start": 5,
+   "intermediates": [
+    15
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 30,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nDouble it.\nThe starting number is 5. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 5 and apply the steps below, in order.\nMultiply it by 3.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5
+   ],
+   "name": "dev-chain-d2-0191",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "30",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "sub"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Subtract 8."
+   ],
+   "start": 23,
+   "intermediates": [
+    12
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 4,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nSubtract 8.\nThe starting number is 23. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 23 and apply the steps below, in order.\nHalve it, rounding up.\nSubtract 8.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    23
+   ],
+   "name": "dev-chain-d2-0193",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "4",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "add"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Add 3."
+   ],
+   "start": 23,
+   "intermediates": [
+    12
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 15,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nAdd 3.\nThe starting number is 23. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 23 and apply the steps below, in order.\nHalve it, rounding up.\nAdd 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    23
+   ],
+   "name": "dev-chain-d2-0195",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "15",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "double"
+   ],
+   "steps": [
+    "Add 4.",
+    "Double it."
+   ],
+   "start": 13,
+   "intermediates": [
+    17
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 34,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 4.\nDouble it.\nThe starting number is 13. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 13 and apply the steps below, in order.\nAdd 4.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    13
+   ],
+   "name": "dev-chain-d2-0197",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "34",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "add"
+   ],
+   "steps": [
+    "Add 7.",
+    "Add 5."
+   ],
+   "start": 3,
+   "intermediates": [
+    10
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 15,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 7.\nAdd 5.\nThe starting number is 3. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 3 and apply the steps below, in order.\nAdd 7.\nAdd 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    5,
+    7
+   ],
+   "name": "dev-chain-d2-0199",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "15",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_up"
+   ],
+   "steps": [
+    "Subtract 6.",
+    "Halve it, rounding up."
+   ],
+   "start": 26,
+   "intermediates": [
+    20
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 10,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 6.\nHalve it, rounding up.\nThe starting number is 26. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 26 and apply the steps below, in order.\nSubtract 6.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    6,
+    26
+   ],
+   "name": "dev-chain-d2-0202",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "10",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "triple"
+   ],
+   "steps": [
+    "Add 6.",
+    "Multiply it by 3."
+   ],
+   "start": 16,
+   "intermediates": [
+    22
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 66,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 6.\nMultiply it by 3.\nThe starting number is 16. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 16 and apply the steps below, in order.\nAdd 6.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    6,
+    16
+   ],
+   "name": "dev-chain-d2-0203",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "66",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "double"
+   ],
+   "steps": [
+    "Subtract 7.",
+    "Double it."
+   ],
+   "start": 12,
+   "intermediates": [
+    5
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 10,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 7.\nDouble it.\nThe starting number is 12. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 12 and apply the steps below, in order.\nSubtract 7.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7,
+    12
+   ],
+   "name": "dev-chain-d2-0204",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "10",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 8."
+   ],
+   "start": 19,
+   "intermediates": [
+    38
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 46,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 8.\nThe starting number is 19. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 19 and apply the steps below, in order.\nDouble it.\nAdd 8.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    19
+   ],
+   "name": "dev-chain-d2-0209",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "46",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "add"
+   ],
+   "steps": [
+    "Add 2.",
+    "Add 7."
+   ],
+   "start": 24,
+   "intermediates": [
+    26
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 33,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 2.\nAdd 7.\nThe starting number is 24. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 24 and apply the steps below, in order.\nAdd 2.\nAdd 7.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    7,
+    24
+   ],
+   "name": "dev-chain-d2-0210",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "33",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_down",
+    "sub"
+   ],
+   "steps": [
+    "Halve it, rounding down.",
+    "Subtract 2."
+   ],
+   "start": 30,
+   "intermediates": [
+    15
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 13,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding down.\nSubtract 2.\nThe starting number is 30. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 30 and apply the steps below, in order.\nHalve it, rounding down.\nSubtract 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    30
+   ],
+   "name": "dev-chain-d2-0214",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "13",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_down"
+   ],
+   "steps": [
+    "Subtract 2.",
+    "Halve it, rounding down."
+   ],
+   "start": 22,
+   "intermediates": [
+    20
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 10,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 2.\nHalve it, rounding down.\nThe starting number is 22. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 22 and apply the steps below, in order.\nSubtract 2.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    22
+   ],
+   "name": "dev-chain-d2-0215",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "10",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "add"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Add 8."
+   ],
+   "start": 25,
+   "intermediates": [
+    13
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 21,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nAdd 8.\nThe starting number is 25. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 25 and apply the steps below, in order.\nHalve it, rounding up.\nAdd 8.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    25
+   ],
+   "name": "dev-chain-d2-0218",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "21",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 4."
+   ],
+   "start": 19,
+   "intermediates": [
+    38
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 42,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 4.\nThe starting number is 19. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 19 and apply the steps below, in order.\nDouble it.\nAdd 4.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    19
+   ],
+   "name": "dev-chain-d2-0219",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "42",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_up"
+   ],
+   "steps": [
+    "Subtract 8.",
+    "Halve it, rounding up."
+   ],
+   "start": 27,
+   "intermediates": [
+    19
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 10,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 8.\nHalve it, rounding up.\nThe starting number is 27. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 27 and apply the steps below, in order.\nSubtract 8.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    27
+   ],
+   "name": "dev-chain-d2-0220",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "10",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "halve_down"
+   ],
+   "steps": [
+    "Add 8.",
+    "Halve it, rounding down."
+   ],
+   "start": 4,
+   "intermediates": [
+    12
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 6,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 8.\nHalve it, rounding down.\nThe starting number is 4. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 4 and apply the steps below, in order.\nAdd 8.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    8
+   ],
+   "name": "dev-chain-d2-0227",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "6",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "double"
+   ],
+   "steps": [
+    "Add 8.",
+    "Double it."
+   ],
+   "start": 24,
+   "intermediates": [
+    32
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 64,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 8.\nDouble it.\nThe starting number is 24. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 24 and apply the steps below, in order.\nAdd 8.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    24
+   ],
+   "name": "dev-chain-d2-0228",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "64",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "add"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Add 9."
+   ],
+   "start": 23,
+   "intermediates": [
+    69
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 78,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nAdd 9.\nThe starting number is 23. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 23 and apply the steps below, in order.\nMultiply it by 3.\nAdd 9.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9,
+    23
+   ],
+   "name": "dev-chain-d2-0233",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "78",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "sub"
+   ],
+   "steps": [
+    "Subtract 4.",
+    "Subtract 4."
+   ],
+   "start": 30,
+   "intermediates": [
+    26
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 22,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 4.\nSubtract 4.\nThe starting number is 30. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 30 and apply the steps below, in order.\nSubtract 4.\nSubtract 4.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    30
+   ],
+   "name": "dev-chain-d2-0237",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "22",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 2."
+   ],
+   "start": 11,
+   "intermediates": [
+    22
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 24,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 2.\nThe starting number is 11. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 11 and apply the steps below, in order.\nDouble it.\nAdd 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    11
+   ],
+   "name": "dev-chain-d2-0239",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "24",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "halve_up"
+   ],
+   "steps": [
+    "Add 8.",
+    "Halve it, rounding up."
+   ],
+   "start": 16,
+   "intermediates": [
+    24
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 12,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 8.\nHalve it, rounding up.\nThe starting number is 16. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 16 and apply the steps below, in order.\nAdd 8.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    16
+   ],
+   "name": "dev-chain-d2-0251",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "12",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "sub"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Subtract 6."
+   ],
+   "start": 17,
+   "intermediates": [
+    51
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 45,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nSubtract 6.\nThe starting number is 17. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 17 and apply the steps below, in order.\nMultiply it by 3.\nSubtract 6.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    6,
+    17
+   ],
+   "name": "dev-chain-d2-0252",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "45",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "add"
+   ],
+   "steps": [
+    "Subtract 7.",
+    "Add 5."
+   ],
+   "start": 28,
+   "intermediates": [
+    21
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 26,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 7.\nAdd 5.\nThe starting number is 28. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 28 and apply the steps below, in order.\nSubtract 7.\nAdd 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    7,
+    28
+   ],
+   "name": "dev-chain-d2-0254",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "26",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_up"
+   ],
+   "steps": [
+    "Subtract 6.",
+    "Halve it, rounding up."
+   ],
+   "start": 14,
+   "intermediates": [
+    8
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 4,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 6.\nHalve it, rounding up.\nThe starting number is 14. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 14 and apply the steps below, in order.\nSubtract 6.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    6,
+    14
+   ],
+   "name": "dev-chain-d2-0258",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "4",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 6."
+   ],
+   "start": 28,
+   "intermediates": [
+    56
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 62,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 6.\nThe starting number is 28. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 28 and apply the steps below, in order.\nDouble it.\nAdd 6.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    6,
+    28
+   ],
+   "name": "dev-chain-d2-0269",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "62",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "sub"
+   ],
+   "steps": [
+    "Add 8.",
+    "Subtract 5."
+   ],
+   "start": 11,
+   "intermediates": [
+    19
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 14,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 8.\nSubtract 5.\nThe starting number is 11. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 11 and apply the steps below, in order.\nAdd 8.\nSubtract 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    8,
+    11
+   ],
+   "name": "dev-chain-d2-0270",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "14",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "add"
+   ],
+   "steps": [
+    "Subtract 4.",
+    "Add 7."
+   ],
+   "start": 29,
+   "intermediates": [
+    25
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 32,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 4.\nAdd 7.\nThe starting number is 29. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 29 and apply the steps below, in order.\nSubtract 4.\nAdd 7.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    7,
+    29
+   ],
+   "name": "dev-chain-d2-0279",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "32",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "add"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Add 6."
+   ],
+   "start": 23,
+   "intermediates": [
+    69
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 75,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nAdd 6.\nThe starting number is 23. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 23 and apply the steps below, in order.\nMultiply it by 3.\nAdd 6.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    6,
+    23
+   ],
+   "name": "dev-chain-d2-0290",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "75",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "sub"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Subtract 5."
+   ],
+   "start": 27,
+   "intermediates": [
+    14
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 9,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nSubtract 5.\nThe starting number is 27. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 27 and apply the steps below, in order.\nHalve it, rounding up.\nSubtract 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    27
+   ],
+   "name": "dev-chain-d2-0293",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "9",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "halve_up"
+   ],
+   "steps": [
+    "Add 8.",
+    "Halve it, rounding up."
+   ],
+   "start": 12,
+   "intermediates": [
+    20
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 10,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 8.\nHalve it, rounding up.\nThe starting number is 12. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 12 and apply the steps below, in order.\nAdd 8.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    12
+   ],
+   "name": "dev-chain-d2-0295",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "10",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "triple"
+   ],
+   "steps": [
+    "Subtract 4.",
+    "Multiply it by 3."
+   ],
+   "start": 15,
+   "intermediates": [
+    11
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 33,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 4.\nMultiply it by 3.\nThe starting number is 15. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 15 and apply the steps below, in order.\nSubtract 4.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    15
+   ],
+   "name": "dev-chain-d2-0301",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "33",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "add"
+   ],
+   "steps": [
+    "Add 5.",
+    "Add 8."
+   ],
+   "start": 16,
+   "intermediates": [
+    21
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 29,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 5.\nAdd 8.\nThe starting number is 16. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 16 and apply the steps below, in order.\nAdd 5.\nAdd 8.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    8,
+    16
+   ],
+   "name": "dev-chain-d2-0305",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "29",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "add"
+   ],
+   "steps": [
+    "Add 5.",
+    "Add 5."
+   ],
+   "start": 28,
+   "intermediates": [
+    33
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 38,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 5.\nAdd 5.\nThe starting number is 28. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 28 and apply the steps below, in order.\nAdd 5.\nAdd 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    28
+   ],
+   "name": "dev-chain-d2-0308",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "38",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "triple"
+   ],
+   "steps": [
+    "Double it.",
+    "Multiply it by 3."
+   ],
+   "start": 14,
+   "intermediates": [
+    28
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 84,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nMultiply it by 3.\nThe starting number is 14. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 14 and apply the steps below, in order.\nDouble it.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    14
+   ],
+   "name": "dev-chain-d2-0309",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "84",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 6."
+   ],
+   "start": 23,
+   "intermediates": [
+    46
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 52,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 6.\nThe starting number is 23. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 23 and apply the steps below, in order.\nDouble it.\nAdd 6.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    6,
+    23
+   ],
+   "name": "dev-chain-d2-0320",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "52",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "triple"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Multiply it by 3."
+   ],
+   "start": 22,
+   "intermediates": [
+    11
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 33,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nMultiply it by 3.\nThe starting number is 22. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 22 and apply the steps below, in order.\nHalve it, rounding up.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    22
+   ],
+   "name": "dev-chain-d2-0328",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "33",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "add"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Add 5."
+   ],
+   "start": 29,
+   "intermediates": [
+    15
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 20,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nAdd 5.\nThe starting number is 29. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 29 and apply the steps below, in order.\nHalve it, rounding up.\nAdd 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    29
+   ],
+   "name": "dev-chain-d2-0332",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "20",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "sub"
+   ],
+   "steps": [
+    "Subtract 3.",
+    "Subtract 3."
+   ],
+   "start": 24,
+   "intermediates": [
+    21
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 18,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 3.\nSubtract 3.\nThe starting number is 24. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 24 and apply the steps below, in order.\nSubtract 3.\nSubtract 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    24
+   ],
+   "name": "dev-chain-d2-0343",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "18",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "halve_up"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Halve it, rounding up."
+   ],
+   "start": 9,
+   "intermediates": [
+    5
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 3,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nHalve it, rounding up.\nThe starting number is 9. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 9 and apply the steps below, in order.\nHalve it, rounding up.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9
+   ],
+   "name": "dev-chain-d2-0344",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "3",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "double"
+   ],
+   "steps": [
+    "Subtract 4.",
+    "Double it."
+   ],
+   "start": 25,
+   "intermediates": [
+    21
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 42,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 4.\nDouble it.\nThe starting number is 25. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 25 and apply the steps below, in order.\nSubtract 4.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    25
+   ],
+   "name": "dev-chain-d2-0346",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "42",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 8."
+   ],
+   "start": 14,
+   "intermediates": [
+    28
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 36,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 8.\nThe starting number is 14. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 14 and apply the steps below, in order.\nDouble it.\nAdd 8.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    14
+   ],
+   "name": "dev-chain-d2-0352",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "36",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "add"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Add 9."
+   ],
+   "start": 2,
+   "intermediates": [
+    1
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 10,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nAdd 9.\nThe starting number is 2. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 2 and apply the steps below, in order.\nHalve it, rounding up.\nAdd 9.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    9
+   ],
+   "name": "dev-chain-d2-0354",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "10",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_up"
+   ],
+   "steps": [
+    "Subtract 3.",
+    "Halve it, rounding up."
+   ],
+   "start": 16,
+   "intermediates": [
+    13
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 7,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 3.\nHalve it, rounding up.\nThe starting number is 16. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 16 and apply the steps below, in order.\nSubtract 3.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    16
+   ],
+   "name": "dev-chain-d2-0357",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "7",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "halve_down"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Halve it, rounding down."
+   ],
+   "start": 27,
+   "intermediates": [
+    14
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 7,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nHalve it, rounding down.\nThe starting number is 27. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 27 and apply the steps below, in order.\nHalve it, rounding up.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    27
+   ],
+   "name": "dev-chain-d2-0361",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "7",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_up"
+   ],
+   "steps": [
+    "Subtract 4.",
+    "Halve it, rounding up."
+   ],
+   "start": 13,
+   "intermediates": [
+    9
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 5,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 4.\nHalve it, rounding up.\nThe starting number is 13. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 13 and apply the steps below, in order.\nSubtract 4.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    13
+   ],
+   "name": "dev-chain-d2-0366",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "5",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_down",
+    "halve_down"
+   ],
+   "steps": [
+    "Halve it, rounding down.",
+    "Halve it, rounding down."
+   ],
+   "start": 20,
+   "intermediates": [
+    10
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 5,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding down.\nHalve it, rounding down.\nThe starting number is 20. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 20 and apply the steps below, in order.\nHalve it, rounding down.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    20
+   ],
+   "name": "dev-chain-d2-0370",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "5",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "add"
+   ],
+   "steps": [
+    "Add 6.",
+    "Add 3."
+   ],
+   "start": 5,
+   "intermediates": [
+    11
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 14,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 6.\nAdd 3.\nThe starting number is 5. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 5 and apply the steps below, in order.\nAdd 6.\nAdd 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    5,
+    6
+   ],
+   "name": "dev-chain-d2-0373",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "14",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "sub"
+   ],
+   "steps": [
+    "Double it.",
+    "Subtract 9."
+   ],
+   "start": 16,
+   "intermediates": [
+    32
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 23,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nSubtract 9.\nThe starting number is 16. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 16 and apply the steps below, in order.\nDouble it.\nSubtract 9.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9,
+    16
+   ],
+   "name": "dev-chain-d2-0374",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "23",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "add"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Add 3."
+   ],
+   "start": 16,
+   "intermediates": [
+    8
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 11,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nAdd 3.\nThe starting number is 16. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 16 and apply the steps below, in order.\nHalve it, rounding up.\nAdd 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    16
+   ],
+   "name": "dev-chain-d2-0376",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "11",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "halve_up"
+   ],
+   "steps": [
+    "Add 5.",
+    "Halve it, rounding up."
+   ],
+   "start": 2,
+   "intermediates": [
+    7
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 4,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 5.\nHalve it, rounding up.\nThe starting number is 2. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 2 and apply the steps below, in order.\nAdd 5.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    5
+   ],
+   "name": "dev-chain-d2-0386",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "4",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "sub"
+   ],
+   "steps": [
+    "Add 4.",
+    "Subtract 3."
+   ],
+   "start": 7,
+   "intermediates": [
+    11
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 8,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 4.\nSubtract 3.\nThe starting number is 7. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 7 and apply the steps below, in order.\nAdd 4.\nSubtract 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    4,
+    7
+   ],
+   "name": "dev-chain-d2-0388",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "8",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "add"
+   ],
+   "steps": [
+    "Add 8.",
+    "Add 8."
+   ],
+   "start": 2,
+   "intermediates": [
+    10
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 18,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 8.\nAdd 8.\nThe starting number is 2. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 2 and apply the steps below, in order.\nAdd 8.\nAdd 8.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    8
+   ],
+   "name": "dev-chain-d2-0390",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "18",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "sub"
+   ],
+   "steps": [
+    "Add 6.",
+    "Subtract 2."
+   ],
+   "start": 19,
+   "intermediates": [
+    25
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 23,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 6.\nSubtract 2.\nThe starting number is 19. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 19 and apply the steps below, in order.\nAdd 6.\nSubtract 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    6,
+    19
+   ],
+   "name": "dev-chain-d2-0397",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "23",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "sub"
+   ],
+   "steps": [
+    "Add 5.",
+    "Subtract 8."
+   ],
+   "start": 11,
+   "intermediates": [
+    16
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 8,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 5.\nSubtract 8.\nThe starting number is 11. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 11 and apply the steps below, in order.\nAdd 5.\nSubtract 8.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    8,
+    11
+   ],
+   "name": "dev-chain-d2-0399",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "8",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "sub"
+   ],
+   "steps": [
+    "Subtract 7.",
+    "Subtract 7."
+   ],
+   "start": 15,
+   "intermediates": [
+    8
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 1,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 7.\nSubtract 7.\nThe starting number is 15. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 15 and apply the steps below, in order.\nSubtract 7.\nSubtract 7.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7,
+    15
+   ],
+   "name": "dev-chain-d2-0402",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "1",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "add"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Add 2."
+   ],
+   "start": 14,
+   "intermediates": [
+    42
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 44,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nAdd 2.\nThe starting number is 14. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 14 and apply the steps below, in order.\nMultiply it by 3.\nAdd 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    14
+   ],
+   "name": "dev-chain-d2-0406",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "44",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_up"
+   ],
+   "steps": [
+    "Subtract 3.",
+    "Halve it, rounding up."
+   ],
+   "start": 17,
+   "intermediates": [
+    14
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 7,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 3.\nHalve it, rounding up.\nThe starting number is 17. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 17 and apply the steps below, in order.\nSubtract 3.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    17
+   ],
+   "name": "dev-chain-d2-0410",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "7",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_down",
+    "double"
+   ],
+   "steps": [
+    "Halve it, rounding down.",
+    "Double it."
+   ],
+   "start": 11,
+   "intermediates": [
+    5
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 10,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding down.\nDouble it.\nThe starting number is 11. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 11 and apply the steps below, in order.\nHalve it, rounding down.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    11
+   ],
+   "name": "dev-chain-d2-0411",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "10",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "sub"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Subtract 5."
+   ],
+   "start": 25,
+   "intermediates": [
+    13
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 8,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nSubtract 5.\nThe starting number is 25. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 25 and apply the steps below, in order.\nHalve it, rounding up.\nSubtract 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    25
+   ],
+   "name": "dev-chain-d2-0412",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "8",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "add"
+   ],
+   "steps": [
+    "Subtract 4.",
+    "Add 7."
+   ],
+   "start": 13,
+   "intermediates": [
+    9
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 16,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 4.\nAdd 7.\nThe starting number is 13. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 13 and apply the steps below, in order.\nSubtract 4.\nAdd 7.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    7,
+    13
+   ],
+   "name": "dev-chain-d2-0414",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "16",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "sub"
+   ],
+   "steps": [
+    "Add 9.",
+    "Subtract 4."
+   ],
+   "start": 10,
+   "intermediates": [
+    19
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 15,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 9.\nSubtract 4.\nThe starting number is 10. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 10 and apply the steps below, in order.\nAdd 9.\nSubtract 4.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    9,
+    10
+   ],
+   "name": "dev-chain-d2-0417",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "15",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_down"
+   ],
+   "steps": [
+    "Subtract 9.",
+    "Halve it, rounding down."
+   ],
+   "start": 17,
+   "intermediates": [
+    8
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 4,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 9.\nHalve it, rounding down.\nThe starting number is 17. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 17 and apply the steps below, in order.\nSubtract 9.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9,
+    17
+   ],
+   "name": "dev-chain-d2-0418",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "4",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_down",
+    "sub"
+   ],
+   "steps": [
+    "Halve it, rounding down.",
+    "Subtract 7."
+   ],
+   "start": 20,
+   "intermediates": [
+    10
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 3,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding down.\nSubtract 7.\nThe starting number is 20. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 20 and apply the steps below, in order.\nHalve it, rounding down.\nSubtract 7.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7,
+    20
+   ],
+   "name": "dev-chain-d2-0419",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "3",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "halve_down"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Halve it, rounding down."
+   ],
+   "start": 2,
+   "intermediates": [
+    6
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 3,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nHalve it, rounding down.\nThe starting number is 2. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 2 and apply the steps below, in order.\nMultiply it by 3.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2
+   ],
+   "name": "dev-chain-d2-0421",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "3",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "halve_up"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Halve it, rounding up."
+   ],
+   "start": 20,
+   "intermediates": [
+    60
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 30,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nHalve it, rounding up.\nThe starting number is 20. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 20 and apply the steps below, in order.\nMultiply it by 3.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    20
+   ],
+   "name": "dev-chain-d2-0423",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "30",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "sub"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Subtract 4."
+   ],
+   "start": 18,
+   "intermediates": [
+    9
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 5,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nSubtract 4.\nThe starting number is 18. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 18 and apply the steps below, in order.\nHalve it, rounding up.\nSubtract 4.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    18
+   ],
+   "name": "dev-chain-d2-0428",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "5",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_up"
+   ],
+   "steps": [
+    "Subtract 3.",
+    "Halve it, rounding up."
+   ],
+   "start": 11,
+   "intermediates": [
+    8
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 4,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 3.\nHalve it, rounding up.\nThe starting number is 11. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 11 and apply the steps below, in order.\nSubtract 3.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    11
+   ],
+   "name": "dev-chain-d2-0432",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "4",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_up"
+   ],
+   "steps": [
+    "Subtract 4.",
+    "Halve it, rounding up."
+   ],
+   "start": 22,
+   "intermediates": [
+    18
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 9,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 4.\nHalve it, rounding up.\nThe starting number is 22. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 22 and apply the steps below, in order.\nSubtract 4.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    22
+   ],
+   "name": "dev-chain-d2-0433",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "9",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "halve_up"
+   ],
+   "steps": [
+    "Add 9.",
+    "Halve it, rounding up."
+   ],
+   "start": 23,
+   "intermediates": [
+    32
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 16,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 9.\nHalve it, rounding up.\nThe starting number is 23. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 23 and apply the steps below, in order.\nAdd 9.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9,
+    23
+   ],
+   "name": "dev-chain-d2-0435",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "16",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "halve_up"
+   ],
+   "steps": [
+    "Add 4.",
+    "Halve it, rounding up."
+   ],
+   "start": 17,
+   "intermediates": [
+    21
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 11,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 4.\nHalve it, rounding up.\nThe starting number is 17. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 17 and apply the steps below, in order.\nAdd 4.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    17
+   ],
+   "name": "dev-chain-d2-0437",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "11",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "halve_up"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Halve it, rounding up."
+   ],
+   "start": 24,
+   "intermediates": [
+    12
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 6,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nHalve it, rounding up.\nThe starting number is 24. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 24 and apply the steps below, in order.\nHalve it, rounding up.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    24
+   ],
+   "name": "dev-chain-d2-0440",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "6",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "halve_down"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Halve it, rounding down."
+   ],
+   "start": 8,
+   "intermediates": [
+    4
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 2,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nHalve it, rounding down.\nThe starting number is 8. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 8 and apply the steps below, in order.\nHalve it, rounding up.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8
+   ],
+   "name": "dev-chain-d2-0442",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "2",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "double"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Double it."
+   ],
+   "start": 15,
+   "intermediates": [
+    45
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 90,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nDouble it.\nThe starting number is 15. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 15 and apply the steps below, in order.\nMultiply it by 3.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    15
+   ],
+   "name": "dev-chain-d2-0450",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "90",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "triple"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Multiply it by 3."
+   ],
+   "start": 9,
+   "intermediates": [
+    27
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 81,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nMultiply it by 3.\nThe starting number is 9. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 9 and apply the steps below, in order.\nMultiply it by 3.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9
+   ],
+   "name": "dev-chain-d2-0460",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "81",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 3."
+   ],
+   "start": 6,
+   "intermediates": [
+    12
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 15,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 3.\nThe starting number is 6. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 6 and apply the steps below, in order.\nDouble it.\nAdd 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    6
+   ],
+   "name": "dev-chain-d2-0463",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "15",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_down",
+    "sub"
+   ],
+   "steps": [
+    "Halve it, rounding down.",
+    "Subtract 7."
+   ],
+   "start": 27,
+   "intermediates": [
+    13
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 6,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding down.\nSubtract 7.\nThe starting number is 27. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 27 and apply the steps below, in order.\nHalve it, rounding down.\nSubtract 7.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7,
+    27
+   ],
+   "name": "dev-chain-d2-0469",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "6",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "sub"
+   ],
+   "steps": [
+    "Add 3.",
+    "Subtract 2."
+   ],
+   "start": 4,
+   "intermediates": [
+    7
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 5,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 3.\nSubtract 2.\nThe starting number is 4. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 4 and apply the steps below, in order.\nAdd 3.\nSubtract 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    3,
+    4
+   ],
+   "name": "dev-chain-d2-0474",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "5",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "sub"
+   ],
+   "steps": [
+    "Double it.",
+    "Subtract 8."
+   ],
+   "start": 15,
+   "intermediates": [
+    30
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 22,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nSubtract 8.\nThe starting number is 15. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 15 and apply the steps below, in order.\nDouble it.\nSubtract 8.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    15
+   ],
+   "name": "dev-chain-d2-0475",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "22",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "sub"
+   ],
+   "steps": [
+    "Add 2.",
+    "Subtract 4."
+   ],
+   "start": 26,
+   "intermediates": [
+    28
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 24,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 2.\nSubtract 4.\nThe starting number is 26. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 26 and apply the steps below, in order.\nAdd 2.\nSubtract 4.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    4,
+    26
+   ],
+   "name": "dev-chain-d2-0476",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "24",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Add 4."
+   ],
+   "start": 30,
+   "intermediates": [
+    60
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 64,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nAdd 4.\nThe starting number is 30. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 30 and apply the steps below, in order.\nDouble it.\nAdd 4.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    30
+   ],
+   "name": "dev-chain-d2-0480",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "64",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "halve_down"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Halve it, rounding down."
+   ],
+   "start": 17,
+   "intermediates": [
+    51
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 25,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nHalve it, rounding down.\nThe starting number is 17. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 17 and apply the steps below, in order.\nMultiply it by 3.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    17
+   ],
+   "name": "dev-chain-d2-0483",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "25",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "halve_down"
+   ],
+   "steps": [
+    "Add 2.",
+    "Halve it, rounding down."
+   ],
+   "start": 25,
+   "intermediates": [
+    27
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 13,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 2.\nHalve it, rounding down.\nThe starting number is 25. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 25 and apply the steps below, in order.\nAdd 2.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    25
+   ],
+   "name": "dev-chain-d2-0484",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "13",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "sub"
+   ],
+   "steps": [
+    "Double it.",
+    "Subtract 2."
+   ],
+   "start": 16,
+   "intermediates": [
+    32
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 30,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nSubtract 2.\nThe starting number is 16. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 16 and apply the steps below, in order.\nDouble it.\nSubtract 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    16
+   ],
+   "name": "dev-chain-d2-0487",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "30",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "add"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Add 9."
+   ],
+   "start": 22,
+   "intermediates": [
+    66
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 75,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nAdd 9.\nThe starting number is 22. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 22 and apply the steps below, in order.\nMultiply it by 3.\nAdd 9.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9,
+    22
+   ],
+   "name": "dev-chain-d2-0492",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "75",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "double",
+    "double"
+   ],
+   "steps": [
+    "Double it.",
+    "Double it."
+   ],
+   "start": 21,
+   "intermediates": [
+    42
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 84,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nDouble it.\nThe starting number is 21. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 21 and apply the steps below, in order.\nDouble it.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    21
+   ],
+   "name": "dev-chain-d2-0495",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "84",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "add"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Add 8."
+   ],
+   "start": 18,
+   "intermediates": [
+    9
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 17,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nAdd 8.\nThe starting number is 18. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 18 and apply the steps below, in order.\nHalve it, rounding up.\nAdd 8.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    8,
+    18
+   ],
+   "name": "dev-chain-d2-0496",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "17",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "triple"
+   ],
+   "steps": [
+    "Subtract 5.",
+    "Multiply it by 3."
+   ],
+   "start": 17,
+   "intermediates": [
+    12
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 36,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 5.\nMultiply it by 3.\nThe starting number is 17. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 17 and apply the steps below, in order.\nSubtract 5.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    17
+   ],
+   "name": "dev-chain-d2-0499",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "36",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "add"
+   ],
+   "steps": [
+    "Add 5.",
+    "Add 9."
+   ],
+   "start": 24,
+   "intermediates": [
+    29
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 38,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 5.\nAdd 9.\nThe starting number is 24. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 24 and apply the steps below, in order.\nAdd 5.\nAdd 9.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    9,
+    24
+   ],
+   "name": "dev-chain-d2-0500",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "38",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "add"
+   ],
+   "steps": [
+    "Subtract 3.",
+    "Add 2."
+   ],
+   "start": 18,
+   "intermediates": [
+    15
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 17,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 3.\nAdd 2.\nThe starting number is 18. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 18 and apply the steps below, in order.\nSubtract 3.\nAdd 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    3,
+    18
+   ],
+   "name": "dev-chain-d2-0501",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "17",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_down",
+    "sub"
+   ],
+   "steps": [
+    "Halve it, rounding down.",
+    "Subtract 4."
+   ],
+   "start": 22,
+   "intermediates": [
+    11
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 7,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding down.\nSubtract 4.\nThe starting number is 22. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 22 and apply the steps below, in order.\nHalve it, rounding down.\nSubtract 4.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    22
+   ],
+   "name": "dev-chain-d2-0502",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "7",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "halve_up",
+    "sub"
+   ],
+   "steps": [
+    "Halve it, rounding up.",
+    "Subtract 9."
+   ],
+   "start": 29,
+   "intermediates": [
+    15
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 6,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nHalve it, rounding up.\nSubtract 9.\nThe starting number is 29. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 29 and apply the steps below, in order.\nHalve it, rounding up.\nSubtract 9.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9,
+    29
+   ],
+   "name": "dev-chain-d2-0504",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "6",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "double"
+   ],
+   "steps": [
+    "Add 3.",
+    "Double it."
+   ],
+   "start": 23,
+   "intermediates": [
+    26
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 52,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 3.\nDouble it.\nThe starting number is 23. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 23 and apply the steps below, in order.\nAdd 3.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    23
+   ],
+   "name": "dev-chain-d2-0512",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "52",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "add",
+    "halve_down"
+   ],
+   "steps": [
+    "Add 4.",
+    "Halve it, rounding down."
+   ],
+   "start": 16,
+   "intermediates": [
+    20
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 10,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 4.\nHalve it, rounding down.\nThe starting number is 16. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 16 and apply the steps below, in order.\nAdd 4.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    4,
+    16
+   ],
+   "name": "dev-chain-d2-0513",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "10",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 2,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "sub"
+   ],
+   "steps": [
+    "Subtract 6.",
+    "Subtract 5."
+   ],
+   "start": 28,
+   "intermediates": [
+    22
+   ],
+   "untaken": [
+    null
+   ],
+   "answer": 17,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 6.\nSubtract 5.\nThe starting number is 28. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 28 and apply the steps below, in order.\nSubtract 6.\nSubtract 5.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    6,
+    28
+   ],
+   "name": "dev-chain-d2-0514",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "17",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 3,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "halve_up",
+    "triple"
+   ],
+   "steps": [
+    "Subtract 2.",
+    "Halve it, rounding up.",
+    "Multiply it by 3."
+   ],
+   "start": 21,
+   "intermediates": [
+    19,
+    10
+   ],
+   "untaken": [
+    null,
+    null
+   ],
+   "answer": 30,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 2.\nHalve it, rounding up.\nMultiply it by 3.\nThe starting number is 21. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 21 and apply the steps below, in order.\nSubtract 2.\nHalve it, rounding up.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    21
+   ],
+   "name": "dev-chain-d3-0010",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "30",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 3,
+   "cond": false,
+   "kinds": [
+    "double",
+    "double",
+    "sub"
+   ],
+   "steps": [
+    "Double it.",
+    "Double it.",
+    "Subtract 7."
+   ],
+   "start": 18,
+   "intermediates": [
+    36,
+    72
+   ],
+   "untaken": [
+    null,
+    null
+   ],
+   "answer": 65,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nDouble it.\nSubtract 7.\nThe starting number is 18. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 18 and apply the steps below, in order.\nDouble it.\nDouble it.\nSubtract 7.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    7,
+    18
+   ],
+   "name": "dev-chain-d3-0059",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "65",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 3,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "double",
+    "triple"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Double it.",
+    "Multiply it by 3."
+   ],
+   "start": 2,
+   "intermediates": [
+    6,
+    12
+   ],
+   "untaken": [
+    null,
+    null
+   ],
+   "answer": 36,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nDouble it.\nMultiply it by 3.\nThe starting number is 2. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 2 and apply the steps below, in order.\nMultiply it by 3.\nDouble it.\nMultiply it by 3.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2
+   ],
+   "name": "dev-chain-d3-0064",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "36",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 3,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "halve_up",
+    "add"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Halve it, rounding up.",
+    "Add 2."
+   ],
+   "start": 27,
+   "intermediates": [
+    81,
+    41
+   ],
+   "untaken": [
+    null,
+    null
+   ],
+   "answer": 43,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nHalve it, rounding up.\nAdd 2.\nThe starting number is 27. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 27 and apply the steps below, in order.\nMultiply it by 3.\nHalve it, rounding up.\nAdd 2.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    27
+   ],
+   "name": "dev-chain-d3-0067",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "43",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 3,
+   "cond": false,
+   "kinds": [
+    "double",
+    "triple",
+    "halve_up"
+   ],
+   "steps": [
+    "Double it.",
+    "Multiply it by 3.",
+    "Halve it, rounding up."
+   ],
+   "start": 9,
+   "intermediates": [
+    18,
+    54
+   ],
+   "untaken": [
+    null,
+    null
+   ],
+   "answer": 27,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nMultiply it by 3.\nHalve it, rounding up.\nThe starting number is 9. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 9 and apply the steps below, in order.\nDouble it.\nMultiply it by 3.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9
+   ],
+   "name": "dev-chain-d3-0103",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "27",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 3,
+   "cond": false,
+   "kinds": [
+    "sub",
+    "sub",
+    "sub"
+   ],
+   "steps": [
+    "Subtract 2.",
+    "Subtract 2.",
+    "Subtract 7."
+   ],
+   "start": 29,
+   "intermediates": [
+    27,
+    25
+   ],
+   "untaken": [
+    null,
+    null
+   ],
+   "answer": 18,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nSubtract 2.\nSubtract 2.\nSubtract 7.\nThe starting number is 29. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 29 and apply the steps below, in order.\nSubtract 2.\nSubtract 2.\nSubtract 7.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2,
+    7,
+    29
+   ],
+   "name": "dev-chain-d3-0109",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "18",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 3,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "triple",
+    "halve_up"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Multiply it by 3.",
+    "Halve it, rounding up."
+   ],
+   "start": 5,
+   "intermediates": [
+    15,
+    45
+   ],
+   "untaken": [
+    null,
+    null
+   ],
+   "answer": 23,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nMultiply it by 3.\nHalve it, rounding up.\nThe starting number is 5. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 5 and apply the steps below, in order.\nMultiply it by 3.\nMultiply it by 3.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5
+   ],
+   "name": "dev-chain-d3-0162",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "23",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 3,
+   "cond": false,
+   "kinds": [
+    "double",
+    "sub",
+    "double"
+   ],
+   "steps": [
+    "Double it.",
+    "Subtract 3.",
+    "Double it."
+   ],
+   "start": 6,
+   "intermediates": [
+    12,
+    9
+   ],
+   "untaken": [
+    null,
+    null
+   ],
+   "answer": 18,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nSubtract 3.\nDouble it.\nThe starting number is 6. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 6 and apply the steps below, in order.\nDouble it.\nSubtract 3.\nDouble it.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    6
+   ],
+   "name": "dev-chain-d3-0274",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "18",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 3,
+   "cond": false,
+   "kinds": [
+    "double",
+    "triple",
+    "halve_up"
+   ],
+   "steps": [
+    "Double it.",
+    "Multiply it by 3.",
+    "Halve it, rounding up."
+   ],
+   "start": 5,
+   "intermediates": [
+    10,
+    30
+   ],
+   "untaken": [
+    null,
+    null
+   ],
+   "answer": 15,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nMultiply it by 3.\nHalve it, rounding up.\nThe starting number is 5. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 5 and apply the steps below, in order.\nDouble it.\nMultiply it by 3.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5
+   ],
+   "name": "dev-chain-d3-0303",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "15",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 3,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "sub",
+    "halve_up"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Subtract 3.",
+    "Halve it, rounding up."
+   ],
+   "start": 11,
+   "intermediates": [
+    33,
+    30
+   ],
+   "untaken": [
+    null,
+    null
+   ],
+   "answer": 15,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nSubtract 3.\nHalve it, rounding up.\nThe starting number is 11. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 11 and apply the steps below, in order.\nMultiply it by 3.\nSubtract 3.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    3,
+    11
+   ],
+   "name": "dev-chain-d3-0307",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "15",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 3,
+   "cond": false,
+   "kinds": [
+    "double",
+    "double",
+    "add"
+   ],
+   "steps": [
+    "Double it.",
+    "Double it.",
+    "Add 9."
+   ],
+   "start": 12,
+   "intermediates": [
+    24,
+    48
+   ],
+   "untaken": [
+    null,
+    null
+   ],
+   "answer": 57,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nDouble it.\nDouble it.\nAdd 9.\nThe starting number is 12. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 12 and apply the steps below, in order.\nDouble it.\nDouble it.\nAdd 9.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    9,
+    12
+   ],
+   "name": "dev-chain-d3-0369",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "57",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 3,
+   "cond": false,
+   "kinds": [
+    "add",
+    "add",
+    "halve_down"
+   ],
+   "steps": [
+    "Add 6.",
+    "Add 5.",
+    "Halve it, rounding down."
+   ],
+   "start": 14,
+   "intermediates": [
+    20,
+    25
+   ],
+   "untaken": [
+    null,
+    null
+   ],
+   "answer": 12,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nAdd 6.\nAdd 5.\nHalve it, rounding down.\nThe starting number is 14. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 14 and apply the steps below, in order.\nAdd 6.\nAdd 5.\nHalve it, rounding down.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    5,
+    6,
+    14
+   ],
+   "name": "dev-chain-d3-0401",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "12",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  },
+  {
+   "depth": 3,
+   "cond": false,
+   "kinds": [
+    "triple",
+    "triple",
+    "halve_up"
+   ],
+   "steps": [
+    "Multiply it by 3.",
+    "Multiply it by 3.",
+    "Halve it, rounding up."
+   ],
+   "start": 2,
+   "intermediates": [
+    6,
+    18
+   ],
+   "untaken": [
+    null,
+    null
+   ],
+   "answer": 9,
+   "prompt": "Apply the steps below, in order, to the starting number given at the end.\nMultiply it by 3.\nMultiply it by 3.\nHalve it, rounding up.\nThe starting number is 2. What is the final number? Reply with only the final number, nothing else.",
+   "prompt_first": "Start with the number 2 and apply the steps below, in order.\nMultiply it by 3.\nMultiply it by 3.\nHalve it, rounding up.\nWhat is the final number? Reply with only the final number, nothing else.",
+   "literals": [
+    2
+   ],
+   "name": "dev-chain-d3-0485",
+   "source": "jlm-dev-intermediates-v1",
+   "gate": {
+    "greedy": "9",
+    "greedy_ok": true,
+    "correct": 10,
+    "n": 10,
+    "leaked": false,
+    "pass": true
+   }
+  }
+ ]
+}

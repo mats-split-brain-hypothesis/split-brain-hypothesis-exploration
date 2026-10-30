@@ -1,0 +1,404 @@
+[
+ {
+  "name": "mhh-ssem-williams-kilburn-tube",
+  "subfamily": "2hop",
+  "prompt": "Fact: The 1948 English apparatus that first executed a stored program electronically held its bits on cathode-ray screens, in a storage scheme named after the two engineers who devised it, the",
+  "target": "Williams–Kilburn tube",
+  "target_alts": [
+   "Williams-Kilburn tube",
+   "Williams tube",
+   "Williams-Kilburn tubes",
+   "Williams tube memory"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "intermediates": [
+   "Manchester Baby"
+  ],
+  "units": [
+   {
+    "role": "bridge1",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "Manchester Baby",
+      "Small-Scale Experimental Machine",
+      "Manchester Small-Scale Experimental Machine"
+     ]
+    },
+    "match": [
+     "Manchester Baby",
+     "Small-Scale Experimental Machine",
+     "Manchester Small-Scale Experimental Machine"
+    ]
+   }
+  ],
+  "bridges": [
+   {
+    "question": "Which 1948 British computer was the first to successfully run a stored program?",
+    "units": [
+     "bridge1"
+    ],
+    "answers": [
+     "Manchester Baby",
+     "Small-Scale Experimental Machine",
+     "Manchester Small-Scale Experimental Machine",
+     "SSEM",
+     "the Baby"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "mhh-ternary-moscow-brusentsov",
+  "subfamily": "2hop",
+  "prompt": "Fact: the balanced-ternary calculating device built at Moscow State University in the late 1950s was designed chiefly by",
+  "target": "Nikolay Brusentsov",
+  "target_alts": [
+   "Nikolai Brusentsov",
+   "Nikolay Petrovich Brusentsov",
+   "Brusentsov"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "intermediates": [
+   "Setun computer"
+  ],
+  "units": [
+   {
+    "role": "bridge1",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "Setun computer",
+      "Setun-70"
+     ]
+    },
+    "match": [
+     "Setun computer",
+     "Setun-70"
+    ]
+   }
+  ],
+  "bridges": [
+   {
+    "question": "What was the name of the balanced-ternary computer built at Moscow State University in 1959?",
+    "units": [
+     "bridge1"
+    ],
+    "answers": [
+     "Setun",
+     "Setun computer",
+     "the Setun",
+     "Setun-70"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "mhh-africa-cataract-range",
+  "subfamily": "2hop",
+  "prompt": "Fact: the tallest cataract in Africa, which descends in five successive leaps from the Amphitheatre escarpment, plunges within the highland chain called the",
+  "target": "Drakensberg Mountains",
+  "target_alts": [
+   "Drakensberg",
+   "uKhahlamba",
+   "the Drakensberg"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "intermediates": [
+   "Tugela Falls"
+  ],
+  "units": [
+   {
+    "role": "bridge1",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "Tugela Falls",
+      "Tugela"
+     ]
+    },
+    "match": [
+     "Tugela Falls",
+     "Tugela"
+    ]
+   }
+  ],
+  "bridges": [
+   {
+    "question": "What is the tallest waterfall in Africa?",
+    "units": [
+     "bridge1"
+    ],
+    "answers": [
+     "Tugela Falls",
+     "Tugela"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "mhh-wyeth-chaddsford",
+  "subfamily": "3hop",
+  "prompt": "Fact: the American realist who painted Christina's World learned his craft from his father, a celebrated illustrator of adventure classics, who was killed in 1945 when a train struck his car at a crossing in the Brandywine Valley village of",
+  "target": "Chadds Ford",
+  "target_alts": [
+   "Chadds Ford, Pennsylvania",
+   "Chadd's Ford"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "intermediates": [
+   "Andrew Wyeth",
+   "N. C. Wyeth"
+  ],
+  "units": [
+   {
+    "role": "bridge1",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "Andrew Wyeth",
+      "Andrew Newell Wyeth"
+     ]
+    },
+    "match": [
+     "Andrew Wyeth",
+     "Andrew Newell Wyeth"
+    ]
+   },
+   {
+    "role": "bridge2",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "N. C. Wyeth",
+      "Newell Convers Wyeth"
+     ]
+    },
+    "match": [
+     "N. C. Wyeth",
+     "Newell Convers Wyeth"
+    ]
+   }
+  ],
+  "bridges": [
+   {
+    "question": "Which American painter created the 1948 tempera picture Christina's World?",
+    "units": [
+     "bridge1"
+    ],
+    "answers": [
+     "Andrew Wyeth",
+     "Andrew Newell Wyeth"
+    ]
+   },
+   {
+    "question": "Who was the illustrator father and teacher of Andrew Wyeth?",
+    "units": [
+     "bridge2"
+    ],
+    "answers": [
+     "N. C. Wyeth",
+     "Newell Convers Wyeth",
+     "NC Wyeth"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "mhh-wallenstein-schiller-raeuber",
+  "subfamily": "3hop",
+  "prompt": "Fact: the dramatic trilogy about the imperial generalissimo murdered at Cheb in 1634 was the work of a poet whose sensational first stage piece, premiered at Mannheim in 1782, is known in English as",
+  "target": "The Robbers",
+  "target_alts": [
+   "Die Räuber",
+   "Die Raeuber",
+   "The Robbers (Die Räuber)"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "intermediates": [
+   "Albrecht von Wallenstein",
+   "Friedrich Schiller"
+  ],
+  "units": [
+   {
+    "role": "bridge1",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "Albrecht von Wallenstein",
+      "Wallenstein"
+     ]
+    },
+    "match": [
+     "Albrecht von Wallenstein",
+     "Wallenstein"
+    ]
+   },
+   {
+    "role": "bridge2",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "Friedrich Schiller",
+      "Friedrich von Schiller"
+     ]
+    },
+    "match": [
+     "Friedrich Schiller",
+     "Friedrich von Schiller"
+    ]
+   }
+  ],
+  "bridges": [
+   {
+    "question": "Which Habsburg imperial generalissimo was assassinated at Cheb (Eger) in 1634?",
+    "units": [
+     "bridge1"
+    ],
+    "answers": [
+     "Albrecht von Wallenstein",
+     "Wallenstein"
+    ]
+   },
+   {
+    "question": "Which German dramatist wrote the trilogy about Albrecht von Wallenstein?",
+    "units": [
+     "bridge2"
+    ],
+    "answers": [
+     "Friedrich Schiller",
+     "Schiller",
+     "Friedrich von Schiller"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ },
+ {
+  "name": "mhh-wollaston-olbers",
+  "subfamily": "3hop",
+  "prompt": "Fact: The English chemist who first isolated rhodium named his other new platinum-group metal after a minor planet found in 1802; that object had been sighted by the Bremen physician",
+  "target": "Heinrich Wilhelm Olbers",
+  "target_alts": [
+   "Wilhelm Olbers",
+   "Heinrich Olbers",
+   "H. W. Olbers",
+   "Olbers"
+  ],
+  "source": "staging_hard_mt",
+  "eval_render": "plain",
+  "readout": {
+   "kind": "final_prompt_token",
+   "offsets": [
+    -1
+   ]
+  },
+  "intermediates": [
+   "William Hyde Wollaston",
+   "2 Pallas"
+  ],
+  "units": [
+   {
+    "role": "bridge1",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "William Hyde Wollaston",
+      "Wollaston"
+     ]
+    },
+    "match": [
+     "William Hyde Wollaston",
+     "Wollaston"
+    ]
+   },
+   {
+    "role": "bridge2",
+    "required": true,
+    "multi_token": true,
+    "forms": {
+     "en": [
+      "2 Pallas",
+      "the asteroid Pallas"
+     ]
+    },
+    "match": [
+     "2 Pallas",
+     "the asteroid Pallas"
+    ]
+   }
+  ],
+  "bridges": [
+   {
+    "question": "Which English chemist discovered rhodium and palladium in the early 1800s?",
+    "units": [
+     "bridge1"
+    ],
+    "answers": [
+     "William Hyde Wollaston",
+     "Wollaston",
+     "William Wollaston"
+    ]
+   },
+   {
+    "question": "Which asteroid, discovered in 1802, gave palladium its name?",
+    "units": [
+     "bridge2"
+    ],
+    "answers": [
+     "2 Pallas",
+     "Pallas",
+     "the asteroid Pallas"
+    ]
+   }
+  ],
+  "gate_variant": "chat"
+ }
+]

@@ -1,0 +1,197 @@
+{
+ "meta": {
+  "model": "anthropic/claude-haiku-5.5",
+  "built": "2026-10-11",
+  "rule": "inflections",
+  "spend_usd": 0.0012,
+  "note": "unpinned model's draft, reviewed by hand; edit freely, a rebuild keeps existing keys"
+ },
+ "forms": {
+  "56-65": [],
+  "africa": [],
+  "agnostic": [
+   "agnostics"
+  ],
+  "antarctica": [],
+  "anthropologist": [
+   "anthropologists"
+  ],
+  "asia": [],
+  "australia": [],
+  "bartender": [
+   "bartenders"
+  ],
+  "bird": [
+   "birds"
+  ],
+  "boy|male|man": [
+   "boys",
+   "males",
+   "men"
+  ],
+  "brazil": [],
+  "buddhism": [],
+  "buddhism|buddhist": [
+   "buddhists"
+  ],
+  "canada": [],
+  "carpenter": [
+   "carpenters"
+  ],
+  "cat": [
+   "cats"
+  ],
+  "chile": [],
+  "christianity": [],
+  "colombia": [],
+  "composer": [
+   "composers"
+  ],
+  "conductor": [
+   "conductors"
+  ],
+  "cuba": [],
+  "dentist": [
+   "dentists"
+  ],
+  "divorced": [
+   "divorce",
+   "divorces",
+   "divorcing"
+  ],
+  "dog": [
+   "dogs"
+  ],
+  "egypt": [],
+  "engaged": [
+   "engage",
+   "engages",
+   "engaging"
+  ],
+  "ethiopia": [],
+  "europe": [],
+  "farmer": [
+   "farmers"
+  ],
+  "female|girl|woman": [
+   "females",
+   "girls",
+   "women"
+  ],
+  "fish": [
+   "fished",
+   "fishes",
+   "fishing"
+  ],
+  "fisherman": [
+   "fishermen"
+  ],
+  "france": [],
+  "freelancer": [
+   "freelancers"
+  ],
+  "germany": [],
+  "ghana": [],
+  "greece": [],
+  "halal": [],
+  "homemaker": [
+   "homemakers"
+  ],
+  "india": [],
+  "ireland": [],
+  "islam": [
+   "muslim",
+   "muslims"
+  ],
+  "italy": [],
+  "jamaica": [],
+  "japan": [],
+  "judaism": [
+   "jewish",
+   "jews"
+  ],
+  "librarian": [
+   "librarians"
+  ],
+  "locksmith": [
+   "locksmiths"
+  ],
+  "married": [
+   "marries",
+   "marry",
+   "marrying"
+  ],
+  "mechanic": [
+   "mechanics"
+  ],
+  "mexico": [],
+  "nurse": [
+   "nursed",
+   "nurses",
+   "nursing"
+  ],
+  "painter": [
+   "paint",
+   "painted",
+   "painters",
+   "painting",
+   "paints"
+  ],
+  "paraguay": [],
+  "peru": [],
+  "pharmacist": [
+   "pharmacists"
+  ],
+  "photographer": [
+   "photographers"
+  ],
+  "pilot": [
+   "pilots"
+  ],
+  "plumber": [
+   "plumbers"
+  ],
+  "portugal": [],
+  "potter": [
+   "potters"
+  ],
+  "retired": [
+   "retire",
+   "retires",
+   "retiring"
+  ],
+  "sailor": [
+   "sailors"
+  ],
+  "shepherd": [
+   "shepherds"
+  ],
+  "single": [
+   "singles"
+  ],
+  "spain": [],
+  "student": [
+   "students"
+  ],
+  "surgeon": [
+   "surgeons"
+  ],
+  "sweden": [],
+  "tailor": [
+   "tailors"
+  ],
+  "thailand": [],
+  "ukraine": [],
+  "unemployed": [
+   "unemploy",
+   "unemploying",
+   "unemploys"
+  ],
+  "widowed": [
+   "widow",
+   "widower",
+   "widowers",
+   "widows"
+  ]
+ }
+}

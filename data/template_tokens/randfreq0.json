@@ -1,0 +1,1390 @@
+{
+ "name": "randfreq0",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 197,
+ "excluded_targets": 1577,
+ "control_of": "template",
+ "seed": 0,
+ "tokens": [
+  {
+   "id": 127843,
+   "text": "å¯»è§ħ",
+   "sources": [
+    "matches '<|endoftext|>' (rank 248044)"
+   ]
+  },
+  {
+   "id": 1384,
+   "text": " him",
+   "sources": [
+    "matches '<|im_start|>' (rank 6)"
+   ]
+  },
+  {
+   "id": 615,
+   "text": " get",
+   "sources": [
+    "matches '<|im_end|>' (rank 14)"
+   ]
+  },
+  {
+   "id": 958,
+   "text": " use",
+   "sources": [
+    "matches '<think>' (rank 13)"
+   ]
+  },
+  {
+   "id": 1238,
+   "text": " after",
+   "sources": [
+    "matches '</think>' (rank 16)"
+   ]
+  },
+  {
+   "id": 154250,
+   "text": " esf",
+   "sources": [
+    "matches '____' (rank 224482)"
+   ]
+  },
+  {
+   "id": 133006,
+   "text": "åĨ²çł´",
+   "sources": [
+    "matches '___' (rank 95016)"
+   ]
+  },
+  {
+   "id": 232635,
+   "text": " productividad",
+   "sources": [
+    "matches ' ___' (rank 92465)"
+   ]
+  },
+  {
+   "id": 244771,
+   "text": " à¸Ĥà¸Ļà¸¡",
+   "sources": [
+    "matches ' ____' (rank 50793)"
+   ]
+  },
+  {
+   "id": 106360,
+   "text": "ä¸ĩæĪ·",
+   "sources": [
+    "matches ' ______' (rank 47586)"
+   ]
+  },
+  {
+   "id": 151801,
+   "text": " Ø¹ÙĦØ§",
+   "sources": [
+    "matches ' _____' (rank 63668)"
+   ]
+  },
+  {
+   "id": 120713,
+   "text": "æĥ³è±¡çļĦ",
+   "sources": [
+    "matches '_____' (rank 32964)"
+   ]
+  },
+  {
+   "id": 179876,
+   "text": " Ð±ÑĥÐ´ÑĮ",
+   "sources": [
+    "matches ' ________' (rank 175009)"
+   ]
+  },
+  {
+   "id": 78631,
+   "text": " scraping",
+   "sources": [
+    "matches '__' (rank 9344)"
+   ]
+  },
+  {
+   "id": 54521,
+   "text": " proposing",
+   "sources": [
+    "matches ' __' (rank 13237)"
+   ]
+  },
+  {
+   "id": 159185,
+   "text": "ÐµÑģÐ¿Ðµ",
+   "sources": [
+    "matches '________' (rank 190608)"
+   ]
+  },
+  {
+   "id": 58292,
+   "text": " commanders",
+   "sources": [
+    "matches 'ï¼Ł' (rank 85808)"
+   ]
+  },
+  {
+   "id": 100731,
+   "text": "é¢Ħç®Ĺ",
+   "sources": [
+    "matches 'âĢ¦âĢ¦' (rank 80879)"
+   ]
+  },
+  {
+   "id": 58448,
+   "text": " Weld",
+   "sources": [
+    "matches '__.' (rank 71779)"
+   ]
+  },
+  {
+   "id": 225265,
+   "text": " revisÃ£o",
+   "sources": [
+    "matches 'æĺ¯ä»Ģä¹ĪæĦıæĢĿ' (rank 112723)"
+   ]
+  },
+  {
+   "id": 43551,
+   "text": ".testing",
+   "sources": [
+    "matches ' __________________' (rank 42390)"
+   ]
+  },
+  {
+   "id": 31708,
+   "text": " poem",
+   "sources": [
+    "matches 'ĊĊ' (rank 4)"
+   ]
+  },
+  {
+   "id": 2316,
+   "text": " success",
+   "sources": [
+    "matches ' .' (rank 1426)"
+   ]
+  },
+  {
+   "id": 1332,
+   "text": " where",
+   "sources": [
+    "matches ' what' (rank 82)"
+   ]
+  },
+  {
+   "id": 108157,
+   "text": "çįµ",
+   "sources": [
+    "matches '.__' (rank 165965)"
+   ]
+  },
+  {
+   "id": 44881,
+   "text": " sÃ©rie",
+   "sources": [
+    "matches '________________' (rank 37522)"
+   ]
+  },
+  {
+   "id": 218433,
+   "text": " individuare",
+   "sources": [
+    "matches '____________' (rank 40015)"
+   ]
+  },
+  {
+   "id": 35970,
+   "text": " recom",
+   "sources": [
+    "matches 'ä»Ģä¹ĪæĦıæĢĿ' (rank 121491)"
+   ]
+  },
+  {
+   "id": 206351,
+   "text": " pecado",
+   "sources": [
+    "matches '_________' (rank 218758)"
+   ]
+  },
+  {
+   "id": 2688,
+   "text": "'m",
+   "sources": [
+    "matches ':' (rank 46)"
+   ]
+  },
+  {
+   "id": 5670,
+   "text": " PM",
+   "sources": [
+    "matches '  ĊĊ' (rank 4697)"
+   ]
+  },
+  {
+   "id": 1205,
+   "text": "rite",
+   "sources": [
+    "matches ',' (rank 3)"
+   ]
+  },
+  {
+   "id": 2873,
+   "text": " give",
+   "sources": [
+    "matches '.' (rank 1)"
+   ]
+  },
+  {
+   "id": 7170,
+   "text": " Make",
+   "sources": [
+    "matches ' ' (rank 11)"
+   ]
+  },
+  {
+   "id": 14,
+   "text": "/",
+   "sources": [
+    "matches ' a' (rank 5)"
+   ]
+  },
+  {
+   "id": 290,
+   "text": "ed",
+   "sources": [
+    "matches ' the' (rank 2)"
+   ]
+  },
+  {
+   "id": 888,
+   "text": " over",
+   "sources": [
+    "matches ' in' (rank 10)"
+   ]
+  },
+  {
+   "id": 171774,
+   "text": "ãģ¦ãģĦãĤĭ",
+   "sources": [
+    "matches 'ãĢĤ' (rank 229116)"
+   ]
+  },
+  {
+   "id": 30143,
+   "text": " headline",
+   "sources": [
+    "matches 'what' (rank 5209)"
+   ]
+  },
+  {
+   "id": 142914,
+   "text": "åħ§è¡£",
+   "sources": [
+    "matches 'ï¼İ' (rank 56891)"
+   ]
+  },
+  {
+   "id": 163580,
+   "text": " BÃ¶",
+   "sources": [
+    "matches 'ä»Ģä¹Ī' (rank 96407)"
+   ]
+  },
+  {
+   "id": 95046,
+   "text": " exercitation",
+   "sources": [
+    "matches 'ç§°ä¸º' (rank 100012)"
+   ]
+  },
+  {
+   "id": 31615,
+   "text": " Raid",
+   "sources": [
+    "matches 'ï¼¿ï¼¿' (rank 202356)"
+   ]
+  },
+  {
+   "id": 828,
+   "text": "âĢĿ",
+   "sources": [
+    "matches 'Ċ' (rank 0)"
+   ]
+  },
+  {
+   "id": 1438,
+   "text": " help",
+   "sources": [
+    "matches ' for' (rank 21)"
+   ]
+  },
+  {
+   "id": 10048,
+   "text": ".Models",
+   "sources": [
+    "matches '().' (rank 236706)"
+   ]
+  },
+  {
+   "id": 6611,
+   "text": " creating",
+   "sources": [
+    "matches '...' (rank 1480)"
+   ]
+  },
+  {
+   "id": 215777,
+   "text": " Ø§ÙĦØªÙĥÙĨÙĪÙĦÙĪØ¬ÙĬØ§",
+   "sources": [
+    "matches 'ï¼Į' (rank 192972)"
+   ]
+  },
+  {
+   "id": 262,
+   "text": "   ",
+   "sources": [
+    "matches ' ĊĊ' (rank 130)"
+   ]
+  },
+  {
+   "id": 213285,
+   "text": " financiamento",
+   "sources": [
+    "matches '(__' (rank 95651)"
+   ]
+  },
+  {
+   "id": 243477,
+   "text": " interaÃ§Ã£o",
+   "sources": [
+    "matches '.\\\\' (rank 93021)"
+   ]
+  },
+  {
+   "id": 2017,
+   "text": "ift",
+   "sources": [
+    "matches ' ðŁ' (rank 6202)"
+   ]
+  },
+  {
+   "id": 7526,
+   "text": " largest",
+   "sources": [
+    "matches ' famous' (rank 1012)"
+   ]
+  },
+  {
+   "id": 187384,
+   "text": " ÑģÑĥÑīÐµÑģÑĤÐ²Ñĥ",
+   "sources": [
+    "matches '????' (rank 27026)"
+   ]
+  },
+  {
+   "id": 63836,
+   "text": " cultivated",
+   "sources": [
+    "matches '   ĊĊ' (rank 13795)"
+   ]
+  },
+  {
+   "id": 244325,
+   "text": "hetnek",
+   "sources": [
+    "matches 'âĢĳ' (rank 54087)"
+   ]
+  },
+  {
+   "id": 114192,
+   "text": "å¸®åĬ©ä¸Ńå¿ĥ",
+   "sources": [
+    "matches 'æĢİä¹Ī' (rank 96935)"
+   ]
+  },
+  {
+   "id": 90224,
+   "text": " osÃ³b",
+   "sources": [
+    "matches 'æĺ¯ä»Ģä¹Ī' (rank 98661)"
+   ]
+  },
+  {
+   "id": 218565,
+   "text": " impressÃ£o",
+   "sources": [
+    "matches 'åĵªä¸ª' (rank 101857)"
+   ]
+  },
+  {
+   "id": 112113,
+   "text": "åįķä»·",
+   "sources": [
+    "matches 'è¿Ļåı¥è¯Ŀ' (rank 109780)"
+   ]
+  },
+  {
+   "id": 211549,
+   "text": " Ð¸ÑģÐºÐ»ÑİÑĩÐ¸ÑĤÑĮ",
+   "sources": [
+    "matches 'è¢«ç§°ä¸º' (rank 109986)"
+   ]
+  },
+  {
+   "id": 31878,
+   "text": " >>=",
+   "sources": [
+    "matches 'åı«ä»Ģä¹Ī' (rank 127614)"
+   ]
+  },
+  {
+   "id": 74461,
+   "text": "Hora",
+   "sources": [
+    "matches ' âľħ' (rank 189551)"
+   ]
+  },
+  {
+   "id": 1132,
+   "text": " only",
+   "sources": [
+    "matches ' and' (rank 7)"
+   ]
+  },
+  {
+   "id": 1560,
+   "text": " way",
+   "sources": [
+    "matches ' to' (rank 8)"
+   ]
+  },
+  {
+   "id": 1004,
+   "text": " our",
+   "sources": [
+    "matches ' of' (rank 9)"
+   ]
+  },
+  {
+   "id": 1018,
+   "text": " said",
+   "sources": [
+    "matches 'user' (rank 12)"
+   ]
+  },
+  {
+   "id": 6132,
+   "text": "bot",
+   "sources": [
+    "matches 'assistant' (rank 15)"
+   ]
+  },
+  {
+   "id": 6040,
+   "text": " chat",
+   "sources": [
+    "matches '0' (rank 17)"
+   ]
+  },
+  {
+   "id": 1362,
+   "text": " could",
+   "sources": [
+    "matches ' is' (rank 18)"
+   ]
+  },
+  {
+   "id": 1379,
+   "text": " most",
+   "sources": [
+    "matches ' that' (rank 20)"
+   ]
+  },
+  {
+   "id": 1599,
+   "text": " many",
+   "sources": [
+    "matches ' I' (rank 23)"
+   ]
+  },
+  {
+   "id": 874,
+   "text": " no",
+   "sources": [
+    "matches ' it' (rank 24)"
+   ]
+  },
+  {
+   "id": 803,
+   "text": " name",
+   "sources": [
+    "matches ' with' (rank 25)"
+   ]
+  },
+  {
+   "id": 1546,
+   "text": " very",
+   "sources": [
+    "matches ' on' (rank 26)"
+   ]
+  },
+  {
+   "id": 1578,
+   "text": " years",
+   "sources": [
+    "matches '?' (rank 27)"
+   ]
+  },
+  {
+   "id": 4400,
+   "text": " article",
+   "sources": [
+    "matches ' about' (rank 28)"
+   ]
+  },
+  {
+   "id": 286,
+   "text": "ing",
+   "sources": [
+    "matches ' you' (rank 29)"
+   ]
+  },
+  {
+   "id": 866,
+   "text": " any",
+   "sources": [
+    "matches ' as' (rank 30)"
+   ]
+  },
+  {
+   "id": 1248,
+   "text": " long",
+   "sources": [
+    "matches ' be' (rank 31)"
+   ]
+  },
+  {
+   "id": 2199,
+   "text": " life",
+   "sources": [
+    "matches ' was' (rank 32)"
+   ]
+  },
+  {
+   "id": 1216,
+   "text": " He",
+   "sources": [
+    "matches ' are' (rank 33)"
+   ]
+  },
+  {
+   "id": 2830,
+   "text": " include",
+   "sources": [
+    "matches ' an' (rank 34)"
+   ]
+  },
+  {
+   "id": 1414,
+   "text": " text",
+   "sources": [
+    "matches \"'s\" (rank 36)"
+   ]
+  },
+  {
+   "id": 944,
+   "text": " work",
+   "sources": [
+    "matches ' from' (rank 38)"
+   ]
+  },
+  {
+   "id": 1439,
+   "text": " these",
+   "sources": [
+    "matches ' this' (rank 40)"
+   ]
+  },
+  {
+   "id": 4602,
+   "text": " questions",
+   "sources": [
+    "matches ' me' (rank 41)"
+   ]
+  },
+  {
+   "id": 6503,
+   "text": "Can",
+   "sources": [
+    "matches ' The' (rank 42)"
+   ]
+  },
+  {
+   "id": 1881,
+   "text": " between",
+   "sources": [
+    "matches ' or' (rank 43)"
+   ]
+  },
+  {
+   "id": 471,
+   "text": " -",
+   "sources": [
+    "matches ' (' (rank 44)"
+   ]
+  },
+  {
+   "id": 357,
+   "text": " A",
+   "sources": [
+    "matches ' at' (rank 45)"
+   ]
+  },
+  {
+   "id": 1801,
+   "text": " made",
+   "sources": [
+    "matches 'Write' (rank 48)"
+   ]
+  },
+  {
+   "id": 2302,
+   "text": " They",
+   "sources": [
+    "matches ' can' (rank 49)"
+   ]
+  },
+  {
+   "id": 733,
+   "text": " In",
+   "sources": [
+    "matches ' have' (rank 51)"
+   ]
+  },
+  {
+   "id": 2094,
+   "text": " around",
+   "sources": [
+    "matches ' by' (rank 50)"
+   ]
+  },
+  {
+   "id": 1172,
+   "text": " under",
+   "sources": [
+    "matches ' my' (rank 52)"
+   ]
+  },
+  {
+   "id": 1518,
+   "text": " before",
+   "sources": [
+    "matches ' but' (rank 53)"
+   ]
+  },
+  {
+   "id": 2086,
+   "text": " different",
+   "sources": [
+    "matches ' his' (rank 54)"
+   ]
+  },
+  {
+   "id": 1467,
+   "text": " did",
+   "sources": [
+    "matches 'âĢĻs' (rank 55)"
+   ]
+  },
+  {
+   "id": 1602,
+   "text": " being",
+   "sources": [
+    "matches '8' (rank 56)"
+   ]
+  },
+  {
+   "id": 1179,
+   "text": " then",
+   "sources": [
+    "matches '7' (rank 57)"
+   ]
+  },
+  {
+   "id": 2433,
+   "text": " things",
+   "sources": [
+    "matches '6' (rank 58)"
+   ]
+  },
+  {
+   "id": 1603,
+   "text": " good",
+   "sources": [
+    "matches ' \"' (rank 59)"
+   ]
+  },
+  {
+   "id": 1834,
+   "text": " day",
+   "sources": [
+    "matches ' they' (rank 60)"
+   ]
+  },
+  {
+   "id": 1521,
+   "text": " because",
+   "sources": [
+    "matches ')' (rank 61)"
+   ]
+  },
+  {
+   "id": 1142,
+   "text": " back",
+   "sources": [
+    "matches ' who' (rank 62)"
+   ]
+  },
+  {
+   "id": 708,
+   "text": " go",
+   "sources": [
+    "matches ' their' (rank 63)"
+   ]
+  },
+  {
+   "id": 5328,
+   "text": "Please",
+   "sources": [
+    "matches ' her' (rank 64)"
+   ]
+  },
+  {
+   "id": 1189,
+   "text": " may",
+   "sources": [
+    "matches ' he' (rank 65)"
+   ]
+  },
+  {
+   "id": 553,
+   "text": ").",
+   "sources": [
+    "matches ' not' (rank 66)"
+   ]
+  },
+  {
+   "id": 2614,
+   "text": " following",
+   "sources": [
+    "matches 'I' (rank 67)"
+   ]
+  },
+  {
+   "id": 3437,
+   "text": " What",
+   "sources": [
+    "matches ' your' (rank 68)"
+   ]
+  },
+  {
+   "id": 1345,
+   "text": " while",
+   "sources": [
+    "matches ' has' (rank 69)"
+   ]
+  },
+  {
+   "id": 1831,
+   "text": " take",
+   "sources": [
+    "matches ' some' (rank 70)"
+   ]
+  },
+  {
+   "id": 681,
+   "text": "),",
+   "sources": [
+    "matches ' story' (rank 72)"
+   ]
+  },
+  {
+   "id": 5044,
+   "text": " Please",
+   "sources": [
+    "matches ' like' (rank 74)"
+   ]
+  },
+  {
+   "id": 974,
+   "text": " off",
+   "sources": [
+    "matches ' should' (rank 75)"
+   ]
+  },
+  {
+   "id": 1786,
+   "text": " best",
+   "sources": [
+    "matches ']' (rank 76)"
+   ]
+  },
+  {
+   "id": 2469,
+   "text": " email",
+   "sources": [
+    "matches ' all' (rank 77)"
+   ]
+  },
+  {
+   "id": 56491,
+   "text": "Rew",
+   "sources": [
+    "matches ' more' (rank 78)"
+   ]
+  },
+  {
+   "id": 695,
+   "text": " Ċ",
+   "sources": [
+    "matches ' will' (rank 79)"
+   ]
+  },
+  {
+   "id": 1691,
+   "text": " much",
+   "sources": [
+    "matches ' list' (rank 80)"
+   ]
+  },
+  {
+   "id": 6498,
+   "text": " ideas",
+   "sources": [
+    "matches 'The' (rank 81)"
+   ]
+  },
+  {
+   "id": 1814,
+   "text": " world",
+   "sources": [
+    "matches ' so' (rank 83)"
+   ]
+  },
+  {
+   "id": 2838,
+   "text": " She",
+   "sources": [
+    "matches ' them' (rank 84)"
+   ]
+  },
+  {
+   "id": 13901,
+   "text": " paragraph",
+   "sources": [
+    "matches \"'t\" (rank 85)"
+   ]
+  },
+  {
+   "id": 2261,
+   "text": " during",
+   "sources": [
+    "matches ' out' (rank 87)"
+   ]
+  },
+  {
+   "id": 2919,
+   "text": " water",
+   "sources": [
+    "matches ' It' (rank 88)"
+   ]
+  },
+  {
+   "id": 2512,
+   "text": " called",
+   "sources": [
+    "matches ' how' (rank 89)"
+   ]
+  },
+  {
+   "id": 1441,
+   "text": " down",
+   "sources": [
+    "matches ' into' (rank 90)"
+   ]
+  },
+  {
+   "id": 504,
+   "text": "',",
+   "sources": [
+    "matches ' make' (rank 91)"
+   ]
+  },
+  {
+   "id": 2854,
+   "text": " love",
+   "sources": [
+    "matches ' want' (rank 92)"
+   ]
+  },
+  {
+   "id": 623,
+   "text": "In",
+   "sources": [
+    "matches ' she' (rank 93)"
+   ]
+  },
+  {
+   "id": 2019,
+   "text": " going",
+   "sources": [
+    "matches ' were' (rank 94)"
+   ]
+  },
+  {
+   "id": 809,
+   "text": " end",
+   "sources": [
+    "matches ' short' (rank 95)"
+   ]
+  },
+  {
+   "id": 2885,
+   "text": " Can",
+   "sources": [
+    "matches ' had' (rank 96)"
+   ]
+  },
+  {
+   "id": 1920,
+   "text": ".âĢĿ",
+   "sources": [
+    "matches ' do' (rank 97)"
+   ]
+  },
+  {
+   "id": 1675,
+   "text": " post",
+   "sources": [
+    "matches ' if' (rank 98)"
+   ]
+  },
+  {
+   "id": 2545,
+   "text": " little",
+   "sources": [
+    "matches '-' (rank 99)"
+   ]
+  },
+  {
+   "id": 1044,
+   "text": " am",
+   "sources": [
+    "matches ' would' (rank 100)"
+   ]
+  },
+  {
+   "id": 2166,
+   "text": " too",
+   "sources": [
+    "matches ' write' (rank 101)"
+   ]
+  },
+  {
+   "id": 283,
+   "text": " =",
+   "sources": [
+    "matches ' which' (rank 102)"
+   ]
+  },
+  {
+   "id": 2902,
+   "text": " family",
+   "sources": [
+    "matches ' time' (rank 103)"
+   ]
+  },
+  {
+   "id": 3069,
+   "text": " why",
+   "sources": [
+    "matches ' we' (rank 104)"
+   ]
+  },
+  {
+   "id": 1637,
+   "text": " person",
+   "sources": [
+    "matches ';' (rank 105)"
+   ]
+  },
+  {
+   "id": 3542,
+   "text": " character",
+   "sources": [
+    "matches ' âĢľ' (rank 106)"
+   ]
+  },
+  {
+   "id": 855,
+   "text": " man",
+   "sources": [
+    "matches ' than' (rank 107)"
+   ]
+  },
+  {
+   "id": 2414,
+   "text": " something",
+   "sources": [
+    "matches ' when' (rank 108)"
+   ]
+  },
+  {
+   "id": 6725,
+   "text": " named",
+   "sources": [
+    "matches 'What' (rank 109)"
+   ]
+  },
+  {
+   "id": 4199,
+   "text": "How",
+   "sources": [
+    "matches '\"' (rank 110)"
+   ]
+  },
+  {
+   "id": 393,
+   "text": " $",
+   "sources": [
+    "matches ' each' (rank 111)"
+   ]
+  },
+  {
+   "id": 1608,
+   "text": " using",
+   "sources": [
+    "matches ' words' (rank 113)"
+   ]
+  },
+  {
+   "id": 1436,
+   "text": " see",
+   "sources": [
+    "matches ' other' (rank 114)"
+   ]
+  },
+  {
+   "id": 1680,
+   "text": " such",
+   "sources": [
+    "matches ' need' (rank 115)"
+   ]
+  },
+  {
+   "id": 1429,
+   "text": " used",
+   "sources": [
+    "matches ' people' (rank 117)"
+   ]
+  },
+  {
+   "id": 1396,
+   "text": " every",
+   "sources": [
+    "matches ' its' (rank 118)"
+   ]
+  },
+  {
+   "id": 1746,
+   "text": " game",
+   "sources": [
+    "matches ' been' (rank 119)"
+   ]
+  },
+  {
+   "id": 1496,
+   "text": " high",
+   "sources": [
+    "matches ' new' (rank 120)"
+   ]
+  },
+  {
+   "id": 2445,
+   "text": " come",
+   "sources": [
+    "matches 'ĉ' (rank 121)"
+   ]
+  },
+  {
+   "id": 3487,
+   "text": " food",
+   "sources": [
+    "matches '.[' (rank 122)"
+   ]
+  },
+  {
+   "id": 2046,
+   "text": " home",
+   "sources": [
+    "matches 'âĢĻt' (rank 123)"
+   ]
+  },
+  {
+   "id": 2236,
+   "text": " book",
+   "sources": [
+    "matches ' there' (rank 124)"
+   ]
+  },
+  {
+   "id": 3140,
+   "text": " least",
+   "sources": [
+    "matches ' don' (rank 126)"
+   ]
+  },
+  {
+   "id": 1381,
+   "text": " now",
+   "sources": [
+    "matches '!' (rank 127)"
+   ]
+  },
+  {
+   "id": 2342,
+   "text": " few",
+   "sources": [
+    "matches \"'\" (rank 300)"
+   ]
+  },
+  {
+   "id": 1669,
+   "text": " found",
+   "sources": [
+    "matches \" '\" (rank 167)"
+   ]
+  },
+  {
+   "id": 1149,
+   "text": ".\"",
+   "sources": [
+    "matches ' This' (rank 186)"
+   ]
+  },
+  {
+   "id": 3010,
+   "text": " example",
+   "sources": [
+    "matches 'This' (rank 618)"
+   ]
+  },
+  {
+   "id": 20893,
+   "text": " championship",
+   "sources": [
+    "matches ' ...' (rank 5355)"
+   ]
+  },
+  {
+   "id": 215365,
+   "text": "vrouw",
+   "sources": [
+    "matches '<|object_ref_start|>' (rank 248047)"
+   ]
+  },
+  {
+   "id": 53342,
+   "text": " PTR",
+   "sources": [
+    "matches '<|object_ref_end|>' (rank 248048)"
+   ]
+  },
+  {
+   "id": 152512,
+   "text": "Ð¸ÐºÑĢÐ¾",
+   "sources": [
+    "matches '<|box_start|>' (rank 248049)"
+   ]
+  },
+  {
+   "id": 80394,
+   "text": ".motion",
+   "sources": [
+    "matches '<|box_end|>' (rank 248050)"
+   ]
+  },
+  {
+   "id": 217749,
+   "text": " spÃ©cialisÃ©",
+   "sources": [
+    "matches '<|quad_start|>' (rank 248051)"
+   ]
+  },
+  {
+   "id": 237138,
+   "text": " limitÃ©",
+   "sources": [
+    "matches '<|quad_end|>' (rank 248052)"
+   ]
+  },
+  {
+   "id": 31159,
+   "text": "$output",
+   "sources": [
+    "matches '<|vision_start|>' (rank 248053)"
+   ]
+  },
+  {
+   "id": 205146,
+   "text": " ÑĥÐ²Ð»ÐµÐºÐ°",
+   "sources": [
+    "matches '<|vision_end|>' (rank 248054)"
+   ]
+  },
+  {
+   "id": 14622,
+   "text": "egative",
+   "sources": [
+    "matches '<|vision_pad|>' (rank 248055)"
+   ]
+  },
+  {
+   "id": 169609,
+   "text": "ï´¾",
+   "sources": [
+    "matches '<|image_pad|>' (rank 248056)"
+   ]
+  },
+  {
+   "id": 138450,
+   "text": "è°ļ",
+   "sources": [
+    "matches '<|video_pad|>' (rank 248057)"
+   ]
+  },
+  {
+   "id": 189684,
+   "text": " utilizzati",
+   "sources": [
+    "matches '<tool_call>' (rank 248058)"
+   ]
+  },
+  {
+   "id": 45824,
+   "text": ".related",
+   "sources": [
+    "matches '</tool_call>' (rank 248059)"
+   ]
+  },
+  {
+   "id": 246411,
+   "text": " Ð½Ð°Ð´Ð¿Ð¸ÑģÑĮ",
+   "sources": [
+    "matches '<|fim_prefix|>' (rank 248060)"
+   ]
+  },
+  {
+   "id": 94888,
+   "text": "ritte",
+   "sources": [
+    "matches '<|fim_middle|>' (rank 248061)"
+   ]
+  },
+  {
+   "id": 34553,
+   "text": "?family",
+   "sources": [
+    "matches '<|fim_suffix|>' (rank 248062)"
+   ]
+  },
+  {
+   "id": 83449,
+   "text": "icot",
+   "sources": [
+    "matches '<|fim_pad|>' (rank 248063)"
+   ]
+  },
+  {
+   "id": 35293,
+   "text": " >&",
+   "sources": [
+    "matches '<|repo_name|>' (rank 248064)"
+   ]
+  },
+  {
+   "id": 196615,
+   "text": " promedio",
+   "sources": [
+    "matches '<|file_sep|>' (rank 248065)"
+   ]
+  },
+  {
+   "id": 105791,
+   "text": "ç¢³éħ¸",
+   "sources": [
+    "matches '<tool_response>' (rank 248066)"
+   ]
+  },
+  {
+   "id": 118705,
+   "text": "åľ¨ä½łçļĦ",
+   "sources": [
+    "matches '</tool_response>' (rank 248067)"
+   ]
+  },
+  {
+   "id": 141197,
+   "text": "æł¸å¿ĥç´łåħ»",
+   "sources": [
+    "matches '<|audio_start|>' (rank 248070)"
+   ]
+  },
+  {
+   "id": 71207,
+   "text": " Kelley",
+   "sources": [
+    "matches '<|audio_end|>' (rank 248071)"
+   ]
+  },
+  {
+   "id": 31144,
+   "text": " annotations",
+   "sources": [
+    "matches '<tts_pad>' (rank 248072)"
+   ]
+  },
+  {
+   "id": 158941,
+   "text": "ì¤į",
+   "sources": [
+    "matches '<tts_text_bos>' (rank 248073)"
+   ]
+  },
+  {
+   "id": 149346,
+   "text": " Ð¿ÑĢÐ¾ÑĨ",
+   "sources": [
+    "matches '<tts_text_eod>' (rank 248074)"
+   ]
+  },
+  {
+   "id": 22070,
+   "text": "usable",
+   "sources": [
+    "matches '<tts_text_bos_single>' (rank 248075)"
+   ]
+  },
+  {
+   "id": 183359,
+   "text": " Ð·Ð°Ð¼ÐµÑģÑĤÐ¸",
+   "sources": [
+    "matches '<|audio_pad|>' (rank 37656)"
+   ]
+  }
+ ]
+}

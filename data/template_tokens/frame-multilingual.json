@@ -1,0 +1,17 @@
+{
+ "name": "frame-multilingual",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 1,
+ "excluded_targets": 1577,
+ "share": 0.15,
+ "tokens": [
+  {
+   "id": 13271,
+   "text": "isms",
+   "sources": [
+    "fam top-10 on 14 / 81 multilingual fit items"
+   ]
+  }
+ ]
+}

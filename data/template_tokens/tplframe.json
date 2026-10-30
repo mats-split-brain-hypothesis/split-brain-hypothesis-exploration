@@ -1,0 +1,1355 @@
+{
+ "name": "tplframe",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 192,
+ "excluded_targets": 1577,
+ "min_families": 3,
+ "source": "fam-at-self__cos top-10 at the fit read cells, after template[:64]",
+ "tokens": [
+  {
+   "id": 248044,
+   "text": "<|endoftext|>",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 912 times"
+   ]
+  },
+  {
+   "id": 248045,
+   "text": "<|im_start|>",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 3 families, 674 times"
+   ]
+  },
+  {
+   "id": 248046,
+   "text": "<|im_end|>",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 3 families, 630 times"
+   ]
+  },
+  {
+   "id": 248068,
+   "text": "<think>",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 3 families, 347 times"
+   ]
+  },
+  {
+   "id": 248069,
+   "text": "</think>",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 3 families, 123 times"
+   ]
+  },
+  {
+   "id": 2062,
+   "text": "____",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 10 times"
+   ]
+  },
+  {
+   "id": 5785,
+   "text": "___",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 11 times"
+   ]
+  },
+  {
+   "id": 7201,
+   "text": " ___",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 4 families, 9 times"
+   ]
+  },
+  {
+   "id": 29739,
+   "text": " ____",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 1 families, 6 times"
+   ]
+  },
+  {
+   "id": 31586,
+   "text": " ______",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 2 families, 10 times"
+   ]
+  },
+  {
+   "id": 63668,
+   "text": " _____",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 3 families, 6 times"
+   ]
+  },
+  {
+   "id": 77740,
+   "text": "_____",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 3 families, 3 times"
+   ]
+  },
+  {
+   "id": 175009,
+   "text": " ________",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 2 families, 7 times"
+   ]
+  },
+  {
+   "id": 548,
+   "text": "__",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 1 families, 1 times"
+   ]
+  },
+  {
+   "id": 1259,
+   "text": " __",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 2 families, 3 times"
+   ]
+  },
+  {
+   "id": 3846,
+   "text": "________",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 18 times"
+   ]
+  },
+  {
+   "id": 10992,
+   "text": "ï¼Ł",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 4 families, 12 times"
+   ]
+  },
+  {
+   "id": 13650,
+   "text": "âĢ¦âĢ¦",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 1 families, 1 times"
+   ]
+  },
+  {
+   "id": 18162,
+   "text": "__.",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 1 families, 1 times"
+   ]
+  },
+  {
+   "id": 112723,
+   "text": "æĺ¯ä»Ģä¹ĪæĦıæĢĿ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 3 families, 16 times"
+   ]
+  },
+  {
+   "id": 42390,
+   "text": " __________________",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 4 families, 12 times"
+   ]
+  },
+  {
+   "id": 271,
+   "text": "ĊĊ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 3 families, 189 times"
+   ]
+  },
+  {
+   "id": 641,
+   "text": " .",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 2 families, 376 times"
+   ]
+  },
+  {
+   "id": 1092,
+   "text": " what",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 30 times"
+   ]
+  },
+  {
+   "id": 4692,
+   "text": ".__",
+   "sources": [
+    "template[:64]"
+   ]
+  },
+  {
+   "id": 7443,
+   "text": "________________",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 2 families, 4 times"
+   ]
+  },
+  {
+   "id": 40015,
+   "text": "____________",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 4 families, 12 times"
+   ]
+  },
+  {
+   "id": 121491,
+   "text": "ä»Ģä¹ĪæĦıæĢĿ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 3 families, 4 times"
+   ]
+  },
+  {
+   "id": 218758,
+   "text": "_________",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 2 families, 4 times"
+   ]
+  },
+  {
+   "id": 25,
+   "text": ":",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 2 families, 3 times"
+   ]
+  },
+  {
+   "id": 18050,
+   "text": "  ĊĊ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 2 families, 81 times"
+   ]
+  },
+  {
+   "id": 11,
+   "text": ",",
+   "sources": [
+    "template[:64]"
+   ]
+  },
+  {
+   "id": 13,
+   "text": ".",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 2 families, 380 times"
+   ]
+  },
+  {
+   "id": 220,
+   "text": " ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 1 families, 1 times"
+   ]
+  },
+  {
+   "id": 264,
+   "text": " a",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 2 families, 37 times"
+   ]
+  },
+  {
+   "id": 279,
+   "text": " the",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 4 families, 58 times"
+   ]
+  },
+  {
+   "id": 303,
+   "text": " in",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 1 families, 1 times"
+   ]
+  },
+  {
+   "id": 1710,
+   "text": "ãĢĤ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 3 families, 59 times"
+   ]
+  },
+  {
+   "id": 12195,
+   "text": "what",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 4 families, 12 times"
+   ]
+  },
+  {
+   "id": 56891,
+   "text": "ï¼İ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 2 families, 43 times"
+   ]
+  },
+  {
+   "id": 96407,
+   "text": "ä»Ģä¹Ī",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 4 families, 22 times"
+   ]
+  },
+  {
+   "id": 100012,
+   "text": "ç§°ä¸º",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 38 times"
+   ]
+  },
+  {
+   "id": 202356,
+   "text": "ï¼¿ï¼¿",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 2 families, 8 times"
+   ]
+  },
+  {
+   "id": 198,
+   "text": "Ċ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 1 families, 2 times"
+   ]
+  },
+  {
+   "id": 364,
+   "text": " for",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 4 families, 221 times"
+   ]
+  },
+  {
+   "id": 973,
+   "text": "().",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 1 families, 118 times"
+   ]
+  },
+  {
+   "id": 1076,
+   "text": "...",
+   "sources": [
+    "template[:64]"
+   ]
+  },
+  {
+   "id": 3709,
+   "text": "ï¼Į",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 1 families, 3 times"
+   ]
+  },
+  {
+   "id": 4558,
+   "text": " ĊĊ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 3 families, 16 times"
+   ]
+  },
+  {
+   "id": 5340,
+   "text": "(__",
+   "sources": [
+    "template[:64]"
+   ]
+  },
+  {
+   "id": 6889,
+   "text": ".\\",
+   "sources": [
+    "template[:64]"
+   ]
+  },
+  {
+   "id": 10838,
+   "text": " ðŁ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 4 families, 16 times"
+   ]
+  },
+  {
+   "id": 10919,
+   "text": " famous",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 18 times"
+   ]
+  },
+  {
+   "id": 25758,
+   "text": "????",
+   "sources": [
+    "template[:64]"
+   ]
+  },
+  {
+   "id": 32811,
+   "text": "   ĊĊ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 1 families, 11 times"
+   ]
+  },
+  {
+   "id": 54087,
+   "text": "âĢĳ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 29 times"
+   ]
+  },
+  {
+   "id": 96935,
+   "text": "æĢİä¹Ī",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 1 families, 3 times"
+   ]
+  },
+  {
+   "id": 98661,
+   "text": "æĺ¯ä»Ģä¹Ī",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 41 times"
+   ]
+  },
+  {
+   "id": 101857,
+   "text": "åĵªä¸ª",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 1 families, 10 times"
+   ]
+  },
+  {
+   "id": 109780,
+   "text": "è¿Ļåı¥è¯Ŀ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 22 times"
+   ]
+  },
+  {
+   "id": 109986,
+   "text": "è¢«ç§°ä¸º",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 10 times"
+   ]
+  },
+  {
+   "id": 127614,
+   "text": "åı«ä»Ģä¹Ī",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 4 families, 9 times"
+   ]
+  },
+  {
+   "id": 189551,
+   "text": " âľħ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 3 families, 8 times"
+   ]
+  },
+  {
+   "id": 321,
+   "text": " and",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 2 families, 103 times"
+   ]
+  },
+  {
+   "id": 94860,
+   "text": " subscript",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 166 times"
+   ]
+  },
+  {
+   "id": 18337,
+   "text": " downtown",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 144 times"
+   ]
+  },
+  {
+   "id": 108819,
+   "text": "åĨ¬åŃ£",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 45 times"
+   ]
+  },
+  {
+   "id": 111548,
+   "text": "æ¼Ķå¥ı",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 33 times"
+   ]
+  },
+  {
+   "id": 17415,
+   "text": " ocean",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 29 times"
+   ]
+  },
+  {
+   "id": 8446,
+   "text": " whom",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 20 times"
+   ]
+  },
+  {
+   "id": 101917,
+   "text": "åŃ£èĬĤ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 96 times"
+   ]
+  },
+  {
+   "id": 73959,
+   "text": " pigment",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 79 times"
+   ]
+  },
+  {
+   "id": 10124,
+   "text": " texture",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 61 times"
+   ]
+  },
+  {
+   "id": 9605,
+   "text": " animals",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 58 times"
+   ]
+  },
+  {
+   "id": 852,
+   "text": " who",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 44 times"
+   ]
+  },
+  {
+   "id": 99961,
+   "text": "åĬ¨çī©",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 36 times"
+   ]
+  },
+  {
+   "id": 31883,
+   "text": " vibrant",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 35 times"
+   ]
+  },
+  {
+   "id": 7172,
+   "text": " located",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 24 times"
+   ]
+  },
+  {
+   "id": 108936,
+   "text": "æĦıå¤§åĪ©",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 24 times"
+   ]
+  },
+  {
+   "id": 58801,
+   "text": " ecosystems",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 23 times"
+   ]
+  },
+  {
+   "id": 9572,
+   "text": " animal",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 7 families, 23 times"
+   ]
+  },
+  {
+   "id": 7348,
+   "text": " Tuesday",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 273 times"
+   ]
+  },
+  {
+   "id": 30137,
+   "text": " moisture",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 145 times"
+   ]
+  },
+  {
+   "id": 98436,
+   "text": "åĲįç§°",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 117 times"
+   ]
+  },
+  {
+   "id": 99527,
+   "text": "æĸĩåŃ¦",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 113 times"
+   ]
+  },
+  {
+   "id": 9432,
+   "text": " cities",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 109 times"
+   ]
+  },
+  {
+   "id": 206737,
+   "text": "ãĢįãĢģãĢĮ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 99 times"
+   ]
+  },
+  {
+   "id": 99455,
+   "text": "å¥¹çļĦ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 90 times"
+   ]
+  },
+  {
+   "id": 52637,
+   "text": " furnace",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 77 times"
+   ]
+  },
+  {
+   "id": 10462,
+   "text": " plants",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 73 times"
+   ]
+  },
+  {
+   "id": 5656,
+   "text": " countries",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 70 times"
+   ]
+  },
+  {
+   "id": 3177,
+   "text": " city",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 65 times"
+   ]
+  },
+  {
+   "id": 159424,
+   "text": " Ð³Ð¾ÑĢÐ¾Ð´Ð°",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 58 times"
+   ]
+  },
+  {
+   "id": 109406,
+   "text": "æĺ¯è°ģ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 55 times"
+   ]
+  },
+  {
+   "id": 29215,
+   "text": "-season",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 52 times"
+   ]
+  },
+  {
+   "id": 9039,
+   "text": " temperature",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 51 times"
+   ]
+  },
+  {
+   "id": 109005,
+   "text": "åĨ¬å¤©",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 44 times"
+   ]
+  },
+  {
+   "id": 9871,
+   "text": " Africa",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 44 times"
+   ]
+  },
+  {
+   "id": 99452,
+   "text": "å¹´åº¦",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 35 times"
+   ]
+  },
+  {
+   "id": 28346,
+   "text": " wildlife",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 35 times"
+   ]
+  },
+  {
+   "id": 86088,
+   "text": " bustling",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 35 times"
+   ]
+  },
+  {
+   "id": 97649,
+   "text": "åĨ¬",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 34 times"
+   ]
+  },
+  {
+   "id": 74171,
+   "text": "animals",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 32 times"
+   ]
+  },
+  {
+   "id": 11308,
+   "text": " African",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 30 times"
+   ]
+  },
+  {
+   "id": 98635,
+   "text": "å²Ĺä½į",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 28 times"
+   ]
+  },
+  {
+   "id": 28053,
+   "text": " islands",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 28 times"
+   ]
+  },
+  {
+   "id": 53234,
+   "text": " cidade",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 26 times"
+   ]
+  },
+  {
+   "id": 137590,
+   "text": "è¥¿çıŃçīĻè¯Ń",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 26 times"
+   ]
+  },
+  {
+   "id": 3061,
+   "text": " software",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 25 times"
+   ]
+  },
+  {
+   "id": 25467,
+   "text": " palette",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 25 times"
+   ]
+  },
+  {
+   "id": 123875,
+   "text": "åĲĽä¸»",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 24 times"
+   ]
+  },
+  {
+   "id": 116384,
+   "text": "ä¿Ĺç§°",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 24 times"
+   ]
+  },
+  {
+   "id": 14202,
+   "text": "who",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 23 times"
+   ]
+  },
+  {
+   "id": 53702,
+   "text": " mammals",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 23 times"
+   ]
+  },
+  {
+   "id": 17163,
+   "text": " Spain",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 23 times"
+   ]
+  },
+  {
+   "id": 51935,
+   "text": " Countries",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 21 times"
+   ]
+  },
+  {
+   "id": 100738,
+   "text": "æĺ¥èĬĤ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 20 times"
+   ]
+  },
+  {
+   "id": 44253,
+   "text": " nowadays",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 18 times"
+   ]
+  },
+  {
+   "id": 10201,
+   "text": " funds",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 6 families, 16 times"
+   ]
+  },
+  {
+   "id": 10198,
+   "text": "ulator",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 315 times"
+   ]
+  },
+  {
+   "id": 314,
+   "text": " of",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 195 times"
+   ]
+  },
+  {
+   "id": 72860,
+   "text": " poetic",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 144 times"
+   ]
+  },
+  {
+   "id": 28547,
+   "text": "-week",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 125 times"
+   ]
+  },
+  {
+   "id": 111229,
+   "text": "æĺ¯å¤ļå°ĳ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 94 times"
+   ]
+  },
+  {
+   "id": 9943,
+   "text": "month",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 83 times"
+   ]
+  },
+  {
+   "id": 110697,
+   "text": "ä¸īä¸ªæľĪ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 81 times"
+   ]
+  },
+  {
+   "id": 101642,
+   "text": "ä¸ĬåįĪ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 78 times"
+   ]
+  },
+  {
+   "id": 100131,
+   "text": "æĹ©ä¸Ĭ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 73 times"
+   ]
+  },
+  {
+   "id": 109304,
+   "text": "ç¬¬äºĮå¤©",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 73 times"
+   ]
+  },
+  {
+   "id": 8656,
+   "text": "city",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 72 times"
+   ]
+  },
+  {
+   "id": 33633,
+   "text": " arithmetic",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 69 times"
+   ]
+  },
+  {
+   "id": 98045,
+   "text": "åŃ£åº¦",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 69 times"
+   ]
+  },
+  {
+   "id": 36039,
+   "text": " Cities",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 68 times"
+   ]
+  },
+  {
+   "id": 12228,
+   "text": " dogs",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 67 times"
+   ]
+  },
+  {
+   "id": 5638,
+   "text": " storage",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 66 times"
+   ]
+  },
+  {
+   "id": 108664,
+   "text": "åĨĻä½ľ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 64 times"
+   ]
+  },
+  {
+   "id": 97414,
+   "text": "ç¨¿",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 60 times"
+   ]
+  },
+  {
+   "id": 18607,
+   "text": " sauce",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 59 times"
+   ]
+  },
+  {
+   "id": 110379,
+   "text": "èĪªçıŃ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 59 times"
+   ]
+  },
+  {
+   "id": 99937,
+   "text": "ä¸ĭåįĪ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 54 times"
+   ]
+  },
+  {
+   "id": 23850,
+   "text": " puzzle",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 54 times"
+   ]
+  },
+  {
+   "id": 3818,
+   "text": " months",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 52 times"
+   ]
+  },
+  {
+   "id": 51539,
+   "text": "-city",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 51 times"
+   ]
+  },
+  {
+   "id": 8950,
+   "text": " born",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 50 times"
+   ]
+  },
+  {
+   "id": 33140,
+   "text": " Caribbean",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 49 times"
+   ]
+  },
+  {
+   "id": 52358,
+   "text": " aroma",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 47 times"
+   ]
+  },
+  {
+   "id": 21261,
+   "text": " calculation",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 46 times"
+   ]
+  },
+  {
+   "id": 6725,
+   "text": " named",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 45 times"
+   ]
+  },
+  {
+   "id": 109245,
+   "text": "åı«åģļ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 44 times"
+   ]
+  },
+  {
+   "id": 15127,
+   "text": " seasons",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 41 times"
+   ]
+  },
+  {
+   "id": 60908,
+   "text": " Jakarta",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 41 times"
+   ]
+  },
+  {
+   "id": 34756,
+   "text": " renowned",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 41 times"
+   ]
+  },
+  {
+   "id": 41713,
+   "text": " lakes",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 39 times"
+   ]
+  },
+  {
+   "id": 109712,
+   "text": "éĿŀæ´²",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 39 times"
+   ]
+  },
+  {
+   "id": 109631,
+   "text": "åŁİå¸ĤçļĦ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 37 times"
+   ]
+  },
+  {
+   "id": 67236,
+   "text": " Budapest",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 37 times"
+   ]
+  },
+  {
+   "id": 31416,
+   "text": " Egyptian",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 37 times"
+   ]
+  },
+  {
+   "id": 100569,
+   "text": "çİ»çĴĥ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 35 times"
+   ]
+  },
+  {
+   "id": 63127,
+   "text": " HVAC",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 35 times"
+   ]
+  },
+  {
+   "id": 117473,
+   "text": "æĶ¿æĿĥ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 35 times"
+   ]
+  },
+  {
+   "id": 13730,
+   "text": " aircraft",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 34 times"
+   ]
+  },
+  {
+   "id": 37266,
+   "text": " habitat",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 34 times"
+   ]
+  },
+  {
+   "id": 30333,
+   "text": " literary",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 34 times"
+   ]
+  },
+  {
+   "id": 108644,
+   "text": "æ³ķåĽ½",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 34 times"
+   ]
+  },
+  {
+   "id": 43768,
+   "text": " BBQ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 32 times"
+   ]
+  },
+  {
+   "id": 98285,
+   "text": "ä¸ªæľĪ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 32 times"
+   ]
+  },
+  {
+   "id": 382,
+   "text": "ers",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 31 times"
+   ]
+  },
+  {
+   "id": 98833,
+   "text": "éŁ³ä¹Ĳ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 31 times"
+   ]
+  },
+  {
+   "id": 11778,
+   "text": " decimal",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 31 times"
+   ]
+  },
+  {
+   "id": 4403,
+   "text": "Ñĭ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 30 times"
+   ]
+  },
+  {
+   "id": 100652,
+   "text": "æĥħæĦŁ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 29 times"
+   ]
+  },
+  {
+   "id": 56847,
+   "text": " festive",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 29 times"
+   ]
+  },
+  {
+   "id": 52277,
+   "text": " Stadt",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 29 times"
+   ]
+  },
+  {
+   "id": 99199,
+   "text": "åįĬå¹´",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 29 times"
+   ]
+  },
+  {
+   "id": 97057,
+   "text": "åı«",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 28 times"
+   ]
+  },
+  {
+   "id": 105819,
+   "text": "è¿Ļä¸ªåĲįåŃĹ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 28 times"
+   ]
+  },
+  {
+   "id": 119074,
+   "text": "å²Ľå±¿",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 27 times"
+   ]
+  },
+  {
+   "id": 17264,
+   "text": " musical",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 27 times"
+   ]
+  },
+  {
+   "id": 26124,
+   "text": " inherited",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 27 times"
+   ]
+  },
+  {
+   "id": 12786,
+   "text": " calendar",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 27 times"
+   ]
+  },
+  {
+   "id": 104567,
+   "text": "æĺ¥åŃ£",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 26 times"
+   ]
+  },
+  {
+   "id": 525,
+   "text": "og",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 26 times"
+   ]
+  },
+  {
+   "id": 101618,
+   "text": "å¤©æ°Ķ",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 25 times"
+   ]
+  },
+  {
+   "id": 103938,
+   "text": "å®¶æĹı",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 25 times"
+   ]
+  },
+  {
+   "id": 17888,
+   "text": " Farm",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 25 times"
+   ]
+  },
+  {
+   "id": 95493,
+   "text": " fauna",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 24 times"
+   ]
+  },
+  {
+   "id": 22865,
+   "text": " desert",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 24 times"
+   ]
+  },
+  {
+   "id": 35057,
+   "text": " Finland",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 24 times"
+   ]
+  },
+  {
+   "id": 103870,
+   "text": "ç®Ģç§°",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 24 times"
+   ]
+  },
+  {
+   "id": 33785,
+   "text": " occured",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 23 times"
+   ]
+  },
+  {
+   "id": 85624,
+   "text": " nestled",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 23 times"
+   ]
+  },
+  {
+   "id": 113415,
+   "text": "é¥²åħ»",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 5 families, 23 times"
+   ]
+  }
+ ]
+}

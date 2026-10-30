@@ -1,0 +1,3568 @@
+{
+ "family": "basic-readout-hard",
+ "parent_family": "basic-readout-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": false,
+  "conjunctive_units": true
+ },
+ "source": "jlm-dev-mt-v1",
+ "split": "val",
+ "gate": "Qwen3.6-27B: the bench's gate question, greedy correct and >= 8/10 at T=0.7; graded by anthropic/claude-haiku-5.5 with the bench's grading prompt",
+ "items": [
+  {
+   "name": "dev-brmt-018",
+   "subfamily": "entity",
+   "prompt": "The maximum mass of a stable white dwarf star, about 1.4 solar masses, is called the",
+   "target": "Chandrasekhar limit",
+   "target_alts": [
+    "Chandrasekhar mass"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Chandrasekhar limit"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Chandrasekhar limit",
+       "Chandrasekhar mass"
+      ]
+     },
+     "match": [
+      "Chandrasekhar limit",
+      "Chandrasekhar mass"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-058",
+   "subfamily": "entity",
+   "prompt": "The Florentine architect who designed and built the dome of Florence Cathedral was",
+   "target": "Filippo Brunelleschi",
+   "target_alts": [
+    "Brunelleschi"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Filippo Brunelleschi"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Filippo Brunelleschi",
+       "Brunelleschi"
+      ]
+     },
+     "match": [
+      "Filippo Brunelleschi",
+      "Brunelleschi"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-022",
+   "subfamily": "entity",
+   "prompt": "The constant of about 1.097×10⁷ per metre that appears in the formula for the wavelengths of the hydrogen spectral lines is the",
+   "target": "Rydberg constant",
+   "target_alts": [
+    "Rydberg's constant"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Rydberg constant"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Rydberg constant",
+       "Rydberg's constant"
+      ]
+     },
+     "match": [
+      "Rydberg constant",
+      "Rydberg's constant"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-005",
+   "subfamily": "entity",
+   "prompt": "The Shia ruling house founded by Shah Ismail I in 1501, which made Twelver Shi'ism the state religion of Iran, is the",
+   "target": "Safavid dynasty",
+   "target_alts": [
+    "Safavids",
+    "Safavid Empire"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Safavid dynasty"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Safavid dynasty",
+       "Safavids",
+       "Safavid Empire"
+      ]
+     },
+     "match": [
+      "Safavid dynasty",
+      "Safavids",
+      "Safavid Empire"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-041",
+   "subfamily": "entity",
+   "prompt": "The world's highest uninterrupted waterfall, plunging from the Auyán-tepui plateau in Venezuela, is",
+   "target": "Angel Falls",
+   "target_alts": [
+    "Salto Ángel",
+    "Kerepakupai Merú"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Angel Falls"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Angel Falls",
+       "Salto Ángel",
+       "Kerepakupai Merú"
+      ]
+     },
+     "match": [
+      "Angel Falls",
+      "Salto Ángel",
+      "Kerepakupai Merú"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3,
+       6
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     6
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-050",
+   "subfamily": "entity",
+   "prompt": "The national currency of Ukraine is the",
+   "target": "Ukrainian hryvnia",
+   "target_alts": [
+    "hryvnia",
+    "hryvnya"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Ukrainian hryvnia"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Ukrainian hryvnia",
+       "hryvnia",
+       "hryvnya"
+      ]
+     },
+     "match": [
+      "Ukrainian hryvnia",
+      "hryvnia",
+      "hryvnya"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-010",
+   "subfamily": "entity",
+   "prompt": "The ancient trading state in the Ethiopian highlands whose King Ezana adopted Christianity in the fourth century is the",
+   "target": "Kingdom of Aksum",
+   "target_alts": [
+    "Aksumite Empire",
+    "Kingdom of Axum"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Kingdom of Aksum"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Kingdom of Aksum",
+       "Aksumite Empire",
+       "Kingdom of Axum"
+      ]
+     },
+     "match": [
+      "Kingdom of Aksum",
+      "Aksumite Empire",
+      "Kingdom of Axum"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     4,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-035",
+   "subfamily": "entity",
+   "prompt": "The chemical compound that makes up most of limestone, marble and chalk is",
+   "target": "calcium carbonate",
+   "target_alts": [
+    "CaCO3"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "calcium carbonate"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "calcium carbonate",
+       "CaCO3"
+      ]
+     },
+     "match": [
+      "calcium carbonate",
+      "CaCO3"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-054",
+   "subfamily": "entity",
+   "prompt": "The author of the novel One Hundred Years of Solitude is",
+   "target": "Gabriel García Márquez",
+   "target_alts": [
+    "Gabriel Garcia Marquez",
+    "García Márquez"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Gabriel García Márquez"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Gabriel García Márquez",
+       "Gabriel Garcia Marquez",
+       "García Márquez"
+      ]
+     },
+     "match": [
+      "Gabriel García Márquez",
+      "Gabriel Garcia Marquez",
+      "García Márquez"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-040",
+   "subfamily": "entity",
+   "prompt": "The great waterfall on the Zambezi River at the border of Zambia and Zimbabwe, known locally as Mosi-oa-Tunya, is",
+   "target": "Victoria Falls",
+   "target_alts": [
+    "the Victoria Falls"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Victoria Falls"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Victoria Falls",
+       "the Victoria Falls"
+      ]
+     },
+     "match": [
+      "Victoria Falls",
+      "the Victoria Falls"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-007",
+   "subfamily": "entity",
+   "prompt": "The Ismaili Shia caliphate whose general Jawhar founded the city of Cairo in 969 is known as the",
+   "target": "Fatimid Caliphate",
+   "target_alts": [
+    "Fatimids",
+    "Fatimid dynasty"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Fatimid Caliphate"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Fatimid Caliphate",
+       "Fatimids",
+       "Fatimid dynasty"
+      ]
+     },
+     "match": [
+      "Fatimid Caliphate",
+      "Fatimids",
+      "Fatimid dynasty"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-044",
+   "subfamily": "entity",
+   "prompt": "The very long and deep rift lake shared by Tanzania, the Democratic Republic of the Congo, Burundi and Zambia is",
+   "target": "Lake Tanganyika",
+   "target_alts": [
+    "Tanganyika"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Lake Tanganyika"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Lake Tanganyika",
+       "Tanganyika"
+      ]
+     },
+     "match": [
+      "Lake Tanganyika",
+      "Tanganyika"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-019",
+   "subfamily": "entity",
+   "prompt": "The radius of the event horizon of a non-rotating, uncharged black hole of a given mass is called the",
+   "target": "Schwarzschild radius",
+   "target_alts": [
+    "Schwarzschild horizon"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Schwarzschild radius"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Schwarzschild radius",
+       "Schwarzschild horizon"
+      ]
+     },
+     "match": [
+      "Schwarzschild radius",
+      "Schwarzschild horizon"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-009",
+   "subfamily": "entity",
+   "prompt": "The Tamil royal house whose king Rajaraja I built the great Brihadisvara temple at Thanjavur is the",
+   "target": "Chola dynasty",
+   "target_alts": [
+    "Cholas",
+    "Chola Empire"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Chola dynasty"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Chola dynasty",
+       "Cholas",
+       "Chola Empire"
+      ]
+     },
+     "match": [
+      "Chola dynasty",
+      "Cholas",
+      "Chola Empire"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-053",
+   "subfamily": "entity",
+   "prompt": "The Dutch Golden Age painter of The Night Watch was",
+   "target": "Rembrandt van Rijn",
+   "target_alts": [
+    "Rembrandt Harmenszoon van Rijn",
+    "Rembrandt"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Rembrandt van Rijn"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Rembrandt van Rijn",
+       "Rembrandt Harmenszoon van Rijn",
+       "Rembrandt"
+      ]
+     },
+     "match": [
+      "Rembrandt van Rijn",
+      "Rembrandt Harmenszoon van Rijn",
+      "Rembrandt"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       10,
+       3
+      ]
+     }
+    },
+    "target": 6,
+    "target_alts": [
+     10,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-014",
+   "subfamily": "entity",
+   "prompt": "The 1066 battle in which William of Normandy defeated and killed King Harold II is the",
+   "target": "Battle of Hastings",
+   "target_alts": [
+    "Hastings battle"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Battle of Hastings"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Battle of Hastings",
+       "Hastings battle"
+      ]
+     },
+     "match": [
+      "Battle of Hastings",
+      "Hastings battle"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-038",
+   "subfamily": "entity",
+   "prompt": "The strait running through Istanbul that joins the Black Sea to the Sea of Marmara is the",
+   "target": "Bosphorus",
+   "target_alts": [
+    "Bosporus",
+    "Istanbul Strait"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Bosphorus"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Bosphorus",
+       "Bosporus",
+       "Istanbul Strait"
+      ]
+     },
+     "match": [
+      "Bosphorus",
+      "Bosporus",
+      "Istanbul Strait"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       3,
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     3,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-023",
+   "subfamily": "entity",
+   "prompt": "The dimensionless constant approximately equal to 1/137 that characterizes the strength of the electromagnetic interaction is the",
+   "target": "fine-structure constant",
+   "target_alts": [
+    "fine structure constant",
+    "Sommerfeld constant"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "fine-structure constant"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "fine-structure constant",
+       "fine structure constant",
+       "Sommerfeld constant"
+      ]
+     },
+     "match": [
+      "fine-structure constant",
+      "fine structure constant",
+      "Sommerfeld constant"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-031",
+   "subfamily": "entity",
+   "prompt": "The childhood vasculitis with prolonged fever, a strawberry tongue and a risk of coronary artery aneurysms is",
+   "target": "Kawasaki disease",
+   "target_alts": [
+    "Kawasaki syndrome",
+    "mucocutaneous lymph node syndrome"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Kawasaki disease"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Kawasaki disease",
+       "Kawasaki syndrome",
+       "mucocutaneous lymph node syndrome"
+      ]
+     },
+     "match": [
+      "Kawasaki disease",
+      "Kawasaki syndrome",
+      "mucocutaneous lymph node syndrome"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       2,
+       7
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     2,
+     7
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-020",
+   "subfamily": "entity",
+   "prompt": "The number of constituent particles in one mole of a substance, about 6.022×10²³, is the",
+   "target": "Avogadro constant",
+   "target_alts": [
+    "Avogadro's number",
+    "Avogadro number"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Avogadro constant"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Avogadro constant",
+       "Avogadro's number",
+       "Avogadro number"
+      ]
+     },
+     "match": [
+      "Avogadro constant",
+      "Avogadro's number",
+      "Avogadro number"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       5,
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     5,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-026",
+   "subfamily": "entity",
+   "prompt": "The light-independent reactions of photosynthesis, in which RuBisCO fixes carbon dioxide into three-carbon sugars, are known as the",
+   "target": "Calvin cycle",
+   "target_alts": [
+    "Calvin-Benson cycle",
+    "Calvin–Benson cycle"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Calvin cycle"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Calvin cycle",
+       "Calvin-Benson cycle",
+       "Calvin–Benson cycle"
+      ]
+     },
+     "match": [
+      "Calvin cycle",
+      "Calvin-Benson cycle",
+      "Calvin–Benson cycle"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-032",
+   "subfamily": "entity",
+   "prompt": "The neurodevelopmental disorder characterized by multiple motor tics and at least one vocal tic lasting more than a year is",
+   "target": "Tourette syndrome",
+   "target_alts": [
+    "Tourette's syndrome",
+    "Gilles de la Tourette syndrome"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Tourette syndrome"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Tourette syndrome",
+       "Tourette's syndrome",
+       "Gilles de la Tourette syndrome"
+      ]
+     },
+     "match": [
+      "Tourette syndrome",
+      "Tourette's syndrome",
+      "Gilles de la Tourette syndrome"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4,
+       6
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     6
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-033",
+   "subfamily": "entity",
+   "prompt": "The chemical name of the baking soda used to leaven quick breads is",
+   "target": "sodium bicarbonate",
+   "target_alts": [
+    "sodium hydrogen carbonate",
+    "sodium hydrogencarbonate"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "sodium bicarbonate"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sodium bicarbonate",
+       "sodium hydrogen carbonate",
+       "sodium hydrogencarbonate"
+      ]
+     },
+     "match": [
+      "sodium bicarbonate",
+      "sodium hydrogen carbonate",
+      "sodium hydrogencarbonate"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       3,
+       5
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     3,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-017",
+   "subfamily": "entity",
+   "prompt": "The vast mid-nineteenth-century civil war in China led by Hong Xiuquan, who claimed to be the younger brother of Jesus, is the",
+   "target": "Taiping Rebellion",
+   "target_alts": [
+    "Taiping Civil War",
+    "Taiping Heavenly Kingdom"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Taiping Rebellion"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Taiping Rebellion",
+       "Taiping Civil War",
+       "Taiping Heavenly Kingdom"
+      ]
+     },
+     "match": [
+      "Taiping Rebellion",
+      "Taiping Civil War",
+      "Taiping Heavenly Kingdom"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     4,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-003",
+   "subfamily": "entity",
+   "prompt": "The 1842 treaty that ended the First Opium War and ceded Hong Kong Island to Britain is the",
+   "target": "Treaty of Nanking",
+   "target_alts": [
+    "Treaty of Nanjing"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Treaty of Nanking"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Treaty of Nanking",
+       "Treaty of Nanjing"
+      ]
+     },
+     "match": [
+      "Treaty of Nanking",
+      "Treaty of Nanjing"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-027",
+   "subfamily": "entity",
+   "prompt": "The industrial method of synthesizing ammonia from nitrogen and hydrogen over an iron catalyst at high pressure is the",
+   "target": "Haber process",
+   "target_alts": [
+    "Haber-Bosch process",
+    "Haber–Bosch process"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Haber process"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Haber process",
+       "Haber-Bosch process",
+       "Haber–Bosch process"
+      ]
+     },
+     "match": [
+      "Haber process",
+      "Haber-Bosch process",
+      "Haber–Bosch process"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     5,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-057",
+   "subfamily": "entity",
+   "prompt": "The Renaissance astronomer who set out a heliocentric model in De revolutionibus orbium coelestium was",
+   "target": "Nicolaus Copernicus",
+   "target_alts": [
+    "Copernicus",
+    "Mikołaj Kopernik"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Nicolaus Copernicus"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Nicolaus Copernicus",
+       "Copernicus",
+       "Mikołaj Kopernik"
+      ]
+     },
+     "match": [
+      "Nicolaus Copernicus",
+      "Copernicus",
+      "Mikołaj Kopernik"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       3,
+       7
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     3,
+     7
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-049",
+   "subfamily": "entity",
+   "prompt": "The national currency of Cambodia is the",
+   "target": "Cambodian riel",
+   "target_alts": [
+    "the Cambodian riel"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Cambodian riel"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Cambodian riel",
+       "the Cambodian riel"
+      ]
+     },
+     "match": [
+      "Cambodian riel",
+      "the Cambodian riel"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-025",
+   "subfamily": "entity",
+   "prompt": "The cycle of reactions in the mitochondrial matrix that oxidizes acetyl-CoA to carbon dioxide while reducing NAD+ is the",
+   "target": "citric acid cycle",
+   "target_alts": [
+    "Krebs cycle",
+    "TCA cycle",
+    "tricarboxylic acid cycle"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "citric acid cycle"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "citric acid cycle",
+       "Krebs cycle",
+       "TCA cycle",
+       "tricarboxylic acid cycle"
+      ]
+     },
+     "match": [
+      "citric acid cycle",
+      "Krebs cycle",
+      "TCA cycle",
+      "tricarboxylic acid cycle"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       2,
+       3,
+       6
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     2,
+     3,
+     6
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-055",
+   "subfamily": "entity",
+   "prompt": "The composer of the ballet The Rite of Spring, whose 1913 Paris premiere caused a riot, was",
+   "target": "Igor Stravinsky",
+   "target_alts": [
+    "Stravinsky"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Igor Stravinsky"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Igor Stravinsky",
+       "Stravinsky"
+      ]
+     },
+     "match": [
+      "Igor Stravinsky",
+      "Stravinsky"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       2
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-094",
+   "subfamily": "l2_factual",
+   "prompt": "이탈리아 로마에 있는, 검투사 경기가 열리던 고대 로마의 거대한 원형 경기장의 이름은",
+   "target": "콜로세움",
+   "target_alts": [
+    "콜로세움이다",
+    "콜로세오"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ko",
+   "intermediates": [
+    "Colosseum"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Colosseum",
+       "Flavian Amphitheatre"
+      ],
+      "zh": [
+       "罗马斗兽场",
+       "古罗马斗兽场"
+      ]
+     },
+     "match": [
+      "Colosseum",
+      "Flavian Amphitheatre",
+      "罗马斗兽场",
+      "古罗马斗兽场"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Korean"
+      ],
+      "zh": [
+       "韩语",
+       "韩国语"
+      ],
+      "ko": [
+       "콜로세움",
+       "콜로세오"
+      ]
+     },
+     "match": [
+      "Korean",
+      "韩语",
+      "韩国语",
+      "콜로세움",
+      "콜로세오"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       5
+      ],
+      "zh": [
+       4,
+       5
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1,
+       2
+      ],
+      "ko": [
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     5,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-088",
+   "subfamily": "l2_factual",
+   "prompt": "Az 1848. március 15-én a Nemzeti Múzeum lépcsőjén is elhangzó Nemzeti dal szerzője",
+   "target": "Petőfi Sándor",
+   "target_alts": [
+    "Petőfi Sándort",
+    "Petőfi Sándornak",
+    "Petőfi"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "Sándor Petőfi"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Sándor Petőfi",
+       "Sandor Petofi"
+      ],
+      "zh": [
+       "裴多菲·山多尔",
+       "裴多菲"
+      ]
+     },
+     "match": [
+      "Sándor Petőfi",
+      "Sandor Petofi",
+      "裴多菲·山多尔",
+      "裴多菲"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "Petőfi Sándor",
+       "Petőfi Sándort",
+       "Petőfi Sándornak"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "Petőfi Sándor",
+      "Petőfi Sándort",
+      "Petőfi Sándornak"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       4
+      ],
+      "zh": [
+       7,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       6,
+       6,
+       7
+      ]
+     }
+    },
+    "target": 6,
+    "target_alts": [
+     6,
+     7,
+     3
+    ]
+   },
+   "consistency": 0.8
+  },
+  {
+   "name": "dev-brmt-090",
+   "subfamily": "l2_factual",
+   "prompt": "A bűvös kockát 1974-ben feltaláló budapesti szobrász és építészmérnök",
+   "target": "Rubik Ernő",
+   "target_alts": [
+    "Rubik Ernőt",
+    "Rubik Ernőnek",
+    "Rubik"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "Ernő Rubik"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Ernő Rubik",
+       "Erno Rubik"
+      ],
+      "zh": [
+       "厄尔诺·鲁比克",
+       "鲁比克·厄尔诺"
+      ]
+     },
+     "match": [
+      "Ernő Rubik",
+      "Erno Rubik",
+      "厄尔诺·鲁比克",
+      "鲁比克·厄尔诺"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "Rubik Ernő",
+       "Rubik Ernőt",
+       "Rubik Ernőnek"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "Rubik Ernő",
+      "Rubik Ernőt",
+      "Rubik Ernőnek"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3
+      ],
+      "zh": [
+       7,
+       7
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       4,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     4,
+     5,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-086",
+   "subfamily": "l2_factual",
+   "prompt": "ראש הממשלה של ישראל שנרצח בעצרת שלום בכיכר מלכי ישראל בתל אביב בנובמבר 1995 היה",
+   "target": "יצחק רבין",
+   "target_alts": [
+    "רבין",
+    "ליצחק רבין"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "Yitzhak Rabin"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Yitzhak Rabin",
+       "Prime Minister Rabin"
+      ],
+      "zh": [
+       "伊扎克·拉宾",
+       "拉宾"
+      ]
+     },
+     "match": [
+      "Yitzhak Rabin",
+      "Prime Minister Rabin",
+      "伊扎克·拉宾",
+      "拉宾"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "יצחק רבין",
+       "רבין"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "יצחק רבין",
+      "רבין"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4
+      ],
+      "zh": [
+       5,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       5,
+       2
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     2,
+     6
+    ]
+   },
+   "consistency": 0.9
+  },
+  {
+   "name": "dev-brmt-089",
+   "subfamily": "l2_factual",
+   "prompt": "Közép-Európa legnagyobb tava, amelyet a magyarok magyar tengernek is neveznek, a",
+   "target": "Balaton",
+   "target_alts": [
+    "Balatont",
+    "Balatonon",
+    "Balatonnál"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "Lake Balaton"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Lake Balaton",
+       "Balaton lake"
+      ],
+      "zh": [
+       "巴拉顿湖",
+       "巴拉顿"
+      ]
+     },
+     "match": [
+      "Lake Balaton",
+      "Balaton lake",
+      "巴拉顿湖",
+      "巴拉顿"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "Balaton",
+       "Balatont",
+       "Balatonon"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "Balaton",
+      "Balatont",
+      "Balatonon"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       3
+      ],
+      "zh": [
+       3,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       2,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     3,
+     3,
+     3
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-079",
+   "subfamily": "l2_factual",
+   "prompt": "Vuoden 1917 lokakuussa Venäjällä vallan kaappasi Leninin johtama puolue, jonka jäseniä kutsuttiin nimellä",
+   "target": "bolševikit",
+   "target_alts": [
+    "bolsevikit",
+    "bolševikkien",
+    "bolševikkipuolue"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "Bolsheviks"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Bolsheviks",
+       "Bolshevik Party"
+      ],
+      "zh": [
+       "布尔什维克",
+       "布尔什维克党"
+      ]
+     },
+     "match": [
+      "Bolsheviks",
+      "Bolshevik Party",
+      "布尔什维克",
+      "布尔什维克党"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "bolševikit",
+       "bolsevikit",
+       "bolševikkien"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "bolševikit",
+      "bolsevikit",
+      "bolševikkien"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       4,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     4,
+     5,
+     8
+    ]
+   },
+   "consistency": 0.8
+  },
+  {
+   "name": "dev-brmt-099",
+   "subfamily": "l2_factual",
+   "prompt": "Роман-эпопею «Война и мир» написал",
+   "target": "Лев Толстой",
+   "target_alts": [
+    "Толстой",
+    "Лев Николаевич Толстой"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "Leo Tolstoy"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Leo Tolstoy",
+       "Lev Tolstoy"
+      ],
+      "zh": [
+       "列夫·托尔斯泰",
+       "托尔斯泰"
+      ]
+     },
+     "match": [
+      "Leo Tolstoy",
+      "Lev Tolstoy",
+      "列夫·托尔斯泰",
+      "托尔斯泰"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "Лев Толстой",
+       "Толстой",
+       "Лев Николаевич Толстой"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "Лев Толстой",
+      "Толстой",
+      "Лев Николаевич Толстой"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       4
+      ],
+      "zh": [
+       6,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       3,
+       2,
+       5
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     2,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-064",
+   "subfamily": "l2_factual",
+   "prompt": "Puncak tertinggi di dunia, yang terletak di perbatasan Nepal dan Tiongkok, adalah Gunung",
+   "target": "Everest",
+   "target_alts": [
+    "Gunung Everest"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Mount Everest"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Mount Everest",
+       "Chomolungma"
+      ],
+      "zh": [
+       "珠穆朗玛峰",
+       "珠穆朗玛"
+      ]
+     },
+     "match": [
+      "Mount Everest",
+      "Chomolungma",
+      "珠穆朗玛峰",
+      "珠穆朗玛"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Gunung Everest",
+       "Everest"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Gunung Everest",
+      "Everest"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       5
+      ],
+      "zh": [
+       5,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       2,
+       1
+      ]
+     }
+    },
+    "target": 1,
+    "target_alts": [
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-100",
+   "subfamily": "l2_factual",
+   "prompt": "Периодическую систему химических элементов в 1869 году открыл",
+   "target": "Дмитрий Менделеев",
+   "target_alts": [
+    "Менделеев",
+    "Дмитрий Иванович Менделеев"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "Dmitri Mendeleev"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Dmitri Mendeleev",
+       "Dmitry Mendeleyev"
+      ],
+      "zh": [
+       "德米特里·门捷列夫",
+       "门捷列夫"
+      ]
+     },
+     "match": [
+      "Dmitri Mendeleev",
+      "Dmitry Mendeleyev",
+      "德米特里·门捷列夫",
+      "门捷列夫"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "Дмитрий Менделеев",
+       "Менделеев",
+       "Дмитрий Иванович Менделеев"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "Дмитрий Менделеев",
+      "Менделеев",
+      "Дмитрий Иванович Менделеев"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       5
+      ],
+      "zh": [
+       8,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       5,
+       4,
+       6
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     4,
+     6
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-078",
+   "subfamily": "l2_factual",
+   "prompt": "الخليفة العباسي الذي بنى مدينة بغداد وجعلها عاصمة للدولة سنة 762 ميلادية هو",
+   "target": "أبو جعفر المنصور",
+   "target_alts": [
+    "المنصور",
+    "الخليفة المنصور"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "Abu Jafar al-Mansur"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Abu Jafar al-Mansur",
+       "Caliph al-Mansur"
+      ],
+      "zh": [
+       "曼苏尔",
+       "阿布·贾法尔·曼苏尔"
+      ]
+     },
+     "match": [
+      "Abu Jafar al-Mansur",
+      "Caliph al-Mansur",
+      "曼苏尔",
+      "阿布·贾法尔·曼苏尔"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "أبو جعفر المنصور",
+       "المنصور"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "أبو جعفر المنصور",
+      "المنصور"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       8,
+       6
+      ],
+      "zh": [
+       3,
+       9
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       5,
+       2
+      ]
+     }
+    },
+    "target": 5,
+    "target_alts": [
+     2,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-097",
+   "subfamily": "l2_factual",
+   "prompt": "Traktat pokojowy z Niemcami kończący pierwszą wojnę światową podpisano w 1919 roku w Sali Lustrzanej pałacu w",
+   "target": "Wersalu",
+   "target_alts": [
+    "Wersal",
+    "Wersalem"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "Palace of Versailles"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Palace of Versailles",
+       "Treaty of Versailles"
+      ],
+      "zh": [
+       "凡尔赛",
+       "凡尔赛宫"
+      ]
+     },
+     "match": [
+      "Palace of Versailles",
+      "Treaty of Versailles",
+      "凡尔赛",
+      "凡尔赛宫"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "Wersal",
+       "Wersalu"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "Wersal",
+      "Wersalu"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       3
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       2,
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     2,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-071",
+   "subfamily": "l2_factual",
+   "prompt": "Gugusan pulau vulkanik di Samudra Pasifik milik Ekuador, tempat Charles Darwin mengamati burung-burung finch, adalah Kepulauan",
+   "target": "Galápagos",
+   "target_alts": [
+    "Galapagos",
+    "Kepulauan Galápagos"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Galápagos Islands"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Galápagos Islands",
+       "Galapagos Islands"
+      ],
+      "zh": [
+       "加拉帕戈斯群岛",
+       "科隆群岛"
+      ]
+     },
+     "match": [
+      "Galápagos Islands",
+      "Galapagos Islands",
+      "加拉帕戈斯群岛",
+      "科隆群岛"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Kepulauan Galápagos",
+       "Galápagos"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Kepulauan Galápagos",
+      "Galápagos"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4
+      ],
+      "zh": [
+       5,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       5,
+       4
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     3,
+     5
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-096",
+   "subfamily": "l2_factual",
+   "prompt": "Adam Mickiewicz studiował na uniwersytecie w dzisiejszej stolicy Litwy, czyli w",
+   "target": "Wilnie",
+   "target_alts": [
+    "Wilno",
+    "Wilna"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "Vilnius"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Vilnius",
+       "city of Vilnius"
+      ],
+      "zh": [
+       "维尔纽斯",
+       "维尔纽斯市"
+      ]
+     },
+     "match": [
+      "Vilnius",
+      "city of Vilnius",
+      "维尔纽斯",
+      "维尔纽斯市"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "Wilno",
+       "Wilnie",
+       "Wilna"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "Wilno",
+      "Wilnie",
+      "Wilna"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       2,
+       2,
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     2,
+     2
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-066",
+   "subfamily": "l2_factual",
+   "prompt": "Kerajaan Hindu-Buddha yang mencapai puncak kejayaannya di bawah Raja Hayam Wuruk dan Mahapatih Gajah Mada pada abad ke-14 adalah",
+   "target": "Majapahit",
+   "target_alts": [
+    "Kerajaan Majapahit",
+    "Kemaharajaan Majapahit"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Majapahit Empire"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Majapahit Empire",
+       "Majapahit kingdom"
+      ],
+      "zh": [
+       "满者伯夷",
+       "麻喏巴歇"
+      ]
+     },
+     "match": [
+      "Majapahit Empire",
+      "Majapahit kingdom",
+      "满者伯夷",
+      "麻喏巴歇"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Majapahit",
+       "Kerajaan Majapahit"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Majapahit",
+      "Kerajaan Majapahit"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       5
+      ],
+      "zh": [
+       4,
+       5
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4,
+    "target_alts": [
+     5,
+     8
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-092",
+   "subfamily": "l2_factual",
+   "prompt": "임진왜란 때 거북선을 앞세워 한산도 대첩에서 일본 수군을 크게 무찌른 조선의 장군은",
+   "target": "이순신",
+   "target_alts": [
+    "이순신 장군",
+    "충무공 이순신"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ko",
+   "intermediates": [
+    "Yi Sun-sin"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Yi Sun-sin",
+       "Admiral Yi Sun-sin"
+      ],
+      "zh": [
+       "李舜臣",
+       "李舜臣将军"
+      ]
+     },
+     "match": [
+      "Yi Sun-sin",
+      "Admiral Yi Sun-sin",
+      "李舜臣",
+      "李舜臣将军"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Korean"
+      ],
+      "zh": [
+       "韩语",
+       "韩国语"
+      ],
+      "ko": [
+       "이순신",
+       "이순신 장군"
+      ]
+     },
+     "match": [
+      "Korean",
+      "韩语",
+      "韩国语",
+      "이순신",
+      "이순신 장군"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       5
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1,
+       2
+      ],
+      "ko": [
+       3,
+       5
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     5,
+     6
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-098",
+   "subfamily": "l2_factual",
+   "prompt": "Najdłuższa rzeka Polski, przepływająca przez Kraków i Warszawę, to",
+   "target": "Wisła",
+   "target_alts": [
+    "Wisły",
+    "Wisłą",
+    "rzeka Wisła"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "Vistula"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Vistula",
+       "Vistula River"
+      ],
+      "zh": [
+       "维斯瓦河",
+       "维斯图拉河"
+      ]
+     },
+     "match": [
+      "Vistula",
+      "Vistula River",
+      "维斯瓦河",
+      "维斯图拉河"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "Wisła",
+       "Wisły",
+       "Wisłą"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "Wisła",
+      "Wisły",
+      "Wisłą"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       2,
+       2,
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     2,
+     2,
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-070",
+   "subfamily": "l2_factual",
+   "prompt": "Menara besi setinggi sekitar 330 meter yang dibangun untuk Pameran Dunia tahun 1889 di Paris adalah Menara",
+   "target": "Eiffel",
+   "target_alts": [
+    "Menara Eiffel"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Eiffel Tower"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Eiffel Tower",
+       "the Eiffel Tower"
+      ],
+      "zh": [
+       "埃菲尔铁塔",
+       "艾菲尔铁塔"
+      ]
+     },
+     "match": [
+      "Eiffel Tower",
+      "the Eiffel Tower",
+      "埃菲尔铁塔",
+      "艾菲尔铁塔"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Menara Eiffel",
+       "Eiffel"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Menara Eiffel",
+      "Eiffel"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       4,
+       2
+      ]
+     }
+    },
+    "target": 2,
+    "target_alts": [
+     4
+    ]
+   },
+   "consistency": 1.0
+  },
+  {
+   "name": "dev-brmt-077",
+   "subfamily": "l2_factual",
+   "prompt": "الروائي المصري صاحب الثلاثية الذي فاز بجائزة نوبل للآداب سنة 1988 هو",
+   "target": "نجيب محفوظ",
+   "target_alts": [
+    "الأديب نجيب محفوظ"
+   ],
+   "source": "jlm-dev-mt-v1",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "Naguib Mahfouz"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Naguib Mahfouz",
+       "Najib Mahfuz"
+      ],
+      "zh": [
+       "纳吉布·马哈福兹",
+       "马哈福兹"
+      ]
+     },
+     "match": [
+      "Naguib Mahfouz",
+      "Najib Mahfuz",
+      "纳吉布·马哈福兹",
+      "马哈福兹"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "نجيب محفوظ",
+       "الأديب نجيب محفوظ"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "نجيب محفوظ",
+      "الأديب نجيب محفوظ"
+     ]
+    }
+   ],
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       5
+      ],
+      "zh": [
+       8,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       3,
+       6
+      ]
+     }
+    },
+    "target": 3,
+    "target_alts": [
+     6
+    ]
+   },
+   "consistency": 1.0
+  }
+ ]
+}

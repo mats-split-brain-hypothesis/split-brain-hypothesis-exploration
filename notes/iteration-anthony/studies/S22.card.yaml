@@ -1,0 +1,30 @@
+id: S22
+title: Late partial mean from item-free fills
+owner: A (j-lens-mean-2e), night-2 (steward's card)
+status: negative
+question: >
+  Can S14b's late partial mean (the bench items' shared late prior) come from reference cells that hold a family's format
+  and genre but none of its items' content?
+verdict: >
+  Partly: S2's hand-written neutral fills recover association late (0.667 -> 0.725 on fit) where random chat sentences do
+  not, so the prior is the items' genre (9 of 11 families render plain, with no instruction text). But the macro (+0.016
+  vs fam) is below S14k (+0.020) and S14b (+0.032): a 4-family pool pulls other families toward its fills. No capture
+  requested.
+tiles:
+  - {label: "fit association, late mean from neutral fills", value: "0.725", sub: "S14k 0.667, S14b 0.755, chat clusters 0.667"}
+  - {label: "fit strict macro vs fam", value: "+0.016", sub: "S14k +0.020, S14b +0.032"}
+  - {label: "families rendered plain", value: "9 / 11", sub: "only UM and DM carry a template"}
+formulas:
+  - latex: 'h - g(h) = (I - B B^{\top})\big(h - \alpha\, \tfrac{1}{k} \textstyle\sum_{r \in N_k(h)} r\big) \quad (l > 40)'
+    note: "N_k(h): the k nearest cells (cosine) of the item-free pool (S2 neutral fills, 96 cells); alpha 0.5; kmx64 up to L40 as in S14k."
+diagram:
+  kind: pool
+  select: neutral
+  caption: "The late partial mean is taken over item-free fills in the families' genre instead of bench items."
+split: fit
+arms: ["sched:40:kmx64+s14:template:64:mean=s22nn8:a=0.5@self|cos", "sched:40:kmx64+s14:template:64:mean=s22pm:a=0.5@self|cos"]
+controls: ["sched:40:kmx64+s14:template:64:mean=kmch128:a=0.5@self|cos", "sched:40:kmx64+s14t64@self|cos", "sched:40:kmx64+s14:template:64:mean=kmx64:a=0.5@self|cos"]
+insights:
+  - {lead: "The late association prior is the items' genre, not an instruction", text: "9 of 11 families render plain; hand-written scene sentences that name nothing recover association late (0.725), random chat sentences do not (0.667)."}
+  - {lead: "A 4-family pool is not a method", text: "It pulls other families toward its fills: multihop_mt 0.450 (S14k 0.525), DM no gain; S14b's clusters cover every family's own form."}
+next: []

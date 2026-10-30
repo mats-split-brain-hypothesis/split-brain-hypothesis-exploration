@@ -1,0 +1,4491 @@
+{
+ "provenance": {
+  "experiment": "S24 val2 gate (jle x90_gate, unchanged settings)",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "max_new_tokens": 16,
+  "seed": 0,
+  "limit": null
+ },
+ "items": {
+  "v2-mh-c-001": {
+   "family": "multihop",
+   "golds": [
+    "Chisinau"
+   ],
+   "greedy": "Chisinau",
+   "sampled": [
+    "Chisinau",
+    "Chișinău",
+    "Chisinau",
+    "Chisinau",
+    "Chișinău",
+    "Chisinau",
+    "Chisinau",
+    "Chisinau",
+    "Chișinău",
+    "Chisinau"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-mh-c-002": {
+   "family": "multihop",
+   "golds": [
+    "rupee"
+   ],
+   "greedy": "Afghani",
+   "sampled": [
+    "Afghani",
+    "Rufiyaa",
+    "Rufiyaa",
+    "Rufiyaa",
+    "Rufiyaa",
+    "Afghani",
+    "Afghani",
+    "Afghani",
+    "Riel",
+    "Rufiyaa"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-mh-c-003": {
+   "family": "multihop",
+   "golds": [
+    "Lao"
+   ],
+   "greedy": "Lao",
+   "sampled": [
+    "Lao",
+    "Lao",
+    "Lao",
+    "Lao",
+    "Lao",
+    "Lao",
+    "Thai",
+    "Lao",
+    "Lao",
+    "Lao"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-c-004": {
+   "family": "multihop",
+   "golds": [
+    "Ulaanbaatar"
+   ],
+   "greedy": "Ulaanbaatar",
+   "sampled": [
+    "Ulaanbaatar",
+    "Ulaanbaatar",
+    "Ulaanbaatar",
+    "Ulaanbaatar",
+    "Ulaanbaatar",
+    "Ulaanbaatar",
+    "Ulaanbaatar",
+    "Ulaanbaatar",
+    "Ulaanbaatar",
+    "Ulaanbaatar"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-005": {
+   "family": "multihop",
+   "golds": [
+    "Lima"
+   ],
+   "greedy": "Lima",
+   "sampled": [
+    "Lima",
+    "Lima",
+    "Lima",
+    "Lima",
+    "Lima",
+    "Lima",
+    "Lima",
+    "Lima",
+    "Lima",
+    "Lima"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-006": {
+   "family": "multihop",
+   "golds": [
+    "Nairobi"
+   ],
+   "greedy": "Nairobi",
+   "sampled": [
+    "Nairobi",
+    "Nairobi",
+    "Nairobi",
+    "Nairobi",
+    "Nairobi",
+    "Nairobi",
+    "Nairobi",
+    "Nairobi",
+    "Nairobi",
+    "Nairobi"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-007": {
+   "family": "multihop",
+   "golds": [
+    "Kampala"
+   ],
+   "greedy": "Kampala",
+   "sampled": [
+    "Kampala",
+    "Kampala",
+    "Kampala",
+    "Kampala",
+    "Kampala",
+    "Kampala",
+    "Kampala",
+    "Kampala",
+    "Kampala",
+    "Kampala"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-008": {
+   "family": "multihop",
+   "golds": [
+    "Kigali"
+   ],
+   "greedy": "Kigali",
+   "sampled": [
+    "Ruhengeri",
+    "Gisenyi",
+    "Butare",
+    "Musanze",
+    "Kigali",
+    "Butare",
+    "Butare",
+    "Bukavu",
+    "Butare",
+    "Kigali"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.2,
+   "pass": false
+  },
+  "v2-mh-c-009": {
+   "family": "multihop",
+   "golds": [
+    "Europe"
+   ],
+   "greedy": "Europe",
+   "sampled": [
+    "Europe",
+    "Europe",
+    "Europe",
+    "Europe",
+    "Europe",
+    "Europe",
+    "Europe",
+    "Europe",
+    "Europe",
+    "Europe"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-010": {
+   "family": "multihop",
+   "golds": [
+    "euro"
+   ],
+   "greedy": "euro",
+   "sampled": [
+    "Euro",
+    "euro",
+    "euro",
+    "euro",
+    "euro",
+    "euro",
+    "euro",
+    "euro",
+    "euro",
+    "Euro"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-011": {
+   "family": "multihop",
+   "golds": [
+    "Riga"
+   ],
+   "greedy": "Riga",
+   "sampled": [
+    "Riga",
+    "Riga",
+    "Riga",
+    "Riga",
+    "Riga",
+    "Riga",
+    "Riga",
+    "Riga",
+    "Riga",
+    "Riga"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-012": {
+   "family": "multihop",
+   "golds": [
+    "Tallinn"
+   ],
+   "greedy": "Tallinn",
+   "sampled": [
+    "Tallinn",
+    "Tallinn",
+    "Tallinn",
+    "Tallinn",
+    "Tallinn",
+    "Tallinn",
+    "Tallinn",
+    "Tallinn",
+    "Tallinn",
+    "Tallinn"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-013": {
+   "family": "multihop",
+   "golds": [
+    "Vilnius"
+   ],
+   "greedy": "Vilnius",
+   "sampled": [
+    "Vilnius",
+    "Vilnius",
+    "Vilnius",
+    "Vilnius",
+    "Vilnius",
+    "Vilnius",
+    "Vilnius",
+    "Vilnius",
+    "Vilnius",
+    "Vilnius"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-014": {
+   "family": "multihop",
+   "golds": [
+    "Muscat"
+   ],
+   "greedy": "Salalah",
+   "sampled": [
+    "Salalah",
+    "Muscat",
+    "Salalah",
+    "Salalah",
+    "Salalah",
+    "Salalah",
+    "Salalah",
+    "Muscat",
+    "Muscat",
+    "Salalah"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.3,
+   "pass": false
+  },
+  "v2-mh-c-015": {
+   "family": "multihop",
+   "golds": [
+    "Doha"
+   ],
+   "greedy": "Doha",
+   "sampled": [
+    "Doha",
+    "Doha",
+    "Doha",
+    "Doha",
+    "Doha",
+    "Doha",
+    "Doha",
+    "Doha",
+    "Doha",
+    "Doha"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-016": {
+   "family": "multihop",
+   "golds": [
+    "Sanaa"
+   ],
+   "greedy": "Sanaa",
+   "sampled": [
+    "San'a",
+    "Sanaa",
+    "Sanaa",
+    "Sana",
+    "Sana",
+    "Sanaa",
+    "Sana",
+    "Sanaa",
+    "Sanaa",
+    "Sanaa"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.6,
+   "pass": false
+  },
+  "v2-mh-c-017": {
+   "family": "multihop",
+   "golds": [
+    "Asia"
+   ],
+   "greedy": "Asia",
+   "sampled": [
+    "Asia",
+    "Asia",
+    "Asia",
+    "Asia",
+    "Asia",
+    "Asia",
+    "Asia",
+    "Asia",
+    "Asia",
+    "Asia"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-018": {
+   "family": "multihop",
+   "golds": [
+    "Beirut"
+   ],
+   "greedy": "Beirut",
+   "sampled": [
+    "Beirut",
+    "Beirut",
+    "Beirut",
+    "Beirut",
+    "beirut",
+    "Beirut",
+    "Beirut",
+    "Beirut",
+    "Beirut",
+    "Beirut"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-019": {
+   "family": "multihop",
+   "golds": [
+    "Arabic"
+   ],
+   "greedy": "Arabic",
+   "sampled": [
+    "Arabic",
+    "Arabic",
+    "Arabic",
+    "Arabic",
+    "Arabic",
+    "Arabic",
+    "Arabic",
+    "Arabic",
+    "Arabic",
+    "Arabic"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-020": {
+   "family": "multihop",
+   "golds": [
+    "Persian"
+   ],
+   "greedy": "Persian",
+   "sampled": [
+    "Persian",
+    "Persian",
+    "Persian",
+    "Persian",
+    "Persian",
+    "Persian",
+    "Persian",
+    "Persian",
+    "Persian",
+    "Persian"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-021": {
+   "family": "multihop",
+   "golds": [
+    "Spanish"
+   ],
+   "greedy": "Spanish",
+   "sampled": [
+    "Spanish",
+    "Spanish",
+    "Spanish",
+    "Spanish",
+    "Spanish",
+    "Spanish",
+    "Spanish",
+    "Spanish",
+    "Spanish",
+    "Spanish"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-022": {
+   "family": "multihop",
+   "golds": [
+    "French"
+   ],
+   "greedy": "French",
+   "sampled": [
+    "French",
+    "French",
+    "French",
+    "French",
+    "French",
+    "French",
+    "French",
+    "French",
+    "French",
+    "French"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-023": {
+   "family": "multihop",
+   "golds": [
+    "Suva"
+   ],
+   "greedy": "Suva",
+   "sampled": [
+    "Suva",
+    "Suva",
+    "Apia",
+    "Suva",
+    "Suva",
+    "Suva",
+    "Suva",
+    "Nuku'alofa",
+    "Suva",
+    "Suva"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-mh-c-024": {
+   "family": "multihop",
+   "golds": [
+    "tala"
+   ],
+   "greedy": "Pacific franc",
+   "sampled": [
+    "Pacific franc",
+    "Tala",
+    "Pacific Franc",
+    "Pacific Franc",
+    "Pacific franc",
+    "Pacific franc",
+    "Pacific franc",
+    "Pacific Franc",
+    "Pacific franc",
+    "Tahitian pa"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-mh-c-025": {
+   "family": "multihop",
+   "golds": [
+    "Africa"
+   ],
+   "greedy": "Africa",
+   "sampled": [
+    "Africa",
+    "Africa",
+    "Africa",
+    "Africa",
+    "Africa",
+    "Africa",
+    "Africa",
+    "Africa",
+    "Africa",
+    "Africa"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-026": {
+   "family": "multihop",
+   "golds": [
+    "naira"
+   ],
+   "greedy": "naira",
+   "sampled": [
+    "naira",
+    "naira",
+    "naira",
+    "naira",
+    "naira",
+    "Nigerian Naira",
+    "naira",
+    "naira",
+    "Nigerian Naira",
+    "naira"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-027": {
+   "family": "multihop",
+   "golds": [
+    "Yaounde"
+   ],
+   "greedy": "Windhoek",
+   "sampled": [
+    "Windhoek",
+    "Gaborone",
+    "Gaborone",
+    "Windhoek",
+    "Windhoek",
+    "Windhoek",
+    "Windhoek",
+    "Gaborone",
+    "Windhoek",
+    "Gaborone"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-mh-c-028": {
+   "family": "multihop",
+   "golds": [
+    "Rabat"
+   ],
+   "greedy": "Rabat",
+   "sampled": [
+    "Rabat",
+    "Rabat",
+    "Rabat",
+    "Rabat",
+    "Rabat",
+    "Rabat",
+    "Rabat",
+    "Rabat",
+    "Rabat",
+    "Rabat"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-029": {
+   "family": "multihop",
+   "golds": [
+    "Tunis"
+   ],
+   "greedy": "Tunis",
+   "sampled": [
+    "Tunis",
+    "Tunis",
+    "Tunis",
+    "Tunis",
+    "Tunis",
+    "Tunis",
+    "Tunis",
+    "Tunis",
+    "Tunis",
+    "Tunis"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-030": {
+   "family": "multihop",
+   "golds": [
+    "birr"
+   ],
+   "greedy": "Ethiopian birr",
+   "sampled": [
+    "Ethiopian birr",
+    "Ethiopian birr",
+    "Ethiopian birr",
+    "Ethiopian birr",
+    "Ethiopian birr",
+    "Ethiopian birr",
+    "Birr",
+    "Ethiopian birr",
+    "Ethiopian birr",
+    "Ethiopian birr"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-031": {
+   "family": "multihop",
+   "golds": [
+    "Malagasy"
+   ],
+   "greedy": "Malagasy",
+   "sampled": [
+    "Malagasy",
+    "Malagasy",
+    "Malagasy",
+    "Malagasy",
+    "Malagasy",
+    "Malagasy",
+    "Malagasy",
+    "Malagasy",
+    "Malagasy",
+    "Malagasy"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-032": {
+   "family": "multihop",
+   "golds": [
+    "Lusaka"
+   ],
+   "greedy": "Lusaka",
+   "sampled": [
+    "Lusaka",
+    "Lusaka",
+    "Lusaka",
+    "Lusaka",
+    "Lusaka",
+    "Lusaka",
+    "Lusaka",
+    "Lusaka",
+    "Lusaka",
+    "Lusaka"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-033": {
+   "family": "multihop",
+   "golds": [
+    "Luanda"
+   ],
+   "greedy": "Maputo",
+   "sampled": [
+    "Maputo",
+    "Maputo",
+    "Luanda",
+    "Luanda",
+    "Maputo",
+    "Luanda",
+    "Luanda",
+    "Maputo",
+    "Maputo",
+    "Maputo"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.4,
+   "pass": false
+  },
+  "v2-mh-c-034": {
+   "family": "multihop",
+   "golds": [
+    "Algiers"
+   ],
+   "greedy": "Algiers",
+   "sampled": [
+    "Libya",
+    "Libreville",
+    "Algiers",
+    "Khartoum",
+    "Libya",
+    "Algiers",
+    "Algiers",
+    "Cairo",
+    "Cairo",
+    "Khartoum"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.3,
+   "pass": false
+  },
+  "v2-mh-c-035": {
+   "family": "multihop",
+   "golds": [
+    "Harare"
+   ],
+   "greedy": "Harare",
+   "sampled": [
+    "Harare",
+    "Harare",
+    "Harare",
+    "Harare",
+    "Harare",
+    "Harare",
+    "Harare",
+    "Harare",
+    "Harare",
+    "Harare"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-036": {
+   "family": "multihop",
+   "golds": [
+    "krone"
+   ],
+   "greedy": "Norwegian krone",
+   "sampled": [
+    "Norwegian krone",
+    "Norwegian krone",
+    "Norwegian Krone",
+    "Norwegian krone",
+    "Norwegian krone",
+    "Norwegian krone",
+    "Norwegian Krone",
+    "Norwegian krone",
+    "Norwegian krone",
+    "Norwegian krone"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-037": {
+   "family": "multihop",
+   "golds": [
+    "Warsaw"
+   ],
+   "greedy": "Warsaw",
+   "sampled": [
+    "Warsaw",
+    "Warsaw",
+    "Warsaw",
+    "Warsaw",
+    "Warsaw",
+    "Warsaw",
+    "Warsaw",
+    "Warsaw",
+    "Warsaw",
+    "Warsaw"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-038": {
+   "family": "multihop",
+   "golds": [
+    "dinar"
+   ],
+   "greedy": "Serbian dinar",
+   "sampled": [
+    "Serbian dinar",
+    "Serbian dinar",
+    "dinar",
+    "Serbian dinar",
+    "Serbian dinar",
+    "Serbian dinar",
+    "Serbian dinar",
+    "dinar",
+    "Serbian dinar",
+    "Serbian dinar"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-039": {
+   "family": "multihop",
+   "golds": [
+    "Tirana"
+   ],
+   "greedy": "Tirana",
+   "sampled": [
+    "Tirana",
+    "Tirana",
+    "Tirana",
+    "Tirana",
+    "Tirana",
+    "Tirana",
+    "Tirana",
+    "Tirana",
+    "Tirana",
+    "Tirana"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-040": {
+   "family": "multihop",
+   "golds": [
+    "Ljubljana"
+   ],
+   "greedy": "Ljubljana",
+   "sampled": [
+    "Ljubljana",
+    "Ljubljana",
+    "Ljubljana",
+    "Ljubljana",
+    "Ljubljana",
+    "Ljubljana",
+    "Ljubljana",
+    "Ljubljana",
+    "Ljubljana",
+    "Ljubljana"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-041": {
+   "family": "multihop",
+   "golds": [
+    "Portuguese"
+   ],
+   "greedy": "Portuguese",
+   "sampled": [
+    "Portuguese",
+    "Portuguese",
+    "Portuguese",
+    "Portuguese",
+    "Portuguese",
+    "Portuguese",
+    "Portuguese",
+    "Portuguese",
+    "Portuguese",
+    "Portuguese"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-042": {
+   "family": "multihop",
+   "golds": [
+    "Minsk"
+   ],
+   "greedy": "Minsk",
+   "sampled": [
+    "Minsk",
+    "Minsk",
+    "Minsk",
+    "Minsk",
+    "Minsk",
+    "Minsk",
+    "Minsk",
+    "Minsk",
+    "Minsk",
+    "Minsk"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-043": {
+   "family": "multihop",
+   "golds": [
+    "lira"
+   ],
+   "greedy": "Turkish lira",
+   "sampled": [
+    "Turkish lira",
+    "Turkish lira",
+    "Turkish lira",
+    "Turkish lira",
+    "Turkish lira",
+    "Turkish lira",
+    "Turkish lira",
+    "Turkish lira",
+    "Turkish lira",
+    "Turkish lira"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-044": {
+   "family": "multihop",
+   "golds": [
+    "dong"
+   ],
+   "greedy": "Vietnamese dong",
+   "sampled": [
+    "Vietnamese dong",
+    "Vietnamese dong",
+    "Vietnamese dong",
+    "Vietnamese dong",
+    "Vietnamese dong",
+    "Vietnamese dong",
+    "Vietnamese dong",
+    "Vietnamese dong",
+    "Vietnamese dong",
+    "Vietnamese Dong"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-045": {
+   "family": "multihop",
+   "golds": [
+    "Bengali"
+   ],
+   "greedy": "Bengali",
+   "sampled": [
+    "Bengali",
+    "Bengali",
+    "Bengali",
+    "Bengali",
+    "Bengali",
+    "Bengali",
+    "Bengali",
+    "Bengali",
+    "Bengali",
+    "Bengali"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-046": {
+   "family": "multihop",
+   "golds": [
+    "1"
+   ],
+   "greedy": "12",
+   "sampled": [
+    "12",
+    "12",
+    "January",
+    "January",
+    "12",
+    "1",
+    "1",
+    "1",
+    "12",
+    "January"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.3,
+   "pass": false
+  },
+  "v2-mh-c-047": {
+   "family": "multihop",
+   "golds": [
+    "2"
+   ],
+   "greedy": "two",
+   "sampled": [
+    "2",
+    "2",
+    "two",
+    "two",
+    "two",
+    "2",
+    "two",
+    "two",
+    "2",
+    "two"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-048": {
+   "family": "multihop",
+   "golds": [
+    "3"
+   ],
+   "greedy": "three",
+   "sampled": [
+    "three",
+    "three",
+    "three",
+    "three",
+    "three",
+    "three",
+    "three",
+    "3",
+    "three",
+    "three"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-049": {
+   "family": "multihop",
+   "golds": [
+    "A"
+   ],
+   "greedy": "A",
+   "sampled": [
+    "A",
+    "A",
+    "A",
+    "A",
+    "A",
+    "A",
+    "A",
+    "A",
+    "A",
+    "A"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-050": {
+   "family": "multihop",
+   "golds": [
+    "June"
+   ],
+   "greedy": "June",
+   "sampled": [
+    "June",
+    "June",
+    "June",
+    "June",
+    "June",
+    "June",
+    "June",
+    "June",
+    "June",
+    "July"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-c-051": {
+   "family": "multihop",
+   "golds": [
+    "6"
+   ],
+   "greedy": "6",
+   "sampled": [
+    "6",
+    "six",
+    "6",
+    "six",
+    "6",
+    "six",
+    "six",
+    "6",
+    "six",
+    "six"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-052": {
+   "family": "multihop",
+   "golds": [
+    "August"
+   ],
+   "greedy": "August",
+   "sampled": [
+    "August",
+    "August",
+    "August",
+    "August",
+    "August",
+    "August",
+    "August",
+    "August",
+    "August",
+    "August"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-053": {
+   "family": "multihop",
+   "golds": [
+    "8"
+   ],
+   "greedy": "8",
+   "sampled": [
+    "8",
+    "August",
+    "8",
+    "8",
+    "8",
+    "eight",
+    "eight",
+    "8",
+    "8",
+    "eight"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-c-054": {
+   "family": "multihop",
+   "golds": [
+    "October"
+   ],
+   "greedy": "October",
+   "sampled": [
+    "October",
+    "October",
+    "October",
+    "October",
+    "October",
+    "October",
+    "October",
+    "October",
+    "October",
+    "October"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-055": {
+   "family": "multihop",
+   "golds": [
+    "10"
+   ],
+   "greedy": "10",
+   "sampled": [
+    "ten",
+    "10",
+    "11",
+    "11",
+    "10",
+    "ten",
+    "10",
+    "10",
+    "10",
+    "10"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-mh-c-056": {
+   "family": "multihop",
+   "golds": [
+    "N"
+   ],
+   "greedy": "N",
+   "sampled": [
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-057": {
+   "family": "multihop",
+   "golds": [
+    "January"
+   ],
+   "greedy": "January",
+   "sampled": [
+    "January",
+    "January",
+    "January",
+    "January",
+    "January",
+    "January",
+    "January",
+    "January",
+    "January",
+    "January"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-058": {
+   "family": "multihop",
+   "golds": [
+    "Tuesday"
+   ],
+   "greedy": "Tuesday",
+   "sampled": [
+    "Tuesday",
+    "Tuesday",
+    "Tuesday",
+    "Tuesday",
+    "Tuesday",
+    "Tuesday",
+    "Tuesday",
+    "Tuesday",
+    "Tuesday",
+    "Tuesday"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-059": {
+   "family": "multihop",
+   "golds": [
+    "T"
+   ],
+   "greedy": "T",
+   "sampled": [
+    "T",
+    "T",
+    "T",
+    "T",
+    "T",
+    "T",
+    "T",
+    "T",
+    "t",
+    "T"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-060": {
+   "family": "multihop",
+   "golds": [
+    "W"
+   ],
+   "greedy": "W",
+   "sampled": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-061": {
+   "family": "multihop",
+   "golds": [
+    "Wednesday"
+   ],
+   "greedy": "Wednesday",
+   "sampled": [
+    "Wednesday",
+    "Wednesday",
+    "Wednesday",
+    "Wednesday",
+    "Wednesday",
+    "Wednesday",
+    "Tuesday",
+    "Wednesday",
+    "Wednesday",
+    "Wednesday"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-c-062": {
+   "family": "multihop",
+   "golds": [
+    "F"
+   ],
+   "greedy": "F",
+   "sampled": [
+    "F",
+    "F",
+    "F",
+    "F",
+    "F",
+    "F",
+    "F",
+    "F",
+    "F",
+    "F"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-063": {
+   "family": "multihop",
+   "golds": [
+    "Sunday"
+   ],
+   "greedy": "Wednesday",
+   "sampled": [
+    "Thursday",
+    "Saturday",
+    "Saturday",
+    "Wednesday",
+    "Wednesday",
+    "Saturday",
+    "Wednesday",
+    "Wednesday",
+    "Tuesday",
+    "Saturday"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-mh-c-064": {
+   "family": "multihop",
+   "golds": [
+    "Monday"
+   ],
+   "greedy": "Monday",
+   "sampled": [
+    "Monday",
+    "Monday",
+    "Monday",
+    "Monday",
+    "Monday",
+    "Monday",
+    "Monday",
+    "Monday",
+    "Monday",
+    "Monday"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-065": {
+   "family": "multihop",
+   "golds": [
+    "summer"
+   ],
+   "greedy": "summer",
+   "sampled": [
+    "spring",
+    "summer",
+    "summer",
+    "summer",
+    "summer",
+    "summer",
+    "summer",
+    "summer",
+    "summer",
+    "summer"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-c-066": {
+   "family": "multihop",
+   "golds": [
+    "S"
+   ],
+   "greedy": "J",
+   "sampled": [
+    "J",
+    "J",
+    "J",
+    "J",
+    "J",
+    "J",
+    "J",
+    "J",
+    "J",
+    "J"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-mh-c-067": {
+   "family": "multihop",
+   "golds": [
+    "spring"
+   ],
+   "greedy": "winter",
+   "sampled": [
+    "spring",
+    "winter",
+    "winter",
+    "winter",
+    "winter",
+    "winter",
+    "winter",
+    "winter",
+    "winter",
+    "winter"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-mh-c-068": {
+   "family": "multihop",
+   "golds": [
+    "A"
+   ],
+   "greedy": "A",
+   "sampled": [
+    "O",
+    "F",
+    "A",
+    "A",
+    "A",
+    "A",
+    "A",
+    "F",
+    "A",
+    "A"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-mh-c-069": {
+   "family": "multihop",
+   "golds": [
+    "7"
+   ],
+   "greedy": "seven",
+   "sampled": [
+    "7",
+    "7",
+    "seven",
+    "seven",
+    "seven",
+    "seven",
+    "seven",
+    "seven",
+    "seven",
+    "seven"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-c-070": {
+   "family": "multihop",
+   "golds": [
+    "12"
+   ],
+   "greedy": "ten",
+   "sampled": [
+    "twelve",
+    "December",
+    "12",
+    "twelve",
+    "12",
+    "twelve",
+    "twelve",
+    "ten",
+    "12",
+    "ten"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-mh-d-001": {
+   "family": "multihop",
+   "golds": [
+    "C"
+   ],
+   "greedy": "C",
+   "sampled": [
+    "C",
+    "C",
+    "Cu",
+    "Cu",
+    "C",
+    "C",
+    "C",
+    "Cu",
+    "C",
+    "C"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-mh-d-002": {
+   "family": "multihop",
+   "golds": [
+    "solid"
+   ],
+   "greedy": "solid",
+   "sampled": [
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-003": {
+   "family": "multihop",
+   "golds": [
+    "L"
+   ],
+   "greedy": "L",
+   "sampled": [
+    "L",
+    "Li",
+    "L",
+    "Li",
+    "L",
+    "L",
+    "L",
+    "Li",
+    "L",
+    "Li"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.6,
+   "pass": false
+  },
+  "v2-mh-d-004": {
+   "family": "multihop",
+   "golds": [
+    "gas"
+   ],
+   "greedy": "gas",
+   "sampled": [
+    "gas",
+    "gas",
+    "gas",
+    "gas",
+    "gas",
+    "gas",
+    "gas",
+    "gas",
+    "gas",
+    "gas"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-005": {
+   "family": "multihop",
+   "golds": [
+    "N"
+   ],
+   "greedy": "N",
+   "sampled": [
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-006": {
+   "family": "multihop",
+   "golds": [
+    "M"
+   ],
+   "greedy": "M",
+   "sampled": [
+    "M",
+    "M",
+    "M",
+    "M",
+    "M",
+    "M",
+    "M",
+    "M",
+    "M",
+    "M"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-007": {
+   "family": "multihop",
+   "golds": [
+    "solid"
+   ],
+   "greedy": "solid",
+   "sampled": [
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-008": {
+   "family": "multihop",
+   "golds": [
+    "gas"
+   ],
+   "greedy": "gas",
+   "sampled": [
+    "gas",
+    "gas",
+    "gas",
+    "gas",
+    "gas",
+    "gaseous",
+    "gas",
+    "gas",
+    "gas",
+    "gas"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-d-009": {
+   "family": "multihop",
+   "golds": [
+    "gas"
+   ],
+   "greedy": "gas",
+   "sampled": [
+    "gas",
+    "gaseous",
+    "gaseous",
+    "gas",
+    "gas",
+    "gas",
+    "gas",
+    "gas",
+    "gas",
+    "gas"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-mh-d-010": {
+   "family": "multihop",
+   "golds": [
+    "liquid"
+   ],
+   "greedy": "liquid",
+   "sampled": [
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-011": {
+   "family": "multihop",
+   "golds": [
+    "4"
+   ],
+   "greedy": "four",
+   "sampled": [
+    "four",
+    "4",
+    "four",
+    "four",
+    "four",
+    "4",
+    "4",
+    "four",
+    "4",
+    "four"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-012": {
+   "family": "multihop",
+   "golds": [
+    "solid"
+   ],
+   "greedy": "solid",
+   "sampled": [
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-013": {
+   "family": "multihop",
+   "golds": [
+    "S"
+   ],
+   "greedy": "S",
+   "sampled": [
+    "S",
+    "S",
+    "S",
+    "S",
+    "Se",
+    "S",
+    "Se",
+    "S",
+    "S",
+    "S"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-mh-d-014": {
+   "family": "multihop",
+   "golds": [
+    "3"
+   ],
+   "greedy": "three",
+   "sampled": [
+    "3",
+    "3",
+    "three",
+    "three",
+    "three",
+    "3",
+    "three",
+    "three",
+    "three",
+    "three"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-015": {
+   "family": "multihop",
+   "golds": [
+    "solid"
+   ],
+   "greedy": "solid",
+   "sampled": [
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-016": {
+   "family": "multihop",
+   "golds": [
+    "liquid"
+   ],
+   "greedy": "liquid",
+   "sampled": [
+    "solid",
+    "solid",
+    "liquid",
+    "solid",
+    "liquid",
+    "solid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "solid"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.5,
+   "pass": false
+  },
+  "v2-mh-d-017": {
+   "family": "multihop",
+   "golds": [
+    "6"
+   ],
+   "greedy": "six",
+   "sampled": [
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-018": {
+   "family": "multihop",
+   "golds": [
+    "liquid"
+   ],
+   "greedy": "liquid",
+   "sampled": [
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "solid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-d-019": {
+   "family": "multihop",
+   "golds": [
+    "solid"
+   ],
+   "greedy": "solid",
+   "sampled": [
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid",
+    "solid"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-020": {
+   "family": "multihop",
+   "golds": [
+    "pancreas"
+   ],
+   "greedy": "pancreas",
+   "sampled": [
+    "pancreas",
+    "pancreas",
+    "pancreas",
+    "pancreas",
+    "pancreas",
+    "pancreas",
+    "pancreas",
+    "pancreas",
+    "pancreas",
+    "pancreas"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-021": {
+   "family": "multihop",
+   "golds": [
+    "red"
+   ],
+   "greedy": "ruby",
+   "sampled": [
+    "ruby",
+    "ruby",
+    "ruby",
+    "ruby",
+    "red",
+    "red",
+    "ruby",
+    "ruby",
+    "ruby",
+    "ruby"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.2,
+   "pass": false
+  },
+  "v2-mh-d-022": {
+   "family": "multihop",
+   "golds": [
+    "liquid"
+   ],
+   "greedy": "liquid",
+   "sampled": [
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid",
+    "liquid"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-023": {
+   "family": "multihop",
+   "golds": [
+    "solid"
+   ],
+   "greedy": "liquid",
+   "sampled": [
+    "liquid",
+    "liquid",
+    "solid",
+    "liquid",
+    "liquid",
+    "solid",
+    "liquid",
+    "solid",
+    "liquid",
+    "liquid"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.3,
+   "pass": false
+  },
+  "v2-mh-d-024": {
+   "family": "multihop",
+   "golds": [
+    "liver"
+   ],
+   "greedy": "liver",
+   "sampled": [
+    "liver",
+    "liver",
+    "liver",
+    "liver",
+    "liver",
+    "liver",
+    "liver",
+    "liver",
+    "liver",
+    "liver"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-025": {
+   "family": "multihop",
+   "golds": [
+    "liver"
+   ],
+   "greedy": "liver",
+   "sampled": [
+    "liver",
+    "liver",
+    "liver",
+    "liver",
+    "liver",
+    "liver",
+    "liver",
+    "liver",
+    "liver",
+    "liver"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-026": {
+   "family": "multihop",
+   "golds": [
+    "sweet"
+   ],
+   "greedy": "sweet",
+   "sampled": [
+    "sweet",
+    "sweet",
+    "sweet",
+    "sweet",
+    "sweet",
+    "sweet",
+    "sweet",
+    "sweet",
+    "sweet",
+    "sweet"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-027": {
+   "family": "multihop",
+   "golds": [
+    "bee"
+   ],
+   "greedy": "bee",
+   "sampled": [
+    "bee",
+    "bee",
+    "bee",
+    "bee",
+    "bee",
+    "bee",
+    "bee",
+    "bee",
+    "bee",
+    "bee"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-028": {
+   "family": "multihop",
+   "golds": [
+    "lava"
+   ],
+   "greedy": "lava",
+   "sampled": [
+    "lava",
+    "lava",
+    "lava",
+    "lava",
+    "lava",
+    "lava",
+    "lava",
+    "lava",
+    "lava",
+    "lava"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-029": {
+   "family": "multihop",
+   "golds": [
+    "enamel"
+   ],
+   "greedy": "enamel",
+   "sampled": [
+    "enamel",
+    "enamel",
+    "enamel",
+    "enamel",
+    "enamel",
+    "enamel",
+    "enamel",
+    "enamel",
+    "enamel",
+    "enamel"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-030": {
+   "family": "multihop",
+   "golds": [
+    "positive"
+   ],
+   "greedy": "positive",
+   "sampled": [
+    "positive",
+    "positive",
+    "positive",
+    "positive",
+    "positive",
+    "positive",
+    "positive",
+    "positive",
+    "positive",
+    "positive"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-031": {
+   "family": "multihop",
+   "golds": [
+    "3"
+   ],
+   "greedy": "three",
+   "sampled": [
+    "three",
+    "three",
+    "three",
+    "three",
+    "three",
+    "3",
+    "three",
+    "three",
+    "three",
+    "three"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-032": {
+   "family": "multihop",
+   "golds": [
+    "6"
+   ],
+   "greedy": "six",
+   "sampled": [
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-033": {
+   "family": "multihop",
+   "golds": [
+    "5"
+   ],
+   "greedy": "five",
+   "sampled": [
+    "five",
+    "five",
+    "5",
+    "5",
+    "five",
+    "five",
+    "five",
+    "five",
+    "five",
+    "five"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-034": {
+   "family": "multihop",
+   "golds": [
+    "8"
+   ],
+   "greedy": "eight",
+   "sampled": [
+    "eight",
+    "eight",
+    "8",
+    "eight",
+    "eight",
+    "8",
+    "eight",
+    "eight",
+    "8",
+    "eight"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-035": {
+   "family": "multihop",
+   "golds": [
+    "6"
+   ],
+   "greedy": "six",
+   "sampled": [
+    "six",
+    "6",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "6",
+    "six"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-036": {
+   "family": "multihop",
+   "golds": [
+    "10"
+   ],
+   "greedy": "ten",
+   "sampled": [
+    "ten",
+    "ten",
+    "seven",
+    "ten",
+    "ten",
+    "ten",
+    "ten",
+    "ten",
+    "ten",
+    "ten"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-d-037": {
+   "family": "multihop",
+   "golds": [
+    "4"
+   ],
+   "greedy": "4",
+   "sampled": [
+    "4",
+    "four",
+    "4",
+    "4",
+    "four",
+    "four",
+    "four",
+    "four",
+    "four",
+    "four"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-038": {
+   "family": "multihop",
+   "golds": [
+    "odd"
+   ],
+   "greedy": "odd",
+   "sampled": [
+    "odd",
+    "odd",
+    "odd",
+    "odd",
+    "odd",
+    "odd",
+    "odd",
+    "odd",
+    "odd",
+    "odd"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-039": {
+   "family": "multihop",
+   "golds": [
+    "3"
+   ],
+   "greedy": "three",
+   "sampled": [
+    "three",
+    "three",
+    "three",
+    "three",
+    "three",
+    "three",
+    "three",
+    "three",
+    "three",
+    "three"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-040": {
+   "family": "multihop",
+   "golds": [
+    "even"
+   ],
+   "greedy": "even",
+   "sampled": [
+    "even",
+    "even",
+    "even",
+    "even",
+    "even",
+    "even",
+    "even",
+    "even",
+    "six",
+    "even"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-mh-d-041": {
+   "family": "multihop",
+   "golds": [
+    "even"
+   ],
+   "greedy": "even",
+   "sampled": [
+    "even",
+    "even",
+    "even",
+    "even",
+    "even",
+    "even",
+    "even",
+    "even",
+    "even",
+    "even"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-042": {
+   "family": "multihop",
+   "golds": [
+    "8"
+   ],
+   "greedy": "eight",
+   "sampled": [
+    "eight",
+    "eight",
+    "eight",
+    "eight",
+    "eight",
+    "eight",
+    "eight",
+    "eight",
+    "eight",
+    "eight"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-043": {
+   "family": "multihop",
+   "golds": [
+    "6"
+   ],
+   "greedy": "six",
+   "sampled": [
+    "six",
+    "six",
+    "6",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six",
+    "six"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-044": {
+   "family": "multihop",
+   "golds": [
+    "12"
+   ],
+   "greedy": "12",
+   "sampled": [
+    "twelve",
+    "twelve",
+    "12",
+    "12",
+    "12",
+    "twelve",
+    "12",
+    "twelve",
+    "12",
+    "twelve"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-mh-d-045": {
+   "family": "multihop",
+   "golds": [
+    "9"
+   ],
+   "greedy": "ten",
+   "sampled": [
+    "ten",
+    "9",
+    "ten",
+    "ten",
+    "ten",
+    "ten",
+    "ten",
+    "ten",
+    "ten",
+    "ten"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-ml-v-001": {
+   "family": "multilingual",
+   "golds": [
+    "riche"
+   ],
+   "greedy": "riche",
+   "sampled": [
+    "riche",
+    "riche",
+    "riche",
+    "riche",
+    "riche",
+    "riche",
+    "riche",
+    "riche",
+    "riche",
+    "riche"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-002": {
+   "family": "multilingual",
+   "golds": [
+    "vrai"
+   ],
+   "greedy": "vrai",
+   "sampled": [
+    "vrai",
+    "vrai",
+    "vrai",
+    "vrai",
+    "vrai",
+    "vrai",
+    "vrai",
+    "vrai",
+    "vrai",
+    "vrai"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-003": {
+   "family": "multilingual",
+   "golds": [
+    "ennemi"
+   ],
+   "greedy": "ennemi",
+   "sampled": [
+    "ennemi",
+    "ennemi",
+    "ennemi",
+    "ennemi",
+    "ennemi\"",
+    "ennemi",
+    "ennemi",
+    "ennemi\"",
+    "ennemi",
+    "ennemi"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-004": {
+   "family": "multilingual",
+   "golds": [
+    "mensonge"
+   ],
+   "greedy": "mensonge\"",
+   "sampled": [
+    "mensonge\"",
+    "mensonge\"",
+    "mensonge",
+    "mensonge",
+    "mensonge",
+    "mensonge\"",
+    "fausseté\"",
+    "mensonge",
+    "mensonge\"",
+    "mensonge"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-ml-v-005": {
+   "family": "multilingual",
+   "golds": [
+    "vendre"
+   ],
+   "greedy": "vendre",
+   "sampled": [
+    "vendre",
+    "vendre",
+    "vendre",
+    "vendre",
+    "vendre",
+    "vendre",
+    "vendre",
+    "vendre",
+    "vendre",
+    "vendre"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-006": {
+   "family": "multilingual",
+   "golds": [
+    "fin"
+   ],
+   "greedy": "fin\"",
+   "sampled": [
+    "fin",
+    "fin",
+    "fin\"",
+    "fin",
+    "fin\"",
+    "fin\"",
+    "fin",
+    "fin\"",
+    "fin\"",
+    "fin\""
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-007": {
+   "family": "multilingual",
+   "golds": [
+    "reich"
+   ],
+   "greedy": "reich",
+   "sampled": [
+    "reich",
+    "reich",
+    "reich",
+    "reich",
+    "reich\"",
+    "reich",
+    "reich",
+    "reich",
+    "reich",
+    "reich\""
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-008": {
+   "family": "multilingual",
+   "golds": [
+    "Frieden"
+   ],
+   "greedy": "Frieden",
+   "sampled": [
+    "Frieden",
+    "Frieden",
+    "Frieden",
+    "Frieden\"",
+    "Frieden",
+    "Frieden",
+    "Frieden",
+    "Frieden",
+    "Frieden",
+    "Frieden"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-009": {
+   "family": "multilingual",
+   "golds": [
+    "verlieren"
+   ],
+   "greedy": "verlieren",
+   "sampled": [
+    "verlieren",
+    "verlieren",
+    "verlieren",
+    "verlieren",
+    "verlieren\"",
+    "verlieren",
+    "verlieren",
+    "verlieren",
+    "verlieren\"",
+    "verlieren"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-010": {
+   "family": "multilingual",
+   "golds": [
+    "hässlich"
+   ],
+   "greedy": "hässlich\"",
+   "sampled": [
+    "hässlich\"",
+    "hässlich",
+    "hässlich",
+    "hässlich\"",
+    "hässlich\"",
+    "hässlich\"",
+    "hässlich\"",
+    "hässlich\"",
+    "hässlich",
+    "hässlich"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-011": {
+   "family": "multilingual",
+   "golds": [
+    "weinen"
+   ],
+   "greedy": "weinen",
+   "sampled": [
+    "weinen",
+    "weinen",
+    "weinen",
+    "weinen",
+    "weinen",
+    "weinen\"",
+    "weinen",
+    "weinen",
+    "weinen",
+    "weinen"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-012": {
+   "family": "multilingual",
+   "golds": [
+    "paz"
+   ],
+   "greedy": "paz\"",
+   "sampled": [
+    "paz\"",
+    "paz",
+    "paz",
+    "paz\"",
+    "paz\"",
+    "paz\"",
+    "paz\"",
+    "paz\"",
+    "paz",
+    "paz"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-013": {
+   "family": "multilingual",
+   "golds": [
+    "perder"
+   ],
+   "greedy": "perder\"",
+   "sampled": [
+    "perder\"",
+    "perder\"",
+    "perder\"",
+    "perder",
+    "perder\"",
+    "perder\"",
+    "perder\"",
+    "perder\"",
+    "perder\"",
+    "perder\""
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-014": {
+   "family": "multilingual",
+   "golds": [
+    "verdad"
+   ],
+   "greedy": "verdad\"",
+   "sampled": [
+    "verdad\"",
+    "verdad\"",
+    "verdad\"",
+    "verdad\"",
+    "verdad\"",
+    "verdad\"",
+    "verdad\"",
+    "verdad\"",
+    "verdad\"",
+    "verdad\""
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-015": {
+   "family": "multilingual",
+   "golds": [
+    "fuera"
+   ],
+   "greedy": "fuera\"",
+   "sampled": [
+    "fuera\"",
+    "fuera",
+    "fuera\"",
+    "fuera",
+    "fuera\"",
+    "fuera\"",
+    "fuera",
+    "fuera\"",
+    "fuera",
+    "fuera\""
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-016": {
+   "family": "multilingual",
+   "golds": [
+    "sur"
+   ],
+   "greedy": "sur\"",
+   "sampled": [
+    "sur\"",
+    "sur\"",
+    "sur",
+    "sur\"",
+    "sur\"",
+    "sur\"",
+    "sur\"",
+    "sur\"",
+    "sur\"",
+    "sur\""
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-017": {
+   "family": "multilingual",
+   "golds": [
+    "vender"
+   ],
+   "greedy": "vender",
+   "sampled": [
+    "vender",
+    "vender",
+    "vender",
+    "vender",
+    "vender",
+    "vender",
+    "vender",
+    "vender",
+    "vender",
+    "vender"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-018": {
+   "family": "multilingual",
+   "golds": [
+    "feio"
+   ],
+   "greedy": "feio",
+   "sampled": [
+    "feio\"",
+    "feio",
+    "feio",
+    "feio",
+    "feio",
+    "feio",
+    "feio",
+    "feio\"",
+    "feio",
+    "feio"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-019": {
+   "family": "multilingual",
+   "golds": [
+    "inimigo"
+   ],
+   "greedy": "inimigo",
+   "sampled": [
+    "inimigo",
+    "inimigo",
+    "inimigo",
+    "inimigo",
+    "inimigo",
+    "inimigo",
+    "inimigo\"",
+    "inimigo",
+    "inimigo",
+    "inimigo"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-020": {
+   "family": "multilingual",
+   "golds": [
+    "fim"
+   ],
+   "greedy": "fim\"",
+   "sampled": [
+    "fim\"",
+    "fim\"",
+    "fim\"",
+    "fim\"",
+    "fim\"",
+    "fim",
+    "fim\"",
+    "fim\"",
+    "fim\"",
+    "fim\""
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-021": {
+   "family": "multilingual",
+   "golds": [
+    "falso"
+   ],
+   "greedy": "falso\"",
+   "sampled": [
+    "falso",
+    "falso\"",
+    "falso",
+    "falso",
+    "falso\"",
+    "falso",
+    "falso\"",
+    "falso\"",
+    "falso\"",
+    "falso"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-022": {
+   "family": "multilingual",
+   "golds": [
+    "sud"
+   ],
+   "greedy": "sud\"",
+   "sampled": [
+    "sud\"",
+    "sud\"",
+    "sud\"",
+    "sud\"",
+    "sud",
+    "sud\"",
+    "sud\"",
+    "sud\"",
+    "sud",
+    "sud\""
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-023": {
+   "family": "multilingual",
+   "golds": [
+    "guerra"
+   ],
+   "greedy": "guerra",
+   "sampled": [
+    "guerra",
+    "guerra",
+    "guerra",
+    "guerra",
+    "guerra\"",
+    "guerra",
+    "guerra\"",
+    "guerra",
+    "guerra\"",
+    "guerra\""
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-024": {
+   "family": "multilingual",
+   "golds": [
+    "semaine"
+   ],
+   "greedy": "semaine",
+   "sampled": [
+    "semaine",
+    "semaine",
+    "semaine",
+    "semaine",
+    "semaine",
+    "semaine",
+    "semaine",
+    "semaine",
+    "semaine\"",
+    "semaine"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-025": {
+   "family": "multilingual",
+   "golds": [
+    "heure"
+   ],
+   "greedy": "heure",
+   "sampled": [
+    "heure",
+    "heure",
+    "heure",
+    "heure",
+    "heure",
+    "heure",
+    "heure",
+    "heure",
+    "heure",
+    "heure"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-026": {
+   "family": "multilingual",
+   "golds": [
+    "demain"
+   ],
+   "greedy": "demain\"",
+   "sampled": [
+    "demain\"",
+    "demain\"",
+    "demain\"",
+    "demain\"",
+    "demain\"",
+    "demain",
+    "demain\"",
+    "demain",
+    "demain\"",
+    "demain"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-027": {
+   "family": "multilingual",
+   "golds": [
+    "Woche"
+   ],
+   "greedy": "Ewigkeit",
+   "sampled": [
+    "Ewigkeit",
+    "ewigkeit",
+    "Ewigkeit",
+    "Ewigkeit",
+    "Ewigkeit",
+    "Ewigkeit",
+    "Ewigkeit",
+    "Ewigkeit\"",
+    "Ewigkeit",
+    "Ewigkeit"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-ml-v-028": {
+   "family": "multilingual",
+   "golds": [
+    "gestern"
+   ],
+   "greedy": "vorgestern",
+   "sampled": [
+    "gestern\"",
+    "Vorgestern",
+    "gestern",
+    "gestern",
+    "gestern",
+    "vorgestern",
+    "vorgestern",
+    "gestern",
+    "vorgestern",
+    "vorgestern"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.5,
+   "pass": false
+  },
+  "v2-ml-v-029": {
+   "family": "multilingual",
+   "golds": [
+    "Jahr"
+   ],
+   "greedy": "Jahr",
+   "sampled": [
+    "Jahr",
+    "Jahr",
+    "Jahr\"",
+    "Jahr",
+    "Jahr\"",
+    "Jahr",
+    "Jahr",
+    "Jahr",
+    "Jahr\"",
+    "Jahr"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-030": {
+   "family": "multilingual",
+   "golds": [
+    "minuto"
+   ],
+   "greedy": "minuto",
+   "sampled": [
+    "minuto",
+    "minuto",
+    "minuto",
+    "minuto",
+    "minuto\"",
+    "minuto\"",
+    "minuto",
+    "minuto\"",
+    "minuto\"",
+    "minuto\""
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-031": {
+   "family": "multilingual",
+   "golds": [
+    "ayer"
+   ],
+   "greedy": "ayer",
+   "sampled": [
+    "ayer",
+    "ayer",
+    "ayer",
+    "ayer",
+    "ayer",
+    "ayer",
+    "ayer",
+    "ayer",
+    "ayer",
+    "ayer"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-032": {
+   "family": "multilingual",
+   "golds": [
+    "mes"
+   ],
+   "greedy": "mes",
+   "sampled": [
+    "mes",
+    "mes\"",
+    "mes\"",
+    "mes",
+    "mes",
+    "mes",
+    "mes\"",
+    "mes",
+    "mes\"",
+    "mes"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-033": {
+   "family": "multilingual",
+   "golds": [
+    "século"
+   ],
+   "greedy": "século",
+   "sampled": [
+    "século",
+    "século\"",
+    "século",
+    "século\"",
+    "século",
+    "século",
+    "século",
+    "século",
+    "século",
+    "século\""
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-034": {
+   "family": "multilingual",
+   "golds": [
+    "hora"
+   ],
+   "greedy": "hora",
+   "sampled": [
+    "hora",
+    "hora",
+    "hora\"",
+    "hora",
+    "hora\"",
+    "hora\"",
+    "hora",
+    "hora\"",
+    "hora\"",
+    "hora"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-035": {
+   "family": "multilingual",
+   "golds": [
+    "anno"
+   ],
+   "greedy": "anno",
+   "sampled": [
+    "anno",
+    "anno",
+    "anno",
+    "anno",
+    "anno",
+    "anno",
+    "anno",
+    "anno",
+    "anno",
+    "anno"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-036": {
+   "family": "multilingual",
+   "golds": [
+    "domani"
+   ],
+   "greedy": "domani\"",
+   "sampled": [
+    "domani",
+    "domani\"",
+    "domani",
+    "domani\"",
+    "domani\"",
+    "domani\"",
+    "domani",
+    "domani\"",
+    "domani\"",
+    "domani\""
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-037": {
+   "family": "multilingual",
+   "golds": [
+    "jaune"
+   ],
+   "greedy": "jaune",
+   "sampled": [
+    "jaune",
+    "jaune",
+    "jaune",
+    "jaune",
+    "jaune",
+    "jaune",
+    "jaune",
+    "jaune",
+    "jaune",
+    "jaune"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-038": {
+   "family": "multilingual",
+   "golds": [
+    "blanc"
+   ],
+   "greedy": "blanc",
+   "sampled": [
+    "blanc",
+    "blanc",
+    "blanc",
+    "blanc",
+    "blanc",
+    "blanc",
+    "blanc",
+    "blanc",
+    "blanc",
+    "blanc"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-040": {
+   "family": "multilingual",
+   "golds": [
+    "rot"
+   ],
+   "greedy": "rot",
+   "sampled": [
+    "rot",
+    "rot",
+    "rot",
+    "rot",
+    "rot",
+    "rot",
+    "rot",
+    "rot",
+    "rot",
+    "rot"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-041": {
+   "family": "multilingual",
+   "golds": [
+    "verde"
+   ],
+   "greedy": "verde",
+   "sampled": [
+    "verde",
+    "verde",
+    "verde",
+    "verde",
+    "verde",
+    "verde",
+    "verde",
+    "verde",
+    "verde",
+    "verde"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-043": {
+   "family": "multilingual",
+   "golds": [
+    "preto"
+   ],
+   "greedy": "preta",
+   "sampled": [
+    "preto",
+    "preta",
+    "preta",
+    "preta",
+    "preta",
+    "preto",
+    "preto",
+    "preta",
+    "preta",
+    "preta"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.3,
+   "pass": false
+  },
+  "v2-ml-v-044": {
+   "family": "multilingual",
+   "golds": [
+    "vermelho"
+   ],
+   "greedy": "vermelha",
+   "sampled": [
+    "vermelha",
+    "vermelha",
+    "vermelha",
+    "vermelha",
+    "vermelha",
+    "vermelha",
+    "vermelha",
+    "vermelha",
+    "vermelha",
+    "vermelha"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-ml-v-045": {
+   "family": "multilingual",
+   "golds": [
+    "grigio"
+   ],
+   "greedy": "grigio",
+   "sampled": [
+    "grigio",
+    "grigio",
+    "grigio",
+    "grigio",
+    "grigio",
+    "grigio",
+    "grigio",
+    "grigio",
+    "grigio",
+    "grigio"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-046": {
+   "family": "multilingual",
+   "golds": [
+    "treize"
+   ],
+   "greedy": "douze",
+   "sampled": [
+    "douze",
+    "dix - trois",
+    "dix - trois",
+    "douze",
+    "douze",
+    "douze",
+    "douze",
+    "douze",
+    "douze",
+    "dix - trois"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-ml-v-047": {
+   "family": "multilingual",
+   "golds": [
+    "quatorze"
+   ],
+   "greedy": "quatorze",
+   "sampled": [
+    "douze",
+    "quatorze",
+    "seize",
+    "dix - six",
+    "seize",
+    "quatorze",
+    "quatorze",
+    "quatorze",
+    "seize",
+    "quatorze"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.5,
+   "pass": false
+  },
+  "v2-ml-v-048": {
+   "family": "multilingual",
+   "golds": [
+    "soixante"
+   ],
+   "greedy": "soixante",
+   "sampled": [
+    "soixante",
+    "soixante",
+    "soixante",
+    "soixante",
+    "soixante",
+    "soixante",
+    "soixante",
+    "soixante",
+    "soixante",
+    "soixante"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-049": {
+   "family": "multilingual",
+   "golds": [
+    "sechzehn"
+   ],
+   "greedy": "sechzehn",
+   "sampled": [
+    "sechzehn",
+    "sechzehn",
+    "sechzehn",
+    "sechzehn",
+    "sechzehn",
+    "sechzehn",
+    "sechzehn",
+    "sechzehn",
+    "sechzehn",
+    "sechzehn"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-050": {
+   "family": "multilingual",
+   "golds": [
+    "siebzehn"
+   ],
+   "greedy": "siebzehn",
+   "sampled": [
+    "siebzehn",
+    "siebzehn",
+    "siebzehn",
+    "siebzehn",
+    "siebzehn",
+    "siebzehn",
+    "siebzehn",
+    "zehn sieben",
+    "siebzehn",
+    "siebzehn"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-ml-v-051": {
+   "family": "multilingual",
+   "golds": [
+    "dieciocho"
+   ],
+   "greedy": "dieciocho",
+   "sampled": [
+    "dieciocho",
+    "dieciocho",
+    "dieciocho",
+    "dieciocho",
+    "dieciocho",
+    "dieciocho",
+    "dieciocho",
+    "dieciocho",
+    "dieciocho",
+    "dieciocho"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-052": {
+   "family": "multilingual",
+   "golds": [
+    "diecinueve"
+   ],
+   "greedy": "dieciocho",
+   "sampled": [
+    "dieciocho",
+    "dieciocho",
+    "diecinueve",
+    "dieciocho",
+    "dieciocho",
+    "diecisinueve",
+    "diecisinueve",
+    "dieciocho",
+    "dieciocho",
+    "dieciocho"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.1,
+   "pass": false
+  },
+  "v2-ml-v-053": {
+   "family": "multilingual",
+   "golds": [
+    "ochenta"
+   ],
+   "greedy": "ochenta",
+   "sampled": [
+    "ochenta",
+    "ochenta",
+    "ochenta",
+    "ochenta",
+    "ochenta",
+    "ochenta",
+    "ochenta",
+    "ochenta",
+    "ochenta",
+    "ochenta"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-054": {
+   "family": "multilingual",
+   "golds": [
+    "catorze"
+   ],
+   "greedy": "seis",
+   "sampled": [
+    "seis",
+    "seis",
+    "seis",
+    "seis",
+    "seis",
+    "seis",
+    "seis",
+    "se",
+    "dez",
+    "seis"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-ml-v-055": {
+   "family": "multilingual",
+   "golds": [
+    "noventa"
+   ],
+   "greedy": "noventa",
+   "sampled": [
+    "noventa",
+    "noventa",
+    "noventa",
+    "noventa",
+    "noventa",
+    "noventa",
+    "noventa",
+    "noventa",
+    "noventa",
+    "noventa"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-056": {
+   "family": "multilingual",
+   "golds": [
+    "sedici"
+   ],
+   "greedy": "sedici",
+   "sampled": [
+    "sedici",
+    "sedici",
+    "sedici",
+    "sedici",
+    "sedici",
+    "sedici",
+    "sedici",
+    "sedici",
+    "sedici",
+    "sedici"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-057": {
+   "family": "multilingual",
+   "golds": [
+    "Inde"
+   ],
+   "greedy": "Inde",
+   "sampled": [
+    "Inde",
+    "Inde",
+    "Inde",
+    "Inde",
+    "Inde",
+    "Inde",
+    "Inde",
+    "Inde",
+    "Inde",
+    "Inde"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-058": {
+   "family": "multilingual",
+   "golds": [
+    "Chine"
+   ],
+   "greedy": "Chine",
+   "sampled": [
+    "Chine",
+    "Chine",
+    "Chine",
+    "Chine",
+    "Chine",
+    "Chine",
+    "Chine",
+    "Chine",
+    "Chine",
+    "Chine"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-059": {
+   "family": "multilingual",
+   "golds": [
+    "Dublin"
+   ],
+   "greedy": "Dublin",
+   "sampled": [
+    "Dublin",
+    "Dublin",
+    "Dublin",
+    "Dublin",
+    "Dublin",
+    "Dublin",
+    "Dublin",
+    "Dublin",
+    "Dublin",
+    "Dublin"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-060": {
+   "family": "multilingual",
+   "golds": [
+    "Oslo"
+   ],
+   "greedy": "Oslo",
+   "sampled": [
+    "Oslo",
+    "Oslo",
+    "Oslo",
+    "Oslo",
+    "Oslo",
+    "Oslo",
+    "Oslo",
+    "Oslo",
+    "Oslo",
+    "Oslo"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-061": {
+   "family": "multilingual",
+   "golds": [
+    "Peru"
+   ],
+   "greedy": "Peru",
+   "sampled": [
+    "Peru",
+    "Peru",
+    "Peru",
+    "Peru",
+    "Peru",
+    "Peru",
+    "den Anden",
+    "Peru",
+    "Peru",
+    "den Anden"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.8,
+   "pass": true
+  },
+  "v2-ml-v-062": {
+   "family": "multilingual",
+   "golds": [
+    "Varsovia"
+   ],
+   "greedy": "Varsovia",
+   "sampled": [
+    "Varsovia",
+    "Varsovia",
+    "Varsovia",
+    "Varsovia",
+    "Varsovia",
+    "Varsovia",
+    "Varsovia",
+    "Varsovia",
+    "Varsovia",
+    "Varsovia"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-063": {
+   "family": "multilingual",
+   "golds": [
+    "España"
+   ],
+   "greedy": "Granada",
+   "sampled": [
+    "Granada",
+    "Granada",
+    "Granada",
+    "Granada",
+    "Granada",
+    "Granada",
+    "Granada",
+    "Granada",
+    "Granada",
+    "Granada"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-ml-v-064": {
+   "family": "multilingual",
+   "golds": [
+    "Estocolmo"
+   ],
+   "greedy": "Estocolmo",
+   "sampled": [
+    "Estocolmo",
+    "Estocolmo",
+    "Estocolmo",
+    "Estocolmo",
+    "Estocolmo",
+    "Estocolmo",
+    "Estocolmo",
+    "Estocolmo",
+    "Estocolmo",
+    "Estocolmo"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-065": {
+   "family": "multilingual",
+   "golds": [
+    "Índia"
+   ],
+   "greedy": "Índia",
+   "sampled": [
+    "Índia",
+    "Índia",
+    "Índia",
+    "Índia",
+    "Índia",
+    "Índia",
+    "Índia",
+    "Índia",
+    "Índia",
+    "cidade de Agra"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-ml-v-066": {
+   "family": "multilingual",
+   "golds": [
+    "Dublino"
+   ],
+   "greedy": "Dublino",
+   "sampled": [
+    "Dublino",
+    "Dublino",
+    "Dublino",
+    "Dublino",
+    "Dublino",
+    "Dublino",
+    "Dublino",
+    "Dublino",
+    "Dublino",
+    "Dublino"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-067": {
+   "family": "multilingual",
+   "golds": [
+    "Berna"
+   ],
+   "greedy": "Berna",
+   "sampled": [
+    "Berna",
+    "Berna",
+    "Berna",
+    "Berna",
+    "Berna",
+    "Berna",
+    "Berna",
+    "Berna",
+    "Berna",
+    "Berna"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-068": {
+   "family": "multilingual",
+   "golds": [
+    "frère"
+   ],
+   "greedy": "frère",
+   "sampled": [
+    "frère",
+    "frère",
+    "frère",
+    "frère",
+    "frère",
+    "frère",
+    "frère",
+    "frère",
+    "frère",
+    "frère"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-069": {
+   "family": "multilingual",
+   "golds": [
+    "nez"
+   ],
+   "greedy": "nez",
+   "sampled": [
+    "nez",
+    "nez",
+    "nez",
+    "nez",
+    "nez",
+    "nez",
+    "nez",
+    "nez",
+    "nez",
+    "nez"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-070": {
+   "family": "multilingual",
+   "golds": [
+    "Kopf"
+   ],
+   "greedy": "Kopf",
+   "sampled": [
+    "Kopf",
+    "Kopf",
+    "Kopf",
+    "Kopf",
+    "Kopf",
+    "Kopf",
+    "Kopf",
+    "Kopf",
+    "Kopf",
+    "Kopf"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-071": {
+   "family": "multilingual",
+   "golds": [
+    "Schwester"
+   ],
+   "greedy": "Schwester",
+   "sampled": [
+    "Schwester",
+    "Schwester",
+    "Schwester",
+    "Schwester",
+    "Schwester",
+    "Schwester",
+    "Schwester",
+    "Schwester",
+    "Schwester",
+    "Schwester"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-072": {
+   "family": "multilingual",
+   "golds": [
+    "hermano"
+   ],
+   "greedy": "hermano",
+   "sampled": [
+    "hermano",
+    "hermano",
+    "hermano",
+    "hermano",
+    "hermano",
+    "hermano",
+    "hermano",
+    "hermano",
+    "hermano",
+    "hermano"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-073": {
+   "family": "multilingual",
+   "golds": [
+    "rodilla"
+   ],
+   "greedy": "rodilla",
+   "sampled": [
+    "rodilla",
+    "rodilla",
+    "rodilla",
+    "rodilla",
+    "rodilla",
+    "rodilla",
+    "rodilla",
+    "rodilla",
+    "rodilla",
+    "rodilla"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-074": {
+   "family": "multilingual",
+   "golds": [
+    "irmã"
+   ],
+   "greedy": "irmã",
+   "sampled": [
+    "irmã",
+    "irmã",
+    "irmã",
+    "irmã",
+    "irmã",
+    "irmã",
+    "irmã",
+    "irmã",
+    "irmã",
+    "irmã"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-075": {
+   "family": "multilingual",
+   "golds": [
+    "pés"
+   ],
+   "greedy": "pés",
+   "sampled": [
+    "pés",
+    "pés",
+    "pés",
+    "pés",
+    "pés",
+    "pés",
+    "pés",
+    "pés",
+    "pés",
+    "pés"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-076": {
+   "family": "multilingual",
+   "golds": [
+    "denti"
+   ],
+   "greedy": "denti",
+   "sampled": [
+    "denti",
+    "denti",
+    "denti",
+    "denti",
+    "denti",
+    "denti",
+    "denti",
+    "denti",
+    "denti",
+    "denti"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-077": {
+   "family": "multilingual",
+   "golds": [
+    "veau"
+   ],
+   "greedy": "veau",
+   "sampled": [
+    "veau",
+    "veau",
+    "veau",
+    "veau",
+    "veau",
+    "veau",
+    "veau",
+    "veau",
+    "veau",
+    "veau"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-078": {
+   "family": "multilingual",
+   "golds": [
+    "poussin"
+   ],
+   "greedy": "poussin",
+   "sampled": [
+    "poussin",
+    "poulet",
+    "poussin",
+    "poussin",
+    "poulet",
+    "poussin",
+    "poussin",
+    "poussin",
+    "poussin",
+    "poulet"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-ml-v-079": {
+   "family": "multilingual",
+   "golds": [
+    "pelle"
+   ],
+   "greedy": "pelle",
+   "sampled": [
+    "pelle",
+    "pelle",
+    "pelle",
+    "pelle",
+    "pelle",
+    "pelle",
+    "pelle",
+    "pelle",
+    "pelle",
+    "pelle"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-080": {
+   "family": "multilingual",
+   "golds": [
+    "Junges"
+   ],
+   "greedy": "Bärenjunge",
+   "sampled": [
+    "Bäre",
+    "Bärchen",
+    "Bär",
+    "Bärenjunge",
+    "Bärenjunge",
+    "Bärenjunge",
+    "Bärchen",
+    "Bärwelp",
+    "Bärenjunge",
+    "Bär"
+   ],
+   "greedy_ok": false,
+   "consistency": 0.0,
+   "pass": false
+  },
+  "v2-ml-v-081": {
+   "family": "multilingual",
+   "golds": [
+    "Löffel"
+   ],
+   "greedy": "Löffel",
+   "sampled": [
+    "Löffel",
+    "Löffel",
+    "Löffel",
+    "Löffel",
+    "Löffel",
+    "Löffel",
+    "Löffel",
+    "Löffel",
+    "Löffel",
+    "Löffel"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-082": {
+   "family": "multilingual",
+   "golds": [
+    "Gummi"
+   ],
+   "greedy": "Gummi",
+   "sampled": [
+    "Gummi",
+    "Kautschuk",
+    "Gummi",
+    "Kautschuk",
+    "Kautschuk",
+    "Gummi",
+    "Kautschuk",
+    "Gummi und Kordelgarnen",
+    "Gummi",
+    "Kautschuk"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.5,
+   "pass": false
+  },
+  "v2-ml-v-083": {
+   "family": "multilingual",
+   "golds": [
+    "gato"
+   ],
+   "greedy": "gato",
+   "sampled": [
+    "gato",
+    "gato",
+    "gato",
+    "gato",
+    "gato",
+    "gato",
+    "gato",
+    "gato",
+    "gato",
+    "gato"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-084": {
+   "family": "multilingual",
+   "golds": [
+    "cuchara"
+   ],
+   "greedy": "cuchara",
+   "sampled": [
+    "cuchara",
+    "cuchara",
+    "cuchara",
+    "cuchara",
+    "cuchara",
+    "cuchara",
+    "cuchara",
+    "cuchara",
+    "cuchara",
+    "cuchara"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-085": {
+   "family": "multilingual",
+   "golds": [
+    "cepillo"
+   ],
+   "greedy": "cepillo de dientes",
+   "sampled": [
+    "cepillo de dientes",
+    "cepillo de dientes",
+    "cepillo de dientes",
+    "cepillo de dientes",
+    "cepillo de dientes",
+    "cepillo de dientes",
+    "cepillo de dientes",
+    "cepillo dental",
+    "cepillo de dientes",
+    "cepillo"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-086": {
+   "family": "multilingual",
+   "golds": [
+    "ovelha"
+   ],
+   "greedy": "ovelha",
+   "sampled": [
+    "ovelha",
+    "ovelha",
+    "ovelha",
+    "ovelha",
+    "ovelha",
+    "ovelha",
+    "ovelha",
+    "ovelha",
+    "ovelha",
+    "ovelha"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  },
+  "v2-ml-v-087": {
+   "family": "multilingual",
+   "golds": [
+    "latido"
+   ],
+   "greedy": "latido",
+   "sampled": [
+    "latido",
+    "latido",
+    "latido",
+    "latido",
+    "latido",
+    "latido",
+    "latido",
+    "latido",
+    "latido",
+    "late"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-ml-v-088": {
+   "family": "multilingual",
+   "golds": [
+    "pá"
+   ],
+   "greedy": "pá",
+   "sampled": [
+    "pá",
+    "pá",
+    "pá",
+    "enxada",
+    "pá",
+    "enxada",
+    "pá",
+    "pá",
+    "enxada",
+    "pá"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.7,
+   "pass": false
+  },
+  "v2-ml-v-089": {
+   "family": "multilingual",
+   "golds": [
+    "cucciolo"
+   ],
+   "greedy": "cucciolo",
+   "sampled": [
+    "cucciolo",
+    "cucciolo",
+    "cucciolo",
+    "cucciolo di leone",
+    "cucciolo",
+    "cucciolo",
+    "cucciolo",
+    "cubetto",
+    "cucciolo",
+    "cucciolo"
+   ],
+   "greedy_ok": true,
+   "consistency": 0.9,
+   "pass": true
+  },
+  "v2-ml-v-090": {
+   "family": "multilingual",
+   "golds": [
+    "coltello"
+   ],
+   "greedy": "coltello",
+   "sampled": [
+    "coltello",
+    "coltello",
+    "coltello",
+    "coltello",
+    "coltello",
+    "coltello",
+    "coltello",
+    "coltello",
+    "coltello",
+    "coltello"
+   ],
+   "greedy_ok": true,
+   "consistency": 1.0,
+   "pass": true
+  }
+ },
+ "summary": {
+  "multihop": {
+   "n": 115,
+   "pass": 94
+  },
+  "multilingual": {
+   "n": 88,
+   "pass": 75
+  }
+ }
+}

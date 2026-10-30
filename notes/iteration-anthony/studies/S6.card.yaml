@@ -1,0 +1,38 @@
+id: S6
+title: The multihop case study
+owner: C (j-lens-mean-ad), pilot-1
+status: diagnostic
+question: >
+  Why does every centre leave multihop flat or worse, what does the family mean remove there, and where in depth does
+  the bridge entity appear vs the answer?
+verdict: >
+  Both multihop banks score the bridge, not the final answer. On multihop_mt the family mean holds the bridge's category
+  (z +2.3 to +2.9 in $L(\mu_{\text{fam}})$ vs +0.5 to +1.2 for random tokens), so subtracting it pushes the bridge down; a
+  category-free mean (mhfam) restores mid-depth ranks but not the late-layer harm, where any bench mean hurts. knnx8 / pco16
+  lift multihop's bridge by pushing the final answer down; the cell's own final-layer direction (pdf) cannot do the same.
+tiles:
+  - {label: "multihop_mt val, bridge any-layer top-10", value: "0.50 → 0.34", sub: "zero → fam; rand.fam 0.58"}
+  - {label: "multihop_mt val, median bridge rank L36", value: "396", sub: "mhfam; fam 1100, zero 485"}
+  - {label: "multihop_mt val strict pass", value: "0.282", sub: "mhfam and othfam; fam 0.256, zero 0.359"}
+  - {label: "multihop val, bridge any-layer top-10", value: "0.71", sub: "pco16 (knnx8 0.70); fam 0.61"}
+formulas:
+  - latex: 'g(h) = \bar h_{\mathcal{R}_{\text{multihop}}}'
+    note: "mhfam: the mean of multihop's fit read cells at the layer (country / capital questions, same form, no famous-person category), whatever family is read."
+  - latex: 'g(h) = \frac{1}{10}\sum_{f \neq F} \mu_f'
+    note: "othfam: the equal-weighted mean of the other 10 families' fit means (F the read family)."
+  - latex: 'g(h) = \mu_{\text{fam}} + (x^{\top} u)\, u, \quad x = h - \mu_{\text{fam}}, \quad u = \frac{h_{63} - \mu_{\text{fam},63}}{\lVert h_{63} - \mu_{\text{fam},63} \rVert}'
+    note: "pdf (S6c, fit only): also remove the direction of the cell's own centred final-layer state (layer 63)."
+diagram:
+  kind: bridge
+  caption: "multihop_mt reads the unsaid bridge (Chopin), not the answer (George Sand). The family mean removes the bridge's category; knnx8 / pco16 remove the final answer instead."
+split: val
+arms: ["mhfam@fit|cos", "othfam@fit|cos"]
+controls: ["rand.fam@fit|cos"]
+insights:
+  - {lead: "Both multihop banks score the bridge", text: "The bench's targets for a multihop item are its intermediates (Hungary), not the final answer (Budapest); the answer is an unscored rival for the top 10."}
+  - {lead: "The family mean holds the bridge's category", text: "On multihop_mt the bridge's pieces sit at z +2.3 to +2.9 in $L(\\mu_{\\text{fam}})$ (val) against +0.5 to +1.2 for random tokens; the bridge's any-layer top-10 rate falls from 0.50 (zero) to 0.34 (fam) on val."}
+  - {lead: "Two mechanisms by depth", text: "L20-48: a category-free mean (mhfam) leaves the bridge's median rank at zero's level (val L36 396 vs fam 1100). L52-60: any bench mean hurts it (L56 mhfam 109, othfam 91, fam 173, zero 57) and a random g does not; so mhfam's val pass is 0.282, barely above fam's 0.256."}
+  - {lead: "knnx8 / pco16 lift the bridge by pushing the answer down", text: "On multihop val at L52 they cut the answer to 0.42-0.43 (fam 0.58) and the bridge rises 0.39 → 0.55; any-layer bridge 0.70 / 0.71 vs fam 0.61."}
+  - {lead: "Removing the cell's own prediction fails", text: "pdf macro 0.525 on fit (fam 0.601), multihop 0.541 (0.600): the cell's final-layer state carries the bridge too."}
+  - {lead: "Pass@10 on 39-40 items cannot resolve this; ranks can", text: "fam's multihop_mt harm is -0.10 on val but 0.00 on fit, while the bridge's median rank is 3-5x worse under fam on both splits."}
+next: ["S6b (not run): score multihop_mt's bridge only at L32-56, where it is written; a read rule, not a centre."]

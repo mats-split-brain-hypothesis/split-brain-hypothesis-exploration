@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Secrets: keys live in the environment or in .env, never in git.
+.env
+
+# Large, regenerable artefacts: captures, readouts, judged results. Machine-local;
+# moved between machines with rsync (notes/setup.md), never committed.
+out/
+*.pt
+*.safetensors
+
+# Pinned read-only checkout of WorkspaceBench, created by tools/bootstrap.sh.
+third_party/
+
+# Reference papers dropped at the repo root.
+/*.pdf

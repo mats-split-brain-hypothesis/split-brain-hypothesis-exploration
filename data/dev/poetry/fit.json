@@ -1,0 +1,217 @@
+{
+ "family": "poetry",
+ "split": "fit",
+ "source": "J++ lens-eval-poetry.json @ 93f02cd6c27db765abb127f20eff656bb5d27340, J++ split 'fit' (umot/out/jpp/items.json)",
+ "read": "the newline token that ends line one of the couplet (the bench's line_one_newline)",
+ "bench_overlap": "8 of 16 prompts are WorkspaceBench poetry bench prompts: not held out from poetry/bench",
+ "items": [
+  {
+   "name": "couplet-breath-death",
+   "prompt": "A rhyming couplet:\nThe soldier held his final, rattling breath,\nAnd closed his eyes to greet the face of ",
+   "intermediates": [
+    "death"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-flame-name",
+   "prompt": "A rhyming couplet:\nShe lit the letter, watched it curl to flame,\nAnd swore she'd never speak again his ",
+   "intermediates": [
+    "name"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-gold-cold",
+   "prompt": "A rhyming couplet:\nThe autumn trees were painted red and gold,\nBut underneath, the earth was turning ",
+   "intermediates": [
+    "cold"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-wave-grave",
+   "prompt": "A rhyming couplet:\nThe sailor watched his ship sink through the wave,\nThe ocean floor would be his only ",
+   "intermediates": [
+    "grave"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-miss-kiss",
+   "prompt": "A rhyming couplet:\nHe counted days by everything he'd miss,\nAnd dreamed each night of just one final ",
+   "intermediates": [
+    "kiss"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-eyes-lies",
+   "prompt": "A rhyming couplet:\nShe searched his face but couldn't read his eyes,\nAnd wondered which of all his words were ",
+   "intermediates": [
+    "lies"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-gate-fate",
+   "prompt": "A rhyming couplet:\nThe traveler paused before the ancient gate,\nAnd stepped across to meet his waiting ",
+   "intermediates": [
+    "fate"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-dream-seem",
+   "prompt": "A rhyming couplet:\nShe woke and couldn't separate the dream,\nFrom what the waking world had made it ",
+   "intermediates": [
+    "seem"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-song-long",
+   "prompt": "A rhyming couplet:\nThe final note faded from the song,\nAnd left the hall in silence, still and ",
+   "intermediates": [
+    "long"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-sky-fly",
+   "prompt": "A rhyming couplet:\nThe kite broke free and vanished in the sky,\nA scrap of red now learning how to ",
+   "intermediates": [
+    "fly"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-high-cry",
+   "prompt": "A rhyming couplet:\nShe found the ledge and let her voice ring high,\nA song that broke halfway into a ",
+   "intermediates": [
+    "cry"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-gray-day",
+   "prompt": "A rhyming couplet:\nThe dawn broke through the clouds of silver gray,\nAnd ushered in another working ",
+   "intermediates": [
+    "day"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-fear-near",
+   "prompt": "A rhyming couplet:\nShe heard the footsteps and was gripped by fear,\nFor step by step the danger drew more ",
+   "intermediates": [
+    "near"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": true
+  },
+  {
+   "name": "couplet-threat-set",
+   "prompt": "A rhyming couplet:\nThe captain barked out orders under threat,\nAnd ordered that the course be firmly ",
+   "intermediates": [
+    "set"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-attack-back",
+   "prompt": "A rhyming couplet:\nThe soldiers braced themselves for the attack,\nBut orders came to fall and hold the line ",
+   "intermediates": [
+    "back"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": false
+  },
+  {
+   "name": "couplet-sun-done",
+   "prompt": "A rhyming couplet:\nThe farmer worked until the setting sun,\nAnd only stopped when every chore was ",
+   "intermediates": [
+    "done"
+   ],
+   "readout": {
+    "kind": "line_one_newline"
+   },
+   "source": "jpp",
+   "jpp_split": "fit",
+   "in_bench": true
+  }
+ ]
+}

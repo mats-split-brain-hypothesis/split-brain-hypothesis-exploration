@@ -1,0 +1,53 @@
+id: S8
+title: The tightness of the match as a dial
+owner: B (j-lens-mean-cc), pilot-1
+status: negative
+question: >-
+  Between the fair position mean ($\mu_{\text{rel}}$, U1's `u1rel`) and the tight same-offset same-token mean that
+  reads the prompt, is there a setting that keeps the mention control's selectivity and buys the token's DM gain?
+verdict: >-
+  No fair setting beats the position mean by more than noise: every step of tightening that adds DM strict passes adds
+  mention leak (lam 100: mentioned 0.90). The rule-chosen kNN-within-position `s8knn32` is +0.030 vs fam on val strict
+  macro with the guardrail ok and mention separation +0.56, but its single-cell gains are mostly not cell-specific.
+  The dial's useful form is kNN with neighbours restricted to other sentences.
+tiles:
+  - {label: "val strict macro, s8knn32 Δ vs fam", value: "+0.030", sub: "cos 0.628 vs 0.599; rms 0.646 vs 0.610"}
+  - {label: "Mention control, s8lam100 held / mentioned", value: "0.92 / 0.90", sub: "lam 0 (= u1rel) 0.78 / 0.23"}
+  - {label: "Mention separation, s8knn32 (fit)", value: "+0.56", sub: "s8knn4 +0.36 (mentioned 0.59)"}
+  - {label: "DM val strict, s8eb3", value: "0.284", sub: "u1rel 0.243, tok 0.311; shuf. 0.122"}
+formulas:
+  - latex: 'g_\lambda = \mu_{\text{rel}} + \lambda\,(\mu_{\text{rel,tok}} - \mu_{\text{rel}}), \qquad g_{\text{EB}} = \frac{n\,\mu_{\text{rel,tok}} + k\,\mu_{\text{rel}}}{n + k}'
+    note: "The dial: n = same-offset same-token reference cells (own group excluded); lam in {0, .25, .5, .75, 1}, k in {1, 3, 10, 30}."
+  - latex: 'g(h) = \frac{1}{k}\sum_{r \in N_k(h)} r, \qquad N_k(h) \subset \{\, r \in \mathcal{R}_{\text{fam}} : \mathrm{off}(r) = \mathrm{off}(h) \,\}'
+    note: "s8knn<k>: the k nearest (cosine) same-offset cells, own group excluded; xs: only cells from items with another sentence."
+diagram:
+  kind: pool
+  select: knn
+  exclude: own_sentence
+  caption: "kNN inside the position key: the k nearest same-offset reference cells; the xs form drops every cell from the item's own sentence."
+split: val
+arms: ["s8knn32@fit|cos", "s8knn8xs@fit|cos", "s8knn32xs@fit|cos", "s8eb3@fit|cos", "u1rel@fit|cos"]
+controls: ["shuf.s8knn32@fit|cos", "rand.s8knn32@fit|cos", "shuf.s8eb3@fit|cos", "rand.s8eb3@fit|cos"]
+insights:
+  - lead: On DM the strict gain from tightening comes with the leak, step for step
+    text: >-
+      lam 75: +2 DM items, mentioned 0.23 -> 0.55; lam 100: +4 items, mentioned 0.90 (separation +0.55 -> +0.03).
+      The fair frontier is flat at u1rel's level.
+  - lead: Empirical-Bayes shrinkage keeps selectivity but buys little
+    text: >-
+      s8eb3 keeps separation +0.50 with DM fit strict 0.250 (u1rel 0.224), two items of 76. Over 11 families its fit
+      macro is 0.618 (tok 0.637): sparse keys with weight 0.25-0.4 on a one- or two-cell mean are noise.
+  - lead: kNN reads the same sentence as soon as it is in the pool
+    text: >-
+      Plain kNN within the position key leaks as k falls (mentioned 0.59 at k = 4, 0.36 at k = 8); restricted to
+      other sentences it stays fair (0.22-0.28). This is the leak behind knnx8's DM number (S4).
+  - lead: The xs guard is too blunt on UM
+    text: >-
+      UM's read span is a request shared by 42 of 61 items, so "other sentences" leaves 19; xs drops UM fit strict to
+      0.70-0.72 (s8knn32 0.84).
+  - lead: Fair settings are within noise of each other
+    text: >-
+      Fit macro among fair settings spans 0.62-0.635; s8knn32's val single-cell gains are mostly not cell-specific
+      (shuffled +0.085 vs zero, arm +0.110).
+next:
+  - "A UM-aware notion of 'sentence' for the xs guard (the shared request is template, not content)."

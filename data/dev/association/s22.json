@@ -1,0 +1,258 @@
+{
+ "family": "association",
+ "split": "s22",
+ "source": "experiments/s22_bank.py (family formats, random no_robots fills)",
+ "gate": {
+  "model": "qwen27b",
+  "hub": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "draws": 10,
+  "temperature": 0.7,
+  "threshold": 0.8,
+  "grader": "strict string rule (x90_gate.grade); the bench grades with an LLM judge",
+  "git_sha": "95d0303b13398dc27250133f87a50ed656050714"
+ },
+ "dropped_target_in_bench": 0,
+ "items": [
+  {
+   "name": "s22-association-00",
+   "prompt": "Character Invention has been a wonderful addition to my life.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-01",
+   "prompt": "Please format each person with their instrument on their own line.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-02",
+   "prompt": "Dave is an optimistic bot that helps James see the silver linings in situations.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-03",
+   "prompt": "After the summary, give me two alternate ending options.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-04",
+   "prompt": "Tell me a joke about a porcupine.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-05",
+   "prompt": "Summarize the negative points from this article.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-06",
+   "prompt": "They may contain curvature at the tops or on sides.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-07",
+   "prompt": "I was thinking of parodying existing artist names.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-08",
+   "prompt": "We have a lot of communal grassy areas that are not currently being used.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-09",
+   "prompt": "Their two trucks collided during the incident.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-10",
+   "prompt": "You can cut ongoing car maintenance costs by driving less, removing heavy items from your trunk and avoiding unnecessary rapid acceleration.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-11",
+   "prompt": "Most creative writing prompts are geared toward children.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-12",
+   "prompt": "But all this comes with a downside.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-13",
+   "prompt": "Riddler is the chatbot that only responds to prompts with riddle-like content.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-14",
+   "prompt": "You don't have to use actual dates.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-15",
+   "prompt": "He will win the battle but lose the prize, and rue the desperation that carried him beyond practical bounds.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-16",
+   "prompt": "Make sure they're for healing or wellness.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-17",
+   "prompt": "Use an objective tone and offer both benefits and challenges when using assessments with students in the earliest grades.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-18",
+   "prompt": "Focus on the recommended size and materials.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-19",
+   "prompt": "Freud is a chatbot that tries to psychoanalyze you.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-20",
+   "prompt": "Okay have Ali say hes going to knock him out.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-21",
+   "prompt": "Please summarize the story below in a paragraph assuming the reader is a third-grader.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-22",
+   "prompt": "It can be unrealistic but it should be creative.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  },
+  {
+   "name": "s22-association-23",
+   "prompt": "Please convert the following to a list of unique names of persons mentioned in the article.",
+   "intermediates": [],
+   "subfamily": "activity",
+   "family": "association",
+   "source": "x90-dev",
+   "split": "s22",
+   "condition": "random-fill"
+  }
+ ]
+}

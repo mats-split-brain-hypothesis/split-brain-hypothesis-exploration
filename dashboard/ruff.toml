@@ -1,0 +1,12 @@
+# Lint settings for the dashboard only (the umot dashboard's, adapted). Run: .venv/bin/ruff check dashboard
+line-length = 120
+target-version = "py312"
+
+[lint]
+select = ["E", "F", "W", "I", "B", "UP", "RUF"]
+ignore = ["E501", "E741"]
+# Typographic minus signs, Greek letters and arrows are intended in the dashboard's copy.
+extend-ignore = ["RUF001", "RUF002", "RUF003"]
+
+[lint.isort]
+known-first-party = ["catalog", "figures", "gloss", "hfsync", "hover", "jlm", "screen", "sources", "ui"]

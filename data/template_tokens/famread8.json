@@ -1,0 +1,53 @@
+{
+ "name": "famread8",
+ "model": "Qwen/Qwen3.6-27B",
+ "model_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+ "n": 6,
+ "excluded_targets": 1577,
+ "min_families": 8,
+ "source": "fam-at-self__cos top-10 at the fit read cells",
+ "tokens": [
+  {
+   "id": 94860,
+   "text": " subscript",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 166 times"
+   ]
+  },
+  {
+   "id": 18337,
+   "text": " downtown",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 144 times"
+   ]
+  },
+  {
+   "id": 108819,
+   "text": "åĨ¬åŃ£",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 45 times"
+   ]
+  },
+  {
+   "id": 111548,
+   "text": "æ¼Ķå¥ı",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 33 times"
+   ]
+  },
+  {
+   "id": 17415,
+   "text": " ocean",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 29 times"
+   ]
+  },
+  {
+   "id": 8446,
+   "text": " whom",
+   "sources": [
+    "fam-at-self__cos top-10 on fit cells of 8 families, 20 times"
+   ]
+  }
+ ]
+}
