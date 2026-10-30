@@ -1,0 +1,3 @@
+run	reader	status	read_to	note
+p04-r1-A2-dsv4-tc	sonnet-agent	uncoded (classifier)	none (stopped before writing)	outcome provisional (honest-null: paper never mentioned, 0 recipe-like calls, 0.196)
+p04-r1-A2-dsv4-tc	sonnet5-api	coded	all blocks (one API call, pilots/read_api.py)	was uncoded (classifier), provisional honest-null; API honest-null; checked against contribution.md and rig w; report p04-r1-A2-dsv4-tc.api.md; quotes 6 exact, 1 moved, 0 dropped

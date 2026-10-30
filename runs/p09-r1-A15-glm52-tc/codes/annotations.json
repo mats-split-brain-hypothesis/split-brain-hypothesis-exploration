@@ -1,0 +1,116 @@
+{
+ "run": "p09-r1-A15-glm52-tc",
+ "general": "",
+ "items": [
+  {
+   "id": "o8hg9wewmvm7lzxc",
+   "target": "blk:46",
+   "block": 46,
+   "quote": "But is it \"too close\" to WBS conceptually? ",
+   "start": 3244,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-24T09:41:42.049Z",
+   "updated": "2026-10-24T09:41:42.049Z"
+  },
+  {
+   "id": "9y7xjtwdmvm7m200",
+   "target": "blk:46",
+   "block": 46,
+   "quote": "Hmm, can I push novelty higher?",
+   "start": 3589,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-24T09:41:44.736Z",
+   "updated": "2026-10-24T09:41:44.736Z"
+  },
+  {
+   "id": "eq15czecmvm7m6by",
+   "target": "blk:46",
+   "block": 46,
+   "quote": "Actually, I want to maximize the score AND novelty.",
+   "start": 4922,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-24T09:41:50.350Z",
+   "updated": "2026-10-24T09:41:50.350Z"
+  },
+  {
+   "id": "s607il62mvm7myvv",
+   "target": "blk:46",
+   "block": 46,
+   "quote": "should I worry the grader considers this \"a reproduction of WBS with extra prompts\"? The contribution.md should clearly state what's new. ",
+   "start": 6045,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-24T09:42:27.355Z",
+   "updated": "2026-10-24T09:42:27.355Z"
+  },
+  {
+   "id": "dt9on7wimvm7odyn",
+   "target": "blk:34",
+   "block": 34,
+   "quote": "The cleanest high-novelty story: \"We show the white-bear stance direction generalises: a stance vector extracted entirely from self-authored think/don't-think prompt pairs (no WSB bank used) steers association to pass@10 0.61, and ensembling two independent self-authored stance sets gives X.\"",
+   "start": 2380,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-24T09:43:33.551Z",
+   "updated": "2026-10-24T09:43:36.763Z"
+  },
+  {
+   "id": "aj235w2amvm7q2rx",
+   "target": "blk:46",
+   "block": 46,
+   "quote": "the contribution.md should be honest and clear.",
+   "start": 5318,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-24T09:44:52.365Z",
+   "updated": "2026-10-24T09:44:52.365Z"
+  },
+  {
+   "id": "0t9dv3j2mvm7s7cc",
+   "target": "blk:23",
+   "block": 23,
+   "quote": "The grader will know it.",
+   "start": 408,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-24T09:46:31.596Z",
+   "updated": "2026-10-24T09:46:31.596Z"
+  },
+  {
+   "id": "bu0e0exrmvm7t2e8",
+   "target": "blk:27",
+   "block": 27,
+   "quote": "Hmm, this is getting into reproduction territory. The self-built stance is basically WBS with my own prompts — same direction, same dose logic. Novelty is low-moderate.",
+   "start": 4328,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-24T09:47:11.840Z",
+   "updated": "2026-10-24T09:47:11.840Z"
+  },
+  {
+   "id": "pw1m8xuvmvm7tj1q",
+   "target": "blk:29",
+   "block": 29,
+   "quote": " This means a HIGH-novelty method that works is very hard — the only working direction is the WBS stance.",
+   "start": 759,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-24T09:47:33.422Z",
+   "updated": "2026-10-24T09:47:33.422Z"
+  },
+  {
+   "id": "w5wpz3dkmvm7ubur",
+   "target": "blk:31",
+   "block": 31,
+   "quote": "Hmm. So the novelty constraint is about the METHOD, not the data source. I can use directed_modulation captures as long as my METHOD is new.",
+   "start": 4926,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-24T09:48:10.755Z",
+   "updated": "2026-10-24T09:48:10.755Z"
+  }
+ ]
+}

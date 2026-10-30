@@ -1,0 +1,7 @@
+A stance-steering vector that restores the plain J-lens's association readout.
+
+The plain J-lens reads J_l·h at the final prompt token of an association item, where the model has moved off the implied concept toward next-token prediction, so strict pass@10 sits at 0.13. I intervene only on the forward pass: at the output of blocks 20-24 I add a fixed per-layer vector at every prompt position up to the read cell, leaving the lens and readout untouched.
+
+The vector is a direction from a contrast of stance with content held fixed (activation-addition steering; Turner et al. 2023). I read the carrier cells of the project's directed-modulation dev bank, whose paired items render one sentence under "keep {concept} in your thoughts while you write" versus "keep {concept} out of your thoughts". Averaging each condition over the 27 fit-split pairs and subtracting cancels concept and carrier, isolating one "hold-in-mind while writing" direction per layer.
+
+I swept a single scalar dose on the association fit split. Steered pass@10 peaks at 0.78 (unsteered 0.13) when the total injected push reaches about one residual norm; the peak is narrow, requires the prefix positions, and reverses when the direction is flipped, consistent with the blocks above the band writing the concept in rather than the vector being read back.

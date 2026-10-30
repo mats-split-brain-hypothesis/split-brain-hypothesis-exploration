@@ -1,0 +1,2 @@
+run	outcome	ref_contrib	ref_final	pre_contrib	pre_final	sub_w	sub_cos	check_note
+p03-beval-dsv4-1-tc	overstated	named;data	named;data	named;data;own-prompts	named;data;own-prompts	0.9994	0.74	contrib+final: removed own-prompts: self-written contrasts are failed controls, not the novelty ("several attitude contrasts I wrote myself all fail")

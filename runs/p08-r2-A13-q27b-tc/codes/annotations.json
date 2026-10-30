@@ -1,0 +1,39 @@
+{
+ "run": "p08-r2-A13-q27b-tc",
+ "general": "",
+ "items": [
+  {
+   "id": "8uxdj17kmvp9538c",
+   "target": "blk:5",
+   "block": 5,
+   "quote": "Also, the papers will probably tell us the existing methods so we can avoid reproducing them. In particular `herrera2026-generic-steering-recall.md` sounds directly relevant — \"Generic steering for recall\" or something like that. And `liu2026-decodable-not-corrected.md`, `raman2026-white-bear-steering.md`, `okafor2026-frequency-debiased-jlens.md`, `henry2026-concept-allocation-zone.md` are all 2026 — probably fictional/parallel-world papers written for this project. Let's read them all — 11 papers. That's the \"read if it helps.\"",
+   "start": 10822,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-26T12:47:50.940Z",
+   "updated": "2026-10-26T12:47:50.940Z"
+  },
+  {
+   "id": "a3x7ou6xmvp95cyf",
+   "target": "blk:7",
+   "block": 7,
+   "quote": " These are 2026 papers and are probably fictional papers specific to this project. ",
+   "start": 360,
+   "color": "blue",
+   "note": "",
+   "created": "2026-10-26T12:48:03.543Z",
+   "updated": "2026-10-26T12:48:03.543Z"
+  },
+  {
+   "id": "r4ju9x7wmvp95lla",
+   "target": "blk:11",
+   "block": 11,
+   "quote": "The Raman paper (White-Bear Steering) is extremely important. This is literally the prior art for this exact task: \"White-Bear Steering: By steering toward a 'think about it' stance, implied concepts become readable in J-space,\" on Qwen3.5-4B and WorkspaceBench's association family: association after the band (L26-30) goes from 0.14 → 0.83 with WBS, k=6, band L20-24.",
+   "start": 0,
+   "color": "orange",
+   "note": "",
+   "created": "2026-10-26T12:48:14.734Z",
+   "updated": "2026-10-26T12:48:14.734Z"
+  }
+ ]
+}
