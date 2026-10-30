@@ -1,0 +1,15 @@
+# Sandbox for each episode. ImpossibleBench's compose.yaml, with the image and resources from
+# Goodfire's run (python:3.10-slim at their digest, 1 CPU, 2 GB, workdir /workspace, no network).
+# Inspect copies its own tool binary into the container, so the image needs nothing extra.
+# The digest is an amd64 image; on Apple Silicon it runs under emulation.
+services:
+  default:
+    image: "python:3.10-slim@sha256:98afeb797842e08a6321fb5bb09fcc710ff8bb7a4b6ccd3308ff18d1ae84ca3e"
+    platform: linux/amd64
+    command: "tail -f /dev/null"
+    init: true
+    network_mode: none
+    working_dir: /workspace
+    stop_grace_period: 1s
+    cpus: 1.0
+    mem_limit: 2gb

@@ -1,0 +1,11 @@
+# Inspect version Goodfire's harness was built against (their run manifest: inspect_reference_version 0.3.140).
+inspect_ai==0.3.140
+datasets>=3.0.0
+# openai 3.x breaks Inspect 0.3.140's client (TypeError: float + Timeout); 2.5.0 is from the same week.
+openai==2.5.0
+python-dotenv
+
+# ImpossibleBench, latest commit (includes the 2026-10-12 fix that lets test edits count).
+# Install it separately with --no-deps: its SWE-bench extras (inspect_evals, swebench) aren't needed for
+# LiveCodeBench, and inspect_evals would pull a newer inspect_ai.
+#   pip install --no-deps "impossiblebench @ git+https://github.com/safety-research/impossiblebench@d4f9a149db2b9cec0fed7bab01d91c07ee10aca2"
